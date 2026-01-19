@@ -169,7 +169,17 @@
       "description": "",
       "color": "#3b82f6",
       "createdAt": "2026-01-19T23:19:15.613Z",
-      "tasks": [],
+      "tasks": [
+        {
+          "id": "mklseqlvyoy204pyahd",
+          "title": "order gRNA",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-19T23:19:23.443Z",
+          "subtasks": []
+        }
+      ],
       "progressUpdates": [],
       "archived": false
     }
@@ -261,6 +271,13 @@
         "subtaskId": null,
         "scheduledAt": "2026-01-19T21:51:37.698Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklsekkdp6myzpeomq",
+        "taskId": "mklseqlvyoy204pyahd",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-19T23:19:23.443Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-12": [
@@ -317,5 +334,5 @@
       "completedAt": "2025-01-16T14:00:00.000Z"
     }
   ],
-  "lastUpdated": "2026-01-19T23:19:15.613Z"
+  "lastUpdated": "2026-01-19T23:19:23.443Z"
 }
