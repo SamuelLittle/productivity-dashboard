@@ -162,6 +162,16 @@
           "date": "2024-12-15T10:00:00.000Z"
         }
       ]
+    },
+    {
+      "id": "mklsekkdp6myzpeomq",
+      "name": "CRISPR screening",
+      "description": "",
+      "color": "#3b82f6",
+      "createdAt": "2026-01-19T23:19:15.613Z",
+      "tasks": [],
+      "progressUpdates": [],
+      "archived": false
     }
   ],
   "dailyLists": {
@@ -307,5 +317,5 @@
       "completedAt": "2025-01-16T14:00:00.000Z"
     }
   ],
-  "lastUpdated": "2026-01-19T21:55:10.474Z"
+  "lastUpdated": "2026-01-19T23:19:15.613Z"
 }
