@@ -39,8 +39,8 @@
             {
               "id": "subtask_2",
               "title": "Mobile hamburger menu",
-              "completed": true,
-              "completedAt": "2026-01-19T21:30:17.723Z"
+              "completed": false,
+              "completedAt": null
             },
             {
               "id": "subtask_3",
@@ -262,5 +262,5 @@
       "completedAt": "2025-01-19T10:00:00.000Z"
     }
   ],
-  "lastUpdated": "2026-01-19T21:30:17.723Z"
+  "lastUpdated": "2026-01-19T21:30:19.186Z"
 }
