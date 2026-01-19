@@ -97,8 +97,8 @@
             {
               "id": "subtask_5",
               "title": "OAuth flow documentation",
-              "completed": false,
-              "completedAt": null
+              "completed": true,
+              "completedAt": "2026-01-19T21:30:04.354Z"
             }
           ]
         },
@@ -261,5 +261,5 @@
       "completedAt": "2025-01-19T10:00:00.000Z"
     }
   ],
-  "lastUpdated": "2026-01-19T21:30:03.500Z"
+  "lastUpdated": "2026-01-19T21:30:04.354Z"
 }
