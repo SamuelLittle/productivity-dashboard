@@ -13,7 +13,6 @@
           "title": "Create wireframes for homepage",
           "description": "Design low-fidelity wireframes for the new homepage layout",
           "priority": "high",
-          "scheduledDate": null,
           "completed": true,
           "completedAt": "2025-01-10T15:30:00.000Z",
           "completionNotes": "Completed 3 variations for stakeholder review",
@@ -26,26 +25,31 @@
           "title": "Design navigation component",
           "description": "Create responsive navigation with mobile menu",
           "priority": "high",
-          "scheduledDate": "2025-01-20",
           "completed": false,
           "createdAt": "2025-01-05T11:00:00.000Z",
           "subtasks": [
             {
               "id": "subtask_1",
               "title": "Desktop navigation design",
+              "priority": "high",
               "completed": true,
-              "completedAt": "2025-01-15T10:00:00.000Z"
+              "completedAt": "2025-01-15T10:00:00.000Z",
+              "createdAt": "2025-01-05T11:00:00.000Z"
             },
             {
               "id": "subtask_2",
               "title": "Mobile hamburger menu",
+              "priority": "high",
               "completed": false,
-              "completedAt": null
+              "completedAt": null,
+              "createdAt": "2025-01-05T11:00:00.000Z"
             },
             {
               "id": "subtask_3",
               "title": "Accessibility testing",
-              "completed": false
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2025-01-05T11:00:00.000Z"
             }
           ]
         },
@@ -54,7 +58,6 @@
           "title": "Implement dark mode",
           "description": "Add dark mode toggle with system preference detection",
           "priority": "medium",
-          "scheduledDate": "2025-01-25",
           "completed": false,
           "createdAt": "2025-01-08T14:00:00.000Z",
           "subtasks": []
@@ -86,20 +89,24 @@
           "title": "Document authentication endpoints",
           "description": "Write docs for login, logout, refresh token, and OAuth flows",
           "priority": "high",
-          "scheduledDate": "2025-01-19",
           "completed": false,
           "createdAt": "2025-01-05T09:30:00.000Z",
           "subtasks": [
             {
               "id": "subtask_4",
               "title": "Login endpoint",
-              "completed": true
+              "priority": "high",
+              "completed": true,
+              "completedAt": "2025-01-16T14:00:00.000Z",
+              "createdAt": "2025-01-05T09:30:00.000Z"
             },
             {
               "id": "subtask_5",
               "title": "OAuth flow documentation",
+              "priority": "high",
               "completed": false,
-              "completedAt": null
+              "completedAt": null,
+              "createdAt": "2025-01-05T09:30:00.000Z"
             }
           ]
         },
@@ -108,7 +115,6 @@
           "title": "Create example code snippets",
           "description": "Add code examples in JavaScript, Python, and cURL",
           "priority": "medium",
-          "scheduledDate": null,
           "completed": false,
           "createdAt": "2025-01-06T10:00:00.000Z",
           "subtasks": []
@@ -165,7 +171,6 @@
         "title": "Review pull requests",
         "description": "Check and review pending PRs from the team",
         "priority": "high",
-        "scheduledDate": "2025-01-19",
         "completed": false,
         "createdAt": "2025-01-19T08:00:00.000Z"
       },
@@ -174,39 +179,9 @@
         "title": "Team standup meeting",
         "description": "Daily sync with the development team",
         "priority": "medium",
-        "scheduledDate": "2025-01-19",
         "completed": true,
         "completedAt": "2025-01-19T10:00:00.000Z",
         "createdAt": "2025-01-19T08:00:00.000Z"
-      },
-      {
-        "id": "daily_3",
-        "title": "Reply to client emails",
-        "priority": "medium",
-        "scheduledDate": "2025-01-19",
-        "completed": false,
-        "createdAt": "2025-01-19T08:30:00.000Z"
-      }
-    ],
-    "2025-01-18": [
-      {
-        "id": "daily_4",
-        "title": "Prepare weekly report",
-        "priority": "high",
-        "scheduledDate": "2025-01-18",
-        "completed": true,
-        "completedAt": "2025-01-18T17:00:00.000Z",
-        "completionNotes": "Sent to stakeholders via email",
-        "createdAt": "2025-01-18T09:00:00.000Z"
-      },
-      {
-        "id": "daily_5",
-        "title": "Code review for feature branch",
-        "priority": "high",
-        "scheduledDate": "2025-01-18",
-        "completed": true,
-        "completedAt": "2025-01-18T14:30:00.000Z",
-        "createdAt": "2025-01-18T10:00:00.000Z"
       }
     ],
     "2025-01-21": [
@@ -215,51 +190,89 @@
         "title": "Sprint planning meeting",
         "description": "Plan tasks for the upcoming sprint",
         "priority": "high",
-        "scheduledDate": "2025-01-21",
         "completed": false,
         "createdAt": "2025-01-17T15:00:00.000Z"
+      }
+    ]
+  },
+  "scheduledItems": {
+    "2025-01-19": [
+      {
+        "projectId": "proj_sample1",
+        "taskId": "task_2",
+        "subtaskId": "subtask_2",
+        "scheduledAt": "2025-01-18T20:00:00.000Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "proj_sample2",
+        "taskId": "task_4",
+        "subtaskId": "subtask_5",
+        "scheduledAt": "2025-01-18T20:00:00.000Z",
+        "completedOnDay": false
+      }
+    ],
+    "2025-01-20": [
+      {
+        "projectId": "proj_sample1",
+        "taskId": "task_2",
+        "subtaskId": null,
+        "scheduledAt": "2025-01-18T20:00:00.000Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "proj_sample1",
+        "taskId": "task_2",
+        "subtaskId": "subtask_3",
+        "scheduledAt": "2025-01-18T20:00:00.000Z",
+        "completedOnDay": false
       }
     ],
     "2025-01-25": [
       {
-        "id": "daily_7",
-        "title": "Monthly retrospective",
-        "description": "Review January progress and set February goals",
-        "priority": "medium",
-        "scheduledDate": "2025-01-25",
-        "completed": false,
-        "createdAt": "2025-01-15T12:00:00.000Z"
+        "projectId": "proj_sample1",
+        "taskId": "task_3",
+        "subtaskId": null,
+        "scheduledAt": "2025-01-15T12:00:00.000Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "proj_sample2",
+        "taskId": "task_5",
+        "subtaskId": null,
+        "scheduledAt": "2025-01-15T12:00:00.000Z",
+        "completedOnDay": false
       }
     ]
   },
   "completedTasks": [
     {
-      "id": "task_1",
       "projectId": "proj_sample1",
+      "taskId": "task_1",
       "title": "Create wireframes for homepage",
-      "completed": true,
       "completedAt": "2025-01-10T15:30:00.000Z",
       "completionNotes": "Completed 3 variations for stakeholder review",
       "completionLinks": "https://figma.com/example"
     },
     {
-      "id": "daily_4",
-      "title": "Prepare weekly report",
-      "completed": true,
-      "completedAt": "2025-01-18T17:00:00.000Z",
-      "completionNotes": "Sent to stakeholders via email"
-    },
-    {
-      "id": "daily_5",
-      "title": "Code review for feature branch",
-      "completed": true,
-      "completedAt": "2025-01-18T14:30:00.000Z"
-    },
-    {
       "id": "daily_2",
       "title": "Team standup meeting",
-      "completed": true,
-      "completedAt": "2025-01-19T10:00:00.000Z"
+      "completedAt": "2025-01-19T10:00:00.000Z",
+      "date": "2025-01-19"
+    },
+    {
+      "projectId": "proj_sample1",
+      "taskId": "task_2",
+      "subtaskId": "subtask_1",
+      "title": "Desktop navigation design",
+      "completedAt": "2025-01-15T10:00:00.000Z"
+    },
+    {
+      "projectId": "proj_sample2",
+      "taskId": "task_4",
+      "subtaskId": "subtask_4",
+      "title": "Login endpoint",
+      "completedAt": "2025-01-16T14:00:00.000Z"
     }
   ],
   "lastUpdated": "2026-01-19T21:30:19.186Z"
