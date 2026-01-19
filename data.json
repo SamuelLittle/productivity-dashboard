@@ -1,0 +1,264 @@
+{
+  "projects": [
+    {
+      "id": "proj_sample1",
+      "name": "Website Redesign",
+      "description": "Redesign the company website with modern UI/UX principles",
+      "color": "#3b82f6",
+      "createdAt": "2025-01-01T10:00:00.000Z",
+      "archived": false,
+      "tasks": [
+        {
+          "id": "task_1",
+          "title": "Create wireframes for homepage",
+          "description": "Design low-fidelity wireframes for the new homepage layout",
+          "priority": "high",
+          "scheduledDate": null,
+          "completed": true,
+          "completedAt": "2025-01-10T15:30:00.000Z",
+          "completionNotes": "Completed 3 variations for stakeholder review",
+          "completionLinks": "https://figma.com/example",
+          "createdAt": "2025-01-02T09:00:00.000Z",
+          "subtasks": []
+        },
+        {
+          "id": "task_2",
+          "title": "Design navigation component",
+          "description": "Create responsive navigation with mobile menu",
+          "priority": "high",
+          "scheduledDate": "2025-01-20",
+          "completed": false,
+          "createdAt": "2025-01-05T11:00:00.000Z",
+          "subtasks": [
+            {
+              "id": "subtask_1",
+              "title": "Desktop navigation design",
+              "completed": true,
+              "completedAt": "2025-01-15T10:00:00.000Z"
+            },
+            {
+              "id": "subtask_2",
+              "title": "Mobile hamburger menu",
+              "completed": false
+            },
+            {
+              "id": "subtask_3",
+              "title": "Accessibility testing",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "id": "task_3",
+          "title": "Implement dark mode",
+          "description": "Add dark mode toggle with system preference detection",
+          "priority": "medium",
+          "scheduledDate": "2025-01-25",
+          "completed": false,
+          "createdAt": "2025-01-08T14:00:00.000Z",
+          "subtasks": []
+        }
+      ],
+      "progressUpdates": [
+        {
+          "id": "progress_1",
+          "text": "Completed initial design review with stakeholders. Received positive feedback on the minimalist approach.",
+          "date": "2025-01-12T16:00:00.000Z"
+        },
+        {
+          "id": "progress_2",
+          "text": "Started implementing the component library. Using CSS custom properties for theming.",
+          "date": "2025-01-18T11:30:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "proj_sample2",
+      "name": "API Documentation",
+      "description": "Write comprehensive API documentation for the public endpoints",
+      "color": "#10b981",
+      "createdAt": "2025-01-05T09:00:00.000Z",
+      "archived": false,
+      "tasks": [
+        {
+          "id": "task_4",
+          "title": "Document authentication endpoints",
+          "description": "Write docs for login, logout, refresh token, and OAuth flows",
+          "priority": "high",
+          "scheduledDate": "2025-01-19",
+          "completed": false,
+          "createdAt": "2025-01-05T09:30:00.000Z",
+          "subtasks": [
+            {
+              "id": "subtask_4",
+              "title": "Login endpoint",
+              "completed": true
+            },
+            {
+              "id": "subtask_5",
+              "title": "OAuth flow documentation",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "id": "task_5",
+          "title": "Create example code snippets",
+          "description": "Add code examples in JavaScript, Python, and cURL",
+          "priority": "medium",
+          "scheduledDate": null,
+          "completed": false,
+          "createdAt": "2025-01-06T10:00:00.000Z",
+          "subtasks": []
+        }
+      ],
+      "progressUpdates": [
+        {
+          "id": "progress_3",
+          "text": "Set up documentation site using Docusaurus. Basic structure is in place.",
+          "date": "2025-01-07T14:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "proj_sample3",
+      "name": "Q4 Marketing Campaign",
+      "description": "Plan and execute the Q4 2024 marketing campaign",
+      "color": "#f59e0b",
+      "createdAt": "2024-09-15T08:00:00.000Z",
+      "archived": true,
+      "tasks": [
+        {
+          "id": "task_6",
+          "title": "Create campaign landing page",
+          "priority": "high",
+          "completed": true,
+          "completedAt": "2024-10-01T12:00:00.000Z",
+          "createdAt": "2024-09-16T09:00:00.000Z",
+          "subtasks": []
+        },
+        {
+          "id": "task_7",
+          "title": "Set up email sequences",
+          "priority": "high",
+          "completed": true,
+          "completedAt": "2024-10-05T16:00:00.000Z",
+          "createdAt": "2024-09-18T10:00:00.000Z",
+          "subtasks": []
+        }
+      ],
+      "progressUpdates": [
+        {
+          "id": "progress_4",
+          "text": "Campaign completed successfully with 25% conversion rate improvement.",
+          "date": "2024-12-15T10:00:00.000Z"
+        }
+      ]
+    }
+  ],
+  "dailyLists": {
+    "2025-01-19": [
+      {
+        "id": "daily_1",
+        "title": "Review pull requests",
+        "description": "Check and review pending PRs from the team",
+        "priority": "high",
+        "scheduledDate": "2025-01-19",
+        "completed": false,
+        "createdAt": "2025-01-19T08:00:00.000Z"
+      },
+      {
+        "id": "daily_2",
+        "title": "Team standup meeting",
+        "description": "Daily sync with the development team",
+        "priority": "medium",
+        "scheduledDate": "2025-01-19",
+        "completed": true,
+        "completedAt": "2025-01-19T10:00:00.000Z",
+        "createdAt": "2025-01-19T08:00:00.000Z"
+      },
+      {
+        "id": "daily_3",
+        "title": "Reply to client emails",
+        "priority": "medium",
+        "scheduledDate": "2025-01-19",
+        "completed": false,
+        "createdAt": "2025-01-19T08:30:00.000Z"
+      }
+    ],
+    "2025-01-18": [
+      {
+        "id": "daily_4",
+        "title": "Prepare weekly report",
+        "priority": "high",
+        "scheduledDate": "2025-01-18",
+        "completed": true,
+        "completedAt": "2025-01-18T17:00:00.000Z",
+        "completionNotes": "Sent to stakeholders via email",
+        "createdAt": "2025-01-18T09:00:00.000Z"
+      },
+      {
+        "id": "daily_5",
+        "title": "Code review for feature branch",
+        "priority": "high",
+        "scheduledDate": "2025-01-18",
+        "completed": true,
+        "completedAt": "2025-01-18T14:30:00.000Z",
+        "createdAt": "2025-01-18T10:00:00.000Z"
+      }
+    ],
+    "2025-01-21": [
+      {
+        "id": "daily_6",
+        "title": "Sprint planning meeting",
+        "description": "Plan tasks for the upcoming sprint",
+        "priority": "high",
+        "scheduledDate": "2025-01-21",
+        "completed": false,
+        "createdAt": "2025-01-17T15:00:00.000Z"
+      }
+    ],
+    "2025-01-25": [
+      {
+        "id": "daily_7",
+        "title": "Monthly retrospective",
+        "description": "Review January progress and set February goals",
+        "priority": "medium",
+        "scheduledDate": "2025-01-25",
+        "completed": false,
+        "createdAt": "2025-01-15T12:00:00.000Z"
+      }
+    ]
+  },
+  "completedTasks": [
+    {
+      "id": "task_1",
+      "projectId": "proj_sample1",
+      "title": "Create wireframes for homepage",
+      "completed": true,
+      "completedAt": "2025-01-10T15:30:00.000Z",
+      "completionNotes": "Completed 3 variations for stakeholder review",
+      "completionLinks": "https://figma.com/example"
+    },
+    {
+      "id": "daily_4",
+      "title": "Prepare weekly report",
+      "completed": true,
+      "completedAt": "2025-01-18T17:00:00.000Z",
+      "completionNotes": "Sent to stakeholders via email"
+    },
+    {
+      "id": "daily_5",
+      "title": "Code review for feature branch",
+      "completed": true,
+      "completedAt": "2025-01-18T14:30:00.000Z"
+    },
+    {
+      "id": "daily_2",
+      "title": "Team standup meeting",
+      "completed": true,
+      "completedAt": "2025-01-19T10:00:00.000Z"
+    }
+  ],
+  "lastUpdated": "2025-01-19T12:00:00.000Z"
+}

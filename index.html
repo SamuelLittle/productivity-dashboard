@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Auth Screen -->
+        <div id="auth-screen" class="screen">
+            <div class="auth-container">
+                <h1>Productivity Dashboard</h1>
+                <p>Connect with GitHub to sync your data</p>
+                <button id="auth-btn" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    Sign in with GitHub
+                </button>
+                <p class="auth-note">Your data is stored securely in your own GitHub repository</p>
+            </div>
+        </div>
+
+        <!-- Main Dashboard -->
+        <div id="dashboard" class="screen hidden">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h1>Dashboard</h1>
+                    <span id="current-date" class="date-display"></span>
+                </div>
+                <div class="header-right">
+                    <button id="export-btn" class="btn btn-secondary" title="Export Monthly Report">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Export
+                    </button>
+                    <div class="user-menu">
+                        <img id="user-avatar" src="" alt="User" class="avatar">
+                        <button id="logout-btn" class="btn btn-ghost">Logout</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <nav class="nav">
+                        <button class="nav-item active" data-view="today">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            Today
+                        </button>
+                        <button class="nav-item" data-view="yesterday">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="1 4 1 10 7 10"/>
+                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                            </svg>
+                            Yesterday
+                        </button>
+                        <button class="nav-item" data-view="scheduled">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            Scheduled
+                        </button>
+                        <button class="nav-item" data-view="projects">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            Projects
+                        </button>
+                        <button class="nav-item" data-view="archive">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="21 8 21 21 3 21 3 8"/>
+                                <rect x="1" y="3" width="22" height="5"/>
+                                <line x1="10" y1="12" x2="14" y2="12"/>
+                            </svg>
+                            Archive
+                        </button>
+                    </nav>
+                </aside>
+
+                <!-- Content Area -->
+                <section class="content">
+                    <!-- Today View -->
+                    <div id="view-today" class="view active">
+                        <div class="view-header">
+                            <h2>Today's Tasks</h2>
+                            <button id="add-task-btn" class="btn btn-primary">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                Add Task
+                            </button>
+                        </div>
+                        <div id="today-tasks" class="task-list">
+                            <!-- Tasks will be rendered here -->
+                        </div>
+                        <div id="today-empty" class="empty-state hidden">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <p>No tasks for today</p>
+                            <span>Add tasks from your projects or create new ones</span>
+                        </div>
+                    </div>
+
+                    <!-- Yesterday View -->
+                    <div id="view-yesterday" class="view">
+                        <div class="view-header">
+                            <h2>Yesterday's Tasks</h2>
+                        </div>
+                        <div id="yesterday-tasks" class="task-list">
+                            <!-- Yesterday's tasks will be rendered here -->
+                        </div>
+                        <div id="yesterday-empty" class="empty-state hidden">
+                            <p>No tasks from yesterday</p>
+                        </div>
+                    </div>
+
+                    <!-- Scheduled View -->
+                    <div id="view-scheduled" class="view">
+                        <div class="view-header">
+                            <h2>Scheduled Tasks</h2>
+                        </div>
+                        <div id="scheduled-tasks" class="scheduled-list">
+                            <!-- Scheduled tasks grouped by date -->
+                        </div>
+                        <div id="scheduled-empty" class="empty-state hidden">
+                            <p>No scheduled tasks</p>
+                            <span>Schedule tasks for future dates from your projects</span>
+                        </div>
+                    </div>
+
+                    <!-- Projects View -->
+                    <div id="view-projects" class="view">
+                        <div class="view-header">
+                            <h2>Projects</h2>
+                            <button id="add-project-btn" class="btn btn-primary">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                New Project
+                            </button>
+                        </div>
+                        <div id="projects-list" class="projects-grid">
+                            <!-- Projects will be rendered here -->
+                        </div>
+                        <div id="projects-empty" class="empty-state hidden">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            <p>No projects yet</p>
+                            <span>Create your first project to get started</span>
+                        </div>
+                    </div>
+
+                    <!-- Archive View -->
+                    <div id="view-archive" class="view">
+                        <div class="view-header">
+                            <h2>Archived Projects</h2>
+                        </div>
+                        <div id="archive-list" class="projects-grid">
+                            <!-- Archived projects will be rendered here -->
+                        </div>
+                        <div id="archive-empty" class="empty-state hidden">
+                            <p>No archived projects</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Detail View -->
+                    <div id="view-project-detail" class="view">
+                        <div class="view-header">
+                            <button id="back-to-projects" class="btn btn-ghost">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="19" y1="12" x2="5" y2="12"/>
+                                    <polyline points="12 19 5 12 12 5"/>
+                                </svg>
+                                Back
+                            </button>
+                            <h2 id="project-detail-title"></h2>
+                            <div class="project-actions">
+                                <button id="add-progress-btn" class="btn btn-secondary">Add Update</button>
+                                <button id="archive-project-btn" class="btn btn-ghost">Archive</button>
+                            </div>
+                        </div>
+                        <div class="project-detail-content">
+                            <div class="project-tasks-section">
+                                <div class="section-header">
+                                    <h3>Tasks</h3>
+                                    <button id="add-project-task-btn" class="btn btn-secondary btn-sm">Add Task</button>
+                                </div>
+                                <div id="project-tasks" class="task-list">
+                                    <!-- Project tasks will be rendered here -->
+                                </div>
+                            </div>
+                            <div class="project-progress-section">
+                                <h3>Progress Updates</h3>
+                                <div id="project-progress" class="progress-list">
+                                    <!-- Progress updates will be rendered here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Modals -->
+        <!-- Add/Edit Task Modal -->
+        <div id="task-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="task-modal-title">Add Task</h3>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <form id="task-form">
+                    <input type="hidden" id="task-id">
+                    <input type="hidden" id="task-project-id">
+                    <input type="hidden" id="task-parent-id">
+
+                    <div class="form-group">
+                        <label for="task-title">Task Title</label>
+                        <input type="text" id="task-title" required placeholder="What needs to be done?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-description">Description (optional)</label>
+                        <textarea id="task-description" rows="3" placeholder="Add more details..."></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="task-project">Project</label>
+                            <select id="task-project">
+                                <option value="">No Project</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="task-schedule">Schedule For</label>
+                            <select id="task-schedule">
+                                <option value="today">Today</option>
+                                <option value="tomorrow">Tomorrow</option>
+                                <option value="next-week">Next Week</option>
+                                <option value="custom">Custom Date</option>
+                                <option value="none">Don't Schedule</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group hidden" id="custom-date-group">
+                        <label for="task-custom-date">Select Date</label>
+                        <input type="date" id="task-custom-date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-priority">Priority</label>
+                        <select id="task-priority">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ghost modal-cancel">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save Task</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Complete Task Modal -->
+        <div id="complete-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Complete Task</h3>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <form id="complete-form">
+                    <input type="hidden" id="complete-task-id">
+
+                    <div class="form-group">
+                        <label for="complete-notes">Notes (optional)</label>
+                        <textarea id="complete-notes" rows="3" placeholder="Add any notes about this task..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="complete-links">Related Links (optional)</label>
+                        <input type="text" id="complete-links" placeholder="https://...">
+                        <small>Add links to PRs, docs, or other resources</small>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ghost modal-cancel">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Mark Complete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Add Project Modal -->
+        <div id="project-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="project-modal-title">New Project</h3>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <form id="project-form">
+                    <input type="hidden" id="project-id">
+
+                    <div class="form-group">
+                        <label for="project-name">Project Name</label>
+                        <input type="text" id="project-name" required placeholder="My Project">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-description">Description</label>
+                        <textarea id="project-description" rows="3" placeholder="What is this project about?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-color">Color</label>
+                        <div class="color-picker">
+                            <label class="color-option">
+                                <input type="radio" name="project-color" value="#3b82f6" checked>
+                                <span class="color-swatch" style="background: #3b82f6"></span>
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="project-color" value="#10b981">
+                                <span class="color-swatch" style="background: #10b981"></span>
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="project-color" value="#f59e0b">
+                                <span class="color-swatch" style="background: #f59e0b"></span>
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="project-color" value="#ef4444">
+                                <span class="color-swatch" style="background: #ef4444"></span>
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="project-color" value="#8b5cf6">
+                                <span class="color-swatch" style="background: #8b5cf6"></span>
+                            </label>
+                            <label class="color-option">
+                                <input type="radio" name="project-color" value="#ec4899">
+                                <span class="color-swatch" style="background: #ec4899"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ghost modal-cancel">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Create Project</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Add Progress Modal -->
+        <div id="progress-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Add Progress Update</h3>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <form id="progress-form">
+                    <input type="hidden" id="progress-project-id">
+
+                    <div class="form-group">
+                        <label for="progress-text">Update</label>
+                        <textarea id="progress-text" rows="4" required placeholder="What progress was made?"></textarea>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ghost modal-cancel">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Add Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Export Modal -->
+        <div id="export-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Export Monthly Report</h3>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <form id="export-form">
+                    <div class="form-group">
+                        <label for="export-month">Select Month</label>
+                        <input type="month" id="export-month">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="export-format">Format</label>
+                        <select id="export-format">
+                            <option value="markdown">Markdown</option>
+                            <option value="json">JSON</option>
+                            <option value="text">Plain Text</option>
+                        </select>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ghost modal-cancel">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Export</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div id="loading" class="loading-overlay hidden">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+
+        <!-- Toast Notifications -->
+        <div id="toast-container" class="toast-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
