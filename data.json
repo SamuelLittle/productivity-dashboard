@@ -262,13 +262,6 @@
       {
         "projectId": "proj_sample1",
         "taskId": "task_2",
-        "subtaskId": "subtask_2",
-        "scheduledAt": "2026-01-19T21:51:37.698Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "proj_sample1",
-        "taskId": "task_2",
         "subtaskId": "subtask_3",
         "scheduledAt": "2026-01-19T21:51:37.698Z",
         "completedOnDay": false
@@ -305,5 +298,5 @@
       "completedAt": "2025-01-16T14:00:00.000Z"
     }
   ],
-  "lastUpdated": "2026-01-19T21:51:37.698Z"
+  "lastUpdated": "2026-01-19T21:51:47.378Z"
 }
