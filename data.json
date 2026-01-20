@@ -435,6 +435,15 @@
           "completed": false,
           "createdAt": "2026-01-20T16:19:48.769Z",
           "subtasks": []
+        },
+        {
+          "id": "mkmsy72n9wkp209y165",
+          "title": "iAstro Supernatant Luminex Screen",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T16:22:17.423Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -644,6 +653,13 @@
         "subtaskId": "mklut3v9xiajfvhkbm8",
         "scheduledAt": "2026-01-20T14:19:42.418Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mkmsy72n9wkp209y165",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-20T16:22:17.424Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-21": [
@@ -819,7 +835,7 @@
       "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T16:19:48.769Z",
+  "lastUpdated": "2026-01-20T16:22:17.424Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
