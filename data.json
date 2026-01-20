@@ -207,7 +207,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-20T00:06:25.447Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mklu4eak1mc3kdz2kaz",
+              "title": "Project readouts list",
+              "description": "Make list of project readouts to give Justin an idea of the capabilities required for this project. ",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T00:07:20.156Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -393,5 +402,5 @@
       "completedAt": "2025-01-16T14:00:00.000Z"
     }
   ],
-  "lastUpdated": "2026-01-20T00:06:25.447Z"
+  "lastUpdated": "2026-01-20T00:07:20.156Z"
 }
