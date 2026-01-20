@@ -323,6 +323,15 @@
           "completed": false,
           "createdAt": "2026-01-20T16:37:18.912Z",
           "subtasks": []
+        },
+        {
+          "id": "mkn0igezgk2t0n91d6u",
+          "title": "Automating NK cell screen with pCell",
+          "description": "Enabling automation of large scale NK cell screen",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T19:53:59.963Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -910,7 +919,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T19:50:58.990Z",
+  "lastUpdated": "2026-01-20T19:53:59.963Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
