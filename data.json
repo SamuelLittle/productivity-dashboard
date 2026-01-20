@@ -245,6 +245,15 @@
               "createdAt": "2026-01-20T00:07:20.156Z"
             }
           ]
+        },
+        {
+          "id": "mklvsgrboq443ll7wi",
+          "title": "Pilot killing assay",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T00:54:02.711Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -491,6 +500,13 @@
         "subtaskId": null,
         "scheduledAt": "2026-01-20T00:26:13.058Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mklvsgrboq443ll7wi",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-20T00:54:02.711Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-21": [
@@ -611,5 +627,5 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T00:53:10.521Z"
+  "lastUpdated": "2026-01-20T00:54:02.711Z"
 }
