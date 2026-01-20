@@ -605,8 +605,9 @@
               "title": "i7 Test run",
               "description": "run i7 protocol to ensure smooth operation prior to getting plates out\n",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T16:26:23.295Z"
+              "completed": true,
+              "createdAt": "2026-01-20T16:26:23.295Z",
+              "completedAt": "2026-01-20T23:54:14.667Z"
             },
             {
               "id": "mkn5202q853nkns38kg",
@@ -821,7 +822,10 @@
         "taskId": "mkmsy72n9wkp209y165",
         "subtaskId": "mkmt3gsfhitw1biyfct",
         "scheduledAt": "2026-01-20T20:24:31.481Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-20T23:54:14.667Z",
+        "completionNotes": "Protocol seems to run smoothly. Empty tip box in top left corner not needed. Need to have good plate labelling. Very hard to see liquid. Also print out plate grids may be helpful.  ",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -1116,9 +1120,18 @@
       "subtaskId": "mkn3jtuypfmqhhsqge",
       "title": "Submit luminex request for Tregs ",
       "completedAt": "2026-01-20T22:33:55.380Z"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkmsy72n9wkp209y165",
+      "subtaskId": "mkmt3gsfhitw1biyfct",
+      "completedAt": "2026-01-20T23:54:14.667Z",
+      "completionNotes": "Protocol seems to run smoothly. Empty tip box in top left corner not needed. Need to have good plate labelling. Very hard to see liquid. Also print out plate grids may be helpful.  ",
+      "completionLinks": "",
+      "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T23:22:11.280Z",
+  "lastUpdated": "2026-01-20T23:54:14.667Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
