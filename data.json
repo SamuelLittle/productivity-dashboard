@@ -426,8 +426,9 @@
               "title": "Make macrophage differentiation media",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T00:11:23.022Z"
+              "completed": true,
+              "createdAt": "2026-01-20T00:11:23.022Z",
+              "completedAt": "2026-01-20T21:55:07.462Z"
             },
             {
               "id": "mklu9x8uztbnqh3ddbl",
@@ -737,7 +738,10 @@
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mklu9lou6cliuwjrbul",
         "scheduledAt": "2026-01-20T01:18:29.008Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-20T21:55:07.462Z",
+        "completionNotes": "3x 5mL aliiquots made for M0, M1, and M2 macrophages (i each). Need to order more M-CSF.",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -1022,9 +1026,18 @@
       "completionNotes": "Monocyte KO protocol written in benchling and sent to Christine for comment. \n",
       "completionLinks": "https://gene.benchling.com/s/etr-iY0rvJncAN2AyRGh733R?m=slm-r1UtKfPevd2Dkzq2de60",
       "date": "2026-01-20"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mklu9lou6cliuwjrbul",
+      "completedAt": "2026-01-20T21:55:07.462Z",
+      "completionNotes": "3x 5mL aliiquots made for M0, M1, and M2 macrophages (i each). Need to order more M-CSF.",
+      "completionLinks": "",
+      "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T21:21:39.332Z",
+  "lastUpdated": "2026-01-20T21:55:07.462Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
