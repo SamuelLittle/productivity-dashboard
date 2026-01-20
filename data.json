@@ -443,7 +443,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-20T16:22:17.423Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mkmt2nb1kfc39bh8tcj",
+              "title": "Prepare replating protocol",
+              "description": "Prepare protocol using i7 along with multi channel pipette for repositioning supernatant from storage plate to luminex appropriate plate. ",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T16:25:45.085Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -835,7 +844,7 @@
       "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T16:22:17.424Z",
+  "lastUpdated": "2026-01-20T16:25:45.086Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
