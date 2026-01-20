@@ -434,6 +434,15 @@
               "createdAt": "2026-01-20T16:08:36.963Z"
             }
           ]
+        },
+        {
+          "id": "mkn0e9s5qbl61liiujc",
+          "title": "Imaging different macrophage flavours",
+          "description": "Obtaining high quality 20x BF images for analysis by GNE postdoc.",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T19:50:44.741Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -885,7 +894,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T19:49:54.513Z",
+  "lastUpdated": "2026-01-20T19:50:44.741Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
