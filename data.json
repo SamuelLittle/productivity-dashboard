@@ -357,7 +357,9 @@
               "description": "",
               "priority": "medium",
               "completed": false,
-              "createdAt": "2026-01-20T00:11:37.998Z"
+              "createdAt": "2026-01-20T00:11:37.998Z",
+              "notes": "",
+              "links": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit"
             },
             {
               "id": "mklua7fi5tb0qt34jlc",
@@ -876,7 +878,7 @@
       "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T16:54:04.498Z",
+  "lastUpdated": "2026-01-20T17:34:07.055Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
