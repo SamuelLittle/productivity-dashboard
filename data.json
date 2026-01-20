@@ -207,6 +207,15 @@
               "createdAt": "2026-01-20T00:26:33.045Z"
             }
           ]
+        },
+        {
+          "id": "mklvrchlpys3nvusoaj",
+          "title": "High Throughput scRNAseq Screening meeting",
+          "description": "Meeting with Katie and Anne to discuss high throughput scRNAseq using 10x flex system",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T00:53:10.521Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -554,6 +563,13 @@
         "subtaskId": "mklut3v9xiajfvhkbm8",
         "scheduledAt": "2026-01-20T00:26:36.848Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mklvrchlpys3nvusoaj",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-20T00:53:10.521Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -595,5 +611,5 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T00:26:36.848Z"
+  "lastUpdated": "2026-01-20T00:53:10.521Z"
 }
