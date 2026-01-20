@@ -457,6 +457,16 @@
         "completionNotes": "kinda works",
         "completionLinks": ""
       }
+    ],
+    "2026-01-20": [
+      {
+        "id": "mkms6sa151ro22ccxy4",
+        "title": "Meet with Sarah from CALM",
+        "description": "Discuss imaging options for BF 20x images of different flavours of macrophages and incucyte with 384 well plate for phagocytosis assay\n",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-01-20T16:00:58.537Z"
+      }
     ]
   },
   "scheduledItems": {
@@ -760,7 +770,7 @@
       "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T14:48:32.956Z",
+  "lastUpdated": "2026-01-20T16:00:58.537Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
