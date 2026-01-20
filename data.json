@@ -233,7 +233,7 @@
           "title": "Meeting with Justin re: using the Hive",
           "description": "Meet with Justin to discuss the possibility of using the hive (specfically the pCell) for this screen",
           "priority": "medium",
-          "completed": true,
+          "completed": false,
           "createdAt": "2026-01-20T00:06:25.447Z",
           "subtasks": [
             {
@@ -246,7 +246,9 @@
               "completedAt": "2026-01-20T14:26:24.298Z"
             }
           ],
-          "completedAt": "2026-01-20T14:26:24.298Z"
+          "completedAt": null,
+          "completionNotes": null,
+          "completionLinks": null
         },
         {
           "id": "mklvsgrboq443ll7wi",
@@ -544,7 +546,10 @@
         "taskId": "mklu382vfgedlfuwiwp",
         "subtaskId": null,
         "scheduledAt": "2026-01-20T00:06:25.447Z",
-        "completedOnDay": false
+        "completedOnDay": false,
+        "completedAt": null,
+        "completionNotes": null,
+        "completionLinks": null
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -726,7 +731,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T14:26:24.298Z",
+  "lastUpdated": "2026-01-20T14:48:07.595Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
