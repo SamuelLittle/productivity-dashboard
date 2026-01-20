@@ -253,7 +253,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-20T00:54:02.711Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mklvt4wgf7f7a1nlide",
+              "title": "Isolate T cells and NK cells (from separate donors)",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T00:54:34.000Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -627,5 +636,5 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T00:54:02.711Z"
+  "lastUpdated": "2026-01-20T00:54:34.000Z"
 }
