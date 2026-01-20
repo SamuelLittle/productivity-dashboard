@@ -397,6 +397,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-20T02:10:19.650Z"
+            },
+            {
+              "id": "mkmsg26ittknmc9rlw8",
+              "title": "Recover supernatant",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T16:08:11.274Z"
             }
           ]
         }
@@ -697,6 +705,15 @@
         "scheduledAt": "2026-01-20T02:10:19.651Z",
         "completedOnDay": false
       }
+    ],
+    "2026-01-28": [
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mklu8roio6ns8a57jp",
+        "subtaskId": "mkmsg26ittknmc9rlw8",
+        "scheduledAt": "2026-01-20T16:08:11.274Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -770,7 +787,7 @@
       "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T16:01:35.052Z",
+  "lastUpdated": "2026-01-20T16:08:11.274Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
