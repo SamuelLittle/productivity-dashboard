@@ -3,16 +3,13 @@
  * A personal task management app that syncs with GitHub
  */
 
-// Configuration - Update these values for your setup
+// Configuration
 const CONFIG = {
-    // GitHub OAuth App credentials (create at https://github.com/settings/developers)
     clientId: 'YOUR_GITHUB_CLIENT_ID',
-    // Your GitHub username and repo name where data.json will be stored
     owner: 'SamuelLittle',
     repo: 'productivity-dashboard',
     branch: 'main',
     dataFile: 'data.json',
-    // OAuth proxy service (needed because GitHub OAuth requires a backend)
     authProxy: null
 };
 
@@ -23,13 +20,15 @@ let state = {
     data: null,
     currentView: 'today',
     currentProject: null,
-    fileSha: null
+    fileSha: null,
+    calendarDate: new Date(),
+    selectedDate: null,
+    showCompleted: true
 };
 
 // DOM Elements
 const elements = {};
 
-// Initialize DOM elements after page loads
 function initElements() {
     Object.assign(elements, {
         authScreen: document.getElementById('auth-screen'),
@@ -103,17 +102,76 @@ function initElements() {
         archiveEmpty: document.getElementById('archive-empty'),
         projectDetailTitle: document.getElementById('project-detail-title'),
         projectTasks: document.getElementById('project-tasks'),
-        projectProgress: document.getElementById('project-progress')
+        projectProgress: document.getElementById('project-progress'),
+        // Calendar
+        calendarGrid: document.getElementById('calendar-grid'),
+        calendarMonthYear: document.getElementById('calendar-month-year'),
+        calendarPrevBtn: document.getElementById('calendar-prev'),
+        calendarNextBtn: document.getElementById('calendar-next'),
+        calendarTodayBtn: document.getElementById('calendar-today-btn'),
+        // Day detail modal
+        dayDetailModal: document.getElementById('day-detail-modal'),
+        dayDetailDate: document.getElementById('day-detail-date'),
+        dayDetailTasks: document.getElementById('day-detail-tasks'),
+        dayDetailPrevBtn: document.getElementById('day-detail-prev'),
+        dayDetailNextBtn: document.getElementById('day-detail-next'),
+        dayDetailAddBtn: document.getElementById('day-detail-add-btn'),
+        // Reschedule modal
+        rescheduleModal: document.getElementById('reschedule-modal'),
+        rescheduleTaskInfo: document.getElementById('reschedule-task-info'),
+        rescheduleCustomDate: document.getElementById('reschedule-custom-date'),
+        rescheduleCustomBtn: document.getElementById('reschedule-custom-btn')
     });
 }
 
-// Utility Functions
+// ============================================
+// DATE UTILITY FUNCTIONS (FIXED FOR TIMEZONE)
+// ============================================
+
+// Get local date string in YYYY-MM-DD format
+function getLocalDateString(date = new Date()) {
+    const d = new Date(date);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+function getToday() {
+    return getLocalDateString(new Date());
+}
+
+function getYesterday() {
+    const date = new Date();
+    date.setDate(date.getDate() - 1);
+    return getLocalDateString(date);
+}
+
+function getTomorrow() {
+    const date = new Date();
+    date.setDate(date.getDate() + 1);
+    return getLocalDateString(date);
+}
+
+function getNextWeek() {
+    const date = new Date();
+    date.setDate(date.getDate() + 7);
+    return getLocalDateString(date);
+}
+
+function getDateFromString(dateString) {
+    // Parse YYYY-MM-DD string into local date
+    const [year, month, day] = dateString.split('-').map(Number);
+    return new Date(year, month - 1, day);
+}
+
 function generateId() {
     return Date.now().toString(36) + Math.random().toString(36).substr(2);
 }
 
-function formatDate(date) {
-    return new Date(date).toLocaleDateString('en-US', {
+function formatDate(dateInput) {
+    const date = typeof dateInput === 'string' ? getDateFromString(dateInput) : new Date(dateInput);
+    return date.toLocaleDateString('en-US', {
         weekday: 'long',
         year: 'numeric',
         month: 'long',
@@ -121,52 +179,34 @@ function formatDate(date) {
     });
 }
 
-function formatShortDate(date) {
-    return new Date(date).toLocaleDateString('en-US', {
+function formatShortDate(dateInput) {
+    const date = typeof dateInput === 'string' ? getDateFromString(dateInput) : new Date(dateInput);
+    return date.toLocaleDateString('en-US', {
         month: 'short',
         day: 'numeric'
     });
 }
 
-function getToday() {
-    return new Date().toISOString().split('T')[0];
-}
-
-function getYesterday() {
-    const date = new Date();
-    date.setDate(date.getDate() - 1);
-    return date.toISOString().split('T')[0];
-}
-
-function getTomorrow() {
-    const date = new Date();
-    date.setDate(date.getDate() + 1);
-    return date.toISOString().split('T')[0];
-}
-
-function getNextWeek() {
-    const date = new Date();
-    date.setDate(date.getDate() + 7);
-    return date.toISOString().split('T')[0];
-}
-
 function showLoading() {
-    elements.loading.classList.remove('hidden');
+    elements.loading?.classList.remove('hidden');
 }
 
 function hideLoading() {
-    elements.loading.classList.add('hidden');
+    elements.loading?.classList.add('hidden');
 }
 
 function showToast(message, type = 'info') {
     const toast = document.createElement('div');
     toast.className = `toast ${type}`;
     toast.textContent = message;
-    elements.toastContainer.appendChild(toast);
+    elements.toastContainer?.appendChild(toast);
     setTimeout(() => toast.remove(), 3000);
 }
 
-// Authentication
+// ============================================
+// AUTHENTICATION
+// ============================================
+
 function initAuth() {
     const storedToken = localStorage.getItem('github_token');
     const storedUser = localStorage.getItem('github_user');
@@ -238,7 +278,10 @@ function showDashboard() {
     elements.exportMonth.value = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
 }
 
-// Data Management
+// ============================================
+// DATA MANAGEMENT
+// ============================================
+
 async function loadData() {
     showLoading();
     try {
@@ -254,8 +297,6 @@ async function loadData() {
             state.fileSha = fileData.sha;
             const content = atob(fileData.content);
             state.data = JSON.parse(content);
-
-            // Migrate old data structure if needed
             migrateDataStructure();
         } else if (response.status === 404) {
             state.data = createInitialData();
@@ -267,7 +308,7 @@ async function loadData() {
         renderAllViews();
     } catch (error) {
         console.error('Load data error:', error);
-        showToast('Failed to load data', 'error');
+        showToast('Failed to load data from GitHub', 'error');
 
         const localData = localStorage.getItem('dashboard_data');
         if (localData) {
@@ -282,21 +323,16 @@ async function loadData() {
     hideLoading();
 }
 
-// Migrate old data structure to new reference-based structure
 function migrateDataStructure() {
     if (!state.data.scheduledItems) {
         state.data.scheduledItems = {};
     }
-
-    // Convert old dailyLists format if needed
-    Object.keys(state.data.dailyLists || {}).forEach(date => {
-        const items = state.data.dailyLists[date];
-        if (items && items.length > 0 && items[0].title && !items[0].type) {
-            // Old format - has full task data, not references
-            // Keep standalone tasks, convert project tasks to references
-            state.data.dailyLists[date] = items.filter(item => !item.projectId);
-        }
-    });
+    if (!state.data.dailyLists) {
+        state.data.dailyLists = {};
+    }
+    if (!state.data.completedTasks) {
+        state.data.completedTasks = [];
+    }
 }
 
 async function saveData() {
@@ -342,14 +378,17 @@ async function saveData() {
 function createInitialData() {
     return {
         projects: [],
-        dailyLists: {},        // For standalone tasks (not from projects)
-        scheduledItems: {},    // For references to project tasks: { "2025-01-20": [{ projectId, taskId, subtaskId? }] }
+        dailyLists: {},
+        scheduledItems: {},
         completedTasks: [],
         lastUpdated: new Date().toISOString()
     };
 }
 
-// Get task data from project by reference
+// ============================================
+// TASK DATA HELPERS
+// ============================================
+
 function getTaskFromProject(projectId, taskId, subtaskId = null) {
     const project = state.data.projects.find(p => p.id === projectId);
     if (!project) return null;
@@ -383,24 +422,107 @@ function getTaskFromProject(projectId, taskId, subtaskId = null) {
     };
 }
 
-// View Rendering
+function getTasksForDate(date, includeCompleted = true) {
+    const tasks = [];
+
+    // Get scheduled project tasks for this date
+    const scheduledRefs = (state.data.scheduledItems || {})[date] || [];
+    scheduledRefs.forEach(ref => {
+        const task = getTaskFromProject(ref.projectId, ref.taskId, ref.subtaskId);
+        if (task) {
+            const taskWithStatus = {
+                ...task,
+                completedOnDay: ref.completedOnDay,
+                completionNotes: ref.completionNotes,
+                completionLinks: ref.completionLinks,
+                scheduledRef: ref
+            };
+            if (includeCompleted || !ref.completedOnDay) {
+                tasks.push(taskWithStatus);
+            }
+        }
+    });
+
+    // Get standalone tasks for this date
+    const standaloneTasks = (state.data.dailyLists || {})[date] || [];
+    standaloneTasks.forEach(task => {
+        if (includeCompleted || !task.completed) {
+            tasks.push({ ...task, isStandalone: true });
+        }
+    });
+
+    // Sort: incomplete first, then by priority
+    const priorityOrder = { high: 0, medium: 1, low: 2 };
+    tasks.sort((a, b) => {
+        const aCompleted = a.completedOnDay || a.completed;
+        const bCompleted = b.completedOnDay || b.completed;
+        if (aCompleted !== bCompleted) return aCompleted ? 1 : -1;
+        return (priorityOrder[a.priority] || 1) - (priorityOrder[b.priority] || 1);
+    });
+
+    return tasks;
+}
+
+function getScheduledDatesForTask(projectId, taskId, subtaskId = null) {
+    const dates = [];
+    Object.entries(state.data.scheduledItems || {}).forEach(([date, items]) => {
+        items.forEach(ref => {
+            if (ref.projectId === projectId && ref.taskId === taskId) {
+                if (subtaskId === null || ref.subtaskId === subtaskId) {
+                    dates.push(date);
+                }
+            }
+        });
+    });
+    return dates.sort();
+}
+
+// Get date status for calendar indicators
+function getDateStatus(date) {
+    const today = getToday();
+    const tasks = getTasksForDate(date, true);
+
+    if (tasks.length === 0) return null;
+
+    const completed = tasks.filter(t => t.completedOnDay || t.completed).length;
+    const incomplete = tasks.length - completed;
+
+    if (date < today) {
+        // Past date
+        if (incomplete > 0) return 'past-incomplete';
+        return 'past-complete';
+    } else if (date === today) {
+        return 'today';
+    } else {
+        // Future date
+        return 'future';
+    }
+}
+
+// ============================================
+// VIEW RENDERING
+// ============================================
+
 function renderAllViews() {
     renderTodayView();
     renderYesterdayView();
     renderScheduledView();
     renderProjectsView();
     renderArchiveView();
+    renderCalendar();
     updateProjectSelector();
 }
 
 function renderTodayView() {
     const today = getToday();
-    const tasks = getTasksForDate(today);
+    const tasks = getTasksForDate(today, true); // Include completed tasks
 
     elements.todayTasks.innerHTML = '';
-    elements.todayEmpty.classList.toggle('hidden', tasks.length > 0);
 
-    tasks.forEach(task => {
+    const visibleTasks = state.showCompleted ? tasks : tasks.filter(t => !(t.completedOnDay || t.completed));
+    elements.todayEmpty.classList.toggle('hidden', visibleTasks.length > 0);
+
+    visibleTasks.forEach(task => {
         elements.todayTasks.appendChild(createDailyTaskElement(task, today));
     });
 }
@@ -413,7 +535,7 @@ function renderYesterdayView() {
     elements.yesterdayEmpty.classList.toggle('hidden', tasks.length > 0);
 
     tasks.forEach(task => {
-        elements.yesterdayTasks.appendChild(createDailyTaskElement(task, yesterday, true));
+        elements.yesterdayTasks.appendChild(createDailyTaskElement(task, yesterday, false));
     });
 }
 
@@ -426,9 +548,9 @@ function renderScheduledView() {
         if (date > today) {
             items.forEach(ref => {
                 const task = getTaskFromProject(ref.projectId, ref.taskId, ref.subtaskId);
-                if (task && !task.completed) {
+                if (task && !ref.completedOnDay) {
                     if (!scheduled[date]) scheduled[date] = [];
-                    scheduled[date].push(task);
+                    scheduled[date].push({ ...task, scheduledRef: ref });
                 }
             });
         }
@@ -497,7 +619,6 @@ function renderProjectDetail(projectId) {
     state.currentProject = projectId;
     elements.projectDetailTitle.textContent = project.name;
 
-    // Render tasks
     elements.projectTasks.innerHTML = '';
     project.tasks.forEach(task => {
         elements.projectTasks.appendChild(createProjectTaskElement(task, project));
@@ -507,7 +628,6 @@ function renderProjectDetail(projectId) {
         elements.projectTasks.innerHTML = '<p class="empty-state">No tasks yet</p>';
     }
 
-    // Render progress updates
     elements.projectProgress.innerHTML = '';
     const updates = (project.progressUpdates || []).slice().reverse();
     updates.forEach(update => {
@@ -530,64 +650,150 @@ function renderProjectDetail(projectId) {
     switchView('project-detail');
 }
 
-function getTasksForDate(date, includeCompleted = false) {
-    const tasks = [];
+// ============================================
+// CALENDAR VIEW
+// ============================================
 
-    // Get scheduled project tasks for this date
-    const scheduledRefs = (state.data.scheduledItems || {})[date] || [];
-    scheduledRefs.forEach(ref => {
-        const task = getTaskFromProject(ref.projectId, ref.taskId, ref.subtaskId);
-        if (task) {
-            // Check daily completion status
-            const dailyCompletion = ref.completedOnDay;
-            const taskWithStatus = {
-                ...task,
-                completedOnDay: dailyCompletion,
-                scheduledRef: ref
-            };
-            if (includeCompleted || !dailyCompletion) {
-                tasks.push(taskWithStatus);
-            }
-        }
+function renderCalendar() {
+    if (!elements.calendarGrid || !elements.calendarMonthYear) return;
+
+    const year = state.calendarDate.getFullYear();
+    const month = state.calendarDate.getMonth();
+    const today = getToday();
+
+    // Update header
+    elements.calendarMonthYear.textContent = new Date(year, month, 1).toLocaleDateString('en-US', {
+        month: 'long',
+        year: 'numeric'
     });
 
-    // Get standalone tasks for this date
-    const standaloneTasks = (state.data.dailyLists || {})[date] || [];
-    standaloneTasks.forEach(task => {
-        if (includeCompleted || !task.completed) {
-            tasks.push({ ...task, isStandalone: true });
-        }
-    });
+    // Get first day of month and total days
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const daysInPrevMonth = new Date(year, month, 0).getDate();
 
-    // Sort by priority
-    const priorityOrder = { high: 0, medium: 1, low: 2 };
-    tasks.sort((a, b) => {
-        const aCompleted = a.completedOnDay || a.completed;
-        const bCompleted = b.completedOnDay || b.completed;
-        if (aCompleted !== bCompleted) return aCompleted ? 1 : -1;
-        return (priorityOrder[a.priority] || 1) - (priorityOrder[b.priority] || 1);
-    });
+    // Build calendar grid
+    let html = `
+        <div class="calendar-header-row">
+            <div class="calendar-day-name">Sun</div>
+            <div class="calendar-day-name">Mon</div>
+            <div class="calendar-day-name">Tue</div>
+            <div class="calendar-day-name">Wed</div>
+            <div class="calendar-day-name">Thu</div>
+            <div class="calendar-day-name">Fri</div>
+            <div class="calendar-day-name">Sat</div>
+        </div>
+        <div class="calendar-days">
+    `;
 
-    return tasks;
-}
+    // Previous month days
+    for (let i = firstDay - 1; i >= 0; i--) {
+        const day = daysInPrevMonth - i;
+        const prevMonth = month === 0 ? 11 : month - 1;
+        const prevYear = month === 0 ? year - 1 : year;
+        const dateStr = getLocalDateString(new Date(prevYear, prevMonth, day));
+        const status = getDateStatus(dateStr);
+        html += `<div class="calendar-day other-month${status ? ' has-tasks' : ''}" data-date="${dateStr}">
+            <span class="day-number">${day}</span>
+            ${status ? `<span class="day-indicator ${status}"></span>` : ''}
+        </div>`;
+    }
 
-// Get all dates a task is scheduled for
-function getScheduledDatesForTask(projectId, taskId, subtaskId = null) {
-    const dates = [];
-    Object.entries(state.data.scheduledItems || {}).forEach(([date, items]) => {
-        items.forEach(ref => {
-            if (ref.projectId === projectId && ref.taskId === taskId) {
-                if (subtaskId === null || ref.subtaskId === subtaskId) {
-                    dates.push(date);
-                }
-            }
+    // Current month days
+    for (let day = 1; day <= daysInMonth; day++) {
+        const dateStr = getLocalDateString(new Date(year, month, day));
+        const isToday = dateStr === today;
+        const status = getDateStatus(dateStr);
+        const tasks = getTasksForDate(dateStr, true);
+        const taskCount = tasks.length;
+
+        html += `<div class="calendar-day${isToday ? ' today' : ''}${status ? ' has-tasks' : ''}" data-date="${dateStr}">
+            <span class="day-number">${day}</span>
+            ${taskCount > 0 ? `<span class="day-indicator ${status}" title="${taskCount} task${taskCount > 1 ? 's' : ''}">${taskCount}</span>` : ''}
+        </div>`;
+    }
+
+    // Next month days
+    const totalCells = Math.ceil((firstDay + daysInMonth) / 7) * 7;
+    const remainingCells = totalCells - (firstDay + daysInMonth);
+    for (let day = 1; day <= remainingCells; day++) {
+        const nextMonth = month === 11 ? 0 : month + 1;
+        const nextYear = month === 11 ? year + 1 : year;
+        const dateStr = getLocalDateString(new Date(nextYear, nextMonth, day));
+        const status = getDateStatus(dateStr);
+        html += `<div class="calendar-day other-month${status ? ' has-tasks' : ''}" data-date="${dateStr}">
+            <span class="day-number">${day}</span>
+            ${status ? `<span class="day-indicator ${status}"></span>` : ''}
+        </div>`;
+    }
+
+    html += '</div>';
+    elements.calendarGrid.innerHTML = html;
+
+    // Add click handlers
+    elements.calendarGrid.querySelectorAll('.calendar-day').forEach(dayEl => {
+        dayEl.addEventListener('click', () => {
+            const date = dayEl.dataset.date;
+            openDayDetail(date);
         });
     });
-    return dates.sort();
 }
 
-// Create task element for daily views (Today, Yesterday, Scheduled)
-function createDailyTaskElement(task, date, readonly = false) {
+function navigateCalendar(direction) {
+    const newDate = new Date(state.calendarDate);
+    newDate.setMonth(newDate.getMonth() + direction);
+    state.calendarDate = newDate;
+    renderCalendar();
+}
+
+function jumpToToday() {
+    state.calendarDate = new Date();
+    renderCalendar();
+}
+
+// ============================================
+// DAY DETAIL MODAL
+// ============================================
+
+function openDayDetail(date) {
+    state.selectedDate = date;
+
+    if (!elements.dayDetailModal) return;
+
+    elements.dayDetailDate.textContent = formatDate(date);
+    renderDayDetailTasks(date);
+    elements.dayDetailModal.classList.remove('hidden');
+}
+
+function renderDayDetailTasks(date) {
+    const tasks = getTasksForDate(date, true);
+
+    elements.dayDetailTasks.innerHTML = '';
+
+    if (tasks.length === 0) {
+        elements.dayDetailTasks.innerHTML = '<p class="empty-state">No tasks scheduled for this day</p>';
+        return;
+    }
+
+    tasks.forEach(task => {
+        elements.dayDetailTasks.appendChild(createDailyTaskElement(task, date, false));
+    });
+}
+
+function navigateDayDetail(direction) {
+    const currentDate = getDateFromString(state.selectedDate);
+    currentDate.setDate(currentDate.getDate() + direction);
+    const newDate = getLocalDateString(currentDate);
+    state.selectedDate = newDate;
+    elements.dayDetailDate.textContent = formatDate(newDate);
+    renderDayDetailTasks(newDate);
+}
+
+// ============================================
+// TASK ELEMENT CREATION
+// ============================================
+
+function createDailyTaskElement(task, date, allowReschedule = true) {
     const div = document.createElement('div');
     const isCompleted = task.completedOnDay || task.completed;
     div.className = `task-item ${isCompleted ? 'completed' : ''} priority-${task.priority || 'medium'}`;
@@ -611,6 +817,13 @@ function createDailyTaskElement(task, date, readonly = false) {
         </span>
     `;
 
+    const completionInfo = isCompleted && (task.completionNotes || task.completionLinks) ? `
+        <div class="task-completion-info">
+            ${task.completionNotes ? `<span class="completion-note">${task.completionNotes}</span>` : ''}
+            ${task.completionLinks ? `<a href="${task.completionLinks}" target="_blank" class="completion-link">${task.completionLinks}</a>` : ''}
+        </div>
+    ` : '';
+
     div.innerHTML = `
         <div class="task-checkbox ${isCompleted ? 'checked' : ''}" data-date="${date}"></div>
         <div class="task-content">
@@ -620,17 +833,26 @@ function createDailyTaskElement(task, date, readonly = false) {
                 ${subtaskIndicator}
                 ${priorityBadge}
             </div>
+            ${completionInfo}
         </div>
-        ${!readonly ? `
-            <div class="task-actions">
-                <button class="task-action-btn" data-action="remove-from-day" title="Remove from this day">
+        <div class="task-actions">
+            ${allowReschedule ? `
+                <button class="task-action-btn" data-action="reschedule" title="Reschedule">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18"/>
-                        <line x1="6" y1="6" x2="18" y2="18"/>
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
                     </svg>
                 </button>
-            </div>
-        ` : ''}
+            ` : ''}
+            <button class="task-action-btn" data-action="remove-from-day" title="Remove from this day">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
     `;
 
     // Checkbox click handler
@@ -651,6 +873,8 @@ function createDailyTaskElement(task, date, readonly = false) {
             const action = btn.dataset.action;
             if (action === 'remove-from-day') {
                 removeTaskFromDay(task, date);
+            } else if (action === 'reschedule') {
+                openRescheduleModal(task, date);
             }
         });
     });
@@ -658,7 +882,6 @@ function createDailyTaskElement(task, date, readonly = false) {
     return div;
 }
 
-// Create task element for project detail view
 function createProjectTaskElement(task, project) {
     const div = document.createElement('div');
     div.className = `task-item ${task.completed ? 'completed' : ''} priority-${task.priority || 'medium'}`;
@@ -837,6 +1060,8 @@ function createProjectCard(project, archived = false) {
 
 function updateProjectSelector() {
     const select = elements.taskProject;
+    if (!select) return;
+
     select.innerHTML = '<option value="">No Project</option>';
 
     state.data.projects
@@ -849,7 +1074,10 @@ function updateProjectSelector() {
         });
 }
 
-// Navigation
+// ============================================
+// NAVIGATION
+// ============================================
+
 function switchView(viewName) {
     state.currentView = viewName;
 
@@ -860,9 +1088,17 @@ function switchView(viewName) {
     elements.views.forEach(view => {
         view.classList.toggle('active', view.id === `view-${viewName}`);
     });
+
+    // Render calendar when switching to calendar view
+    if (viewName === 'calendar') {
+        renderCalendar();
+    }
 }
 
-// Schedule Modal
+// ============================================
+// SCHEDULE MODAL
+// ============================================
+
 function openScheduleModal(projectId, taskId, subtaskId = null, taskTitle = '') {
     elements.scheduleProjectId.value = projectId;
     elements.scheduleTaskId.value = taskId;
@@ -870,7 +1106,6 @@ function openScheduleModal(projectId, taskId, subtaskId = null, taskTitle = '') 
     elements.scheduleTaskTitle.textContent = taskTitle;
     elements.scheduleCustomDate.value = getTomorrow();
 
-    // Show subtasks option if task has subtasks and we're scheduling the parent
     const project = state.data.projects.find(p => p.id === projectId);
     const task = project?.tasks.find(t => t.id === taskId);
     const hasSubtasks = task?.subtasks && task.subtasks.length > 0 && !subtaskId;
@@ -887,13 +1122,12 @@ async function scheduleTaskForDate(date) {
     const projectId = elements.scheduleProjectId.value;
     const taskId = elements.scheduleTaskId.value;
     const subtaskId = elements.scheduleSubtaskId.value || null;
-    const includeSubtasks = elements.scheduleIncludeSubtasks.checked;
+    const includeSubtasks = elements.scheduleIncludeSubtasks?.checked;
 
     if (!state.data.scheduledItems[date]) {
         state.data.scheduledItems[date] = [];
     }
 
-    // Check if already scheduled
     const exists = state.data.scheduledItems[date].some(ref =>
         ref.projectId === projectId &&
         ref.taskId === taskId &&
@@ -909,7 +1143,6 @@ async function scheduleTaskForDate(date) {
             completedOnDay: false
         });
 
-        // If including subtasks and this is a parent task
         if (includeSubtasks && !subtaskId) {
             const project = state.data.projects.find(p => p.id === projectId);
             const task = project?.tasks.find(t => t.id === taskId);
@@ -938,33 +1171,110 @@ async function scheduleTaskForDate(date) {
     await saveData();
     closeAllModals();
     renderAllViews();
+
+    // Re-render project detail if open
+    if (state.currentProject) {
+        renderProjectDetail(state.currentProject);
+    }
+
     showToast(`Task scheduled for ${formatShortDate(date)}`, 'success');
 }
 
-async function removeTaskFromDay(task, date) {
+// ============================================
+// RESCHEDULE MODAL
+// ============================================
+
+let rescheduleTask = null;
+let rescheduleFromDate = null;
+
+function openRescheduleModal(task, fromDate) {
+    rescheduleTask = task;
+    rescheduleFromDate = fromDate;
+
+    if (!elements.rescheduleModal) return;
+
+    elements.rescheduleTaskInfo.textContent = task.title;
+    elements.rescheduleCustomDate.value = getTomorrow();
+    elements.rescheduleModal.classList.remove('hidden');
+}
+
+async function rescheduleTaskToDate(newDate) {
+    if (!rescheduleTask || !rescheduleFromDate) return;
+
+    // Remove from old date
+    await removeTaskFromDay(rescheduleTask, rescheduleFromDate, true);
+
+    // Add to new date
+    if (rescheduleTask.isStandalone) {
+        if (!state.data.dailyLists[newDate]) {
+            state.data.dailyLists[newDate] = [];
+        }
+        state.data.dailyLists[newDate].push({
+            ...rescheduleTask,
+            completed: false,
+            completedAt: null
+        });
+    } else {
+        if (!state.data.scheduledItems[newDate]) {
+            state.data.scheduledItems[newDate] = [];
+        }
+        state.data.scheduledItems[newDate].push({
+            projectId: rescheduleTask.projectId,
+            taskId: rescheduleTask.taskId || rescheduleTask.id,
+            subtaskId: rescheduleTask.subtaskId || null,
+            scheduledAt: new Date().toISOString(),
+            completedOnDay: false
+        });
+    }
+
+    state.data.lastUpdated = new Date().toISOString();
+    await saveData();
+    closeAllModals();
+    renderAllViews();
+
+    // Update day detail if open
+    if (state.selectedDate) {
+        renderDayDetailTasks(state.selectedDate);
+    }
+
+    showToast(`Task rescheduled to ${formatShortDate(newDate)}`, 'success');
+
+    rescheduleTask = null;
+    rescheduleFromDate = null;
+}
+
+async function removeTaskFromDay(task, date, silent = false) {
     if (task.isStandalone) {
-        // Remove standalone task
         if (state.data.dailyLists[date]) {
             state.data.dailyLists[date] = state.data.dailyLists[date].filter(t => t.id !== task.id);
         }
     } else {
-        // Remove scheduled reference
         if (state.data.scheduledItems[date]) {
             state.data.scheduledItems[date] = state.data.scheduledItems[date].filter(ref =>
                 !(ref.projectId === task.projectId &&
-                  ref.taskId === task.taskId &&
+                  ref.taskId === (task.taskId || task.id) &&
                   ref.subtaskId === task.subtaskId)
             );
         }
     }
 
-    state.data.lastUpdated = new Date().toISOString();
-    await saveData();
-    renderAllViews();
-    showToast('Task removed from day', 'success');
+    if (!silent) {
+        state.data.lastUpdated = new Date().toISOString();
+        await saveData();
+        renderAllViews();
+
+        if (state.selectedDate) {
+            renderDayDetailTasks(state.selectedDate);
+        }
+
+        showToast('Task removed from day', 'success');
+    }
 }
 
-// Task Actions
+// ============================================
+// TASK ACTIONS
+// ============================================
+
 function handleProjectTaskAction(action, task, project) {
     switch (action) {
         case 'schedule':
@@ -1028,7 +1338,7 @@ function openCompleteModal(task, date = null, isProjectTask = false) {
     elements.completeTaskId.value = JSON.stringify({
         id: task.id,
         projectId: task.projectId,
-        taskId: task.taskId,
+        taskId: task.taskId || task.id,
         subtaskId: task.subtaskId,
         date: date,
         isStandalone: task.isStandalone,
@@ -1044,8 +1354,12 @@ function closeAllModals() {
     document.querySelectorAll('.modal').forEach(modal => {
         modal.classList.add('hidden');
     });
-    elements.taskProject.disabled = false;
-    elements.taskParentId.value = '';
+    if (elements.taskProject) {
+        elements.taskProject.disabled = false;
+    }
+    if (elements.taskParentId) {
+        elements.taskParentId.value = '';
+    }
 }
 
 async function saveTask(e) {
@@ -1081,7 +1395,6 @@ async function saveTask(e) {
     };
 
     if (parentId && projectId) {
-        // Adding as subtask
         const project = state.data.projects.find(p => p.id === projectId);
         if (project) {
             const parentTask = project.tasks.find(t => t.id === parentId);
@@ -1089,7 +1402,6 @@ async function saveTask(e) {
                 if (!parentTask.subtasks) parentTask.subtasks = [];
                 parentTask.subtasks.push(taskData);
 
-                // Schedule if requested
                 if (scheduledDate) {
                     if (!state.data.scheduledItems[scheduledDate]) {
                         state.data.scheduledItems[scheduledDate] = [];
@@ -1105,7 +1417,6 @@ async function saveTask(e) {
             }
         }
     } else if (projectId) {
-        // Adding to project
         const project = state.data.projects.find(p => p.id === projectId);
         if (project) {
             const existingIndex = project.tasks.findIndex(t => t.id === taskId);
@@ -1120,7 +1431,6 @@ async function saveTask(e) {
                 project.tasks.push(taskData);
             }
 
-            // Schedule if requested
             if (scheduledDate && existingIndex < 0) {
                 if (!state.data.scheduledItems[scheduledDate]) {
                     state.data.scheduledItems[scheduledDate] = [];
@@ -1135,7 +1445,6 @@ async function saveTask(e) {
             }
         }
     } else if (scheduledDate) {
-        // Adding standalone task to daily list
         if (!state.data.dailyLists[scheduledDate]) {
             state.data.dailyLists[scheduledDate] = [];
         }
@@ -1170,13 +1479,10 @@ async function completeTask(e) {
     const links = elements.completeLinks.value;
 
     if (taskInfo.isProjectTask) {
-        // Completing from project view - mark task as complete in project
         await toggleProjectTaskComplete(taskInfo.projectId, taskInfo.id, true, notes, links);
     } else if (taskInfo.isStandalone) {
-        // Completing standalone task
         await toggleStandaloneTaskComplete(taskInfo.id, taskInfo.date, true, notes, links);
     } else {
-        // Completing from daily view - mark as complete for that day
         await toggleDailyTaskComplete(taskInfo, taskInfo.date, true, notes, links);
     }
 
@@ -1189,11 +1495,10 @@ async function toggleDailyTaskComplete(task, date, completed, notes = '', links 
         return;
     }
 
-    // Find the scheduled reference and update it
     const scheduledItems = state.data.scheduledItems[date] || [];
     const ref = scheduledItems.find(r =>
         r.projectId === task.projectId &&
-        r.taskId === task.taskId &&
+        r.taskId === (task.taskId || task.id) &&
         r.subtaskId === task.subtaskId
     );
 
@@ -1204,17 +1509,15 @@ async function toggleDailyTaskComplete(task, date, completed, notes = '', links 
             ref.completionNotes = notes;
             ref.completionLinks = links;
 
-            // Also mark complete in project
             if (task.isSubtask) {
                 await markSubtaskCompleteInProject(task.projectId, task.taskId, task.subtaskId, completed);
             } else {
-                await markTaskCompleteInProject(task.projectId, task.taskId, completed, notes, links);
+                await markTaskCompleteInProject(task.projectId, task.taskId || task.id, completed, notes, links);
             }
 
-            // Track for reporting
             state.data.completedTasks.push({
                 projectId: task.projectId,
-                taskId: task.taskId,
+                taskId: task.taskId || task.id,
                 subtaskId: task.subtaskId,
                 title: task.title,
                 completedAt: new Date().toISOString(),
@@ -1222,12 +1525,27 @@ async function toggleDailyTaskComplete(task, date, completed, notes = '', links 
                 completionLinks: links,
                 date: date
             });
+        } else {
+            ref.completedAt = null;
+            ref.completionNotes = null;
+            ref.completionLinks = null;
+
+            if (task.isSubtask) {
+                await markSubtaskCompleteInProject(task.projectId, task.taskId, task.subtaskId, false);
+            } else {
+                await markTaskCompleteInProject(task.projectId, task.taskId || task.id, false);
+            }
         }
     }
 
     state.data.lastUpdated = new Date().toISOString();
     await saveData();
     renderAllViews();
+
+    if (state.selectedDate) {
+        renderDayDetailTasks(state.selectedDate);
+    }
+
     showToast(completed ? 'Task completed!' : 'Task reopened', 'success');
 }
 
@@ -1260,6 +1578,11 @@ async function toggleStandaloneTaskComplete(taskId, date, completed, notes = '',
     state.data.lastUpdated = new Date().toISOString();
     await saveData();
     renderAllViews();
+
+    if (state.selectedDate) {
+        renderDayDetailTasks(state.selectedDate);
+    }
+
     showToast(completed ? 'Task completed!' : 'Task reopened', 'success');
 }
 
@@ -1279,6 +1602,20 @@ async function toggleProjectTaskComplete(projectId, taskId, completed, notes = '
             completionLinks: links
         });
     }
+
+    // Also update any scheduled references
+    Object.entries(state.data.scheduledItems).forEach(([date, items]) => {
+        items.forEach(ref => {
+            if (ref.projectId === projectId && ref.taskId === taskId && !ref.subtaskId) {
+                ref.completedOnDay = completed;
+                if (completed) {
+                    ref.completedAt = new Date().toISOString();
+                    ref.completionNotes = notes;
+                    ref.completionLinks = links;
+                }
+            }
+        });
+    });
 
     state.data.lastUpdated = new Date().toISOString();
     await saveData();
@@ -1304,7 +1641,6 @@ async function markTaskCompleteInProject(projectId, taskId, completed, notes = '
         task.completionNotes = notes;
         task.completionLinks = links;
 
-        // Mark all subtasks as complete too
         if (task.subtasks) {
             task.subtasks.forEach(st => {
                 st.completed = true;
@@ -1331,13 +1667,11 @@ async function markSubtaskCompleteInProject(projectId, taskId, subtaskId, comple
     subtask.completed = completed;
     subtask.completedAt = completed ? new Date().toISOString() : null;
 
-    // Check if all subtasks are complete - auto-complete parent
     if (completed && task.subtasks.every(st => st.completed)) {
         task.completed = true;
         task.completedAt = new Date().toISOString();
         showToast('All subtasks complete - parent task auto-completed!', 'success');
     } else if (!completed && task.completed) {
-        // Reopen parent if a subtask is reopened
         task.completed = false;
         task.completedAt = null;
     }
@@ -1356,7 +1690,6 @@ async function toggleSubtaskComplete(projectId, taskId, subtaskId) {
     const newCompleted = !subtask.completed;
     await markSubtaskCompleteInProject(projectId, taskId, subtaskId, newCompleted);
 
-    // Also update any scheduled references
     Object.values(state.data.scheduledItems).forEach(items => {
         items.forEach(ref => {
             if (ref.projectId === projectId && ref.taskId === taskId && ref.subtaskId === subtaskId) {
@@ -1392,7 +1725,6 @@ async function deleteProjectTask(projectId, taskId) {
     if (project) {
         project.tasks = project.tasks.filter(t => t.id !== taskId);
 
-        // Remove all scheduled references
         Object.keys(state.data.scheduledItems).forEach(date => {
             state.data.scheduledItems[date] = state.data.scheduledItems[date].filter(ref =>
                 !(ref.projectId === projectId && ref.taskId === taskId)
@@ -1411,7 +1743,10 @@ async function deleteProjectTask(projectId, taskId) {
     showToast('Task deleted', 'success');
 }
 
-// Project Actions
+// ============================================
+// PROJECT ACTIONS
+// ============================================
+
 function openProjectModal(project = null) {
     elements.projectModalTitle.textContent = project ? 'Edit Project' : 'New Project';
     elements.projectForm.reset();
@@ -1508,7 +1843,10 @@ async function saveProgress(e) {
     }
 }
 
-// Export
+// ============================================
+// EXPORT
+// ============================================
+
 function openExportModal() {
     elements.exportModal.classList.remove('hidden');
 }
@@ -1605,11 +1943,14 @@ function exportReport(e) {
     showToast('Report exported', 'success');
 }
 
-// Event Listeners
+// ============================================
+// EVENT LISTENERS
+// ============================================
+
 function initEventListeners() {
     // Auth
-    elements.authBtn.addEventListener('click', handleLogin);
-    elements.logoutBtn.addEventListener('click', handleLogout);
+    elements.authBtn?.addEventListener('click', handleLogin);
+    elements.logoutBtn?.addEventListener('click', handleLogout);
 
     // Navigation
     elements.navItems.forEach(item => {
@@ -1617,25 +1958,25 @@ function initEventListeners() {
     });
 
     // Add buttons
-    document.getElementById('add-task-btn').addEventListener('click', () => openTaskModal());
-    document.getElementById('add-project-btn').addEventListener('click', () => openProjectModal());
-    document.getElementById('add-project-task-btn').addEventListener('click', () => {
+    document.getElementById('add-task-btn')?.addEventListener('click', () => openTaskModal());
+    document.getElementById('add-project-btn')?.addEventListener('click', () => openProjectModal());
+    document.getElementById('add-project-task-btn')?.addEventListener('click', () => {
         openTaskModal(null, state.currentProject);
     });
-    document.getElementById('add-progress-btn').addEventListener('click', openProgressModal);
-    document.getElementById('archive-project-btn').addEventListener('click', archiveProject);
-    document.getElementById('back-to-projects').addEventListener('click', () => switchView('projects'));
-    elements.exportBtn.addEventListener('click', openExportModal);
+    document.getElementById('add-progress-btn')?.addEventListener('click', openProgressModal);
+    document.getElementById('archive-project-btn')?.addEventListener('click', archiveProject);
+    document.getElementById('back-to-projects')?.addEventListener('click', () => switchView('projects'));
+    elements.exportBtn?.addEventListener('click', openExportModal);
 
     // Forms
-    elements.taskForm.addEventListener('submit', saveTask);
-    elements.completeForm.addEventListener('submit', completeTask);
-    elements.projectForm.addEventListener('submit', saveProject);
-    elements.progressForm.addEventListener('submit', saveProgress);
-    elements.exportForm.addEventListener('submit', exportReport);
+    elements.taskForm?.addEventListener('submit', saveTask);
+    elements.completeForm?.addEventListener('submit', completeTask);
+    elements.projectForm?.addEventListener('submit', saveProject);
+    elements.progressForm?.addEventListener('submit', saveProgress);
+    elements.exportForm?.addEventListener('submit', exportReport);
 
     // Schedule dropdown
-    elements.taskSchedule.addEventListener('change', () => {
+    elements.taskSchedule?.addEventListener('change', () => {
         elements.customDateGroup.classList.toggle('hidden', elements.taskSchedule.value !== 'custom');
     });
 
@@ -1661,10 +2002,57 @@ function initEventListeners() {
         });
     });
 
-    elements.scheduleCustomBtn.addEventListener('click', () => {
+    elements.scheduleCustomBtn?.addEventListener('click', () => {
         const date = elements.scheduleCustomDate.value;
         if (date) {
             scheduleTaskForDate(date);
+        } else {
+            showToast('Please select a date', 'error');
+        }
+    });
+
+    // Calendar navigation
+    elements.calendarPrevBtn?.addEventListener('click', () => navigateCalendar(-1));
+    elements.calendarNextBtn?.addEventListener('click', () => navigateCalendar(1));
+    elements.calendarTodayBtn?.addEventListener('click', jumpToToday);
+
+    // Day detail navigation
+    elements.dayDetailPrevBtn?.addEventListener('click', () => navigateDayDetail(-1));
+    elements.dayDetailNextBtn?.addEventListener('click', () => navigateDayDetail(1));
+    elements.dayDetailAddBtn?.addEventListener('click', () => {
+        // Open task modal for adding to this specific date
+        openTaskModal();
+        elements.taskSchedule.value = 'custom';
+        elements.customDateGroup.classList.remove('hidden');
+        elements.taskCustomDate.value = state.selectedDate;
+    });
+
+    // Reschedule modal buttons
+    document.querySelectorAll('#reschedule-modal .schedule-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const scheduleType = btn.dataset.schedule;
+            let date;
+            switch (scheduleType) {
+                case 'today':
+                    date = getToday();
+                    break;
+                case 'tomorrow':
+                    date = getTomorrow();
+                    break;
+                case 'next-week':
+                    date = getNextWeek();
+                    break;
+            }
+            if (date) {
+                rescheduleTaskToDate(date);
+            }
+        });
+    });
+
+    elements.rescheduleCustomBtn?.addEventListener('click', () => {
+        const date = elements.rescheduleCustomDate.value;
+        if (date) {
+            rescheduleTaskToDate(date);
         } else {
             showToast('Please select a date', 'error');
         }
@@ -1689,7 +2077,10 @@ function initEventListeners() {
     });
 }
 
-// Initialize App
+// ============================================
+// INITIALIZE APP
+// ============================================
+
 function init() {
     initElements();
     initEventListeners();
