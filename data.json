@@ -261,6 +261,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-20T00:54:34.000Z"
+            },
+            {
+              "id": "mklvtuce9y23orzikye",
+              "title": "Set up overnight culture media for NK cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T00:55:06.974Z"
             }
           ]
         }
@@ -636,5 +644,5 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T00:54:34.000Z"
+  "lastUpdated": "2026-01-20T00:55:06.974Z"
 }
