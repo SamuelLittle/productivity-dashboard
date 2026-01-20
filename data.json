@@ -189,7 +189,17 @@
       "description": "Large screen of observing the effects of 29 different cytokines on 15 unique cell types. ",
       "color": "#3b82f6",
       "createdAt": "2026-01-20T00:00:10.724Z",
-      "tasks": [],
+      "tasks": [
+        {
+          "id": "mklusog2097tkm380gri",
+          "title": "Dendritic Cell Pilot Screen",
+          "description": "Testing Dendritic Cells for compatibility with sequence prep pipelines",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T00:26:13.058Z",
+          "subtasks": []
+        }
+      ],
       "progressUpdates": [],
       "archived": false
     },
@@ -456,6 +466,13 @@
         "subtaskId": null,
         "scheduledAt": "2026-01-20T00:10:44.130Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mklusog2097tkm380gri",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-20T00:26:13.058Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-21": [
@@ -562,5 +579,5 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T00:22:42.771Z"
+  "lastUpdated": "2026-01-20T00:26:13.058Z"
 }
