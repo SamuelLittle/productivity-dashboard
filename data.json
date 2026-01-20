@@ -269,6 +269,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-20T00:55:06.974Z"
+            },
+            {
+              "id": "mklvv366nurez8d2w5p",
+              "title": "set up killing assay",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T00:56:05.070Z"
             }
           ]
         }
@@ -644,5 +652,5 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T00:55:06.974Z"
+  "lastUpdated": "2026-01-20T00:56:05.070Z"
 }
