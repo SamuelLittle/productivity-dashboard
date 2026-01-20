@@ -211,7 +211,9 @@
               "description": "",
               "priority": "medium",
               "completed": false,
-              "createdAt": "2026-01-20T00:26:33.045Z"
+              "createdAt": "2026-01-20T00:26:33.045Z",
+              "notes": "Originally scheduled for Jan 20 but media still looks unconsumed and trying to push this out to buy time for a pilot screen.  Rescheduled to Thursday with possibility to push until friday.",
+              "links": ""
             }
           ]
         },
@@ -932,7 +934,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T21:13:08.374Z",
+  "lastUpdated": "2026-01-20T21:14:25.134Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
