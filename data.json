@@ -265,6 +265,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-20T21:20:17.889Z"
+            },
+            {
+              "id": "mkn3lni355t2ayoslmt",
+              "title": "Prep/submit supernatant for Tregs",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T21:20:27.963Z"
             }
           ]
         }
@@ -999,7 +1007,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T21:20:17.889Z",
+  "lastUpdated": "2026-01-20T21:20:27.963Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
