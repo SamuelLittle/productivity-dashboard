@@ -248,8 +248,9 @@
               "title": "Submit luminex request for Tregs ",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T21:19:02.890Z"
+              "completed": true,
+              "createdAt": "2026-01-20T21:19:02.890Z",
+              "completedAt": "2026-01-20T22:33:55.380Z"
             },
             {
               "id": "mkn3k3zs9qawmv7wfgl",
@@ -966,7 +967,8 @@
         "taskId": "mkn3iy4jrdxtygzkgtn",
         "subtaskId": "mkn3jtuypfmqhhsqge",
         "scheduledAt": "2026-01-20T21:19:56.625Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-20T22:33:55.380Z"
       }
     ]
   },
@@ -1090,9 +1092,16 @@
       "subtaskId": "mkn3jdgv4838na2s1a3",
       "title": "Submit luminex request for CD4+ve Cells",
       "completedAt": "2026-01-20T22:33:52.694Z"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3iy4jrdxtygzkgtn",
+      "subtaskId": "mkn3jtuypfmqhhsqge",
+      "title": "Submit luminex request for Tregs ",
+      "completedAt": "2026-01-20T22:33:55.380Z"
     }
   ],
-  "lastUpdated": "2026-01-20T22:33:52.694Z",
+  "lastUpdated": "2026-01-20T22:33:55.380Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
