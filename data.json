@@ -445,8 +445,11 @@
         "title": "clear first list of bugs",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-20T02:01:32.509Z"
+        "completed": true,
+        "createdAt": "2026-01-20T02:01:32.509Z",
+        "completedAt": "2026-01-20T02:01:47.738Z",
+        "completionNotes": "kinda works",
+        "completionLinks": ""
       }
     ]
   },
@@ -712,7 +715,15 @@
       "completionNotes": "Got the framework built,  tool is semi usable but still not of benefit to me yet. ",
       "completionLinks": "",
       "date": "2026-01-20"
+    },
+    {
+      "id": "mkly79lpsfoyd2xl5di",
+      "title": "clear first list of bugs",
+      "completedAt": "2026-01-20T02:01:47.738Z",
+      "completionNotes": "kinda works",
+      "completionLinks": "",
+      "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T02:01:32.509Z"
+  "lastUpdated": "2026-01-20T02:01:47.738Z"
 }
