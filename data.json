@@ -365,10 +365,11 @@
               "title": "Make knockout protocol",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-01-20T00:11:37.998Z",
               "notes": "",
-              "links": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit"
+              "links": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit",
+              "completedAt": "2026-01-20T20:19:03.557Z"
             },
             {
               "id": "mklua7fi5tb0qt34jlc",
@@ -674,7 +675,10 @@
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mklu9x8uztbnqh3ddbl",
         "scheduledAt": "2026-01-20T01:18:37.933Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-20T20:19:03.557Z",
+        "completionNotes": "Monocyte KO protocol written in benchling and sent to Christine for comment. \n",
+        "completionLinks": "https://gene.benchling.com/s/etr-iY0rvJncAN2AyRGh733R?m=slm-r1UtKfPevd2Dkzq2de60"
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -917,9 +921,18 @@
       "completionNotes": "Productive meeting with Justin discussing use of pCell for NK screen\n- Scheudled follow up for feb 4\n-between now and then need to refine protocol focusing on cell transfer steps and protocol specifcs related to cell washing for flow, killing assay, \n-need to figure out assay limitations and bottlenecks (ie. number of plates for flow, number of nucleofections, number of cells)",
       "completionLinks": "",
       "date": "2026-01-20"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mklu9x8uztbnqh3ddbl",
+      "completedAt": "2026-01-20T20:19:03.557Z",
+      "completionNotes": "Monocyte KO protocol written in benchling and sent to Christine for comment. \n",
+      "completionLinks": "https://gene.benchling.com/s/etr-iY0rvJncAN2AyRGh733R?m=slm-r1UtKfPevd2Dkzq2de60",
+      "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T19:53:59.963Z",
+  "lastUpdated": "2026-01-20T20:19:03.557Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
