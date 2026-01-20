@@ -25,7 +25,7 @@
           "title": "Design navigation component",
           "description": "Create responsive navigation with mobile menu",
           "priority": "high",
-          "completed": false,
+          "completed": true,
           "createdAt": "2025-01-05T11:00:00.000Z",
           "subtasks": [
             {
@@ -33,25 +33,29 @@
               "title": "Desktop navigation design",
               "priority": "high",
               "completed": true,
-              "completedAt": "2025-01-15T10:00:00.000Z",
+              "completedAt": "2026-01-20T14:48:32.956Z",
               "createdAt": "2025-01-05T11:00:00.000Z"
             },
             {
               "id": "subtask_2",
               "title": "Mobile hamburger menu",
               "priority": "high",
-              "completed": false,
-              "completedAt": null,
+              "completed": true,
+              "completedAt": "2026-01-20T14:48:32.956Z",
               "createdAt": "2025-01-05T11:00:00.000Z"
             },
             {
               "id": "subtask_3",
               "title": "Accessibility testing",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2025-01-05T11:00:00.000Z"
+              "completed": true,
+              "createdAt": "2025-01-05T11:00:00.000Z",
+              "completedAt": "2026-01-20T14:48:32.956Z"
             }
-          ]
+          ],
+          "completedAt": "2026-01-20T14:48:32.956Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "task_3",
@@ -510,7 +514,10 @@
         "taskId": "task_2",
         "subtaskId": null,
         "scheduledAt": "2026-01-19T21:51:37.698Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-20T14:48:32.956Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mklsekkdp6myzpeomq",
@@ -743,9 +750,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-19"
+    },
+    {
+      "projectId": "proj_sample1",
+      "taskId": "task_2",
+      "completedAt": "2026-01-20T14:48:32.956Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T14:48:29.952Z",
+  "lastUpdated": "2026-01-20T14:48:32.956Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
