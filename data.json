@@ -285,6 +285,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-20T00:56:18.959Z"
+            },
+            {
+              "id": "mklvxbuaoylqrcl5sra",
+              "title": "Run flow cytometer to check for T cell live/dead (w/Qiao)",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T00:57:49.618Z"
             }
           ]
         }
@@ -660,5 +668,5 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T00:56:18.959Z"
+  "lastUpdated": "2026-01-20T00:57:49.618Z"
 }
