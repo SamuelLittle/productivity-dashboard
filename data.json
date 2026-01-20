@@ -233,7 +233,7 @@
           "title": "Meeting with Justin re: using the Hive",
           "description": "Meet with Justin to discuss the possibility of using the hive (specfically the pCell) for this screen",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T00:06:25.447Z",
           "subtasks": [
             {
@@ -241,10 +241,12 @@
               "title": "Project readouts list",
               "description": "Make list of project readouts to give Justin an idea of the capabilities required for this project. ",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T00:07:20.156Z"
+              "completed": true,
+              "createdAt": "2026-01-20T00:07:20.156Z",
+              "completedAt": "2026-01-20T14:26:24.298Z"
             }
-          ]
+          ],
+          "completedAt": "2026-01-20T14:26:24.298Z"
         },
         {
           "id": "mklvsgrboq443ll7wi",
@@ -570,7 +572,10 @@
         "taskId": "mklu382vfgedlfuwiwp",
         "subtaskId": "mklu4eak1mc3kdz2kaz",
         "scheduledAt": "2026-01-20T01:20:16.354Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-20T14:26:24.297Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -710,9 +715,18 @@
       "completionNotes": "kinda works",
       "completionLinks": "",
       "date": "2026-01-19"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklu382vfgedlfuwiwp",
+      "subtaskId": "mklu4eak1mc3kdz2kaz",
+      "completedAt": "2026-01-20T14:26:24.298Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T14:22:04.029Z",
+  "lastUpdated": "2026-01-20T14:26:24.298Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
