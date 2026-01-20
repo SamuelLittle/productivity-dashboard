@@ -293,6 +293,15 @@
           "completed": false,
           "createdAt": "2026-01-20T21:21:39.332Z",
           "subtasks": []
+        },
+        {
+          "id": "mkn5xu0po7lfqnsjdqm",
+          "title": "SMARTseq pilot using automated bead-based clean up for RNA purification.",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T22:25:55.513Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -1058,7 +1067,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T22:24:08.904Z",
+  "lastUpdated": "2026-01-20T22:25:55.513Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
