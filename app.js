@@ -31,6 +31,55 @@ let state = {
 // DOM Elements
 const elements = {};
 
+// ============================================
+// DARK MODE
+// ============================================
+
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        updateThemeIcon(true);
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+        updateThemeIcon(false);
+    }
+}
+
+function toggleTheme() {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+    if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        updateThemeIcon(false);
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        updateThemeIcon(true);
+    }
+}
+
+function updateThemeIcon(isDark) {
+    const lightIcon = document.getElementById('theme-icon-light');
+    const darkIcon = document.getElementById('theme-icon-dark');
+
+    if (lightIcon && darkIcon) {
+        if (isDark) {
+            lightIcon.classList.add('hidden');
+            darkIcon.classList.remove('hidden');
+        } else {
+            lightIcon.classList.remove('hidden');
+            darkIcon.classList.add('hidden');
+        }
+    }
+}
+
+// Initialize theme on page load
+initTheme();
+
 function initElements() {
     Object.assign(elements, {
         authScreen: document.getElementById('auth-screen'),
@@ -136,7 +185,9 @@ function initElements() {
         taskDetailCompletionInfo: document.getElementById('task-detail-completion-info'),
         taskDetailCompletedAt: document.getElementById('task-detail-completed-at'),
         taskDetailCompletionNotes: document.getElementById('task-detail-completion-notes'),
-        taskDetailSaveBtn: document.getElementById('task-detail-save-btn')
+        taskDetailSaveBtn: document.getElementById('task-detail-save-btn'),
+        // Theme toggle
+        themeToggle: document.getElementById('theme-toggle')
     });
 }
 
@@ -2063,14 +2114,7 @@ async function markSubtaskCompleteInProject(projectId, taskId, subtaskId, comple
     subtask.completed = completed;
     subtask.completedAt = completed ? new Date().toISOString() : null;
 
-    if (completed && task.subtasks.every(st => st.completed)) {
-        task.completed = true;
-        task.completedAt = new Date().toISOString();
-        showToast('All subtasks complete - parent task auto-completed!', 'success');
-    } else if (!completed && task.completed) {
-        task.completed = false;
-        task.completedAt = null;
-    }
+    // Note: Parent task completion is now handled separately - no auto-complete
 }
 
 async function toggleSubtaskComplete(projectId, taskId, subtaskId) {
@@ -2472,6 +2516,9 @@ function initEventListeners() {
 
     // Task detail save button
     elements.taskDetailSaveBtn?.addEventListener('click', saveTaskNotes);
+
+    // Theme toggle
+    elements.themeToggle?.addEventListener('click', toggleTheme);
 
     // Modal close buttons
     document.querySelectorAll('.modal-close, .modal-cancel').forEach(btn => {
