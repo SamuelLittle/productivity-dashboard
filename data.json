@@ -82,7 +82,7 @@
       "description": "Write comprehensive API documentation for the public endpoints",
       "color": "#10b981",
       "createdAt": "2025-01-05T09:00:00.000Z",
-      "archived": false,
+      "archived": true,
       "tasks": [
         {
           "id": "task_4",
@@ -712,6 +712,6 @@
       "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T14:19:42.418Z",
+  "lastUpdated": "2026-01-20T14:20:18.135Z",
   "taskOrder": {}
 }
