@@ -442,7 +442,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-20T19:50:44.741Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mkn0ekrydentyn32emi",
+              "title": "Meet with Sarah from CALM",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T19:50:58.990Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -688,6 +697,13 @@
         "subtaskId": null,
         "scheduledAt": "2026-01-20T16:22:17.424Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mkn0e9s5qbl61liiujc",
+        "subtaskId": "mkn0ekrydentyn32emi",
+        "scheduledAt": "2026-01-20T19:50:58.990Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-21": [
@@ -894,7 +910,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T19:50:44.741Z",
+  "lastUpdated": "2026-01-20T19:50:58.990Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
