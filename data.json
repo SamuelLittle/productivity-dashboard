@@ -260,10 +260,10 @@
         {
           "id": "mklvsgrboq443ll7wi",
           "title": "Pilot killing assay",
-          "description": "",
+          "description": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
           "priority": "medium",
           "completed": false,
-          "createdAt": "2026-01-20T00:54:02.711Z",
+          "createdAt": "2026-01-20T16:51:17.119Z",
           "subtasks": [
             {
               "id": "mklvt4wgf7f7a1nlide",
@@ -876,7 +876,7 @@
       "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T16:37:18.912Z",
+  "lastUpdated": "2026-01-20T16:51:17.120Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
