@@ -23,7 +23,9 @@ let state = {
     fileSha: null,
     calendarDate: new Date(),
     selectedDate: null,
-    showCompleted: true
+    showCompleted: true,
+    draggedTaskKey: null,
+    draggedTaskDate: null
 };
 
 // DOM Elements
@@ -120,7 +122,21 @@ function initElements() {
         rescheduleModal: document.getElementById('reschedule-modal'),
         rescheduleTaskInfo: document.getElementById('reschedule-task-info'),
         rescheduleCustomDate: document.getElementById('reschedule-custom-date'),
-        rescheduleCustomBtn: document.getElementById('reschedule-custom-btn')
+        rescheduleCustomBtn: document.getElementById('reschedule-custom-btn'),
+        // Task detail modal
+        taskDetailModal: document.getElementById('task-detail-modal'),
+        taskDetailTitle: document.getElementById('task-detail-title'),
+        taskDetailData: document.getElementById('task-detail-data'),
+        taskDetailProject: document.getElementById('task-detail-project'),
+        taskDetailPriority: document.getElementById('task-detail-priority'),
+        taskDetailPriorityText: document.getElementById('task-detail-priority-text'),
+        taskDetailDescription: document.getElementById('task-detail-description'),
+        taskDetailNotes: document.getElementById('task-detail-notes'),
+        taskDetailLinks: document.getElementById('task-detail-links'),
+        taskDetailCompletionInfo: document.getElementById('task-detail-completion-info'),
+        taskDetailCompletedAt: document.getElementById('task-detail-completed-at'),
+        taskDetailCompletionNotes: document.getElementById('task-detail-completion-notes'),
+        taskDetailSaveBtn: document.getElementById('task-detail-save-btn')
     });
 }
 
@@ -451,9 +467,26 @@ function getTasksForDate(date, includeCompleted = true) {
         }
     });
 
-    // Sort: incomplete first, then by priority
+    // Get saved order for this date
+    const savedOrder = getTaskOrder(date);
+
+    // Sort tasks: first by saved order, then incomplete first, then by priority
     const priorityOrder = { high: 0, medium: 1, low: 2 };
     tasks.sort((a, b) => {
+        const aKey = getTaskKey(a);
+        const bKey = getTaskKey(b);
+        const aIndex = savedOrder.indexOf(aKey);
+        const bIndex = savedOrder.indexOf(bKey);
+
+        // If both have saved positions, use those
+        if (aIndex !== -1 && bIndex !== -1) {
+            return aIndex - bIndex;
+        }
+        // If only one has saved position, it comes first
+        if (aIndex !== -1) return -1;
+        if (bIndex !== -1) return 1;
+
+        // Fall back to: incomplete first, then by priority
         const aCompleted = a.completedOnDay || a.completed;
         const bCompleted = b.completedOnDay || b.completed;
         if (aCompleted !== bCompleted) return aCompleted ? 1 : -1;
@@ -535,7 +568,8 @@ function renderYesterdayView() {
     elements.yesterdayEmpty.classList.toggle('hidden', tasks.length > 0);
 
     tasks.forEach(task => {
-        elements.yesterdayTasks.appendChild(createDailyTaskElement(task, yesterday, false));
+        // Enable reschedule for yesterday's tasks too (FEATURE 1)
+        elements.yesterdayTasks.appendChild(createDailyTaskElement(task, yesterday, true));
     });
 }
 
@@ -776,7 +810,8 @@ function renderDayDetailTasks(date) {
     }
 
     tasks.forEach(task => {
-        elements.dayDetailTasks.appendChild(createDailyTaskElement(task, date, false));
+        // Enable reschedule for all calendar day views (FEATURE 1)
+        elements.dayDetailTasks.appendChild(createDailyTaskElement(task, date, true));
     });
 }
 
@@ -797,6 +832,11 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
     const div = document.createElement('div');
     const isCompleted = task.completedOnDay || task.completed;
     div.className = `task-item ${isCompleted ? 'completed' : ''} priority-${task.priority || 'medium'}`;
+
+    // Add draggable for reordering
+    div.draggable = true;
+    div.dataset.taskKey = getTaskKey(task);
+    div.dataset.date = date;
 
     const projectTag = task.projectName ? `
         <span class="task-project-tag" style="background: ${task.projectColor}20; color: ${task.projectColor}">
@@ -826,7 +866,7 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
 
     div.innerHTML = `
         <div class="task-checkbox ${isCompleted ? 'checked' : ''}" data-date="${date}"></div>
-        <div class="task-content">
+        <div class="task-content" data-action="view-details">
             <div class="task-title">${task.title}</div>
             <div class="task-meta">
                 ${projectTag}
@@ -836,6 +876,12 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
             ${completionInfo}
         </div>
         <div class="task-actions">
+            <button class="task-action-btn" data-action="view-details" title="View Details">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                </svg>
+            </button>
             ${allowReschedule ? `
                 <button class="task-action-btn" data-action="reschedule" title="Reschedule">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -875,11 +921,89 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
                 removeTaskFromDay(task, date);
             } else if (action === 'reschedule') {
                 openRescheduleModal(task, date);
+            } else if (action === 'view-details') {
+                openTaskDetailModal(task, date);
             }
         });
     });
 
+    // Make task content clickable to open details
+    const taskContent = div.querySelector('.task-content');
+    taskContent.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openTaskDetailModal(task, date);
+    });
+    taskContent.style.cursor = 'pointer';
+
+    // Drag and drop handlers
+    div.addEventListener('dragstart', (e) => {
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', getTaskKey(task));
+        div.classList.add('dragging');
+        state.draggedTaskKey = getTaskKey(task);
+        state.draggedTaskDate = date;
+    });
+
+    div.addEventListener('dragend', () => {
+        div.classList.remove('dragging');
+        state.draggedTaskKey = null;
+        state.draggedTaskDate = null;
+        // Remove all drag-over classes
+        document.querySelectorAll('.drag-over').forEach(el => el.classList.remove('drag-over'));
+    });
+
+    div.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        // Only show drop indicator if dragging within same date
+        if (state.draggedTaskDate === date && state.draggedTaskKey !== getTaskKey(task)) {
+            div.classList.add('drag-over');
+        }
+    });
+
+    div.addEventListener('dragleave', () => {
+        div.classList.remove('drag-over');
+    });
+
+    div.addEventListener('drop', async (e) => {
+        e.preventDefault();
+        div.classList.remove('drag-over');
+
+        if (!state.draggedTaskKey || state.draggedTaskDate !== date) return;
+        if (state.draggedTaskKey === getTaskKey(task)) return;
+
+        // Reorder tasks
+        await reorderTasks(date, state.draggedTaskKey, getTaskKey(task));
+    });
+
     return div;
+}
+
+// Reorder tasks within a day
+async function reorderTasks(date, draggedKey, targetKey) {
+    const tasks = getTasksForDate(date, true);
+    const currentOrder = tasks.map(t => getTaskKey(t));
+
+    const draggedIndex = currentOrder.indexOf(draggedKey);
+    const targetIndex = currentOrder.indexOf(targetKey);
+
+    if (draggedIndex === -1 || targetIndex === -1) return;
+
+    // Remove dragged item and insert at target position
+    currentOrder.splice(draggedIndex, 1);
+    currentOrder.splice(targetIndex, 0, draggedKey);
+
+    // Save new order
+    setTaskOrder(date, currentOrder);
+
+    state.data.lastUpdated = new Date().toISOString();
+    await saveData();
+    renderAllViews();
+
+    // Re-render day detail if open
+    if (state.selectedDate === date) {
+        renderDayDetailTasks(date);
+    }
 }
 
 function createProjectTaskElement(task, project) {
@@ -1118,52 +1242,92 @@ function openScheduleModal(projectId, taskId, subtaskId = null, taskTitle = '') 
     elements.scheduleModal.classList.remove('hidden');
 }
 
+// Helper: Compare subtaskId handling null/undefined equivalence
+function subtaskIdMatches(a, b) {
+    const normalizeId = (id) => (id === null || id === undefined || id === '') ? null : id;
+    return normalizeId(a) === normalizeId(b);
+}
+
+// Helper: Generate unique key for a task for drag-and-drop
+function getTaskKey(task) {
+    if (task.isStandalone) {
+        return `standalone:${task.id}`;
+    }
+    const subtaskPart = task.subtaskId ? `:${task.subtaskId}` : '';
+    return `project:${task.projectId}:${task.taskId || task.id}${subtaskPart}`;
+}
+
+// Helper: Get task order for a date, initializing if needed
+function getTaskOrder(date) {
+    if (!state.data.taskOrder) {
+        state.data.taskOrder = {};
+    }
+    return state.data.taskOrder[date] || [];
+}
+
+// Helper: Set task order for a date
+function setTaskOrder(date, order) {
+    if (!state.data.taskOrder) {
+        state.data.taskOrder = {};
+    }
+    state.data.taskOrder[date] = order;
+}
+
+// Helper: Remove a specific task/subtask from ALL scheduled dates
+function removeFromAllScheduledDates(projectId, taskId, subtaskId) {
+    Object.keys(state.data.scheduledItems).forEach(date => {
+        state.data.scheduledItems[date] = state.data.scheduledItems[date].filter(ref =>
+            !(ref.projectId === projectId &&
+              ref.taskId === taskId &&
+              subtaskIdMatches(ref.subtaskId, subtaskId))
+        );
+        // Clean up empty date arrays
+        if (state.data.scheduledItems[date].length === 0) {
+            delete state.data.scheduledItems[date];
+        }
+    });
+}
+
 async function scheduleTaskForDate(date) {
     const projectId = elements.scheduleProjectId.value;
     const taskId = elements.scheduleTaskId.value;
     const subtaskId = elements.scheduleSubtaskId.value || null;
     const includeSubtasks = elements.scheduleIncludeSubtasks?.checked;
 
+    // BUG 1 FIX: Remove from ALL other dates first (single-source-of-truth)
+    removeFromAllScheduledDates(projectId, taskId, subtaskId);
+
+    // Ensure the date array exists
     if (!state.data.scheduledItems[date]) {
         state.data.scheduledItems[date] = [];
     }
 
-    const exists = state.data.scheduledItems[date].some(ref =>
-        ref.projectId === projectId &&
-        ref.taskId === taskId &&
-        ref.subtaskId === subtaskId
-    );
+    // Add to new date
+    state.data.scheduledItems[date].push({
+        projectId,
+        taskId,
+        subtaskId,
+        scheduledAt: new Date().toISOString(),
+        completedOnDay: false
+    });
 
-    if (!exists) {
-        state.data.scheduledItems[date].push({
-            projectId,
-            taskId,
-            subtaskId,
-            scheduledAt: new Date().toISOString(),
-            completedOnDay: false
-        });
-
-        if (includeSubtasks && !subtaskId) {
-            const project = state.data.projects.find(p => p.id === projectId);
-            const task = project?.tasks.find(t => t.id === taskId);
-            if (task?.subtasks) {
-                task.subtasks.forEach(st => {
-                    const stExists = state.data.scheduledItems[date].some(ref =>
-                        ref.projectId === projectId &&
-                        ref.taskId === taskId &&
-                        ref.subtaskId === st.id
-                    );
-                    if (!stExists) {
-                        state.data.scheduledItems[date].push({
-                            projectId,
-                            taskId,
-                            subtaskId: st.id,
-                            scheduledAt: new Date().toISOString(),
-                            completedOnDay: false
-                        });
-                    }
+    // Handle subtasks if requested
+    if (includeSubtasks && !subtaskId) {
+        const project = state.data.projects.find(p => p.id === projectId);
+        const task = project?.tasks.find(t => t.id === taskId);
+        if (task?.subtasks) {
+            task.subtasks.forEach(st => {
+                // Remove subtask from all other dates first
+                removeFromAllScheduledDates(projectId, taskId, st.id);
+                // Add to new date
+                state.data.scheduledItems[date].push({
+                    projectId,
+                    taskId,
+                    subtaskId: st.id,
+                    scheduledAt: new Date().toISOString(),
+                    completedOnDay: false
                 });
-            }
+            });
         }
     }
 
@@ -1201,27 +1365,46 @@ function openRescheduleModal(task, fromDate) {
 async function rescheduleTaskToDate(newDate) {
     if (!rescheduleTask || !rescheduleFromDate) return;
 
-    // Remove from old date
-    await removeTaskFromDay(rescheduleTask, rescheduleFromDate, true);
+    const projectId = rescheduleTask.projectId;
+    const taskId = rescheduleTask.taskId || rescheduleTask.id;
+    const subtaskId = rescheduleTask.subtaskId || null;
 
-    // Add to new date
     if (rescheduleTask.isStandalone) {
+        // Remove standalone task from old date
+        if (state.data.dailyLists[rescheduleFromDate]) {
+            state.data.dailyLists[rescheduleFromDate] = state.data.dailyLists[rescheduleFromDate].filter(
+                t => t.id !== rescheduleTask.id
+            );
+            if (state.data.dailyLists[rescheduleFromDate].length === 0) {
+                delete state.data.dailyLists[rescheduleFromDate];
+            }
+        }
+        // Add to new date
         if (!state.data.dailyLists[newDate]) {
             state.data.dailyLists[newDate] = [];
         }
-        state.data.dailyLists[newDate].push({
-            ...rescheduleTask,
+        // Create clean task object for new date
+        const newTask = {
+            id: rescheduleTask.id,
+            title: rescheduleTask.title,
+            description: rescheduleTask.description || '',
+            priority: rescheduleTask.priority || 'medium',
             completed: false,
-            completedAt: null
-        });
+            completedAt: null,
+            createdAt: rescheduleTask.createdAt || new Date().toISOString()
+        };
+        state.data.dailyLists[newDate].push(newTask);
     } else {
+        // Project task: Remove from ALL dates (single-source-of-truth), then add to new date
+        removeFromAllScheduledDates(projectId, taskId, subtaskId);
+
         if (!state.data.scheduledItems[newDate]) {
             state.data.scheduledItems[newDate] = [];
         }
         state.data.scheduledItems[newDate].push({
-            projectId: rescheduleTask.projectId,
-            taskId: rescheduleTask.taskId || rescheduleTask.id,
-            subtaskId: rescheduleTask.subtaskId || null,
+            projectId,
+            taskId,
+            subtaskId,
             scheduledAt: new Date().toISOString(),
             completedOnDay: false
         });
@@ -1243,18 +1426,194 @@ async function rescheduleTaskToDate(newDate) {
     rescheduleFromDate = null;
 }
 
-async function removeTaskFromDay(task, date, silent = false) {
-    if (task.isStandalone) {
-        if (state.data.dailyLists[date]) {
-            state.data.dailyLists[date] = state.data.dailyLists[date].filter(t => t.id !== task.id);
+// ============================================
+// TASK DETAIL MODAL
+// ============================================
+
+let taskDetailTask = null;
+let taskDetailDate = null;
+
+function openTaskDetailModal(task, date) {
+    taskDetailTask = task;
+    taskDetailDate = date;
+
+    if (!elements.taskDetailModal) return;
+
+    // Set title
+    elements.taskDetailTitle.textContent = task.title;
+
+    // Set project tag
+    if (task.projectName) {
+        elements.taskDetailProject.textContent = task.projectName;
+        elements.taskDetailProject.style.background = `${task.projectColor}20`;
+        elements.taskDetailProject.style.color = task.projectColor;
+        elements.taskDetailProject.classList.remove('hidden');
+    } else {
+        elements.taskDetailProject.classList.add('hidden');
+    }
+
+    // Set priority
+    elements.taskDetailPriority.className = `task-priority priority-${task.priority || 'medium'}`;
+    elements.taskDetailPriorityText.textContent = task.priority || 'medium';
+
+    // Set description
+    elements.taskDetailDescription.textContent = task.description || '';
+
+    // Set notes and links from the actual task in the project
+    let notes = '';
+    let links = '';
+
+    if (task.projectId && !task.isStandalone) {
+        const actualTask = getActualTaskData(task);
+        if (actualTask) {
+            notes = actualTask.notes || '';
+            links = actualTask.links || '';
+        }
+    } else if (task.isStandalone) {
+        notes = task.notes || '';
+        links = task.links || '';
+    }
+
+    elements.taskDetailNotes.value = notes;
+    elements.taskDetailLinks.value = links;
+
+    // Show completion info if completed
+    const isCompleted = task.completedOnDay || task.completed;
+    if (isCompleted) {
+        elements.taskDetailCompletionInfo.classList.remove('hidden');
+        const completedAt = task.completedAt || task.completionAt;
+        elements.taskDetailCompletedAt.textContent = completedAt ?
+            `Completed: ${formatDate(completedAt)}` : 'Completed';
+        const compNotes = task.completionNotes || '';
+        elements.taskDetailCompletionNotes.textContent = compNotes ?
+            `Completion notes: ${compNotes}` : '';
+    } else {
+        elements.taskDetailCompletionInfo.classList.add('hidden');
+    }
+
+    // Store task data for saving
+    elements.taskDetailData.value = JSON.stringify({
+        projectId: task.projectId,
+        taskId: task.taskId || task.id,
+        subtaskId: task.subtaskId,
+        isStandalone: task.isStandalone,
+        date: date
+    });
+
+    elements.taskDetailModal.classList.remove('hidden');
+}
+
+function getActualTaskData(task) {
+    if (!task.projectId) return null;
+
+    const project = state.data.projects.find(p => p.id === task.projectId);
+    if (!project) return null;
+
+    const taskId = task.taskId || task.id;
+    const actualTask = project.tasks.find(t => t.id === taskId);
+    if (!actualTask) return null;
+
+    if (task.subtaskId) {
+        return (actualTask.subtasks || []).find(st => st.id === task.subtaskId);
+    }
+
+    return actualTask;
+}
+
+async function saveTaskNotes() {
+    if (!taskDetailTask) return;
+
+    const taskData = JSON.parse(elements.taskDetailData.value);
+    const notes = elements.taskDetailNotes.value;
+    const links = elements.taskDetailLinks.value;
+
+    if (taskData.isStandalone) {
+        // Update standalone task
+        const dailyList = state.data.dailyLists[taskData.date] || [];
+        const task = dailyList.find(t => t.id === taskData.taskId);
+        if (task) {
+            task.notes = notes;
+            task.links = links;
         }
     } else {
+        // Update project task
+        const project = state.data.projects.find(p => p.id === taskData.projectId);
+        if (project) {
+            const task = project.tasks.find(t => t.id === taskData.taskId);
+            if (task) {
+                if (taskData.subtaskId) {
+                    const subtask = (task.subtasks || []).find(st => st.id === taskData.subtaskId);
+                    if (subtask) {
+                        subtask.notes = notes;
+                        subtask.links = links;
+                    }
+                } else {
+                    task.notes = notes;
+                    task.links = links;
+                }
+            }
+        }
+    }
+
+    state.data.lastUpdated = new Date().toISOString();
+    await saveData();
+    closeAllModals();
+    renderAllViews();
+
+    if (state.currentProject) {
+        renderProjectDetail(state.currentProject);
+    }
+
+    if (state.selectedDate) {
+        renderDayDetailTasks(state.selectedDate);
+    }
+
+    showToast('Notes saved', 'success');
+
+    taskDetailTask = null;
+    taskDetailDate = null;
+}
+
+async function removeTaskFromDay(task, date, silent = false) {
+    console.log('removeTaskFromDay called:', { task, date, silent }); // Debug log
+
+    if (task.isStandalone) {
+        // Remove standalone task from this specific date
+        if (state.data.dailyLists[date]) {
+            const before = state.data.dailyLists[date].length;
+            state.data.dailyLists[date] = state.data.dailyLists[date].filter(t => t.id !== task.id);
+            const after = state.data.dailyLists[date].length;
+            console.log(`Standalone removal: ${before} -> ${after}`); // Debug log
+
+            // Clean up empty arrays
+            if (state.data.dailyLists[date].length === 0) {
+                delete state.data.dailyLists[date];
+            }
+        }
+    } else {
+        // Project task: Remove from this specific date only
+        const projectId = task.projectId;
+        const taskId = task.taskId || task.id;
+        const subtaskId = task.subtaskId;
+
+        console.log('Removing project task:', { projectId, taskId, subtaskId }); // Debug log
+
         if (state.data.scheduledItems[date]) {
-            state.data.scheduledItems[date] = state.data.scheduledItems[date].filter(ref =>
-                !(ref.projectId === task.projectId &&
-                  ref.taskId === (task.taskId || task.id) &&
-                  ref.subtaskId === task.subtaskId)
-            );
+            const before = state.data.scheduledItems[date].length;
+            state.data.scheduledItems[date] = state.data.scheduledItems[date].filter(ref => {
+                const matches = ref.projectId === projectId &&
+                               ref.taskId === taskId &&
+                               subtaskIdMatches(ref.subtaskId, subtaskId);
+                console.log('Checking ref:', ref, 'matches:', matches); // Debug log
+                return !matches;
+            });
+            const after = state.data.scheduledItems[date].length;
+            console.log(`Project task removal: ${before} -> ${after}`); // Debug log
+
+            // Clean up empty arrays
+            if (state.data.scheduledItems[date].length === 0) {
+                delete state.data.scheduledItems[date];
+            }
         }
     }
 
@@ -1490,17 +1849,25 @@ async function completeTask(e) {
 }
 
 async function toggleDailyTaskComplete(task, date, completed, notes = '', links = '') {
+    console.log('toggleDailyTaskComplete called:', { task, date, completed }); // Debug log
+
     if (task.isStandalone) {
         await toggleStandaloneTaskComplete(task.id, date, completed, notes, links);
         return;
     }
 
+    const projectId = task.projectId;
+    const taskId = task.taskId || task.id;
+    const subtaskId = task.subtaskId;
+
     const scheduledItems = state.data.scheduledItems[date] || [];
     const ref = scheduledItems.find(r =>
-        r.projectId === task.projectId &&
-        r.taskId === (task.taskId || task.id) &&
-        r.subtaskId === task.subtaskId
+        r.projectId === projectId &&
+        r.taskId === taskId &&
+        subtaskIdMatches(r.subtaskId, subtaskId)
     );
+
+    console.log('Found ref:', ref); // Debug log
 
     if (ref) {
         ref.completedOnDay = completed;
@@ -1509,16 +1876,16 @@ async function toggleDailyTaskComplete(task, date, completed, notes = '', links 
             ref.completionNotes = notes;
             ref.completionLinks = links;
 
-            if (task.isSubtask) {
-                await markSubtaskCompleteInProject(task.projectId, task.taskId, task.subtaskId, completed);
+            if (task.isSubtask || subtaskId) {
+                await markSubtaskCompleteInProject(projectId, taskId, subtaskId, completed);
             } else {
-                await markTaskCompleteInProject(task.projectId, task.taskId || task.id, completed, notes, links);
+                await markTaskCompleteInProject(projectId, taskId, completed, notes, links);
             }
 
             state.data.completedTasks.push({
-                projectId: task.projectId,
-                taskId: task.taskId || task.id,
-                subtaskId: task.subtaskId,
+                projectId,
+                taskId,
+                subtaskId,
                 title: task.title,
                 completedAt: new Date().toISOString(),
                 completionNotes: notes,
@@ -1530,11 +1897,33 @@ async function toggleDailyTaskComplete(task, date, completed, notes = '', links 
             ref.completionNotes = null;
             ref.completionLinks = null;
 
-            if (task.isSubtask) {
-                await markSubtaskCompleteInProject(task.projectId, task.taskId, task.subtaskId, false);
+            if (task.isSubtask || subtaskId) {
+                await markSubtaskCompleteInProject(projectId, taskId, subtaskId, false);
             } else {
-                await markTaskCompleteInProject(task.projectId, task.taskId || task.id, false);
+                await markTaskCompleteInProject(projectId, taskId, false);
             }
+        }
+    } else {
+        // Task not found in scheduledItems - might be a project task not scheduled
+        // Still allow completion via project
+        console.log('Task not in scheduledItems, completing via project directly');
+        if (task.isSubtask || subtaskId) {
+            await markSubtaskCompleteInProject(projectId, taskId, subtaskId, completed);
+        } else {
+            await markTaskCompleteInProject(projectId, taskId, completed, notes, links);
+        }
+
+        if (completed) {
+            state.data.completedTasks.push({
+                projectId,
+                taskId,
+                subtaskId,
+                title: task.title,
+                completedAt: new Date().toISOString(),
+                completionNotes: notes,
+                completionLinks: links,
+                date: date
+            });
         }
     }
 
@@ -1587,6 +1976,8 @@ async function toggleStandaloneTaskComplete(taskId, date, completed, notes = '',
 }
 
 async function toggleProjectTaskComplete(projectId, taskId, completed, notes = '', links = '') {
+    console.log('toggleProjectTaskComplete called:', { projectId, taskId, completed }); // Debug log
+
     await markTaskCompleteInProject(projectId, taskId, completed, notes, links);
 
     if (completed) {
@@ -1596,6 +1987,7 @@ async function toggleProjectTaskComplete(projectId, taskId, completed, notes = '
         state.data.completedTasks.push({
             projectId,
             taskId,
+            subtaskId: null,
             title: task?.title || 'Unknown task',
             completedAt: new Date().toISOString(),
             completionNotes: notes,
@@ -1603,15 +1995,19 @@ async function toggleProjectTaskComplete(projectId, taskId, completed, notes = '
         });
     }
 
-    // Also update any scheduled references
-    Object.entries(state.data.scheduledItems).forEach(([date, items]) => {
+    // Also update any scheduled references for this task (not subtasks)
+    Object.entries(state.data.scheduledItems || {}).forEach(([date, items]) => {
         items.forEach(ref => {
-            if (ref.projectId === projectId && ref.taskId === taskId && !ref.subtaskId) {
+            if (ref.projectId === projectId && ref.taskId === taskId && subtaskIdMatches(ref.subtaskId, null)) {
                 ref.completedOnDay = completed;
                 if (completed) {
                     ref.completedAt = new Date().toISOString();
                     ref.completionNotes = notes;
                     ref.completionLinks = links;
+                } else {
+                    ref.completedAt = null;
+                    ref.completionNotes = null;
+                    ref.completionLinks = null;
                 }
             }
         });
@@ -1678,24 +2074,38 @@ async function markSubtaskCompleteInProject(projectId, taskId, subtaskId, comple
 }
 
 async function toggleSubtaskComplete(projectId, taskId, subtaskId) {
+    console.log('toggleSubtaskComplete called:', { projectId, taskId, subtaskId }); // Debug log
+
     const project = state.data.projects.find(p => p.id === projectId);
-    if (!project) return;
+    if (!project) {
+        console.log('Project not found:', projectId);
+        return;
+    }
 
     const task = project.tasks.find(t => t.id === taskId);
-    if (!task || !task.subtasks) return;
+    if (!task || !task.subtasks) {
+        console.log('Task or subtasks not found:', taskId);
+        return;
+    }
 
     const subtask = task.subtasks.find(st => st.id === subtaskId);
-    if (!subtask) return;
+    if (!subtask) {
+        console.log('Subtask not found:', subtaskId);
+        return;
+    }
 
     const newCompleted = !subtask.completed;
     await markSubtaskCompleteInProject(projectId, taskId, subtaskId, newCompleted);
 
-    Object.values(state.data.scheduledItems).forEach(items => {
+    // Update all scheduled references for this subtask
+    Object.values(state.data.scheduledItems || {}).forEach(items => {
         items.forEach(ref => {
-            if (ref.projectId === projectId && ref.taskId === taskId && ref.subtaskId === subtaskId) {
+            if (ref.projectId === projectId && ref.taskId === taskId && subtaskIdMatches(ref.subtaskId, subtaskId)) {
                 ref.completedOnDay = newCompleted;
                 if (newCompleted) {
                     ref.completedAt = new Date().toISOString();
+                } else {
+                    ref.completedAt = null;
                 }
             }
         });
@@ -1718,6 +2128,8 @@ async function toggleSubtaskComplete(projectId, taskId, subtaskId) {
     if (state.currentProject === projectId) {
         renderProjectDetail(projectId);
     }
+
+    showToast(newCompleted ? 'Subtask completed!' : 'Subtask reopened', 'success');
 }
 
 async function deleteProjectTask(projectId, taskId) {
@@ -2057,6 +2469,9 @@ function initEventListeners() {
             showToast('Please select a date', 'error');
         }
     });
+
+    // Task detail save button
+    elements.taskDetailSaveBtn?.addEventListener('click', saveTaskNotes);
 
     // Modal close buttons
     document.querySelectorAll('.modal-close, .modal-cancel').forEach(btn => {

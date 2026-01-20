@@ -609,6 +609,52 @@
             </div>
         </div>
 
+        <!-- Task Detail Modal -->
+        <div id="task-detail-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content modal-md">
+                <div class="modal-header">
+                    <h3 id="task-detail-title">Task Details</h3>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <div class="task-detail-body">
+                    <input type="hidden" id="task-detail-data">
+
+                    <div class="task-detail-section">
+                        <div class="task-detail-meta">
+                            <span id="task-detail-project" class="task-project-tag"></span>
+                            <span id="task-detail-priority" class="task-priority">
+                                <span class="priority-dot"></span>
+                                <span id="task-detail-priority-text">medium</span>
+                            </span>
+                        </div>
+                        <p id="task-detail-description" class="task-detail-description"></p>
+                    </div>
+
+                    <div class="task-detail-section">
+                        <label for="task-detail-notes" class="form-label">Notes</label>
+                        <textarea id="task-detail-notes" class="form-input" rows="4" placeholder="Add notes about this task..."></textarea>
+                    </div>
+
+                    <div class="task-detail-section">
+                        <label for="task-detail-links" class="form-label">Links</label>
+                        <input type="url" id="task-detail-links" class="form-input" placeholder="https://...">
+                    </div>
+
+                    <div id="task-detail-completion-info" class="task-detail-section hidden">
+                        <h4>Completion Info</h4>
+                        <p id="task-detail-completed-at" class="task-detail-completed-text"></p>
+                        <p id="task-detail-completion-notes" class="task-detail-completed-text"></p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary modal-cancel">Cancel</button>
+                        <button type="button" id="task-detail-save-btn" class="btn btn-primary">Save Notes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Loading Overlay -->
         <div id="loading" class="loading-overlay hidden">
             <div class="spinner"></div>
