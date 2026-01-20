@@ -241,9 +241,9 @@
               "title": "Project readouts list",
               "description": "Make list of project readouts to give Justin an idea of the capabilities required for this project. ",
               "priority": "medium",
-              "completed": true,
+              "completed": false,
               "createdAt": "2026-01-20T00:07:20.156Z",
-              "completedAt": "2026-01-20T14:26:24.298Z"
+              "completedAt": null
             }
           ],
           "completedAt": null,
@@ -577,10 +577,10 @@
         "taskId": "mklu382vfgedlfuwiwp",
         "subtaskId": "mklu4eak1mc3kdz2kaz",
         "scheduledAt": "2026-01-20T01:20:16.354Z",
-        "completedOnDay": true,
-        "completedAt": "2026-01-20T14:26:24.297Z",
-        "completionNotes": "",
-        "completionLinks": ""
+        "completedOnDay": false,
+        "completedAt": null,
+        "completionNotes": null,
+        "completionLinks": null
       },
       {
         "projectId": "",
@@ -731,7 +731,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T14:48:07.595Z",
+  "lastUpdated": "2026-01-20T14:48:08.725Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
