@@ -225,6 +225,15 @@
           "completed": false,
           "createdAt": "2026-01-20T00:53:10.521Z",
           "subtasks": []
+        },
+        {
+          "id": "mkn3iy4jrdxtygzkgtn",
+          "title": "Luminex screen of supernatant from previously screened cell types",
+          "description": "Using luminex to measure cytokines in supernatant of previously screened cell types. Specifically looking at CD4+, Treg, and Macrophage cells. ",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T21:18:21.763Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -934,7 +943,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T21:14:25.134Z",
+  "lastUpdated": "2026-01-20T21:18:21.763Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
