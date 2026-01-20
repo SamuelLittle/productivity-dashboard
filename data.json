@@ -314,6 +314,15 @@
               "createdAt": "2026-01-20T16:31:27.551Z"
             }
           ]
+        },
+        {
+          "id": "mkmthio0tg3y2jko0oi",
+          "title": "NK Knockout mini-screen",
+          "description": "exploring nucleofection parameters and knockout conditions and effects in NK cells",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T16:37:18.912Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -867,7 +876,7 @@
       "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T16:31:27.551Z",
+  "lastUpdated": "2026-01-20T16:37:18.912Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
