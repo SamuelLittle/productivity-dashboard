@@ -197,7 +197,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-20T00:26:13.058Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mklut3v9xiajfvhkbm8",
+              "title": "Replace media for DCs in culture",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T00:26:33.045Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -579,5 +588,5 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T00:26:13.058Z"
+  "lastUpdated": "2026-01-20T00:26:33.045Z"
 }
