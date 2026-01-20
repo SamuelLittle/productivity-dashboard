@@ -248,9 +248,9 @@
               "title": "Project readouts list",
               "description": "Make list of project readouts to give Justin an idea of the capabilities required for this project. ",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-01-20T00:07:20.156Z",
-              "completedAt": null
+              "completedAt": "2026-01-20T18:33:13.453Z"
             }
           ],
           "completedAt": null,
@@ -671,10 +671,10 @@
         "taskId": "mklu382vfgedlfuwiwp",
         "subtaskId": "mklu4eak1mc3kdz2kaz",
         "scheduledAt": "2026-01-20T01:20:16.354Z",
-        "completedOnDay": false,
-        "completedAt": null,
-        "completionNotes": null,
-        "completionLinks": null
+        "completedOnDay": true,
+        "completedAt": "2026-01-20T18:33:13.453Z",
+        "completionNotes": "utilizing my existing project slide deck",
+        "completionLinks": "https://docs.google.com/presentation/d/14rsHOowrzNCut72cuNnFi-LyEQOHqgflRFa72gb-ASA/edit?pli=1&slide=id.g3b2c51863eb_0_46#slide=id.g3b2c51863eb_0_46"
       },
       {
         "projectId": "",
@@ -876,9 +876,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-19"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklu382vfgedlfuwiwp",
+      "subtaskId": "mklu4eak1mc3kdz2kaz",
+      "completedAt": "2026-01-20T18:33:13.453Z",
+      "completionNotes": "utilizing my existing project slide deck",
+      "completionLinks": "https://docs.google.com/presentation/d/14rsHOowrzNCut72cuNnFi-LyEQOHqgflRFa72gb-ASA/edit?pli=1&slide=id.g3b2c51863eb_0_46#slide=id.g3b2c51863eb_0_46",
+      "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T17:34:07.055Z",
+  "lastUpdated": "2026-01-20T18:33:13.453Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
