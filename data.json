@@ -239,8 +239,9 @@
               "title": "Submit luminex request for CD4+ve Cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T21:18:41.647Z"
+              "completed": true,
+              "createdAt": "2026-01-20T21:18:41.647Z",
+              "completedAt": "2026-01-20T22:33:52.694Z"
             },
             {
               "id": "mkn3jtuypfmqhhsqge",
@@ -957,7 +958,8 @@
         "taskId": "mkn3iy4jrdxtygzkgtn",
         "subtaskId": "mkn3jdgv4838na2s1a3",
         "scheduledAt": "2026-01-20T21:19:50.809Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-20T22:33:52.694Z"
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -1081,9 +1083,16 @@
       "completionNotes": "Submitted luminex request for 72 samples looking at 10 cytokines in macrophage supernatants. ",
       "completionLinks": "",
       "date": "2026-01-20"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3iy4jrdxtygzkgtn",
+      "subtaskId": "mkn3jdgv4838na2s1a3",
+      "title": "Submit luminex request for CD4+ve Cells",
+      "completedAt": "2026-01-20T22:33:52.694Z"
     }
   ],
-  "lastUpdated": "2026-01-20T22:33:38.182Z",
+  "lastUpdated": "2026-01-20T22:33:52.694Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
