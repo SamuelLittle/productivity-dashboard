@@ -310,7 +310,9 @@
               "description": "decide which cells, what bead ratios and what protocol will work. Prepare this for Thursday to discuss with Celine",
               "priority": "medium",
               "completed": false,
-              "createdAt": "2026-01-20T22:33:38.182Z"
+              "createdAt": "2026-01-20T22:33:38.182Z",
+              "notes": "Needs to be done before 1-on-1\n",
+              "links": ""
             }
           ]
         }
@@ -1116,7 +1118,7 @@
       "completedAt": "2026-01-20T22:33:55.380Z"
     }
   ],
-  "lastUpdated": "2026-01-20T23:21:55.896Z",
+  "lastUpdated": "2026-01-20T23:22:11.280Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
