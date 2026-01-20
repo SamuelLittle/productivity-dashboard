@@ -301,7 +301,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-20T22:25:55.513Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mkn67r0mxdgt41tv9x9",
+              "title": "Make plan for initial \"hand-scale\" pilot",
+              "description": "decide which cells, what bead ratios and what protocol will work. Prepare this for Thursday to discuss with Celine",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T22:33:38.182Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -862,6 +871,13 @@
         "subtaskId": null,
         "scheduledAt": "2026-01-20T16:19:48.769Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mkn5xu0po7lfqnsjdqm",
+        "subtaskId": "mkn67r0mxdgt41tv9x9",
+        "scheduledAt": "2026-01-20T22:33:38.182Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-22": [
@@ -1067,7 +1083,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T22:25:55.513Z",
+  "lastUpdated": "2026-01-20T22:33:38.182Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
