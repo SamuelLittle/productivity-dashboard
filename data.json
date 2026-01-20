@@ -228,7 +228,17 @@
       "description": "A screen large predominantly by Christine Everett that I am making progress on in her absence ",
       "color": "#3b82f6",
       "createdAt": "2026-01-20T00:03:04.094Z",
-      "tasks": [],
+      "tasks": [
+        {
+          "id": "mklu8roio6ns8a57jp",
+          "title": "TREX1 Knockout",
+          "description": "Knockout of TREX1 in monocytes for subsequent differentiation into different \"flavours\" of macrophages.\n\nBased off document here: https://docs.google.com/document/d/1CRQxTqNYtgTY0lftQwkVj91s6Y0K_sSt9zjJOfPrCzI/edit?tab=t.0",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T00:10:44.130Z",
+          "subtasks": []
+        }
+      ],
       "progressUpdates": [],
       "archived": false
     },
@@ -369,6 +379,13 @@
         "subtaskId": null,
         "scheduledAt": "2026-01-20T00:06:25.447Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mklu8roio6ns8a57jp",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-20T00:10:44.130Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-21": [
@@ -418,5 +435,5 @@
       "completedAt": "2025-01-16T14:00:00.000Z"
     }
   ],
-  "lastUpdated": "2026-01-20T00:07:32.336Z"
+  "lastUpdated": "2026-01-20T00:10:44.130Z"
 }
