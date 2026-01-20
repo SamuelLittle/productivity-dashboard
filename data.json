@@ -700,6 +700,15 @@
         "scheduledAt": "2026-01-20T02:02:50.891Z",
         "completedOnDay": false
       }
+    ],
+    "2026-01-23": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mklvsgrboq443ll7wi",
+        "subtaskId": "mklvvdvy4p6j9bb03od",
+        "scheduledAt": "2026-01-20T02:02:57.821Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -748,5 +757,5 @@
       "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T02:02:50.891Z"
+  "lastUpdated": "2026-01-20T02:02:57.821Z"
 }
