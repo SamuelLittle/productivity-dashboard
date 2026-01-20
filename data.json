@@ -199,7 +199,17 @@
       "description": "A large screen of various genes that regulate the response of NK cells to allogenic T cells.",
       "color": "#10b981",
       "createdAt": "2026-01-20T00:01:21.167Z",
-      "tasks": [],
+      "tasks": [
+        {
+          "id": "mklu382vfgedlfuwiwp",
+          "title": "Meeting with Justin re: using the Hive",
+          "description": "Meet with Justin to discuss the possibility of using the hive (specfically the pCell) for this screen",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T00:06:25.447Z",
+          "subtasks": []
+        }
+      ],
       "progressUpdates": [],
       "archived": false
     },
@@ -342,6 +352,15 @@
         "scheduledAt": "2026-01-19T21:55:10.474Z",
         "completedOnDay": false
       }
+    ],
+    "2026-01-20": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mklu382vfgedlfuwiwp",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-20T00:06:25.447Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -374,5 +393,5 @@
       "completedAt": "2025-01-16T14:00:00.000Z"
     }
   ],
-  "lastUpdated": "2026-01-20T00:05:10.118Z"
+  "lastUpdated": "2026-01-20T00:06:25.447Z"
 }
