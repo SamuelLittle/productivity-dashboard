@@ -212,6 +212,16 @@
       "tasks": [],
       "progressUpdates": [],
       "archived": false
+    },
+    {
+      "id": "mklu1lye4czo9brjznq",
+      "name": "iAstro CRISPR Screen",
+      "description": "Observing the effects of knocking out ~90 genes in iPSC derived astrocyte cells. ",
+      "color": "#ec4899",
+      "createdAt": "2026-01-20T00:05:10.118Z",
+      "tasks": [],
+      "progressUpdates": [],
+      "archived": false
     }
   ],
   "dailyLists": {
@@ -364,5 +374,5 @@
       "completedAt": "2025-01-16T14:00:00.000Z"
     }
   ],
-  "lastUpdated": "2026-01-20T00:03:04.094Z"
+  "lastUpdated": "2026-01-20T00:05:10.118Z"
 }
