@@ -426,7 +426,17 @@
       "description": "Observing the effects of knocking out ~90 genes in iPSC derived astrocyte cells. ",
       "color": "#ec4899",
       "createdAt": "2026-01-20T00:05:10.118Z",
-      "tasks": [],
+      "tasks": [
+        {
+          "id": "mkmsv0dd65q3mlfg2gh",
+          "title": "Meet with Orchestra Team for onboarding",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-20T16:19:48.769Z",
+          "subtasks": []
+        }
+      ],
       "progressUpdates": [],
       "archived": false
     }
@@ -678,6 +688,13 @@
         "subtaskId": "mklvtuce9y23orzikye",
         "scheduledAt": "2026-01-20T02:02:43.715Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mkmsv0dd65q3mlfg2gh",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-20T16:19:48.769Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-22": [
@@ -802,7 +819,7 @@
       "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T16:08:36.963Z",
+  "lastUpdated": "2026-01-20T16:19:48.769Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
