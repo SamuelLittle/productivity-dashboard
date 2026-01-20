@@ -378,6 +378,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-20T01:01:15.076Z"
+            },
+            {
+              "id": "mklyikciusnr4zg0ch",
+              "title": "Second M2 media change",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T02:10:19.650Z"
             }
           ]
         }
@@ -716,6 +724,15 @@
         "scheduledAt": "2026-01-20T02:03:03.856Z",
         "completedOnDay": false
       }
+    ],
+    "2026-01-26": [
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mklu8roio6ns8a57jp",
+        "subtaskId": "mklyikciusnr4zg0ch",
+        "scheduledAt": "2026-01-20T02:10:19.651Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -764,5 +781,5 @@
       "date": "2026-01-19"
     }
   ],
-  "lastUpdated": "2026-01-20T02:06:10.067Z"
+  "lastUpdated": "2026-01-20T02:10:19.651Z"
 }
