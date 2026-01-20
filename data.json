@@ -370,6 +370,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-20T00:13:48.004Z"
+            },
+            {
+              "id": "mklw1qdgnu2ei75f2jc",
+              "title": "First M2 media change",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-20T01:01:15.076Z"
             }
           ]
         }
@@ -668,5 +676,5 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-20T00:57:49.618Z"
+  "lastUpdated": "2026-01-20T01:01:15.076Z"
 }
