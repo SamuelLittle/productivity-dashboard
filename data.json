@@ -326,9 +326,12 @@
           "title": "SMARTseq debried meeting with Russell",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-21T23:27:44.244Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-01-21T23:30:40.146Z",
+          "completionNotes": "Met with R. He thinks the data for CD4 cells is fine and the analysis has been made too complicated. \n\nNeed to analyze with ENRICHR.  Look at DEGs, find base expression profile. \n\nThinks we need to pivot to using non tip based method for treating cells.",
+          "completionLinks": "https://maayanlab.cloud/Enrichr/"
         }
       ],
       "progressUpdates": [],
@@ -974,7 +977,10 @@
         "taskId": "mkonl6d0xs68i3hcue",
         "subtaskId": null,
         "scheduledAt": "2026-01-21T23:27:44.245Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-21T23:30:40.146Z",
+        "completionNotes": "Met with R. He thinks the data for CD4 cells is fine and the analysis has been made too complicated. \n\nNeed to analyze with ENRICHR.  Look at DEGs, find base expression profile. \n\nThinks we need to pivot to using non tip based method for treating cells.",
+        "completionLinks": "https://maayanlab.cloud/Enrichr/"
       }
     ],
     "2026-01-22": [
@@ -1259,9 +1265,17 @@
       "completionNotes": "Going to set up a second follow up meeting with Michelle and Holly to overview setting up iAstro work. ",
       "completionLinks": "",
       "date": "2026-01-21"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkonl6d0xs68i3hcue",
+      "completedAt": "2026-01-21T23:30:40.146Z",
+      "completionNotes": "Met with R. He thinks the data for CD4 cells is fine and the analysis has been made too complicated. \n\nNeed to analyze with ENRICHR.  Look at DEGs, find base expression profile. \n\nThinks we need to pivot to using non tip based method for treating cells.",
+      "completionLinks": "https://maayanlab.cloud/Enrichr/",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-21T23:27:44.245Z",
+  "lastUpdated": "2026-01-21T23:30:40.146Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
