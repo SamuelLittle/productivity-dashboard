@@ -155,6 +155,13 @@ function initElements() {
         previousDateInput: document.getElementById('previous-date-input'),
         previousDatePrev: document.getElementById('previous-date-prev'),
         previousDateNext: document.getElementById('previous-date-next'),
+        // Today and Previous daily notes
+        todayNotes: document.getElementById('today-notes'),
+        todayNotesPreview: document.getElementById('today-notes-preview'),
+        todayNotesSave: document.getElementById('today-notes-save'),
+        previousNotes: document.getElementById('previous-notes'),
+        previousNotesPreview: document.getElementById('previous-notes-preview'),
+        previousNotesSave: document.getElementById('previous-notes-save'),
         scheduledTasks: document.getElementById('scheduled-tasks'),
         scheduledEmpty: document.getElementById('scheduled-empty'),
         projectsList: document.getElementById('projects-list'),
@@ -196,7 +203,9 @@ function initElements() {
         taskDetailPriorityText: document.getElementById('task-detail-priority-text'),
         taskDetailDescription: document.getElementById('task-detail-description'),
         taskDetailNotes: document.getElementById('task-detail-notes'),
+        taskDetailNotesPreview: document.getElementById('task-detail-notes-preview'),
         taskDetailLinks: document.getElementById('task-detail-links'),
+        taskDetailLinkPreview: document.getElementById('task-detail-link-preview'),
         taskDetailCompletionInfo: document.getElementById('task-detail-completion-info'),
         taskDetailCompletedAt: document.getElementById('task-detail-completed-at'),
         taskDetailCompletionNotes: document.getElementById('task-detail-completion-notes'),
@@ -631,6 +640,15 @@ function renderTodayView() {
     visibleTasks.forEach(task => {
         elements.todayTasks.appendChild(createDailyTaskElement(task, today));
     });
+
+    // Load daily notes for today
+    const todayNotes = state.data.dailyNotes?.[today] || '';
+    if (elements.todayNotes) {
+        elements.todayNotes.value = todayNotes;
+    }
+    if (elements.todayNotesPreview) {
+        elements.todayNotesPreview.innerHTML = todayNotes ? formatNotesWithLinks(todayNotes) : '';
+    }
 }
 
 function renderPreviousView() {
@@ -656,6 +674,15 @@ function renderPreviousView() {
     tasks.forEach(task => {
         elements.previousTasks.appendChild(createDailyTaskElement(task, date, true));
     });
+
+    // Load daily notes for the selected previous date
+    const previousNotes = state.data.dailyNotes?.[date] || '';
+    if (elements.previousNotes) {
+        elements.previousNotes.value = previousNotes;
+    }
+    if (elements.previousNotesPreview) {
+        elements.previousNotesPreview.innerHTML = previousNotes ? formatNotesWithLinks(previousNotes) : '';
+    }
 }
 
 function navigatePreviousDate(direction) {
@@ -1149,6 +1176,54 @@ async function saveDailyNotes() {
     showToast('Notes saved', 'success');
 }
 
+async function saveTodayNotes() {
+    const today = getToday();
+    const notes = elements.todayNotes?.value?.trim() || '';
+
+    if (!state.data.dailyNotes) {
+        state.data.dailyNotes = {};
+    }
+
+    if (notes) {
+        state.data.dailyNotes[today] = notes;
+    } else {
+        delete state.data.dailyNotes[today];
+    }
+
+    // Update preview
+    if (elements.todayNotesPreview) {
+        elements.todayNotesPreview.innerHTML = notes ? formatNotesWithLinks(notes) : '';
+    }
+
+    state.data.lastUpdated = new Date().toISOString();
+    await saveData();
+    showToast('Notes saved', 'success');
+}
+
+async function savePreviousNotes() {
+    const date = state.selectedPreviousDate || getYesterday();
+    const notes = elements.previousNotes?.value?.trim() || '';
+
+    if (!state.data.dailyNotes) {
+        state.data.dailyNotes = {};
+    }
+
+    if (notes) {
+        state.data.dailyNotes[date] = notes;
+    } else {
+        delete state.data.dailyNotes[date];
+    }
+
+    // Update preview
+    if (elements.previousNotesPreview) {
+        elements.previousNotesPreview.innerHTML = notes ? formatNotesWithLinks(notes) : '';
+    }
+
+    state.data.lastUpdated = new Date().toISOString();
+    await saveData();
+    showToast('Notes saved', 'success');
+}
+
 // ============================================
 // TEXT FORMATTING HELPERS
 // ============================================
@@ -1467,6 +1542,48 @@ function createProjectTaskElement(task, project) {
         });
     });
 
+    // Subtask view details buttons and title click
+    div.querySelectorAll('.subtask-view-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const subtaskId = btn.dataset.subtaskId;
+            const subtask = task.subtasks.find(st => st.id === subtaskId);
+            if (subtask) {
+                openTaskDetailModal({
+                    ...subtask,
+                    projectId: project.id,
+                    projectName: project.name,
+                    projectColor: project.color,
+                    taskId: task.id,
+                    subtaskId: subtask.id,
+                    isSubtask: true
+                }, null);
+            }
+        });
+    });
+
+    // Make subtask titles clickable
+    div.querySelectorAll('.subtask-title').forEach(title => {
+        title.style.cursor = 'pointer';
+        title.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const subtaskItem = title.closest('.subtask-item');
+            const subtaskId = subtaskItem.dataset.subtaskId;
+            const subtask = task.subtasks.find(st => st.id === subtaskId);
+            if (subtask) {
+                openTaskDetailModal({
+                    ...subtask,
+                    projectId: project.id,
+                    projectName: project.name,
+                    projectColor: project.color,
+                    taskId: task.id,
+                    subtaskId: subtask.id,
+                    isSubtask: true
+                }, null);
+            }
+        });
+    });
+
     // Action buttons
     div.querySelectorAll('.task-actions > .task-action-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -1486,11 +1603,17 @@ function createSubtaskHTML(subtask, parentTask, project) {
     ).join('');
 
     return `
-        <div class="subtask-item">
+        <div class="subtask-item" data-subtask-id="${subtask.id}" data-task-id="${parentTask.id}" data-project-id="${project.id}">
             <div class="task-checkbox ${subtask.completed ? 'checked' : ''}" data-subtask-id="${subtask.id}"></div>
-            <span style="${subtask.completed ? 'text-decoration: line-through; opacity: 0.6' : ''}">${subtask.title}</span>
+            <span class="subtask-title" style="${subtask.completed ? 'text-decoration: line-through; opacity: 0.6' : ''}">${subtask.title}</span>
             ${scheduledBadges}
             <div class="subtask-actions">
+                <button class="subtask-view-btn" data-subtask-id="${subtask.id}" title="View Details">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                </button>
                 <button class="subtask-schedule-btn" data-subtask-id="${subtask.id}" title="Add to Day">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
@@ -1842,6 +1965,35 @@ function openTaskDetailModal(task, date) {
 
     elements.taskDetailNotes.value = notes;
     elements.taskDetailLinks.value = links;
+
+    // Populate preview elements
+    if (notes) {
+        elements.taskDetailNotesPreview.innerHTML = formatNotesWithLinks(notes);
+    } else {
+        elements.taskDetailNotesPreview.innerHTML = '';
+    }
+
+    if (links) {
+        const linkDomain = (() => {
+            try {
+                return new URL(links).hostname;
+            } catch {
+                return links;
+            }
+        })();
+        elements.taskDetailLinkPreview.innerHTML = `
+            <a href="${escapeHtml(links)}" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                ${escapeHtml(linkDomain)}
+            </a>
+        `;
+    } else {
+        elements.taskDetailLinkPreview.innerHTML = '';
+    }
 
     // Show completion info if completed
     const isCompleted = task.completedOnDay || task.completed;
@@ -2860,6 +3012,10 @@ function initEventListeners() {
     elements.previousDatePrev?.addEventListener('click', () => navigatePreviousDate(-1));
     elements.previousDateNext?.addEventListener('click', () => navigatePreviousDate(1));
     elements.previousDateInput?.addEventListener('change', (e) => selectPreviousDate(e.target.value));
+
+    // Today and Previous daily notes save
+    elements.todayNotesSave?.addEventListener('click', saveTodayNotes);
+    elements.previousNotesSave?.addEventListener('click', savePreviousNotes);
 
     // Calendar navigation
     elements.calendarPrevBtn?.addEventListener('click', () => navigateCalendar(-1));

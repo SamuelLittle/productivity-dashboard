@@ -150,6 +150,21 @@
                             <p>No tasks for today</p>
                             <span>Add tasks from your projects or create new ones</span>
                         </div>
+                        <!-- Today's Daily Notes -->
+                        <div class="daily-notes-card">
+                            <div class="daily-notes-header">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                </svg>
+                                <span>Daily Notes</span>
+                            </div>
+                            <div id="today-notes-preview" class="daily-notes-preview"></div>
+                            <textarea id="today-notes" class="daily-notes-textarea" placeholder="Add miscellaneous notes for today..."></textarea>
+                            <button id="today-notes-save" class="btn btn-sm btn-primary">Save Notes</button>
+                        </div>
                     </div>
 
                     <!-- Previous View (was Yesterday) -->
@@ -175,6 +190,21 @@
                         </div>
                         <div id="previous-empty" class="empty-state hidden">
                             <p>No tasks for this date</p>
+                        </div>
+                        <!-- Previous Day's Daily Notes -->
+                        <div class="daily-notes-card">
+                            <div class="daily-notes-header">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                </svg>
+                                <span>Daily Notes</span>
+                            </div>
+                            <div id="previous-notes-preview" class="daily-notes-preview"></div>
+                            <textarea id="previous-notes" class="daily-notes-textarea" placeholder="Add miscellaneous notes for this day..."></textarea>
+                            <button id="previous-notes-save" class="btn btn-sm btn-primary">Save Notes</button>
                         </div>
                     </div>
 
@@ -682,20 +712,45 @@
                         <p id="task-detail-description" class="task-detail-description"></p>
                     </div>
 
-                    <div class="task-detail-section">
-                        <label for="task-detail-notes" class="form-label">Notes</label>
-                        <textarea id="task-detail-notes" class="form-input" rows="4" placeholder="Add notes about this task..."></textarea>
+                    <div class="task-detail-section task-notes-section">
+                        <div class="task-detail-section-header">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                            <span>Notes</span>
+                        </div>
+                        <div id="task-detail-notes-preview" class="task-notes-preview"></div>
+                        <textarea id="task-detail-notes" class="task-notes-input" rows="4" placeholder="Add notes about this task..."></textarea>
                     </div>
 
-                    <div class="task-detail-section">
-                        <label for="task-detail-links" class="form-label">Links</label>
-                        <input type="url" id="task-detail-links" class="form-input" placeholder="https://...">
+                    <div class="task-detail-section task-links-section">
+                        <div class="task-detail-section-header">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                            </svg>
+                            <span>Link</span>
+                        </div>
+                        <div id="task-detail-link-preview" class="task-link-preview"></div>
+                        <input type="url" id="task-detail-links" class="task-link-input" placeholder="https://...">
                     </div>
 
-                    <div id="task-detail-completion-info" class="task-detail-section hidden">
-                        <h4>Completion Info</h4>
-                        <p id="task-detail-completed-at" class="task-detail-completed-text"></p>
-                        <p id="task-detail-completion-notes" class="task-detail-completed-text"></p>
+                    <div id="task-detail-completion-info" class="task-detail-section task-completion-section hidden">
+                        <div class="task-detail-section-header completion-header">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <span>Completed</span>
+                        </div>
+                        <div class="completion-details">
+                            <p id="task-detail-completed-at" class="completion-date"></p>
+                            <p id="task-detail-completion-notes" class="completion-notes"></p>
+                        </div>
                     </div>
 
                     <div class="modal-footer">
