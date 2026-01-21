@@ -2009,13 +2009,15 @@ function openTaskDetailModal(task, date) {
         // 1. Passed task object (from daily view with scheduledRef data)
         // 2. Actual task/subtask data from project
         // 3. completedTasks array as fallback
+        // 4. scheduledItems as fallback
         let compNotes = task.completionNotes || actualTaskForCompletion?.completionNotes || '';
         let compLinks = task.completionLinks || actualTaskForCompletion?.completionLinks || '';
 
+        const taskId = task.taskId || task.id;
+        const subtaskId = task.subtaskId;
+
         // If not found, try completedTasks array
         if (!compNotes || !compLinks) {
-            const taskId = task.taskId || task.id;
-            const subtaskId = task.subtaskId;
             const completedEntry = (state.data.completedTasks || []).find(ct =>
                 ct.projectId === task.projectId &&
                 ct.taskId === taskId &&
@@ -2024,6 +2026,21 @@ function openTaskDetailModal(task, date) {
             if (completedEntry) {
                 compNotes = compNotes || completedEntry.completionNotes || '';
                 compLinks = compLinks || completedEntry.completionLinks || '';
+            }
+        }
+
+        // Also check scheduledItems for completion notes (most recent entry)
+        if (!compNotes || !compLinks) {
+            const allScheduledItems = Object.values(state.data.scheduledItems || {}).flat();
+            const scheduledRef = allScheduledItems.find(ref =>
+                ref.projectId === task.projectId &&
+                ref.taskId === taskId &&
+                (subtaskId ? ref.subtaskId === subtaskId : !ref.subtaskId) &&
+                ref.completedOnDay
+            );
+            if (scheduledRef) {
+                compNotes = compNotes || scheduledRef.completionNotes || '';
+                compLinks = compLinks || scheduledRef.completionLinks || '';
             }
         }
         let completionContent = '';
