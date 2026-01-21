@@ -224,7 +224,9 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-20T00:53:10.521Z",
-          "subtasks": []
+          "subtasks": [],
+          "notes": "@2pm virtual",
+          "links": ""
         },
         {
           "id": "mkn3iy4jrdxtygzkgtn",
@@ -1128,7 +1130,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-21T04:08:46.660Z",
+  "lastUpdated": "2026-01-21T04:10:08.714Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
