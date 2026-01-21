@@ -2004,9 +2004,28 @@ function openTaskDetailModal(task, date) {
         const completedAt = task.completedAt || task.completionAt || actualTaskForCompletion?.completedAt;
         elements.taskDetailCompletedAt.textContent = completedAt ?
             `Completed: ${formatDate(completedAt)}` : 'Completed';
-        // Get completion notes from actual task data (for subtasks viewed from project tab)
-        const compNotes = task.completionNotes || actualTaskForCompletion?.completionNotes || '';
-        const compLinks = task.completionLinks || actualTaskForCompletion?.completionLinks || '';
+
+        // Get completion notes from multiple sources:
+        // 1. Passed task object (from daily view with scheduledRef data)
+        // 2. Actual task/subtask data from project
+        // 3. completedTasks array as fallback
+        let compNotes = task.completionNotes || actualTaskForCompletion?.completionNotes || '';
+        let compLinks = task.completionLinks || actualTaskForCompletion?.completionLinks || '';
+
+        // If not found, try completedTasks array
+        if (!compNotes || !compLinks) {
+            const taskId = task.taskId || task.id;
+            const subtaskId = task.subtaskId;
+            const completedEntry = (state.data.completedTasks || []).find(ct =>
+                ct.projectId === task.projectId &&
+                ct.taskId === taskId &&
+                (subtaskId ? ct.subtaskId === subtaskId : !ct.subtaskId)
+            );
+            if (completedEntry) {
+                compNotes = compNotes || completedEntry.completionNotes || '';
+                compLinks = compLinks || completedEntry.completionLinks || '';
+            }
+        }
         let completionContent = '';
         if (compNotes) {
             completionContent += `<div class="completion-note-text">${formatNotesWithLinks(compNotes)}</div>`;
