@@ -615,11 +615,14 @@
           "title": "Meet with Orchestra Team for onboarding",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T16:19:48.769Z",
           "subtasks": [],
           "notes": "@1pm in 42-3L",
-          "links": ""
+          "links": "",
+          "completedAt": "2026-01-21T23:26:10.173Z",
+          "completionNotes": "Going to set up a second follow up meeting with Michelle and Holly to overview setting up iAstro work. ",
+          "completionLinks": ""
         },
         {
           "id": "mkmsy72n9wkp209y165",
@@ -932,7 +935,10 @@
         "taskId": "mkmsv0dd65q3mlfg2gh",
         "subtaskId": null,
         "scheduledAt": "2026-01-20T16:19:48.769Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-21T23:26:10.173Z",
+        "completionNotes": "Going to set up a second follow up meeting with Michelle and Holly to overview setting up iAstro work. ",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -1229,9 +1235,17 @@
       "completionNotes": "Going to receive slide deck from Anna detailing the Flex V1 and Flex V2 systems.  Will review the protocols and cost per sample for each.  Need to develop a pilot and propose to Celine / run over with Anna and KD",
       "completionLinks": "",
       "date": "2026-01-21"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkmsv0dd65q3mlfg2gh",
+      "completedAt": "2026-01-21T23:26:10.173Z",
+      "completionNotes": "Going to set up a second follow up meeting with Michelle and Holly to overview setting up iAstro work. ",
+      "completionLinks": "",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-21T23:25:41.911Z",
+  "lastUpdated": "2026-01-21T23:26:10.173Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
