@@ -559,6 +559,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-20T16:08:36.963Z"
+            },
+            {
+              "id": "mkoagtuviunu3m9qnfp",
+              "title": "Make post nucleofection recovery plates",
+              "description": "3 plates with wells containing 200ul of macrophage recovery buffer.  9 per ko condition, 3 ko conditions per plate.",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-21T17:20:26.407Z"
             }
           ]
         },
@@ -918,6 +926,13 @@
         "subtaskId": "mkn7wppk340n0a2nk6p",
         "scheduledAt": "2026-01-20T23:21:07.203Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mklu8roio6ns8a57jp",
+        "subtaskId": "mkoagtuviunu3m9qnfp",
+        "scheduledAt": "2026-01-21T17:20:26.408Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-22": [
@@ -1170,7 +1185,7 @@
       "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-21T17:18:44.391Z",
+  "lastUpdated": "2026-01-21T17:20:26.408Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
