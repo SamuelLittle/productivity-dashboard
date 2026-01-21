@@ -222,11 +222,14 @@
           "title": "High Throughput scRNAseq Screening meeting",
           "description": "Meeting with Katie and Anne to discuss high throughput scRNAseq using 10x flex system",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T00:53:10.521Z",
           "subtasks": [],
           "notes": "@2pm virtual",
-          "links": ""
+          "links": "",
+          "completedAt": "2026-01-21T23:25:41.911Z",
+          "completionNotes": "Going to receive slide deck from Anna detailing the Flex V1 and Flex V2 systems.  Will review the protocols and cost per sample for each.  Need to develop a pilot and propose to Celine / run over with Anna and KD",
+          "completionLinks": ""
         },
         {
           "id": "mkn3iy4jrdxtygzkgtn",
@@ -905,7 +908,10 @@
         "taskId": "mklvrchlpys3nvusoaj",
         "subtaskId": null,
         "scheduledAt": "2026-01-20T00:53:10.521Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-21T23:25:41.911Z",
+        "completionNotes": "Going to receive slide deck from Anna detailing the Flex V1 and Flex V2 systems.  Will review the protocols and cost per sample for each.  Need to develop a pilot and propose to Celine / run over with Anna and KD",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -1215,9 +1221,17 @@
       "completionNotes": "50mL of media prepped\n",
       "completionLinks": "",
       "date": "2026-01-21"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mklvrchlpys3nvusoaj",
+      "completedAt": "2026-01-21T23:25:41.911Z",
+      "completionNotes": "Going to receive slide deck from Anna detailing the Flex V1 and Flex V2 systems.  Will review the protocols and cost per sample for each.  Need to develop a pilot and propose to Celine / run over with Anna and KD",
+      "completionLinks": "",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-21T20:10:13.447Z",
+  "lastUpdated": "2026-01-21T23:25:41.911Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
