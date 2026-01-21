@@ -691,8 +691,11 @@
         "title": "Meet with Niloo and Zy @ 830",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-21T16:16:27.497Z"
+        "completed": true,
+        "createdAt": "2026-01-21T16:16:27.497Z",
+        "completedAt": "2026-01-21T17:18:44.391Z",
+        "completionNotes": "Advised on killing assay and T cell KIs\n",
+        "completionLinks": ""
       }
     ]
   },
@@ -1157,9 +1160,17 @@
       "subtaskId": "mklua7fi5tb0qt34jlc",
       "title": "Make macrophage differentiation protocol",
       "completedAt": "2026-01-21T04:10:23.327Z"
+    },
+    {
+      "id": "mko86jqhiwdi2j2yr8d",
+      "title": "Meet with Niloo and Zy @ 830",
+      "completedAt": "2026-01-21T17:18:44.391Z",
+      "completionNotes": "Advised on killing assay and T cell KIs\n",
+      "completionLinks": "",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-21T16:16:48.951Z",
+  "lastUpdated": "2026-01-21T17:18:44.391Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
