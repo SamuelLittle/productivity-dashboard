@@ -565,8 +565,11 @@
               "title": "Make post nucleofection recovery plates",
               "description": "3 plates with wells containing 200ul of macrophage recovery buffer.  9 per ko condition, 3 ko conditions per plate.",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-21T17:20:26.407Z"
+              "completed": true,
+              "createdAt": "2026-01-21T17:20:26.407Z",
+              "completedAt": "2026-01-21T17:44:58.133Z",
+              "completionNotes": "Seeded and divided by donor - all wells in all plates 50ng/mL M-CSF",
+              "completionLinks": ""
             }
           ]
         },
@@ -932,7 +935,10 @@
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mkoagtuviunu3m9qnfp",
         "scheduledAt": "2026-01-21T17:20:26.408Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-21T17:44:58.133Z",
+        "completionNotes": "Seeded and divided by donor - all wells in all plates 50ng/mL M-CSF",
+        "completionLinks": ""
       }
     ],
     "2026-01-22": [
@@ -1183,9 +1189,18 @@
       "completionNotes": "Advised on killing assay and T cell KIs\n",
       "completionLinks": "",
       "date": "2026-01-21"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mkoagtuviunu3m9qnfp",
+      "completedAt": "2026-01-21T17:44:58.133Z",
+      "completionNotes": "Seeded and divided by donor - all wells in all plates 50ng/mL M-CSF",
+      "completionLinks": "",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-21T17:20:44.170Z",
+  "lastUpdated": "2026-01-21T17:44:58.133Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
