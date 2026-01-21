@@ -479,8 +479,9 @@
               "title": "Make macrophage differentiation protocol",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T00:11:51.198Z"
+              "completed": true,
+              "createdAt": "2026-01-20T00:11:51.198Z",
+              "completedAt": "2026-01-21T04:10:23.327Z"
             },
             {
               "id": "mkluax96wzz3ceelt09",
@@ -1128,9 +1129,16 @@
       "completionNotes": "Protocol seems to run smoothly. Empty tip box in top left corner not needed. Need to have good plate labelling. Very hard to see liquid. Also print out plate grids may be helpful.  ",
       "completionLinks": "",
       "date": "2026-01-20"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mklua7fi5tb0qt34jlc",
+      "title": "Make macrophage differentiation protocol",
+      "completedAt": "2026-01-21T04:10:23.327Z"
     }
   ],
-  "lastUpdated": "2026-01-21T04:10:08.714Z",
+  "lastUpdated": "2026-01-21T04:10:23.327Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
