@@ -584,7 +584,9 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-20T16:19:48.769Z",
-          "subtasks": []
+          "subtasks": [],
+          "notes": "@1pm in 42-3L",
+          "links": ""
         },
         {
           "id": "mkmsy72n9wkp209y165",
@@ -1126,7 +1128,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-21T04:04:38.662Z",
+  "lastUpdated": "2026-01-21T04:08:46.660Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
