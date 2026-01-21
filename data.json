@@ -494,7 +494,9 @@
               "description": "",
               "priority": "medium",
               "completed": false,
-              "createdAt": "2026-01-20T00:12:44.128Z"
+              "createdAt": "2026-01-20T00:12:44.128Z",
+              "notes": "Isolate ~10M monocytes from all 3 donors",
+              "links": ""
             },
             {
               "id": "mklubxziy4olc2hyz6",
@@ -1124,7 +1126,7 @@
       "date": "2026-01-20"
     }
   ],
-  "lastUpdated": "2026-01-21T02:15:10.904Z",
+  "lastUpdated": "2026-01-21T04:04:38.662Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
