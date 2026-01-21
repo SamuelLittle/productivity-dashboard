@@ -414,8 +414,11 @@
               "title": "Make NK cell overnight culture media",
               "description": "Make cRPMI media containing 10ng/mL IL2 and 50ng/mL IL15\n",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T23:21:02.504Z"
+              "completed": true,
+              "createdAt": "2026-01-20T23:21:02.504Z",
+              "completedAt": "2026-01-21T20:10:13.447Z",
+              "completionNotes": "50mL of media prepped\n",
+              "completionLinks": ""
             }
           ]
         },
@@ -930,7 +933,10 @@
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mkn7wppk340n0a2nk6p",
         "scheduledAt": "2026-01-20T23:21:07.203Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-21T20:10:13.447Z",
+        "completionNotes": "50mL of media prepped\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -1200,9 +1206,18 @@
       "completionNotes": "Seeded and divided by donor - all wells in all plates 50ng/mL M-CSF",
       "completionLinks": "",
       "date": "2026-01-21"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklvsgrboq443ll7wi",
+      "subtaskId": "mkn7wppk340n0a2nk6p",
+      "completedAt": "2026-01-21T20:10:13.447Z",
+      "completionNotes": "50mL of media prepped\n",
+      "completionLinks": "",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-21T19:53:03.018Z",
+  "lastUpdated": "2026-01-21T20:10:13.447Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
