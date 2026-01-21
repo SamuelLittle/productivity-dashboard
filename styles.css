@@ -1593,6 +1593,12 @@ body {
     display: none;
 }
 
+.completion-note-text {
+    margin-bottom: 8px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
 /* Daily Notes Card (Today & Previous views) */
 .daily-notes-card {
     margin-top: 24px;

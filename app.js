@@ -1996,15 +1996,25 @@ function openTaskDetailModal(task, date) {
     }
 
     // Show completion info if completed
-    const isCompleted = task.completedOnDay || task.completed;
+    // Get actual task data to retrieve completion notes from the project data
+    const actualTaskForCompletion = task.projectId && !task.isStandalone ? getActualTaskData(task) : task;
+    const isCompleted = task.completedOnDay || task.completed || actualTaskForCompletion?.completed;
     if (isCompleted) {
         elements.taskDetailCompletionInfo.classList.remove('hidden');
-        const completedAt = task.completedAt || task.completionAt;
+        const completedAt = task.completedAt || task.completionAt || actualTaskForCompletion?.completedAt;
         elements.taskDetailCompletedAt.textContent = completedAt ?
             `Completed: ${formatDate(completedAt)}` : 'Completed';
-        const compNotes = task.completionNotes || '';
-        elements.taskDetailCompletionNotes.innerHTML = compNotes ?
-            `Completion notes: ${formatNotesWithLinks(compNotes)}` : '';
+        // Get completion notes from actual task data (for subtasks viewed from project tab)
+        const compNotes = task.completionNotes || actualTaskForCompletion?.completionNotes || '';
+        const compLinks = task.completionLinks || actualTaskForCompletion?.completionLinks || '';
+        let completionContent = '';
+        if (compNotes) {
+            completionContent += `<div class="completion-note-text">${formatNotesWithLinks(compNotes)}</div>`;
+        }
+        if (compLinks) {
+            completionContent += `<a href="${escapeHtml(compLinks)}" target="_blank" rel="noopener noreferrer" class="completion-link">${escapeHtml(compLinks)}</a>`;
+        }
+        elements.taskDetailCompletionNotes.innerHTML = completionContent;
     } else {
         elements.taskDetailCompletionInfo.classList.add('hidden');
     }
@@ -2438,7 +2448,7 @@ async function toggleDailyTaskComplete(task, date, completed, notes = '', links 
             ref.completionLinks = links;
 
             if (task.isSubtask || subtaskId) {
-                await markSubtaskCompleteInProject(projectId, taskId, subtaskId, completed);
+                await markSubtaskCompleteInProject(projectId, taskId, subtaskId, completed, notes, links);
             } else {
                 await markTaskCompleteInProject(projectId, taskId, completed, notes, links);
             }
@@ -2469,7 +2479,7 @@ async function toggleDailyTaskComplete(task, date, completed, notes = '', links 
         // Still allow completion via project
         console.log('Task not in scheduledItems, completing via project directly');
         if (task.isSubtask || subtaskId) {
-            await markSubtaskCompleteInProject(projectId, taskId, subtaskId, completed);
+            await markSubtaskCompleteInProject(projectId, taskId, subtaskId, completed, notes, links);
         } else {
             await markTaskCompleteInProject(projectId, taskId, completed, notes, links);
         }
@@ -2611,7 +2621,7 @@ async function markTaskCompleteInProject(projectId, taskId, completed, notes = '
     }
 }
 
-async function markSubtaskCompleteInProject(projectId, taskId, subtaskId, completed) {
+async function markSubtaskCompleteInProject(projectId, taskId, subtaskId, completed, notes = '', links = '') {
     const project = state.data.projects.find(p => p.id === projectId);
     if (!project) return;
 
@@ -2623,6 +2633,14 @@ async function markSubtaskCompleteInProject(projectId, taskId, subtaskId, comple
 
     subtask.completed = completed;
     subtask.completedAt = completed ? new Date().toISOString() : null;
+
+    if (completed) {
+        subtask.completionNotes = notes;
+        subtask.completionLinks = links;
+    } else {
+        subtask.completionNotes = null;
+        subtask.completionLinks = null;
+    }
 
     // Note: Parent task completion is now handled separately - no auto-complete
 }
