@@ -472,7 +472,9 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T00:11:23.022Z",
-              "completedAt": "2026-01-20T21:55:07.462Z"
+              "completedAt": "2026-01-20T21:55:07.462Z",
+              "notes": "later adjusted to equal M-CSF concentrations as pre Christine Everetts recommendation\n",
+              "links": ""
             },
             {
               "id": "mklu9x8uztbnqh3ddbl",
@@ -1200,7 +1202,7 @@
       "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-21T17:44:58.133Z",
+  "lastUpdated": "2026-01-21T17:46:02.602Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
