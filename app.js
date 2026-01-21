@@ -23,9 +23,15 @@ let state = {
     fileSha: null,
     calendarDate: new Date(),
     selectedDate: null,
+    selectedPreviousDate: null,
     showCompleted: true,
     draggedTaskKey: null,
-    draggedTaskDate: null
+    draggedTaskDate: null,
+    isSubmitting: false,
+    calendarFilter: {
+        projectId: null,
+        taskId: null
+    }
 };
 
 // DOM Elements
@@ -143,8 +149,12 @@ function initElements() {
         // View containers
         todayTasks: document.getElementById('today-tasks'),
         todayEmpty: document.getElementById('today-empty'),
-        yesterdayTasks: document.getElementById('yesterday-tasks'),
-        yesterdayEmpty: document.getElementById('yesterday-empty'),
+        previousViewTitle: document.getElementById('previous-view-title'),
+        previousTasks: document.getElementById('previous-tasks'),
+        previousEmpty: document.getElementById('previous-empty'),
+        previousDateInput: document.getElementById('previous-date-input'),
+        previousDatePrev: document.getElementById('previous-date-prev'),
+        previousDateNext: document.getElementById('previous-date-next'),
         scheduledTasks: document.getElementById('scheduled-tasks'),
         scheduledEmpty: document.getElementById('scheduled-empty'),
         projectsList: document.getElementById('projects-list'),
@@ -160,6 +170,9 @@ function initElements() {
         calendarPrevBtn: document.getElementById('calendar-prev'),
         calendarNextBtn: document.getElementById('calendar-next'),
         calendarTodayBtn: document.getElementById('calendar-today-btn'),
+        calendarProjectFilter: document.getElementById('calendar-project-filter'),
+        calendarTaskFilter: document.getElementById('calendar-task-filter'),
+        calendarFilterReset: document.getElementById('calendar-filter-reset'),
         // Day detail modal
         dayDetailModal: document.getElementById('day-detail-modal'),
         dayDetailDate: document.getElementById('day-detail-date'),
@@ -167,6 +180,8 @@ function initElements() {
         dayDetailPrevBtn: document.getElementById('day-detail-prev'),
         dayDetailNextBtn: document.getElementById('day-detail-next'),
         dayDetailAddBtn: document.getElementById('day-detail-add-btn'),
+        dayDetailNotes: document.getElementById('day-detail-notes'),
+        dayDetailSaveNotes: document.getElementById('day-detail-save-notes'),
         // Reschedule modal
         rescheduleModal: document.getElementById('reschedule-modal'),
         rescheduleTaskInfo: document.getElementById('reschedule-task-info'),
@@ -400,6 +415,12 @@ function migrateDataStructure() {
     if (!state.data.completedTasks) {
         state.data.completedTasks = [];
     }
+    if (!state.data.dailyNotes) {
+        state.data.dailyNotes = {};
+    }
+    if (!state.data.taskOrder) {
+        state.data.taskOrder = {};
+    }
 }
 
 async function saveData() {
@@ -589,12 +610,13 @@ function getDateStatus(date) {
 
 function renderAllViews() {
     renderTodayView();
-    renderYesterdayView();
+    renderPreviousView();
     renderScheduledView();
     renderProjectsView();
     renderArchiveView();
     renderCalendar();
     updateProjectSelector();
+    updateCalendarProjectFilter();
 }
 
 function renderTodayView() {
@@ -611,17 +633,56 @@ function renderTodayView() {
     });
 }
 
-function renderYesterdayView() {
-    const yesterday = getYesterday();
-    const tasks = getTasksForDate(yesterday, true);
+function renderPreviousView() {
+    // Default to yesterday if no date selected
+    if (!state.selectedPreviousDate) {
+        state.selectedPreviousDate = getYesterday();
+    }
 
-    elements.yesterdayTasks.innerHTML = '';
-    elements.yesterdayEmpty.classList.toggle('hidden', tasks.length > 0);
+    const date = state.selectedPreviousDate;
+    const tasks = getTasksForDate(date, true);
+
+    // Update title and date picker
+    elements.previousViewTitle.textContent = formatDate(date);
+    if (elements.previousDateInput) {
+        elements.previousDateInput.value = date;
+        // Limit date picker to past dates
+        elements.previousDateInput.max = getYesterday();
+    }
+
+    elements.previousTasks.innerHTML = '';
+    elements.previousEmpty.classList.toggle('hidden', tasks.length > 0);
 
     tasks.forEach(task => {
-        // Enable reschedule for yesterday's tasks too (FEATURE 1)
-        elements.yesterdayTasks.appendChild(createDailyTaskElement(task, yesterday, true));
+        elements.previousTasks.appendChild(createDailyTaskElement(task, date, true));
     });
+}
+
+function navigatePreviousDate(direction) {
+    const currentDate = getDateFromString(state.selectedPreviousDate || getYesterday());
+    currentDate.setDate(currentDate.getDate() + direction);
+    const newDate = getLocalDateString(currentDate);
+
+    // Don't go into the future (beyond yesterday)
+    const yesterday = getYesterday();
+    if (newDate > yesterday) {
+        showToast('Cannot view future dates in Previous view', 'error');
+        return;
+    }
+
+    state.selectedPreviousDate = newDate;
+    renderPreviousView();
+}
+
+function selectPreviousDate(dateStr) {
+    const yesterday = getYesterday();
+    if (dateStr > yesterday) {
+        showToast('Cannot view future dates in Previous view', 'error');
+        return;
+    }
+
+    state.selectedPreviousDate = dateStr;
+    renderPreviousView();
 }
 
 function renderScheduledView() {
@@ -704,10 +765,57 @@ function renderProjectDetail(projectId) {
     state.currentProject = projectId;
     elements.projectDetailTitle.textContent = project.name;
 
-    elements.projectTasks.innerHTML = '';
+    // Split tasks into active and completed
+    const activeTasks = [];
+    const completedTasks = [];
+
     project.tasks.forEach(task => {
-        elements.projectTasks.appendChild(createProjectTaskElement(task, project));
+        // Task is completed if:
+        // 1. The task itself is marked complete, OR
+        // 2. All subtasks are complete (if it has subtasks)
+        const hasSubtasks = task.subtasks && task.subtasks.length > 0;
+        const allSubtasksComplete = hasSubtasks && task.subtasks.every(st => st.completed);
+        const isCompleted = task.completed || allSubtasksComplete;
+
+        if (isCompleted) {
+            completedTasks.push(task);
+        } else {
+            activeTasks.push(task);
+        }
     });
+
+    elements.projectTasks.innerHTML = '';
+
+    // Active Tasks Section
+    if (activeTasks.length > 0 || completedTasks.length > 0) {
+        const activeHeader = document.createElement('div');
+        activeHeader.className = 'project-tasks-section-header';
+        activeHeader.innerHTML = `<h4>Active Tasks (${activeTasks.length})</h4>`;
+        elements.projectTasks.appendChild(activeHeader);
+    }
+
+    if (activeTasks.length > 0) {
+        activeTasks.forEach(task => {
+            elements.projectTasks.appendChild(createProjectTaskElement(task, project));
+        });
+    } else if (project.tasks.length > 0) {
+        const emptyActive = document.createElement('p');
+        emptyActive.className = 'empty-state-small';
+        emptyActive.textContent = 'All tasks completed';
+        elements.projectTasks.appendChild(emptyActive);
+    }
+
+    // Completed Tasks Section
+    if (completedTasks.length > 0) {
+        const completedHeader = document.createElement('div');
+        completedHeader.className = 'project-tasks-section-header completed-section';
+        completedHeader.innerHTML = `<h4>Completed Tasks (${completedTasks.length})</h4>`;
+        elements.projectTasks.appendChild(completedHeader);
+
+        completedTasks.forEach(task => {
+            elements.projectTasks.appendChild(createProjectTaskElement(task, project));
+        });
+    }
 
     if (project.tasks.length === 0) {
         elements.projectTasks.innerHTML = '<p class="empty-state">No tasks yet</p>';
@@ -777,7 +885,7 @@ function renderCalendar() {
         const prevMonth = month === 0 ? 11 : month - 1;
         const prevYear = month === 0 ? year - 1 : year;
         const dateStr = getLocalDateString(new Date(prevYear, prevMonth, day));
-        const status = getDateStatus(dateStr);
+        const status = getFilteredDateStatus(dateStr);
         html += `<div class="calendar-day other-month${status ? ' has-tasks' : ''}" data-date="${dateStr}">
             <span class="day-number">${day}</span>
             ${status ? `<span class="day-indicator ${status}"></span>` : ''}
@@ -788,8 +896,8 @@ function renderCalendar() {
     for (let day = 1; day <= daysInMonth; day++) {
         const dateStr = getLocalDateString(new Date(year, month, day));
         const isToday = dateStr === today;
-        const status = getDateStatus(dateStr);
-        const tasks = getTasksForDate(dateStr, true);
+        const status = getFilteredDateStatus(dateStr);
+        const tasks = getFilteredTasksForDate(dateStr, true);
         const taskCount = tasks.length;
 
         html += `<div class="calendar-day${isToday ? ' today' : ''}${status ? ' has-tasks' : ''}" data-date="${dateStr}">
@@ -805,7 +913,7 @@ function renderCalendar() {
         const nextMonth = month === 11 ? 0 : month + 1;
         const nextYear = month === 11 ? year + 1 : year;
         const dateStr = getLocalDateString(new Date(nextYear, nextMonth, day));
-        const status = getDateStatus(dateStr);
+        const status = getFilteredDateStatus(dateStr);
         html += `<div class="calendar-day other-month${status ? ' has-tasks' : ''}" data-date="${dateStr}">
             <span class="day-number">${day}</span>
             ${status ? `<span class="day-indicator ${status}"></span>` : ''}
@@ -837,6 +945,138 @@ function jumpToToday() {
 }
 
 // ============================================
+// CALENDAR FILTERS
+// ============================================
+
+function updateCalendarProjectFilter() {
+    if (!elements.calendarProjectFilter) return;
+
+    const currentValue = state.calendarFilter.projectId;
+    elements.calendarProjectFilter.innerHTML = '<option value="">All Projects</option>';
+
+    state.data.projects
+        .filter(p => !p.archived)
+        .forEach(project => {
+            const option = document.createElement('option');
+            option.value = project.id;
+            option.textContent = project.name;
+            if (project.id === currentValue) option.selected = true;
+            elements.calendarProjectFilter.appendChild(option);
+        });
+}
+
+function updateCalendarTaskFilter() {
+    if (!elements.calendarTaskFilter) return;
+
+    const projectId = state.calendarFilter.projectId;
+    elements.calendarTaskFilter.innerHTML = '<option value="">All Tasks</option>';
+
+    if (!projectId) {
+        elements.calendarTaskFilter.classList.add('hidden');
+        return;
+    }
+
+    const project = state.data.projects.find(p => p.id === projectId);
+    if (!project) return;
+
+    elements.calendarTaskFilter.classList.remove('hidden');
+
+    project.tasks.forEach(task => {
+        const option = document.createElement('option');
+        option.value = task.id;
+        option.textContent = task.title;
+        if (task.id === state.calendarFilter.taskId) option.selected = true;
+        elements.calendarTaskFilter.appendChild(option);
+    });
+}
+
+function handleCalendarProjectFilterChange() {
+    const projectId = elements.calendarProjectFilter.value || null;
+    state.calendarFilter.projectId = projectId;
+    state.calendarFilter.taskId = null;
+    updateCalendarTaskFilter();
+    updateCalendarFilterResetBtn();
+    renderCalendar();
+
+    // Also update day detail if open
+    if (state.selectedDate && !elements.dayDetailModal?.classList.contains('hidden')) {
+        renderDayDetailTasks(state.selectedDate);
+    }
+}
+
+function handleCalendarTaskFilterChange() {
+    const taskId = elements.calendarTaskFilter.value || null;
+    state.calendarFilter.taskId = taskId;
+    updateCalendarFilterResetBtn();
+    renderCalendar();
+
+    // Also update day detail if open
+    if (state.selectedDate && !elements.dayDetailModal?.classList.contains('hidden')) {
+        renderDayDetailTasks(state.selectedDate);
+    }
+}
+
+function resetCalendarFilter() {
+    state.calendarFilter.projectId = null;
+    state.calendarFilter.taskId = null;
+    elements.calendarProjectFilter.value = '';
+    elements.calendarTaskFilter.value = '';
+    elements.calendarTaskFilter.classList.add('hidden');
+    updateCalendarFilterResetBtn();
+    renderCalendar();
+
+    if (state.selectedDate && !elements.dayDetailModal?.classList.contains('hidden')) {
+        renderDayDetailTasks(state.selectedDate);
+    }
+}
+
+function updateCalendarFilterResetBtn() {
+    if (!elements.calendarFilterReset) return;
+    const hasFilter = state.calendarFilter.projectId || state.calendarFilter.taskId;
+    elements.calendarFilterReset.classList.toggle('hidden', !hasFilter);
+}
+
+function getFilteredTasksForDate(date, includeCompleted = true) {
+    let tasks = getTasksForDate(date, includeCompleted);
+
+    // Apply calendar filter
+    if (state.calendarFilter.projectId) {
+        tasks = tasks.filter(t => t.projectId === state.calendarFilter.projectId);
+    }
+
+    if (state.calendarFilter.taskId) {
+        tasks = tasks.filter(t => {
+            // Match parent task or subtask of the selected task
+            const taskId = t.taskId || t.id;
+            return taskId === state.calendarFilter.taskId ||
+                   (t.isSubtask && t.taskId === state.calendarFilter.taskId);
+        });
+    }
+
+    return tasks;
+}
+
+// Get date status for filtered calendar indicators
+function getFilteredDateStatus(date) {
+    const today = getToday();
+    const tasks = getFilteredTasksForDate(date, true);
+
+    if (tasks.length === 0) return null;
+
+    const completed = tasks.filter(t => t.completedOnDay || t.completed).length;
+    const incomplete = tasks.length - completed;
+
+    if (date < today) {
+        if (incomplete > 0) return 'past-incomplete';
+        return 'past-complete';
+    } else if (date === today) {
+        return 'today';
+    } else {
+        return 'future';
+    }
+}
+
+// ============================================
 // DAY DETAIL MODAL
 // ============================================
 
@@ -847,11 +1087,18 @@ function openDayDetail(date) {
 
     elements.dayDetailDate.textContent = formatDate(date);
     renderDayDetailTasks(date);
+
+    // Load daily notes
+    const notes = (state.data.dailyNotes || {})[date] || '';
+    if (elements.dayDetailNotes) {
+        elements.dayDetailNotes.value = notes;
+    }
+
     elements.dayDetailModal.classList.remove('hidden');
 }
 
 function renderDayDetailTasks(date) {
-    const tasks = getTasksForDate(date, true);
+    const tasks = getFilteredTasksForDate(date, true);
 
     elements.dayDetailTasks.innerHTML = '';
 
@@ -873,6 +1120,66 @@ function navigateDayDetail(direction) {
     state.selectedDate = newDate;
     elements.dayDetailDate.textContent = formatDate(newDate);
     renderDayDetailTasks(newDate);
+
+    // Load notes for new date
+    const notes = (state.data.dailyNotes || {})[newDate] || '';
+    if (elements.dayDetailNotes) {
+        elements.dayDetailNotes.value = notes;
+    }
+}
+
+async function saveDailyNotes() {
+    if (!state.selectedDate) return;
+
+    const notes = elements.dayDetailNotes?.value?.trim() || '';
+
+    if (!state.data.dailyNotes) {
+        state.data.dailyNotes = {};
+    }
+
+    if (notes) {
+        state.data.dailyNotes[state.selectedDate] = notes;
+    } else {
+        // Remove empty notes entry
+        delete state.data.dailyNotes[state.selectedDate];
+    }
+
+    state.data.lastUpdated = new Date().toISOString();
+    await saveData();
+    showToast('Notes saved', 'success');
+}
+
+// ============================================
+// TEXT FORMATTING HELPERS
+// ============================================
+
+function linkifyText(text) {
+    if (!text) return '';
+
+    // First, handle markdown links: [text](url)
+    let result = text.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g,
+        '<a href="$2" target="_blank" rel="noopener noreferrer" class="linked-url">$1</a>');
+
+    // Then, handle bare URLs (that are not already part of an anchor tag)
+    const urlPattern = /(?<!href="|>)(https?:\/\/[^\s<\)]+)/g;
+    result = result.replace(urlPattern,
+        '<a href="$1" target="_blank" rel="noopener noreferrer" class="linked-url">$1</a>');
+
+    return result;
+}
+
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function formatNotesWithLinks(text) {
+    if (!text) return '';
+    // First escape HTML to prevent XSS, then linkify
+    const escaped = escapeHtml(text);
+    return linkifyText(escaped);
 }
 
 // ============================================
@@ -954,22 +1261,22 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
 
     // Checkbox click handler
     const checkbox = div.querySelector('.task-checkbox');
-    checkbox.addEventListener('click', (e) => {
+    checkbox.addEventListener('click', async (e) => {
         e.stopPropagation();
         if (!isCompleted) {
             openCompleteModal(task, date);
         } else {
-            toggleDailyTaskComplete(task, date, false);
+            await toggleDailyTaskComplete(task, date, false);
         }
     });
 
     // Action buttons
     div.querySelectorAll('.task-action-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
+        btn.addEventListener('click', async (e) => {
             e.stopPropagation();
             const action = btn.dataset.action;
             if (action === 'remove-from-day') {
-                removeTaskFromDay(task, date);
+                await removeTaskFromDay(task, date);
             } else if (action === 'reschedule') {
                 openRescheduleModal(task, date);
             } else if (action === 'view-details') {
@@ -1091,6 +1398,12 @@ function createProjectTaskElement(task, project) {
             ` : ''}
         </div>
         <div class="task-actions">
+            <button class="task-action-btn" data-action="view-details" title="View Details">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                </svg>
+            </button>
             <button class="task-action-btn" data-action="schedule" title="Add to Day">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
@@ -1124,21 +1437,21 @@ function createProjectTaskElement(task, project) {
 
     // Checkbox handler
     const checkbox = div.querySelector('.task-checkbox');
-    checkbox.addEventListener('click', (e) => {
+    checkbox.addEventListener('click', async (e) => {
         e.stopPropagation();
         if (!task.completed) {
             openCompleteModal({ ...task, projectId: project.id }, null, true);
         } else {
-            toggleProjectTaskComplete(project.id, task.id, false);
+            await toggleProjectTaskComplete(project.id, task.id, false);
         }
     });
 
     // Subtask checkbox handlers
     div.querySelectorAll('.subtask-item .task-checkbox').forEach(cb => {
-        cb.addEventListener('click', (e) => {
+        cb.addEventListener('click', async (e) => {
             e.stopPropagation();
             const subtaskId = cb.dataset.subtaskId;
-            toggleSubtaskComplete(project.id, task.id, subtaskId);
+            await toggleSubtaskComplete(project.id, task.id, subtaskId);
         });
     });
 
@@ -1264,9 +1577,11 @@ function switchView(viewName) {
         view.classList.toggle('active', view.id === `view-${viewName}`);
     });
 
-    // Render calendar when switching to calendar view
+    // Render specific views when switching
     if (viewName === 'calendar') {
         renderCalendar();
+    } else if (viewName === 'previous') {
+        renderPreviousView();
     }
 }
 
@@ -1507,8 +1822,8 @@ function openTaskDetailModal(task, date) {
     elements.taskDetailPriority.className = `task-priority priority-${task.priority || 'medium'}`;
     elements.taskDetailPriorityText.textContent = task.priority || 'medium';
 
-    // Set description
-    elements.taskDetailDescription.textContent = task.description || '';
+    // Set description (with clickable links)
+    elements.taskDetailDescription.innerHTML = formatNotesWithLinks(task.description || '');
 
     // Set notes and links from the actual task in the project
     let notes = '';
@@ -1536,8 +1851,8 @@ function openTaskDetailModal(task, date) {
         elements.taskDetailCompletedAt.textContent = completedAt ?
             `Completed: ${formatDate(completedAt)}` : 'Completed';
         const compNotes = task.completionNotes || '';
-        elements.taskDetailCompletionNotes.textContent = compNotes ?
-            `Completion notes: ${compNotes}` : '';
+        elements.taskDetailCompletionNotes.innerHTML = compNotes ?
+            `Completion notes: ${formatNotesWithLinks(compNotes)}` : '';
     } else {
         elements.taskDetailCompletionInfo.classList.add('hidden');
     }
@@ -1687,6 +2002,14 @@ async function removeTaskFromDay(task, date, silent = false) {
 
 function handleProjectTaskAction(action, task, project) {
     switch (action) {
+        case 'view-details':
+            openTaskDetailModal({
+                ...task,
+                projectId: project.id,
+                projectName: project.name,
+                projectColor: project.color
+            }, null);
+            break;
         case 'schedule':
             openScheduleModal(project.id, task.id, null, task.title);
             break;
@@ -1775,6 +2098,18 @@ function closeAllModals() {
 async function saveTask(e) {
     e.preventDefault();
 
+    // Prevent duplicate submission
+    if (state.isSubmitting) return;
+    state.isSubmitting = true;
+
+    try {
+        await saveTaskInternal();
+    } finally {
+        state.isSubmitting = false;
+    }
+}
+
+async function saveTaskInternal() {
     const taskId = elements.taskId.value || generateId();
     const projectId = elements.taskProjectId.value || elements.taskProject.value;
     const parentId = elements.taskParentId.value;
@@ -1813,6 +2148,9 @@ async function saveTask(e) {
                 parentTask.subtasks.push(taskData);
 
                 if (scheduledDate) {
+                    // BUG 2 FIX: Remove subtask from all other dates first
+                    removeFromAllScheduledDates(projectId, parentId, taskId);
+
                     if (!state.data.scheduledItems[scheduledDate]) {
                         state.data.scheduledItems[scheduledDate] = [];
                     }
@@ -1842,6 +2180,9 @@ async function saveTask(e) {
             }
 
             if (scheduledDate && existingIndex < 0) {
+                // BUG 2 FIX: Remove from all other dates first (single day only)
+                removeFromAllScheduledDates(projectId, taskId, null);
+
                 if (!state.data.scheduledItems[scheduledDate]) {
                     state.data.scheduledItems[scheduledDate] = [];
                 }
@@ -1871,11 +2212,20 @@ async function saveTask(e) {
 
     state.data.lastUpdated = new Date().toISOString();
     await saveData();
+
+    // Close task modal but keep day detail modal open if it was showing
+    const dayDetailWasOpen = state.selectedDate && !elements.dayDetailModal?.classList.contains('hidden');
+
     closeAllModals();
     renderAllViews();
 
     if (state.currentProject) {
         renderProjectDetail(state.currentProject);
+    }
+
+    // Reopen day detail if it was open when we started
+    if (dayDetailWasOpen) {
+        openDayDetail(state.selectedDate);
     }
 
     showToast('Task saved', 'success');
@@ -1884,19 +2234,27 @@ async function saveTask(e) {
 async function completeTask(e) {
     e.preventDefault();
 
-    const taskInfo = JSON.parse(elements.completeTaskId.value);
-    const notes = elements.completeNotes.value;
-    const links = elements.completeLinks.value;
+    // Prevent duplicate submission
+    if (state.isSubmitting) return;
+    state.isSubmitting = true;
 
-    if (taskInfo.isProjectTask) {
-        await toggleProjectTaskComplete(taskInfo.projectId, taskInfo.id, true, notes, links);
-    } else if (taskInfo.isStandalone) {
-        await toggleStandaloneTaskComplete(taskInfo.id, taskInfo.date, true, notes, links);
-    } else {
-        await toggleDailyTaskComplete(taskInfo, taskInfo.date, true, notes, links);
+    try {
+        const taskInfo = JSON.parse(elements.completeTaskId.value);
+        const notes = elements.completeNotes.value;
+        const links = elements.completeLinks.value;
+
+        if (taskInfo.isProjectTask) {
+            await toggleProjectTaskComplete(taskInfo.projectId, taskInfo.id, true, notes, links);
+        } else if (taskInfo.isStandalone) {
+            await toggleStandaloneTaskComplete(taskInfo.id, taskInfo.date, true, notes, links);
+        } else {
+            await toggleDailyTaskComplete(taskInfo, taskInfo.date, true, notes, links);
+        }
+
+        closeAllModals();
+    } finally {
+        state.isSubmitting = false;
     }
-
-    closeAllModals();
 }
 
 async function toggleDailyTaskComplete(task, date, completed, notes = '', links = '') {
@@ -2336,6 +2694,17 @@ function exportReport(e) {
         }
     });
 
+    // Get daily notes for the month
+    const dailyNotesForMonth = {};
+    if (state.data.dailyNotes) {
+        Object.entries(state.data.dailyNotes).forEach(([date, notes]) => {
+            const noteDate = getDateFromString(date);
+            if (noteDate >= startDate && noteDate <= endDate) {
+                dailyNotesForMonth[date] = notes;
+            }
+        });
+    }
+
     let content = '';
     const monthName = startDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
@@ -2362,8 +2731,18 @@ function exportReport(e) {
                 content += '\n';
             });
         }
+
+        // Add daily notes
+        const notesDates = Object.keys(dailyNotesForMonth).sort();
+        if (notesDates.length > 0) {
+            content += `## Daily Notes\n\n`;
+            notesDates.forEach(date => {
+                content += `### ${formatDate(date)}\n\n`;
+                content += `${dailyNotesForMonth[date]}\n\n`;
+            });
+        }
     } else if (format === 'json') {
-        content = JSON.stringify({ month: monthName, tasks: completedInMonth }, null, 2);
+        content = JSON.stringify({ month: monthName, tasks: completedInMonth, dailyNotes: dailyNotesForMonth }, null, 2);
     } else {
         content = `Productivity Report - ${monthName}\n`;
         content += `${'='.repeat(40)}\n\n`;
@@ -2382,6 +2761,16 @@ function exportReport(e) {
             content += `Other Tasks\n${'-'.repeat(20)}\n`;
             standalone.forEach(task => {
                 content += `  [x] ${task.title}\n`;
+            });
+        }
+
+        // Add daily notes (plain text)
+        const notesDatesText = Object.keys(dailyNotesForMonth).sort();
+        if (notesDatesText.length > 0) {
+            content += `\nDaily Notes\n${'='.repeat(40)}\n\n`;
+            notesDatesText.forEach(date => {
+                content += `${formatDate(date)}\n${'-'.repeat(20)}\n`;
+                content += `${dailyNotesForMonth[date]}\n\n`;
             });
         }
     }
@@ -2467,14 +2856,25 @@ function initEventListeners() {
         }
     });
 
+    // Previous date navigation
+    elements.previousDatePrev?.addEventListener('click', () => navigatePreviousDate(-1));
+    elements.previousDateNext?.addEventListener('click', () => navigatePreviousDate(1));
+    elements.previousDateInput?.addEventListener('change', (e) => selectPreviousDate(e.target.value));
+
     // Calendar navigation
     elements.calendarPrevBtn?.addEventListener('click', () => navigateCalendar(-1));
     elements.calendarNextBtn?.addEventListener('click', () => navigateCalendar(1));
     elements.calendarTodayBtn?.addEventListener('click', jumpToToday);
 
+    // Calendar filters
+    elements.calendarProjectFilter?.addEventListener('change', handleCalendarProjectFilterChange);
+    elements.calendarTaskFilter?.addEventListener('change', handleCalendarTaskFilterChange);
+    elements.calendarFilterReset?.addEventListener('click', resetCalendarFilter);
+
     // Day detail navigation
     elements.dayDetailPrevBtn?.addEventListener('click', () => navigateDayDetail(-1));
     elements.dayDetailNextBtn?.addEventListener('click', () => navigateDayDetail(1));
+    elements.dayDetailSaveNotes?.addEventListener('click', saveDailyNotes);
     elements.dayDetailAddBtn?.addEventListener('click', () => {
         // Open task modal for adding to this specific date
         openTaskModal();

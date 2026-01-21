@@ -78,12 +78,12 @@
                             </svg>
                             Today
                         </button>
-                        <button class="nav-item" data-view="yesterday">
+                        <button class="nav-item" data-view="previous">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="1 4 1 10 7 10"/>
                                 <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
                             </svg>
-                            Yesterday
+                            Previous
                         </button>
                         <button class="nav-item" data-view="scheduled">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -152,16 +152,29 @@
                         </div>
                     </div>
 
-                    <!-- Yesterday View -->
-                    <div id="view-yesterday" class="view">
+                    <!-- Previous View (was Yesterday) -->
+                    <div id="view-previous" class="view">
                         <div class="view-header">
-                            <h2>Yesterday's Tasks</h2>
+                            <h2 id="previous-view-title">Previous Day</h2>
+                            <div class="previous-date-picker">
+                                <button id="previous-date-prev" class="btn btn-ghost btn-icon" title="Previous Day">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="15 18 9 12 15 6"/>
+                                    </svg>
+                                </button>
+                                <input type="date" id="previous-date-input" class="previous-date-input">
+                                <button id="previous-date-next" class="btn btn-ghost btn-icon" title="Next Day">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"/>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-                        <div id="yesterday-tasks" class="task-list">
-                            <!-- Yesterday's tasks will be rendered here -->
+                        <div id="previous-tasks" class="task-list">
+                            <!-- Previous day's tasks will be rendered here -->
                         </div>
-                        <div id="yesterday-empty" class="empty-state hidden">
-                            <p>No tasks from yesterday</p>
+                        <div id="previous-empty" class="empty-state hidden">
+                            <p>No tasks for this date</p>
                         </div>
                     </div>
 
@@ -184,6 +197,15 @@
                         <div class="view-header">
                             <h2>Calendar</h2>
                             <div class="calendar-nav">
+                                <div class="calendar-filter">
+                                    <select id="calendar-project-filter" class="calendar-filter-select">
+                                        <option value="">All Projects</option>
+                                    </select>
+                                    <select id="calendar-task-filter" class="calendar-filter-select hidden">
+                                        <option value="">All Tasks</option>
+                                    </select>
+                                    <button id="calendar-filter-reset" class="btn btn-ghost btn-sm hidden">Reset</button>
+                                </div>
                                 <button id="calendar-prev" class="btn btn-ghost btn-icon" title="Previous Month">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <polyline points="15 18 9 12 15 6"/>
@@ -575,6 +597,19 @@
                     </div>
                     <div id="day-detail-tasks" class="task-list">
                         <!-- Tasks for selected day will be rendered here -->
+                    </div>
+                    <div class="day-notes-section">
+                        <label for="day-detail-notes" class="day-notes-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                            </svg>
+                            Notes
+                        </label>
+                        <textarea id="day-detail-notes" class="day-notes-textarea" rows="3" placeholder="Add notes for this day..."></textarea>
+                        <button id="day-detail-save-notes" class="btn btn-secondary btn-sm">Save Notes</button>
                     </div>
                 </div>
             </div>
