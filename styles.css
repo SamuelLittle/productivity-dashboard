@@ -1704,6 +1704,26 @@ body {
     border-radius: 3px 3px 0 0;
 }
 
+/* Subtask drag and drop styles */
+.subtask-item[draggable="true"] {
+    cursor: grab;
+}
+
+.subtask-item[draggable="true"]:active {
+    cursor: grabbing;
+}
+
+.subtask-item.dragging {
+    opacity: 0.5;
+    background: var(--color-surface-hover);
+}
+
+.subtask-item.drag-over {
+    border-top: 2px solid var(--color-primary);
+    margin-top: -2px;
+    padding-top: calc(8px + 2px);
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .project-detail-content {

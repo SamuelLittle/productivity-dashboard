@@ -261,7 +261,17 @@ function generateId() {
 }
 
 function formatDate(dateInput) {
-    const date = typeof dateInput === 'string' ? getDateFromString(dateInput) : new Date(dateInput);
+    let date;
+    if (typeof dateInput === 'string') {
+        // Check if it's an ISO timestamp (contains 'T') or just a date string (YYYY-MM-DD)
+        if (dateInput.includes('T')) {
+            date = new Date(dateInput);
+        } else {
+            date = getDateFromString(dateInput);
+        }
+    } else {
+        date = new Date(dateInput);
+    }
     return date.toLocaleDateString('en-US', {
         weekday: 'long',
         year: 'numeric',
@@ -271,7 +281,17 @@ function formatDate(dateInput) {
 }
 
 function formatShortDate(dateInput) {
-    const date = typeof dateInput === 'string' ? getDateFromString(dateInput) : new Date(dateInput);
+    let date;
+    if (typeof dateInput === 'string') {
+        // Check if it's an ISO timestamp (contains 'T') or just a date string (YYYY-MM-DD)
+        if (dateInput.includes('T')) {
+            date = new Date(dateInput);
+        } else {
+            date = getDateFromString(dateInput);
+        }
+    } else {
+        date = new Date(dateInput);
+    }
     return date.toLocaleDateString('en-US', {
         month: 'short',
         day: 'numeric'
@@ -792,6 +812,21 @@ function renderProjectDetail(projectId) {
     state.currentProject = projectId;
     elements.projectDetailTitle.textContent = project.name;
 
+    // Get saved task order for this project
+    const savedOrder = getProjectTaskOrder(projectId);
+
+    // Sort tasks by saved order, with unsaved tasks at the end
+    const sortByOrder = (tasks) => {
+        return tasks.sort((a, b) => {
+            const aIndex = savedOrder.indexOf(a.id);
+            const bIndex = savedOrder.indexOf(b.id);
+            if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+            if (aIndex !== -1) return -1;
+            if (bIndex !== -1) return 1;
+            return 0; // Keep original order for unsaved tasks
+        });
+    };
+
     // Split tasks into active and completed
     const activeTasks = [];
     const completedTasks = [];
@@ -810,6 +845,10 @@ function renderProjectDetail(projectId) {
             activeTasks.push(task);
         }
     });
+
+    // Sort both lists by saved order
+    sortByOrder(activeTasks);
+    sortByOrder(completedTasks);
 
     elements.projectTasks.innerHTML = '';
 
@@ -1443,6 +1482,8 @@ function createProjectTaskElement(task, project) {
     const div = document.createElement('div');
     div.className = `task-item ${task.completed ? 'completed' : ''} priority-${task.priority || 'medium'}`;
     div.dataset.taskId = task.id;
+    div.dataset.projectId = project.id;
+    div.draggable = true;
 
     const scheduledDates = getScheduledDatesForTask(project.id, task.id);
     const scheduledBadge = scheduledDates.length > 0 ? `
@@ -1453,6 +1494,20 @@ function createProjectTaskElement(task, project) {
 
     const hasSubtasks = task.subtasks && task.subtasks.length > 0;
     const completedSubtasks = hasSubtasks ? task.subtasks.filter(st => st.completed).length : 0;
+
+    // Sort subtasks by saved order
+    let sortedSubtasks = [];
+    if (hasSubtasks) {
+        const savedSubtaskOrder = getSubtaskOrder(project.id, task.id);
+        sortedSubtasks = [...task.subtasks].sort((a, b) => {
+            const aIndex = savedSubtaskOrder.indexOf(a.id);
+            const bIndex = savedSubtaskOrder.indexOf(b.id);
+            if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+            if (aIndex !== -1) return -1;
+            if (bIndex !== -1) return 1;
+            return 0;
+        });
+    }
 
     div.innerHTML = `
         <div class="task-checkbox ${task.completed ? 'checked' : ''}" data-task-id="${task.id}"></div>
@@ -1468,7 +1523,7 @@ function createProjectTaskElement(task, project) {
             ${scheduledBadge}
             ${hasSubtasks ? `
                 <div class="subtasks">
-                    ${task.subtasks.map(st => createSubtaskHTML(st, task, project)).join('')}
+                    ${sortedSubtasks.map(st => createSubtaskHTML(st, task, project)).join('')}
                 </div>
             ` : ''}
         </div>
@@ -1584,6 +1639,58 @@ function createProjectTaskElement(task, project) {
         });
     });
 
+    // Subtask drag and drop handlers
+    div.querySelectorAll('.subtask-item').forEach(subtaskEl => {
+        const subtaskId = subtaskEl.dataset.subtaskId;
+
+        subtaskEl.addEventListener('dragstart', (e) => {
+            e.stopPropagation(); // Prevent parent task drag
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/plain', subtaskId);
+            subtaskEl.classList.add('dragging');
+            state.draggedProjectId = project.id;
+            state.draggedProjectTaskId = task.id;
+            state.draggedSubtaskId = subtaskId;
+        });
+
+        subtaskEl.addEventListener('dragend', (e) => {
+            e.stopPropagation();
+            subtaskEl.classList.remove('dragging');
+            state.draggedProjectId = null;
+            state.draggedProjectTaskId = null;
+            state.draggedSubtaskId = null;
+            document.querySelectorAll('.drag-over').forEach(el => el.classList.remove('drag-over'));
+        });
+
+        subtaskEl.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            e.dataTransfer.dropEffect = 'move';
+            // Only show drop indicator if dragging subtask within same task
+            if (state.draggedSubtaskId &&
+                state.draggedProjectTaskId === task.id &&
+                state.draggedSubtaskId !== subtaskId) {
+                subtaskEl.classList.add('drag-over');
+            }
+        });
+
+        subtaskEl.addEventListener('dragleave', (e) => {
+            e.stopPropagation();
+            subtaskEl.classList.remove('drag-over');
+        });
+
+        subtaskEl.addEventListener('drop', async (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            subtaskEl.classList.remove('drag-over');
+
+            if (!state.draggedSubtaskId || state.draggedProjectTaskId !== task.id) return;
+            if (state.draggedSubtaskId === subtaskId) return;
+
+            await reorderSubtasks(project.id, task.id, state.draggedSubtaskId, subtaskId);
+        });
+    });
+
     // Action buttons
     div.querySelectorAll('.task-actions > .task-action-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -1591,6 +1698,50 @@ function createProjectTaskElement(task, project) {
             const action = btn.dataset.action;
             handleProjectTaskAction(action, task, project);
         });
+    });
+
+    // Drag and drop handlers for task reordering
+    div.addEventListener('dragstart', (e) => {
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', task.id);
+        div.classList.add('dragging');
+        state.draggedProjectTaskId = task.id;
+        state.draggedProjectId = project.id;
+        state.draggedSubtaskId = null;
+    });
+
+    div.addEventListener('dragend', () => {
+        div.classList.remove('dragging');
+        state.draggedProjectTaskId = null;
+        state.draggedProjectId = null;
+        state.draggedSubtaskId = null;
+        document.querySelectorAll('.drag-over').forEach(el => el.classList.remove('drag-over'));
+    });
+
+    div.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        // Only show drop indicator if dragging within same project and not same task
+        if (state.draggedProjectId === project.id &&
+            state.draggedProjectTaskId !== task.id &&
+            !state.draggedSubtaskId) {
+            div.classList.add('drag-over');
+        }
+    });
+
+    div.addEventListener('dragleave', () => {
+        div.classList.remove('drag-over');
+    });
+
+    div.addEventListener('drop', async (e) => {
+        e.preventDefault();
+        div.classList.remove('drag-over');
+
+        if (!state.draggedProjectTaskId || state.draggedProjectId !== project.id) return;
+        if (state.draggedProjectTaskId === task.id) return;
+        if (state.draggedSubtaskId) return; // Don't drop subtasks on tasks
+
+        await reorderProjectTasks(project.id, state.draggedProjectTaskId, task.id);
     });
 
     return div;
@@ -1603,7 +1754,7 @@ function createSubtaskHTML(subtask, parentTask, project) {
     ).join('');
 
     return `
-        <div class="subtask-item" data-subtask-id="${subtask.id}" data-task-id="${parentTask.id}" data-project-id="${project.id}">
+        <div class="subtask-item" draggable="true" data-subtask-id="${subtask.id}" data-task-id="${parentTask.id}" data-project-id="${project.id}">
             <div class="task-checkbox ${subtask.completed ? 'checked' : ''}" data-subtask-id="${subtask.id}"></div>
             <span class="subtask-title" style="${subtask.completed ? 'text-decoration: line-through; opacity: 0.6' : ''}">${subtask.title}</span>
             ${scheduledBadges}
@@ -1760,6 +1911,122 @@ function setTaskOrder(date, order) {
         state.data.taskOrder = {};
     }
     state.data.taskOrder[date] = order;
+}
+
+// Helper: Get task order for a project
+function getProjectTaskOrder(projectId) {
+    if (!state.data.projectTaskOrder) {
+        state.data.projectTaskOrder = {};
+    }
+    return state.data.projectTaskOrder[projectId] || [];
+}
+
+// Helper: Set task order for a project
+function setProjectTaskOrder(projectId, order) {
+    if (!state.data.projectTaskOrder) {
+        state.data.projectTaskOrder = {};
+    }
+    state.data.projectTaskOrder[projectId] = order;
+}
+
+// Helper: Get subtask order for a task within a project
+function getSubtaskOrder(projectId, taskId) {
+    if (!state.data.subtaskOrder) {
+        state.data.subtaskOrder = {};
+    }
+    const key = `${projectId}:${taskId}`;
+    return state.data.subtaskOrder[key] || [];
+}
+
+// Helper: Set subtask order for a task within a project
+function setSubtaskOrder(projectId, taskId, order) {
+    if (!state.data.subtaskOrder) {
+        state.data.subtaskOrder = {};
+    }
+    const key = `${projectId}:${taskId}`;
+    state.data.subtaskOrder[key] = order;
+}
+
+// Reorder tasks within a project
+async function reorderProjectTasks(projectId, draggedTaskId, targetTaskId) {
+    const project = state.data.projects.find(p => p.id === projectId);
+    if (!project) return;
+
+    const taskIds = project.tasks.map(t => t.id);
+    const currentOrder = getProjectTaskOrder(projectId);
+
+    // Build ordered list: use saved order where available, fall back to current order
+    let orderedIds;
+    if (currentOrder.length > 0) {
+        orderedIds = currentOrder.filter(id => taskIds.includes(id));
+        // Add any new tasks not in saved order
+        taskIds.forEach(id => {
+            if (!orderedIds.includes(id)) orderedIds.push(id);
+        });
+    } else {
+        orderedIds = [...taskIds];
+    }
+
+    const draggedIndex = orderedIds.indexOf(draggedTaskId);
+    const targetIndex = orderedIds.indexOf(targetTaskId);
+
+    if (draggedIndex === -1 || targetIndex === -1) return;
+
+    // Remove dragged item and insert at target position
+    orderedIds.splice(draggedIndex, 1);
+    orderedIds.splice(targetIndex, 0, draggedTaskId);
+
+    // Save new order
+    setProjectTaskOrder(projectId, orderedIds);
+
+    state.data.lastUpdated = new Date().toISOString();
+    await saveData();
+
+    if (state.currentProject === projectId) {
+        renderProjectDetail(projectId);
+    }
+}
+
+// Reorder subtasks within a task
+async function reorderSubtasks(projectId, taskId, draggedSubtaskId, targetSubtaskId) {
+    const project = state.data.projects.find(p => p.id === projectId);
+    if (!project) return;
+
+    const task = project.tasks.find(t => t.id === taskId);
+    if (!task || !task.subtasks) return;
+
+    const subtaskIds = task.subtasks.map(st => st.id);
+    const currentOrder = getSubtaskOrder(projectId, taskId);
+
+    // Build ordered list
+    let orderedIds;
+    if (currentOrder.length > 0) {
+        orderedIds = currentOrder.filter(id => subtaskIds.includes(id));
+        subtaskIds.forEach(id => {
+            if (!orderedIds.includes(id)) orderedIds.push(id);
+        });
+    } else {
+        orderedIds = [...subtaskIds];
+    }
+
+    const draggedIndex = orderedIds.indexOf(draggedSubtaskId);
+    const targetIndex = orderedIds.indexOf(targetSubtaskId);
+
+    if (draggedIndex === -1 || targetIndex === -1) return;
+
+    // Remove dragged item and insert at target position
+    orderedIds.splice(draggedIndex, 1);
+    orderedIds.splice(targetIndex, 0, draggedSubtaskId);
+
+    // Save new order
+    setSubtaskOrder(projectId, taskId, orderedIds);
+
+    state.data.lastUpdated = new Date().toISOString();
+    await saveData();
+
+    if (state.currentProject === projectId) {
+        renderProjectDetail(projectId);
+    }
 }
 
 // Helper: Remove a specific task/subtask from ALL scheduled dates
@@ -3086,11 +3353,15 @@ function initEventListeners() {
     elements.dayDetailNextBtn?.addEventListener('click', () => navigateDayDetail(1));
     elements.dayDetailSaveNotes?.addEventListener('click', saveDailyNotes);
     elements.dayDetailAddBtn?.addEventListener('click', () => {
+        // Store the selected date before closing the modal
+        const dateForTask = state.selectedDate;
+        // Close the day detail modal first so task modal is visible
+        elements.dayDetailModal.classList.add('hidden');
         // Open task modal for adding to this specific date
         openTaskModal();
         elements.taskSchedule.value = 'custom';
         elements.customDateGroup.classList.remove('hidden');
-        elements.taskCustomDate.value = state.selectedDate;
+        elements.taskCustomDate.value = dateForTask;
     });
 
     // Reschedule modal buttons
