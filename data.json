@@ -746,6 +746,16 @@
         "completionNotes": "Advised on killing assay and T cell KIs\n",
         "completionLinks": ""
       }
+    ],
+    "2026-01-23": [
+      {
+        "id": "mkp1236n4z73klx9ona",
+        "title": "CRISPRa Meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-01-22T05:44:48.287Z"
+      }
     ]
   },
   "scheduledItems": {
@@ -1350,7 +1360,7 @@
       "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-22T03:19:37.755Z",
+  "lastUpdated": "2026-01-22T05:44:48.287Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
