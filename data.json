@@ -453,6 +453,14 @@
               "completedAt": "2026-01-21T20:10:13.447Z",
               "completionNotes": "50mL of media prepped\n",
               "completionLinks": ""
+            },
+            {
+              "id": "mkpn6pa0lw16pls5udr",
+              "title": "make killing assay protocol",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-22T16:04:15.096Z"
             }
           ]
         },
@@ -1074,6 +1082,13 @@
         "subtaskId": "mkn67r0mxdgt41tv9x9",
         "scheduledAt": "2026-01-20T23:21:55.896Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mklvsgrboq443ll7wi",
+        "subtaskId": "mkpn6pa0lw16pls5udr",
+        "scheduledAt": "2026-01-22T16:04:15.096Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-23": [
@@ -1383,7 +1398,7 @@
       "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-22T16:01:18.128Z",
+  "lastUpdated": "2026-01-22T16:04:15.096Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
