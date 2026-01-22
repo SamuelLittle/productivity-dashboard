@@ -429,7 +429,9 @@
               "description": "",
               "priority": "medium",
               "completed": false,
-              "createdAt": "2026-01-20T00:57:49.618Z"
+              "createdAt": "2026-01-20T00:57:49.618Z",
+              "notes": "Currently booked for 11am - need to make sure cell staining is done and ready by then",
+              "links": ""
             },
             {
               "id": "mkmt9zjzsdaha14yg",
@@ -1379,7 +1381,7 @@
       "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-22T15:44:55.339Z",
+  "lastUpdated": "2026-01-22T15:58:42.184Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
