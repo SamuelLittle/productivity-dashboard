@@ -538,6 +538,15 @@
               "createdAt": "2026-01-21T04:12:26.381Z"
             }
           ]
+        },
+        {
+          "id": "mkpsaylolwnaf6ys9aj",
+          "title": "Surfaceome Follow up meeting w/ Baptiste @9am",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-22T18:27:31.884Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -1244,6 +1253,15 @@
         "scheduledAt": "2026-01-22T18:25:47.417Z",
         "completedOnDay": false
       }
+    ],
+    "2026-01-29": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mkpsaylolwnaf6ys9aj",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-22T18:27:31.884Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -1494,7 +1512,7 @@
       "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-22T18:25:47.417Z",
+  "lastUpdated": "2026-01-22T18:27:31.884Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
