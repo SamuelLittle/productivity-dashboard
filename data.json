@@ -527,10 +527,13 @@
               "title": "Isolate Monocytes",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-01-20T00:12:44.128Z",
               "notes": "Isolate ~10M monocytes from all 3 donors\n\nnotified only 2 donors will be coming in. \n",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-01-22T03:16:33.437Z",
+              "completionNotes": "12.5M from Donor 1\n16M from Donor 2",
+              "completionLinks": ""
             },
             {
               "id": "mklubxziy4olc2hyz6",
@@ -902,7 +905,10 @@
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mklubc9spa9l1sf43r9",
         "scheduledAt": "2026-01-20T00:14:33.235Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-22T03:16:33.437Z",
+        "completionNotes": "12.5M from Donor 1\n16M from Donor 2",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -1273,9 +1279,18 @@
       "completionNotes": "Met with R. He thinks the data for CD4 cells is fine and the analysis has been made too complicated. \n\nNeed to analyze with ENRICHR.  Look at DEGs, find base expression profile. \n\nThinks we need to pivot to using non tip based method for treating cells.",
       "completionLinks": "https://maayanlab.cloud/Enrichr/",
       "date": "2026-01-21"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mklubc9spa9l1sf43r9",
+      "completedAt": "2026-01-22T03:16:33.437Z",
+      "completionNotes": "12.5M from Donor 1\n16M from Donor 2",
+      "completionLinks": "",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-21T23:30:40.146Z",
+  "lastUpdated": "2026-01-22T03:16:33.437Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
