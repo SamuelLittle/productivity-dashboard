@@ -488,8 +488,11 @@
               "title": "make killing assay protocol",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-22T16:04:15.096Z"
+              "completed": true,
+              "createdAt": "2026-01-22T16:04:15.096Z",
+              "completedAt": "2026-01-22T21:40:03.713Z",
+              "completionNotes": "Slightly modified from Mayroa's protocol. E:T from 8:1 to 0.125:1.  Seeding 25k target cells.",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
             },
             {
               "id": "mkps4kkk75pfti3zcyu",
@@ -1146,7 +1149,10 @@
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mkpn6pa0lw16pls5udr",
         "scheduledAt": "2026-01-22T16:04:15.096Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-22T21:40:03.713Z",
+        "completionNotes": "Slightly modified from Mayroa's protocol. E:T from 8:1 to 0.125:1.  Seeding 25k target cells.",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -1527,9 +1533,18 @@
       "completionNotes": "Ziuwin is going to set me up with someone from his company to discuss pricing per sample per cytokine",
       "completionLinks": "",
       "date": "2026-01-22"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklvsgrboq443ll7wi",
+      "subtaskId": "mkpn6pa0lw16pls5udr",
+      "completedAt": "2026-01-22T21:40:03.713Z",
+      "completionNotes": "Slightly modified from Mayroa's protocol. E:T from 8:1 to 0.125:1.  Seeding 25k target cells.",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
+      "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-22T19:33:33.418Z",
+  "lastUpdated": "2026-01-22T21:40:03.713Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
