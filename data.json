@@ -540,8 +540,11 @@
               "title": "Nucleofect monocytes",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T00:13:12.270Z"
+              "completed": true,
+              "createdAt": "2026-01-20T00:13:12.270Z",
+              "completedAt": "2026-01-22T03:16:41.715Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mklucpk49ymw18a04v6",
@@ -915,7 +918,10 @@
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mklubxziy4olc2hyz6",
         "scheduledAt": "2026-01-20T00:14:36.804Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-22T03:16:41.715Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -1288,9 +1294,18 @@
       "completionNotes": "12.5M from Donor 1\n16M from Donor 2",
       "completionLinks": "",
       "date": "2026-01-21"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mklubxziy4olc2hyz6",
+      "completedAt": "2026-01-22T03:16:41.715Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-22T03:16:33.437Z",
+  "lastUpdated": "2026-01-22T03:16:41.715Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
