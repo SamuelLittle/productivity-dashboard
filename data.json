@@ -345,10 +345,10 @@
         {
           "id": "mkprwk8ffdngatq3zsn",
           "title": "Nomic collaboration",
-          "description": "Establish the feasibility of using nomic tools for screening 100s of cytokines in supernatant from cytokine screen. \n\nNeed to get pricing information, choose panel, figure out workflow, set up collab.",
+          "description": "Establish the feasibility of using nomic tools for screening 100s of cytokines in supernatant from cytokine screen. \n\nNeed to get pricing information, choose panel, figure out workflow, set up collab.\n\nAlso useful for Kelly Storek w/ Macrophage screen",
           "priority": "medium",
           "completed": false,
-          "createdAt": "2026-01-22T18:16:20.079Z",
+          "createdAt": "2026-01-22T18:20:06.566Z",
           "subtasks": [
             {
               "id": "mkprwz3arfnaax1igag",
@@ -1447,7 +1447,7 @@
       "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-22T18:16:39.335Z",
+  "lastUpdated": "2026-01-22T18:20:06.566Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
