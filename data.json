@@ -379,8 +379,11 @@
               "title": "Isolate T cells and NK cells (from separate donors)",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T00:54:34.000Z"
+              "completed": true,
+              "createdAt": "2026-01-20T00:54:34.000Z",
+              "completedAt": "2026-01-22T03:18:10.336Z",
+              "completionNotes": "Culturing overnight.  Didn't count T cells. will count tomorrow",
+              "completionLinks": ""
             },
             {
               "id": "mklvtuce9y23orzikye",
@@ -954,7 +957,10 @@
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mklvt4wgf7f7a1nlide",
         "scheduledAt": "2026-01-20T02:02:29.659Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-22T03:18:10.336Z",
+        "completionNotes": "Culturing overnight.  Didn't count T cells. will count tomorrow",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -1333,9 +1339,18 @@
       "completionNotes": "Seeded at 1M cell/ml in Il2 + Il15\n",
       "completionLinks": "",
       "date": "2026-01-21"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklvsgrboq443ll7wi",
+      "subtaskId": "mklvt4wgf7f7a1nlide",
+      "completedAt": "2026-01-22T03:18:10.336Z",
+      "completionNotes": "Culturing overnight.  Didn't count T cells. will count tomorrow",
+      "completionLinks": "",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-22T03:17:44.499Z",
+  "lastUpdated": "2026-01-22T03:18:10.336Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
