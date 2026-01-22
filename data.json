@@ -387,10 +387,13 @@
               "title": "Set up overnight culture media for NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-01-20T00:55:06.974Z",
               "notes": "Getting IL15 from Mayra at ~10:30",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-01-22T03:17:44.498Z",
+              "completionNotes": "Seeded at 1M cell/ml in Il2 + Il15\n",
+              "completionLinks": ""
             },
             {
               "id": "mklvv366nurez8d2w5p",
@@ -958,7 +961,10 @@
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mklvtuce9y23orzikye",
         "scheduledAt": "2026-01-20T02:02:43.715Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-22T03:17:44.498Z",
+        "completionNotes": "Seeded at 1M cell/ml in Il2 + Il15\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -1318,9 +1324,18 @@
       "completionNotes": "seeded ~75000 per well",
       "completionLinks": "",
       "date": "2026-01-21"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklvsgrboq443ll7wi",
+      "subtaskId": "mklvtuce9y23orzikye",
+      "completedAt": "2026-01-22T03:17:44.499Z",
+      "completionNotes": "Seeded at 1M cell/ml in Il2 + Il15\n",
+      "completionLinks": "",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-22T03:17:16.703Z",
+  "lastUpdated": "2026-01-22T03:17:44.499Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
