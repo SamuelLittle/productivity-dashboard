@@ -551,8 +551,11 @@
               "title": "Seed in recovery buffer",
               "description": "buffer is specific to differentiation strategy",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T00:13:48.004Z"
+              "completed": true,
+              "createdAt": "2026-01-20T00:13:48.004Z",
+              "completedAt": "2026-01-22T03:17:16.703Z",
+              "completionNotes": "seeded ~75000 per well",
+              "completionLinks": ""
             },
             {
               "id": "mklw1qdgnu2ei75f2jc",
@@ -928,7 +931,10 @@
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mklucpk49ymw18a04v6",
         "scheduledAt": "2026-01-20T00:14:39.760Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-22T03:17:16.703Z",
+        "completionNotes": "seeded ~75000 per well",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -1303,9 +1309,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-21"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mklucpk49ymw18a04v6",
+      "completedAt": "2026-01-22T03:17:16.703Z",
+      "completionNotes": "seeded ~75000 per well",
+      "completionLinks": "",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-22T03:16:41.715Z",
+  "lastUpdated": "2026-01-22T03:17:16.703Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
