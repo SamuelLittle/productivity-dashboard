@@ -784,8 +784,11 @@
         "title": "1-on-1 with Celine @9am",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-22T05:56:09.032Z"
+        "completed": true,
+        "createdAt": "2026-01-22T05:56:09.032Z",
+        "completedAt": "2026-01-22T18:02:30.117Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -1403,9 +1406,17 @@
       "completionNotes": "Culturing overnight.  Didn't count T cells. will count tomorrow",
       "completionLinks": "",
       "date": "2026-01-21"
+    },
+    {
+      "id": "mkp1gog8npeh1a0qsh8",
+      "title": "1-on-1 with Celine @9am",
+      "completedAt": "2026-01-22T18:02:30.117Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-22T16:56:50.850Z",
+  "lastUpdated": "2026-01-22T18:02:30.117Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
