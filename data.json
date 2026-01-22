@@ -485,6 +485,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-22T16:04:15.096Z"
+            },
+            {
+              "id": "mkps4kkk75pfti3zcyu",
+              "title": "Nucleofection of NK cells",
+              "description": "Make protocol and nucleofect NK cells with AAVS1 to get an idea of how EP effects killing. \n\nAlso include controls to see how no EP + culture in IL2 + IL15 steers killing",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-22T18:22:33.764Z"
             }
           ]
         },
@@ -1447,7 +1455,7 @@
       "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-22T18:20:06.566Z",
+  "lastUpdated": "2026-01-22T18:22:33.765Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
