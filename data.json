@@ -493,6 +493,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-22T18:22:33.764Z"
+            },
+            {
+              "id": "mkps7yuj9uqc2bzxpoc",
+              "title": "Set up post nucleofection killing assay",
+              "description": "Using E:T ratio determined on Friday set up killing assay for AAVS1 KO and control NK cells. \n\nWith and without IL15+IL2 (?)",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-22T18:25:12.235Z"
             }
           ]
         },
@@ -1177,6 +1185,13 @@
         "subtaskId": "mkmt2nb1kfc39bh8tcj",
         "scheduledAt": "2026-01-22T16:56:50.850Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mklvsgrboq443ll7wi",
+        "subtaskId": "mkps7yuj9uqc2bzxpoc",
+        "scheduledAt": "2026-01-22T18:25:12.235Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-28": [
@@ -1462,7 +1477,7 @@
       "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-22T18:23:07.420Z",
+  "lastUpdated": "2026-01-22T18:25:12.235Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
