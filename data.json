@@ -355,10 +355,13 @@
               "title": "Meet with Ziuwin to discuss",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-01-22T18:16:39.334Z",
               "notes": "@ 11am\n",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-01-22T19:33:33.418Z",
+              "completionNotes": "Ziuwin is going to set me up with someone from his company to discuss pricing per sample per cytokine",
+              "completionLinks": ""
             }
           ]
         }
@@ -1150,7 +1153,10 @@
         "taskId": "mkprwk8ffdngatq3zsn",
         "subtaskId": "mkprwz3arfnaax1igag",
         "scheduledAt": "2026-01-22T18:16:39.335Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-22T19:33:33.418Z",
+        "completionNotes": "Ziuwin is going to set me up with someone from his company to discuss pricing per sample per cytokine",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -1512,9 +1518,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-22"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkprwk8ffdngatq3zsn",
+      "subtaskId": "mkprwz3arfnaax1igag",
+      "completedAt": "2026-01-22T19:33:33.418Z",
+      "completionNotes": "Ziuwin is going to set me up with someone from his company to discuss pricing per sample per cytokine",
+      "completionLinks": "",
+      "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-22T18:32:45.536Z",
+  "lastUpdated": "2026-01-22T19:33:33.418Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
