@@ -332,6 +332,15 @@
           "completedAt": "2026-01-21T23:30:40.146Z",
           "completionNotes": "Met with R. He thinks the data for CD4 cells is fine and the analysis has been made too complicated. \n\nNeed to analyze with ENRICHR.  Look at DEGs, find base expression profile. \n\nThinks we need to pivot to using non tip based method for treating cells.",
           "completionLinks": "https://maayanlab.cloud/Enrichr/"
+        },
+        {
+          "id": "mkpmhuejxdahbqqygu",
+          "title": "scRNAseq pilot for cytokine screen",
+          "description": "Test the core methods of the 10X Flex V2 system to see if this technique is compatible and cost competitive for the cytokine screen.",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-22T15:44:55.339Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -1370,7 +1379,7 @@
       "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-22T15:32:18.095Z",
+  "lastUpdated": "2026-01-22T15:44:55.339Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
