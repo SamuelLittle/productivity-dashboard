@@ -1360,7 +1360,7 @@
       "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-22T05:44:48.287Z",
+  "lastUpdated": "2026-01-22T05:44:57.893Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -1385,5 +1385,17 @@
   },
   "dailyNotes": {
     "2026-01-21": "Didn't get blood center deliveries until 12:40.  Wasn't able to start isolations until after meeting around 3. Was here late (7:15) Blood center only had 2 donors not 3."
+  },
+  "projectTaskOrder": {},
+  "subtaskOrder": {
+    "mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi": [
+      "mklvt4wgf7f7a1nlide",
+      "mklvtuce9y23orzikye",
+      "mkn7wppk340n0a2nk6p",
+      "mklvv366nurez8d2w5p",
+      "mklvvdvy4p6j9bb03od",
+      "mklvxbuaoylqrcl5sra",
+      "mkmt9zjzsdaha14yg"
+    ]
   }
 }
