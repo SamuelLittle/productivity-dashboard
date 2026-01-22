@@ -343,7 +343,13 @@
           "subtasks": []
         }
       ],
-      "progressUpdates": [],
+      "progressUpdates": [
+        {
+          "id": "mkprszhrix3cyc530xb",
+          "text": "Waiting for luminex analysis of supernatants from CD4+ cells and Tregs to confirm treatment status.  Until then we need to wait before deciding next steps. \n\nRegardless of the outcome we need to figure out a solution for myeloid cells. Macrophages and monocytes both are resistant to SMARTseq w/o RNA extraction.  Monocytes were inconsistent with column based RNA extraction.  Can we first make RNA extraction consistent for monocytes and second make RNA extraction affordable/scalable.\n\nSingle cell analysis may be scalable and affordable while providing superior data quality. We need to set up pilots to test fixation and both flex v1 and flex v2 probe barcoding. Preferrably in T cells, DCs, and monocytes. \n\nOver the next 2-3 weeks we will:\n- run luminex to see treatment profiles in CD4/regulatory T cells\n- Pilot column based RNA extraction in monocytes\n- Pilot bead based RNA extraction in T cells\n- Pilot fixation and Flex V1/2 in T cells\n\n",
+          "date": "2026-01-22T18:13:33.231Z"
+        }
+      ],
       "archived": false
     },
     {
@@ -1416,7 +1422,7 @@
       "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-22T18:02:30.117Z",
+  "lastUpdated": "2026-01-22T18:13:33.231Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
