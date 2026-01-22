@@ -356,7 +356,9 @@
               "description": "",
               "priority": "medium",
               "completed": false,
-              "createdAt": "2026-01-22T18:16:39.334Z"
+              "createdAt": "2026-01-22T18:16:39.334Z",
+              "notes": "@ 11am\n",
+              "links": ""
             }
           ]
         }
@@ -1512,7 +1514,7 @@
       "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-22T18:31:38.952Z",
+  "lastUpdated": "2026-01-22T18:32:45.536Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
