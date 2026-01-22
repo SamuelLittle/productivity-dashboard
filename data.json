@@ -349,7 +349,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-22T18:16:20.079Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mkprwz3arfnaax1igag",
+              "title": "Meet with Ziuwin to discuss",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-22T18:16:39.334Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [
@@ -1107,6 +1116,13 @@
         "subtaskId": "mkpn6pa0lw16pls5udr",
         "scheduledAt": "2026-01-22T16:04:15.096Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mkprwk8ffdngatq3zsn",
+        "subtaskId": "mkprwz3arfnaax1igag",
+        "scheduledAt": "2026-01-22T18:16:39.335Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-23": [
@@ -1431,7 +1447,7 @@
       "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-22T18:16:20.079Z",
+  "lastUpdated": "2026-01-22T18:16:39.335Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
