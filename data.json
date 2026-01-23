@@ -1619,7 +1619,7 @@
       "date": "2026-01-23"
     }
   ],
-  "lastUpdated": "2026-01-23T18:45:04.609Z",
+  "lastUpdated": "2026-01-23T20:19:06.587Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -1652,9 +1652,12 @@
     ],
     "2026-01-23": [
       "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mklvvdvy4p6j9bb03od",
-      "standalone:mkp1236n4z73klx9ona",
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mkmt9zjzsdaha14yg",
       "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mklvxbuaoylqrcl5sra",
-      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mklw1qdgnu2ei75f2jc"
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mklw1qdgnu2ei75f2jc",
+      "project:mkltv6xwvh4ltoqkes:mklusog2097tkm380gri:mklut3v9xiajfvhkbm8",
+      "standalone:mkr4bjxlg5v28wpwsf7",
+      "standalone:mkr4cqoy29h8aljftyw"
     ]
   },
   "dailyNotes": {
