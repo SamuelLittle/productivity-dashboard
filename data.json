@@ -1140,13 +1140,6 @@
         "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
       },
       {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mkn5xu0po7lfqnsjdqm",
-        "subtaskId": "mkn67r0mxdgt41tv9x9",
-        "scheduledAt": "2026-01-20T23:21:55.896Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltwpanzsdw6b96wbe",
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mkpn6pa0lw16pls5udr",
@@ -1574,7 +1567,7 @@
       "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-23T00:38:34.132Z",
+  "lastUpdated": "2026-01-23T00:38:48.702Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
