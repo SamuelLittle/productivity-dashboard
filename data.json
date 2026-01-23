@@ -854,8 +854,11 @@
         "title": "Meet with Funien @ 1:30",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-23T16:51:41.097Z"
+        "completed": true,
+        "createdAt": "2026-01-23T16:51:41.097Z",
+        "completedAt": "2026-01-23T22:08:44.639Z",
+        "completionNotes": "Send Funien the plasmids for CRISPRa",
+        "completionLinks": ""
       },
       {
         "id": "mkr4cqoy29h8aljftyw",
@@ -1647,9 +1650,17 @@
       "completionNotes": "NK cells were unhealthy.  Need to analyze data this w/e. ",
       "completionLinks": "",
       "date": "2026-01-23"
+    },
+    {
+      "id": "mkr4bjxlg5v28wpwsf7",
+      "title": "Meet with Funien @ 1:30",
+      "completedAt": "2026-01-23T22:08:44.640Z",
+      "completionNotes": "Send Funien the plasmids for CRISPRa",
+      "completionLinks": "",
+      "date": "2026-01-23"
     }
   ],
-  "lastUpdated": "2026-01-23T20:47:13.769Z",
+  "lastUpdated": "2026-01-23T22:08:44.640Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
