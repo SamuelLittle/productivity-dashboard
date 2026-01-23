@@ -502,8 +502,11 @@
               "title": "Nucleofection of NK cells",
               "description": "Make protocol and nucleofect NK cells with AAVS1 to get an idea of how EP effects killing. \n\nAlso include controls to see how no EP + culture in IL2 + IL15 steers killing",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-22T18:22:33.764Z"
+              "completed": true,
+              "createdAt": "2026-01-22T18:22:33.764Z",
+              "completedAt": "2026-01-23T00:37:57.391Z",
+              "completionNotes": "Protocol at benchling link\n4x CD96 KOs\n4x AAVS1 KOs\nrecovered half with cytokines and half without",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
             },
             {
               "id": "mkps7yuj9uqc2bzxpoc",
@@ -1175,7 +1178,10 @@
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mkps4kkk75pfti3zcyu",
         "scheduledAt": "2026-01-22T18:22:40.659Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-23T00:37:57.391Z",
+        "completionNotes": "Protocol at benchling link\n4x CD96 KOs\n4x AAVS1 KOs\nrecovered half with cytokines and half without",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
       }
     ],
     "2026-01-23": [
@@ -1557,9 +1563,18 @@
       "completionNotes": "protocol at benchling link",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
       "date": "2026-01-22"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklvsgrboq443ll7wi",
+      "subtaskId": "mkps4kkk75pfti3zcyu",
+      "completedAt": "2026-01-23T00:37:57.391Z",
+      "completionNotes": "Protocol at benchling link\n4x CD96 KOs\n4x AAVS1 KOs\nrecovered half with cytokines and half without",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
+      "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-23T00:37:13.288Z",
+  "lastUpdated": "2026-01-23T00:37:57.391Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
