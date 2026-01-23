@@ -316,7 +316,7 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-20T22:33:38.182Z",
-              "notes": "Needs to be done before 1-on-1\n",
+              "notes": "Corinne sent documents on slack.  Need to check these out. ",
               "links": ""
             }
           ]
@@ -1141,13 +1141,6 @@
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mklusog2097tkm380gri",
-        "subtaskId": "mklut3v9xiajfvhkbm8",
-        "scheduledAt": "2026-01-20T21:13:08.374Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "mkn5xu0po7lfqnsjdqm",
         "subtaskId": "mkn67r0mxdgt41tv9x9",
         "scheduledAt": "2026-01-20T23:21:55.896Z",
@@ -1211,6 +1204,13 @@
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mkmt9zjzsdaha14yg",
         "scheduledAt": "2026-01-23T00:38:05.484Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mklusog2097tkm380gri",
+        "subtaskId": "mklut3v9xiajfvhkbm8",
+        "scheduledAt": "2026-01-23T00:38:05.489Z",
         "completedOnDay": false
       }
     ],
@@ -1574,7 +1574,7 @@
       "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-23T00:38:05.484Z",
+  "lastUpdated": "2026-01-23T00:38:34.132Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
