@@ -475,8 +475,11 @@
               "title": "NK biomarker test flow panel",
               "description": "Test antibody panel for determining NK subpopulation biomarkers",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T16:31:27.551Z"
+              "completed": true,
+              "createdAt": "2026-01-20T16:31:27.551Z",
+              "completedAt": "2026-01-23T20:46:44.695Z",
+              "completionNotes": "Need to repeat this with actual compensation and proper controls and with antibody titration. Tuesday?\n",
+              "completionLinks": ""
             },
             {
               "id": "mkn7wppk340n0a2nk6p",
@@ -1211,7 +1214,10 @@
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mkmt9zjzsdaha14yg",
         "scheduledAt": "2026-01-23T00:38:05.484Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-23T20:46:44.695Z",
+        "completionNotes": "Need to repeat this with actual compensation and proper controls and with antibody titration. Tuesday?\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -1617,9 +1623,18 @@
       "completionNotes": "Stained both the killing assay and NK cells with biomarker panel. Details on benchling.",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
       "date": "2026-01-23"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklvsgrboq443ll7wi",
+      "subtaskId": "mkmt9zjzsdaha14yg",
+      "completedAt": "2026-01-23T20:46:44.696Z",
+      "completionNotes": "Need to repeat this with actual compensation and proper controls and with antibody titration. Tuesday?\n",
+      "completionLinks": "",
+      "date": "2026-01-23"
     }
   ],
-  "lastUpdated": "2026-01-23T20:19:06.587Z",
+  "lastUpdated": "2026-01-23T20:46:44.696Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
