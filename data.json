@@ -465,10 +465,13 @@
               "title": "Run flow cytometer to check for T cell live/dead (w/Qiao)",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-01-20T00:57:49.618Z",
               "notes": "Currently booked for 11am - need to make sure cell staining is done and ready by then",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-01-23T20:47:13.769Z",
+              "completionNotes": "NK cells were unhealthy.  Need to analyze data this w/e. ",
+              "completionLinks": ""
             },
             {
               "id": "mkmt9zjzsdaha14yg",
@@ -1200,7 +1203,10 @@
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mklvxbuaoylqrcl5sra",
         "scheduledAt": "2026-01-20T02:03:03.856Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-23T20:47:13.769Z",
+        "completionNotes": "NK cells were unhealthy.  Need to analyze data this w/e. ",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -1632,9 +1638,18 @@
       "completionNotes": "Need to repeat this with actual compensation and proper controls and with antibody titration. Tuesday?\n",
       "completionLinks": "",
       "date": "2026-01-23"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklvsgrboq443ll7wi",
+      "subtaskId": "mklvxbuaoylqrcl5sra",
+      "completedAt": "2026-01-23T20:47:13.769Z",
+      "completionNotes": "NK cells were unhealthy.  Need to analyze data this w/e. ",
+      "completionLinks": "",
+      "date": "2026-01-23"
     }
   ],
-  "lastUpdated": "2026-01-23T20:46:44.696Z",
+  "lastUpdated": "2026-01-23T20:47:13.769Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
