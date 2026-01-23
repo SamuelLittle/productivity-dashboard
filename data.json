@@ -841,14 +841,6 @@
     ],
     "2026-01-23": [
       {
-        "id": "mkp1236n4z73klx9ona",
-        "title": "CRISPRa Meeting",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-22T05:44:48.287Z"
-      },
-      {
         "id": "mkr4bjxlg5v28wpwsf7",
         "title": "Meet with Funien @ 1:30",
         "description": "",
@@ -1612,7 +1604,7 @@
       "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-23T16:55:32.006Z",
+  "lastUpdated": "2026-01-23T18:42:44.463Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
