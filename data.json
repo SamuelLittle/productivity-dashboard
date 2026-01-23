@@ -364,18 +364,6 @@
               "completionLinks": ""
             }
           ]
-        },
-        {
-          "id": "mkq8sp4ns4sp2jcamh",
-          "title": "meet with maggie",
-          "description": "vendor for new product",
-          "priority": "medium",
-          "completed": true,
-          "createdAt": "2026-01-23T02:09:13.271Z",
-          "subtasks": [],
-          "completedAt": "2026-01-23T02:10:27.367Z",
-          "completionNotes": "met with maggie - can supply new product at xx price",
-          "completionLinks": ""
         }
       ],
       "progressUpdates": [
@@ -1180,16 +1168,6 @@
         "completedAt": "2026-01-23T00:37:57.391Z",
         "completionNotes": "Protocol at benchling link\n4x CD96 KOs\n4x AAVS1 KOs\nrecovered half with cytokines and half without",
         "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mkq8sp4ns4sp2jcamh",
-        "subtaskId": null,
-        "scheduledAt": "2026-01-23T02:09:13.272Z",
-        "completedOnDay": true,
-        "completedAt": "2026-01-23T02:10:27.367Z",
-        "completionNotes": "met with maggie - can supply new product at xx price",
-        "completionLinks": ""
       }
     ],
     "2026-01-23": [
@@ -1597,7 +1575,7 @@
       "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-23T02:10:27.367Z",
+  "lastUpdated": "2026-01-23T02:10:59.870Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
