@@ -865,8 +865,11 @@
         "title": "Meet with Kristel + Rachel @2:15",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-23T16:52:36.514Z"
+        "completed": true,
+        "createdAt": "2026-01-23T16:52:36.514Z",
+        "completedAt": "2026-01-23T23:05:31.747Z",
+        "completionNotes": "Advised on T cell transduction\n",
+        "completionLinks": ""
       }
     ],
     "2026-01-22": [
@@ -1658,9 +1661,17 @@
       "completionNotes": "Send Funien the plasmids for CRISPRa",
       "completionLinks": "",
       "date": "2026-01-23"
+    },
+    {
+      "id": "mkr4cqoy29h8aljftyw",
+      "title": "Meet with Kristel + Rachel @2:15",
+      "completedAt": "2026-01-23T23:05:31.747Z",
+      "completionNotes": "Advised on T cell transduction\n",
+      "completionLinks": "",
+      "date": "2026-01-23"
     }
   ],
-  "lastUpdated": "2026-01-23T22:08:44.640Z",
+  "lastUpdated": "2026-01-23T23:05:31.747Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
