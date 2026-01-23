@@ -441,8 +441,11 @@
               "title": "set up killing assay",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T00:56:05.070Z"
+              "completed": true,
+              "createdAt": "2026-01-20T00:56:05.070Z",
+              "completedAt": "2026-01-23T00:37:13.288Z",
+              "completionNotes": "protocol at benchling link",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
             },
             {
               "id": "mklvvdvy4p6j9bb03od",
@@ -1128,7 +1131,10 @@
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mklvv366nurez8d2w5p",
         "scheduledAt": "2026-01-20T02:02:50.891Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-23T00:37:13.288Z",
+        "completionNotes": "protocol at benchling link",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -1542,9 +1548,18 @@
       "completionNotes": "Slightly modified from Mayroa's protocol. E:T from 8:1 to 0.125:1.  Seeding 25k target cells.",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
       "date": "2026-01-22"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklvsgrboq443ll7wi",
+      "subtaskId": "mklvv366nurez8d2w5p",
+      "completedAt": "2026-01-23T00:37:13.288Z",
+      "completionNotes": "protocol at benchling link",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
+      "date": "2026-01-22"
     }
   ],
-  "lastUpdated": "2026-01-22T21:40:03.713Z",
+  "lastUpdated": "2026-01-23T00:37:13.288Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
