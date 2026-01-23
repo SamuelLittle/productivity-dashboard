@@ -257,7 +257,7 @@ function getDateFromString(dateString) {
 }
 
 function generateId() {
-    return Date.now().toString(36) + Math.random().toString(36).substr(2);
+    return Date.now().toString(36) + Math.random().toString(36).slice(2);
 }
 
 function formatDate(dateInput) {
@@ -456,7 +456,8 @@ async function saveData() {
     localStorage.setItem('dashboard_data', JSON.stringify(state.data));
 
     try {
-        const content = btoa(unescape(encodeURIComponent(JSON.stringify(state.data, null, 2))));
+        const jsonString = JSON.stringify(state.data, null, 2);
+        const content = btoa(encodeURIComponent(jsonString).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode(parseInt(p1, 16))));
 
         const body = {
             message: `Update productivity data - ${new Date().toISOString()}`,
@@ -2406,15 +2407,10 @@ async function saveTaskNotes() {
 }
 
 async function removeTaskFromDay(task, date, silent = false) {
-    console.log('removeTaskFromDay called:', { task, date, silent }); // Debug log
-
     if (task.isStandalone) {
         // Remove standalone task from this specific date
         if (state.data.dailyLists[date]) {
-            const before = state.data.dailyLists[date].length;
             state.data.dailyLists[date] = state.data.dailyLists[date].filter(t => t.id !== task.id);
-            const after = state.data.dailyLists[date].length;
-            console.log(`Standalone removal: ${before} -> ${after}`); // Debug log
 
             // Clean up empty arrays
             if (state.data.dailyLists[date].length === 0) {
@@ -2427,19 +2423,13 @@ async function removeTaskFromDay(task, date, silent = false) {
         const taskId = task.taskId || task.id;
         const subtaskId = task.subtaskId;
 
-        console.log('Removing project task:', { projectId, taskId, subtaskId }); // Debug log
-
         if (state.data.scheduledItems[date]) {
             const before = state.data.scheduledItems[date].length;
             state.data.scheduledItems[date] = state.data.scheduledItems[date].filter(ref => {
-                const matches = ref.projectId === projectId &&
-                               ref.taskId === taskId &&
-                               subtaskIdMatches(ref.subtaskId, subtaskId);
-                console.log('Checking ref:', ref, 'matches:', matches); // Debug log
-                return !matches;
+                return !(ref.projectId === projectId &&
+                         ref.taskId === taskId &&
+                         subtaskIdMatches(ref.subtaskId, subtaskId));
             });
-            const after = state.data.scheduledItems[date].length;
-            console.log(`Project task removal: ${before} -> ${after}`); // Debug log
 
             // Clean up empty arrays
             if (state.data.scheduledItems[date].length === 0) {
@@ -2723,8 +2713,6 @@ async function completeTask(e) {
 }
 
 async function toggleDailyTaskComplete(task, date, completed, notes = '', links = '') {
-    console.log('toggleDailyTaskComplete called:', { task, date, completed }); // Debug log
-
     if (task.isStandalone) {
         await toggleStandaloneTaskComplete(task.id, date, completed, notes, links);
         return;
@@ -2740,8 +2728,6 @@ async function toggleDailyTaskComplete(task, date, completed, notes = '', links 
         r.taskId === taskId &&
         subtaskIdMatches(r.subtaskId, subtaskId)
     );
-
-    console.log('Found ref:', ref); // Debug log
 
     if (ref) {
         ref.completedOnDay = completed;
@@ -2778,9 +2764,7 @@ async function toggleDailyTaskComplete(task, date, completed, notes = '', links 
             }
         }
     } else {
-        // Task not found in scheduledItems - might be a project task not scheduled
-        // Still allow completion via project
-        console.log('Task not in scheduledItems, completing via project directly');
+        // Task not found in scheduledItems - complete via project directly
         if (task.isSubtask || subtaskId) {
             await markSubtaskCompleteInProject(projectId, taskId, subtaskId, completed, notes, links);
         } else {
@@ -2949,25 +2933,14 @@ async function markSubtaskCompleteInProject(projectId, taskId, subtaskId, comple
 }
 
 async function toggleSubtaskComplete(projectId, taskId, subtaskId) {
-    console.log('toggleSubtaskComplete called:', { projectId, taskId, subtaskId }); // Debug log
-
     const project = state.data.projects.find(p => p.id === projectId);
-    if (!project) {
-        console.log('Project not found:', projectId);
-        return;
-    }
+    if (!project) return;
 
     const task = project.tasks.find(t => t.id === taskId);
-    if (!task || !task.subtasks) {
-        console.log('Task or subtasks not found:', taskId);
-        return;
-    }
+    if (!task || !task.subtasks) return;
 
     const subtask = task.subtasks.find(st => st.id === subtaskId);
-    if (!subtask) {
-        console.log('Subtask not found:', subtaskId);
-        return;
-    }
+    if (!subtask) return;
 
     const newCompleted = !subtask.completed;
     await markSubtaskCompleteInProject(projectId, taskId, subtaskId, newCompleted);
