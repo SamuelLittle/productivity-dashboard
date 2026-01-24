@@ -1236,13 +1236,6 @@
         "completedAt": "2026-01-23T20:46:44.695Z",
         "completionNotes": "Need to repeat this with actual compensation and proper controls and with antibody titration. Tuesday?\n",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mklusog2097tkm380gri",
-        "subtaskId": "mklut3v9xiajfvhkbm8",
-        "scheduledAt": "2026-01-23T00:38:05.489Z",
-        "completedOnDay": false
       }
     ],
     "2026-01-26": [
@@ -1286,6 +1279,13 @@
         "taskId": "mkn3iy4jrdxtygzkgtn",
         "subtaskId": "mkn3ly6lleab7y1plyn",
         "scheduledAt": "2026-01-23T16:55:32.006Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mklusog2097tkm380gri",
+        "subtaskId": "mklut3v9xiajfvhkbm8",
+        "scheduledAt": "2026-01-24T06:00:13.065Z",
         "completedOnDay": false
       }
     ],
@@ -1686,7 +1686,7 @@
       "date": "2026-01-23"
     }
   ],
-  "lastUpdated": "2026-01-24T05:59:50.879Z",
+  "lastUpdated": "2026-01-24T06:00:13.065Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
