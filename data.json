@@ -669,8 +669,11 @@
               "title": "First M2 media change",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T01:01:15.076Z"
+              "completed": true,
+              "createdAt": "2026-01-20T01:01:15.076Z",
+              "completedAt": "2026-01-24T05:59:50.879Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mklyikciusnr4zg0ch",
@@ -1219,7 +1222,10 @@
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mklw1qdgnu2ei75f2jc",
         "scheduledAt": "2026-01-20T18:51:33.585Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-24T05:59:50.879Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -1669,9 +1675,18 @@
       "completionNotes": "Advised on T cell transduction\n",
       "completionLinks": "",
       "date": "2026-01-23"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mklw1qdgnu2ei75f2jc",
+      "completedAt": "2026-01-24T05:59:50.879Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-23"
     }
   ],
-  "lastUpdated": "2026-01-23T23:05:31.747Z",
+  "lastUpdated": "2026-01-24T05:59:50.879Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
