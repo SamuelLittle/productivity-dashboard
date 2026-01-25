@@ -1275,28 +1275,57 @@ body {
     overflow-x: auto;
 }
 
-/* Week view header */
-.week-view-header {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 8px;
-    margin-bottom: 12px;
+/* Custom scrollbar */
+.week-view-container::-webkit-scrollbar {
+    height: 8px;
 }
 
-.week-view-day-header {
-    text-align: center;
-    padding: 8px 4px;
+.week-view-container::-webkit-scrollbar-track {
+    background: var(--color-bg);
+    border-radius: 4px;
+}
+
+.week-view-container::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 4px;
+}
+
+.week-view-container::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-muted);
+}
+
+/* Week view grid - single grid for perfect alignment */
+.week-view-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(120px, 1fr));
+    gap: 8px;
+    min-width: fit-content;
+}
+
+/* Day wrapper - contains header and tasks */
+.week-day-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-bg);
     border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.week-day-wrapper.today {
+    background: var(--color-primary-light);
+}
+
+/* Day header */
+.week-day-header {
+    text-align: center;
+    padding: 12px 8px;
     cursor: pointer;
     transition: background var(--transition);
+    border-bottom: 1px solid var(--color-border);
 }
 
-.week-view-day-header:hover {
+.week-day-header:hover {
     background: var(--color-surface-hover);
-}
-
-.week-view-day-header.today {
-    background: var(--color-primary-light);
 }
 
 .week-day-name {
@@ -1305,62 +1334,33 @@ body {
     font-weight: 600;
     color: var(--color-text-muted);
     text-transform: uppercase;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .week-day-number {
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--color-text);
 }
 
-.week-view-day-header.today .week-day-number {
+.week-day-wrapper.today .week-day-number {
     color: var(--color-primary);
 }
 
-/* Week view body */
-.week-view-body {
-    min-height: 300px;
-}
-
-.week-view-untimed-row {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 8px;
-}
-
-/* Day columns */
-.week-view-day-column {
-    display: flex;
-    flex-direction: column;
-    min-height: 200px;
-    background: var(--color-bg);
-    border-radius: var(--radius);
-    padding: 8px;
-    gap: 8px;
-}
-
-.week-view-day-column.today {
-    background: var(--color-primary-light);
-}
-
-/* Untimed tasks zone */
-.week-view-untimed-tasks {
+/* Day tasks area */
+.week-day-tasks {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 6px;
-    min-height: 100px;
-    padding: 4px;
-    border-radius: var(--radius-sm);
-    transition: background var(--transition), border-color var(--transition);
-    border: 2px dashed transparent;
+    padding: 8px;
+    min-height: 200px;
+    transition: background var(--transition);
 }
 
-.week-view-untimed-tasks.drop-target {
-    background: var(--color-primary-light);
-    border-color: var(--color-primary);
+.week-day-tasks.drop-target {
+    background: var(--color-surface-hover);
 }
 
 /* Task items in week view */
@@ -2059,12 +2059,13 @@ body {
         padding: 8px;
     }
 
-    .week-view-header {
+    .week-view-grid {
+        grid-template-columns: repeat(7, minmax(80px, 1fr));
         gap: 4px;
     }
 
-    .week-view-day-header {
-        padding: 4px 2px;
+    .week-day-header {
+        padding: 8px 4px;
     }
 
     .week-day-name {
@@ -2075,12 +2076,8 @@ body {
         font-size: 14px;
     }
 
-    .week-view-untimed-row {
-        gap: 4px;
-    }
-
-    .week-view-day-column {
-        min-height: 150px;
+    .week-day-tasks {
+        min-height: 120px;
         padding: 4px;
     }
 

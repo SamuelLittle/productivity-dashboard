@@ -1052,29 +1052,21 @@ function renderWeekView() {
         elements.calendarMonthYear.textContent = `${startMonth} ${startDate.getDate()} - ${endMonth} ${endDate.getDate()}, ${year}`;
     }
 
-    let html = '<div class="week-view-header">';
+    let html = '<div class="week-view-grid">';
 
-    // Header row with day names and dates
+    // Combined header + column for each day
     weekDates.forEach((dateStr, i) => {
         const d = new Date(dateStr);
         const isToday = dateStr === today;
         const dayNum = d.getDate();
-        html += `<div class="week-view-day-header${isToday ? ' today' : ''}" data-date="${dateStr}">
-            <span class="week-day-name">${dayNames[i]}</span>
-            <span class="week-day-number">${dayNum}</span>
-        </div>`;
-    });
-    html += '</div>';
-
-    // Untimed tasks section (all-day row)
-    html += '<div class="week-view-body">';
-    html += '<div class="week-view-untimed-row">';
-
-    weekDates.forEach(dateStr => {
         const tasks = getFilteredTasksForDate(dateStr, true);
-        const isToday = dateStr === today;
-        html += `<div class="week-view-day-column${isToday ? ' today' : ''}" data-date="${dateStr}">
-            <div class="week-view-untimed-tasks" data-date="${dateStr}">`;
+
+        html += `<div class="week-day-wrapper${isToday ? ' today' : ''}" data-date="${dateStr}">
+            <div class="week-day-header" data-date="${dateStr}">
+                <span class="week-day-name">${dayNames[i]}</span>
+                <span class="week-day-number">${dayNum}</span>
+            </div>
+            <div class="week-day-tasks" data-date="${dateStr}">`;
 
         tasks.forEach(task => {
             html += createWeekTaskItemHTML(task, dateStr);
@@ -1090,7 +1082,7 @@ function renderWeekView() {
         </div>`;
     });
 
-    html += '</div></div>';
+    html += '</div>';
 
     weekContainer.innerHTML = html;
     bindWeekViewEvents();
@@ -1117,7 +1109,7 @@ function bindWeekViewEvents() {
     if (!weekContainer) return;
 
     // Click on day header to open day detail
-    weekContainer.querySelectorAll('.week-view-day-header').forEach(header => {
+    weekContainer.querySelectorAll('.week-day-header').forEach(header => {
         header.addEventListener('click', () => {
             openDayDetail(header.dataset.date);
         });
@@ -1164,7 +1156,7 @@ function bindWeekViewEvents() {
     });
 
     // Drop zones
-    weekContainer.querySelectorAll('.week-view-untimed-tasks').forEach(zone => {
+    weekContainer.querySelectorAll('.week-day-tasks').forEach(zone => {
         zone.addEventListener('dragover', (e) => {
             e.preventDefault();
             e.dataTransfer.dropEffect = 'move';
