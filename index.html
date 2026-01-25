@@ -246,6 +246,25 @@
                                     </select>
                                     <button id="calendar-filter-reset" class="btn btn-ghost btn-sm hidden">Reset</button>
                                 </div>
+                                <div class="calendar-view-toggle">
+                                    <button id="calendar-view-month" class="view-toggle-btn active" title="Month View">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="3" width="7" height="7"/>
+                                            <rect x="14" y="3" width="7" height="7"/>
+                                            <rect x="3" y="14" width="7" height="7"/>
+                                            <rect x="14" y="14" width="7" height="7"/>
+                                        </svg>
+                                    </button>
+                                    <button id="calendar-view-week" class="view-toggle-btn" title="Week View">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="4" y1="4" x2="4" y2="20"/>
+                                            <line x1="8" y1="4" x2="8" y2="20"/>
+                                            <line x1="12" y1="4" x2="12" y2="20"/>
+                                            <line x1="16" y1="4" x2="16" y2="20"/>
+                                            <line x1="20" y1="4" x2="20" y2="20"/>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <button id="calendar-prev" class="btn btn-ghost btn-icon" title="Previous Month">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <polyline points="15 18 9 12 15 6"/>
@@ -262,6 +281,9 @@
                         </div>
                         <div id="calendar-grid" class="calendar-container">
                             <!-- Calendar will be rendered here -->
+                        </div>
+                        <div id="week-view-grid" class="week-view-container hidden">
+                            <!-- Week view will be rendered here -->
                         </div>
                     </div>
 

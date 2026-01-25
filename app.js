@@ -31,8 +31,14 @@ let state = {
     calendarFilter: {
         projectId: null,
         taskId: null
-    }
+    },
+    calendarViewMode: 'month', // 'month' or 'week'
+    weekStartDate: null
 };
+
+// Calendar view constants
+const HEAVY_WORKLOAD_THRESHOLD = 5;
+const MAX_PREVIEW_TASKS = 2;
 
 // DOM Elements
 const elements = {};
@@ -644,7 +650,7 @@ function renderAllViews() {
     renderScheduledView();
     renderProjectsView();
     renderArchiveView();
-    renderCalendar();
+    renderCalendarView();
     updateProjectSelector();
     updateCalendarProjectFilter();
 }
@@ -914,12 +920,49 @@ function renderProjectDetail(projectId) {
 // CALENDAR VIEW
 // ============================================
 
+// Helper: Render day cell content with task previews
+function renderDayContent(dateStr, dayNum, isOtherMonth) {
+    const tasks = getFilteredTasksForDate(dateStr, true);
+    const status = getFilteredDateStatus(dateStr);
+    const today = getToday();
+    const isToday = dateStr === today;
+    const isHeavyWorkload = tasks.length >= HEAVY_WORKLOAD_THRESHOLD;
+
+    let classes = 'calendar-day';
+    if (isOtherMonth) classes += ' other-month';
+    if (isToday) classes += ' today';
+    if (status) classes += ' has-tasks';
+    if (isHeavyWorkload) classes += ' heavy-workload';
+
+    let previewsHtml = '';
+    if (tasks.length > 0) {
+        const previewTasks = tasks.slice(0, MAX_PREVIEW_TASKS);
+        previewsHtml = '<div class="day-task-previews">';
+        previewTasks.forEach(task => {
+            const isCompleted = task.completedOnDay || task.completed;
+            const color = task.projectColor || 'var(--color-primary)';
+            previewsHtml += `<div class="day-task-preview${isCompleted ? ' completed' : ''}" style="--task-color: ${color}">${escapeHtml(task.title)}</div>`;
+        });
+        if (tasks.length > MAX_PREVIEW_TASKS) {
+            previewsHtml += `<div class="day-more-tasks">+${tasks.length - MAX_PREVIEW_TASKS} more</div>`;
+        }
+        previewsHtml += '</div>';
+    }
+
+    return `<div class="${classes}" data-date="${dateStr}">
+        <div class="calendar-day-header">
+            <span class="day-number">${dayNum}</span>
+            ${tasks.length > 0 ? `<span class="day-indicator ${status}" title="${tasks.length} task${tasks.length > 1 ? 's' : ''}">${tasks.length}</span>` : ''}
+        </div>
+        ${previewsHtml}
+    </div>`;
+}
+
 function renderCalendar() {
     if (!elements.calendarGrid || !elements.calendarMonthYear) return;
 
     const year = state.calendarDate.getFullYear();
     const month = state.calendarDate.getMonth();
-    const today = getToday();
 
     // Update header
     elements.calendarMonthYear.textContent = new Date(year, month, 1).toLocaleDateString('en-US', {
@@ -952,25 +995,13 @@ function renderCalendar() {
         const prevMonth = month === 0 ? 11 : month - 1;
         const prevYear = month === 0 ? year - 1 : year;
         const dateStr = getLocalDateString(new Date(prevYear, prevMonth, day));
-        const status = getFilteredDateStatus(dateStr);
-        html += `<div class="calendar-day other-month${status ? ' has-tasks' : ''}" data-date="${dateStr}">
-            <span class="day-number">${day}</span>
-            ${status ? `<span class="day-indicator ${status}"></span>` : ''}
-        </div>`;
+        html += renderDayContent(dateStr, day, true);
     }
 
     // Current month days
     for (let day = 1; day <= daysInMonth; day++) {
         const dateStr = getLocalDateString(new Date(year, month, day));
-        const isToday = dateStr === today;
-        const status = getFilteredDateStatus(dateStr);
-        const tasks = getFilteredTasksForDate(dateStr, true);
-        const taskCount = tasks.length;
-
-        html += `<div class="calendar-day${isToday ? ' today' : ''}${status ? ' has-tasks' : ''}" data-date="${dateStr}">
-            <span class="day-number">${day}</span>
-            ${taskCount > 0 ? `<span class="day-indicator ${status}" title="${taskCount} task${taskCount > 1 ? 's' : ''}">${taskCount}</span>` : ''}
-        </div>`;
+        html += renderDayContent(dateStr, day, false);
     }
 
     // Next month days
@@ -980,11 +1011,7 @@ function renderCalendar() {
         const nextMonth = month === 11 ? 0 : month + 1;
         const nextYear = month === 11 ? year + 1 : year;
         const dateStr = getLocalDateString(new Date(nextYear, nextMonth, day));
-        const status = getFilteredDateStatus(dateStr);
-        html += `<div class="calendar-day other-month${status ? ' has-tasks' : ''}" data-date="${dateStr}">
-            <span class="day-number">${day}</span>
-            ${status ? `<span class="day-indicator ${status}"></span>` : ''}
-        </div>`;
+        html += renderDayContent(dateStr, day, true);
     }
 
     html += '</div>';
@@ -999,16 +1026,312 @@ function renderCalendar() {
     });
 }
 
+// ============================================
+// WEEK VIEW
+// ============================================
+
+// Get Sunday of the week containing the given date
+function getWeekStart(date) {
+    const d = new Date(date);
+    const day = d.getDay();
+    d.setDate(d.getDate() - day);
+    return d;
+}
+
+// Get array of 7 date strings for the week
+function getWeekDates(startDate) {
+    const dates = [];
+    for (let i = 0; i < 7; i++) {
+        const d = new Date(startDate);
+        d.setDate(d.getDate() + i);
+        dates.push(getLocalDateString(d));
+    }
+    return dates;
+}
+
+// Main render function for week view
+function renderWeekView() {
+    const weekContainer = document.getElementById('week-view-grid');
+    if (!weekContainer) return;
+
+    // Initialize weekStartDate if not set
+    if (!state.weekStartDate) {
+        state.weekStartDate = getWeekStart(state.calendarDate);
+    }
+
+    const weekDates = getWeekDates(state.weekStartDate);
+    const today = getToday();
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+    // Update month/year display to show week range
+    const startDate = new Date(weekDates[0]);
+    const endDate = new Date(weekDates[6]);
+    const startMonth = startDate.toLocaleDateString('en-US', { month: 'short' });
+    const endMonth = endDate.toLocaleDateString('en-US', { month: 'short' });
+    const year = startDate.getFullYear();
+
+    if (startMonth === endMonth) {
+        elements.calendarMonthYear.textContent = `${startMonth} ${startDate.getDate()} - ${endDate.getDate()}, ${year}`;
+    } else {
+        elements.calendarMonthYear.textContent = `${startMonth} ${startDate.getDate()} - ${endMonth} ${endDate.getDate()}, ${year}`;
+    }
+
+    let html = '<div class="week-view-header">';
+
+    // Header row with day names and dates
+    weekDates.forEach((dateStr, i) => {
+        const d = new Date(dateStr);
+        const isToday = dateStr === today;
+        const dayNum = d.getDate();
+        html += `<div class="week-view-day-header${isToday ? ' today' : ''}" data-date="${dateStr}">
+            <span class="week-day-name">${dayNames[i]}</span>
+            <span class="week-day-number">${dayNum}</span>
+        </div>`;
+    });
+    html += '</div>';
+
+    // Untimed tasks section (all-day row)
+    html += '<div class="week-view-body">';
+    html += '<div class="week-view-untimed-row">';
+
+    weekDates.forEach(dateStr => {
+        const tasks = getFilteredTasksForDate(dateStr, true);
+        const isToday = dateStr === today;
+        html += `<div class="week-view-day-column${isToday ? ' today' : ''}" data-date="${dateStr}">
+            <div class="week-view-untimed-tasks" data-date="${dateStr}">`;
+
+        tasks.forEach(task => {
+            html += createWeekTaskItemHTML(task, dateStr);
+        });
+
+        html += `</div>
+            <button class="week-add-task-btn" data-date="${dateStr}" title="Add task">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"/>
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+            </button>
+        </div>`;
+    });
+
+    html += '</div></div>';
+
+    weekContainer.innerHTML = html;
+    bindWeekViewEvents();
+}
+
+// Create HTML for a task item in week view
+function createWeekTaskItemHTML(task, date) {
+    const isCompleted = task.completedOnDay || task.completed;
+    const color = task.projectColor || 'var(--color-primary)';
+    const taskKey = getTaskKey(task);
+
+    return `<div class="week-task-item${isCompleted ? ' completed' : ''}"
+        draggable="true"
+        data-task-key="${taskKey}"
+        data-date="${date}"
+        style="--task-color: ${color}">
+        <span class="week-task-title">${escapeHtml(task.title)}</span>
+    </div>`;
+}
+
+// Bind events for week view interactions
+function bindWeekViewEvents() {
+    const weekContainer = document.getElementById('week-view-grid');
+    if (!weekContainer) return;
+
+    // Click on day header to open day detail
+    weekContainer.querySelectorAll('.week-view-day-header').forEach(header => {
+        header.addEventListener('click', () => {
+            openDayDetail(header.dataset.date);
+        });
+    });
+
+    // Click on task to view details
+    weekContainer.querySelectorAll('.week-task-item').forEach(item => {
+        item.addEventListener('click', (e) => {
+            if (e.target.closest('.week-task-item').classList.contains('dragging')) return;
+            const taskKey = item.dataset.taskKey;
+            const date = item.dataset.date;
+            const task = findTaskByKey(taskKey, date);
+            if (task) {
+                openTaskDetailModal(task, date);
+            }
+        });
+    });
+
+    // Click add button to open day detail for adding tasks
+    weekContainer.querySelectorAll('.week-add-task-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            openDayDetail(btn.dataset.date);
+        });
+    });
+
+    // Drag and drop handlers
+    weekContainer.querySelectorAll('.week-task-item').forEach(item => {
+        item.addEventListener('dragstart', (e) => {
+            state.draggedTaskKey = item.dataset.taskKey;
+            state.draggedTaskDate = item.dataset.date;
+            item.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+        });
+
+        item.addEventListener('dragend', () => {
+            item.classList.remove('dragging');
+            state.draggedTaskKey = null;
+            state.draggedTaskDate = null;
+            // Remove all drop-target classes
+            weekContainer.querySelectorAll('.drop-target').forEach(el => {
+                el.classList.remove('drop-target');
+            });
+        });
+    });
+
+    // Drop zones
+    weekContainer.querySelectorAll('.week-view-untimed-tasks').forEach(zone => {
+        zone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+            zone.classList.add('drop-target');
+        });
+
+        zone.addEventListener('dragleave', (e) => {
+            // Only remove if leaving the zone entirely
+            if (!zone.contains(e.relatedTarget)) {
+                zone.classList.remove('drop-target');
+            }
+        });
+
+        zone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            zone.classList.remove('drop-target');
+
+            const targetDate = zone.dataset.date;
+            const sourceDate = state.draggedTaskDate;
+            const taskKey = state.draggedTaskKey;
+
+            if (taskKey && sourceDate !== targetDate) {
+                rescheduleTaskByKey(taskKey, sourceDate, targetDate);
+            }
+        });
+    });
+}
+
+// Find task by key from a specific date
+function findTaskByKey(taskKey, date) {
+    const tasks = getFilteredTasksForDate(date, true);
+    return tasks.find(t => getTaskKey(t) === taskKey);
+}
+
+// Reschedule a task from one date to another
+function rescheduleTaskByKey(taskKey, fromDate, toDate) {
+    // Parse the task key
+    const parts = taskKey.split(':');
+    const taskType = parts[0];
+
+    if (taskType === 'standalone') {
+        // Handle standalone task
+        const taskId = parts[1];
+        const fromList = state.data.dailyLists[fromDate] || [];
+        const taskIndex = fromList.findIndex(t => t.id === taskId && t.isStandalone);
+
+        if (taskIndex === -1) return;
+
+        const task = fromList.splice(taskIndex, 1)[0];
+
+        if (!state.data.dailyLists[toDate]) {
+            state.data.dailyLists[toDate] = [];
+        }
+        state.data.dailyLists[toDate].push(task);
+
+    } else if (taskType === 'project') {
+        // Handle project task or subtask
+        const projectId = parts[1];
+        const taskId = parts[2];
+        const subtaskId = parts[3] || null;
+
+        // Remove from source date's scheduled items
+        const fromItems = state.data.scheduledItems[fromDate] || [];
+        const itemIndex = fromItems.findIndex(item => {
+            if (subtaskId) {
+                return item.projectId === projectId && item.taskId === taskId && item.subtaskId === subtaskId;
+            }
+            return item.projectId === projectId && item.taskId === taskId && !item.subtaskId;
+        });
+
+        if (itemIndex === -1) return;
+
+        const item = fromItems.splice(itemIndex, 1)[0];
+
+        // Add to target date's scheduled items
+        if (!state.data.scheduledItems[toDate]) {
+            state.data.scheduledItems[toDate] = [];
+        }
+        state.data.scheduledItems[toDate].push(item);
+    }
+
+    // Save and re-render
+    saveData();
+    renderCalendarView();
+    showToast('Task rescheduled', 'success');
+}
+
+// View switching functions
+function setCalendarViewMode(mode) {
+    if (mode !== 'month' && mode !== 'week') return;
+
+    state.calendarViewMode = mode;
+
+    // Update toggle buttons
+    document.getElementById('calendar-view-month')?.classList.toggle('active', mode === 'month');
+    document.getElementById('calendar-view-week')?.classList.toggle('active', mode === 'week');
+
+    // Show/hide appropriate containers
+    const monthGrid = elements.calendarGrid;
+    const weekGrid = document.getElementById('week-view-grid');
+
+    if (monthGrid) monthGrid.classList.toggle('hidden', mode === 'week');
+    if (weekGrid) weekGrid.classList.toggle('hidden', mode === 'month');
+
+    // Sync week start date with current calendar date
+    if (mode === 'week') {
+        state.weekStartDate = getWeekStart(state.calendarDate);
+    }
+
+    renderCalendarView();
+}
+
+// Dispatcher that renders the correct view
+function renderCalendarView() {
+    if (state.calendarViewMode === 'week') {
+        renderWeekView();
+    } else {
+        renderCalendar();
+    }
+}
+
 function navigateCalendar(direction) {
-    const newDate = new Date(state.calendarDate);
-    newDate.setMonth(newDate.getMonth() + direction);
-    state.calendarDate = newDate;
-    renderCalendar();
+    if (state.calendarViewMode === 'week') {
+        // Navigate by week
+        const newDate = new Date(state.weekStartDate);
+        newDate.setDate(newDate.getDate() + (direction * 7));
+        state.weekStartDate = newDate;
+        state.calendarDate = new Date(newDate);
+    } else {
+        // Navigate by month
+        const newDate = new Date(state.calendarDate);
+        newDate.setMonth(newDate.getMonth() + direction);
+        state.calendarDate = newDate;
+    }
+    renderCalendarView();
 }
 
 function jumpToToday() {
     state.calendarDate = new Date();
-    renderCalendar();
+    if (state.calendarViewMode === 'week') {
+        state.weekStartDate = getWeekStart(state.calendarDate);
+    }
+    renderCalendarView();
 }
 
 // ============================================
@@ -1063,7 +1386,7 @@ function handleCalendarProjectFilterChange() {
     state.calendarFilter.taskId = null;
     updateCalendarTaskFilter();
     updateCalendarFilterResetBtn();
-    renderCalendar();
+    renderCalendarView();
 
     // Also update day detail if open
     if (state.selectedDate && !elements.dayDetailModal?.classList.contains('hidden')) {
@@ -1075,7 +1398,7 @@ function handleCalendarTaskFilterChange() {
     const taskId = elements.calendarTaskFilter.value || null;
     state.calendarFilter.taskId = taskId;
     updateCalendarFilterResetBtn();
-    renderCalendar();
+    renderCalendarView();
 
     // Also update day detail if open
     if (state.selectedDate && !elements.dayDetailModal?.classList.contains('hidden')) {
@@ -1090,7 +1413,7 @@ function resetCalendarFilter() {
     elements.calendarTaskFilter.value = '';
     elements.calendarTaskFilter.classList.add('hidden');
     updateCalendarFilterResetBtn();
-    renderCalendar();
+    renderCalendarView();
 
     if (state.selectedDate && !elements.dayDetailModal?.classList.contains('hidden')) {
         renderDayDetailTasks(state.selectedDate);
@@ -1854,7 +2177,7 @@ function switchView(viewName) {
 
     // Render specific views when switching
     if (viewName === 'calendar') {
-        renderCalendar();
+        renderCalendarView();
     } else if (viewName === 'previous') {
         renderPreviousView();
     }
@@ -3315,6 +3638,10 @@ function initEventListeners() {
     elements.calendarPrevBtn?.addEventListener('click', () => navigateCalendar(-1));
     elements.calendarNextBtn?.addEventListener('click', () => navigateCalendar(1));
     elements.calendarTodayBtn?.addEventListener('click', jumpToToday);
+
+    // Calendar view toggle
+    document.getElementById('calendar-view-month')?.addEventListener('click', () => setCalendarViewMode('month'));
+    document.getElementById('calendar-view-week')?.addEventListener('click', () => setCalendarViewMode('week'));
 
     // Calendar filters
     elements.calendarProjectFilter?.addEventListener('change', handleCalendarProjectFilterChange);
