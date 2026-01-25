@@ -1276,9 +1276,9 @@ body {
 /* View toggle buttons */
 .calendar-view-toggle {
     display: flex;
-    gap: 4px;
-    background: var(--color-surface);
-    padding: 4px;
+    gap: 2px;
+    background: var(--color-bg);
+    padding: 3px;
     border-radius: var(--radius);
     border: 1px solid var(--color-border);
 }
@@ -1287,25 +1287,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 30px;
     border: none;
-    background: var(--color-surface-hover);
+    background: transparent;
     border-radius: var(--radius-sm);
     cursor: pointer;
-    color: var(--color-text-secondary);
+    color: var(--color-text-muted);
     transition: all var(--transition);
 }
 
 .view-toggle-btn:hover {
     color: var(--color-text);
-    background: var(--color-surface);
+    background: var(--color-surface-hover);
 }
 
 .view-toggle-btn.active {
     color: var(--color-primary);
     background: var(--color-surface);
     box-shadow: var(--shadow-sm);
+}
+
+.view-toggle-btn svg {
+    width: 16px;
+    height: 16px;
 }
 
 /* Week view container */
