@@ -532,6 +532,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-22T18:25:47.416Z"
+            },
+            {
+              "id": "mktcgaa6nxht55nod0s",
+              "title": "Staining optimization for NK biomarker panel",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-25T06:14:51.150Z"
             }
           ]
         },
@@ -1712,7 +1720,7 @@
       "date": "2026-01-23"
     }
   ],
-  "lastUpdated": "2026-01-25T06:00:59.921Z",
+  "lastUpdated": "2026-01-25T06:14:51.150Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
