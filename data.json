@@ -746,7 +746,7 @@
           "title": "Meet with Orchestra Team for onboarding",
           "description": "",
           "priority": "medium",
-          "completed": true,
+          "completed": false,
           "createdAt": "2026-01-20T16:19:48.769Z",
           "subtasks": [
             {
@@ -760,9 +760,9 @@
           ],
           "notes": "@1pm in 42-3L",
           "links": "",
-          "completedAt": "2026-01-21T23:26:10.173Z",
-          "completionNotes": "Going to set up a second follow up meeting with Michelle and Holly to overview setting up iAstro work. ",
-          "completionLinks": ""
+          "completedAt": null,
+          "completionNotes": null,
+          "completionLinks": null
         },
         {
           "id": "mkmsy72n9wkp209y165",
@@ -1137,10 +1137,10 @@
         "taskId": "mkmsv0dd65q3mlfg2gh",
         "subtaskId": null,
         "scheduledAt": "2026-01-20T16:19:48.769Z",
-        "completedOnDay": true,
-        "completedAt": "2026-01-21T23:26:10.173Z",
-        "completionNotes": "Going to set up a second follow up meeting with Michelle and Holly to overview setting up iAstro work. ",
-        "completionLinks": ""
+        "completedOnDay": false,
+        "completedAt": null,
+        "completionNotes": null,
+        "completionLinks": null
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -1712,7 +1712,7 @@
       "date": "2026-01-23"
     }
   ],
-  "lastUpdated": "2026-01-25T06:00:54.057Z",
+  "lastUpdated": "2026-01-25T06:00:59.921Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
