@@ -36,10 +36,6 @@ let state = {
     weekStartDate: null
 };
 
-// Calendar view constants
-const HEAVY_WORKLOAD_THRESHOLD = 5;
-const MAX_PREVIEW_TASKS = 2;
-
 // DOM Elements
 const elements = {};
 
@@ -920,41 +916,21 @@ function renderProjectDetail(projectId) {
 // CALENDAR VIEW
 // ============================================
 
-// Helper: Render day cell content with task previews
+// Helper: Render day cell content (simple view)
 function renderDayContent(dateStr, dayNum, isOtherMonth) {
     const tasks = getFilteredTasksForDate(dateStr, true);
     const status = getFilteredDateStatus(dateStr);
     const today = getToday();
     const isToday = dateStr === today;
-    const isHeavyWorkload = tasks.length >= HEAVY_WORKLOAD_THRESHOLD;
 
     let classes = 'calendar-day';
     if (isOtherMonth) classes += ' other-month';
     if (isToday) classes += ' today';
     if (status) classes += ' has-tasks';
-    if (isHeavyWorkload) classes += ' heavy-workload';
-
-    let previewsHtml = '';
-    if (tasks.length > 0) {
-        const previewTasks = tasks.slice(0, MAX_PREVIEW_TASKS);
-        previewsHtml = '<div class="day-task-previews">';
-        previewTasks.forEach(task => {
-            const isCompleted = task.completedOnDay || task.completed;
-            const color = task.projectColor || 'var(--color-primary)';
-            previewsHtml += `<div class="day-task-preview${isCompleted ? ' completed' : ''}" style="--task-color: ${color}">${escapeHtml(task.title)}</div>`;
-        });
-        if (tasks.length > MAX_PREVIEW_TASKS) {
-            previewsHtml += `<div class="day-more-tasks">+${tasks.length - MAX_PREVIEW_TASKS} more</div>`;
-        }
-        previewsHtml += '</div>';
-    }
 
     return `<div class="${classes}" data-date="${dateStr}">
-        <div class="calendar-day-header">
-            <span class="day-number">${dayNum}</span>
-            ${tasks.length > 0 ? `<span class="day-indicator ${status}" title="${tasks.length} task${tasks.length > 1 ? 's' : ''}">${tasks.length}</span>` : ''}
-        </div>
-        ${previewsHtml}
+        <span class="day-number">${dayNum}</span>
+        ${tasks.length > 0 ? `<span class="day-indicator ${status}" title="${tasks.length} task${tasks.length > 1 ? 's' : ''}">${tasks.length}</span>` : ''}
     </div>`;
 }
 

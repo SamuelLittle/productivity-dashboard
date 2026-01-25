@@ -1154,17 +1154,18 @@ body {
 }
 
 .calendar-day {
+    aspect-ratio: 1;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    gap: 2px;
-    padding: 4px;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px;
     border-radius: var(--radius);
     cursor: pointer;
     transition: all var(--transition);
     position: relative;
-    min-height: 80px;
+    min-height: 60px;
 }
 
 .calendar-day:hover {
@@ -1223,54 +1224,6 @@ body {
 .day-indicator.past-incomplete {
     background: var(--color-danger-light);
     color: var(--color-danger);
-}
-
-/* Day cell layout adjustments for task previews */
-.calendar-day-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4px;
-}
-
-/* Task previews in calendar */
-.day-task-previews {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    overflow: hidden;
-}
-
-.day-task-preview {
-    font-size: 10px;
-    padding: 2px 4px;
-    border-left: 3px solid var(--task-color);
-    background: var(--color-surface-hover);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border-radius: 2px;
-}
-
-.day-task-preview.completed {
-    opacity: 0.5;
-    text-decoration: line-through;
-}
-
-.day-more-tasks {
-    font-size: 9px;
-    color: var(--color-text-muted);
-    padding-left: 4px;
-}
-
-/* Heavy workload days */
-.calendar-day.heavy-workload {
-    background: var(--color-warning-light);
-}
-
-.calendar-day.heavy-workload:hover {
-    background: var(--color-warning-light);
-    filter: brightness(0.95);
 }
 
 /* View toggle buttons */
@@ -2099,11 +2052,6 @@ body {
     .calendar-day.today .day-number {
         width: 24px;
         height: 24px;
-    }
-
-    /* Task previews responsive */
-    .day-task-previews {
-        display: none;
     }
 
     /* Week view responsive */
