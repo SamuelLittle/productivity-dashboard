@@ -748,7 +748,16 @@
           "priority": "medium",
           "completed": true,
           "createdAt": "2026-01-20T16:19:48.769Z",
-          "subtasks": [],
+          "subtasks": [
+            {
+              "id": "mktbycdlej9nq6ehf4",
+              "title": "Follow up meeting with Holly",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-25T06:00:54.057Z"
+            }
+          ],
           "notes": "@1pm in 42-3L",
           "links": "",
           "completedAt": "2026-01-21T23:26:10.173Z",
@@ -1703,7 +1712,7 @@
       "date": "2026-01-23"
     }
   ],
-  "lastUpdated": "2026-01-25T06:00:30.642Z",
+  "lastUpdated": "2026-01-25T06:00:54.057Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
