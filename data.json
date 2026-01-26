@@ -777,7 +777,9 @@
               "description": "",
               "priority": "medium",
               "completed": false,
-              "createdAt": "2026-01-25T06:00:54.057Z"
+              "createdAt": "2026-01-25T06:00:54.057Z",
+              "notes": "@ 1:30 in 42-1B\n",
+              "links": ""
             }
           ],
           "notes": "@1pm in 42-3L",
@@ -1812,7 +1814,7 @@
       "date": "2026-01-26"
     }
   ],
-  "lastUpdated": "2026-01-26T22:48:30.401Z",
+  "lastUpdated": "2026-01-26T22:48:49.347Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
