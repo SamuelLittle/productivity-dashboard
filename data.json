@@ -295,8 +295,11 @@
               "title": "Make replating protocol",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-26T16:27:27.398Z"
+              "completed": true,
+              "createdAt": "2026-01-26T16:27:27.398Z",
+              "completedAt": "2026-01-26T18:51:12.147Z",
+              "completionNotes": "Validated w/ simuilation and with PBS mock run",
+              "completionLinks": ""
             }
           ]
         },
@@ -1334,7 +1337,10 @@
         "taskId": "mkn3iy4jrdxtygzkgtn",
         "subtaskId": "mkvdry9247tgw72t37h",
         "scheduledAt": "2026-01-26T16:27:27.398Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-26T18:51:12.147Z",
+        "completionNotes": "Validated w/ simuilation and with PBS mock run",
+        "completionLinks": ""
       }
     ],
     "2026-01-28": [
@@ -1755,9 +1761,18 @@
       "completionNotes": "Got 10 plates - need 3 for Cytokine screen submissions. Will grab more when I submit those plates",
       "completionLinks": "",
       "date": "2026-01-26"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3iy4jrdxtygzkgtn",
+      "subtaskId": "mkvdry9247tgw72t37h",
+      "completedAt": "2026-01-26T18:51:12.147Z",
+      "completionNotes": "Validated w/ simuilation and with PBS mock run",
+      "completionLinks": "",
+      "date": "2026-01-26"
     }
   ],
-  "lastUpdated": "2026-01-26T17:32:42.415Z",
+  "lastUpdated": "2026-01-26T18:51:12.147Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
