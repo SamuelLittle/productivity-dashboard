@@ -289,6 +289,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-20T21:20:41.805Z"
+            },
+            {
+              "id": "mkvdry9247tgw72t37h",
+              "title": "Make replating protocol",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-26T16:27:27.398Z"
             }
           ]
         },
@@ -1324,6 +1332,13 @@
         "subtaskId": "mkn5202q853nkns38kg",
         "scheduledAt": "2026-01-25T06:00:30.642Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mkn3iy4jrdxtygzkgtn",
+        "subtaskId": "mkvdry9247tgw72t37h",
+        "scheduledAt": "2026-01-26T16:27:27.398Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-28": [
@@ -1737,7 +1752,7 @@
       "date": "2026-01-23"
     }
   ],
-  "lastUpdated": "2026-01-26T16:25:58.557Z",
+  "lastUpdated": "2026-01-26T16:27:27.398Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
