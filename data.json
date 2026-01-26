@@ -533,8 +533,11 @@
               "title": "Set up post nucleofection killing assay",
               "description": "Using E:T ratio determined on Friday set up killing assay for AAVS1 KO and control NK cells. \n\nWith and without IL15+IL2 (?)",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-22T18:25:12.235Z"
+              "completed": true,
+              "createdAt": "2026-01-22T18:25:12.235Z",
+              "completedAt": "2026-01-26T22:47:08.113Z",
+              "completionNotes": "Details in benchling files.  Will run attune tomorrow morning. ",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
             },
             {
               "id": "mkps8pzsy035l5qqd3a",
@@ -1310,7 +1313,10 @@
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mkps7yuj9uqc2bzxpoc",
         "scheduledAt": "2026-01-22T18:25:12.235Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-26T22:47:08.113Z",
+        "completionNotes": "Details in benchling files.  Will run attune tomorrow morning. ",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -1788,9 +1794,18 @@
       "completionNotes": "Validated w/ simuilation and with PBS mock run",
       "completionLinks": "",
       "date": "2026-01-26"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklvsgrboq443ll7wi",
+      "subtaskId": "mkps7yuj9uqc2bzxpoc",
+      "completedAt": "2026-01-26T22:47:08.113Z",
+      "completionNotes": "Details in benchling files.  Will run attune tomorrow morning. ",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
+      "date": "2026-01-26"
     }
   ],
-  "lastUpdated": "2026-01-26T20:46:50.608Z",
+  "lastUpdated": "2026-01-26T22:47:08.113Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
