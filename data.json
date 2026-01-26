@@ -928,6 +928,16 @@
         "completed": false,
         "createdAt": "2026-01-25T06:29:17.945Z"
       }
+    ],
+    "2026-01-30": [
+      {
+        "id": "mkvn167is76165ua8li",
+        "title": "1-on-1 with Celine @ 10am",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-01-26T20:46:34.158Z"
+      }
     ]
   },
   "scheduledItems": {
@@ -1772,7 +1782,7 @@
       "date": "2026-01-26"
     }
   ],
-  "lastUpdated": "2026-01-26T18:51:12.147Z",
+  "lastUpdated": "2026-01-26T20:46:34.158Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
