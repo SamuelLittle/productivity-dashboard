@@ -810,8 +810,11 @@
               "title": "Get luminex compatible plates from B12",
               "description": "Need 12x Luminex compatible plates for supernatant submission from iAstro screen.",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T22:01:10.370Z"
+              "completed": true,
+              "createdAt": "2026-01-20T22:01:10.370Z",
+              "completedAt": "2026-01-26T17:32:42.415Z",
+              "completionNotes": "Got 10 plates - need 3 for Cytokine screen submissions. Will grab more when I submit those plates",
+              "completionLinks": ""
             }
           ]
         }
@@ -1321,7 +1324,10 @@
         "taskId": "mkmsy72n9wkp209y165",
         "subtaskId": "mkn5202q853nkns38kg",
         "scheduledAt": "2026-01-25T06:00:30.642Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-26T17:32:42.415Z",
+        "completionNotes": "Got 10 plates - need 3 for Cytokine screen submissions. Will grab more when I submit those plates",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -1740,9 +1746,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-23"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkmsy72n9wkp209y165",
+      "subtaskId": "mkn5202q853nkns38kg",
+      "completedAt": "2026-01-26T17:32:42.415Z",
+      "completionNotes": "Got 10 plates - need 3 for Cytokine screen submissions. Will grab more when I submit those plates",
+      "completionLinks": "",
+      "date": "2026-01-26"
     }
   ],
-  "lastUpdated": "2026-01-26T16:27:55.262Z",
+  "lastUpdated": "2026-01-26T17:32:42.415Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
