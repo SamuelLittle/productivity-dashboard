@@ -892,7 +892,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-27T23:46:56.779Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mkx8zmxqdal9ng5t3z9",
+              "title": "Meet with Holly pt 3 ",
+              "description": "Meet with Holly to continue the data ingestion process. \n\nIn prep - complete writing protocol for iAstro workflow in Orchestra\nlocate images on IXM",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-27T23:49:00.254Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -2061,7 +2070,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-01-27T23:46:56.780Z",
+  "lastUpdated": "2026-01-27T23:49:00.254Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
