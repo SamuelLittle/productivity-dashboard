@@ -441,7 +441,7 @@
           "title": "Pilot killing assay",
           "description": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T16:54:04.498Z",
           "subtasks": [
             {
@@ -451,7 +451,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T00:54:34.000Z",
-              "completedAt": "2026-01-22T03:18:10.336Z",
+              "completedAt": "2026-01-27T23:39:18.521Z",
               "completionNotes": "Culturing overnight.  Didn't count T cells. will count tomorrow",
               "completionLinks": ""
             },
@@ -464,7 +464,7 @@
               "createdAt": "2026-01-20T00:55:06.974Z",
               "notes": "Getting IL15 from Mayra at ~10:30",
               "links": "",
-              "completedAt": "2026-01-22T03:17:44.498Z",
+              "completedAt": "2026-01-27T23:39:18.521Z",
               "completionNotes": "Seeded at 1M cell/ml in Il2 + Il15\n",
               "completionLinks": ""
             },
@@ -475,7 +475,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T00:56:05.070Z",
-              "completedAt": "2026-01-23T00:37:13.288Z",
+              "completedAt": "2026-01-27T23:39:18.521Z",
               "completionNotes": "protocol at benchling link",
               "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
             },
@@ -488,7 +488,7 @@
               "createdAt": "2026-01-20T00:56:18.959Z",
               "notes": "First thing in the morning -",
               "links": "",
-              "completedAt": "2026-01-23T18:45:04.609Z",
+              "completedAt": "2026-01-27T23:39:18.521Z",
               "completionNotes": "Stained both the killing assay and NK cells with biomarker panel. Details on benchling.",
               "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
             },
@@ -501,7 +501,7 @@
               "createdAt": "2026-01-20T00:57:49.618Z",
               "notes": "Currently booked for 11am - need to make sure cell staining is done and ready by then",
               "links": "",
-              "completedAt": "2026-01-23T20:47:13.769Z",
+              "completedAt": "2026-01-27T23:39:18.521Z",
               "completionNotes": "NK cells were unhealthy.  Need to analyze data this w/e. ",
               "completionLinks": ""
             },
@@ -512,7 +512,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T16:31:27.551Z",
-              "completedAt": "2026-01-23T20:46:44.695Z",
+              "completedAt": "2026-01-27T23:39:18.521Z",
               "completionNotes": "Need to repeat this with actual compensation and proper controls and with antibody titration. Tuesday?\n",
               "completionLinks": ""
             },
@@ -523,7 +523,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T23:21:02.504Z",
-              "completedAt": "2026-01-21T20:10:13.447Z",
+              "completedAt": "2026-01-27T23:39:18.521Z",
               "completionNotes": "50mL of media prepped\n",
               "completionLinks": ""
             },
@@ -534,7 +534,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-22T16:04:15.096Z",
-              "completedAt": "2026-01-22T21:40:03.713Z",
+              "completedAt": "2026-01-27T23:39:18.521Z",
               "completionNotes": "Slightly modified from Mayroa's protocol. E:T from 8:1 to 0.125:1.  Seeding 25k target cells.",
               "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
             },
@@ -545,7 +545,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-22T18:22:33.764Z",
-              "completedAt": "2026-01-23T00:37:57.391Z",
+              "completedAt": "2026-01-27T23:39:18.521Z",
               "completionNotes": "Protocol at benchling link\n4x CD96 KOs\n4x AAVS1 KOs\nrecovered half with cytokines and half without",
               "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
             },
@@ -556,7 +556,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-22T18:25:12.235Z",
-              "completedAt": "2026-01-26T22:47:08.113Z",
+              "completedAt": "2026-01-27T23:39:18.521Z",
               "completionNotes": "Details in benchling files.  Will run attune tomorrow morning. ",
               "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
             },
@@ -567,7 +567,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-22T18:25:47.416Z",
-              "completedAt": "2026-01-27T22:48:05.799Z",
+              "completedAt": "2026-01-27T23:39:18.521Z",
               "completionNotes": "Completed using attached protocol. \n\nNK cells were extremely unhealthy. \n\nResults are hard to trust here. ",
               "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
             },
@@ -576,10 +576,14 @@
               "title": "Staining optimization for NK biomarker panel",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-25T06:14:51.150Z"
+              "completed": true,
+              "createdAt": "2026-01-25T06:14:51.150Z",
+              "completedAt": "2026-01-27T23:39:18.521Z"
             }
-          ]
+          ],
+          "completedAt": "2026-01-27T23:39:18.521Z",
+          "completionNotes": "Killing Assay Complete. Full notes in benchling and results in 1-on-1 slides with Celine. \n\nA moderate success.  Was able to validate the assay and show sensitivity.  But Cells were in extremely poor health.  Need to optimize culture parameters to see if I can improve this. ",
+          "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
         },
         {
           "id": "mkmthio0tg3y2jko0oi",
@@ -2021,9 +2025,18 @@
       "completionNotes": "Completed using attached protocol. \n\nNK cells were extremely unhealthy. \n\nResults are hard to trust here. ",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
       "date": "2026-01-27"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklvsgrboq443ll7wi",
+      "subtaskId": null,
+      "title": "Pilot killing assay",
+      "completedAt": "2026-01-27T23:39:18.521Z",
+      "completionNotes": "Killing Assay Complete. Full notes in benchling and results in 1-on-1 slides with Celine. \n\nA moderate success.  Was able to validate the assay and show sensitivity.  But Cells were in extremely poor health.  Need to optimize culture parameters to see if I can improve this. ",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
     }
   ],
-  "lastUpdated": "2026-01-27T23:34:42.517Z",
+  "lastUpdated": "2026-01-27T23:39:18.521Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
