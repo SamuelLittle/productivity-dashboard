@@ -973,8 +973,11 @@
         "title": "Submit luminex plates",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-27T01:24:47.890Z"
+        "completed": true,
+        "createdAt": "2026-01-27T01:24:47.890Z",
+        "completedAt": "2026-01-27T18:46:45.284Z",
+        "completionNotes": "Submitted at 10AM\n",
+        "completionLinks": ""
       }
     ]
   },
@@ -1894,9 +1897,17 @@
       "completionNotes": "Added 50ul of 100ng/mL IL-10 to M2 Macrophages\n",
       "completionLinks": "",
       "date": "2026-01-26"
+    },
+    {
+      "id": "mkvwyz6aioumk624kho",
+      "title": "Submit luminex plates",
+      "completedAt": "2026-01-27T18:46:45.285Z",
+      "completionNotes": "Submitted at 10AM\n",
+      "completionLinks": "",
+      "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-27T01:59:08.557Z",
+  "lastUpdated": "2026-01-27T18:46:45.285Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
