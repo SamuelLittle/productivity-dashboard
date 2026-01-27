@@ -777,7 +777,7 @@
           "title": "Meet with Orchestra Team for onboarding",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T16:19:48.769Z",
           "subtasks": [
             {
@@ -785,17 +785,18 @@
               "title": "Follow up meeting with Holly",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-01-25T06:00:54.057Z",
               "notes": "@ 1:30 in 42-1B\n",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-01-27T01:25:25.285Z"
             }
           ],
           "notes": "@1pm in 42-3L",
           "links": "",
-          "completedAt": null,
-          "completionNotes": null,
-          "completionLinks": null
+          "completedAt": "2026-01-27T01:25:25.285Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mkmsy72n9wkp209y165",
@@ -1201,10 +1202,10 @@
         "taskId": "mkmsv0dd65q3mlfg2gh",
         "subtaskId": null,
         "scheduledAt": "2026-01-20T16:19:48.769Z",
-        "completedOnDay": false,
-        "completedAt": null,
-        "completionNotes": null,
-        "completionLinks": null
+        "completedOnDay": true,
+        "completedAt": "2026-01-27T01:25:25.284Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -1867,9 +1868,17 @@
       "completionNotes": "in 42-3 deli fridge - submit tomorrow",
       "completionLinks": "",
       "date": "2026-01-26"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkmsv0dd65q3mlfg2gh",
+      "completedAt": "2026-01-27T01:25:25.285Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-21"
     }
   ],
-  "lastUpdated": "2026-01-27T01:24:47.890Z",
+  "lastUpdated": "2026-01-27T01:25:25.285Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
