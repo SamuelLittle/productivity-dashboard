@@ -824,7 +824,7 @@
           "title": "Meet with Orchestra Team for onboarding",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T16:19:48.769Z",
           "subtasks": [
             {
@@ -836,16 +836,16 @@
               "createdAt": "2026-01-25T06:00:54.057Z",
               "notes": "@ 1:30 in 42-1B\n",
               "links": "",
-              "completedAt": "2026-01-27T22:31:56.799Z",
+              "completedAt": "2026-01-27T23:46:44.339Z",
               "completionNotes": "Need to :\n-finish protocol for iAstro-RNP screen\n- locate IXM files for iAstro images",
               "completionLinks": ""
             }
           ],
           "notes": "@1pm in 42-3L",
           "links": "",
-          "completedAt": null,
-          "completionNotes": null,
-          "completionLinks": null
+          "completedAt": "2026-01-27T23:46:44.339Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mkmsy72n9wkp209y165",
@@ -1273,10 +1273,10 @@
         "taskId": "mkmsv0dd65q3mlfg2gh",
         "subtaskId": null,
         "scheduledAt": "2026-01-20T16:19:48.769Z",
-        "completedOnDay": false,
-        "completedAt": null,
-        "completionNotes": null,
-        "completionLinks": null
+        "completedOnDay": true,
+        "completedAt": "2026-01-27T23:46:44.339Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -2034,9 +2034,18 @@
       "completedAt": "2026-01-27T23:39:18.521Z",
       "completionNotes": "Killing Assay Complete. Full notes in benchling and results in 1-on-1 slides with Celine. \n\nA moderate success.  Was able to validate the assay and show sensitivity.  But Cells were in extremely poor health.  Need to optimize culture parameters to see if I can improve this. ",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkmsv0dd65q3mlfg2gh",
+      "subtaskId": null,
+      "title": "Meet with Orchestra Team for onboarding",
+      "completedAt": "2026-01-27T23:46:44.339Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-01-27T23:41:40.203Z",
+  "lastUpdated": "2026-01-27T23:46:44.339Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
