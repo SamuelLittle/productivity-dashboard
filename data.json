@@ -565,8 +565,11 @@
               "title": "Flow for killing post nucleofection killing assay",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-22T18:25:47.416Z"
+              "completed": true,
+              "createdAt": "2026-01-22T18:25:47.416Z",
+              "completedAt": "2026-01-27T22:48:05.799Z",
+              "completionNotes": "Completed using attached protocol. \n\nNK cells were extremely unhealthy. \n\nResults are hard to trust here. ",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
             },
             {
               "id": "mktcgaa6nxht55nod0s",
@@ -1487,7 +1490,10 @@
         "taskId": "mklvsgrboq443ll7wi",
         "subtaskId": "mkps8pzsy035l5qqd3a",
         "scheduledAt": "2026-01-22T18:25:47.417Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-27T22:48:05.798Z",
+        "completionNotes": "Completed using attached protocol. \n\nNK cells were extremely unhealthy. \n\nResults are hard to trust here. ",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit"
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -1995,9 +2001,18 @@
       "completionNotes": "Need to :\n-finish protocol for iAstro-RNP screen\n- locate IXM files for iAstro images",
       "completionLinks": "",
       "date": "2026-01-27"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mklvsgrboq443ll7wi",
+      "subtaskId": "mkps8pzsy035l5qqd3a",
+      "completedAt": "2026-01-27T22:48:05.799Z",
+      "completionNotes": "Completed using attached protocol. \n\nNK cells were extremely unhealthy. \n\nResults are hard to trust here. ",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
+      "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-27T22:31:56.799Z",
+  "lastUpdated": "2026-01-27T22:48:05.799Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
