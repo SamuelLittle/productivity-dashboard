@@ -384,6 +384,15 @@
               "completionLinks": ""
             }
           ]
+        },
+        {
+          "id": "mkwyir3ev2wv4kak7fk",
+          "title": "Cytokine Withdrawal Meeting",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-27T18:55:56.330Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [
@@ -1465,6 +1474,13 @@
         "subtaskId": "mklut3v9xiajfvhkbm8",
         "scheduledAt": "2026-01-27T01:47:59.645Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mkwyir3ev2wv4kak7fk",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-27T18:55:56.330Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-29": [
@@ -1909,7 +1925,7 @@
       "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-27T18:55:31.857Z",
+  "lastUpdated": "2026-01-27T18:55:56.330Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
