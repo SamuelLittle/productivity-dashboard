@@ -1112,13 +1112,6 @@
         "completionLinks": "https://docs.google.com/presentation/d/14rsHOowrzNCut72cuNnFi-LyEQOHqgflRFa72gb-ASA/edit?pli=1&slide=id.g3b2c51863eb_0_46#slide=id.g3b2c51863eb_0_46"
       },
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "scheduledAt": "2026-01-20T14:19:42.416Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mklu1lye4czo9brjznq",
         "taskId": "mkmsy72n9wkp209y165",
         "subtaskId": "mkmt3gsfhitw1biyfct",
@@ -1465,6 +1458,13 @@
         "taskId": "mkmsv0dd65q3mlfg2gh",
         "subtaskId": "mktbycdlej9nq6ehf4",
         "scheduledAt": "2026-01-26T22:48:30.401Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-27T01:47:59.631Z",
         "completedOnDay": false
       }
     ],
@@ -1893,7 +1893,7 @@
       "date": "2026-01-26"
     }
   ],
-  "lastUpdated": "2026-01-27T01:47:54.699Z",
+  "lastUpdated": "2026-01-27T01:47:59.631Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
