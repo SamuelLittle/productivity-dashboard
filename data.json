@@ -290,8 +290,11 @@
               "title": "Prep/submit supernatant for macrophages",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T21:20:41.805Z"
+              "completed": true,
+              "createdAt": "2026-01-20T21:20:41.805Z",
+              "completedAt": "2026-01-27T01:24:20.407Z",
+              "completionNotes": "in 42-3 deli fridge - submit tomorrow",
+              "completionLinks": ""
             },
             {
               "id": "mkvdry9247tgw72t37h",
@@ -1345,7 +1348,10 @@
         "taskId": "mkn3iy4jrdxtygzkgtn",
         "subtaskId": "mkn3ly6lleab7y1plyn",
         "scheduledAt": "2026-01-23T16:55:32.006Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-27T01:24:20.407Z",
+        "completionNotes": "in 42-3 deli fridge - submit tomorrow",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -1827,9 +1833,18 @@
       "completionNotes": "IN 42-3 deli fridge",
       "completionLinks": "",
       "date": "2026-01-26"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3iy4jrdxtygzkgtn",
+      "subtaskId": "mkn3ly6lleab7y1plyn",
+      "completedAt": "2026-01-27T01:24:20.407Z",
+      "completionNotes": "in 42-3 deli fridge - submit tomorrow",
+      "completionLinks": "",
+      "date": "2026-01-26"
     }
   ],
-  "lastUpdated": "2026-01-27T01:23:56.447Z",
+  "lastUpdated": "2026-01-27T01:24:20.407Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
