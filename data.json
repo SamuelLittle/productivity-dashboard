@@ -825,13 +825,13 @@
               "title": "Follow up meeting with Holly",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-01-25T06:00:54.057Z",
               "notes": "@ 1:30 in 42-1B\n",
               "links": "",
-              "completedAt": null,
-              "completionNotes": null,
-              "completionLinks": null
+              "completedAt": "2026-01-27T22:31:56.799Z",
+              "completionNotes": "Need to :\n-finish protocol for iAstro-RNP screen\n- locate IXM files for iAstro images",
+              "completionLinks": ""
             }
           ],
           "notes": "@1pm in 42-3L",
@@ -1501,8 +1501,10 @@
         "taskId": "mkmsv0dd65q3mlfg2gh",
         "subtaskId": "mktbycdlej9nq6ehf4",
         "scheduledAt": "2026-01-26T22:48:30.401Z",
-        "completedOnDay": false,
-        "completedAt": null
+        "completedOnDay": true,
+        "completedAt": "2026-01-27T22:31:56.799Z",
+        "completionNotes": "Need to :\n-finish protocol for iAstro-RNP screen\n- locate IXM files for iAstro images",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -1984,9 +1986,18 @@
       "completionNotes": "Met with computational team to discuss new variant of the cytokine screen looking at more complex culture variatns. \n\nneed to finalize pilots of monocytes using RNA extraction to confirm methods and protocol.",
       "completionLinks": "",
       "date": "2026-01-27"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkmsv0dd65q3mlfg2gh",
+      "subtaskId": "mktbycdlej9nq6ehf4",
+      "completedAt": "2026-01-27T22:31:56.799Z",
+      "completionNotes": "Need to :\n-finish protocol for iAstro-RNP screen\n- locate IXM files for iAstro images",
+      "completionLinks": "",
+      "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-27T21:15:11.879Z",
+  "lastUpdated": "2026-01-27T22:31:56.799Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
