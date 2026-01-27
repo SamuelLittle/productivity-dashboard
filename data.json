@@ -711,8 +711,11 @@
               "title": "Second M2 media change",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T02:10:19.650Z"
+              "completed": true,
+              "createdAt": "2026-01-20T02:10:19.650Z",
+              "completedAt": "2026-01-27T01:47:54.698Z",
+              "completionNotes": "Added 50ul of 100ng/mL IL-10 to M2 Macrophages\n",
+              "completionLinks": ""
             },
             {
               "id": "mkmsg26ittknmc9rlw8",
@@ -1328,7 +1331,10 @@
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mklyikciusnr4zg0ch",
         "scheduledAt": "2026-01-20T02:10:19.651Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-27T01:47:54.698Z",
+        "completionNotes": "Added 50ul of 100ng/mL IL-10 to M2 Macrophages\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -1876,9 +1882,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-21"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mklyikciusnr4zg0ch",
+      "completedAt": "2026-01-27T01:47:54.699Z",
+      "completionNotes": "Added 50ul of 100ng/mL IL-10 to M2 Macrophages\n",
+      "completionLinks": "",
+      "date": "2026-01-26"
     }
   ],
-  "lastUpdated": "2026-01-27T01:25:25.285Z",
+  "lastUpdated": "2026-01-27T01:47:54.699Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
