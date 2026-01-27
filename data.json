@@ -390,9 +390,12 @@
           "title": "Cytokine Withdrawal Meeting",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-27T18:55:56.330Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-01-27T18:56:50.920Z",
+          "completionNotes": "Met with computational team to discuss new variant of the cytokine screen looking at more complex culture variatns. \n\nneed to finalize pilots of monocytes using RNA extraction to confirm methods and protocol.",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [
@@ -1480,7 +1483,10 @@
         "taskId": "mkwyir3ev2wv4kak7fk",
         "subtaskId": null,
         "scheduledAt": "2026-01-27T18:55:56.330Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-27T18:56:50.919Z",
+        "completionNotes": "Met with computational team to discuss new variant of the cytokine screen looking at more complex culture variatns. \n\nneed to finalize pilots of monocytes using RNA extraction to confirm methods and protocol.",
+        "completionLinks": ""
       }
     ],
     "2026-01-29": [
@@ -1923,9 +1929,17 @@
       "completionNotes": "Submitted at 10AM\n",
       "completionLinks": "",
       "date": "2026-01-27"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkwyir3ev2wv4kak7fk",
+      "completedAt": "2026-01-27T18:56:50.920Z",
+      "completionNotes": "Met with computational team to discuss new variant of the cytokine screen looking at more complex culture variatns. \n\nneed to finalize pilots of monocytes using RNA extraction to confirm methods and protocol.",
+      "completionLinks": "",
+      "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-27T18:55:56.330Z",
+  "lastUpdated": "2026-01-27T18:56:50.920Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
