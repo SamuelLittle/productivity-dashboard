@@ -763,6 +763,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-27T20:07:57.996Z"
+            },
+            {
+              "id": "mkx3hu9zjm6brwpfrpq",
+              "title": "20x images of NTC control for 3 different flavours",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-27T21:15:11.879Z"
             }
           ]
         },
@@ -1978,7 +1986,7 @@
       "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-27T20:07:57.996Z",
+  "lastUpdated": "2026-01-27T21:15:11.879Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
