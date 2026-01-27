@@ -282,8 +282,11 @@
               "title": "Prep/submit supernatant for Tregs",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T21:20:27.963Z"
+              "completed": true,
+              "createdAt": "2026-01-20T21:20:27.963Z",
+              "completedAt": "2026-01-27T01:24:25.845Z",
+              "completionNotes": "in 42-3 deli fridge - submit tomorrow",
+              "completionLinks": ""
             },
             {
               "id": "mkn3ly6lleab7y1plyn",
@@ -1341,7 +1344,10 @@
         "taskId": "mkn3iy4jrdxtygzkgtn",
         "subtaskId": "mkn3lni355t2ayoslmt",
         "scheduledAt": "2026-01-23T16:55:25.254Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-27T01:24:25.844Z",
+        "completionNotes": "in 42-3 deli fridge - submit tomorrow",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -1842,9 +1848,18 @@
       "completionNotes": "in 42-3 deli fridge - submit tomorrow",
       "completionLinks": "",
       "date": "2026-01-26"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3iy4jrdxtygzkgtn",
+      "subtaskId": "mkn3lni355t2ayoslmt",
+      "completedAt": "2026-01-27T01:24:25.845Z",
+      "completionNotes": "in 42-3 deli fridge - submit tomorrow",
+      "completionLinks": "",
+      "date": "2026-01-26"
     }
   ],
-  "lastUpdated": "2026-01-27T01:24:20.407Z",
+  "lastUpdated": "2026-01-27T01:24:25.845Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
