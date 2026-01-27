@@ -271,8 +271,11 @@
               "title": "Prep supernatant for CD4",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T21:20:17.889Z"
+              "completed": true,
+              "createdAt": "2026-01-20T21:20:17.889Z",
+              "completedAt": "2026-01-27T01:23:56.447Z",
+              "completionNotes": "IN 42-3 deli fridge",
+              "completionLinks": ""
             },
             {
               "id": "mkn3lni355t2ayoslmt",
@@ -1325,7 +1328,10 @@
         "taskId": "mkn3iy4jrdxtygzkgtn",
         "subtaskId": "mkn3lfq9wjzz5uacap",
         "scheduledAt": "2026-01-23T16:55:11.494Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-27T01:23:56.447Z",
+        "completionNotes": "IN 42-3 deli fridge",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -1812,9 +1818,18 @@
       "completionNotes": "Details in benchling files.  Will run attune tomorrow morning. ",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_8OsUBhPivs-killing-assay-pilot-nk-biomarkers/edit",
       "date": "2026-01-26"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3iy4jrdxtygzkgtn",
+      "subtaskId": "mkn3lfq9wjzz5uacap",
+      "completedAt": "2026-01-27T01:23:56.447Z",
+      "completionNotes": "IN 42-3 deli fridge",
+      "completionLinks": "",
+      "date": "2026-01-26"
     }
   ],
-  "lastUpdated": "2026-01-26T22:48:49.347Z",
+  "lastUpdated": "2026-01-27T01:23:56.447Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
