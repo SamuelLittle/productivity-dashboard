@@ -780,7 +780,7 @@
           "title": "Meet with Orchestra Team for onboarding",
           "description": "",
           "priority": "medium",
-          "completed": true,
+          "completed": false,
           "createdAt": "2026-01-20T16:19:48.769Z",
           "subtasks": [
             {
@@ -797,9 +797,9 @@
           ],
           "notes": "@1pm in 42-3L",
           "links": "",
-          "completedAt": "2026-01-27T01:25:25.285Z",
-          "completionNotes": "",
-          "completionLinks": ""
+          "completedAt": null,
+          "completionNotes": null,
+          "completionLinks": null
         },
         {
           "id": "mkmsy72n9wkp209y165",
@@ -1198,10 +1198,10 @@
         "taskId": "mkmsv0dd65q3mlfg2gh",
         "subtaskId": null,
         "scheduledAt": "2026-01-20T16:19:48.769Z",
-        "completedOnDay": true,
-        "completedAt": "2026-01-27T01:25:25.284Z",
-        "completionNotes": "",
-        "completionLinks": ""
+        "completedOnDay": false,
+        "completedAt": null,
+        "completionNotes": null,
+        "completionLinks": null
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -1370,13 +1370,6 @@
         "completionLinks": ""
       },
       {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mklusog2097tkm380gri",
-        "subtaskId": "mklut3v9xiajfvhkbm8",
-        "scheduledAt": "2026-01-24T06:00:13.065Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mklu1lye4czo9brjznq",
         "taskId": "mkmsy72n9wkp209y165",
         "subtaskId": "mkn5202q853nkns38kg",
@@ -1465,6 +1458,13 @@
         "taskId": "",
         "subtaskId": null,
         "scheduledAt": "2026-01-27T01:47:59.631Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mklusog2097tkm380gri",
+        "subtaskId": "mklut3v9xiajfvhkbm8",
+        "scheduledAt": "2026-01-27T01:47:59.645Z",
         "completedOnDay": false
       }
     ],
@@ -1893,7 +1893,7 @@
       "date": "2026-01-26"
     }
   ],
-  "lastUpdated": "2026-01-27T01:47:59.631Z",
+  "lastUpdated": "2026-01-27T01:59:03.561Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
