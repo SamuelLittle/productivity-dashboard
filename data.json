@@ -775,6 +775,15 @@
               "createdAt": "2026-01-20T19:50:58.990Z"
             }
           ]
+        },
+        {
+          "id": "mkx0kcz2o187jm7pao",
+          "title": "Meet with Kelly+Pete for GPR35 KO",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-27T19:53:10.575Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -1429,6 +1438,13 @@
         "subtaskId": "mkmsgm03dcwl3qr200o",
         "scheduledAt": "2026-01-20T16:08:36.963Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mkx0kcz2o187jm7pao",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-27T19:53:10.575Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-15": [
@@ -1947,7 +1963,7 @@
       "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-27T19:52:10.438Z",
+  "lastUpdated": "2026-01-27T19:53:10.575Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
