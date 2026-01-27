@@ -755,6 +755,14 @@
               "completedAt": "2026-01-21T17:44:58.133Z",
               "completionNotes": "Seeded and divided by donor - all wells in all plates 50ng/mL M-CSF",
               "completionLinks": ""
+            },
+            {
+              "id": "mkx13dpoiq2ded71q1m",
+              "title": "M1 media change",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-27T20:07:57.996Z"
             }
           ]
         },
@@ -1511,6 +1519,13 @@
         "completedAt": "2026-01-27T18:56:50.919Z",
         "completionNotes": "Met with computational team to discuss new variant of the cytokine screen looking at more complex culture variatns. \n\nneed to finalize pilots of monocytes using RNA extraction to confirm methods and protocol.",
         "completionLinks": ""
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mklu8roio6ns8a57jp",
+        "subtaskId": "mkx13dpoiq2ded71q1m",
+        "scheduledAt": "2026-01-27T20:07:57.996Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-29": [
@@ -1963,7 +1978,7 @@
       "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-27T19:53:10.575Z",
+  "lastUpdated": "2026-01-27T20:07:57.996Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
