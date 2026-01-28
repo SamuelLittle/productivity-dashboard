@@ -745,8 +745,11 @@
               "title": "Make RNA extraction plan",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T00:12:24.666Z"
+              "completed": true,
+              "createdAt": "2026-01-20T00:12:24.666Z",
+              "completedAt": "2026-01-28T19:23:22.476Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mklubc9spa9l1sf43r9",
@@ -2262,9 +2265,16 @@
       "completionNotes": "RNA extracted using RNeasy 96 well plate.  eluted RNA in -20 outside of 3103.",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit",
       "date": "2026-01-28"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mkluax96wzz3ceelt09",
+      "title": "Make RNA extraction plan",
+      "completedAt": "2026-01-28T19:23:22.476Z"
     }
   ],
-  "lastUpdated": "2026-01-28T19:23:19.155Z",
+  "lastUpdated": "2026-01-28T19:23:22.476Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
