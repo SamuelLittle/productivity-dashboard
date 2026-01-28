@@ -864,6 +864,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-28T19:23:01.510Z"
+            },
+            {
+              "id": "mkyextdeoqytqapjmas",
+              "title": "generate and submit sups for luminex",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-28T19:23:19.154Z"
             }
           ]
         },
@@ -2256,7 +2264,7 @@
       "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-28T19:23:01.510Z",
+  "lastUpdated": "2026-01-28T19:23:19.155Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
