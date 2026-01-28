@@ -708,6 +708,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-28T23:14:05.877Z"
+            },
+            {
+              "id": "mkyn6y24pralyojo7ps",
+              "title": "Set up Killing Assay",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-28T23:14:22.060Z"
             }
           ]
         }
@@ -1796,6 +1804,14 @@
         "time": null,
         "scheduledAt": "2026-01-28T19:23:01.510Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mkyn5q9752ye45ab8zw",
+        "subtaskId": "mkyn6y24pralyojo7ps",
+        "time": null,
+        "scheduledAt": "2026-01-28T23:14:22.060Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-30": [
@@ -2351,7 +2367,7 @@
       "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-28T23:14:05.877Z",
+  "lastUpdated": "2026-01-28T23:14:22.060Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
