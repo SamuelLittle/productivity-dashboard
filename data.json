@@ -233,6 +233,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-28T03:07:45.416Z"
+            },
+            {
+              "id": "mkxg44dox8c1vm3pla",
+              "title": "SMARTseq3 w/ RNA extraction",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-28T03:08:26.796Z"
             }
           ]
         },
@@ -2116,7 +2124,7 @@
       "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-28T03:07:45.416Z",
+  "lastUpdated": "2026-01-28T03:08:26.796Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
