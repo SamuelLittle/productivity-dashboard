@@ -1118,8 +1118,11 @@
         "title": "2 bloods to be delivered today",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-25T06:29:17.945Z"
+        "completed": true,
+        "createdAt": "2026-01-25T06:29:17.945Z",
+        "completedAt": "2026-01-28T23:12:44.718Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mkxkvvjvlihfklaexwj",
@@ -2312,9 +2315,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-28"
+    },
+    {
+      "id": "mktcyv3tuw1t805lrig",
+      "title": "2 bloods to be delivered today",
+      "completedAt": "2026-01-28T23:12:44.718Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-28T23:12:38.215Z",
+  "lastUpdated": "2026-01-28T23:12:44.718Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
