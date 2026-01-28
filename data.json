@@ -1088,6 +1088,8 @@
         "description": "",
         "priority": "medium",
         "completed": false,
+        "completedAt": null,
+        "time": null,
         "createdAt": "2026-01-28T05:22:00.187Z"
       }
     ],
@@ -2208,7 +2210,7 @@
       "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-28T05:22:00.187Z",
+  "lastUpdated": "2026-01-28T15:39:41.534Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
