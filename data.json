@@ -423,6 +423,15 @@
           "completedAt": "2026-01-27T18:56:50.920Z",
           "completionNotes": "Met with computational team to discuss new variant of the cytokine screen looking at more complex culture variatns. \n\nneed to finalize pilots of monocytes using RNA extraction to confirm methods and protocol.",
           "completionLinks": ""
+        },
+        {
+          "id": "mkxg58flzv21oiwevu",
+          "title": "Monocyte Pilot with RNA extraction",
+          "description": "Repeat monocyte pilot for SMARTseq3 using RNA extraction",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-01-28T03:09:18.705Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [
@@ -1541,6 +1550,13 @@
         "subtaskId": "mkxg44dox8c1vm3pla",
         "scheduledAt": "2026-01-28T03:08:30.842Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mkxg58flzv21oiwevu",
+        "subtaskId": null,
+        "scheduledAt": "2026-01-28T03:09:18.705Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-15": [
@@ -2131,7 +2147,7 @@
       "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-28T03:08:30.842Z",
+  "lastUpdated": "2026-01-28T03:09:18.705Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
