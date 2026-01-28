@@ -247,8 +247,11 @@
               "title": "Order DLD1s for pos control",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-28T03:20:20.933Z"
+              "completed": true,
+              "createdAt": "2026-01-28T03:20:20.933Z",
+              "completedAt": "2026-01-28T19:26:28.791Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -1646,7 +1649,10 @@
         "taskId": "mklusog2097tkm380gri",
         "subtaskId": "mkxgjfetakrnnd3qw9f",
         "scheduledAt": "2026-01-28T03:20:20.933Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-28T19:26:28.791Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -2290,9 +2296,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-28"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mklusog2097tkm380gri",
+      "subtaskId": "mkxgjfetakrnnd3qw9f",
+      "completedAt": "2026-01-28T19:26:28.791Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-28T19:24:02.498Z",
+  "lastUpdated": "2026-01-28T19:26:28.791Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
