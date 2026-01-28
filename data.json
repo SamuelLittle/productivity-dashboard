@@ -1081,14 +1081,6 @@
         "priority": "medium",
         "completed": false,
         "createdAt": "2026-01-25T06:29:17.945Z"
-      },
-      {
-        "id": "mkx0j2kmmc07vgniueb",
-        "title": "Meet with Celine at 11",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-27T19:52:10.438Z"
       }
     ],
     "2026-01-30": [
@@ -2201,7 +2193,7 @@
       "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-28T05:20:34.365Z",
+  "lastUpdated": "2026-01-28T05:20:40.543Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
