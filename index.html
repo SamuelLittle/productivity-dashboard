@@ -419,6 +419,14 @@
                         <input type="date" id="task-custom-date">
                     </div>
 
+                    <div class="form-group hidden" id="task-time-group">
+                        <label class="time-toggle-label">
+                            <input type="checkbox" id="task-time-toggle">
+                            <span>Add time</span>
+                        </label>
+                        <input type="time" id="task-time" class="hidden">
+                    </div>
+
                     <div class="form-group">
                         <label for="task-priority">Priority</label>
                         <select id="task-priority">
@@ -626,6 +634,14 @@
                         <button type="button" id="schedule-custom-btn" class="btn btn-primary btn-sm">Schedule</button>
                     </div>
 
+                    <div class="time-toggle-group">
+                        <label class="time-toggle-label">
+                            <input type="checkbox" id="schedule-time-toggle">
+                            <span>Add time</span>
+                        </label>
+                        <input type="time" id="schedule-time" class="hidden">
+                    </div>
+
                     <div id="schedule-subtasks-option" class="schedule-subtasks-toggle hidden">
                         <label class="checkbox-label">
                             <input type="checkbox" id="schedule-include-subtasks" checked>
@@ -726,6 +742,14 @@
                         <label for="reschedule-custom-date">Or pick a date:</label>
                         <input type="date" id="reschedule-custom-date">
                         <button type="button" id="reschedule-custom-btn" class="btn btn-primary btn-sm">Reschedule</button>
+                    </div>
+
+                    <div class="time-toggle-group">
+                        <label class="time-toggle-label">
+                            <input type="checkbox" id="reschedule-time-toggle">
+                            <span>Add time</span>
+                        </label>
+                        <input type="time" id="reschedule-time" class="hidden">
                     </div>
                 </div>
             </div>

@@ -212,6 +212,14 @@ function initElements() {
         taskDetailCompletedAt: document.getElementById('task-detail-completed-at'),
         taskDetailCompletionNotes: document.getElementById('task-detail-completion-notes'),
         taskDetailSaveBtn: document.getElementById('task-detail-save-btn'),
+        // Time pickers
+        taskTimeGroup: document.getElementById('task-time-group'),
+        taskTimeToggle: document.getElementById('task-time-toggle'),
+        taskTime: document.getElementById('task-time'),
+        scheduleTimeToggle: document.getElementById('schedule-time-toggle'),
+        scheduleTime: document.getElementById('schedule-time'),
+        rescheduleTimeToggle: document.getElementById('reschedule-time-toggle'),
+        rescheduleTime: document.getElementById('reschedule-time'),
         // Theme toggle
         themeToggle: document.getElementById('theme-toggle')
     });
@@ -298,6 +306,22 @@ function formatShortDate(dateInput) {
         month: 'short',
         day: 'numeric'
     });
+}
+
+// ============================================
+// TIME UTILITY FUNCTIONS
+// ============================================
+
+function formatTime(timeStr) {
+    if (!timeStr) return '';
+    const [h, m] = timeStr.split(':').map(Number);
+    const suffix = h >= 12 ? 'PM' : 'AM';
+    const hour12 = h % 12 || 12;
+    return `${hour12}:${String(m).padStart(2, '0')} ${suffix}`;
+}
+
+function getTaskTime(task) {
+    return task.scheduledRef?.time || task.time || null;
 }
 
 function showLoading() {
@@ -574,7 +598,7 @@ function getTasksForDate(date, includeCompleted = true) {
     // Get saved order for this date
     const savedOrder = getTaskOrder(date);
 
-    // Sort tasks: first by saved order, then incomplete first, then by priority
+    // Sort tasks: saved order first, then timed items (chronological), then untimed (incomplete first, then priority)
     const priorityOrder = { high: 0, medium: 1, low: 2 };
     tasks.sort((a, b) => {
         const aKey = getTaskKey(a);
@@ -590,7 +614,15 @@ function getTasksForDate(date, includeCompleted = true) {
         if (aIndex !== -1) return -1;
         if (bIndex !== -1) return 1;
 
-        // Fall back to: incomplete first, then by priority
+        // Timed items come before untimed
+        const aTime = getTaskTime(a);
+        const bTime = getTaskTime(b);
+        if (aTime && !bTime) return -1;
+        if (!aTime && bTime) return 1;
+        // Both timed: sort chronologically
+        if (aTime && bTime) return aTime.localeCompare(bTime);
+
+        // Both untimed: incomplete first, then by priority
         const aCompleted = a.completedOnDay || a.completed;
         const bCompleted = b.completedOnDay || b.completed;
         if (aCompleted !== bCompleted) return aCompleted ? 1 : -1;
@@ -1093,12 +1125,15 @@ function createWeekTaskItemHTML(task, date) {
     const isCompleted = task.completedOnDay || task.completed;
     const color = task.projectColor || 'var(--color-primary)';
     const taskKey = getTaskKey(task);
+    const taskTime = getTaskTime(task);
+    const timePrefix = taskTime ? `<span class="week-task-time">${formatTime(taskTime)}</span>` : '';
 
     return `<div class="week-task-item${isCompleted ? ' completed' : ''}"
         draggable="true"
         data-task-key="${taskKey}"
         data-date="${date}"
         style="--task-color: ${color}">
+        ${timePrefix}
         <span class="week-task-title">${escapeHtml(task.title)}</span>
     </div>`;
 }
@@ -1621,6 +1656,17 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
         </span>
     `;
 
+    const taskTime = getTaskTime(task);
+    const timeBadge = taskTime ? `
+        <span class="task-time-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            ${formatTime(taskTime)}
+        </span>
+    ` : '';
+
     const completionInfo = isCompleted && (task.completionNotes || task.completionLinks) ? `
         <div class="task-completion-info">
             ${task.completionNotes ? `<span class="completion-note">${task.completionNotes}</span>` : ''}
@@ -1633,6 +1679,7 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
         <div class="task-content" data-action="view-details">
             <div class="task-title">${task.title}</div>
             <div class="task-meta">
+                ${timeBadge}
                 ${projectTag}
                 ${subtaskIndicator}
                 ${priorityBadge}
@@ -2341,6 +2388,7 @@ async function scheduleTaskForDate(date) {
     const taskId = elements.scheduleTaskId.value;
     const subtaskId = elements.scheduleSubtaskId.value || null;
     const includeSubtasks = elements.scheduleIncludeSubtasks?.checked;
+    const scheduleTime = (elements.scheduleTimeToggle?.checked && elements.scheduleTime?.value) || null;
 
     // BUG 1 FIX: Remove from ALL other dates first (single-source-of-truth)
     removeFromAllScheduledDates(projectId, taskId, subtaskId);
@@ -2355,11 +2403,12 @@ async function scheduleTaskForDate(date) {
         projectId,
         taskId,
         subtaskId,
+        time: scheduleTime,
         scheduledAt: new Date().toISOString(),
         completedOnDay: false
     });
 
-    // Handle subtasks if requested
+    // Handle subtasks if requested (subtasks do NOT inherit time)
     if (includeSubtasks && !subtaskId) {
         const project = state.data.projects.find(p => p.id === projectId);
         const task = project?.tasks.find(t => t.id === taskId);
@@ -2372,6 +2421,7 @@ async function scheduleTaskForDate(date) {
                     projectId,
                     taskId,
                     subtaskId: st.id,
+                    time: null,
                     scheduledAt: new Date().toISOString(),
                     completedOnDay: false
                 });
@@ -2407,6 +2457,19 @@ function openRescheduleModal(task, fromDate) {
 
     elements.rescheduleTaskInfo.textContent = task.title;
     elements.rescheduleCustomDate.value = getTomorrow();
+
+    // Pre-populate time from existing task
+    const existingTime = getTaskTime(task);
+    if (existingTime) {
+        elements.rescheduleTimeToggle.checked = true;
+        elements.rescheduleTime.classList.remove('hidden');
+        elements.rescheduleTime.value = existingTime;
+    } else {
+        elements.rescheduleTimeToggle.checked = false;
+        elements.rescheduleTime.classList.add('hidden');
+        elements.rescheduleTime.value = '';
+    }
+
     elements.rescheduleModal.classList.remove('hidden');
 }
 
@@ -2416,6 +2479,7 @@ async function rescheduleTaskToDate(newDate) {
     const projectId = rescheduleTask.projectId;
     const taskId = rescheduleTask.taskId || rescheduleTask.id;
     const subtaskId = rescheduleTask.subtaskId || null;
+    const rescheduleTime = (elements.rescheduleTimeToggle?.checked && elements.rescheduleTime?.value) || null;
 
     if (rescheduleTask.isStandalone) {
         // Remove standalone task from old date
@@ -2439,6 +2503,7 @@ async function rescheduleTaskToDate(newDate) {
             priority: rescheduleTask.priority || 'medium',
             completed: false,
             completedAt: null,
+            time: rescheduleTime,
             createdAt: rescheduleTask.createdAt || new Date().toISOString()
         };
         state.data.dailyLists[newDate].push(newTask);
@@ -2453,6 +2518,7 @@ async function rescheduleTaskToDate(newDate) {
             projectId,
             taskId,
             subtaskId,
+            time: rescheduleTime,
             scheduledAt: new Date().toISOString(),
             completedOnDay: false
         });
@@ -2788,11 +2854,21 @@ function openTaskModal(task = null, projectId = null) {
         elements.taskProject.value = projectId || '';
         elements.taskPriority.value = task.priority || 'medium';
         elements.taskSchedule.value = 'none';
+        // Time group hidden when schedule is 'none'
+        elements.taskTimeGroup?.classList.add('hidden');
+        elements.taskTimeToggle.checked = false;
+        elements.taskTime.classList.add('hidden');
+        elements.taskTime.value = '';
     } else {
         elements.taskId.value = '';
         elements.taskProjectId.value = projectId || '';
         elements.taskProject.value = projectId || '';
         elements.taskSchedule.value = 'today';
+        // Show time group since schedule defaults to 'today'
+        elements.taskTimeGroup?.classList.remove('hidden');
+        elements.taskTimeToggle.checked = false;
+        elements.taskTime.classList.add('hidden');
+        elements.taskTime.value = '';
     }
 
     elements.taskModal.classList.remove('hidden');
@@ -2839,6 +2915,23 @@ function closeAllModals() {
     if (elements.taskParentId) {
         elements.taskParentId.value = '';
     }
+    // Reset time fields
+    if (elements.taskTimeToggle) {
+        elements.taskTimeToggle.checked = false;
+        elements.taskTime.classList.add('hidden');
+        elements.taskTime.value = '';
+        elements.taskTimeGroup.classList.add('hidden');
+    }
+    if (elements.scheduleTimeToggle) {
+        elements.scheduleTimeToggle.checked = false;
+        elements.scheduleTime.classList.add('hidden');
+        elements.scheduleTime.value = '';
+    }
+    if (elements.rescheduleTimeToggle) {
+        elements.rescheduleTimeToggle.checked = false;
+        elements.rescheduleTime.classList.add('hidden');
+        elements.rescheduleTime.value = '';
+    }
 }
 
 async function saveTask(e) {
@@ -2876,6 +2969,8 @@ async function saveTaskInternal() {
             break;
     }
 
+    const taskTime = (elements.taskTimeToggle?.checked && elements.taskTime?.value) || null;
+
     const taskData = {
         id: taskId,
         title: elements.taskTitle.value,
@@ -2904,6 +2999,7 @@ async function saveTaskInternal() {
                         projectId,
                         taskId: parentId,
                         subtaskId: taskId,
+                        time: taskTime,
                         scheduledAt: new Date().toISOString(),
                         completedOnDay: false
                     });
@@ -2936,6 +3032,7 @@ async function saveTaskInternal() {
                     projectId,
                     taskId,
                     subtaskId: null,
+                    time: taskTime,
                     scheduledAt: new Date().toISOString(),
                     completedOnDay: false
                 });
@@ -2945,14 +3042,15 @@ async function saveTaskInternal() {
         if (!state.data.dailyLists[scheduledDate]) {
             state.data.dailyLists[scheduledDate] = [];
         }
+        const standaloneData = { ...taskData, time: taskTime };
         const existingIndex = state.data.dailyLists[scheduledDate].findIndex(t => t.id === taskId);
         if (existingIndex >= 0) {
             state.data.dailyLists[scheduledDate][existingIndex] = {
                 ...state.data.dailyLists[scheduledDate][existingIndex],
-                ...taskData
+                ...standaloneData
             };
         } else {
-            state.data.dailyLists[scheduledDate].push(taskData);
+            state.data.dailyLists[scheduledDate].push(standaloneData);
         }
     }
 
@@ -3560,6 +3658,27 @@ function initEventListeners() {
     // Schedule dropdown
     elements.taskSchedule?.addEventListener('change', () => {
         elements.customDateGroup.classList.toggle('hidden', elements.taskSchedule.value !== 'custom');
+        const isScheduled = elements.taskSchedule.value !== 'none';
+        elements.taskTimeGroup?.classList.toggle('hidden', !isScheduled);
+        if (!isScheduled) {
+            elements.taskTimeToggle.checked = false;
+            elements.taskTime.classList.add('hidden');
+            elements.taskTime.value = '';
+        }
+    });
+
+    // Time toggle handlers
+    elements.taskTimeToggle?.addEventListener('change', () => {
+        elements.taskTime.classList.toggle('hidden', !elements.taskTimeToggle.checked);
+        if (!elements.taskTimeToggle.checked) elements.taskTime.value = '';
+    });
+    elements.scheduleTimeToggle?.addEventListener('change', () => {
+        elements.scheduleTime.classList.toggle('hidden', !elements.scheduleTimeToggle.checked);
+        if (!elements.scheduleTimeToggle.checked) elements.scheduleTime.value = '';
+    });
+    elements.rescheduleTimeToggle?.addEventListener('change', () => {
+        elements.rescheduleTime.classList.toggle('hidden', !elements.rescheduleTimeToggle.checked);
+        if (!elements.rescheduleTimeToggle.checked) elements.rescheduleTime.value = '';
     });
 
     // Schedule modal buttons

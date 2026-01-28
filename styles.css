@@ -1866,6 +1866,74 @@ body {
     margin-top: 12px;
 }
 
+/* Time Badge */
+.task-time-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    background: var(--color-warning-light);
+    color: var(--color-warning);
+}
+
+.task-time-badge svg {
+    flex-shrink: 0;
+}
+
+.week-task-time {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--color-warning);
+    display: block;
+    margin-bottom: 1px;
+}
+
+/* Time Toggle */
+.time-toggle-group {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--color-border);
+}
+
+.time-toggle-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-bottom: 8px;
+}
+
+.time-toggle-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.time-toggle-group input[type="time"],
+.form-group input[type="time"] {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-family: inherit;
+    width: 100%;
+}
+
+.time-toggle-group input[type="time"]:focus,
+.form-group input[type="time"]:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
 /* Drag and Drop */
 .task-item[draggable="true"] {
     cursor: grab;
