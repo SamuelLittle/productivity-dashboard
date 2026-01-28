@@ -856,6 +856,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-27T21:15:11.879Z"
+            },
+            {
+              "id": "mkyexfraypeeua9wm1",
+              "title": "Submit luminex request for TREX1 ko sups",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-28T19:23:01.510Z"
             }
           ]
         },
@@ -1725,6 +1733,14 @@
         "subtaskId": "mkxgitnyfdxczckr0op",
         "scheduledAt": "2026-01-28T03:19:52.750Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mklu8roio6ns8a57jp",
+        "subtaskId": "mkyexfraypeeua9wm1",
+        "time": null,
+        "scheduledAt": "2026-01-28T19:23:01.510Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-30": [
@@ -2240,7 +2256,7 @@
       "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-28T19:22:31.926Z",
+  "lastUpdated": "2026-01-28T19:23:01.510Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
