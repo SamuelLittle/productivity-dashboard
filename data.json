@@ -700,7 +700,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-28T23:13:25.291Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mkyn6lkl9uovjhpt6bj",
+              "title": "Isolate NK cells + Culture overnight in IL2 + IL15",
+              "description": "Using Mayra's recommended Culture conditions",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-28T23:14:05.877Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -1671,6 +1680,14 @@
         "completedAt": "2026-01-28T23:12:38.215Z",
         "completionNotes": "",
         "completionLinks": ""
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mkyn5q9752ye45ab8zw",
+        "subtaskId": "mkyn6lkl9uovjhpt6bj",
+        "time": null,
+        "scheduledAt": "2026-01-28T23:14:05.877Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-15": [
@@ -2334,7 +2351,7 @@
       "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-28T23:13:25.291Z",
+  "lastUpdated": "2026-01-28T23:14:05.877Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
