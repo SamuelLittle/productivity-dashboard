@@ -821,8 +821,11 @@
               "title": "RNA extraction",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T16:08:36.963Z"
+              "completed": true,
+              "createdAt": "2026-01-20T16:08:36.963Z",
+              "completedAt": "2026-01-28T19:22:31.926Z",
+              "completionNotes": "RNA extracted using RNeasy 96 well plate.  eluted RNA in -20 outside of 3103.",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit"
             },
             {
               "id": "mkoagtuviunu3m9qnfp",
@@ -1576,7 +1579,10 @@
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mkmsgm03dcwl3qr200o",
         "scheduledAt": "2026-01-20T16:08:36.963Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-28T19:22:31.925Z",
+        "completionNotes": "RNA extracted using RNeasy 96 well plate.  eluted RNA in -20 outside of 3103.",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit"
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -2223,9 +2229,18 @@
       "completionNotes": "Supernatant recovered into two plates (~90ul each) one for luminex one for nomic. plates in -80 outside 3103. ",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit",
       "date": "2026-01-28"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mkmsgm03dcwl3qr200o",
+      "completedAt": "2026-01-28T19:22:31.926Z",
+      "completionNotes": "RNA extracted using RNeasy 96 well plate.  eluted RNA in -20 outside of 3103.",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit",
+      "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-28T19:22:00.815Z",
+  "lastUpdated": "2026-01-28T19:22:31.926Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
