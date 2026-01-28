@@ -241,6 +241,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-28T03:08:26.796Z"
+            },
+            {
+              "id": "mkxgjfetakrnnd3qw9f",
+              "title": "Order DLD1s for pos control",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-28T03:20:20.933Z"
             }
           ]
         },
@@ -1596,6 +1604,13 @@
         "subtaskId": "mkxg8lavo0uf669brrh",
         "scheduledAt": "2026-01-28T03:11:55.351Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mklusog2097tkm380gri",
+        "subtaskId": "mkxgjfetakrnnd3qw9f",
+        "scheduledAt": "2026-01-28T03:20:20.933Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-15": [
@@ -2193,7 +2208,7 @@
       "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-28T03:19:52.750Z",
+  "lastUpdated": "2026-01-28T03:20:20.933Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
