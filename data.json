@@ -1120,10 +1120,12 @@
         "title": "Meet with Celine @ 11",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-01-28T19:24:02.498Z",
         "time": null,
-        "createdAt": "2026-01-28T05:22:00.187Z"
+        "createdAt": "2026-01-28T05:22:00.187Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-01-30": [
@@ -2280,9 +2282,17 @@
       "subtaskId": "mkluax96wzz3ceelt09",
       "title": "Make RNA extraction plan",
       "completedAt": "2026-01-28T19:23:22.476Z"
+    },
+    {
+      "id": "mkxkvvjvlihfklaexwj",
+      "title": "Meet with Celine @ 11",
+      "completedAt": "2026-01-28T19:24:02.498Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-28T19:23:33.736Z",
+  "lastUpdated": "2026-01-28T19:24:02.498Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
