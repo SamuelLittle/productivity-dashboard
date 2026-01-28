@@ -210,10 +210,13 @@
               "title": "Replace media for DCs in culture",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-01-20T00:26:33.045Z",
               "notes": "Originally scheduled for Jan 20 but media still looks unconsumed and trying to push this out to buy time for a pilot screen.  Rescheduled to Thursday with possibility to push until friday.",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-01-28T01:00:20.639Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -1560,7 +1563,10 @@
         "taskId": "mklusog2097tkm380gri",
         "subtaskId": "mklut3v9xiajfvhkbm8",
         "scheduledAt": "2026-01-27T01:47:59.645Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-28T01:00:20.639Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -2076,9 +2082,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-27"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mklusog2097tkm380gri",
+      "subtaskId": "mklut3v9xiajfvhkbm8",
+      "completedAt": "2026-01-28T01:00:20.640Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-28T01:00:16.311Z",
+  "lastUpdated": "2026-01-28T01:00:20.640Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
