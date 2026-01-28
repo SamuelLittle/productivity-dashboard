@@ -1898,7 +1898,8 @@ body {
     border-top: 1px solid var(--color-border);
 }
 
-.time-toggle-label {
+.form-group .time-toggle-label,
+.time-toggle-group .time-toggle-label {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1909,10 +1910,14 @@ body {
     margin-bottom: 8px;
 }
 
-.time-toggle-label input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
+.form-group .time-toggle-label input[type="checkbox"],
+.time-toggle-group .time-toggle-label input[type="checkbox"] {
+    width: 16px !important;
+    height: 16px !important;
+    padding: 0 !important;
+    margin: 0;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .time-toggle-group input[type="time"],
