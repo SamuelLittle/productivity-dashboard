@@ -768,8 +768,11 @@
               "title": "M1 media change",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-27T20:07:57.996Z"
+              "completed": true,
+              "createdAt": "2026-01-27T20:07:57.996Z",
+              "completedAt": "2026-01-28T01:00:12.259Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mkx3hu9zjm6brwpfrpq",
@@ -1574,7 +1577,10 @@
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mkx13dpoiq2ded71q1m",
         "scheduledAt": "2026-01-27T20:07:57.996Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-28T01:00:12.259Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -2068,9 +2074,18 @@
       "completedAt": "2026-01-27T23:46:44.339Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mkx13dpoiq2ded71q1m",
+      "completedAt": "2026-01-28T01:00:12.260Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-27T23:49:00.254Z",
+  "lastUpdated": "2026-01-28T01:00:12.260Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
