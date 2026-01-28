@@ -447,6 +447,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-28T03:11:55.351Z"
+            },
+            {
+              "id": "mkxgitnyfdxczckr0op",
+              "title": "SMARTseq with extracted RNA",
+              "description": "In parallel performing SMARTseq on extracted RNA from DCs and monocytes, as well as directly lysed DCs and Mast cells.",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-28T03:19:52.750Z"
             }
           ]
         }
@@ -1681,6 +1689,13 @@
         "subtaskId": "mkxg38g8ik46ipm0vvh",
         "scheduledAt": "2026-01-28T03:07:45.416Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mkxg58flzv21oiwevu",
+        "subtaskId": "mkxgitnyfdxczckr0op",
+        "scheduledAt": "2026-01-28T03:19:52.750Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-30": [
@@ -2178,7 +2193,7 @@
       "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-28T03:15:07.729Z",
+  "lastUpdated": "2026-01-28T03:19:52.750Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
