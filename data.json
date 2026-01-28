@@ -810,8 +810,11 @@
               "title": "Recover supernatant",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T16:08:11.274Z"
+              "completed": true,
+              "createdAt": "2026-01-20T16:08:11.274Z",
+              "completedAt": "2026-01-28T19:22:00.815Z",
+              "completionNotes": "Supernatant recovered into two plates (~90ul each) one for luminex one for nomic. plates in -80 outside 3103. ",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit"
             },
             {
               "id": "mkmsgm03dcwl3qr200o",
@@ -1563,7 +1566,10 @@
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mkmsg26ittknmc9rlw8",
         "scheduledAt": "2026-01-20T16:08:11.274Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-28T19:22:00.815Z",
+        "completionNotes": "Supernatant recovered into two plates (~90ul each) one for luminex one for nomic. plates in -80 outside 3103. ",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit"
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -2208,9 +2214,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-27"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mkmsg26ittknmc9rlw8",
+      "completedAt": "2026-01-28T19:22:00.815Z",
+      "completionNotes": "Supernatant recovered into two plates (~90ul each) one for luminex one for nomic. plates in -80 outside 3103. ",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit",
+      "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-28T15:39:41.534Z",
+  "lastUpdated": "2026-01-28T19:22:00.815Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
