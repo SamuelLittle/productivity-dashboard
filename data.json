@@ -225,6 +225,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-28T03:06:57.446Z"
+            },
+            {
+              "id": "mkxg38g8ik46ipm0vvh",
+              "title": "SMARTseq3 w/o RNA extraction",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-28T03:07:45.416Z"
             }
           ]
         },
@@ -1604,6 +1612,13 @@
         "subtaskId": null,
         "scheduledAt": "2026-01-22T18:27:31.884Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mklusog2097tkm380gri",
+        "subtaskId": "mkxg38g8ik46ipm0vvh",
+        "scheduledAt": "2026-01-28T03:07:45.416Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-30": [
@@ -2101,7 +2116,7 @@
       "date": "2026-01-27"
     }
   ],
-  "lastUpdated": "2026-01-28T03:06:57.446Z",
+  "lastUpdated": "2026-01-28T03:07:45.416Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
