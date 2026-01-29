@@ -712,8 +712,11 @@
               "title": "Isolate NK cells + Culture overnight in IL2 + IL15",
               "description": "Using Mayra's recommended Culture conditions",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-28T23:14:05.877Z"
+              "completed": true,
+              "createdAt": "2026-01-28T23:14:05.877Z",
+              "completedAt": "2026-01-29T02:25:42.105Z",
+              "completionNotes": "Isolated 27M NK cells from donor.  Seeded at 2M cells/ml in a u bottom 96 wp. Using new media formulation from Mayra",
+              "completionLinks": ""
             },
             {
               "id": "mkyn6y24pralyojo7ps",
@@ -1707,7 +1710,10 @@
         "subtaskId": "mkyn6lkl9uovjhpt6bj",
         "time": null,
         "scheduledAt": "2026-01-28T23:14:05.877Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-29T02:25:42.105Z",
+        "completionNotes": "Isolated 27M NK cells from donor.  Seeded at 2M cells/ml in a u bottom 96 wp. Using new media formulation from Mayra",
+        "completionLinks": ""
       }
     ],
     "2026-01-15": [
@@ -2395,9 +2401,18 @@
       "completionNotes": "Isolated ~45M monocytes from whole blood\n",
       "completionLinks": "",
       "date": "2026-01-28"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mkyn5q9752ye45ab8zw",
+      "subtaskId": "mkyn6lkl9uovjhpt6bj",
+      "completedAt": "2026-01-29T02:25:42.105Z",
+      "completionNotes": "Isolated 27M NK cells from donor.  Seeded at 2M cells/ml in a u bottom 96 wp. Using new media formulation from Mayra",
+      "completionLinks": "",
+      "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-29T02:25:04.457Z",
+  "lastUpdated": "2026-01-29T02:25:42.105Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
