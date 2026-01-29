@@ -462,8 +462,11 @@
               "title": "RNA extraction",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-28T03:11:55.351Z"
+              "completed": true,
+              "createdAt": "2026-01-28T03:11:55.351Z",
+              "completedAt": "2026-01-29T02:26:17.362Z",
+              "completionNotes": "Extracted RNA from 9 wells containing ~100k monocytes each. Checked cell count prior to lysis - wells had ~50k cells in it",
+              "completionLinks": ""
             },
             {
               "id": "mkxgitnyfdxczckr0op",
@@ -1682,7 +1685,10 @@
         "taskId": "mkxg58flzv21oiwevu",
         "subtaskId": "mkxg8lavo0uf669brrh",
         "scheduledAt": "2026-01-28T03:11:55.351Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-29T02:26:17.361Z",
+        "completionNotes": "Extracted RNA from 9 wells containing ~100k monocytes each. Checked cell count prior to lysis - wells had ~50k cells in it",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -2410,9 +2416,18 @@
       "completionNotes": "Isolated 27M NK cells from donor.  Seeded at 2M cells/ml in a u bottom 96 wp. Using new media formulation from Mayra",
       "completionLinks": "",
       "date": "2026-01-28"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkxg58flzv21oiwevu",
+      "subtaskId": "mkxg8lavo0uf669brrh",
+      "completedAt": "2026-01-29T02:26:17.362Z",
+      "completionNotes": "Extracted RNA from 9 wells containing ~100k monocytes each. Checked cell count prior to lysis - wells had ~50k cells in it",
+      "completionLinks": "",
+      "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-29T02:25:42.105Z",
+  "lastUpdated": "2026-01-29T02:26:17.362Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
