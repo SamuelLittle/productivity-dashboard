@@ -1180,14 +1180,6 @@
     ],
     "2026-01-30": [
       {
-        "id": "mkvn167is76165ua8li",
-        "title": "1-on-1 with Celine @ 10am",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-26T20:46:34.158Z"
-      },
-      {
         "id": "mkvn1iwg7adsu5kpmx7",
         "title": "Lab meeting at 11am",
         "description": "",
@@ -2443,7 +2435,7 @@
       "date": "2026-01-29"
     }
   ],
-  "lastUpdated": "2026-01-29T18:06:31.263Z",
+  "lastUpdated": "2026-01-29T21:43:23.468Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
