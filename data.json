@@ -239,8 +239,11 @@
               "title": "SMARTseq3 w/ RNA extraction",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-28T03:08:26.796Z"
+              "completed": true,
+              "createdAt": "2026-01-28T03:08:26.796Z",
+              "completedAt": "2026-01-29T02:24:46.514Z",
+              "completionNotes": "Isolated RNA from 9 wells containing ~70k DCs each\n",
+              "completionLinks": ""
             },
             {
               "id": "mkxgjfetakrnnd3qw9f",
@@ -1653,7 +1656,10 @@
         "taskId": "mklusog2097tkm380gri",
         "subtaskId": "mkxg44dox8c1vm3pla",
         "scheduledAt": "2026-01-28T03:08:30.842Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-29T02:24:46.514Z",
+        "completionNotes": "Isolated RNA from 9 wells containing ~70k DCs each\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -2365,9 +2371,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-28"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mklusog2097tkm380gri",
+      "subtaskId": "mkxg44dox8c1vm3pla",
+      "completedAt": "2026-01-29T02:24:46.514Z",
+      "completionNotes": "Isolated RNA from 9 wells containing ~70k DCs each\n",
+      "completionLinks": "",
+      "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-28T23:14:22.060Z",
+  "lastUpdated": "2026-01-29T02:24:46.514Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
