@@ -451,8 +451,11 @@
               "title": "Monocyte isolation",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-28T03:11:37.350Z"
+              "completed": true,
+              "createdAt": "2026-01-28T03:11:37.350Z",
+              "completedAt": "2026-01-29T02:25:04.457Z",
+              "completionNotes": "Isolated ~45M monocytes from whole blood\n",
+              "completionLinks": ""
             },
             {
               "id": "mkxg8lavo0uf669brrh",
@@ -1666,7 +1669,10 @@
         "taskId": "mkxg58flzv21oiwevu",
         "subtaskId": "mkxg87euok1aaqy0f5",
         "scheduledAt": "2026-01-28T03:11:43.330Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-29T02:25:04.457Z",
+        "completionNotes": "Isolated ~45M monocytes from whole blood\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -2380,9 +2386,18 @@
       "completionNotes": "Isolated RNA from 9 wells containing ~70k DCs each\n",
       "completionLinks": "",
       "date": "2026-01-28"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkxg58flzv21oiwevu",
+      "subtaskId": "mkxg87euok1aaqy0f5",
+      "completedAt": "2026-01-29T02:25:04.457Z",
+      "completionNotes": "Isolated ~45M monocytes from whole blood\n",
+      "completionLinks": "",
+      "date": "2026-01-28"
     }
   ],
-  "lastUpdated": "2026-01-29T02:24:46.514Z",
+  "lastUpdated": "2026-01-29T02:25:04.457Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
