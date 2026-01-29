@@ -1720,14 +1720,6 @@
         "completedAt": "2026-01-29T02:25:42.105Z",
         "completionNotes": "Isolated 27M NK cells from donor.  Seeded at 2M cells/ml in a u bottom 96 wp. Using new media formulation from Mayra",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mkz0skpg4z23p4uz9j7",
-        "subtaskId": null,
-        "time": "09:30",
-        "scheduledAt": "2026-01-29T05:35:06.197Z",
-        "completedOnDay": false
       }
     ],
     "2026-01-15": [
@@ -1836,6 +1828,14 @@
         "subtaskId": "mkyn6y24pralyojo7ps",
         "time": null,
         "scheduledAt": "2026-01-28T23:14:22.060Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mkz0skpg4z23p4uz9j7",
+        "subtaskId": null,
+        "time": "09:30",
+        "scheduledAt": "2026-01-29T05:35:06.197Z",
         "completedOnDay": false
       }
     ],
