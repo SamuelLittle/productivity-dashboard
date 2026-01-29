@@ -1883,6 +1883,12 @@ body {
     flex-shrink: 0;
 }
 
+.task-time-prefix {
+    color: var(--color-warning);
+    font-weight: 600;
+    margin-right: 6px;
+}
+
 .week-task-time {
     font-size: 10px;
     font-weight: 600;

@@ -1657,15 +1657,18 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
     `;
 
     const taskTime = getTaskTime(task);
-    const timeBadge = taskTime ? `
+    if (taskTime) console.log('[TaskRender] Task:', task.title, 'Time:', taskTime, 'scheduledRef:', task.scheduledRef, 'task.time:', task.time);
+    const formattedTime = taskTime ? formatTime(taskTime) : '';
+    const timeBadge = formattedTime ? `
         <span class="task-time-badge">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="10"/>
                 <polyline points="12 6 12 12 16 14"/>
             </svg>
-            ${formatTime(taskTime)}
+            ${formattedTime}
         </span>
     ` : '';
+    const timePrefix = formattedTime ? `<span class="task-time-prefix">${formattedTime}</span> ` : '';
 
     const completionInfo = isCompleted && (task.completionNotes || task.completionLinks) ? `
         <div class="task-completion-info">
@@ -1677,7 +1680,7 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
     div.innerHTML = `
         <div class="task-checkbox ${isCompleted ? 'checked' : ''}" data-date="${date}"></div>
         <div class="task-content" data-action="view-details">
-            <div class="task-title">${task.title}</div>
+            <div class="task-title">${timePrefix}${task.title}</div>
             <div class="task-meta">
                 ${timeBadge}
                 ${projectTag}
@@ -2970,6 +2973,7 @@ async function saveTaskInternal() {
     }
 
     const taskTime = (elements.taskTimeToggle?.checked && elements.taskTime?.value) || null;
+    console.log('[TaskSave] Time toggle checked:', elements.taskTimeToggle?.checked, 'Time value:', elements.taskTime?.value, 'Final taskTime:', taskTime);
 
     const taskData = {
         id: taskId,
