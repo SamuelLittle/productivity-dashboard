@@ -1796,13 +1796,6 @@
     ],
     "2026-01-29": [
       {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mkxg58flzv21oiwevu",
-        "subtaskId": "mkxgitnyfdxczckr0op",
-        "scheduledAt": "2026-01-28T03:19:52.750Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltywpq0yriuhvt8wmb",
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mkyexfraypeeua9wm1",
@@ -1836,6 +1829,15 @@
         "completedAt": "2026-01-29T17:29:22.892Z",
         "completionNotes": "Need to make follow up list showing NK expressed proteins and list of donor hit rate for proteins",
         "completionLinks": ""
+      }
+    ],
+    "2026-01-30": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mkxg58flzv21oiwevu",
+        "subtaskId": "mkxgitnyfdxczckr0op",
+        "scheduledAt": "2026-01-28T03:19:52.750Z",
+        "completedOnDay": false
       }
     ]
   },
