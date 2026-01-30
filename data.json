@@ -735,6 +735,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-30T00:57:30.396Z"
+            },
+            {
+              "id": "ml06bv3trgew7ri84up",
+              "title": "Nucleofect NK cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-30T00:57:50.394Z"
             }
           ]
         },
@@ -1853,6 +1861,14 @@
         "time": null,
         "scheduledAt": "2026-01-30T00:57:34.177Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mkyn5q9752ye45ab8zw",
+        "subtaskId": "ml06bv3trgew7ri84up",
+        "time": null,
+        "scheduledAt": "2026-01-30T00:57:50.394Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-30": [
@@ -2470,7 +2486,7 @@
       "date": "2026-01-29"
     }
   ],
-  "lastUpdated": "2026-01-30T00:57:34.177Z",
+  "lastUpdated": "2026-01-30T00:57:50.394Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
