@@ -356,8 +356,11 @@
               "title": "Data analysis",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-29T21:44:07.622Z"
+              "completed": true,
+              "createdAt": "2026-01-29T21:44:07.622Z",
+              "completedAt": "2026-01-30T00:58:10.720Z",
+              "completionNotes": "",
+              "completionLinks": "https://docs.google.com/presentation/d/1IlfjyzXMqMTPv1KBUESf9N7F641w1v1V50L2jlm_ILs/edit?slide=id.g3bc4564fed2_0_19#slide=id.g3bc4564fed2_0_19"
             }
           ]
         },
@@ -1852,7 +1855,10 @@
         "subtaskId": "mkzzeqx2vzdl1y6txf",
         "time": null,
         "scheduledAt": "2026-01-29T21:44:15.103Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-30T00:58:10.720Z",
+        "completionNotes": "",
+        "completionLinks": "https://docs.google.com/presentation/d/1IlfjyzXMqMTPv1KBUESf9N7F641w1v1V50L2jlm_ILs/edit?slide=id.g3bc4564fed2_0_19#slide=id.g3bc4564fed2_0_19"
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -2484,9 +2490,18 @@
       "completionNotes": "Need to make follow up list showing NK expressed proteins and list of donor hit rate for proteins",
       "completionLinks": "",
       "date": "2026-01-29"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3iy4jrdxtygzkgtn",
+      "subtaskId": "mkzzeqx2vzdl1y6txf",
+      "completedAt": "2026-01-30T00:58:10.721Z",
+      "completionNotes": "",
+      "completionLinks": "https://docs.google.com/presentation/d/1IlfjyzXMqMTPv1KBUESf9N7F641w1v1V50L2jlm_ILs/edit?slide=id.g3bc4564fed2_0_19#slide=id.g3bc4564fed2_0_19",
+      "date": "2026-01-29"
     }
   ],
-  "lastUpdated": "2026-01-30T00:57:50.394Z",
+  "lastUpdated": "2026-01-30T00:58:10.721Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
