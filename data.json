@@ -360,7 +360,9 @@
               "createdAt": "2026-01-29T21:44:07.622Z",
               "completedAt": "2026-01-30T00:58:10.720Z",
               "completionNotes": "",
-              "completionLinks": "https://docs.google.com/presentation/d/1IlfjyzXMqMTPv1KBUESf9N7F641w1v1V50L2jlm_ILs/edit?slide=id.g3bc4564fed2_0_19#slide=id.g3bc4564fed2_0_19"
+              "completionLinks": "https://docs.google.com/presentation/d/1IlfjyzXMqMTPv1KBUESf9N7F641w1v1V50L2jlm_ILs/edit?slide=id.g3bc4564fed2_0_19#slide=id.g3bc4564fed2_0_19",
+              "notes": "",
+              "links": ""
             }
           ]
         },
@@ -2544,7 +2546,7 @@
       "date": "2026-01-29"
     }
   ],
-  "lastUpdated": "2026-01-30T01:00:32.930Z",
+  "lastUpdated": "2026-01-30T16:48:47.038Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
