@@ -1221,14 +1221,6 @@
     ],
     "2026-01-30": [
       {
-        "id": "mkvn1iwg7adsu5kpmx7",
-        "title": "Lab meeting at 11am",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-26T20:46:50.608Z"
-      },
-      {
         "id": "mkx6uziro64sedfr2ij",
         "title": "Cellanome Meeting",
         "description": "",
@@ -1237,6 +1229,16 @@
         "completedAt": null,
         "time": "13:00",
         "createdAt": "2026-01-27T22:49:24.051Z"
+      },
+      {
+        "id": "mkvn1iwg7adsu5kpmx7",
+        "title": "Lab meeting at 11am",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": "11:00",
+        "createdAt": "2026-01-26T20:46:50.608Z"
       }
     ],
     "2026-01-27": [
@@ -2533,7 +2535,7 @@
       "date": "2026-01-29"
     }
   ],
-  "lastUpdated": "2026-01-30T00:59:36.121Z",
+  "lastUpdated": "2026-01-30T00:59:52.367Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
