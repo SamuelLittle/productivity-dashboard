@@ -727,6 +727,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-28T23:14:22.060Z"
+            },
+            {
+              "id": "ml06bfoc9yflguj00gs",
+              "title": "Measure NK viability",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-30T00:57:30.396Z"
             }
           ]
         },
@@ -2454,7 +2462,7 @@
       "date": "2026-01-29"
     }
   ],
-  "lastUpdated": "2026-01-30T00:57:06.526Z",
+  "lastUpdated": "2026-01-30T00:57:30.396Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
