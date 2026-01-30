@@ -747,8 +747,11 @@
               "title": "Nucleofect NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-30T00:57:50.394Z"
+              "completed": true,
+              "createdAt": "2026-01-30T00:57:50.394Z",
+              "completedAt": "2026-01-30T00:58:44.992Z",
+              "completionNotes": "2 nucleofections of 2M c/mL using CM137 for AAVS1 and CD96",
+              "completionLinks": ""
             }
           ]
         },
@@ -1880,7 +1883,10 @@
         "subtaskId": "ml06bv3trgew7ri84up",
         "time": null,
         "scheduledAt": "2026-01-30T00:57:50.394Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-30T00:58:44.992Z",
+        "completionNotes": "2 nucleofections of 2M c/mL using CM137 for AAVS1 and CD96",
+        "completionLinks": ""
       }
     ],
     "2026-01-30": [
@@ -2514,9 +2520,18 @@
       "completionNotes": "Need to log in benchling",
       "completionLinks": "",
       "date": "2026-01-29"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mkyn5q9752ye45ab8zw",
+      "subtaskId": "ml06bv3trgew7ri84up",
+      "completedAt": "2026-01-30T00:58:44.992Z",
+      "completionNotes": "2 nucleofections of 2M c/mL using CM137 for AAVS1 and CD96",
+      "completionLinks": "",
+      "date": "2026-01-29"
     }
   ],
-  "lastUpdated": "2026-01-30T00:58:24.421Z",
+  "lastUpdated": "2026-01-30T00:58:44.992Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
