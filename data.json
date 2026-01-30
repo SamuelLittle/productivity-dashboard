@@ -736,8 +736,11 @@
               "title": "Measure NK viability",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-30T00:57:30.396Z"
+              "completed": true,
+              "createdAt": "2026-01-30T00:57:30.396Z",
+              "completedAt": "2026-01-30T00:58:24.421Z",
+              "completionNotes": "Need to log in benchling",
+              "completionLinks": ""
             },
             {
               "id": "ml06bv3trgew7ri84up",
@@ -1866,7 +1869,10 @@
         "subtaskId": "ml06bfoc9yflguj00gs",
         "time": null,
         "scheduledAt": "2026-01-30T00:57:34.177Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-30T00:58:24.421Z",
+        "completionNotes": "Need to log in benchling",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -2499,9 +2505,18 @@
       "completionNotes": "",
       "completionLinks": "https://docs.google.com/presentation/d/1IlfjyzXMqMTPv1KBUESf9N7F641w1v1V50L2jlm_ILs/edit?slide=id.g3bc4564fed2_0_19#slide=id.g3bc4564fed2_0_19",
       "date": "2026-01-29"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mkyn5q9752ye45ab8zw",
+      "subtaskId": "ml06bfoc9yflguj00gs",
+      "completedAt": "2026-01-30T00:58:24.421Z",
+      "completionNotes": "Need to log in benchling",
+      "completionLinks": "",
+      "date": "2026-01-29"
     }
   ],
-  "lastUpdated": "2026-01-30T00:58:10.721Z",
+  "lastUpdated": "2026-01-30T00:58:24.421Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
