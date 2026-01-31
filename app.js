@@ -3869,10 +3869,20 @@ function generateHtmlReport(reportData, options) {
 
     const styles = `
         <style>
-            * { box-sizing: border-box; margin: 0; padding: 0; }
+            /* Reset CSS variables to light theme values */
+            :root, html, body {
+                --color-bg: #ffffff !important;
+                --color-surface: #f8fafc !important;
+                --color-text: #0f172a !important;
+                --color-text-secondary: #64748b !important;
+                --color-border: #e2e8f0 !important;
+            }
+
+            * { box-sizing: border-box; margin: 0; padding: 0; color: inherit; background-color: inherit; }
 
             html {
                 background-color: #ffffff !important;
+                color: #0f172a !important;
             }
 
             body {
@@ -4258,14 +4268,14 @@ function generateHtmlReport(reportData, options) {
     `;
 
     let html = `<!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #ffffff !important;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monthly Report - ${reportData.monthName}</title>
     ${styles}
 </head>
-<body>
+<body style="background-color: #ffffff !important; color: #0f172a !important;">
     <header class="report-header">
         <div class="report-title">${reportData.monthName}</div>
         <div class="report-author">Samuel Little</div>
