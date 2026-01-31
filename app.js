@@ -3871,14 +3871,18 @@ function generateHtmlReport(reportData, options) {
         <style>
             * { box-sizing: border-box; margin: 0; padding: 0; }
 
+            html {
+                background-color: #ffffff !important;
+            }
+
             body {
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 40px 30px;
-                color: #0f172a;
+                color: #0f172a !important;
                 line-height: 1.5;
-                background: #ffffff;
+                background-color: #ffffff !important;
                 font-size: 12px;
             }
 
@@ -4522,7 +4526,8 @@ function generatePdfReport(htmlContent, monthStr) {
                 html2canvas: {
                     scale: 2,
                     useCORS: true,
-                    logging: true
+                    logging: true,
+                    backgroundColor: '#ffffff'
                 },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
