@@ -1996,14 +1996,6 @@
         "completedAt": "2026-01-30T00:58:44.992Z",
         "completionNotes": "2 nucleofections of 2M c/mL using CM137 for AAVS1 and CD96",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "ml2l62osbaz3iif86w6",
-        "subtaskId": "ml2l74brocsk2z9rxqi",
-        "time": null,
-        "scheduledAt": "2026-01-31T17:29:35.655Z",
-        "completedOnDay": false
       }
     ],
     "2026-01-30": [
@@ -2104,6 +2096,16 @@
         "subtaskId": "ml2l7imffk7dmqezqz7",
         "time": "09:00",
         "scheduledAt": "2026-01-31T17:30:53.180Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-02-05": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "ml2l62osbaz3iif86w6",
+        "subtaskId": "ml2l74brocsk2z9rxqi",
+        "time": null,
+        "scheduledAt": "2026-01-31T17:31:34.298Z",
         "completedOnDay": false
       }
     ]
@@ -2771,7 +2773,7 @@
       "completedAt": "2026-01-31T17:29:03.003Z"
     }
   ],
-  "lastUpdated": "2026-01-31T17:30:53.180Z",
+  "lastUpdated": "2026-01-31T17:31:34.298Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
