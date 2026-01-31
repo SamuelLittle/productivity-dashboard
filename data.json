@@ -1237,10 +1237,12 @@
         "title": "Lab meeting at 11am",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-01-31T04:35:18.867Z",
         "time": "11:00",
-        "createdAt": "2026-01-26T20:46:50.608Z"
+        "createdAt": "2026-01-26T20:46:50.608Z",
+        "completionNotes": "I will be presenting at group meeting in April.",
+        "completionLinks": ""
       },
       {
         "id": "ml06fcip50p79ljgw0g",
@@ -2544,9 +2546,17 @@
       "completionNotes": "2 nucleofections of 2M c/mL using CM137 for AAVS1 and CD96",
       "completionLinks": "",
       "date": "2026-01-29"
+    },
+    {
+      "id": "mkvn1iwg7adsu5kpmx7",
+      "title": "Lab meeting at 11am",
+      "completedAt": "2026-01-31T04:35:18.867Z",
+      "completionNotes": "I will be presenting at group meeting in April.",
+      "completionLinks": "",
+      "date": "2026-01-30"
     }
   ],
-  "lastUpdated": "2026-01-30T16:48:47.038Z",
+  "lastUpdated": "2026-01-31T04:35:18.867Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
