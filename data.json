@@ -223,8 +223,11 @@
               "title": "Media Swap",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-28T03:06:57.446Z"
+              "completed": true,
+              "createdAt": "2026-01-28T03:06:57.446Z",
+              "completedAt": "2026-01-31T17:29:03.002Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mkxg38g8ik46ipm0vvh",
@@ -2692,9 +2695,16 @@
       "completionNotes": "lysed DCs at about 70k cells per well and performed SS in parallel with RNA extracted\n",
       "completionLinks": "",
       "date": "2026-01-30"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mklusog2097tkm380gri",
+      "subtaskId": "mkxg27fps7cx43occe",
+      "title": "Media Swap",
+      "completedAt": "2026-01-31T17:29:03.003Z"
     }
   ],
-  "lastUpdated": "2026-01-31T17:28:46.877Z",
+  "lastUpdated": "2026-01-31T17:29:03.003Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
