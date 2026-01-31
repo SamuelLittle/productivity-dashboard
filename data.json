@@ -231,10 +231,13 @@
               "title": "SMARTseq3 w/o RNA extraction",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-01-28T03:07:45.416Z",
               "notes": "lysed DCs at about 70k cells per well.",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-01-31T04:38:44.940Z",
+              "completionNotes": "lysed DCs at about 70k cells per well and performed SS in parallel with RNA extracted\n",
+              "completionLinks": ""
             },
             {
               "id": "mkxg44dox8c1vm3pla",
@@ -1933,7 +1936,10 @@
         "subtaskId": "mkxg38g8ik46ipm0vvh",
         "time": null,
         "scheduledAt": "2026-01-30T00:59:36.121Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-31T04:38:44.940Z",
+        "completionNotes": "lysed DCs at about 70k cells per well and performed SS in parallel with RNA extracted\n",
+        "completionLinks": ""
       }
     ],
     "2026-02-02": [
@@ -2592,9 +2598,18 @@
       "completionNotes": "Performed SS on RNA extracted from monos and DCs",
       "completionLinks": "",
       "date": "2026-01-30"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mklusog2097tkm380gri",
+      "subtaskId": "mkxg38g8ik46ipm0vvh",
+      "completedAt": "2026-01-31T04:38:44.940Z",
+      "completionNotes": "lysed DCs at about 70k cells per well and performed SS in parallel with RNA extracted\n",
+      "completionLinks": "",
+      "date": "2026-01-30"
     }
   ],
-  "lastUpdated": "2026-01-31T04:37:58.713Z",
+  "lastUpdated": "2026-01-31T04:38:44.940Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
