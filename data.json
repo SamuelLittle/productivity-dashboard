@@ -530,6 +530,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-31T17:19:47.649Z"
+            },
+            {
+              "id": "ml2kyyxpwwt87658dwr",
+              "title": "remake treatment plates",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-31T17:23:15.421Z"
             }
           ]
         }
@@ -2009,6 +2017,16 @@
         "scheduledAt": "2026-01-31T17:19:47.649Z",
         "completedOnDay": false
       }
+    ],
+    "2026-02-03": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "ml2kttyffq66yk0c0tn",
+        "subtaskId": "ml2kyyxpwwt87658dwr",
+        "time": null,
+        "scheduledAt": "2026-01-31T17:23:15.421Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -2667,7 +2685,7 @@
       "date": "2026-01-30"
     }
   ],
-  "lastUpdated": "2026-01-31T17:19:47.649Z",
+  "lastUpdated": "2026-01-31T17:23:15.421Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
