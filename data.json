@@ -488,8 +488,11 @@
               "title": "SMARTseq with extracted RNA",
               "description": "In parallel performing SMARTseq on extracted RNA from DCs and monocytes, as well as directly lysed DCs and Mast cells.",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-28T03:19:52.750Z"
+              "completed": true,
+              "createdAt": "2026-01-28T03:19:52.750Z",
+              "completedAt": "2026-01-31T04:37:58.713Z",
+              "completionNotes": "Performed SS on RNA extracted from monos and DCs",
+              "completionLinks": ""
             }
           ]
         }
@@ -1911,7 +1914,10 @@
         "taskId": "mkxg58flzv21oiwevu",
         "subtaskId": "mkxgitnyfdxczckr0op",
         "scheduledAt": "2026-01-28T03:19:52.750Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-01-31T04:37:58.712Z",
+        "completionNotes": "Performed SS on RNA extracted from monos and DCs",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -2577,9 +2583,18 @@
       "completionNotes": "interesting approach for killing assays + transcriptomic readout.\n\nNeed to investigate to see if a pooled approach could work here. ",
       "completionLinks": "",
       "date": "2026-01-30"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkxg58flzv21oiwevu",
+      "subtaskId": "mkxgitnyfdxczckr0op",
+      "completedAt": "2026-01-31T04:37:58.713Z",
+      "completionNotes": "Performed SS on RNA extracted from monos and DCs",
+      "completionLinks": "",
+      "date": "2026-01-30"
     }
   ],
-  "lastUpdated": "2026-01-31T04:37:41.566Z",
+  "lastUpdated": "2026-01-31T04:37:58.713Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
