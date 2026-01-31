@@ -142,6 +142,17 @@ function initElements() {
         exportIncludeDailyAppendix: document.getElementById('export-include-daily-appendix'),
         exportIncludeIncomplete: document.getElementById('export-include-incomplete'),
         exportIncludePlanned: document.getElementById('export-include-planned'),
+        // AI Summary
+        aiSettingsToggle: document.getElementById('ai-settings-toggle'),
+        aiSettingsPanel: document.getElementById('ai-settings-panel'),
+        anthropicApiKey: document.getElementById('anthropic-api-key'),
+        saveApiKeyBtn: document.getElementById('save-api-key-btn'),
+        aiSummaryStatus: document.getElementById('ai-summary-status'),
+        aiStatusText: document.getElementById('ai-status-text'),
+        generateAiSummaryBtn: document.getElementById('generate-ai-summary-btn'),
+        aiSummaryContent: document.getElementById('ai-summary-content'),
+        aiSummaryText: document.getElementById('ai-summary-text'),
+        exportIncludeAiSummary: document.getElementById('export-include-ai-summary'),
         // Schedule modal
         scheduleModal: document.getElementById('schedule-modal'),
         scheduleProjectId: document.getElementById('schedule-project-id'),
@@ -3501,10 +3512,228 @@ async function saveProgress(e) {
 }
 
 // ============================================
+// AI SUMMARY
+// ============================================
+
+let currentAiSummary = null;
+
+function initAiSummary() {
+    const storedKey = localStorage.getItem('anthropic_api_key');
+    if (storedKey) {
+        updateAiStatus('ready', 'API key configured');
+        elements.generateAiSummaryBtn.disabled = false;
+    }
+}
+
+function updateAiStatus(status, text) {
+    elements.aiSummaryStatus.className = 'ai-summary-status ' + status;
+    elements.aiStatusText.textContent = text;
+}
+
+function toggleAiSettings() {
+    elements.aiSettingsPanel.classList.toggle('hidden');
+    const storedKey = localStorage.getItem('anthropic_api_key');
+    if (storedKey) {
+        elements.anthropicApiKey.value = storedKey;
+    }
+}
+
+function saveAnthropicApiKey() {
+    const key = elements.anthropicApiKey.value.trim();
+    if (key) {
+        localStorage.setItem('anthropic_api_key', key);
+        updateAiStatus('ready', 'API key saved');
+        elements.generateAiSummaryBtn.disabled = false;
+        elements.aiSettingsPanel.classList.add('hidden');
+        showToast('API key saved', 'success');
+    } else {
+        localStorage.removeItem('anthropic_api_key');
+        updateAiStatus('', 'No API key configured');
+        elements.generateAiSummaryBtn.disabled = true;
+        showToast('API key removed', 'info');
+    }
+}
+
+async function generateAiSummary() {
+    const apiKey = localStorage.getItem('anthropic_api_key');
+    if (!apiKey) {
+        showToast('Please configure your Anthropic API key first', 'error');
+        return;
+    }
+
+    const monthStr = elements.exportMonth.value;
+    const [year, month] = monthStr.split('-').map(Number);
+
+    const options = {
+        includeSubtasks: true,
+        includeDailyAppendix: true,
+        includeIncomplete: true,
+        includePlanned: true
+    };
+
+    const reportData = gatherMonthlyReportData(year, month, options);
+
+    if (reportData.totalCount === 0 && (!reportData.dailyBreakdown || reportData.dailyBreakdown.length === 0)) {
+        showToast('No data available for this month', 'error');
+        return;
+    }
+
+    updateAiStatus('loading', 'Generating summary...');
+    elements.generateAiSummaryBtn.disabled = true;
+
+    try {
+        const prompt = buildAiPrompt(reportData);
+        const summary = await callClaudeApi(apiKey, prompt);
+
+        currentAiSummary = summary;
+        elements.aiSummaryText.textContent = summary;
+        elements.aiSummaryContent.classList.remove('hidden');
+        updateAiStatus('ready', 'Summary generated');
+        elements.generateAiSummaryBtn.disabled = false;
+        showToast('AI summary generated', 'success');
+    } catch (error) {
+        console.error('AI summary error:', error);
+        updateAiStatus('error', 'Failed to generate summary');
+        elements.generateAiSummaryBtn.disabled = false;
+        showToast(error.message || 'Failed to generate summary', 'error');
+    }
+}
+
+function buildAiPrompt(reportData) {
+    let dataContext = `# Monthly Productivity Report Data for ${reportData.monthName}\n\n`;
+
+    dataContext += `## Summary Statistics\n`;
+    dataContext += `- Tasks Completed: ${reportData.taskCount}\n`;
+    dataContext += `- Subtasks Completed: ${reportData.subtaskCount}\n`;
+    dataContext += `- Total Items: ${reportData.totalCount}\n`;
+    dataContext += `- Active Projects: ${reportData.projectCount}\n\n`;
+
+    if (reportData.projectSummaries && reportData.projectSummaries.length > 0) {
+        dataContext += `## Project Activity\n`;
+        reportData.projectSummaries.forEach(project => {
+            dataContext += `\n### ${project.name}\n`;
+            dataContext += `- Tasks: ${project.tasks.length}, Subtasks: ${project.subtasks.length}\n`;
+
+            if (project.progressUpdates.length > 0) {
+                dataContext += `- Progress Updates:\n`;
+                project.progressUpdates.forEach(update => {
+                    dataContext += `  - ${update.text}\n`;
+                });
+            }
+
+            if (project.tasks.length > 0) {
+                dataContext += `- Completed Tasks:\n`;
+                project.tasks.forEach(task => {
+                    const date = new Date(task.completedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                    dataContext += `  - ${task.title} (${date})`;
+                    if (task.completionNotes) {
+                        dataContext += ` - Notes: ${task.completionNotes}`;
+                    }
+                    dataContext += `\n`;
+                });
+            }
+        });
+    }
+
+    if (reportData.dailyBreakdown && reportData.dailyBreakdown.length > 0) {
+        dataContext += `\n## Daily Activity Patterns\n`;
+        const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const activityByDay = {};
+
+        reportData.dailyBreakdown.forEach(day => {
+            const date = new Date(day.date + 'T00:00:00');
+            const dayName = dayNames[date.getDay()];
+            activityByDay[dayName] = (activityByDay[dayName] || 0) + day.items.length;
+
+            if (day.notes) {
+                dataContext += `- ${day.date}: Notes: "${day.notes}"\n`;
+            }
+        });
+
+        dataContext += `\nActivity by day of week:\n`;
+        Object.entries(activityByDay).forEach(([day, count]) => {
+            dataContext += `- ${day}: ${count} items\n`;
+        });
+    }
+
+    if (reportData.incompleteScheduled && reportData.incompleteScheduled.length > 0) {
+        dataContext += `\n## Incomplete Items (carried over)\n`;
+        reportData.incompleteScheduled.forEach(item => {
+            dataContext += `- ${item.title} (scheduled: ${item.scheduledDate})\n`;
+        });
+    }
+
+    if (reportData.plannedNextMonth && reportData.plannedNextMonth.length > 0) {
+        dataContext += `\n## Planned for Next Month\n`;
+        reportData.plannedNextMonth.forEach(item => {
+            dataContext += `- ${item.title} (${item.scheduledDate})\n`;
+        });
+    }
+
+    return `You are a productivity coach analyzing a user's monthly work data. Based on the following data, provide a concise but insightful monthly summary that:
+
+1. Highlights key accomplishments and patterns
+2. Notes which projects received the most attention
+3. Identifies productive days/patterns if visible
+4. Offers 1-2 brief, actionable suggestions for the next month
+5. Keeps an encouraging but professional tone
+
+Keep the summary to about 150-200 words. Focus on insights, not just restating the data.
+
+${dataContext}
+
+Write the summary now:`;
+}
+
+async function callClaudeApi(apiKey, prompt) {
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': apiKey,
+            'anthropic-version': '2023-06-01',
+            'anthropic-dangerous-direct-browser-access': 'true'
+        },
+        body: JSON.stringify({
+            model: 'claude-sonnet-4-20250514',
+            max_tokens: 1024,
+            messages: [
+                {
+                    role: 'user',
+                    content: prompt
+                }
+            ]
+        })
+    });
+
+    if (!response.ok) {
+        const error = await response.json().catch(() => ({}));
+        if (response.status === 401) {
+            throw new Error('Invalid API key. Please check your Anthropic API key.');
+        } else if (response.status === 429) {
+            throw new Error('Rate limited. Please try again in a moment.');
+        } else {
+            throw new Error(error.error?.message || `API error: ${response.status}`);
+        }
+    }
+
+    const data = await response.json();
+    return data.content[0].text;
+}
+
+function resetAiSummary() {
+    currentAiSummary = null;
+    elements.aiSummaryContent.classList.add('hidden');
+    elements.aiSummaryText.textContent = '';
+}
+
+// ============================================
 // EXPORT
 // ============================================
 
 function openExportModal() {
+    resetAiSummary();
+    elements.aiSettingsPanel?.classList.add('hidden');
     elements.exportModal.classList.remove('hidden');
 }
 
@@ -3753,6 +3982,13 @@ function findTaskById(projectId, taskId) {
 
 function generateMarkdownReport(reportData, options) {
     let md = `# Monthly Report - ${reportData.monthName}\n\n`;
+
+    // AI Summary (if available)
+    if (options.includeAiSummary && options.aiSummary) {
+        md += `## AI-Generated Summary\n\n`;
+        md += `${options.aiSummary}\n\n`;
+        md += `---\n\n`;
+    }
 
     // Executive Summary
     md += `## Executive Summary\n\n`;
@@ -4254,6 +4490,26 @@ function generateHtmlReport(reportData, options) {
                 margin-left: auto;
             }
 
+            /* AI Summary */
+            .ai-summary-box {
+                margin: 25px 0;
+                padding: 20px;
+                background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+                border: 1px solid #7dd3fc;
+                border-radius: 8px;
+            }
+
+            .ai-summary-box .section-header {
+                color: #0369a1;
+                border-bottom-color: #7dd3fc;
+            }
+
+            .ai-summary-content {
+                font-size: 12px;
+                line-height: 1.7;
+                color: #334155;
+            }
+
             /* Print styles */
             @media print {
                 body {
@@ -4297,6 +4553,15 @@ function generateHtmlReport(reportData, options) {
             <div class="metric-label">Projects</div>
         </div>
     </div>`;
+
+    // AI Summary (if available)
+    if (options.includeAiSummary && options.aiSummary) {
+        html += `
+        <div class="ai-summary-box">
+            <div class="section-header">AI-Generated Summary</div>
+            <div class="ai-summary-content">${options.aiSummary.replace(/\n/g, '<br>')}</div>
+        </div>`;
+    }
 
     // Project Breakdown Chart
     if (reportData.projectSummaries.length > 0) {
@@ -4472,8 +4737,14 @@ function exportReport(e) {
         includeSubtasks: elements.exportIncludeSubtasks?.checked ?? true,
         includeDailyAppendix: elements.exportIncludeDailyAppendix?.checked ?? true,
         includeIncomplete: elements.exportIncludeIncomplete?.checked ?? false,
-        includePlanned: elements.exportIncludePlanned?.checked ?? false
+        includePlanned: elements.exportIncludePlanned?.checked ?? false,
+        includeAiSummary: elements.exportIncludeAiSummary?.checked && currentAiSummary
     };
+
+    // Add AI summary to options if available
+    if (options.includeAiSummary) {
+        options.aiSummary = currentAiSummary;
+    }
 
     const reportData = gatherMonthlyReportData(year, month, options);
 
@@ -4496,6 +4767,10 @@ function exportReport(e) {
         extension = 'html';
         mimeType = 'text/html';
     } else if (format === 'json') {
+        // Include AI summary in JSON export
+        if (options.includeAiSummary) {
+            reportData.aiSummary = currentAiSummary;
+        }
         content = JSON.stringify(reportData, null, 2);
         extension = 'json';
         mimeType = 'application/json';
@@ -4591,6 +4866,12 @@ function initEventListeners() {
     elements.projectForm?.addEventListener('submit', saveProject);
     elements.progressForm?.addEventListener('submit', saveProgress);
     elements.exportForm?.addEventListener('submit', exportReport);
+
+    // AI Summary
+    elements.aiSettingsToggle?.addEventListener('click', toggleAiSettings);
+    elements.saveApiKeyBtn?.addEventListener('click', saveAnthropicApiKey);
+    elements.generateAiSummaryBtn?.addEventListener('click', generateAiSummary);
+    elements.exportMonth?.addEventListener('change', resetAiSummary);
 
     // Schedule dropdown
     elements.taskSchedule?.addEventListener('change', () => {
@@ -4752,6 +5033,7 @@ function init() {
     initElements();
     initEventListeners();
     initAuth();
+    initAiSummary();
 }
 
 document.addEventListener('DOMContentLoaded', init);
