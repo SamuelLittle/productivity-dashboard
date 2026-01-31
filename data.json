@@ -504,6 +504,14 @@
               "completedAt": "2026-01-31T04:37:58.713Z",
               "completionNotes": "Performed SS on RNA extracted from monos and DCs",
               "completionLinks": ""
+            },
+            {
+              "id": "ml2kt6s6czig6og9t2k",
+              "title": "cDNA Check",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-31T17:18:45.655Z"
             }
           ]
         }
@@ -1966,6 +1974,14 @@
         "time": null,
         "scheduledAt": "2026-01-31T17:17:11.244Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mkxg58flzv21oiwevu",
+        "subtaskId": "ml2kt6s6czig6og9t2k",
+        "time": null,
+        "scheduledAt": "2026-01-31T17:18:45.655Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -2625,7 +2641,7 @@
       "date": "2026-01-30"
     }
   ],
-  "lastUpdated": "2026-01-31T17:17:11.244Z",
+  "lastUpdated": "2026-01-31T17:18:45.655Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
