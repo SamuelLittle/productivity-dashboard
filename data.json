@@ -232,7 +232,9 @@
               "description": "",
               "priority": "medium",
               "completed": false,
-              "createdAt": "2026-01-28T03:07:45.416Z"
+              "createdAt": "2026-01-28T03:07:45.416Z",
+              "notes": "lysed DCs at about 70k cells per well.",
+              "links": ""
             },
             {
               "id": "mkxg44dox8c1vm3pla",
@@ -2577,7 +2579,7 @@
       "date": "2026-01-30"
     }
   ],
-  "lastUpdated": "2026-01-31T04:36:40.584Z",
+  "lastUpdated": "2026-01-31T04:37:41.566Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
