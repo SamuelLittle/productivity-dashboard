@@ -575,6 +575,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-31T17:30:16.350Z"
+            },
+            {
+              "id": "ml2l8fqr86etsdhx58o",
+              "title": "takedown and SMARTseq sample prep",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-31T17:30:37.107Z"
             }
           ]
         }
@@ -2035,6 +2043,14 @@
         "time": null,
         "scheduledAt": "2026-01-31T17:30:16.350Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "ml2l62osbaz3iif86w6",
+        "subtaskId": "ml2l8fqr86etsdhx58o",
+        "time": null,
+        "scheduledAt": "2026-01-31T17:30:37.107Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-02": [
@@ -2753,7 +2769,7 @@
       "completedAt": "2026-01-31T17:29:03.003Z"
     }
   ],
-  "lastUpdated": "2026-01-31T17:30:16.350Z",
+  "lastUpdated": "2026-01-31T17:30:37.107Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
