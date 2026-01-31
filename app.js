@@ -3848,32 +3848,408 @@ function generateMarkdownReport(reportData, options) {
 }
 
 function generateHtmlReport(reportData, options) {
+    // Calculate max items for progress bar scaling
+    const maxItems = Math.max(...reportData.projectSummaries.map(p => p.totalItems), 1);
+
+    // Format generation date
+    const genDate = new Date();
+    const genDateStr = genDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+    // Helper to create ASCII progress bar
+    const createProgressBar = (value, max, width = 20) => {
+        const filled = Math.round((value / max) * width);
+        return '▓'.repeat(filled) + '░'.repeat(width - filled);
+    };
+
+    // Helper to format short date
+    const shortDate = (dateStr) => {
+        const d = new Date(dateStr);
+        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    };
+
     const styles = `
         <style>
-            body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; line-height: 1.6; }
-            h1 { color: #1a1a1a; border-bottom: 2px solid #3b82f6; padding-bottom: 10px; }
-            h2 { color: #2563eb; margin-top: 30px; }
-            h3 { color: #3b82f6; margin-top: 20px; }
-            .summary { background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0; }
-            .summary ul { list-style: none; padding: 0; }
-            .summary li { padding: 5px 0; }
-            .top-projects { background: #eff6ff; padding: 15px; border-radius: 8px; margin: 15px 0; }
-            .top-projects ol { margin: 0; padding-left: 20px; }
-            .project { margin: 25px 0; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px; }
-            .project h3 { margin-top: 0; }
-            .progress-updates { background: #ecfdf5; padding: 10px 15px; border-radius: 6px; margin: 10px 0; }
-            .task { padding: 8px 0; border-bottom: 1px solid #f1f5f9; }
-            .task:last-child { border-bottom: none; }
-            .task-title { font-weight: 500; }
-            .task-date { color: #64748b; font-size: 14px; }
-            .task-notes { color: #475569; font-size: 14px; margin-top: 5px; }
-            .task-link { color: #3b82f6; }
-            .daily-entry { margin: 15px 0; padding: 15px; background: #fafafa; border-radius: 6px; }
-            .daily-date { font-weight: 600; color: #1a1a1a; }
-            .daily-notes { font-style: italic; color: #475569; margin-top: 10px; padding: 10px; background: #fff; border-left: 3px solid #3b82f6; }
-            .incomplete { color: #f59e0b; }
-            .planned { color: #3b82f6; }
-            ul { padding-left: 20px; }
+            * { box-sizing: border-box; margin: 0; padding: 0; }
+
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 40px 30px;
+                color: #0f172a;
+                line-height: 1.5;
+                background: #ffffff;
+                font-size: 12px;
+            }
+
+            /* Header */
+            .report-header {
+                margin-bottom: 30px;
+                padding-bottom: 20px;
+                border-bottom: 2px solid #1e293b;
+            }
+
+            .report-title {
+                font-size: 28px;
+                font-weight: 700;
+                color: #1e293b;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-bottom: 4px;
+            }
+
+            .report-author {
+                font-size: 18px;
+                color: #64748b;
+                font-weight: 400;
+                margin-bottom: 8px;
+            }
+
+            .report-subtitle {
+                font-size: 11px;
+                color: #64748b;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .report-generated {
+                font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+                font-size: 10px;
+                color: #94a3b8;
+                margin-top: 8px;
+            }
+
+            /* Metrics Dashboard */
+            .metrics-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                margin: 25px 0;
+            }
+
+            .metric-card {
+                background: #f8fafc;
+                border: 1px solid #e2e8f0;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .metric-value {
+                font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+                font-size: 32px;
+                font-weight: 700;
+                color: #1e293b;
+                line-height: 1;
+            }
+
+            .metric-label {
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #64748b;
+                margin-top: 8px;
+            }
+
+            /* Section Headers */
+            .section-header {
+                font-size: 14px;
+                font-weight: 700;
+                color: #1e293b;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin: 30px 0 15px 0;
+                padding-bottom: 8px;
+                border-bottom: 1px solid #e2e8f0;
+            }
+
+            /* Project Breakdown Chart */
+            .project-chart {
+                background: #f8fafc;
+                padding: 20px;
+                margin: 15px 0;
+            }
+
+            .chart-row {
+                display: flex;
+                align-items: center;
+                margin: 8px 0;
+                font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+                font-size: 11px;
+            }
+
+            .chart-bar {
+                color: #334155;
+                margin-right: 12px;
+                letter-spacing: -1px;
+            }
+
+            .chart-label {
+                flex: 1;
+                color: #1e293b;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .chart-count {
+                color: #64748b;
+                margin-left: 10px;
+                white-space: nowrap;
+            }
+
+            /* Project Sections */
+            .project-section {
+                margin: 25px 0;
+                padding: 20px;
+                background: #ffffff;
+                border: 1px solid #e2e8f0;
+            }
+
+            .project-name {
+                font-size: 14px;
+                font-weight: 700;
+                color: #1e293b;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-bottom: 15px;
+                padding-bottom: 8px;
+                border-bottom: 1px solid #e2e8f0;
+            }
+
+            .progress-notes {
+                background: #f8fafc;
+                border-left: 3px solid #0ea5e9;
+                padding: 12px 15px;
+                margin-bottom: 15px;
+            }
+
+            .progress-notes-title {
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #64748b;
+                margin-bottom: 8px;
+            }
+
+            .progress-notes ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .progress-notes li {
+                padding: 3px 0;
+                color: #334155;
+            }
+
+            .progress-notes li::before {
+                content: "• ";
+                color: #0ea5e9;
+            }
+
+            .completed-title {
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #64748b;
+                margin-bottom: 10px;
+            }
+
+            /* Task Items */
+            .task-item {
+                padding: 8px 0;
+                border-bottom: 1px solid #f1f5f9;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
+            }
+
+            .task-item:last-child {
+                border-bottom: none;
+            }
+
+            .task-check {
+                color: #16a34a;
+                font-weight: 600;
+                margin-right: 8px;
+            }
+
+            .task-title {
+                flex: 1;
+                color: #1e293b;
+                font-weight: 500;
+            }
+
+            .task-date {
+                font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+                font-size: 10px;
+                color: #94a3b8;
+                margin-left: 10px;
+            }
+
+            .task-notes-row {
+                width: 100%;
+                padding-left: 22px;
+                margin-top: 4px;
+            }
+
+            .task-notes {
+                font-size: 11px;
+                color: #64748b;
+                font-style: italic;
+            }
+
+            .task-link {
+                font-size: 11px;
+                color: #0ea5e9;
+                text-decoration: none;
+            }
+
+            .task-link:hover {
+                text-decoration: underline;
+            }
+
+            /* Subtask styling */
+            .subtask-item {
+                padding: 6px 0 6px 22px;
+                border-bottom: 1px solid #f1f5f9;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
+            }
+
+            .subtask-item:last-child {
+                border-bottom: none;
+            }
+
+            .subtask-connector {
+                color: #cbd5e1;
+                margin-right: 8px;
+                font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+            }
+
+            .subtask-parent {
+                color: #94a3b8;
+                font-size: 11px;
+            }
+
+            /* Daily Activity Log */
+            .daily-log {
+                margin-top: 30px;
+            }
+
+            .daily-row {
+                display: flex;
+                align-items: center;
+                padding: 6px 0;
+                font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+                font-size: 11px;
+                border-bottom: 1px solid #f1f5f9;
+            }
+
+            .daily-date {
+                width: 60px;
+                color: #64748b;
+            }
+
+            .daily-bar {
+                color: #0ea5e9;
+                margin: 0 10px;
+                letter-spacing: -2px;
+            }
+
+            .daily-count {
+                color: #1e293b;
+            }
+
+            .daily-detail {
+                padding: 10px 0 10px 70px;
+                border-bottom: 1px solid #f1f5f9;
+            }
+
+            .daily-detail ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .daily-detail li {
+                padding: 2px 0;
+                color: #64748b;
+                font-size: 11px;
+            }
+
+            .daily-detail li::before {
+                content: "✓ ";
+                color: #16a34a;
+            }
+
+            .daily-notes-block {
+                background: #f8fafc;
+                border-left: 2px solid #0ea5e9;
+                padding: 8px 12px;
+                margin: 8px 0 8px 70px;
+                font-style: italic;
+                color: #64748b;
+                font-size: 11px;
+            }
+
+            /* Incomplete & Planned Sections */
+            .status-section {
+                margin-top: 25px;
+            }
+
+            .status-header-incomplete {
+                color: #d97706;
+            }
+
+            .status-header-planned {
+                color: #0ea5e9;
+            }
+
+            .status-list {
+                list-style: none;
+                padding: 0;
+            }
+
+            .status-list li {
+                padding: 6px 0;
+                border-bottom: 1px solid #f1f5f9;
+                display: flex;
+                align-items: center;
+            }
+
+            .status-list li:last-child {
+                border-bottom: none;
+            }
+
+            .status-incomplete::before {
+                content: "○ ";
+                color: #d97706;
+                font-weight: 600;
+            }
+
+            .status-planned::before {
+                content: "→ ";
+                color: #0ea5e9;
+                font-weight: 600;
+            }
+
+            .status-date {
+                font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+                font-size: 10px;
+                color: #94a3b8;
+                margin-left: auto;
+            }
+
+            /* Print styles */
+            @media print {
+                body {
+                    padding: 20px;
+                }
+
+                .project-section {
+                    break-inside: avoid;
+                }
+            }
         </style>
     `;
 
@@ -3886,36 +4262,63 @@ function generateHtmlReport(reportData, options) {
     ${styles}
 </head>
 <body>
-    <h1>Monthly Report - ${reportData.monthName}</h1>
+    <header class="report-header">
+        <div class="report-title">${reportData.monthName}</div>
+        <div class="report-author">Samuel Little</div>
+        <div class="report-subtitle">Monthly Engineering Report</div>
+        <div class="report-generated">Generated: ${genDateStr}</div>
+    </header>
 
-    <div class="summary">
-        <h2>Executive Summary</h2>
-        <ul>
-            <li><strong>Tasks Completed:</strong> ${reportData.taskCount}</li>
-            ${options.includeSubtasks ? `<li><strong>Subtasks Completed:</strong> ${reportData.subtaskCount}</li>` : ''}
-            <li><strong>Projects with Activity:</strong> ${reportData.projectCount}</li>
-        </ul>
+    <div class="metrics-grid">
+        <div class="metric-card">
+            <div class="metric-value">${reportData.taskCount}</div>
+            <div class="metric-label">Tasks</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-value">${reportData.subtaskCount || 0}</div>
+            <div class="metric-label">Subtasks</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-value">${reportData.projectCount}</div>
+            <div class="metric-label">Projects</div>
+        </div>
     </div>`;
 
-    // Top projects
+    // Project Breakdown Chart
     if (reportData.projectSummaries.length > 0) {
-        html += `<div class="top-projects"><h3>Top Projects by Activity</h3><ol>`;
-        reportData.projectSummaries.slice(0, 5).forEach(project => {
-            if (project.id !== 'standalone') {
-                html += `<li>${project.name} - ${project.totalItems} items</li>`;
+        html += `<div class="section-header">Project Breakdown</div>
+        <div class="project-chart">`;
+
+        reportData.projectSummaries.slice(0, 8).forEach(project => {
+            if (project.id !== 'standalone' || project.totalItems > 0) {
+                const bar = createProgressBar(project.totalItems, maxItems);
+                html += `<div class="chart-row">
+                    <span class="chart-bar">${bar}</span>
+                    <span class="chart-label">${project.name}</span>
+                    <span class="chart-count">${project.totalItems} items</span>
+                </div>`;
             }
         });
-        html += `</ol></div>`;
+
+        html += `</div>`;
     }
 
-    html += `<h2>Project Progress</h2>`;
+    html += `<div class="section-header">Project Details</div>`;
 
     // Project sections
     reportData.projectSummaries.forEach(project => {
-        html += `<div class="project"><h3>${project.name}</h3>`;
+        // Skip empty standalone projects
+        if (project.id === 'standalone' && project.tasks.length === 0 && project.subtasks.length === 0) {
+            return;
+        }
+
+        html += `<div class="project-section">
+            <div class="project-name">${project.name}</div>`;
 
         if (project.progressUpdates.length > 0) {
-            html += `<div class="progress-updates"><strong>Summary:</strong><ul>`;
+            html += `<div class="progress-notes">
+                <div class="progress-notes-title">Progress Notes</div>
+                <ul>`;
             project.progressUpdates.forEach(update => {
                 html += `<li>${update.text}</li>`;
             });
@@ -3923,81 +4326,121 @@ function generateHtmlReport(reportData, options) {
         }
 
         if (project.tasks.length > 0 || (options.includeSubtasks && project.subtasks.length > 0)) {
-            html += `<div><strong>Completed Items:</strong>`;
+            html += `<div class="completed-title">Completed</div>`;
 
             project.tasks.forEach(task => {
-                const date = new Date(task.completedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-                html += `<div class="task">
-                    <span class="task-title">[x] ${task.title}</span>
-                    <span class="task-date">(${date})</span>`;
+                const date = shortDate(task.completedAt);
+                html += `<div class="task-item">
+                    <span class="task-check">✓</span>
+                    <span class="task-title">${task.title}</span>
+                    <span class="task-date">${date}</span>`;
+
                 if (task.completionNotes) {
-                    html += `<div class="task-notes">Notes: ${task.completionNotes}</div>`;
+                    html += `<div class="task-notes-row">
+                        <span class="task-notes">└─ ${task.completionNotes}</span>
+                    </div>`;
                 }
+
                 if (task.completionLinks) {
                     const links = task.completionLinks.split('\n').filter(l => l.trim());
                     links.forEach(link => {
-                        html += `<div class="task-notes">Link: <a href="${link.trim()}" class="task-link" target="_blank">${link.trim()}</a></div>`;
+                        html += `<div class="task-notes-row">
+                            <a href="${link.trim()}" class="task-link" target="_blank">└─ ${link.trim()}</a>
+                        </div>`;
                     });
                 }
+
                 html += `</div>`;
             });
 
             if (options.includeSubtasks) {
                 project.subtasks.forEach(subtask => {
-                    const date = new Date(subtask.completedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                    const date = shortDate(subtask.completedAt);
                     const parentTask = findTaskById(subtask.projectId, subtask.taskId);
-                    const parentTitle = parentTask?.title || 'Unknown Task';
-                    html += `<div class="task">
-                        <span class="task-title">[x] ${parentTitle} > ${subtask.title}</span>
-                        <span class="task-date">(${date})</span>`;
+                    const parentTitle = parentTask?.title || 'Task';
+                    html += `<div class="subtask-item">
+                        <span class="task-check">✓</span>
+                        <span class="subtask-parent">${parentTitle} ›</span>
+                        <span class="task-title" style="margin-left: 5px;">${subtask.title}</span>
+                        <span class="task-date">${date}</span>`;
+
                     if (subtask.completionNotes) {
-                        html += `<div class="task-notes">Notes: ${subtask.completionNotes}</div>`;
+                        html += `<div class="task-notes-row">
+                            <span class="task-notes">└─ ${subtask.completionNotes}</span>
+                        </div>`;
                     }
+
                     html += `</div>`;
                 });
             }
-            html += `</div>`;
         }
+
         html += `</div>`;
     });
 
     // Daily Log Appendix
-    if (options.includeDailyAppendix && reportData.dailyBreakdown) {
-        html += `<h2>Daily Log (Appendix)</h2>`;
+    if (options.includeDailyAppendix && reportData.dailyBreakdown && reportData.dailyBreakdown.length > 0) {
+        // Calculate max for daily bars
+        const maxDaily = Math.max(...reportData.dailyBreakdown.map(d => d.items.length), 1);
+
+        html += `<div class="daily-log">
+            <div class="section-header">Daily Activity Log</div>`;
+
         reportData.dailyBreakdown.forEach(day => {
             const dayDate = new Date(day.date + 'T00:00:00');
-            const dateStr = dayDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-            html += `<div class="daily-entry">
-                <div class="daily-date">${dateStr}</div><ul>`;
+            const dateStr = dayDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            const barWidth = Math.max(1, Math.round((day.items.length / maxDaily) * 8));
+            const bar = '█'.repeat(barWidth);
+
+            html += `<div class="daily-row">
+                <span class="daily-date">${dateStr}</span>
+                <span class="daily-bar">${bar}</span>
+                <span class="daily-count">${day.items.length} item${day.items.length !== 1 ? 's' : ''}</span>
+            </div>`;
+
+            html += `<div class="daily-detail"><ul>`;
             day.items.forEach(item => {
                 const project = state.data.projects?.find(p => p.id === item.projectId);
-                const projectName = project?.name || 'Standalone';
-                html += `<li>[x] ${item.title} <em>(${projectName})</em></li>`;
+                const projectName = project?.name || '';
+                const projectSuffix = projectName ? ` (${projectName})` : '';
+                html += `<li>${item.title}${projectSuffix}</li>`;
             });
-            html += `</ul>`;
+            html += `</ul></div>`;
+
             if (day.notes) {
-                html += `<div class="daily-notes"><strong>Notes:</strong> ${day.notes}</div>`;
+                html += `<div class="daily-notes-block">${day.notes}</div>`;
             }
-            html += `</div>`;
         });
+
+        html += `</div>`;
     }
 
     // Incomplete Scheduled Items
     if (options.includeIncomplete && reportData.incompleteScheduled?.length > 0) {
-        html += `<h2 class="incomplete">Incomplete Scheduled Items</h2><ul>`;
+        html += `<div class="status-section">
+            <div class="section-header status-header-incomplete">Incomplete Scheduled Items</div>
+            <ul class="status-list">`;
         reportData.incompleteScheduled.forEach(item => {
-            html += `<li>[ ] ${item.title} (scheduled: ${formatDate(item.scheduledDate)})</li>`;
+            html += `<li class="status-incomplete">
+                <span>${item.title}</span>
+                <span class="status-date">${shortDate(item.scheduledDate)}</span>
+            </li>`;
         });
-        html += `</ul>`;
+        html += `</ul></div>`;
     }
 
     // Planned for Next Month
     if (options.includePlanned && reportData.plannedNextMonth?.length > 0) {
-        html += `<h2 class="planned">Planned for Next Month</h2><ul>`;
+        html += `<div class="status-section">
+            <div class="section-header status-header-planned">Planned for Next Month</div>
+            <ul class="status-list">`;
         reportData.plannedNextMonth.forEach(item => {
-            html += `<li>${item.title} (${formatDate(item.scheduledDate)})</li>`;
+            html += `<li class="status-planned">
+                <span>${item.title}</span>
+                <span class="status-date">${shortDate(item.scheduledDate)}</span>
+            </li>`;
         });
-        html += `</ul>`;
+        html += `</ul></div>`;
     }
 
     html += `</body></html>`;
