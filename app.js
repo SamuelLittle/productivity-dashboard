@@ -4057,77 +4057,49 @@ function exportReport(e) {
 }
 
 function generatePdfReport(htmlContent, monthStr) {
-    // Extract just the body content for PDF generation
-    const bodyMatch = htmlContent.match(/<body[^>]*>([\s\S]*)<\/body>/i);
-    const bodyContent = bodyMatch ? bodyMatch[1] : htmlContent;
-
-    // Create a wrapper with inline styles for PDF
-    const pdfContainer = document.createElement('div');
-    pdfContainer.id = 'pdf-export-container';
-    pdfContainer.innerHTML = `
-        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; padding: 20px; color: #333; line-height: 1.6; background: white;">
-            ${bodyContent}
-        </div>
-    `;
-
-    // Apply styles inline since external styles won't work in PDF
-    const styleRules = `
-        #pdf-export-container h1 { color: #1a1a1a; border-bottom: 2px solid #3b82f6; padding-bottom: 10px; margin-bottom: 20px; }
-        #pdf-export-container h2 { color: #2563eb; margin-top: 25px; margin-bottom: 15px; }
-        #pdf-export-container h3 { color: #3b82f6; margin-top: 15px; margin-bottom: 10px; }
-        #pdf-export-container .summary { background: #f8fafc; padding: 15px; border-radius: 8px; margin: 15px 0; }
-        #pdf-export-container .summary ul { list-style: none; padding: 0; margin: 0; }
-        #pdf-export-container .summary li { padding: 4px 0; }
-        #pdf-export-container .top-projects { background: #eff6ff; padding: 12px; border-radius: 8px; margin: 12px 0; }
-        #pdf-export-container .top-projects ol { margin: 0; padding-left: 20px; }
-        #pdf-export-container .project { margin: 20px 0; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; }
-        #pdf-export-container .project h3 { margin-top: 0; }
-        #pdf-export-container .progress-updates { background: #ecfdf5; padding: 8px 12px; border-radius: 6px; margin: 8px 0; }
-        #pdf-export-container .task { padding: 6px 0; border-bottom: 1px solid #f1f5f9; }
-        #pdf-export-container .task:last-child { border-bottom: none; }
-        #pdf-export-container .task-title { font-weight: 500; }
-        #pdf-export-container .task-date { color: #64748b; font-size: 12px; }
-        #pdf-export-container .task-notes { color: #475569; font-size: 12px; margin-top: 4px; }
-        #pdf-export-container .task-link { color: #3b82f6; }
-        #pdf-export-container .daily-entry { margin: 12px 0; padding: 12px; background: #fafafa; border-radius: 6px; }
-        #pdf-export-container .daily-date { font-weight: 600; color: #1a1a1a; }
-        #pdf-export-container .daily-notes { font-style: italic; color: #475569; margin-top: 8px; padding: 8px; background: #fff; border-left: 3px solid #3b82f6; }
-        #pdf-export-container ul { padding-left: 20px; }
-    `;
-
-    const styleEl = document.createElement('style');
-    styleEl.textContent = styleRules;
-    pdfContainer.prepend(styleEl);
-
-    // Add to DOM - must be visible for html2canvas to render
-    pdfContainer.style.cssText = 'position: fixed; top: 0; left: 0; z-index: 9999; background: white; overflow: auto; width: 800px;';
-    document.body.appendChild(pdfContainer);
-
     // Close modal and show loading state
     closeAllModals();
     showToast('Generating PDF...', 'info');
 
-    const pdfOptions = {
-        margin: [10, 10, 10, 10],
-        filename: `monthly-report-${monthStr}.pdf`,
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: {
-            scale: 2,
-            useCORS: true,
-            logging: false,
-            width: 800
-        },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    // Create an iframe to render the complete HTML document
+    const iframe = document.createElement('iframe');
+    iframe.style.cssText = 'position: fixed; top: 0; left: 0; width: 850px; height: 100vh; z-index: 9999; background: white; border: none;';
+    document.body.appendChild(iframe);
+
+    // Wait for iframe to be ready
+    iframe.onload = function() {
+        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+        // Give styles time to apply
+        setTimeout(() => {
+            const pdfOptions = {
+                margin: [10, 10, 10, 10],
+                filename: `monthly-report-${monthStr}.pdf`,
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: {
+                    scale: 2,
+                    useCORS: true,
+                    logging: true
+                },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            html2pdf().set(pdfOptions).from(iframeDoc.body).save().then(() => {
+                document.body.removeChild(iframe);
+                showToast('PDF exported', 'success');
+            }).catch(err => {
+                document.body.removeChild(iframe);
+                console.error('PDF generation failed:', err);
+                showToast('PDF export failed', 'error');
+            });
+        }, 300);
     };
 
-    html2pdf().set(pdfOptions).from(pdfContainer).save().then(() => {
-        document.body.removeChild(pdfContainer);
-        showToast('PDF exported', 'success');
-    }).catch(err => {
-        document.body.removeChild(pdfContainer);
-        console.error('PDF generation failed:', err);
-        showToast('PDF export failed', 'error');
-    });
+    // Write the HTML content to iframe
+    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    iframeDoc.open();
+    iframeDoc.write(htmlContent);
+    iframeDoc.close();
 }
 
 // ============================================
