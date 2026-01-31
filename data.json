@@ -551,7 +551,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-31T17:28:46.876Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "ml2l74brocsk2z9rxqi",
+              "title": "Replate Cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-31T17:29:35.655Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [
@@ -1963,6 +1972,14 @@
         "completedAt": "2026-01-30T00:58:44.992Z",
         "completionNotes": "2 nucleofections of 2M c/mL using CM137 for AAVS1 and CD96",
         "completionLinks": ""
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "ml2l62osbaz3iif86w6",
+        "subtaskId": "ml2l74brocsk2z9rxqi",
+        "time": null,
+        "scheduledAt": "2026-01-31T17:29:35.655Z",
+        "completedOnDay": false
       }
     ],
     "2026-01-30": [
@@ -2704,7 +2721,7 @@
       "completedAt": "2026-01-31T17:29:03.003Z"
     }
   ],
-  "lastUpdated": "2026-01-31T17:29:03.003Z",
+  "lastUpdated": "2026-01-31T17:29:35.655Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
