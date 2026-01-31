@@ -1227,10 +1227,12 @@
         "title": "Cellanome Meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-01-31T04:36:40.584Z",
         "time": "13:00",
-        "createdAt": "2026-01-27T22:49:24.051Z"
+        "createdAt": "2026-01-27T22:49:24.051Z",
+        "completionNotes": "interesting approach for killing assays + transcriptomic readout.\n\nNeed to investigate to see if a pooled approach could work here. ",
+        "completionLinks": ""
       },
       {
         "id": "mkvn1iwg7adsu5kpmx7",
@@ -2565,9 +2567,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-01-30"
+    },
+    {
+      "id": "mkx6uziro64sedfr2ij",
+      "title": "Cellanome Meeting",
+      "completedAt": "2026-01-31T04:36:40.584Z",
+      "completionNotes": "interesting approach for killing assays + transcriptomic readout.\n\nNeed to investigate to see if a pooled approach could work here. ",
+      "completionLinks": "",
+      "date": "2026-01-30"
     }
   ],
-  "lastUpdated": "2026-01-31T04:35:33.048Z",
+  "lastUpdated": "2026-01-31T04:36:40.584Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
