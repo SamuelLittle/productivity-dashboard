@@ -260,6 +260,14 @@
               "completedAt": "2026-01-28T19:26:28.791Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "ml2kr5xoslsjkrhh9a",
+              "title": "cDNA Check",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-01-31T17:17:11.244Z"
             }
           ]
         },
@@ -1950,6 +1958,14 @@
         "time": null,
         "scheduledAt": "2026-01-31T04:39:07.650Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mklusog2097tkm380gri",
+        "subtaskId": "ml2kr5xoslsjkrhh9a",
+        "time": null,
+        "scheduledAt": "2026-01-31T17:17:11.244Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -2609,7 +2625,7 @@
       "date": "2026-01-30"
     }
   ],
-  "lastUpdated": "2026-01-31T04:39:07.650Z",
+  "lastUpdated": "2026-01-31T17:17:11.244Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
