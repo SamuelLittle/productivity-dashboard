@@ -1249,9 +1249,12 @@
         "title": "viral particle for Funien",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-01-30T01:00:32.929Z",
-        "time": "12:30"
+        "time": "12:30",
+        "completedAt": "2026-01-31T04:35:33.048Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-01-27": [
@@ -2554,9 +2557,17 @@
       "completionNotes": "I will be presenting at group meeting in April.",
       "completionLinks": "",
       "date": "2026-01-30"
+    },
+    {
+      "id": "ml06fcip50p79ljgw0g",
+      "title": "viral particle for Funien",
+      "completedAt": "2026-01-31T04:35:33.048Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-01-30"
     }
   ],
-  "lastUpdated": "2026-01-31T04:35:18.867Z",
+  "lastUpdated": "2026-01-31T04:35:33.048Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
