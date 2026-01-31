@@ -138,6 +138,10 @@ function initElements() {
         exportForm: document.getElementById('export-form'),
         exportMonth: document.getElementById('export-month'),
         exportFormat: document.getElementById('export-format'),
+        exportIncludeSubtasks: document.getElementById('export-include-subtasks'),
+        exportIncludeDailyAppendix: document.getElementById('export-include-daily-appendix'),
+        exportIncludeIncomplete: document.getElementById('export-include-incomplete'),
+        exportIncludePlanned: document.getElementById('export-include-planned'),
         // Schedule modal
         scheduleModal: document.getElementById('schedule-modal'),
         scheduleProjectId: document.getElementById('schedule-project-id'),
@@ -3504,6 +3508,502 @@ function openExportModal() {
     elements.exportModal.classList.remove('hidden');
 }
 
+// Data gathering functions for monthly report
+
+function getCompletedItemsForMonth(startDate, endDate) {
+    if (!state.data.completedTasks) return [];
+    return state.data.completedTasks.filter(task => {
+        const taskDate = new Date(task.completedAt);
+        return taskDate >= startDate && taskDate <= endDate;
+    });
+}
+
+function getProgressUpdatesForMonth(startDate, endDate) {
+    const updates = [];
+    if (!state.data.projects) return updates;
+
+    state.data.projects.forEach(project => {
+        if (project.progressUpdates) {
+            project.progressUpdates.forEach(update => {
+                const updateDate = new Date(update.date);
+                if (updateDate >= startDate && updateDate <= endDate) {
+                    updates.push({
+                        ...update,
+                        projectId: project.id,
+                        projectName: project.name
+                    });
+                }
+            });
+        }
+    });
+    return updates;
+}
+
+function buildProjectSummaries(completedItems, progressUpdates) {
+    const projectMap = {};
+
+    // Add completed items
+    completedItems.forEach(item => {
+        const projectId = item.projectId || 'standalone';
+        if (!projectMap[projectId]) {
+            const project = state.data.projects?.find(p => p.id === projectId);
+            projectMap[projectId] = {
+                id: projectId,
+                name: project?.name || 'Standalone Tasks',
+                tasks: [],
+                subtasks: [],
+                progressUpdates: [],
+                totalItems: 0
+            };
+        }
+        if (item.subtaskId) {
+            projectMap[projectId].subtasks.push(item);
+        } else {
+            projectMap[projectId].tasks.push(item);
+        }
+        projectMap[projectId].totalItems++;
+    });
+
+    // Add progress updates
+    progressUpdates.forEach(update => {
+        const projectId = update.projectId;
+        if (!projectMap[projectId]) {
+            projectMap[projectId] = {
+                id: projectId,
+                name: update.projectName,
+                tasks: [],
+                subtasks: [],
+                progressUpdates: [],
+                totalItems: 0
+            };
+        }
+        projectMap[projectId].progressUpdates.push(update);
+    });
+
+    // Sort by activity volume
+    return Object.values(projectMap).sort((a, b) => b.totalItems - a.totalItems);
+}
+
+function buildDailyBreakdown(completedItems, dailyNotes, startDate, endDate) {
+    const days = {};
+
+    // Group completed items by date
+    completedItems.forEach(item => {
+        const dateStr = new Date(item.completedAt).toISOString().split('T')[0];
+        if (!days[dateStr]) {
+            days[dateStr] = { items: [], notes: null };
+        }
+        days[dateStr].items.push(item);
+    });
+
+    // Add daily notes
+    if (dailyNotes) {
+        Object.entries(dailyNotes).forEach(([date, notes]) => {
+            const noteDate = getDateFromString(date);
+            if (noteDate >= startDate && noteDate <= endDate) {
+                if (!days[date]) {
+                    days[date] = { items: [], notes: null };
+                }
+                days[date].notes = notes;
+            }
+        });
+    }
+
+    // Sort by date
+    return Object.entries(days)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([date, data]) => ({ date, ...data }));
+}
+
+function getIncompleteScheduledForMonth(startDate, endDate) {
+    const incomplete = [];
+    if (!state.data.scheduledItems) return incomplete;
+
+    Object.entries(state.data.scheduledItems).forEach(([date, items]) => {
+        const scheduleDate = getDateFromString(date);
+        if (scheduleDate >= startDate && scheduleDate <= endDate) {
+            items.forEach(item => {
+                // Check if task is still incomplete
+                const project = state.data.projects?.find(p => p.id === item.projectId);
+                if (project) {
+                    const task = project.tasks?.find(t => t.id === item.taskId);
+                    if (task && !task.completed) {
+                        incomplete.push({
+                            ...item,
+                            scheduledDate: date,
+                            title: task.title,
+                            projectName: project.name
+                        });
+                    }
+                }
+            });
+        }
+    });
+    return incomplete;
+}
+
+function getPlannedForNextMonth(nextMonthStart, nextMonthEnd) {
+    const planned = [];
+    if (!state.data.scheduledItems) return planned;
+
+    Object.entries(state.data.scheduledItems).forEach(([date, items]) => {
+        const scheduleDate = getDateFromString(date);
+        if (scheduleDate >= nextMonthStart && scheduleDate <= nextMonthEnd) {
+            items.forEach(item => {
+                const project = state.data.projects?.find(p => p.id === item.projectId);
+                if (project) {
+                    const task = project.tasks?.find(t => t.id === item.taskId);
+                    if (task && !task.completed) {
+                        planned.push({
+                            ...item,
+                            scheduledDate: date,
+                            title: task.title,
+                            projectName: project.name
+                        });
+                    }
+                }
+            });
+        }
+    });
+    return planned;
+}
+
+function gatherMonthlyReportData(year, month, options) {
+    const startDate = new Date(year, month - 1, 1);
+    const endDate = new Date(year, month, 0, 23, 59, 59);
+    const nextMonthStart = new Date(year, month, 1);
+    const nextMonthEnd = new Date(year, month + 1, 0, 23, 59, 59);
+
+    const completedItems = getCompletedItemsForMonth(startDate, endDate);
+    const progressUpdates = getProgressUpdatesForMonth(startDate, endDate);
+    const projectSummaries = buildProjectSummaries(completedItems, progressUpdates);
+
+    const taskCount = completedItems.filter(i => !i.subtaskId).length;
+    const subtaskCount = completedItems.filter(i => i.subtaskId).length;
+
+    const data = {
+        year,
+        month,
+        monthName: startDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+        startDate,
+        endDate,
+        taskCount,
+        subtaskCount,
+        totalCount: completedItems.length,
+        projectCount: projectSummaries.filter(p => p.id !== 'standalone').length,
+        projectSummaries
+    };
+
+    if (options.includeDailyAppendix) {
+        data.dailyBreakdown = buildDailyBreakdown(
+            completedItems,
+            state.data.dailyNotes,
+            startDate,
+            endDate
+        );
+    }
+
+    if (options.includeIncomplete) {
+        data.incompleteScheduled = getIncompleteScheduledForMonth(startDate, endDate);
+    }
+
+    if (options.includePlanned) {
+        data.plannedNextMonth = getPlannedForNextMonth(nextMonthStart, nextMonthEnd);
+    }
+
+    return data;
+}
+
+// Report generation functions
+
+function formatTaskMarkdown(task) {
+    const date = new Date(task.completedAt).toLocaleDateString('en-US', {
+        month: 'short', day: 'numeric', year: 'numeric'
+    });
+    let line = `- [x] ${task.title} *(${date})*\n`;
+    if (task.completionNotes) {
+        line += `  - Notes: ${task.completionNotes}\n`;
+    }
+    if (task.completionLinks) {
+        const links = task.completionLinks.split('\n').filter(l => l.trim());
+        links.forEach(link => {
+            line += `  - Link: [${link.trim()}](${link.trim()})\n`;
+        });
+    }
+    return line;
+}
+
+function formatSubtaskMarkdown(subtask) {
+    const date = new Date(subtask.completedAt).toLocaleDateString('en-US', {
+        month: 'short', day: 'numeric', year: 'numeric'
+    });
+    const parentTask = findTaskById(subtask.projectId, subtask.taskId);
+    const parentTitle = parentTask?.title || 'Unknown Task';
+    let line = `- [x] ${parentTitle} > ${subtask.title} *(${date})*\n`;
+    if (subtask.completionNotes) {
+        line += `  - Notes: ${subtask.completionNotes}\n`;
+    }
+    return line;
+}
+
+function findTaskById(projectId, taskId) {
+    const project = state.data.projects?.find(p => p.id === projectId);
+    return project?.tasks?.find(t => t.id === taskId);
+}
+
+function generateMarkdownReport(reportData, options) {
+    let md = `# Monthly Report - ${reportData.monthName}\n\n`;
+
+    // Executive Summary
+    md += `## Executive Summary\n\n`;
+    md += `- Tasks Completed: ${reportData.taskCount}\n`;
+    if (options.includeSubtasks) {
+        md += `- Subtasks Completed: ${reportData.subtaskCount}\n`;
+    }
+    md += `- Projects with Activity: ${reportData.projectCount}\n\n`;
+
+    // Top projects by activity
+    if (reportData.projectSummaries.length > 0) {
+        md += `### Top Projects by Activity\n\n`;
+        reportData.projectSummaries.slice(0, 5).forEach((project, index) => {
+            if (project.id !== 'standalone') {
+                md += `${index + 1}. ${project.name} - ${project.totalItems} items\n`;
+            }
+        });
+        md += '\n';
+    }
+
+    // Project Progress sections
+    md += `## Project Progress\n\n`;
+
+    reportData.projectSummaries.forEach(project => {
+        md += `### ${project.name}\n\n`;
+
+        // Progress updates
+        if (project.progressUpdates.length > 0) {
+            md += `**Summary:**\n`;
+            project.progressUpdates.forEach(update => {
+                md += `- ${update.text}\n`;
+            });
+            md += '\n';
+        }
+
+        // Completed items
+        if (project.tasks.length > 0 || (options.includeSubtasks && project.subtasks.length > 0)) {
+            md += `**Completed Items:**\n`;
+            project.tasks.forEach(task => {
+                md += formatTaskMarkdown(task);
+            });
+            if (options.includeSubtasks) {
+                project.subtasks.forEach(subtask => {
+                    md += formatSubtaskMarkdown(subtask);
+                });
+            }
+            md += '\n';
+        }
+    });
+
+    // Daily Log Appendix
+    if (options.includeDailyAppendix && reportData.dailyBreakdown) {
+        md += `## Daily Log (Appendix)\n\n`;
+        reportData.dailyBreakdown.forEach(day => {
+            const dayDate = new Date(day.date + 'T00:00:00');
+            const dateStr = dayDate.toLocaleDateString('en-US', {
+                month: 'long', day: 'numeric', year: 'numeric'
+            });
+            md += `### ${dateStr}\n\n`;
+
+            day.items.forEach(item => {
+                const project = state.data.projects?.find(p => p.id === item.projectId);
+                const projectName = project?.name || 'Standalone';
+                md += `- [x] ${item.title} *(${projectName})*\n`;
+            });
+
+            if (day.notes) {
+                md += `\n**Notes:** ${day.notes}\n`;
+            }
+            md += '\n';
+        });
+    }
+
+    // Incomplete Scheduled Items
+    if (options.includeIncomplete && reportData.incompleteScheduled?.length > 0) {
+        md += `## Incomplete Scheduled Items\n\n`;
+        reportData.incompleteScheduled.forEach(item => {
+            md += `- [ ] ${item.title} (scheduled: ${formatDate(item.scheduledDate)})\n`;
+        });
+        md += '\n';
+    }
+
+    // Planned for Next Month
+    if (options.includePlanned && reportData.plannedNextMonth?.length > 0) {
+        md += `## Planned for Next Month\n\n`;
+        reportData.plannedNextMonth.forEach(item => {
+            md += `- ${item.title} (${formatDate(item.scheduledDate)})\n`;
+        });
+        md += '\n';
+    }
+
+    return md;
+}
+
+function generateHtmlReport(reportData, options) {
+    const styles = `
+        <style>
+            body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; line-height: 1.6; }
+            h1 { color: #1a1a1a; border-bottom: 2px solid #3b82f6; padding-bottom: 10px; }
+            h2 { color: #2563eb; margin-top: 30px; }
+            h3 { color: #3b82f6; margin-top: 20px; }
+            .summary { background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0; }
+            .summary ul { list-style: none; padding: 0; }
+            .summary li { padding: 5px 0; }
+            .top-projects { background: #eff6ff; padding: 15px; border-radius: 8px; margin: 15px 0; }
+            .top-projects ol { margin: 0; padding-left: 20px; }
+            .project { margin: 25px 0; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px; }
+            .project h3 { margin-top: 0; }
+            .progress-updates { background: #ecfdf5; padding: 10px 15px; border-radius: 6px; margin: 10px 0; }
+            .task { padding: 8px 0; border-bottom: 1px solid #f1f5f9; }
+            .task:last-child { border-bottom: none; }
+            .task-title { font-weight: 500; }
+            .task-date { color: #64748b; font-size: 14px; }
+            .task-notes { color: #475569; font-size: 14px; margin-top: 5px; }
+            .task-link { color: #3b82f6; }
+            .daily-entry { margin: 15px 0; padding: 15px; background: #fafafa; border-radius: 6px; }
+            .daily-date { font-weight: 600; color: #1a1a1a; }
+            .daily-notes { font-style: italic; color: #475569; margin-top: 10px; padding: 10px; background: #fff; border-left: 3px solid #3b82f6; }
+            .incomplete { color: #f59e0b; }
+            .planned { color: #3b82f6; }
+            ul { padding-left: 20px; }
+        </style>
+    `;
+
+    let html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report - ${reportData.monthName}</title>
+    ${styles}
+</head>
+<body>
+    <h1>Monthly Report - ${reportData.monthName}</h1>
+
+    <div class="summary">
+        <h2>Executive Summary</h2>
+        <ul>
+            <li><strong>Tasks Completed:</strong> ${reportData.taskCount}</li>
+            ${options.includeSubtasks ? `<li><strong>Subtasks Completed:</strong> ${reportData.subtaskCount}</li>` : ''}
+            <li><strong>Projects with Activity:</strong> ${reportData.projectCount}</li>
+        </ul>
+    </div>`;
+
+    // Top projects
+    if (reportData.projectSummaries.length > 0) {
+        html += `<div class="top-projects"><h3>Top Projects by Activity</h3><ol>`;
+        reportData.projectSummaries.slice(0, 5).forEach(project => {
+            if (project.id !== 'standalone') {
+                html += `<li>${project.name} - ${project.totalItems} items</li>`;
+            }
+        });
+        html += `</ol></div>`;
+    }
+
+    html += `<h2>Project Progress</h2>`;
+
+    // Project sections
+    reportData.projectSummaries.forEach(project => {
+        html += `<div class="project"><h3>${project.name}</h3>`;
+
+        if (project.progressUpdates.length > 0) {
+            html += `<div class="progress-updates"><strong>Summary:</strong><ul>`;
+            project.progressUpdates.forEach(update => {
+                html += `<li>${update.text}</li>`;
+            });
+            html += `</ul></div>`;
+        }
+
+        if (project.tasks.length > 0 || (options.includeSubtasks && project.subtasks.length > 0)) {
+            html += `<div><strong>Completed Items:</strong>`;
+
+            project.tasks.forEach(task => {
+                const date = new Date(task.completedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                html += `<div class="task">
+                    <span class="task-title">[x] ${task.title}</span>
+                    <span class="task-date">(${date})</span>`;
+                if (task.completionNotes) {
+                    html += `<div class="task-notes">Notes: ${task.completionNotes}</div>`;
+                }
+                if (task.completionLinks) {
+                    const links = task.completionLinks.split('\n').filter(l => l.trim());
+                    links.forEach(link => {
+                        html += `<div class="task-notes">Link: <a href="${link.trim()}" class="task-link" target="_blank">${link.trim()}</a></div>`;
+                    });
+                }
+                html += `</div>`;
+            });
+
+            if (options.includeSubtasks) {
+                project.subtasks.forEach(subtask => {
+                    const date = new Date(subtask.completedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                    const parentTask = findTaskById(subtask.projectId, subtask.taskId);
+                    const parentTitle = parentTask?.title || 'Unknown Task';
+                    html += `<div class="task">
+                        <span class="task-title">[x] ${parentTitle} > ${subtask.title}</span>
+                        <span class="task-date">(${date})</span>`;
+                    if (subtask.completionNotes) {
+                        html += `<div class="task-notes">Notes: ${subtask.completionNotes}</div>`;
+                    }
+                    html += `</div>`;
+                });
+            }
+            html += `</div>`;
+        }
+        html += `</div>`;
+    });
+
+    // Daily Log Appendix
+    if (options.includeDailyAppendix && reportData.dailyBreakdown) {
+        html += `<h2>Daily Log (Appendix)</h2>`;
+        reportData.dailyBreakdown.forEach(day => {
+            const dayDate = new Date(day.date + 'T00:00:00');
+            const dateStr = dayDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+            html += `<div class="daily-entry">
+                <div class="daily-date">${dateStr}</div><ul>`;
+            day.items.forEach(item => {
+                const project = state.data.projects?.find(p => p.id === item.projectId);
+                const projectName = project?.name || 'Standalone';
+                html += `<li>[x] ${item.title} <em>(${projectName})</em></li>`;
+            });
+            html += `</ul>`;
+            if (day.notes) {
+                html += `<div class="daily-notes"><strong>Notes:</strong> ${day.notes}</div>`;
+            }
+            html += `</div>`;
+        });
+    }
+
+    // Incomplete Scheduled Items
+    if (options.includeIncomplete && reportData.incompleteScheduled?.length > 0) {
+        html += `<h2 class="incomplete">Incomplete Scheduled Items</h2><ul>`;
+        reportData.incompleteScheduled.forEach(item => {
+            html += `<li>[ ] ${item.title} (scheduled: ${formatDate(item.scheduledDate)})</li>`;
+        });
+        html += `</ul>`;
+    }
+
+    // Planned for Next Month
+    if (options.includePlanned && reportData.plannedNextMonth?.length > 0) {
+        html += `<h2 class="planned">Planned for Next Month</h2><ul>`;
+        reportData.plannedNextMonth.forEach(item => {
+            html += `<li>${item.title} (${formatDate(item.scheduledDate)})</li>`;
+        });
+        html += `</ul>`;
+    }
+
+    html += `</body></html>`;
+    return html;
+}
+
 function exportReport(e) {
     e.preventDefault();
 
@@ -3511,115 +4011,37 @@ function exportReport(e) {
     const format = elements.exportFormat.value;
     const [year, month] = monthStr.split('-').map(Number);
 
-    const startDate = new Date(year, month - 1, 1);
-    const endDate = new Date(year, month, 0);
+    const options = {
+        includeSubtasks: elements.exportIncludeSubtasks?.checked ?? true,
+        includeDailyAppendix: elements.exportIncludeDailyAppendix?.checked ?? true,
+        includeIncomplete: elements.exportIncludeIncomplete?.checked ?? false,
+        includePlanned: elements.exportIncludePlanned?.checked ?? false
+    };
 
-    const completedInMonth = state.data.completedTasks.filter(task => {
-        const taskDate = new Date(task.completedAt);
-        return taskDate >= startDate && taskDate <= endDate;
-    });
-
-    const byProject = {};
-    const standalone = [];
-
-    completedInMonth.forEach(task => {
-        if (task.projectId) {
-            const project = state.data.projects.find(p => p.id === task.projectId);
-            const projectName = project?.name || 'Unknown Project';
-            if (!byProject[projectName]) byProject[projectName] = [];
-            byProject[projectName].push(task);
-        } else {
-            standalone.push(task);
-        }
-    });
-
-    // Get daily notes for the month
-    const dailyNotesForMonth = {};
-    if (state.data.dailyNotes) {
-        Object.entries(state.data.dailyNotes).forEach(([date, notes]) => {
-            const noteDate = getDateFromString(date);
-            if (noteDate >= startDate && noteDate <= endDate) {
-                dailyNotesForMonth[date] = notes;
-            }
-        });
-    }
+    const reportData = gatherMonthlyReportData(year, month, options);
 
     let content = '';
-    const monthName = startDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    let extension = '';
+    let mimeType = 'text/plain';
 
     if (format === 'markdown') {
-        content = `# Productivity Report - ${monthName}\n\n`;
-        content += `**Total Tasks Completed:** ${completedInMonth.length}\n\n`;
-
-        Object.entries(byProject).forEach(([projectName, tasks]) => {
-            content += `## ${projectName}\n\n`;
-            tasks.forEach(task => {
-                content += `- [x] ${task.title}`;
-                if (task.completionNotes) content += `\n  - Notes: ${task.completionNotes}`;
-                if (task.completionLinks) content += `\n  - Links: ${task.completionLinks}`;
-                content += '\n';
-            });
-            content += '\n';
-        });
-
-        if (standalone.length > 0) {
-            content += `## Other Tasks\n\n`;
-            standalone.forEach(task => {
-                content += `- [x] ${task.title}`;
-                if (task.completionNotes) content += `\n  - Notes: ${task.completionNotes}`;
-                content += '\n';
-            });
-        }
-
-        // Add daily notes
-        const notesDates = Object.keys(dailyNotesForMonth).sort();
-        if (notesDates.length > 0) {
-            content += `## Daily Notes\n\n`;
-            notesDates.forEach(date => {
-                content += `### ${formatDate(date)}\n\n`;
-                content += `${dailyNotesForMonth[date]}\n\n`;
-            });
-        }
+        content = generateMarkdownReport(reportData, options);
+        extension = 'md';
+    } else if (format === 'html') {
+        content = generateHtmlReport(reportData, options);
+        extension = 'html';
+        mimeType = 'text/html';
     } else if (format === 'json') {
-        content = JSON.stringify({ month: monthName, tasks: completedInMonth, dailyNotes: dailyNotesForMonth }, null, 2);
-    } else {
-        content = `Productivity Report - ${monthName}\n`;
-        content += `${'='.repeat(40)}\n\n`;
-        content += `Total Tasks Completed: ${completedInMonth.length}\n\n`;
-
-        Object.entries(byProject).forEach(([projectName, tasks]) => {
-            content += `${projectName}\n${'-'.repeat(20)}\n`;
-            tasks.forEach(task => {
-                content += `  [x] ${task.title}\n`;
-                if (task.completionNotes) content += `      Notes: ${task.completionNotes}\n`;
-            });
-            content += '\n';
-        });
-
-        if (standalone.length > 0) {
-            content += `Other Tasks\n${'-'.repeat(20)}\n`;
-            standalone.forEach(task => {
-                content += `  [x] ${task.title}\n`;
-            });
-        }
-
-        // Add daily notes (plain text)
-        const notesDatesText = Object.keys(dailyNotesForMonth).sort();
-        if (notesDatesText.length > 0) {
-            content += `\nDaily Notes\n${'='.repeat(40)}\n\n`;
-            notesDatesText.forEach(date => {
-                content += `${formatDate(date)}\n${'-'.repeat(20)}\n`;
-                content += `${dailyNotesForMonth[date]}\n\n`;
-            });
-        }
+        content = JSON.stringify(reportData, null, 2);
+        extension = 'json';
+        mimeType = 'application/json';
     }
 
-    const extension = format === 'json' ? 'json' : format === 'markdown' ? 'md' : 'txt';
-    const blob = new Blob([content], { type: 'text/plain' });
+    const blob = new Blob([content], { type: mimeType });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `productivity-report-${monthStr}.${extension}`;
+    a.download = `monthly-report-${monthStr}.${extension}`;
     a.click();
     URL.revokeObjectURL(url);
 

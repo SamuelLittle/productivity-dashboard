@@ -575,9 +575,28 @@
                         <label for="export-format">Format</label>
                         <select id="export-format">
                             <option value="markdown">Markdown</option>
+                            <option value="html">HTML</option>
                             <option value="json">JSON</option>
-                            <option value="text">Plain Text</option>
                         </select>
+                    </div>
+
+                    <div class="export-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="export-include-subtasks" checked>
+                            Include subtasks
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="export-include-daily-appendix" checked>
+                            Include daily log appendix
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="export-include-incomplete">
+                            Include incomplete scheduled items
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="export-include-planned">
+                            Include planned items for next month
+                        </label>
                     </div>
 
                     <div class="modal-footer">
