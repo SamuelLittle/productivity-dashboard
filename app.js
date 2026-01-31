@@ -4020,6 +4020,13 @@ function exportReport(e) {
 
     const reportData = gatherMonthlyReportData(year, month, options);
 
+    // Handle PDF export separately
+    if (format === 'pdf') {
+        const htmlContent = generateHtmlReport(reportData, options);
+        generatePdfReport(htmlContent, monthStr);
+        return;
+    }
+
     let content = '';
     let extension = '';
     let mimeType = 'text/plain';
@@ -4047,6 +4054,52 @@ function exportReport(e) {
 
     closeAllModals();
     showToast('Report exported', 'success');
+}
+
+function generatePdfReport(htmlContent, monthStr) {
+    // Create a temporary container for the HTML
+    const container = document.createElement('div');
+    container.innerHTML = htmlContent;
+
+    // Extract just the body content for PDF generation
+    const bodyMatch = htmlContent.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+    const bodyContent = bodyMatch ? bodyMatch[1] : htmlContent;
+
+    // Create a wrapper with the styles
+    const styleMatch = htmlContent.match(/<style[^>]*>([\s\S]*?)<\/style>/i);
+    const styles = styleMatch ? styleMatch[1] : '';
+
+    const pdfContainer = document.createElement('div');
+    pdfContainer.innerHTML = bodyContent;
+    pdfContainer.style.cssText = 'font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; padding: 20px; color: #333; line-height: 1.6;';
+
+    // Add inline styles from the HTML report
+    const styleEl = document.createElement('style');
+    styleEl.textContent = styles;
+    pdfContainer.prepend(styleEl);
+
+    // Temporarily add to DOM (required for html2pdf)
+    pdfContainer.style.position = 'absolute';
+    pdfContainer.style.left = '-9999px';
+    document.body.appendChild(pdfContainer);
+
+    const pdfOptions = {
+        margin: [10, 10, 10, 10],
+        filename: `monthly-report-${monthStr}.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(pdfOptions).from(pdfContainer).save().then(() => {
+        document.body.removeChild(pdfContainer);
+        closeAllModals();
+        showToast('PDF exported', 'success');
+    }).catch(err => {
+        document.body.removeChild(pdfContainer);
+        console.error('PDF generation failed:', err);
+        showToast('PDF export failed', 'error');
+    });
 }
 
 // ============================================
