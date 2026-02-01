@@ -5229,47 +5229,26 @@ function exportReport(e) {
 }
 
 function generatePdfReport(htmlContent, monthStr) {
-    // Close modal and show loading state
     closeAllModals();
-    showToast('Generating PDF...', 'info');
 
-    // Create an iframe to render the complete HTML document
-    const iframe = document.createElement('iframe');
-    iframe.style.cssText = 'position: fixed; top: 0; left: 0; width: 850px; height: 100vh; z-index: 9999; background: white; border: none;';
-    document.body.appendChild(iframe);
-
-    // Write the HTML content first, then wait for load
-    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-    iframeDoc.open();
-    iframeDoc.write(htmlContent);
-    iframeDoc.close();
-
-    // Wait for content to render
-    setTimeout(() => {
-        const pdfOptions = {
-            margin: [10, 10, 10, 10],
-            filename: `monthly-report-${monthStr}.pdf`,
-            image: { type: 'jpeg', quality: 0.95 },
-            html2canvas: {
-                scale: 2,
-                useCORS: true,
-                logging: false,
-                backgroundColor: '#ffffff',
-                windowWidth: 850
-            },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-        };
-
-        html2pdf().set(pdfOptions).from(iframeDoc.body).save().then(() => {
-            document.body.removeChild(iframe);
-            showToast('PDF exported', 'success');
-        }).catch(err => {
-            document.body.removeChild(iframe);
-            console.error('PDF generation failed:', err);
-            showToast('PDF export failed', 'error');
-        });
-    }, 500);
+    // Open report in new tab - user can use browser's Print > Save as PDF
+    // This gives exact WYSIWYG output with proper formatting
+    const newWindow = window.open('', '_blank');
+    if (newWindow) {
+        newWindow.document.write(htmlContent);
+        newWindow.document.close();
+        showToast('Report opened - use Ctrl+P to save as PDF', 'info');
+    } else {
+        // Fallback: download as HTML if popup blocked
+        const blob = new Blob([htmlContent], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `monthly-report-${monthStr}.html`;
+        a.click();
+        URL.revokeObjectURL(url);
+        showToast('Popup blocked - downloaded as HTML instead', 'warning');
+    }
 }
 
 // ============================================
