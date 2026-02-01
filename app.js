@@ -4039,26 +4039,66 @@ function generateMarkdownReport(reportData, options) {
         }
     });
 
-    // Daily Log Appendix
+    // Helper to get safe title
+    const getSafeTitle = (item) => {
+        if (item.title) return item.title;
+        if (item.projectId && item.taskId) {
+            const project = state.data.projects?.find(p => p.id === item.projectId);
+            const task = project?.tasks?.find(t => t.id === item.taskId);
+            if (task?.title) return task.title;
+        }
+        return 'Untitled Task';
+    };
+
+    // Weekly Log (replaces Daily Log Appendix)
     if (options.includeDailyAppendix && reportData.dailyBreakdown) {
-        md += `## Daily Log (Appendix)\n\n`;
+        const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        // Group by week
+        const weeks = {};
         reportData.dailyBreakdown.forEach(day => {
-            const dayDate = new Date(day.date + 'T00:00:00');
-            const dateStr = dayDate.toLocaleDateString('en-US', {
-                month: 'long', day: 'numeric', year: 'numeric'
-            });
-            md += `### ${dateStr}\n\n`;
+            const date = new Date(day.date + 'T00:00:00');
+            const weekNum = Math.ceil((date.getDate() + new Date(date.getFullYear(), date.getMonth(), 1).getDay()) / 7);
+            if (!weeks[weekNum]) weeks[weekNum] = [];
+            weeks[weekNum].push(day);
+        });
 
-            day.items.forEach(item => {
-                const project = state.data.projects?.find(p => p.id === item.projectId);
-                const projectName = project?.name || 'Standalone';
-                md += `- [x] ${item.title} *(${projectName})*\n`;
-            });
+        md += `## Weekly Activity Log\n\n`;
 
-            if (day.notes) {
-                md += `\n**Notes:** ${day.notes}\n`;
-            }
-            md += '\n';
+        Object.entries(weeks).sort(([a], [b]) => Number(a) - Number(b)).forEach(([weekNum, days]) => {
+            md += `# Week ${weekNum}\n\n`;
+
+            days.forEach(day => {
+                const dayDate = new Date(day.date + 'T00:00:00');
+                const dayName = dayNames[dayDate.getDay()];
+                const dateStr = dayDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+
+                md += `## ${dayName}, ${dateStr}\n\n`;
+
+                day.items.forEach(item => {
+                    const title = getSafeTitle(item);
+                    const project = state.data.projects?.find(p => p.id === item.projectId);
+                    const projectName = project?.name || '';
+                    const projectSuffix = projectName ? ` *(${projectName})*` : '';
+
+                    md += `- ${title}${projectSuffix}\n`;
+
+                    if (item.completionNotes) {
+                        md += `  - ${item.completionNotes}\n`;
+                    }
+                    if (item.completionLinks) {
+                        const links = item.completionLinks.split('\n').filter(l => l.trim());
+                        links.forEach(link => {
+                            md += `  - [${link.trim()}](${link.trim()})\n`;
+                        });
+                    }
+                });
+
+                if (day.notes) {
+                    md += `\n> **Notes:** ${day.notes}\n`;
+                }
+                md += '\n';
+            });
         });
     }
 
@@ -4066,7 +4106,7 @@ function generateMarkdownReport(reportData, options) {
     if (options.includeIncomplete && reportData.incompleteScheduled?.length > 0) {
         md += `## Incomplete Scheduled Items\n\n`;
         reportData.incompleteScheduled.forEach(item => {
-            md += `- [ ] ${item.title} (scheduled: ${formatDate(item.scheduledDate)})\n`;
+            md += `- [ ] ${getSafeTitle(item)} (scheduled: ${formatDate(item.scheduledDate)})\n`;
         });
         md += '\n';
     }
@@ -4075,7 +4115,7 @@ function generateMarkdownReport(reportData, options) {
     if (options.includePlanned && reportData.plannedNextMonth?.length > 0) {
         md += `## Planned for Next Month\n\n`;
         reportData.plannedNextMonth.forEach(item => {
-            md += `- ${item.title} (${formatDate(item.scheduledDate)})\n`;
+            md += `- ${getSafeTitle(item)} (${formatDate(item.scheduledDate)})\n`;
         });
         md += '\n';
     }
@@ -4084,12 +4124,18 @@ function generateMarkdownReport(reportData, options) {
 }
 
 function generateHtmlReport(reportData, options) {
-    // Calculate max items for progress bar scaling
-    const maxItems = Math.max(...reportData.projectSummaries.map(p => p.totalItems), 1);
-
     // Format generation date
     const genDate = new Date();
     const genDateStr = genDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+    // Calculate max items for progress bar scaling
+    const maxItems = Math.max(...reportData.projectSummaries.map(p => p.totalItems), 1);
+
+    // Helper to format short date
+    const shortDate = (dateStr) => {
+        const d = new Date(dateStr);
+        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    };
 
     // Helper to create ASCII progress bar
     const createProgressBar = (value, max, width = 20) => {
@@ -4097,10 +4143,83 @@ function generateHtmlReport(reportData, options) {
         return '▓'.repeat(filled) + '░'.repeat(width - filled);
     };
 
-    // Helper to format short date
-    const shortDate = (dateStr) => {
-        const d = new Date(dateStr);
-        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    // Helper to get week number within month
+    const getWeekOfMonth = (date) => {
+        const firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+        const dayOfMonth = date.getDate();
+        const firstDayOfWeek = firstDay.getDay();
+        return Math.ceil((dayOfMonth + firstDayOfWeek) / 7);
+    };
+
+    // Helper to get safe title (prevent undefined)
+    const safeTitle = (item) => {
+        if (item.title) return item.title;
+        // Try to find the task title from projects
+        if (item.projectId && item.taskId) {
+            const project = state.data.projects?.find(p => p.id === item.projectId);
+            const task = project?.tasks?.find(t => t.id === item.taskId);
+            if (task?.title) return task.title;
+        }
+        return 'Untitled Task';
+    };
+
+    // Helper to get project name
+    const getProjectName = (item) => {
+        if (item.projectName) return item.projectName;
+        if (item.projectId) {
+            const project = state.data.projects?.find(p => p.id === item.projectId);
+            return project?.name || null;
+        }
+        return null;
+    };
+
+    // Build weekly breakdown from daily data
+    const buildWeeklyBreakdown = () => {
+        if (!reportData.dailyBreakdown || reportData.dailyBreakdown.length === 0) {
+            return [];
+        }
+
+        const weeks = {};
+        reportData.dailyBreakdown.forEach(day => {
+            const date = new Date(day.date + 'T00:00:00');
+            const weekNum = getWeekOfMonth(date);
+            const weekStart = new Date(date);
+            weekStart.setDate(date.getDate() - date.getDay());
+            const weekEnd = new Date(weekStart);
+            weekEnd.setDate(weekStart.getDate() + 6);
+
+            const weekKey = `week-${weekNum}`;
+            if (!weeks[weekKey]) {
+                weeks[weekKey] = {
+                    weekNum,
+                    weekStart,
+                    weekEnd,
+                    days: []
+                };
+            }
+            weeks[weekKey].days.push(day);
+        });
+
+        return Object.values(weeks).sort((a, b) => a.weekNum - b.weekNum);
+    };
+
+    // Build calendar data
+    const buildCalendarData = () => {
+        const year = reportData.year;
+        const month = reportData.month - 1;
+        const firstDay = new Date(year, month, 1);
+        const lastDay = new Date(year, month + 1, 0);
+        const startPad = firstDay.getDay();
+        const totalDays = lastDay.getDate();
+
+        const activityMap = {};
+        if (reportData.dailyBreakdown) {
+            reportData.dailyBreakdown.forEach(day => {
+                activityMap[day.date] = day.items.length;
+            });
+        }
+
+        return { year, month, startPad, totalDays, activityMap };
     };
 
     const styles = `
@@ -4504,6 +4623,227 @@ function generateHtmlReport(reportData, options) {
                 border-bottom-color: #7dd3fc;
             }
 
+            /* Weekly Structure */
+            .week-section {
+                margin: 30px 0;
+                page-break-inside: avoid;
+            }
+
+            .week-header {
+                font-size: 18px;
+                font-weight: 700;
+                color: #1e293b;
+                padding: 12px 0;
+                border-bottom: 2px solid #1e293b;
+                margin-bottom: 20px;
+            }
+
+            .day-section {
+                margin: 20px 0 20px 10px;
+                padding-left: 15px;
+                border-left: 3px solid #e2e8f0;
+            }
+
+            .day-header {
+                font-size: 14px;
+                font-weight: 600;
+                color: #334155;
+                margin-bottom: 12px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .day-date {
+                color: #64748b;
+                font-weight: 400;
+            }
+
+            .day-count {
+                background: #f1f5f9;
+                color: #64748b;
+                font-size: 11px;
+                padding: 2px 8px;
+                border-radius: 10px;
+            }
+
+            .task-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .task-list > li {
+                padding: 8px 0;
+                border-bottom: 1px solid #f1f5f9;
+            }
+
+            .task-list > li:last-child {
+                border-bottom: none;
+            }
+
+            .task-main {
+                display: flex;
+                align-items: baseline;
+                gap: 8px;
+            }
+
+            .task-bullet {
+                color: #16a34a;
+                font-weight: 600;
+            }
+
+            .task-name {
+                color: #1e293b;
+                font-weight: 500;
+            }
+
+            .task-project {
+                color: #64748b;
+                font-size: 11px;
+            }
+
+            .task-meta {
+                list-style: none;
+                padding: 4px 0 0 20px;
+                margin: 0;
+            }
+
+            .task-meta li {
+                font-size: 11px;
+                color: #64748b;
+                padding: 2px 0;
+            }
+
+            .task-meta li::before {
+                content: "└─ ";
+                color: #cbd5e1;
+            }
+
+            .task-meta a {
+                color: #0ea5e9;
+                text-decoration: none;
+            }
+
+            .day-notes {
+                background: #f8fafc;
+                border-left: 3px solid #0ea5e9;
+                padding: 10px 15px;
+                margin-top: 12px;
+                font-size: 12px;
+                color: #475569;
+                font-style: italic;
+            }
+
+            .day-notes-label {
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #94a3b8;
+                font-style: normal;
+                margin-bottom: 4px;
+            }
+
+            /* Calendar View */
+            .calendar-section {
+                margin: 40px 0;
+                page-break-before: always;
+            }
+
+            .calendar-grid {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                gap: 2px;
+                background: #e2e8f0;
+                border: 1px solid #e2e8f0;
+            }
+
+            .calendar-header {
+                background: #1e293b;
+                color: #ffffff;
+                padding: 8px 4px;
+                text-align: center;
+                font-size: 10px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .calendar-day {
+                background: #ffffff;
+                padding: 8px;
+                min-height: 50px;
+                position: relative;
+            }
+
+            .calendar-day.empty {
+                background: #f8fafc;
+            }
+
+            .calendar-day-num {
+                font-size: 12px;
+                font-weight: 500;
+                color: #64748b;
+            }
+
+            .calendar-day.has-activity .calendar-day-num {
+                color: #1e293b;
+                font-weight: 600;
+            }
+
+            .calendar-activity {
+                position: absolute;
+                bottom: 4px;
+                left: 4px;
+                right: 4px;
+                height: 4px;
+                background: #e2e8f0;
+                border-radius: 2px;
+            }
+
+            .calendar-activity-bar {
+                height: 100%;
+                background: #0ea5e9;
+                border-radius: 2px;
+            }
+
+            .calendar-count {
+                position: absolute;
+                top: 4px;
+                right: 4px;
+                background: #0ea5e9;
+                color: #ffffff;
+                font-size: 9px;
+                font-weight: 600;
+                padding: 1px 4px;
+                border-radius: 3px;
+            }
+
+            .calendar-legend {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 15px;
+                font-size: 11px;
+                color: #64748b;
+            }
+
+            .legend-item {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+
+            .legend-dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 2px;
+            }
+
+            .legend-dot.low { background: #bae6fd; }
+            .legend-dot.medium { background: #38bdf8; }
+            .legend-dot.high { background: #0284c7; }
+
             .ai-summary-content {
                 font-size: 12px;
                 line-height: 1.7;
@@ -4609,9 +4949,10 @@ function generateHtmlReport(reportData, options) {
 
             project.tasks.forEach(task => {
                 const date = shortDate(task.completedAt);
+                const title = safeTitle(task);
                 html += `<div class="task-item">
                     <span class="task-check">✓</span>
-                    <span class="task-title">${task.title}</span>
+                    <span class="task-title">${title}</span>
                     <span class="task-date">${date}</span>`;
 
                 if (task.completionNotes) {
@@ -4640,7 +4981,7 @@ function generateHtmlReport(reportData, options) {
                     html += `<div class="subtask-item">
                         <span class="task-check">✓</span>
                         <span class="subtask-parent">${parentTitle} ›</span>
-                        <span class="task-title" style="margin-left: 5px;">${subtask.title}</span>
+                        <span class="task-title" style="margin-left: 5px;">${safeTitle(subtask)}</span>
                         <span class="task-date">${date}</span>`;
 
                     if (subtask.completionNotes) {
@@ -4657,41 +4998,133 @@ function generateHtmlReport(reportData, options) {
         html += `</div>`;
     });
 
-    // Daily Log Appendix
+    // Weekly Activity Log (replaces Daily Log Appendix)
     if (options.includeDailyAppendix && reportData.dailyBreakdown && reportData.dailyBreakdown.length > 0) {
-        // Calculate max for daily bars
-        const maxDaily = Math.max(...reportData.dailyBreakdown.map(d => d.items.length), 1);
+        const weeks = buildWeeklyBreakdown();
+        const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-        html += `<div class="daily-log">
-            <div class="section-header">Daily Activity Log</div>`;
+        html += `<div class="section-header">Weekly Activity Log</div>`;
 
-        reportData.dailyBreakdown.forEach(day => {
-            const dayDate = new Date(day.date + 'T00:00:00');
-            const dateStr = dayDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-            const barWidth = Math.max(1, Math.round((day.items.length / maxDaily) * 8));
-            const bar = '█'.repeat(barWidth);
+        weeks.forEach(week => {
+            const weekStartStr = week.weekStart.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            const weekEndStr = week.weekEnd.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 
-            html += `<div class="daily-row">
-                <span class="daily-date">${dateStr}</span>
-                <span class="daily-bar">${bar}</span>
-                <span class="daily-count">${day.items.length} item${day.items.length !== 1 ? 's' : ''}</span>
-            </div>`;
+            html += `<div class="week-section">
+                <div class="week-header">Week ${week.weekNum} (${weekStartStr} - ${weekEndStr})</div>`;
 
-            html += `<div class="daily-detail"><ul>`;
-            day.items.forEach(item => {
-                const project = state.data.projects?.find(p => p.id === item.projectId);
-                const projectName = project?.name || '';
-                const projectSuffix = projectName ? ` (${projectName})` : '';
-                html += `<li>${item.title}${projectSuffix}</li>`;
+            week.days.forEach(day => {
+                const dayDate = new Date(day.date + 'T00:00:00');
+                const dayName = dayNames[dayDate.getDay()];
+                const dateStr = dayDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+
+                html += `<div class="day-section">
+                    <div class="day-header">
+                        <span>${dayName}</span>
+                        <span class="day-date">${dateStr}</span>
+                        <span class="day-count">${day.items.length} task${day.items.length !== 1 ? 's' : ''}</span>
+                    </div>
+                    <ul class="task-list">`;
+
+                day.items.forEach(item => {
+                    const title = safeTitle(item);
+                    const projectName = getProjectName(item);
+
+                    html += `<li>
+                        <div class="task-main">
+                            <span class="task-bullet">✓</span>
+                            <span class="task-name">${title}</span>
+                            ${projectName ? `<span class="task-project">(${projectName})</span>` : ''}
+                        </div>`;
+
+                    // Add notes and links as sub-bullets
+                    if (item.completionNotes || item.completionLinks) {
+                        html += `<ul class="task-meta">`;
+                        if (item.completionNotes) {
+                            html += `<li>${item.completionNotes}</li>`;
+                        }
+                        if (item.completionLinks) {
+                            const links = item.completionLinks.split('\n').filter(l => l.trim());
+                            links.forEach(link => {
+                                html += `<li><a href="${link.trim()}" target="_blank">${link.trim()}</a></li>`;
+                            });
+                        }
+                        html += `</ul>`;
+                    }
+
+                    html += `</li>`;
+                });
+
+                html += `</ul>`;
+
+                // Day notes
+                if (day.notes) {
+                    html += `<div class="day-notes">
+                        <div class="day-notes-label">Notes</div>
+                        ${day.notes}
+                    </div>`;
+                }
+
+                html += `</div>`;
             });
-            html += `</ul></div>`;
 
-            if (day.notes) {
-                html += `<div class="daily-notes-block">${day.notes}</div>`;
-            }
+            html += `</div>`;
+        });
+    }
+
+    // Calendar View
+    if (options.includeDailyAppendix) {
+        const cal = buildCalendarData();
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                           'July', 'August', 'September', 'October', 'November', 'December'];
+        const dayHeaders = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+        // Find max activity for scaling
+        const maxActivity = Math.max(...Object.values(cal.activityMap), 1);
+
+        html += `<div class="calendar-section">
+            <div class="section-header">Monthly Calendar - ${monthNames[cal.month]} ${cal.year}</div>
+            <div class="calendar-grid">`;
+
+        // Day headers
+        dayHeaders.forEach(day => {
+            html += `<div class="calendar-header">${day}</div>`;
         });
 
-        html += `</div>`;
+        // Empty cells for padding before first day
+        for (let i = 0; i < cal.startPad; i++) {
+            html += `<div class="calendar-day empty"></div>`;
+        }
+
+        // Days of the month
+        for (let day = 1; day <= cal.totalDays; day++) {
+            const dateStr = `${cal.year}-${String(cal.month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+            const activity = cal.activityMap[dateStr] || 0;
+            const hasActivity = activity > 0;
+            const barWidth = hasActivity ? Math.round((activity / maxActivity) * 100) : 0;
+
+            html += `<div class="calendar-day ${hasActivity ? 'has-activity' : ''}">
+                <div class="calendar-day-num">${day}</div>
+                ${hasActivity ? `<div class="calendar-count">${activity}</div>` : ''}
+                <div class="calendar-activity">
+                    <div class="calendar-activity-bar" style="width: ${barWidth}%"></div>
+                </div>
+            </div>`;
+        }
+
+        // Pad remaining cells
+        const totalCells = cal.startPad + cal.totalDays;
+        const remainingCells = (7 - (totalCells % 7)) % 7;
+        for (let i = 0; i < remainingCells; i++) {
+            html += `<div class="calendar-day empty"></div>`;
+        }
+
+        html += `</div>
+            <div class="calendar-legend">
+                <div class="legend-item"><div class="legend-dot low"></div> Low activity</div>
+                <div class="legend-item"><div class="legend-dot medium"></div> Medium activity</div>
+                <div class="legend-item"><div class="legend-dot high"></div> High activity</div>
+            </div>
+        </div>`;
     }
 
     // Incomplete Scheduled Items
@@ -4701,7 +5134,7 @@ function generateHtmlReport(reportData, options) {
             <ul class="status-list">`;
         reportData.incompleteScheduled.forEach(item => {
             html += `<li class="status-incomplete">
-                <span>${item.title}</span>
+                <span>${safeTitle(item)}</span>
                 <span class="status-date">${shortDate(item.scheduledDate)}</span>
             </li>`;
         });
@@ -4715,7 +5148,7 @@ function generateHtmlReport(reportData, options) {
             <ul class="status-list">`;
         reportData.plannedNextMonth.forEach(item => {
             html += `<li class="status-planned">
-                <span>${item.title}</span>
+                <span>${safeTitle(item)}</span>
                 <span class="status-date">${shortDate(item.scheduledDate)}</span>
             </li>`;
         });
