@@ -4744,21 +4744,20 @@ function generateHtmlReport(reportData, options) {
                 margin-bottom: 4px;
             }
 
-            /* Calendar View */
+            /* Calendar View - Table-based for PDF compatibility */
             .calendar-section {
                 margin: 40px 0;
                 page-break-before: always;
             }
 
-            .calendar-grid {
-                display: grid;
-                grid-template-columns: repeat(7, 1fr);
-                gap: 2px;
-                background: #e2e8f0;
+            .calendar-table {
+                width: 100%;
+                border-collapse: collapse;
                 border: 1px solid #e2e8f0;
+                table-layout: fixed;
             }
 
-            .calendar-header {
+            .calendar-table th {
                 background: #1e293b;
                 color: #ffffff;
                 padding: 8px 4px;
@@ -4767,16 +4766,19 @@ function generateHtmlReport(reportData, options) {
                 font-weight: 600;
                 text-transform: uppercase;
                 letter-spacing: 1px;
+                border: 1px solid #e2e8f0;
             }
 
-            .calendar-day {
+            .calendar-table td {
                 background: #ffffff;
                 padding: 8px;
-                min-height: 50px;
-                position: relative;
+                height: 50px;
+                vertical-align: top;
+                border: 1px solid #e2e8f0;
+                width: 14.28%;
             }
 
-            .calendar-day.empty {
+            .calendar-table td.empty {
                 background: #f8fafc;
             }
 
@@ -4786,31 +4788,14 @@ function generateHtmlReport(reportData, options) {
                 color: #64748b;
             }
 
-            .calendar-day.has-activity .calendar-day-num {
+            .calendar-table td.has-activity .calendar-day-num {
                 color: #1e293b;
                 font-weight: 600;
             }
 
-            .calendar-activity {
-                position: absolute;
-                bottom: 4px;
-                left: 4px;
-                right: 4px;
-                height: 4px;
-                background: #e2e8f0;
-                border-radius: 2px;
-            }
-
-            .calendar-activity-bar {
-                height: 100%;
-                background: #0ea5e9;
-                border-radius: 2px;
-            }
-
             .calendar-count {
-                position: absolute;
-                top: 4px;
-                right: 4px;
+                display: inline-block;
+                float: right;
                 background: #0ea5e9;
                 color: #ffffff;
                 font-size: 9px;
@@ -4819,25 +4804,38 @@ function generateHtmlReport(reportData, options) {
                 border-radius: 3px;
             }
 
+            .calendar-bar {
+                margin-top: 4px;
+                height: 4px;
+                background: #e2e8f0;
+                border-radius: 2px;
+            }
+
+            .calendar-bar-fill {
+                height: 100%;
+                background: #0ea5e9;
+                border-radius: 2px;
+            }
+
             .calendar-legend {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
+                text-align: center;
                 margin-top: 15px;
                 font-size: 11px;
                 color: #64748b;
             }
 
             .legend-item {
-                display: flex;
-                align-items: center;
-                gap: 6px;
+                display: inline-block;
+                margin: 0 10px;
             }
 
             .legend-dot {
+                display: inline-block;
                 width: 10px;
                 height: 10px;
                 border-radius: 2px;
+                margin-right: 4px;
+                vertical-align: middle;
             }
 
             .legend-dot.low { background: #bae6fd; }
@@ -5071,7 +5069,7 @@ function generateHtmlReport(reportData, options) {
         });
     }
 
-    // Calendar View
+    // Calendar View (using table for PDF compatibility)
     if (options.includeDailyAppendix) {
         const cal = buildCalendarData();
         const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
@@ -5079,50 +5077,59 @@ function generateHtmlReport(reportData, options) {
         const dayHeaders = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
         // Find max activity for scaling
-        const maxActivity = Math.max(...Object.values(cal.activityMap), 1);
+        const activityValues = Object.values(cal.activityMap);
+        const maxActivity = activityValues.length > 0 ? Math.max(...activityValues, 1) : 1;
 
         html += `<div class="calendar-section">
             <div class="section-header">Monthly Calendar - ${monthNames[cal.month]} ${cal.year}</div>
-            <div class="calendar-grid">`;
+            <table class="calendar-table">
+                <thead>
+                    <tr>`;
 
         // Day headers
         dayHeaders.forEach(day => {
-            html += `<div class="calendar-header">${day}</div>`;
+            html += `<th>${day}</th>`;
         });
+
+        html += `</tr></thead><tbody><tr>`;
 
         // Empty cells for padding before first day
         for (let i = 0; i < cal.startPad; i++) {
-            html += `<div class="calendar-day empty"></div>`;
+            html += `<td class="empty"></td>`;
         }
 
         // Days of the month
+        let cellCount = cal.startPad;
         for (let day = 1; day <= cal.totalDays; day++) {
             const dateStr = `${cal.year}-${String(cal.month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
             const activity = cal.activityMap[dateStr] || 0;
             const hasActivity = activity > 0;
             const barWidth = hasActivity ? Math.round((activity / maxActivity) * 100) : 0;
 
-            html += `<div class="calendar-day ${hasActivity ? 'has-activity' : ''}">
-                <div class="calendar-day-num">${day}</div>
-                ${hasActivity ? `<div class="calendar-count">${activity}</div>` : ''}
-                <div class="calendar-activity">
-                    <div class="calendar-activity-bar" style="width: ${barWidth}%"></div>
-                </div>
-            </div>`;
+            html += `<td class="${hasActivity ? 'has-activity' : ''}">
+                <span class="calendar-day-num">${day}</span>
+                ${hasActivity ? `<span class="calendar-count">${activity}</span>` : ''}
+                ${hasActivity ? `<div class="calendar-bar"><div class="calendar-bar-fill" style="width: ${barWidth}%"></div></div>` : ''}
+            </td>`;
+
+            cellCount++;
+            // Start new row after every 7 cells
+            if (cellCount % 7 === 0 && day < cal.totalDays) {
+                html += `</tr><tr>`;
+            }
         }
 
         // Pad remaining cells
-        const totalCells = cal.startPad + cal.totalDays;
-        const remainingCells = (7 - (totalCells % 7)) % 7;
+        const remainingCells = (7 - (cellCount % 7)) % 7;
         for (let i = 0; i < remainingCells; i++) {
-            html += `<div class="calendar-day empty"></div>`;
+            html += `<td class="empty"></td>`;
         }
 
-        html += `</div>
+        html += `</tr></tbody></table>
             <div class="calendar-legend">
-                <div class="legend-item"><div class="legend-dot low"></div> Low activity</div>
-                <div class="legend-item"><div class="legend-dot medium"></div> Medium activity</div>
-                <div class="legend-item"><div class="legend-dot high"></div> High activity</div>
+                <span class="legend-item"><span class="legend-dot low"></span> Low</span>
+                <span class="legend-item"><span class="legend-dot medium"></span> Medium</span>
+                <span class="legend-item"><span class="legend-dot high"></span> High</span>
             </div>
         </div>`;
     }
@@ -5231,41 +5238,38 @@ function generatePdfReport(htmlContent, monthStr) {
     iframe.style.cssText = 'position: fixed; top: 0; left: 0; width: 850px; height: 100vh; z-index: 9999; background: white; border: none;';
     document.body.appendChild(iframe);
 
-    // Wait for iframe to be ready
-    iframe.onload = function() {
-        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-
-        // Give styles time to apply
-        setTimeout(() => {
-            const pdfOptions = {
-                margin: [10, 10, 10, 10],
-                filename: `monthly-report-${monthStr}.pdf`,
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: {
-                    scale: 2,
-                    useCORS: true,
-                    logging: true,
-                    backgroundColor: '#ffffff'
-                },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-
-            html2pdf().set(pdfOptions).from(iframeDoc.body).save().then(() => {
-                document.body.removeChild(iframe);
-                showToast('PDF exported', 'success');
-            }).catch(err => {
-                document.body.removeChild(iframe);
-                console.error('PDF generation failed:', err);
-                showToast('PDF export failed', 'error');
-            });
-        }, 300);
-    };
-
-    // Write the HTML content to iframe
+    // Write the HTML content first, then wait for load
     const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
     iframeDoc.open();
     iframeDoc.write(htmlContent);
     iframeDoc.close();
+
+    // Wait for content to render
+    setTimeout(() => {
+        const pdfOptions = {
+            margin: [10, 10, 10, 10],
+            filename: `monthly-report-${monthStr}.pdf`,
+            image: { type: 'jpeg', quality: 0.95 },
+            html2canvas: {
+                scale: 2,
+                useCORS: true,
+                logging: false,
+                backgroundColor: '#ffffff',
+                windowWidth: 850
+            },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+        };
+
+        html2pdf().set(pdfOptions).from(iframeDoc.body).save().then(() => {
+            document.body.removeChild(iframe);
+            showToast('PDF exported', 'success');
+        }).catch(err => {
+            document.body.removeChild(iframe);
+            console.error('PDF generation failed:', err);
+            showToast('PDF export failed', 'error');
+        });
+    }, 500);
 }
 
 // ============================================
