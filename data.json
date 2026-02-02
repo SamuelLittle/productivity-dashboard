@@ -849,6 +849,14 @@
               "completedAt": "2026-01-30T00:58:44.992Z",
               "completionNotes": "2 nucleofections of 2M c/mL using CM137 for AAVS1 and CD96",
               "completionLinks": ""
+            },
+            {
+              "id": "ml4pgsawf626sm7w3x4",
+              "title": "Flow to assess KO and NK health",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-02T05:04:37.448Z"
             }
           ]
         },
@@ -2099,6 +2107,14 @@
         "time": null,
         "scheduledAt": "2026-01-31T17:23:15.421Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mkyn5q9752ye45ab8zw",
+        "subtaskId": "ml4pgsawf626sm7w3x4",
+        "time": null,
+        "scheduledAt": "2026-02-02T05:04:37.448Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-05": [
@@ -2801,7 +2817,7 @@
       "completedAt": "2026-01-31T17:29:03.003Z"
     }
   ],
-  "lastUpdated": "2026-02-02T05:01:36.941Z",
+  "lastUpdated": "2026-02-02T05:04:37.448Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
