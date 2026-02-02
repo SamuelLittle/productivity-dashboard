@@ -1376,6 +1376,17 @@
         "completed": false,
         "createdAt": "2026-01-27T23:31:06.516Z"
       }
+    ],
+    "2026-02-02": [
+      {
+        "id": "ml4pbss2kwx8qxeh7m",
+        "title": "Moffat/Eidenschenk Lab meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-02-02T05:00:44.786Z",
+        "time": "14:00"
+      }
     ]
   },
   "scheduledItems": {
@@ -2781,7 +2792,7 @@
       "completedAt": "2026-01-31T17:29:03.003Z"
     }
   ],
-  "lastUpdated": "2026-01-31T19:50:28.255Z",
+  "lastUpdated": "2026-02-02T05:00:44.786Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
