@@ -1410,7 +1410,9 @@
         "priority": "medium",
         "completed": false,
         "createdAt": "2026-02-02T05:01:36.941Z",
-        "time": "15:00"
+        "time": "15:00",
+        "notes": "Need to make some slides.",
+        "links": ""
       }
     ]
   },
@@ -2835,7 +2837,7 @@
       "completedAt": "2026-01-31T17:29:03.003Z"
     }
   ],
-  "lastUpdated": "2026-02-02T05:05:34.046Z",
+  "lastUpdated": "2026-02-02T16:31:10.617Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
