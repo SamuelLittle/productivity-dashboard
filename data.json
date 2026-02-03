@@ -1408,11 +1408,14 @@
         "title": "Cytokine Screen for T Cells",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-02-02T05:01:36.941Z",
         "time": "15:00",
         "notes": "Need to make some slides.",
-        "links": ""
+        "links": "",
+        "completedAt": "2026-02-03T21:08:33.305Z",
+        "completionNotes": "",
+        "completionLinks": "https://docs.google.com/document/d/1d0AbkEB2o1AW99RlwtHmIdzDEbO-_3IzrPtNw7lMc4s/edit?tab=t.0"
       }
     ]
   },
@@ -2835,9 +2838,17 @@
       "subtaskId": "mkxg27fps7cx43occe",
       "title": "Media Swap",
       "completedAt": "2026-01-31T17:29:03.003Z"
+    },
+    {
+      "id": "ml4pcx0s1mssrix19dcj",
+      "title": "Cytokine Screen for T Cells",
+      "completedAt": "2026-02-03T21:08:33.305Z",
+      "completionNotes": "",
+      "completionLinks": "https://docs.google.com/document/d/1d0AbkEB2o1AW99RlwtHmIdzDEbO-_3IzrPtNw7lMc4s/edit?tab=t.0",
+      "date": "2026-02-02"
     }
   ],
-  "lastUpdated": "2026-02-02T16:31:10.617Z",
+  "lastUpdated": "2026-02-03T21:08:33.305Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
