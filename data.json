@@ -1200,6 +1200,14 @@
               "completedAt": "2026-02-03T21:08:50.134Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "ml73d2hvaxtnl7f8xcf",
+              "title": "Prep and submit plates 5-8",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-03T21:09:11.012Z"
             }
           ]
         },
@@ -2155,6 +2163,14 @@
         "time": null,
         "scheduledAt": "2026-02-02T05:04:37.448Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mkmsy72n9wkp209y165",
+        "subtaskId": "ml73d2hvaxtnl7f8xcf",
+        "time": null,
+        "scheduledAt": "2026-02-03T21:09:11.012Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-05": [
@@ -2919,7 +2935,7 @@
       "date": "2026-02-02"
     }
   ],
-  "lastUpdated": "2026-02-03T21:08:53.079Z",
+  "lastUpdated": "2026-02-03T21:09:11.012Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
