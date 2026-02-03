@@ -1455,8 +1455,11 @@
         "title": "1 blood coming",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-01-27T23:31:06.516Z"
+        "completed": true,
+        "createdAt": "2026-01-27T23:31:06.516Z",
+        "completedAt": "2026-02-03T21:13:22.545Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-02-02": [
@@ -3022,9 +3025,17 @@
       "completionNotes": "Need to test modified protocol to reduce cross-contam.\nneed to replace IFNg IL18 and TNFa",
       "completionLinks": "",
       "date": "2026-02-03"
+    },
+    {
+      "id": "mkx8cmfozfohpaxcob",
+      "title": "1 blood coming",
+      "completedAt": "2026-02-03T21:13:22.545Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-03"
     }
   ],
-  "lastUpdated": "2026-02-03T21:13:15.605Z",
+  "lastUpdated": "2026-02-03T21:13:22.545Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
