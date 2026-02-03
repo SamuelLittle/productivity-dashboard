@@ -1399,9 +1399,12 @@
         "title": "Moffat/Eidenschenk Lab meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-02-02T05:00:44.786Z",
-        "time": "14:00"
+        "time": "14:00",
+        "completedAt": "2026-02-03T21:08:37.605Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "ml4pcx0s1mssrix19dcj",
@@ -2846,9 +2849,17 @@
       "completionNotes": "",
       "completionLinks": "https://docs.google.com/document/d/1d0AbkEB2o1AW99RlwtHmIdzDEbO-_3IzrPtNw7lMc4s/edit?tab=t.0",
       "date": "2026-02-02"
+    },
+    {
+      "id": "ml4pbss2kwx8qxeh7m",
+      "title": "Moffat/Eidenschenk Lab meeting",
+      "completedAt": "2026-02-03T21:08:37.605Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-02"
     }
   ],
-  "lastUpdated": "2026-02-03T21:08:33.305Z",
+  "lastUpdated": "2026-02-03T21:08:37.605Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
