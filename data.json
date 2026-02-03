@@ -1244,8 +1244,11 @@
               "title": "Prep and submit plates 5-8",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-03T21:09:11.012Z"
+              "completed": true,
+              "createdAt": "2026-02-03T21:09:11.012Z",
+              "completedAt": "2026-02-03T22:15:01.553Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "ml73ds6hu2udalgj9d",
@@ -2203,7 +2206,10 @@
         "subtaskId": "ml73d2hvaxtnl7f8xcf",
         "time": null,
         "scheduledAt": "2026-02-03T21:09:11.012Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-03T22:15:01.553Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -3033,9 +3039,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-03"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkmsy72n9wkp209y165",
+      "subtaskId": "ml73d2hvaxtnl7f8xcf",
+      "completedAt": "2026-02-03T22:15:01.553Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-03"
     }
   ],
-  "lastUpdated": "2026-02-03T21:13:22.545Z",
+  "lastUpdated": "2026-02-03T22:15:01.553Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
