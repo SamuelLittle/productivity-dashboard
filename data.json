@@ -269,8 +269,11 @@
               "title": "cDNA Check",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-31T17:17:11.244Z"
+              "completed": true,
+              "createdAt": "2026-01-31T17:17:11.244Z",
+              "completedAt": "2026-02-03T21:08:45.778Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -2091,7 +2094,10 @@
         "subtaskId": "ml2kr5xoslsjkrhh9a",
         "time": null,
         "scheduledAt": "2026-01-31T17:17:11.244Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-03T21:08:45.778Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -2872,9 +2878,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-02"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mklusog2097tkm380gri",
+      "subtaskId": "ml2kr5xoslsjkrhh9a",
+      "completedAt": "2026-02-03T21:08:45.778Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-02"
     }
   ],
-  "lastUpdated": "2026-02-03T21:08:41.952Z",
+  "lastUpdated": "2026-02-03T21:08:45.778Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
