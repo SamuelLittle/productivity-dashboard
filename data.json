@@ -459,7 +459,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-22T15:44:55.339Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "ml8n30vvhp5ihiy5xtf",
+              "title": "Make materials list for Flex pilot",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-04T23:09:00.860Z"
+            }
+          ]
         },
         {
           "id": "mkprwk8ffdngatq3zsn",
@@ -2616,6 +2625,14 @@
         "time": null,
         "scheduledAt": "2026-02-04T22:57:24.010Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mkpmhuejxdahbqqygu",
+        "subtaskId": "ml8n30vvhp5ihiy5xtf",
+        "time": null,
+        "scheduledAt": "2026-02-04T23:09:00.860Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -3505,7 +3522,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-02-04T23:08:30.793Z",
+  "lastUpdated": "2026-02-04T23:09:00.860Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
