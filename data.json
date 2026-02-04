@@ -881,8 +881,11 @@
               "title": "Flow to assess KO and NK health",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-02T05:04:37.448Z"
+              "completed": true,
+              "createdAt": "2026-02-02T05:04:37.448Z",
+              "completedAt": "2026-02-04T01:38:05.972Z",
+              "completionNotes": "Ran flow - need to analyze data\n",
+              "completionLinks": ""
             }
           ]
         },
@@ -2198,7 +2201,10 @@
         "subtaskId": "ml4pgsawf626sm7w3x4",
         "time": null,
         "scheduledAt": "2026-02-02T05:04:37.448Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-04T01:38:05.972Z",
+        "completionNotes": "Ran flow - need to analyze data\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -3048,9 +3054,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-03"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mkyn5q9752ye45ab8zw",
+      "subtaskId": "ml4pgsawf626sm7w3x4",
+      "completedAt": "2026-02-04T01:38:05.972Z",
+      "completionNotes": "Ran flow - need to analyze data\n",
+      "completionLinks": "",
+      "date": "2026-02-03"
     }
   ],
-  "lastUpdated": "2026-02-03T22:15:01.553Z",
+  "lastUpdated": "2026-02-04T01:38:05.972Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
