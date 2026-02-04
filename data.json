@@ -638,6 +638,15 @@
           "completedAt": "2026-02-04T17:09:56.091Z",
           "completionNotes": "",
           "completionLinks": ""
+        },
+        {
+          "id": "ml8dfjbquh1tf1gtbo",
+          "title": "T cell pilot",
+          "description": "Modified cell washing protocol for T cell SMARTseq",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-02-04T18:38:48.471Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [
@@ -2383,6 +2392,14 @@
         "time": null,
         "scheduledAt": "2026-02-03T21:09:44.297Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "ml8dfjbquh1tf1gtbo",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-02-04T18:38:48.471Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-04": [
@@ -3296,7 +3313,7 @@
       "date": "2026-02-04"
     }
   ],
-  "lastUpdated": "2026-02-04T18:38:08.677Z",
+  "lastUpdated": "2026-02-04T18:38:48.471Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
