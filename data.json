@@ -646,7 +646,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-02-04T18:38:48.471Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "ml8dg7md718oaruj5lm",
+              "title": "Thaw T cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-04T18:39:19.957Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [
@@ -2478,6 +2487,14 @@
         "time": null,
         "scheduledAt": "2026-02-02T05:05:34.046Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "ml8dfjbquh1tf1gtbo",
+        "subtaskId": "ml8dg7md718oaruj5lm",
+        "time": null,
+        "scheduledAt": "2026-02-04T18:39:19.957Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -3313,7 +3330,7 @@
       "date": "2026-02-04"
     }
   ],
-  "lastUpdated": "2026-02-04T18:38:48.471Z",
+  "lastUpdated": "2026-02-04T18:39:19.957Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
