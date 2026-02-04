@@ -2391,9 +2391,7 @@
         "time": null,
         "scheduledAt": "2026-02-03T21:09:44.297Z",
         "completedOnDay": false
-      }
-    ],
-    "2026-02-04": [
+      },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "ml2l62osbaz3iif86w6",
@@ -2401,7 +2399,9 @@
         "time": null,
         "scheduledAt": "2026-02-02T05:05:34.046Z",
         "completedOnDay": false
-      },
+      }
+    ],
+    "2026-02-04": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "ml2kttyffq66yk0c0tn",
