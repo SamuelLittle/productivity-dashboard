@@ -1148,8 +1148,11 @@
               "title": "Make Culture plan",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-03T21:11:23.816Z"
+              "completed": true,
+              "createdAt": "2026-02-03T21:11:23.816Z",
+              "completedAt": "2026-02-04T01:38:09.003Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -2242,7 +2245,10 @@
         "subtaskId": "ml73fwyvi6edk6nwfx",
         "time": null,
         "scheduledAt": "2026-02-03T21:11:34.703Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-04T01:38:09.003Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -3063,9 +3069,18 @@
       "completionNotes": "Ran flow - need to analyze data\n",
       "completionLinks": "",
       "date": "2026-02-03"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "ml73fwyvi6edk6nwfx",
+      "completedAt": "2026-02-04T01:38:09.003Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-03"
     }
   ],
-  "lastUpdated": "2026-02-04T01:38:05.972Z",
+  "lastUpdated": "2026-02-04T01:38:09.003Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
