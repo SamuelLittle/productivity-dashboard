@@ -652,8 +652,11 @@
               "title": "Thaw T cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-04T18:39:19.957Z"
+              "completed": true,
+              "createdAt": "2026-02-04T18:39:19.957Z",
+              "completedAt": "2026-02-04T22:52:05.133Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "ml8dglzrb9783i9yz7p",
@@ -2541,7 +2544,10 @@
         "subtaskId": "ml8dg7md718oaruj5lm",
         "time": null,
         "scheduledAt": "2026-02-04T18:39:19.957Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-04T22:52:05.133Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -3402,9 +3408,18 @@
       "completionNotes": "Need to make more detailed protocol for screening workflow",
       "completionLinks": "",
       "date": "2026-02-04"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "ml8dfjbquh1tf1gtbo",
+      "subtaskId": "ml8dg7md718oaruj5lm",
+      "completedAt": "2026-02-04T22:52:05.133Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-04"
     }
   ],
-  "lastUpdated": "2026-02-04T21:13:55.656Z",
+  "lastUpdated": "2026-02-04T22:52:05.133Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
