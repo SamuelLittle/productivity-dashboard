@@ -920,6 +920,15 @@
           "completedAt": "2026-01-29T17:29:22.892Z",
           "completionNotes": "Need to make follow up list showing NK expressed proteins and list of donor hit rate for proteins",
           "completionLinks": ""
+        },
+        {
+          "id": "ml7hsagjyud5rcxh2r",
+          "title": "Viral Transduction of NK cells - Research",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-02-04T03:52:55.795Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -2295,6 +2304,14 @@
         "scheduledAt": "2026-02-04T01:38:39.628Z",
         "completedOnDay": true,
         "completedAt": "2026-02-04T01:38:54.993Z"
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "ml7hsagjyud5rcxh2r",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-02-04T03:52:55.796Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-05": [
@@ -3167,7 +3184,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-02-04T03:52:24.488Z",
+  "lastUpdated": "2026-02-04T03:52:55.796Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
