@@ -490,7 +490,7 @@
           "title": "Monocyte Pilot with RNA extraction",
           "description": "Repeat monocyte pilot for SMARTseq3 using RNA extraction",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-28T03:09:18.705Z",
           "subtasks": [
             {
@@ -500,7 +500,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-28T03:11:37.350Z",
-              "completedAt": "2026-01-29T02:25:04.457Z",
+              "completedAt": "2026-02-04T23:07:44.691Z",
               "completionNotes": "Isolated ~45M monocytes from whole blood\n",
               "completionLinks": ""
             },
@@ -511,7 +511,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-28T03:11:55.351Z",
-              "completedAt": "2026-01-29T02:26:17.362Z",
+              "completedAt": "2026-02-04T23:07:44.691Z",
               "completionNotes": "Extracted RNA from 9 wells containing ~100k monocytes each. Checked cell count prior to lysis - wells had ~50k cells in it",
               "completionLinks": ""
             },
@@ -522,7 +522,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-28T03:19:52.750Z",
-              "completedAt": "2026-01-31T04:37:58.713Z",
+              "completedAt": "2026-02-04T23:07:44.691Z",
               "completionNotes": "Performed SS on RNA extracted from monos and DCs",
               "completionLinks": ""
             },
@@ -533,11 +533,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-31T17:18:45.655Z",
-              "completedAt": "2026-02-03T21:08:41.952Z",
+              "completedAt": "2026-02-04T23:07:44.691Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-02-04T23:07:44.691Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "ml2kttyffq66yk0c0tn",
@@ -3463,9 +3466,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-04"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkxg58flzv21oiwevu",
+      "subtaskId": null,
+      "title": "Monocyte Pilot with RNA extraction",
+      "completedAt": "2026-02-04T23:07:44.691Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-02-04T22:57:29.309Z",
+  "lastUpdated": "2026-02-04T23:07:44.691Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
