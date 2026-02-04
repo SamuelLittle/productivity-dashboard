@@ -296,7 +296,7 @@
           "title": "Luminex screen of supernatant from previously screened cell types",
           "description": "Using luminex to measure cytokines in supernatant of previously screened cell types. Specifically looking at CD4+, Treg, and Macrophage cells. ",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T21:18:21.763Z",
           "subtasks": [
             {
@@ -306,7 +306,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T21:18:41.647Z",
-              "completedAt": "2026-01-20T22:33:52.694Z"
+              "completedAt": "2026-02-04T01:40:09.634Z"
             },
             {
               "id": "mkn3jtuypfmqhhsqge",
@@ -315,7 +315,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T21:19:02.890Z",
-              "completedAt": "2026-01-20T22:33:55.380Z"
+              "completedAt": "2026-02-04T01:40:09.634Z"
             },
             {
               "id": "mkn3k3zs9qawmv7wfgl",
@@ -324,7 +324,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T21:19:16.024Z",
-              "completedAt": "2026-01-20T22:24:08.904Z"
+              "completedAt": "2026-02-04T01:40:09.634Z"
             },
             {
               "id": "mkn3lfq9wjzz5uacap",
@@ -333,7 +333,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T21:20:17.889Z",
-              "completedAt": "2026-01-27T01:23:56.447Z",
+              "completedAt": "2026-02-04T01:40:09.634Z",
               "completionNotes": "IN 42-3 deli fridge",
               "completionLinks": ""
             },
@@ -344,7 +344,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T21:20:27.963Z",
-              "completedAt": "2026-01-27T01:24:25.845Z",
+              "completedAt": "2026-02-04T01:40:09.634Z",
               "completionNotes": "in 42-3 deli fridge - submit tomorrow",
               "completionLinks": ""
             },
@@ -355,7 +355,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T21:20:41.805Z",
-              "completedAt": "2026-01-27T01:24:20.407Z",
+              "completedAt": "2026-02-04T01:40:09.634Z",
               "completionNotes": "in 42-3 deli fridge - submit tomorrow",
               "completionLinks": ""
             },
@@ -366,7 +366,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-26T16:27:27.398Z",
-              "completedAt": "2026-01-26T18:51:12.147Z",
+              "completedAt": "2026-02-04T01:40:09.634Z",
               "completionNotes": "Validated w/ simuilation and with PBS mock run",
               "completionLinks": ""
             },
@@ -377,13 +377,16 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-29T21:44:07.622Z",
-              "completedAt": "2026-01-30T00:58:10.720Z",
+              "completedAt": "2026-02-04T01:40:09.634Z",
               "completionNotes": "",
               "completionLinks": "https://docs.google.com/presentation/d/1IlfjyzXMqMTPv1KBUESf9N7F641w1v1V50L2jlm_ILs/edit?slide=id.g3bc4564fed2_0_19#slide=id.g3bc4564fed2_0_19",
               "notes": "",
               "links": ""
             }
-          ]
+          ],
+          "completedAt": "2026-02-04T01:40:09.634Z",
+          "completionNotes": "Action Items from meeting with J + H\n",
+          "completionLinks": ""
         },
         {
           "id": "mkn3n6kk2s3eujhd9om",
@@ -3128,9 +3131,18 @@
       "subtaskId": "ml7czma378klz97cbmg",
       "title": "Seed TPP plate",
       "completedAt": "2026-02-04T01:38:54.994Z"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3iy4jrdxtygzkgtn",
+      "subtaskId": null,
+      "title": "Luminex screen of supernatant from previously screened cell types",
+      "completedAt": "2026-02-04T01:40:09.634Z",
+      "completionNotes": "Action Items from meeting with J + H\n",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-02-04T01:38:54.994Z",
+  "lastUpdated": "2026-02-04T01:40:09.634Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
