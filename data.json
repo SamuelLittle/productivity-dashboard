@@ -891,8 +891,11 @@
               "title": "Prep for meeting #2 with Justin",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-21T04:12:26.381Z"
+              "completed": true,
+              "createdAt": "2026-01-21T04:12:26.381Z",
+              "completedAt": "2026-02-04T20:25:36.409Z",
+              "completionNotes": "Need to make more detailed protocol for screening workflow",
+              "completionLinks": ""
             }
           ]
         },
@@ -2510,7 +2513,10 @@
         "subtaskId": "mknibgcthbjwg97e9q6",
         "time": "11:00",
         "scheduledAt": "2026-02-04T17:47:52.078Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-04T20:25:36.409Z",
+        "completionNotes": "Need to make more detailed protocol for screening workflow",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -3376,9 +3382,18 @@
       "completionNotes": "Submitted request for 36 samples",
       "completionLinks": "",
       "date": "2026-02-04"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mkn0igezgk2t0n91d6u",
+      "subtaskId": "mknibgcthbjwg97e9q6",
+      "completedAt": "2026-02-04T20:25:36.409Z",
+      "completionNotes": "Need to make more detailed protocol for screening workflow",
+      "completionLinks": "",
+      "date": "2026-02-04"
     }
   ],
-  "lastUpdated": "2026-02-04T18:40:21.962Z",
+  "lastUpdated": "2026-02-04T20:25:36.409Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
