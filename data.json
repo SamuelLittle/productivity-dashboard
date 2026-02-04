@@ -632,9 +632,12 @@
           "title": "Order new cytokines - IL18 IFNg",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-02-04T05:15:08.722Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-02-04T17:09:56.091Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [
@@ -2427,7 +2430,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-02-04T05:15:08.722Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-04T17:09:56.091Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -3240,9 +3246,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-04"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "ml7kq0qa23st0wavqcj",
+      "completedAt": "2026-02-04T17:09:56.091Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-04"
     }
   ],
-  "lastUpdated": "2026-02-04T17:09:52.485Z",
+  "lastUpdated": "2026-02-04T17:09:56.091Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
