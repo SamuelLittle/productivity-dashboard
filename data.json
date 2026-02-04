@@ -1123,8 +1123,11 @@
               "title": "Submit luminex request for TREX1 ko sups",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-28T19:23:01.510Z"
+              "completed": true,
+              "createdAt": "2026-01-28T19:23:01.510Z",
+              "completedAt": "2026-02-04T18:28:45.698Z",
+              "completionNotes": "Submitted request for 36 samples",
+              "completionLinks": ""
             },
             {
               "id": "mkyextdeoqytqapjmas",
@@ -2424,7 +2427,10 @@
         "subtaskId": "mkyexfraypeeua9wm1",
         "time": null,
         "scheduledAt": "2026-01-31T04:39:07.650Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-04T18:28:45.698Z",
+        "completionNotes": "Submitted request for 36 samples",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -3287,9 +3293,18 @@
       "completionNotes": "Bloods ordered for next Wednesday (NK and neutrphil iso) and Thursday (Mono isolation)",
       "completionLinks": "",
       "date": "2026-02-04"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mkyexfraypeeua9wm1",
+      "completedAt": "2026-02-04T18:28:45.698Z",
+      "completionNotes": "Submitted request for 36 samples",
+      "completionLinks": "",
+      "date": "2026-02-04"
     }
   ],
-  "lastUpdated": "2026-02-04T17:51:22.335Z",
+  "lastUpdated": "2026-02-04T18:28:45.698Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
