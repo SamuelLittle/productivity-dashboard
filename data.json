@@ -1224,9 +1224,12 @@
           "title": "Order new cytokines - M-CSF + GM-CSF",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-02-04T05:15:46.657Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-02-04T17:09:52.485Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -2432,7 +2435,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-02-04T05:15:46.657Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-04T17:09:52.484Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -3226,9 +3232,17 @@
       "completionNotes": "Need to check on viability and cell count again today\n",
       "completionLinks": "",
       "date": "2026-02-04"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml7kqu01bk8l31pd13r",
+      "completedAt": "2026-02-04T17:09:52.485Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-04"
     }
   ],
-  "lastUpdated": "2026-02-04T16:56:30.506Z",
+  "lastUpdated": "2026-02-04T17:09:52.485Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
