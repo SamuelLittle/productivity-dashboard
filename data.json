@@ -1162,8 +1162,11 @@
               "title": "Seed TPP plate",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-04T01:38:39.628Z"
+              "completed": true,
+              "createdAt": "2026-02-04T01:38:39.628Z",
+              "completedAt": "2026-02-04T01:38:54.993Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "ml7czwougk8dd36h17i",
@@ -2286,7 +2289,8 @@
         "subtaskId": "ml7czma378klz97cbmg",
         "time": null,
         "scheduledAt": "2026-02-04T01:38:39.628Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-04T01:38:54.993Z"
       }
     ],
     "2026-02-05": [
@@ -3117,9 +3121,16 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-03"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "ml7czma378klz97cbmg",
+      "title": "Seed TPP plate",
+      "completedAt": "2026-02-04T01:38:54.994Z"
     }
   ],
-  "lastUpdated": "2026-02-04T01:38:53.118Z",
+  "lastUpdated": "2026-02-04T01:38:54.994Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
