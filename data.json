@@ -1140,8 +1140,11 @@
               "title": "Isolate Monocytes",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-03T21:11:11.306Z"
+              "completed": true,
+              "createdAt": "2026-02-03T21:11:11.306Z",
+              "completedAt": "2026-02-04T01:38:14.756Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "ml73fwyvi6edk6nwfx",
@@ -2237,7 +2240,10 @@
         "subtaskId": "ml73fnbdc85obfrfxxd",
         "time": null,
         "scheduledAt": "2026-02-03T21:11:14.711Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-04T01:38:14.756Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -3078,9 +3084,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-03"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "ml73fnbdc85obfrfxxd",
+      "completedAt": "2026-02-04T01:38:14.756Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-03"
     }
   ],
-  "lastUpdated": "2026-02-04T01:38:09.003Z",
+  "lastUpdated": "2026-02-04T01:38:14.756Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
