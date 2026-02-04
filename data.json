@@ -663,8 +663,11 @@
               "title": "Thaw DLD1s",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-04T18:39:38.583Z"
+              "completed": true,
+              "createdAt": "2026-02-04T18:39:38.583Z",
+              "completedAt": "2026-02-04T22:52:08.803Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "ml8dh03s3ymla82sac4",
@@ -2555,7 +2558,10 @@
         "subtaskId": "ml8dglzrb9783i9yz7p",
         "time": null,
         "scheduledAt": "2026-02-04T18:39:38.583Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-04T22:52:08.803Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-02-06": [
@@ -3417,9 +3423,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-04"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "ml8dfjbquh1tf1gtbo",
+      "subtaskId": "ml8dglzrb9783i9yz7p",
+      "completedAt": "2026-02-04T22:52:08.803Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-04"
     }
   ],
-  "lastUpdated": "2026-02-04T22:52:05.133Z",
+  "lastUpdated": "2026-02-04T22:52:08.803Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
