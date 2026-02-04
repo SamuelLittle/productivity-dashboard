@@ -1586,9 +1586,12 @@
         "title": "Order Blood for next two weeks",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-02-04T05:26:21.909Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-02-04T17:51:22.335Z",
+        "completionNotes": "Bloods ordered for next Wednesday (NK and neutrphil iso) and Thursday (Mono isolation)",
+        "completionLinks": ""
       }
     ],
     "2026-02-11": [
@@ -3276,9 +3279,17 @@
       "subtaskId": "mkyn6y24pralyojo7ps",
       "title": "Set up Killing Assay",
       "completedAt": "2026-02-04T17:48:13.860Z"
+    },
+    {
+      "id": "ml7l4g5wvjw2v2yg1oq",
+      "title": "Order Blood for next two weeks",
+      "completedAt": "2026-02-04T17:51:22.335Z",
+      "completionNotes": "Bloods ordered for next Wednesday (NK and neutrphil iso) and Thursday (Mono isolation)",
+      "completionLinks": "",
+      "date": "2026-02-04"
     }
   ],
-  "lastUpdated": "2026-02-04T17:48:13.860Z",
+  "lastUpdated": "2026-02-04T17:51:22.335Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
