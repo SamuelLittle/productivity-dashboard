@@ -984,6 +984,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-04T03:52:24.488Z"
+            },
+            {
+              "id": "ml8mnye1hpbmfltutd",
+              "title": "Make summary plots showing KO and via",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-04T22:57:17.785Z"
             }
           ]
         },
@@ -3434,7 +3442,7 @@
       "date": "2026-02-04"
     }
   ],
-  "lastUpdated": "2026-02-04T22:52:08.803Z",
+  "lastUpdated": "2026-02-04T22:57:17.785Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
