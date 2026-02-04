@@ -202,7 +202,7 @@
           "title": "Dendritic Cell Pilot Screen",
           "description": "Testing Dendritic Cells for compatibility with sequence prep pipelines",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T00:26:13.058Z",
           "subtasks": [
             {
@@ -214,7 +214,7 @@
               "createdAt": "2026-01-20T00:26:33.045Z",
               "notes": "Originally scheduled for Jan 20 but media still looks unconsumed and trying to push this out to buy time for a pilot screen.  Rescheduled to Thursday with possibility to push until friday.",
               "links": "",
-              "completedAt": "2026-01-28T01:00:20.639Z",
+              "completedAt": "2026-02-04T23:08:00.033Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -225,7 +225,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-28T03:06:57.446Z",
-              "completedAt": "2026-01-31T17:29:03.002Z",
+              "completedAt": "2026-02-04T23:08:00.033Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -238,7 +238,7 @@
               "createdAt": "2026-01-28T03:07:45.416Z",
               "notes": "lysed DCs at about 70k cells per well.",
               "links": "",
-              "completedAt": "2026-01-31T04:38:44.940Z",
+              "completedAt": "2026-02-04T23:08:00.033Z",
               "completionNotes": "lysed DCs at about 70k cells per well and performed SS in parallel with RNA extracted\n",
               "completionLinks": ""
             },
@@ -249,7 +249,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-28T03:08:26.796Z",
-              "completedAt": "2026-01-29T02:24:46.514Z",
+              "completedAt": "2026-02-04T23:08:00.033Z",
               "completionNotes": "Isolated RNA from 9 wells containing ~70k DCs each\n",
               "completionLinks": ""
             },
@@ -260,7 +260,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-28T03:20:20.933Z",
-              "completedAt": "2026-01-28T19:26:28.791Z",
+              "completedAt": "2026-02-04T23:08:00.033Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -271,11 +271,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-31T17:17:11.244Z",
-              "completedAt": "2026-02-03T21:08:45.778Z",
+              "completedAt": "2026-02-04T23:08:00.033Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-02-04T23:08:00.033Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mklvrchlpys3nvusoaj",
@@ -3475,9 +3478,18 @@
       "completedAt": "2026-02-04T23:07:44.691Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mklusog2097tkm380gri",
+      "subtaskId": null,
+      "title": "Dendritic Cell Pilot Screen",
+      "completedAt": "2026-02-04T23:08:00.033Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-02-04T23:07:44.691Z",
+  "lastUpdated": "2026-02-04T23:08:00.033Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
