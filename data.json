@@ -636,8 +636,11 @@
               "title": "Prep SS Reagents",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-02T05:05:34.046Z"
+              "completed": true,
+              "createdAt": "2026-02-02T05:05:34.046Z",
+              "completedAt": "2026-02-05T23:51:17.790Z",
+              "completionNotes": "Made new TSO aliquots I will test tomorrow. Ordered More GTP and H-",
+              "completionLinks": ""
             },
             {
               "id": "mla2aksayf45paorg0b",
@@ -2515,7 +2518,10 @@
         "subtaskId": "ml4phzz2fm9u3qqf3tg",
         "time": null,
         "scheduledAt": "2026-02-02T05:05:34.046Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-05T23:51:17.790Z",
+        "completionNotes": "Made new TSO aliquots I will test tomorrow. Ordered More GTP and H-",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -3620,9 +3626,18 @@
       "completionNotes": "100ul of media removed and 120ul of fresh media added to 11 plates. Remainder were discarded.",
       "completionLinks": "",
       "date": "2026-02-05"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "ml2l62osbaz3iif86w6",
+      "subtaskId": "ml4phzz2fm9u3qqf3tg",
+      "completedAt": "2026-02-05T23:51:17.790Z",
+      "completionNotes": "Made new TSO aliquots I will test tomorrow. Ordered More GTP and H-",
+      "completionLinks": "",
+      "date": "2026-02-05"
     }
   ],
-  "lastUpdated": "2026-02-05T23:03:21.779Z",
+  "lastUpdated": "2026-02-05T23:51:17.790Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
