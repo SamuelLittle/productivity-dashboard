@@ -649,6 +649,44 @@
                         </div>
                     </div>
 
+                    <!-- Project Reports Section -->
+                    <div class="project-reports-section">
+                        <div class="section-label">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            <span>Project Reports</span>
+                        </div>
+
+                        <div id="project-report-tabs" class="project-report-tabs">
+                            <!-- Dynamically populated with project tabs -->
+                        </div>
+
+                        <div id="project-report-content" class="project-report-content">
+                            <!-- Per-project content: AI generate button, directions textarea -->
+                            <div class="no-projects-message" id="no-projects-message">
+                                Select a month with project activity to see individual project reports.
+                            </div>
+                        </div>
+
+                        <button type="button" id="generate-all-project-ai-btn" class="btn btn-secondary btn-sm hidden">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                            Generate All Project Summaries
+                        </button>
+
+                        <label class="checkbox-label" style="margin-top: 12px;">
+                            <input type="checkbox" id="export-include-project-ai-summaries" checked>
+                            Include project AI summaries in export
+                        </label>
+
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="export-use-tabbed-format" checked>
+                            Use tabbed report format (separate page per project)
+                        </label>
+                    </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-ghost modal-cancel">Cancel</button>
                         <button type="submit" class="btn btn-primary">Export</button>

@@ -2366,3 +2366,248 @@ body {
 .ai-summary-content .checkbox-label {
     margin-top: 8px;
 }
+
+/* Project Reports Section */
+.project-reports-section {
+    margin-top: 16px;
+    padding: 16px;
+    background: var(--color-surface-hover);
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+}
+
+.project-reports-section .section-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.project-reports-section .section-label svg {
+    color: var(--color-primary);
+}
+
+.project-report-tabs {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project-report-tab {
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.project-report-tab:hover {
+    background: var(--color-surface-hover);
+    color: var(--color-text);
+}
+
+.project-report-tab.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+.project-report-tab .tab-color-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.project-report-content {
+    min-height: 100px;
+}
+
+.project-report-panel {
+    display: none;
+    padding: 12px;
+    background: var(--color-surface);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+}
+
+.project-report-panel.active {
+    display: block;
+}
+
+.project-report-panel .project-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project-report-panel .project-color-bar {
+    width: 4px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+.project-report-panel .project-info h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 2px 0;
+}
+
+.project-report-panel .project-info p {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.project-report-panel .project-stats {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+    padding: 10px;
+    background: var(--color-bg);
+    border-radius: var(--radius-sm);
+}
+
+.project-report-panel .stat-item {
+    text-align: center;
+}
+
+.project-report-panel .stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.project-report-panel .stat-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-secondary);
+}
+
+.project-ai-section {
+    margin-bottom: 12px;
+}
+
+.project-ai-section .btn {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.project-ai-summary-content {
+    padding: 10px;
+    background: var(--color-bg);
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--color-text);
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.directions-section {
+    margin-top: 12px;
+}
+
+.directions-section label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-secondary);
+    margin-bottom: 6px;
+}
+
+.directions-textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    font-size: 13px;
+    font-family: inherit;
+    line-height: 1.5;
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    resize: vertical;
+    transition: border-color var(--transition);
+}
+
+.directions-textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.directions-textarea::placeholder {
+    color: var(--color-text-muted);
+}
+
+.no-projects-message {
+    padding: 20px;
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 13px;
+}
+
+#generate-all-project-ai-btn {
+    width: 100%;
+    margin-top: 12px;
+}
+
+/* Mini Calendar in project panels */
+.project-mini-calendar {
+    margin: 12px 0;
+}
+
+.project-mini-calendar .calendar-header {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-secondary);
+    margin-bottom: 8px;
+}
+
+.project-mini-calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+}
+
+.project-mini-calendar th {
+    padding: 4px 2px;
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+.project-mini-calendar td {
+    padding: 4px 2px;
+    text-align: center;
+    color: var(--color-text-secondary);
+}
+
+.project-mini-calendar td.has-work {
+    background: var(--color-primary);
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.project-mini-calendar td.empty {
+    color: var(--color-text-muted);
+}

@@ -153,6 +153,13 @@ function initElements() {
         aiSummaryContent: document.getElementById('ai-summary-content'),
         aiSummaryText: document.getElementById('ai-summary-text'),
         exportIncludeAiSummary: document.getElementById('export-include-ai-summary'),
+        // Project reports
+        projectReportTabs: document.getElementById('project-report-tabs'),
+        projectReportContent: document.getElementById('project-report-content'),
+        noProjectsMessage: document.getElementById('no-projects-message'),
+        generateAllProjectAiBtn: document.getElementById('generate-all-project-ai-btn'),
+        exportIncludeProjectAiSummaries: document.getElementById('export-include-project-ai-summaries'),
+        exportUseTabbedFormat: document.getElementById('export-use-tabbed-format'),
         // Schedule modal
         scheduleModal: document.getElementById('schedule-modal'),
         scheduleProjectId: document.getElementById('schedule-project-id'),
@@ -3544,6 +3551,30 @@ async function saveProgress(e) {
     }
 }
 
+async function saveProjectDirections(projectId, year, month, directions) {
+    const project = state.data.projects.find(p => p.id === projectId);
+    if (!project) return false;
+
+    if (!project.monthlyDirections) {
+        project.monthlyDirections = {};
+    }
+
+    const monthKey = `${year}-${String(month).padStart(2, '0')}`;
+    project.monthlyDirections[monthKey] = directions;
+
+    state.data.lastUpdated = new Date().toISOString();
+    await saveData();
+    return true;
+}
+
+function getProjectDirections(projectId, year, month) {
+    const project = state.data.projects?.find(p => p.id === projectId);
+    if (!project || !project.monthlyDirections) return '';
+
+    const monthKey = `${year}-${String(month).padStart(2, '0')}`;
+    return project.monthlyDirections[monthKey] || '';
+}
+
 // ============================================
 // AI SUMMARY
 // ============================================
@@ -3718,6 +3749,185 @@ ${dataContext}
 Write the summary now:`;
 }
 
+function buildProjectAiPrompt(projectData) {
+    let dataContext = `# Project Report: ${projectData.projectName}\n`;
+    dataContext += `Month: ${projectData.monthName}\n\n`;
+
+    if (projectData.projectDescription) {
+        dataContext += `## Project Goals/Description\n${projectData.projectDescription}\n\n`;
+    }
+
+    // Summary stats
+    const totalCompleted = projectData.completedTasks.length + projectData.completedSubtasks.length;
+    dataContext += `## Summary\n`;
+    dataContext += `- Tasks Completed: ${projectData.completedTasks.length}\n`;
+    dataContext += `- Subtasks Completed: ${projectData.completedSubtasks.length}\n`;
+    dataContext += `- Total Items: ${totalCompleted}\n`;
+    dataContext += `- Progress Updates: ${projectData.progressUpdates.length}\n`;
+    dataContext += `- Upcoming Tasks: ${projectData.upcomingTasks.length}\n\n`;
+
+    // Progress updates
+    if (projectData.progressUpdates.length > 0) {
+        dataContext += `## Progress Updates\n`;
+        projectData.progressUpdates.forEach(update => {
+            const date = new Date(update.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            dataContext += `- ${date}: ${update.text}\n`;
+        });
+        dataContext += '\n';
+    }
+
+    // Completed tasks
+    if (projectData.completedTasks.length > 0) {
+        dataContext += `## Completed Tasks\n`;
+        projectData.completedTasks.forEach(task => {
+            const date = new Date(task.completedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            dataContext += `- ${task.title} (${date})`;
+            if (task.completionNotes) {
+                dataContext += ` - Notes: ${task.completionNotes}`;
+            }
+            dataContext += '\n';
+        });
+        dataContext += '\n';
+    }
+
+    // Work cadence from scheduled dates
+    const scheduledDays = Object.keys(projectData.scheduledDates);
+    if (scheduledDays.length > 0) {
+        dataContext += `## Work Cadence\n`;
+        dataContext += `- Days with scheduled work: ${scheduledDays.length}\n`;
+        const totalScheduled = Object.values(projectData.scheduledDates).reduce((sum, d) => sum + d.count, 0);
+        dataContext += `- Total scheduled items: ${totalScheduled}\n\n`;
+    }
+
+    // Upcoming work
+    if (projectData.upcomingTasks.length > 0) {
+        dataContext += `## Upcoming Tasks\n`;
+        projectData.upcomingTasks.slice(0, 5).forEach(task => {
+            dataContext += `- ${task.title}`;
+            if (task.subtasks?.length > 0) {
+                dataContext += ` (${task.subtasks.length} subtasks remaining)`;
+            }
+            dataContext += '\n';
+        });
+        if (projectData.upcomingTasks.length > 5) {
+            dataContext += `- ... and ${projectData.upcomingTasks.length - 5} more\n`;
+        }
+        dataContext += '\n';
+    }
+
+    // Directions if present
+    if (projectData.directions) {
+        dataContext += `## Forward-Looking Notes\n${projectData.directions}\n\n`;
+    }
+
+    return `You are a productivity coach analyzing a user's monthly progress on a specific project. Based on the following data, provide a concise but insightful project summary that:
+
+1. Evaluates progress toward project goals (if goals/description provided)
+2. Highlights key accomplishments this month
+3. Notes work patterns and cadence
+4. Identifies what remains to be done
+5. Offers 1-2 specific, actionable suggestions for next month
+
+Keep the summary to about 100-150 words. Focus on project-specific insights.
+
+${dataContext}
+
+Write the project summary now:`;
+}
+
+// Storage for per-project AI summaries
+let projectAiSummaries = {};
+
+async function generateProjectAiSummary(projectId) {
+    const apiKey = localStorage.getItem('anthropic_api_key');
+    if (!apiKey) {
+        showToast('Please configure your Anthropic API key first', 'error');
+        return null;
+    }
+
+    const monthStr = elements.exportMonth.value;
+    const [year, month] = monthStr.split('-').map(Number);
+
+    const projectData = gatherProjectMonthlyData(projectId, year, month);
+    if (!projectData) {
+        showToast('No project data available', 'error');
+        return null;
+    }
+
+    const btn = document.querySelector(`[data-project-ai-btn="${projectId}"]`);
+    if (btn) btn.disabled = true;
+
+    try {
+        const prompt = buildProjectAiPrompt(projectData);
+        const summary = await callClaudeApi(apiKey, prompt);
+
+        projectAiSummaries[projectId] = summary;
+
+        // Update UI
+        const summaryEl = document.querySelector(`[data-project-ai-summary="${projectId}"]`);
+        if (summaryEl) {
+            summaryEl.textContent = summary;
+            summaryEl.parentElement.classList.remove('hidden');
+        }
+
+        if (btn) btn.disabled = false;
+        showToast(`AI summary generated for ${projectData.projectName}`, 'success');
+        return summary;
+    } catch (error) {
+        console.error('Project AI summary error:', error);
+        if (btn) btn.disabled = false;
+        showToast(error.message || 'Failed to generate summary', 'error');
+        return null;
+    }
+}
+
+async function generateAllProjectAiSummaries() {
+    const apiKey = localStorage.getItem('anthropic_api_key');
+    if (!apiKey) {
+        showToast('Please configure your Anthropic API key first', 'error');
+        return;
+    }
+
+    const monthStr = elements.exportMonth.value;
+    const [year, month] = monthStr.split('-').map(Number);
+    const options = { includeSubtasks: true };
+
+    const reportData = gatherMonthlyReportData(year, month, options);
+    if (!reportData.projectReports || reportData.projectReports.length === 0) {
+        showToast('No projects with activity this month', 'error');
+        return;
+    }
+
+    const btn = elements.generateAllProjectAiBtn;
+    if (btn) btn.disabled = true;
+
+    let successCount = 0;
+    for (const projectReport of reportData.projectReports) {
+        try {
+            const prompt = buildProjectAiPrompt(projectReport);
+            const summary = await callClaudeApi(apiKey, prompt);
+            projectAiSummaries[projectReport.projectId] = summary;
+
+            // Update UI
+            const summaryEl = document.querySelector(`[data-project-ai-summary="${projectReport.projectId}"]`);
+            if (summaryEl) {
+                summaryEl.textContent = summary;
+                summaryEl.parentElement.classList.remove('hidden');
+            }
+            successCount++;
+        } catch (error) {
+            console.error(`Error generating summary for ${projectReport.projectName}:`, error);
+        }
+    }
+
+    if (btn) btn.disabled = false;
+    showToast(`Generated ${successCount} of ${reportData.projectReports.length} project summaries`, 'success');
+}
+
+function resetProjectAiSummaries() {
+    projectAiSummaries = {};
+}
+
 async function callClaudeApi(apiKey, prompt) {
     const response = await fetch('https://api.anthropic.com/v1/messages', {
         method: 'POST',
@@ -3766,8 +3976,145 @@ function resetAiSummary() {
 
 function openExportModal() {
     resetAiSummary();
+    resetProjectAiSummaries();
     elements.aiSettingsPanel?.classList.add('hidden');
     elements.exportModal.classList.remove('hidden');
+    populateProjectReportTabs();
+}
+
+function populateProjectReportTabs() {
+    const monthStr = elements.exportMonth.value;
+    if (!monthStr) return;
+
+    const [year, month] = monthStr.split('-').map(Number);
+    const options = { includeSubtasks: true };
+    const reportData = gatherMonthlyReportData(year, month, options);
+
+    const projectReports = reportData.projectReports || [];
+    const tabsContainer = elements.projectReportTabs;
+    const contentContainer = elements.projectReportContent;
+
+    if (!tabsContainer || !contentContainer) return;
+
+    // Clear existing content
+    tabsContainer.innerHTML = '';
+    contentContainer.innerHTML = '';
+
+    if (projectReports.length === 0) {
+        contentContainer.innerHTML = `<div class="no-projects-message">No projects with activity for this month.</div>`;
+        elements.generateAllProjectAiBtn?.classList.add('hidden');
+        return;
+    }
+
+    elements.generateAllProjectAiBtn?.classList.remove('hidden');
+
+    // Create tabs
+    projectReports.forEach((project, index) => {
+        const tab = document.createElement('div');
+        tab.className = `project-report-tab${index === 0 ? ' active' : ''}`;
+        tab.dataset.projectId = project.projectId;
+        tab.innerHTML = `
+            <span class="tab-color-dot" style="background: ${project.projectColor}"></span>
+            <span>${project.projectName}</span>
+        `;
+        tab.addEventListener('click', () => switchProjectTab(project.projectId));
+        tabsContainer.appendChild(tab);
+    });
+
+    // Create panels
+    projectReports.forEach((project, index) => {
+        const panel = document.createElement('div');
+        panel.className = `project-report-panel${index === 0 ? ' active' : ''}`;
+        panel.dataset.projectId = project.projectId;
+
+        const totalCompleted = project.completedTasks.length + project.completedSubtasks.length;
+        const aiSummary = projectAiSummaries[project.projectId] || '';
+
+        panel.innerHTML = `
+            <div class="project-header">
+                <div class="project-color-bar" style="background: ${project.projectColor}"></div>
+                <div class="project-info">
+                    <h4>${project.projectName}</h4>
+                    ${project.projectDescription ? `<p>${project.projectDescription}</p>` : ''}
+                </div>
+            </div>
+
+            <div class="project-stats">
+                <div class="stat-item">
+                    <div class="stat-value">${project.completedTasks.length}</div>
+                    <div class="stat-label">Tasks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${project.completedSubtasks.length}</div>
+                    <div class="stat-label">Subtasks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${project.upcomingTasks.length}</div>
+                    <div class="stat-label">Upcoming</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${Object.keys(project.scheduledDates).length}</div>
+                    <div class="stat-label">Work Days</div>
+                </div>
+            </div>
+
+            <div class="project-ai-section">
+                <button type="button" class="btn btn-secondary btn-sm" data-project-ai-btn="${project.projectId}" onclick="generateProjectAiSummary('${project.projectId}')">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                    </svg>
+                    Generate AI Summary
+                </button>
+                <div class="project-ai-summary-container ${aiSummary ? '' : 'hidden'}">
+                    <div class="project-ai-summary-content" data-project-ai-summary="${project.projectId}">${aiSummary}</div>
+                </div>
+            </div>
+
+            <div class="directions-section">
+                <label>Forward-Looking Notes / Directions for Next Month</label>
+                <textarea
+                    class="directions-textarea"
+                    data-project-directions="${project.projectId}"
+                    placeholder="What should be the focus for this project next month?"
+                >${project.directions || ''}</textarea>
+            </div>
+        `;
+
+        contentContainer.appendChild(panel);
+    });
+
+    // Add event listeners for directions textareas
+    contentContainer.querySelectorAll('.directions-textarea').forEach(textarea => {
+        textarea.addEventListener('blur', handleDirectionsSave);
+    });
+}
+
+function switchProjectTab(projectId) {
+    // Update tabs
+    document.querySelectorAll('.project-report-tab').forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.projectId === projectId);
+    });
+
+    // Update panels
+    document.querySelectorAll('.project-report-panel').forEach(panel => {
+        panel.classList.toggle('active', panel.dataset.projectId === projectId);
+    });
+}
+
+async function handleDirectionsSave(e) {
+    const textarea = e.target;
+    const projectId = textarea.dataset.projectDirections;
+    const directions = textarea.value.trim();
+
+    const monthStr = elements.exportMonth.value;
+    if (!monthStr || !projectId) return;
+
+    const [year, month] = monthStr.split('-').map(Number);
+    const saved = await saveProjectDirections(projectId, year, month, directions);
+
+    if (saved) {
+        showToast('Directions saved', 'success');
+    }
 }
 
 // Data gathering functions for monthly report
@@ -3930,6 +4277,101 @@ function getPlannedForNextMonth(nextMonthStart, nextMonthEnd) {
     return planned;
 }
 
+function getProjectScheduledDatesForMonth(projectId, startDate, endDate) {
+    const scheduledDates = {};
+    if (!state.data.scheduledItems) return scheduledDates;
+
+    Object.entries(state.data.scheduledItems).forEach(([date, items]) => {
+        const scheduleDate = getDateFromString(date);
+        if (scheduleDate >= startDate && scheduleDate <= endDate) {
+            const projectItems = items.filter(item => item.projectId === projectId);
+            if (projectItems.length > 0) {
+                const completedCount = projectItems.filter(item => {
+                    const project = state.data.projects?.find(p => p.id === item.projectId);
+                    const task = project?.tasks?.find(t => t.id === item.taskId);
+                    return task?.completed;
+                }).length;
+
+                scheduledDates[date] = {
+                    count: projectItems.length,
+                    completed: completedCount,
+                    items: projectItems
+                };
+            }
+        }
+    });
+    return scheduledDates;
+}
+
+function getProjectUpcomingTasks(projectId) {
+    const project = state.data.projects?.find(p => p.id === projectId);
+    if (!project || !project.tasks) return [];
+
+    return project.tasks
+        .filter(task => !task.completed)
+        .map(task => ({
+            id: task.id,
+            title: task.title,
+            priority: task.priority,
+            projectId: projectId,
+            subtasks: task.subtasks?.filter(st => !st.completed) || []
+        }));
+}
+
+function getProjectCompletedItemsForMonth(projectId, startDate, endDate) {
+    if (!state.data.completedTasks) return { tasks: [], subtasks: [] };
+
+    const items = state.data.completedTasks.filter(task => {
+        if (task.projectId !== projectId) return false;
+        const taskDate = new Date(task.completedAt);
+        return taskDate >= startDate && taskDate <= endDate;
+    });
+
+    return {
+        tasks: items.filter(i => !i.subtaskId),
+        subtasks: items.filter(i => i.subtaskId)
+    };
+}
+
+function getProjectProgressUpdatesForMonth(projectId, startDate, endDate) {
+    const project = state.data.projects?.find(p => p.id === projectId);
+    if (!project || !project.progressUpdates) return [];
+
+    return project.progressUpdates.filter(update => {
+        const updateDate = new Date(update.date);
+        return updateDate >= startDate && updateDate <= endDate;
+    });
+}
+
+function gatherProjectMonthlyData(projectId, year, month, options = {}) {
+    const project = state.data.projects?.find(p => p.id === projectId);
+    if (!project) return null;
+
+    const startDate = new Date(year, month - 1, 1);
+    const endDate = new Date(year, month, 0, 23, 59, 59);
+    const monthName = startDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+    const completedItems = getProjectCompletedItemsForMonth(projectId, startDate, endDate);
+    const progressUpdates = getProjectProgressUpdatesForMonth(projectId, startDate, endDate);
+    const scheduledDates = getProjectScheduledDatesForMonth(projectId, startDate, endDate);
+    const upcomingTasks = getProjectUpcomingTasks(projectId);
+    const directions = getProjectDirections(projectId, year, month);
+
+    return {
+        projectId,
+        projectName: project.name,
+        projectDescription: project.description || '',
+        projectColor: project.color || '#3b82f6',
+        monthName,
+        completedTasks: completedItems.tasks,
+        completedSubtasks: completedItems.subtasks,
+        progressUpdates,
+        scheduledDates,
+        upcomingTasks,
+        directions
+    };
+}
+
 function gatherMonthlyReportData(year, month, options) {
     const startDate = new Date(year, month - 1, 1);
     const endDate = new Date(year, month, 0, 23, 59, 59);
@@ -3943,6 +4385,42 @@ function gatherMonthlyReportData(year, month, options) {
     const taskCount = completedItems.filter(i => !i.subtaskId).length;
     const subtaskCount = completedItems.filter(i => i.subtaskId).length;
 
+    // Build per-project reports
+    const projectReports = [];
+    const projectsWithActivity = new Set();
+
+    // Find all projects with completed items this month
+    completedItems.forEach(item => {
+        if (item.projectId && item.projectId !== 'standalone') {
+            projectsWithActivity.add(item.projectId);
+        }
+    });
+
+    // Also include projects with progress updates
+    progressUpdates.forEach(update => {
+        if (update.projectId) {
+            projectsWithActivity.add(update.projectId);
+        }
+    });
+
+    // Generate detailed report for each active project
+    projectsWithActivity.forEach(projectId => {
+        const projectData = gatherProjectMonthlyData(projectId, year, month, options);
+        if (projectData) {
+            projectReports.push(projectData);
+        }
+    });
+
+    // Sort by total activity (completed tasks + subtasks + progress updates)
+    projectReports.sort((a, b) => {
+        const aTotal = a.completedTasks.length + a.completedSubtasks.length + a.progressUpdates.length;
+        const bTotal = b.completedTasks.length + b.completedSubtasks.length + b.progressUpdates.length;
+        return bTotal - aTotal;
+    });
+
+    // Get standalone tasks (completed items without a project)
+    const standaloneTasks = completedItems.filter(item => !item.projectId || item.projectId === 'standalone');
+
     const data = {
         year,
         month,
@@ -3953,7 +4431,9 @@ function gatherMonthlyReportData(year, month, options) {
         subtaskCount,
         totalCount: completedItems.length,
         projectCount: projectSummaries.filter(p => p.id !== 'standalone').length,
-        projectSummaries
+        projectSummaries,
+        projectReports,
+        standaloneTasks
     };
 
     if (options.includeDailyAppendix) {
@@ -4152,6 +4632,148 @@ function generateMarkdownReport(reportData, options) {
         });
         md += '\n';
     }
+
+    return md;
+}
+
+function generateTabbedMarkdownReport(reportData, options) {
+    const formatShortDate = (dateStr) => {
+        const d = new Date(dateStr);
+        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    };
+
+    let md = `# Monthly Report - ${reportData.monthName}\n\n`;
+
+    // Overall AI Summary
+    if (options.includeAiSummary && options.aiSummary) {
+        md += `## AI-Generated Summary\n\n`;
+        md += `${options.aiSummary}\n\n`;
+        md += `---\n\n`;
+    }
+
+    // Executive Summary
+    md += `## Executive Summary\n\n`;
+    md += `- Tasks Completed: ${reportData.taskCount}\n`;
+    if (options.includeSubtasks) {
+        md += `- Subtasks Completed: ${reportData.subtaskCount}\n`;
+    }
+    md += `- Projects with Activity: ${reportData.projectCount}\n\n`;
+
+    // Project overview list
+    const projectReports = reportData.projectReports || [];
+    if (projectReports.length > 0) {
+        md += `### Project Activity Summary\n\n`;
+        projectReports.forEach(project => {
+            const totalCompleted = project.completedTasks.length + project.completedSubtasks.length;
+            md += `- **${project.projectName}**: ${totalCompleted} items completed`;
+            if (project.upcomingTasks.length > 0) {
+                md += `, ${project.upcomingTasks.length} upcoming`;
+            }
+            md += `\n`;
+        });
+        md += `\n`;
+    }
+
+    // Standalone tasks
+    if (reportData.standaloneTasks && reportData.standaloneTasks.length > 0) {
+        md += `## Standalone Tasks\n\n`;
+        reportData.standaloneTasks.forEach(task => {
+            const date = formatShortDate(task.completedAt);
+            md += `- [x] ${task.title} *(${date})*\n`;
+            if (task.completionNotes) {
+                md += `  - Notes: ${task.completionNotes}\n`;
+            }
+        });
+        md += `\n`;
+    }
+
+    md += `---\n\n`;
+    md += `# Project Reports\n\n`;
+
+    // Individual project sections
+    projectReports.forEach(project => {
+        md += `## ${project.projectName}\n\n`;
+
+        if (project.projectDescription) {
+            md += `*${project.projectDescription}*\n\n`;
+        }
+
+        // Project AI Summary
+        const projectAiSummary = options.projectAiSummaries?.[project.projectId];
+        if (projectAiSummary) {
+            md += `### AI Summary\n\n`;
+            md += `${projectAiSummary}\n\n`;
+        }
+
+        // Progress updates
+        if (project.progressUpdates.length > 0) {
+            md += `### Progress Notes\n\n`;
+            project.progressUpdates.forEach(update => {
+                const date = formatShortDate(update.date);
+                md += `- ${date}: ${update.text}\n`;
+            });
+            md += `\n`;
+        }
+
+        // Completed tasks
+        if (project.completedTasks.length > 0 || project.completedSubtasks.length > 0) {
+            md += `### Completed This Month\n\n`;
+            project.completedTasks.forEach(task => {
+                const date = formatShortDate(task.completedAt);
+                md += `- [x] ${task.title} *(${date})*\n`;
+                if (task.completionNotes) {
+                    md += `  - Notes: ${task.completionNotes}\n`;
+                }
+                if (task.completionLinks) {
+                    const links = task.completionLinks.split('\n').filter(l => l.trim());
+                    links.forEach(link => {
+                        md += `  - Link: [${link.trim()}](${link.trim()})\n`;
+                    });
+                }
+            });
+
+            if (options.includeSubtasks && project.completedSubtasks.length > 0) {
+                project.completedSubtasks.forEach(subtask => {
+                    const date = formatShortDate(subtask.completedAt);
+                    md += `- [x] *(subtask)* ${subtask.title} *(${date})*\n`;
+                });
+            }
+            md += `\n`;
+        }
+
+        // Work calendar summary
+        const scheduledDays = Object.keys(project.scheduledDates);
+        if (scheduledDays.length > 0) {
+            md += `### Work Cadence\n\n`;
+            md += `- Days with scheduled work: ${scheduledDays.length}\n`;
+            const totalScheduled = Object.values(project.scheduledDates).reduce((sum, d) => sum + d.count, 0);
+            md += `- Total scheduled items: ${totalScheduled}\n\n`;
+        }
+
+        // Upcoming tasks
+        if (project.upcomingTasks.length > 0) {
+            md += `### Upcoming Work\n\n`;
+            project.upcomingTasks.slice(0, 8).forEach(task => {
+                md += `- [ ] ${task.title}`;
+                if (task.subtasks?.length > 0) {
+                    md += ` *(${task.subtasks.length} subtasks)*`;
+                }
+                md += `\n`;
+            });
+            if (project.upcomingTasks.length > 8) {
+                md += `- ... and ${project.upcomingTasks.length - 8} more\n`;
+            }
+            md += `\n`;
+        }
+
+        // Directions
+        if (project.directions) {
+            md += `### Forward-Looking Notes\n\n`;
+            md += `> ${project.directions.replace(/\n/g, '\n> ')}\n\n`;
+        }
+
+        md += `---\n\n`;
+    });
 
     return md;
 }
@@ -5199,6 +5821,487 @@ function generateHtmlReport(reportData, options) {
     return html;
 }
 
+function generateProjectHtmlSection(projectData, aiSummary, options = {}) {
+    const shortDate = (dateStr) => {
+        const d = new Date(dateStr);
+        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    };
+
+    let html = `
+    <div class="project-page" style="page-break-before: always;">
+        <div class="project-page-header" style="border-left: 4px solid ${projectData.projectColor}; padding-left: 16px; margin-bottom: 24px;">
+            <h2 style="font-size: 22px; font-weight: 700; color: #1e293b; margin: 0 0 4px 0;">${projectData.projectName}</h2>
+            ${projectData.projectDescription ? `<p style="color: #64748b; font-size: 13px; margin: 0;">${projectData.projectDescription}</p>` : ''}
+        </div>`;
+
+    // AI Summary
+    if (aiSummary) {
+        html += `
+        <div class="project-ai-summary" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #7dd3fc; border-radius: 8px; padding: 16px; margin-bottom: 20px;">
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #0369a1; margin-bottom: 8px;">AI Summary</div>
+            <div style="font-size: 12px; line-height: 1.6; color: #334155;">${aiSummary.replace(/\n/g, '<br>')}</div>
+        </div>`;
+    }
+
+    // Progress Updates
+    if (projectData.progressUpdates.length > 0) {
+        html += `
+        <div class="project-progress" style="margin-bottom: 20px;">
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 10px;">Progress Notes</div>
+            <div style="background: #f8fafc; border-left: 3px solid #0ea5e9; padding: 12px 15px;">
+                <ul style="list-style: none; padding: 0; margin: 0;">`;
+        projectData.progressUpdates.forEach(update => {
+            const date = new Date(update.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            html += `<li style="padding: 3px 0; color: #334155; font-size: 12px;"><span style="color: #64748b;">${date}:</span> ${update.text}</li>`;
+        });
+        html += `</ul></div></div>`;
+    }
+
+    // Completed Tasks
+    if (projectData.completedTasks.length > 0 || projectData.completedSubtasks.length > 0) {
+        html += `
+        <div class="project-completed" style="margin-bottom: 20px;">
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 10px;">Completed This Month</div>`;
+
+        projectData.completedTasks.forEach(task => {
+            const date = shortDate(task.completedAt);
+            html += `
+            <div style="padding: 8px 0; border-bottom: 1px solid #f1f5f9; display: flex; flex-wrap: wrap; align-items: baseline;">
+                <span style="color: #16a34a; font-weight: 600; margin-right: 8px;">✓</span>
+                <span style="flex: 1; color: #1e293b; font-weight: 500;">${task.title}</span>
+                <span style="font-family: monospace; font-size: 10px; color: #94a3b8; margin-left: 10px;">${date}</span>`;
+            if (task.completionNotes) {
+                html += `<div style="width: 100%; padding-left: 22px; margin-top: 4px;"><span style="font-size: 11px; color: #64748b; font-style: italic;">└─ ${task.completionNotes}</span></div>`;
+            }
+            if (task.completionLinks) {
+                const links = task.completionLinks.split('\n').filter(l => l.trim());
+                links.forEach(link => {
+                    html += `<div style="width: 100%; padding-left: 22px; margin-top: 2px;"><a href="${link.trim()}" style="font-size: 11px; color: #0ea5e9; text-decoration: none;" target="_blank">└─ ${link.trim()}</a></div>`;
+                });
+            }
+            html += `</div>`;
+        });
+
+        if (options.includeSubtasks && projectData.completedSubtasks.length > 0) {
+            projectData.completedSubtasks.forEach(subtask => {
+                const date = shortDate(subtask.completedAt);
+                html += `
+                <div style="padding: 6px 0 6px 22px; border-bottom: 1px solid #f1f5f9; display: flex; flex-wrap: wrap; align-items: baseline;">
+                    <span style="color: #16a34a; font-weight: 600; margin-right: 8px;">✓</span>
+                    <span style="color: #94a3b8; font-size: 11px;">Subtask:</span>
+                    <span style="flex: 1; color: #1e293b; margin-left: 5px;">${subtask.title}</span>
+                    <span style="font-family: monospace; font-size: 10px; color: #94a3b8; margin-left: 10px;">${date}</span>
+                </div>`;
+            });
+        }
+
+        html += `</div>`;
+    }
+
+    // Mini Calendar
+    const scheduledDays = Object.keys(projectData.scheduledDates);
+    if (scheduledDays.length > 0) {
+        const year = parseInt(projectData.monthName.split(' ')[1]) || new Date().getFullYear();
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        const monthIndex = monthNames.findIndex(m => projectData.monthName.includes(m));
+        const firstDay = new Date(year, monthIndex, 1);
+        const lastDay = new Date(year, monthIndex + 1, 0);
+        const startPad = firstDay.getDay();
+        const totalDays = lastDay.getDate();
+
+        html += `
+        <div class="project-calendar" style="margin-bottom: 20px;">
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 10px;">Work Calendar</div>
+            <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
+                <thead>
+                    <tr>`;
+        ['S', 'M', 'T', 'W', 'T', 'F', 'S'].forEach(d => {
+            html += `<th style="padding: 4px; text-align: center; color: #64748b; font-weight: 500;">${d}</th>`;
+        });
+        html += `</tr></thead><tbody><tr>`;
+
+        for (let i = 0; i < startPad; i++) {
+            html += `<td style="padding: 4px;"></td>`;
+        }
+
+        let cellCount = startPad;
+        for (let day = 1; day <= totalDays; day++) {
+            const dateStr = `${year}-${String(monthIndex + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+            const hasWork = projectData.scheduledDates[dateStr];
+            const bgColor = hasWork ? projectData.projectColor : 'transparent';
+            const textColor = hasWork ? '#ffffff' : '#64748b';
+
+            html += `<td style="padding: 4px; text-align: center; background: ${bgColor}; color: ${textColor}; border-radius: 4px;">${day}</td>`;
+
+            cellCount++;
+            if (cellCount % 7 === 0 && day < totalDays) {
+                html += `</tr><tr>`;
+            }
+        }
+
+        const remainingCells = (7 - (cellCount % 7)) % 7;
+        for (let i = 0; i < remainingCells; i++) {
+            html += `<td style="padding: 4px;"></td>`;
+        }
+
+        html += `</tr></tbody></table>
+            <div style="text-align: center; margin-top: 8px; font-size: 10px; color: #64748b;">
+                ${scheduledDays.length} days with scheduled work
+            </div>
+        </div>`;
+    }
+
+    // Upcoming Tasks
+    if (projectData.upcomingTasks.length > 0) {
+        html += `
+        <div class="project-upcoming" style="margin-bottom: 20px;">
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 10px;">Upcoming Work</div>
+            <ul style="list-style: none; padding: 0; margin: 0;">`;
+        projectData.upcomingTasks.slice(0, 8).forEach(task => {
+            html += `<li style="padding: 6px 0; border-bottom: 1px solid #f1f5f9; color: #334155; font-size: 12px;">
+                <span style="color: #d97706; margin-right: 8px;">○</span>${task.title}`;
+            if (task.subtasks?.length > 0) {
+                html += ` <span style="color: #94a3b8; font-size: 10px;">(${task.subtasks.length} subtasks)</span>`;
+            }
+            html += `</li>`;
+        });
+        if (projectData.upcomingTasks.length > 8) {
+            html += `<li style="padding: 6px 0; color: #94a3b8; font-size: 11px;">... and ${projectData.upcomingTasks.length - 8} more</li>`;
+        }
+        html += `</ul></div>`;
+    }
+
+    // Directions
+    if (projectData.directions) {
+        html += `
+        <div class="project-directions" style="margin-bottom: 20px;">
+            <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 10px;">Forward-Looking Notes</div>
+            <div style="background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; padding: 12px; font-size: 12px; color: #92400e; white-space: pre-wrap;">${projectData.directions}</div>
+        </div>`;
+    }
+
+    html += `</div>`;
+    return html;
+}
+
+function generateTabbedHtmlReport(reportData, options = {}) {
+    const genDate = new Date();
+    const genDateStr = genDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+    const shortDate = (dateStr) => {
+        const d = new Date(dateStr);
+        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    };
+
+    const safeTitle = (item) => {
+        if (item.title) return item.title;
+        if (item.projectId && item.taskId) {
+            const project = state.data.projects?.find(p => p.id === item.projectId);
+            const task = project?.tasks?.find(t => t.id === item.taskId);
+            if (task?.title) return task.title;
+        }
+        return 'Untitled Task';
+    };
+
+    // Get project tabs
+    const projectTabs = (reportData.projectReports || []).filter(p =>
+        p.completedTasks.length > 0 || p.completedSubtasks.length > 0 || p.progressUpdates.length > 0
+    );
+
+    const styles = `
+        <style>
+            :root, html, body {
+                --color-bg: #ffffff !important;
+                --color-surface: #f8fafc !important;
+                --color-text: #0f172a !important;
+                --color-text-secondary: #64748b !important;
+                --color-border: #e2e8f0 !important;
+            }
+
+            * { box-sizing: border-box; margin: 0; padding: 0; }
+
+            html, body {
+                background-color: #ffffff !important;
+                color: #0f172a !important;
+            }
+
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 40px 30px;
+                line-height: 1.5;
+                font-size: 12px;
+            }
+
+            .report-header {
+                margin-bottom: 30px;
+                padding-bottom: 20px;
+                border-bottom: 2px solid #1e293b;
+            }
+
+            .report-title {
+                font-size: 28px;
+                font-weight: 700;
+                color: #1e293b;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-bottom: 4px;
+            }
+
+            .report-tabs {
+                display: flex;
+                gap: 4px;
+                margin-bottom: 24px;
+                border-bottom: 2px solid #e2e8f0;
+                flex-wrap: wrap;
+            }
+
+            .report-tab {
+                padding: 10px 16px;
+                font-size: 12px;
+                font-weight: 500;
+                color: #64748b;
+                cursor: pointer;
+                border-bottom: 2px solid transparent;
+                margin-bottom: -2px;
+                transition: all 0.15s ease;
+            }
+
+            .report-tab:hover {
+                color: #1e293b;
+            }
+
+            .report-tab.active {
+                color: #1e293b;
+                border-bottom-color: #3b82f6;
+            }
+
+            .report-tab-panel {
+                display: none;
+            }
+
+            .report-tab-panel.active {
+                display: block;
+            }
+
+            .metrics-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                margin: 25px 0;
+            }
+
+            .metric-card {
+                background: #f8fafc;
+                border: 1px solid #e2e8f0;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .metric-value {
+                font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+                font-size: 32px;
+                font-weight: 700;
+                color: #1e293b;
+            }
+
+            .metric-label {
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #64748b;
+                margin-top: 8px;
+            }
+
+            .section-header {
+                font-size: 14px;
+                font-weight: 700;
+                color: #1e293b;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin: 30px 0 15px 0;
+                padding-bottom: 8px;
+                border-bottom: 1px solid #e2e8f0;
+            }
+
+            .ai-summary-box {
+                margin: 25px 0;
+                padding: 20px;
+                background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+                border: 1px solid #7dd3fc;
+                border-radius: 8px;
+            }
+
+            .ai-summary-box .section-header {
+                color: #0369a1;
+                border-bottom-color: #7dd3fc;
+            }
+
+            .standalone-section {
+                margin: 20px 0;
+            }
+
+            .task-item {
+                padding: 8px 0;
+                border-bottom: 1px solid #f1f5f9;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
+            }
+
+            .task-check {
+                color: #16a34a;
+                font-weight: 600;
+                margin-right: 8px;
+            }
+
+            .task-title {
+                flex: 1;
+                color: #1e293b;
+                font-weight: 500;
+            }
+
+            .task-date {
+                font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+                font-size: 10px;
+                color: #94a3b8;
+                margin-left: 10px;
+            }
+
+            .project-page {
+                page-break-before: always;
+            }
+
+            @media print {
+                .report-tabs {
+                    display: none;
+                }
+                .report-tab-panel {
+                    display: block !important;
+                }
+                .project-page {
+                    page-break-before: always;
+                }
+            }
+
+            @media screen {
+                .report-tab-panel:not(.active) {
+                    display: none;
+                }
+            }
+        </style>
+    `;
+
+    let html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report - ${reportData.monthName}</title>
+    ${styles}
+</head>
+<body>
+    <header class="report-header">
+        <div class="report-title">${reportData.monthName}</div>
+        <div style="font-size: 18px; color: #64748b; margin-bottom: 8px;">Samuel Little</div>
+        <div style="font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 1px;">Monthly Engineering Report</div>
+        <div style="font-family: monospace; font-size: 10px; color: #94a3b8; margin-top: 8px;">Generated: ${genDateStr}</div>
+    </header>
+
+    <div class="report-tabs">
+        <div class="report-tab active" data-tab="overview">Overview</div>`;
+
+    projectTabs.forEach(project => {
+        html += `<div class="report-tab" data-tab="${project.projectId}" style="border-left: 3px solid ${project.projectColor};">${project.projectName}</div>`;
+    });
+
+    html += `</div>
+
+    <!-- Overview Tab -->
+    <div class="report-tab-panel active" id="tab-overview">
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">${reportData.taskCount}</div>
+                <div class="metric-label">Tasks</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">${reportData.subtaskCount || 0}</div>
+                <div class="metric-label">Subtasks</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">${reportData.projectCount}</div>
+                <div class="metric-label">Projects</div>
+            </div>
+        </div>`;
+
+    // Overall AI Summary
+    if (options.includeAiSummary && options.aiSummary) {
+        html += `
+        <div class="ai-summary-box">
+            <div class="section-header">AI-Generated Summary</div>
+            <div style="font-size: 12px; line-height: 1.7; color: #334155;">${options.aiSummary.replace(/\n/g, '<br>')}</div>
+        </div>`;
+    }
+
+    // Project list with quick stats
+    if (projectTabs.length > 0) {
+        html += `<div class="section-header">Project Activity</div>`;
+        projectTabs.forEach(project => {
+            const totalItems = project.completedTasks.length + project.completedSubtasks.length;
+            html += `
+            <div style="padding: 12px; margin-bottom: 8px; background: #f8fafc; border-left: 3px solid ${project.projectColor};">
+                <div style="font-weight: 600; color: #1e293b;">${project.projectName}</div>
+                <div style="font-size: 11px; color: #64748b; margin-top: 4px;">
+                    ${project.completedTasks.length} tasks, ${project.completedSubtasks.length} subtasks completed
+                    ${project.upcomingTasks.length > 0 ? ` • ${project.upcomingTasks.length} upcoming` : ''}
+                </div>
+            </div>`;
+        });
+    }
+
+    // Standalone tasks
+    if (reportData.standaloneTasks && reportData.standaloneTasks.length > 0) {
+        html += `<div class="section-header">Standalone Tasks</div>
+        <div class="standalone-section">`;
+        reportData.standaloneTasks.forEach(task => {
+            const date = shortDate(task.completedAt);
+            html += `<div class="task-item">
+                <span class="task-check">✓</span>
+                <span class="task-title">${safeTitle(task)}</span>
+                <span class="task-date">${date}</span>
+            </div>`;
+        });
+        html += `</div>`;
+    }
+
+    html += `</div>`;
+
+    // Project Tabs
+    projectTabs.forEach(projectData => {
+        const projectAiSummary = options.projectAiSummaries?.[projectData.projectId] || projectAiSummaries[projectData.projectId];
+        html += `<div class="report-tab-panel" id="tab-${projectData.projectId}">`;
+        html += generateProjectHtmlSection(projectData, projectAiSummary, options);
+        html += `</div>`;
+    });
+
+    // Tab switching script
+    html += `
+    <script>
+        document.querySelectorAll('.report-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.report-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.report-tab-panel').forEach(p => p.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body></html>`;
+
+    return html;
+}
+
 function exportReport(e) {
     e.preventDefault();
 
@@ -5206,12 +6309,17 @@ function exportReport(e) {
     const format = elements.exportFormat.value;
     const [year, month] = monthStr.split('-').map(Number);
 
+    const useTabbedFormat = elements.exportUseTabbedFormat?.checked ?? true;
+    const includeProjectAiSummaries = elements.exportIncludeProjectAiSummaries?.checked ?? true;
+
     const options = {
         includeSubtasks: elements.exportIncludeSubtasks?.checked ?? true,
         includeDailyAppendix: elements.exportIncludeDailyAppendix?.checked ?? true,
         includeIncomplete: elements.exportIncludeIncomplete?.checked ?? false,
         includePlanned: elements.exportIncludePlanned?.checked ?? false,
-        includeAiSummary: elements.exportIncludeAiSummary?.checked && currentAiSummary
+        includeAiSummary: elements.exportIncludeAiSummary?.checked && currentAiSummary,
+        useTabbedFormat,
+        includeProjectAiSummaries
     };
 
     // Add AI summary to options if available
@@ -5219,11 +6327,18 @@ function exportReport(e) {
         options.aiSummary = currentAiSummary;
     }
 
+    // Add project AI summaries if available
+    if (includeProjectAiSummaries && Object.keys(projectAiSummaries).length > 0) {
+        options.projectAiSummaries = { ...projectAiSummaries };
+    }
+
     const reportData = gatherMonthlyReportData(year, month, options);
 
     // Handle PDF export separately
     if (format === 'pdf') {
-        const htmlContent = generateHtmlReport(reportData, options);
+        const htmlContent = useTabbedFormat
+            ? generateTabbedHtmlReport(reportData, options)
+            : generateHtmlReport(reportData, options);
         generatePdfReport(htmlContent, monthStr);
         return;
     }
@@ -5233,16 +6348,23 @@ function exportReport(e) {
     let mimeType = 'text/plain';
 
     if (format === 'markdown') {
-        content = generateMarkdownReport(reportData, options);
+        content = useTabbedFormat
+            ? generateTabbedMarkdownReport(reportData, options)
+            : generateMarkdownReport(reportData, options);
         extension = 'md';
     } else if (format === 'html') {
-        content = generateHtmlReport(reportData, options);
+        content = useTabbedFormat
+            ? generateTabbedHtmlReport(reportData, options)
+            : generateHtmlReport(reportData, options);
         extension = 'html';
         mimeType = 'text/html';
     } else if (format === 'json') {
-        // Include AI summary in JSON export
+        // Include AI summaries in JSON export
         if (options.includeAiSummary) {
             reportData.aiSummary = currentAiSummary;
+        }
+        if (options.includeProjectAiSummaries) {
+            reportData.projectAiSummaries = projectAiSummaries;
         }
         content = JSON.stringify(reportData, null, 2);
         extension = 'json';
@@ -5320,7 +6442,12 @@ function initEventListeners() {
     elements.aiSettingsToggle?.addEventListener('click', toggleAiSettings);
     elements.saveApiKeyBtn?.addEventListener('click', saveAnthropicApiKey);
     elements.generateAiSummaryBtn?.addEventListener('click', generateAiSummary);
-    elements.exportMonth?.addEventListener('change', resetAiSummary);
+    elements.exportMonth?.addEventListener('change', () => {
+        resetAiSummary();
+        resetProjectAiSummaries();
+        populateProjectReportTabs();
+    });
+    elements.generateAllProjectAiBtn?.addEventListener('click', generateAllProjectAiSummaries);
 
     // Schedule dropdown
     elements.taskSchedule?.addEventListener('change', () => {
