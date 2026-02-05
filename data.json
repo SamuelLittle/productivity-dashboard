@@ -415,8 +415,11 @@
               "title": "Check Mast cell viability",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-04T23:08:30.793Z"
+              "completed": true,
+              "createdAt": "2026-02-04T23:08:30.793Z",
+              "completedAt": "2026-02-05T23:00:49.401Z",
+              "completionNotes": "low viability and loss of cells\n",
+              "completionLinks": ""
             }
           ]
         },
@@ -2509,7 +2512,10 @@
         "subtaskId": "ml8n2dop9wmkax0goo7",
         "time": null,
         "scheduledAt": "2026-02-04T23:08:30.793Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-05T23:00:49.401Z",
+        "completionNotes": "low viability and loss of cells\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -3574,9 +3580,18 @@
       "completionNotes": "Slides added to 2026 1-on-1 slide deck\n",
       "completionLinks": "",
       "date": "2026-02-05"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3n6kk2s3eujhd9om",
+      "subtaskId": "ml8n2dop9wmkax0goo7",
+      "completedAt": "2026-02-05T23:00:49.401Z",
+      "completionNotes": "low viability and loss of cells\n",
+      "completionLinks": "",
+      "date": "2026-02-05"
     }
   ],
-  "lastUpdated": "2026-02-05T21:12:28.772Z",
+  "lastUpdated": "2026-02-05T23:00:49.401Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
