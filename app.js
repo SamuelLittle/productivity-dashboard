@@ -896,9 +896,15 @@ function renderProjectDetail(projectId) {
         }
     });
 
-    // Sort both lists by saved order
+    // Sort active tasks by saved order
     sortByOrder(activeTasks);
-    sortByOrder(completedTasks);
+
+    // Sort completed tasks by completion date (most recent first)
+    completedTasks.sort((a, b) => {
+        const dateA = a.completedAt ? new Date(a.completedAt) : new Date(0);
+        const dateB = b.completedAt ? new Date(b.completedAt) : new Date(0);
+        return dateB - dateA; // Most recent first
+    });
 
     elements.projectTasks.innerHTML = '';
 
@@ -921,15 +927,42 @@ function renderProjectDetail(projectId) {
         elements.projectTasks.appendChild(emptyActive);
     }
 
-    // Completed Tasks Section
+    // Completed Tasks Section - grouped by week
     if (completedTasks.length > 0) {
         const completedHeader = document.createElement('div');
         completedHeader.className = 'project-tasks-section-header completed-section';
         completedHeader.innerHTML = `<h4>Completed Tasks (${completedTasks.length})</h4>`;
         elements.projectTasks.appendChild(completedHeader);
 
+        // Group tasks by week
+        const tasksByWeek = new Map();
         completedTasks.forEach(task => {
-            elements.projectTasks.appendChild(createProjectTaskElement(task, project));
+            const completedDate = task.completedAt ? new Date(task.completedAt) : new Date(0);
+            const weekStart = getWeekStart(completedDate);
+            const weekKey = weekStart.toISOString().split('T')[0];
+
+            if (!tasksByWeek.has(weekKey)) {
+                tasksByWeek.set(weekKey, { weekStart, tasks: [] });
+            }
+            tasksByWeek.get(weekKey).tasks.push(task);
+        });
+
+        // Render each week group
+        tasksByWeek.forEach(({ weekStart, tasks }) => {
+            const weekEnd = new Date(weekStart);
+            weekEnd.setDate(weekStart.getDate() + 6);
+
+            const weekStartStr = weekStart.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            const weekEndStr = weekEnd.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+            const weekHeader = document.createElement('div');
+            weekHeader.className = 'completed-week-header';
+            weekHeader.textContent = `Week of ${weekStartStr} - ${weekEndStr}`;
+            elements.projectTasks.appendChild(weekHeader);
+
+            tasks.forEach(task => {
+                elements.projectTasks.appendChild(createProjectTaskElement(task, project));
+            });
         });
     }
 

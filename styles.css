@@ -1535,6 +1535,20 @@ body {
     color: var(--color-success);
 }
 
+.completed-week-header {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    padding: 12px 0 8px 0;
+    margin-top: 8px;
+    border-top: 1px solid var(--color-border);
+}
+
+.project-tasks-section-header.completed-section + .completed-week-header {
+    border-top: none;
+    margin-top: 0;
+}
+
 .empty-state-small {
     font-size: 13px;
     color: var(--color-text-muted);
