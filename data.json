@@ -1544,8 +1544,11 @@
               "title": "Get IXM file path",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-06T00:22:14.248Z"
+              "completed": true,
+              "createdAt": "2026-02-06T00:22:14.248Z",
+              "completedAt": "2026-02-06T22:51:48.108Z",
+              "completionNotes": "sent notes to holly - follow up inevitable ",
+              "completionLinks": ""
             },
             {
               "id": "mla55dm6weloe0vkup",
@@ -2756,7 +2759,10 @@
         "subtaskId": "mla551ifbbo5u19tsku",
         "time": null,
         "scheduledAt": "2026-02-06T00:22:18.761Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-06T22:51:48.108Z",
+        "completionNotes": "sent notes to holly - follow up inevitable ",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -3795,9 +3801,18 @@
       "completionNotes": "",
       "completionLinks": "https://gene.benchling.com/s/etr-ZRx3IeT4YslkZhiONxWf?m=slm-seVOhGj1ekXcbb8b8vcX",
       "date": "2026-02-06"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkx8wznv95wc8en1g2k",
+      "subtaskId": "mla551ifbbo5u19tsku",
+      "completedAt": "2026-02-06T22:51:48.108Z",
+      "completionNotes": "sent notes to holly - follow up inevitable ",
+      "completionLinks": "",
+      "date": "2026-02-06"
     }
   ],
-  "lastUpdated": "2026-02-06T21:05:19.661Z",
+  "lastUpdated": "2026-02-06T22:51:48.108Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
