@@ -1308,6 +1308,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-06T00:34:49.054Z"
+            },
+            {
+              "id": "mla5m60u3ykgh50ahft",
+              "title": "20X images of M0/M1/M2",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-06T00:35:33.246Z"
             }
           ]
         },
@@ -2815,6 +2823,16 @@
         "scheduledAt": "2026-02-06T00:34:49.054Z",
         "completedOnDay": false
       }
+    ],
+    "2026-02-11": [
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mkn0e9s5qbl61liiujc",
+        "subtaskId": "mla5m60u3ykgh50ahft",
+        "time": null,
+        "scheduledAt": "2026-02-06T00:35:33.247Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -3748,7 +3766,7 @@
       "date": "2026-02-05"
     }
   ],
-  "lastUpdated": "2026-02-06T00:34:49.054Z",
+  "lastUpdated": "2026-02-06T00:35:33.247Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
