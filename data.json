@@ -1284,6 +1284,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-01-20T19:50:58.990Z"
+            },
+            {
+              "id": "mla5jhc2q822mnm8pxi",
+              "title": "Add media to M2s",
+              "description": "2mL of M-CSF containing media",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-06T00:33:27.938Z"
             }
           ]
         },
@@ -2754,6 +2762,14 @@
         "time": null,
         "scheduledAt": "2026-02-06T00:22:35.137Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mkn0e9s5qbl61liiujc",
+        "subtaskId": "mla5jhc2q822mnm8pxi",
+        "time": null,
+        "scheduledAt": "2026-02-06T00:33:27.938Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-09": [
@@ -3698,7 +3714,7 @@
       "date": "2026-02-05"
     }
   ],
-  "lastUpdated": "2026-02-06T00:22:51.519Z",
+  "lastUpdated": "2026-02-06T00:33:27.939Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
