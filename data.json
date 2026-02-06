@@ -1498,6 +1498,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-06T00:22:14.248Z"
+            },
+            {
+              "id": "mla55dm6weloe0vkup",
+              "title": "complete gRNA intake form",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-06T00:22:29.935Z"
             }
           ]
         }
@@ -3674,7 +3682,7 @@
       "date": "2026-02-05"
     }
   ],
-  "lastUpdated": "2026-02-06T00:22:18.761Z",
+  "lastUpdated": "2026-02-06T00:22:29.935Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
