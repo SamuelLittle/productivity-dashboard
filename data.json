@@ -1300,6 +1300,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-06T00:33:58.613Z"
+            },
+            {
+              "id": "mla5l7xa78az0qky3b8",
+              "title": "Add IFNg + LPS media to M1s",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-06T00:34:49.054Z"
             }
           ]
         },
@@ -2797,6 +2805,16 @@
         "scheduledAt": "2026-02-06T00:33:58.614Z",
         "completedOnDay": false
       }
+    ],
+    "2026-02-10": [
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mkn0e9s5qbl61liiujc",
+        "subtaskId": "mla5l7xa78az0qky3b8",
+        "time": null,
+        "scheduledAt": "2026-02-06T00:34:49.054Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -3730,7 +3748,7 @@
       "date": "2026-02-05"
     }
   ],
-  "lastUpdated": "2026-02-06T00:33:58.614Z",
+  "lastUpdated": "2026-02-06T00:34:49.054Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
