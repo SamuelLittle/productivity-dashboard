@@ -1377,8 +1377,11 @@
               "title": "Differentiaiton culture plan",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-04T01:38:53.118Z"
+              "completed": true,
+              "createdAt": "2026-02-04T01:38:53.118Z",
+              "completedAt": "2026-02-06T17:39:30.878Z",
+              "completionNotes": "Sent TPP diff opp proposal to Celine",
+              "completionLinks": "https://gene.benchling.com/s/etr-DxZ1qvi5aSbKXzanmIU7?m=slm-mPc2kGhut4e4x5PRDj3F"
             }
           ]
         },
@@ -2793,7 +2796,10 @@
         "subtaskId": "ml7czwougk8dd36h17i",
         "time": null,
         "scheduledAt": "2026-02-04T23:11:09.172Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-06T17:39:30.878Z",
+        "completionNotes": "Sent TPP diff opp proposal to Celine",
+        "completionLinks": "https://gene.benchling.com/s/etr-DxZ1qvi5aSbKXzanmIU7?m=slm-mPc2kGhut4e4x5PRDj3F"
       }
     ],
     "2026-02-09": [
@@ -3764,9 +3770,18 @@
       "completionNotes": "Made new TSO aliquots I will test tomorrow. Ordered More GTP and H-",
       "completionLinks": "",
       "date": "2026-02-05"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "ml7czwougk8dd36h17i",
+      "completedAt": "2026-02-06T17:39:30.878Z",
+      "completionNotes": "Sent TPP diff opp proposal to Celine",
+      "completionLinks": "https://gene.benchling.com/s/etr-DxZ1qvi5aSbKXzanmIU7?m=slm-mPc2kGhut4e4x5PRDj3F",
+      "date": "2026-02-06"
     }
   ],
-  "lastUpdated": "2026-02-06T00:35:33.247Z",
+  "lastUpdated": "2026-02-06T17:39:30.878Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
