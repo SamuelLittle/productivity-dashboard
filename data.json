@@ -684,7 +684,7 @@
           "title": "T cell pilot",
           "description": "Modified cell washing protocol for T cell SMARTseq",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-02-04T18:38:48.471Z",
           "subtasks": [
             {
@@ -694,7 +694,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-04T18:39:19.957Z",
-              "completedAt": "2026-02-04T22:52:05.133Z",
+              "completedAt": "2026-02-06T21:05:19.660Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -705,7 +705,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-04T18:39:38.583Z",
-              "completedAt": "2026-02-04T22:52:08.803Z",
+              "completedAt": "2026-02-06T21:05:19.660Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -714,18 +714,23 @@
               "title": "Lyse and SMARTseq cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-04T18:39:56.872Z"
+              "completed": true,
+              "createdAt": "2026-02-04T18:39:56.872Z",
+              "completedAt": "2026-02-06T21:05:19.660Z"
             },
             {
               "id": "ml8dhjgpvs628urfnzf",
               "title": "QC cDNA",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-04T18:40:21.962Z"
+              "completed": true,
+              "createdAt": "2026-02-04T18:40:21.962Z",
+              "completedAt": "2026-02-06T21:05:19.660Z"
             }
-          ]
+          ],
+          "completedAt": "2026-02-06T21:05:19.660Z",
+          "completionNotes": "",
+          "completionLinks": "https://gene.benchling.com/s/etr-ZRx3IeT4YslkZhiONxWf?m=slm-seVOhGj1ekXcbb8b8vcX"
         },
         {
           "id": "ml8iyb0u5om7sbdijba",
@@ -2724,7 +2729,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-02-04T18:38:48.471Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-06T21:05:19.659Z",
+        "completionNotes": "",
+        "completionLinks": "https://gene.benchling.com/s/etr-ZRx3IeT4YslkZhiONxWf?m=slm-seVOhGj1ekXcbb8b8vcX"
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -3779,9 +3787,17 @@
       "completionNotes": "Sent TPP diff opp proposal to Celine",
       "completionLinks": "https://gene.benchling.com/s/etr-DxZ1qvi5aSbKXzanmIU7?m=slm-mPc2kGhut4e4x5PRDj3F",
       "date": "2026-02-06"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "ml8dfjbquh1tf1gtbo",
+      "completedAt": "2026-02-06T21:05:19.660Z",
+      "completionNotes": "",
+      "completionLinks": "https://gene.benchling.com/s/etr-ZRx3IeT4YslkZhiONxWf?m=slm-seVOhGj1ekXcbb8b8vcX",
+      "date": "2026-02-06"
     }
   ],
-  "lastUpdated": "2026-02-06T17:39:30.878Z",
+  "lastUpdated": "2026-02-06T21:05:19.661Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
