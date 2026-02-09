@@ -594,8 +594,11 @@
               "title": "Automation pilot",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-09T21:31:10.209Z"
+              "completed": true,
+              "createdAt": "2026-02-09T21:31:10.209Z",
+              "completedAt": "2026-02-09T21:33:44.405Z",
+              "completionNotes": "Worked out logic on how to use Span 8 to automate treatment plate making. Need to generated a unique dispensing map for each column of a master source plate containing all 90 unique treatments.",
+              "completionLinks": ""
             },
             {
               "id": "mlfosvsq6058vb0jqfh",
@@ -2827,7 +2830,10 @@
         "subtaskId": "mlfosge9b9uq3thy2t",
         "time": null,
         "scheduledAt": "2026-02-09T21:31:45.356Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-09T21:33:44.405Z",
+        "completionNotes": "Worked out logic on how to use Span 8 to automate treatment plate making. Need to generated a unique dispensing map for each column of a master source plate containing all 90 unique treatments.",
+        "completionLinks": ""
       }
     ],
     "2026-02-10": [
@@ -3848,9 +3854,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-09"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "ml2kttyffq66yk0c0tn",
+      "subtaskId": "mlfosge9b9uq3thy2t",
+      "completedAt": "2026-02-09T21:33:44.406Z",
+      "completionNotes": "Worked out logic on how to use Span 8 to automate treatment plate making. Need to generated a unique dispensing map for each column of a master source plate containing all 90 unique treatments.",
+      "completionLinks": "",
+      "date": "2026-02-09"
     }
   ],
-  "lastUpdated": "2026-02-09T21:31:45.356Z",
+  "lastUpdated": "2026-02-09T21:33:44.406Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
