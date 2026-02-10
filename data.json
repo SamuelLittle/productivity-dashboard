@@ -1322,8 +1322,11 @@
               "title": "Add media to M2s",
               "description": "2mL of M-CSF containing media",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-06T00:33:27.938Z"
+              "completed": true,
+              "createdAt": "2026-02-06T00:33:27.938Z",
+              "completedAt": "2026-02-10T00:31:13.290Z",
+              "completionNotes": "2ml of MCSF containing media added to all wells ",
+              "completionLinks": ""
             },
             {
               "id": "mla5k505js27emqmkac",
@@ -2850,7 +2853,10 @@
         "subtaskId": "mla5jhc2q822mnm8pxi",
         "time": null,
         "scheduledAt": "2026-02-09T21:34:03.601Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-10T00:31:13.290Z",
+        "completionNotes": "2ml of MCSF containing media added to all wells ",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -3917,9 +3923,18 @@
       "completionNotes": "50ul of 5x TPP media added to all wells in \"baseline plate\"",
       "completionLinks": "",
       "date": "2026-02-09"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mkn0e9s5qbl61liiujc",
+      "subtaskId": "mla5jhc2q822mnm8pxi",
+      "completedAt": "2026-02-10T00:31:13.290Z",
+      "completionNotes": "2ml of MCSF containing media added to all wells ",
+      "completionLinks": "",
+      "date": "2026-02-09"
     }
   ],
-  "lastUpdated": "2026-02-10T00:30:55.406Z",
+  "lastUpdated": "2026-02-10T00:31:13.290Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
