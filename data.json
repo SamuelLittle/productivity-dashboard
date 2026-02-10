@@ -1570,8 +1570,11 @@
               "title": "Format and assemble cytokine data",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-10T00:32:23.571Z"
+              "completed": true,
+              "createdAt": "2026-02-10T00:32:23.571Z",
+              "completedAt": "2026-02-10T01:08:08.899Z",
+              "completionNotes": "",
+              "completionLinks": "https://docs.google.com/spreadsheets/d/1xSw15USZE9q0o5W7J7f_eq9uaAuXxlty/edit?gid=558385779#gid=558385779"
             }
           ]
         },
@@ -2883,7 +2886,10 @@
         "subtaskId": "mlfv9ic3joy5qhrmwlh",
         "time": null,
         "scheduledAt": "2026-02-10T00:32:28.821Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-10T01:08:08.899Z",
+        "completionNotes": "",
+        "completionLinks": "https://docs.google.com/spreadsheets/d/1xSw15USZE9q0o5W7J7f_eq9uaAuXxlty/edit?gid=558385779#gid=558385779"
       }
     ],
     "2026-02-10": [
@@ -3948,9 +3954,18 @@
       "completionNotes": "2ml of MCSF containing media added to all wells ",
       "completionLinks": "",
       "date": "2026-02-09"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkmsy72n9wkp209y165",
+      "subtaskId": "mlfv9ic3joy5qhrmwlh",
+      "completedAt": "2026-02-10T01:08:08.899Z",
+      "completionNotes": "",
+      "completionLinks": "https://docs.google.com/spreadsheets/d/1xSw15USZE9q0o5W7J7f_eq9uaAuXxlty/edit?gid=558385779#gid=558385779",
+      "date": "2026-02-09"
     }
   ],
-  "lastUpdated": "2026-02-10T00:32:28.821Z",
+  "lastUpdated": "2026-02-10T01:08:08.899Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
