@@ -2876,6 +2876,14 @@
         "completedAt": "2026-02-10T00:30:55.406Z",
         "completionNotes": "50ul of 5x TPP media added to all wells in \"baseline plate\"",
         "completionLinks": ""
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mkmsy72n9wkp209y165",
+        "subtaskId": "mlfv9ic3joy5qhrmwlh",
+        "time": null,
+        "scheduledAt": "2026-02-10T00:32:28.821Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-10": [
@@ -3942,7 +3950,7 @@
       "date": "2026-02-09"
     }
   ],
-  "lastUpdated": "2026-02-10T00:32:23.571Z",
+  "lastUpdated": "2026-02-10T00:32:28.821Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
