@@ -1423,8 +1423,11 @@
               "title": "Start baseline TPP differentiation protocol.",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-09T21:34:49.657Z"
+              "completed": true,
+              "createdAt": "2026-02-09T21:34:49.657Z",
+              "completedAt": "2026-02-10T00:30:55.406Z",
+              "completionNotes": "50ul of 5x TPP media added to all wells in \"baseline plate\"",
+              "completionLinks": ""
             }
           ]
         },
@@ -2855,7 +2858,10 @@
         "subtaskId": "mlfox5q1dsj0p5ea3qn",
         "time": null,
         "scheduledAt": "2026-02-09T21:34:56.869Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-10T00:30:55.406Z",
+        "completionNotes": "50ul of 5x TPP media added to all wells in \"baseline plate\"",
+        "completionLinks": ""
       }
     ],
     "2026-02-10": [
@@ -3902,9 +3908,18 @@
       "completionNotes": "Added M2s now in 5mL of media.\n- M2s accidently generated in middle column. label made on the plate.",
       "completionLinks": "",
       "date": "2026-02-09"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "mlfox5q1dsj0p5ea3qn",
+      "completedAt": "2026-02-10T00:30:55.406Z",
+      "completionNotes": "50ul of 5x TPP media added to all wells in \"baseline plate\"",
+      "completionLinks": "",
+      "date": "2026-02-09"
     }
   ],
-  "lastUpdated": "2026-02-10T00:30:30.774Z",
+  "lastUpdated": "2026-02-10T00:30:55.406Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
