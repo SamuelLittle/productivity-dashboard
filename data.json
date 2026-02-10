@@ -1439,6 +1439,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-10T01:09:09.754Z"
+            },
+            {
+              "id": "mlfwl8el4iwfz01prb4",
+              "title": "Collect supernatants and extract RNA",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-10T01:09:30.189Z"
             }
           ]
         },
@@ -2950,6 +2958,14 @@
         "time": null,
         "scheduledAt": "2026-02-06T00:35:33.247Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "ml73fflhsubbxo2vp8c",
+        "subtaskId": "mlfwl8el4iwfz01prb4",
+        "time": null,
+        "scheduledAt": "2026-02-10T01:09:30.189Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-13": [
@@ -3973,7 +3989,7 @@
       "date": "2026-02-09"
     }
   ],
-  "lastUpdated": "2026-02-10T01:09:09.755Z",
+  "lastUpdated": "2026-02-10T01:09:30.189Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
