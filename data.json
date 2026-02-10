@@ -1330,8 +1330,11 @@
               "title": "Add IL10 media to M2s",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-06T00:33:58.613Z"
+              "completed": true,
+              "createdAt": "2026-02-06T00:33:58.613Z",
+              "completedAt": "2026-02-10T00:30:30.774Z",
+              "completionNotes": "Added M2s now in 5mL of media.\n- M2s accidently generated in middle column. label made on the plate.",
+              "completionLinks": ""
             },
             {
               "id": "mla5l7xa78az0qky3b8",
@@ -2814,7 +2817,10 @@
         "subtaskId": "mla5k505js27emqmkac",
         "time": null,
         "scheduledAt": "2026-02-06T00:33:58.614Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-10T00:30:30.774Z",
+        "completionNotes": "Added M2s now in 5mL of media.\n- M2s accidently generated in middle column. label made on the plate.",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -3887,9 +3893,18 @@
       "completionNotes": "Worked out logic on how to use Span 8 to automate treatment plate making. Need to generated a unique dispensing map for each column of a master source plate containing all 90 unique treatments.",
       "completionLinks": "",
       "date": "2026-02-09"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mkn0e9s5qbl61liiujc",
+      "subtaskId": "mla5k505js27emqmkac",
+      "completedAt": "2026-02-10T00:30:30.774Z",
+      "completionNotes": "Added M2s now in 5mL of media.\n- M2s accidently generated in middle column. label made on the plate.",
+      "completionLinks": "",
+      "date": "2026-02-09"
     }
   ],
-  "lastUpdated": "2026-02-09T21:34:56.869Z",
+  "lastUpdated": "2026-02-10T00:30:30.774Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
