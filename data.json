@@ -1431,6 +1431,14 @@
               "completedAt": "2026-02-10T00:30:55.406Z",
               "completionNotes": "50ul of 5x TPP media added to all wells in \"baseline plate\"",
               "completionLinks": ""
+            },
+            {
+              "id": "mlfwksmy05uuy06cuokr",
+              "title": "Start IFNg titration",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-10T01:09:09.754Z"
             }
           ]
         },
@@ -3965,7 +3973,7 @@
       "date": "2026-02-09"
     }
   ],
-  "lastUpdated": "2026-02-10T01:08:59.021Z",
+  "lastUpdated": "2026-02-10T01:09:09.755Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
