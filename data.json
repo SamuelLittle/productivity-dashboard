@@ -616,8 +616,11 @@
               "title": "Automation test run",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-09T21:31:38.321Z"
+              "completed": true,
+              "createdAt": "2026-02-09T21:31:38.321Z",
+              "completedAt": "2026-02-11T00:04:46.712Z",
+              "completionNotes": "First wet run using two different types of media and PBS. validated all vehicles in the correct plate.  it seems like there is some variation in dispensed amount and some leak over across wells due to bad plate parameters. need some pipette protocol optimization",
+              "completionLinks": ""
             }
           ]
         },
@@ -2983,7 +2986,10 @@
         "subtaskId": "mlfot2353e6nukwafm2",
         "time": null,
         "scheduledAt": "2026-02-11T00:03:16.619Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-11T00:04:46.712Z",
+        "completionNotes": "First wet run using two different types of media and PBS. validated all vehicles in the correct plate.  it seems like there is some variation in dispensed amount and some leak over across wells due to bad plate parameters. need some pipette protocol optimization",
+        "completionLinks": ""
       }
     ],
     "2026-02-11": [
@@ -4041,9 +4047,18 @@
       "completionNotes": "Full automation workflow made and tested in simulation mode",
       "completionLinks": "",
       "date": "2026-02-10"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "ml2kttyffq66yk0c0tn",
+      "subtaskId": "mlfot2353e6nukwafm2",
+      "completedAt": "2026-02-11T00:04:46.712Z",
+      "completionNotes": "First wet run using two different types of media and PBS. validated all vehicles in the correct plate.  it seems like there is some variation in dispensed amount and some leak over across wells due to bad plate parameters. need some pipette protocol optimization",
+      "completionLinks": "",
+      "date": "2026-02-10"
     }
   ],
-  "lastUpdated": "2026-02-11T00:03:39.226Z",
+  "lastUpdated": "2026-02-11T00:04:46.712Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
