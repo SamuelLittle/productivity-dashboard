@@ -605,8 +605,11 @@
               "title": "Make full automation workflow",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-09T21:31:30.171Z"
+              "completed": true,
+              "createdAt": "2026-02-09T21:31:30.171Z",
+              "completedAt": "2026-02-11T00:03:39.226Z",
+              "completionNotes": "Full automation workflow made and tested in simulation mode",
+              "completionLinks": ""
             },
             {
               "id": "mlfot2353e6nukwafm2",
@@ -2969,7 +2972,10 @@
         "subtaskId": "mlfosvsq6058vb0jqfh",
         "time": null,
         "scheduledAt": "2026-02-11T00:03:00.934Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-11T00:03:39.226Z",
+        "completionNotes": "Full automation workflow made and tested in simulation mode",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -4026,9 +4032,18 @@
       "completionNotes": "gamma titration started as per TPP opti protocol. dose added at 4pm on the dot. Takedown in +18hrs\n",
       "completionLinks": "",
       "date": "2026-02-10"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "ml2kttyffq66yk0c0tn",
+      "subtaskId": "mlfosvsq6058vb0jqfh",
+      "completedAt": "2026-02-11T00:03:39.226Z",
+      "completionNotes": "Full automation workflow made and tested in simulation mode",
+      "completionLinks": "",
+      "date": "2026-02-10"
     }
   ],
-  "lastUpdated": "2026-02-11T00:03:16.619Z",
+  "lastUpdated": "2026-02-11T00:03:39.226Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
