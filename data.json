@@ -3046,14 +3046,6 @@
         "completedAt": "2026-02-11T00:04:46.712Z",
         "completionNotes": "First wet run using two different types of media and PBS. validated all vehicles in the correct plate.  it seems like there is some variation in dispensed amount and some leak over across wells due to bad plate parameters. need some pipette protocol optimization",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mlhaql2p4q6z8l0f9n4",
-        "subtaskId": "mlhaskjvxbzqac20ftc",
-        "time": null,
-        "scheduledAt": "2026-02-11T00:35:20.421Z",
-        "completedOnDay": false
       }
     ],
     "2026-02-11": [
@@ -3087,6 +3079,14 @@
         "subtaskId": "mlhaqtoiujbet4aiz3g",
         "time": null,
         "scheduledAt": "2026-02-11T00:35:16.237Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mlhaql2p4q6z8l0f9n4",
+        "subtaskId": "mlhaskjvxbzqac20ftc",
+        "time": null,
+        "scheduledAt": "2026-02-11T00:35:20.421Z",
         "completedOnDay": false
       }
     ],
