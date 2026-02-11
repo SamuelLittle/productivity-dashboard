@@ -1163,6 +1163,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-11T00:36:14.272Z"
+            },
+            {
+              "id": "mli8jrlh0x8ic04ucggm",
+              "title": "Check D0 phenotype",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-11T16:19:49.493Z"
             }
           ]
         }
@@ -3083,6 +3091,14 @@
         "time": null,
         "scheduledAt": "2026-02-09T15:50:39.347Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mlhaql2p4q6z8l0f9n4",
+        "subtaskId": "mli8jrlh0x8ic04ucggm",
+        "time": null,
+        "scheduledAt": "2026-02-11T16:19:49.493Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-13": [
@@ -4194,7 +4210,7 @@
       "date": "2026-02-10"
     }
   ],
-  "lastUpdated": "2026-02-11T15:48:52.473Z",
+  "lastUpdated": "2026-02-11T16:19:49.493Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
