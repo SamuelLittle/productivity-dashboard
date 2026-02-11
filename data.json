@@ -1147,6 +1147,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-11T00:35:37.452Z"
+            },
+            {
+              "id": "mlhaub0gyg9htkvevrj",
+              "title": "Validate KO and check phenotype",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-11T00:36:14.272Z"
             }
           ]
         }
@@ -3101,6 +3109,16 @@
         "scheduledAt": "2026-02-11T00:35:37.453Z",
         "completedOnDay": false
       }
+    ],
+    "2026-02-17": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mlhaql2p4q6z8l0f9n4",
+        "subtaskId": "mlhaub0gyg9htkvevrj",
+        "time": null,
+        "scheduledAt": "2026-02-11T00:36:14.273Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -4149,7 +4167,7 @@
       "date": "2026-02-10"
     }
   ],
-  "lastUpdated": "2026-02-11T00:35:37.453Z",
+  "lastUpdated": "2026-02-11T00:36:14.273Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
