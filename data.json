@@ -1350,8 +1350,11 @@
               "title": "Add IFNg + LPS media to M1s",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-06T00:34:49.054Z"
+              "completed": true,
+              "createdAt": "2026-02-06T00:34:49.054Z",
+              "completedAt": "2026-02-11T00:32:34.571Z",
+              "completionNotes": "Added 1 mL of IFNg + LPS containing media to last column of macrophage containing 6 well plate\n",
+              "completionLinks": ""
             },
             {
               "id": "mla5m60u3ykgh50ahft",
@@ -2916,7 +2919,10 @@
         "subtaskId": "mla5l7xa78az0qky3b8",
         "time": null,
         "scheduledAt": "2026-02-06T00:34:49.054Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-11T00:32:34.571Z",
+        "completionNotes": "Added 1 mL of IFNg + LPS containing media to last column of macrophage containing 6 well plate\n",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -4056,9 +4062,18 @@
       "completionNotes": "First wet run using two different types of media and PBS. validated all vehicles in the correct plate.  it seems like there is some variation in dispensed amount and some leak over across wells due to bad plate parameters. need some pipette protocol optimization",
       "completionLinks": "",
       "date": "2026-02-10"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mkn0e9s5qbl61liiujc",
+      "subtaskId": "mla5l7xa78az0qky3b8",
+      "completedAt": "2026-02-11T00:32:34.571Z",
+      "completionNotes": "Added 1 mL of IFNg + LPS containing media to last column of macrophage containing 6 well plate\n",
+      "completionLinks": "",
+      "date": "2026-02-10"
     }
   ],
-  "lastUpdated": "2026-02-11T00:04:46.712Z",
+  "lastUpdated": "2026-02-11T00:32:34.571Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
