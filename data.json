@@ -1137,8 +1137,11 @@
               "title": "Make NK culture plans",
               "description": "NK MACS + cytokines vs RPMI + cytokines\n@2 M cells / mL\n\nInclude periodic media changes. ",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-11T00:34:53.323Z"
+              "completed": true,
+              "createdAt": "2026-02-11T00:34:53.323Z",
+              "completedAt": "2026-02-11T17:02:01.184Z",
+              "completionNotes": "Plan made for pilot 2 exploring effects of culture media and nucleofection on NK cells",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_V1fOjG4g6y-nk-culture-and-ko-pilot-2/edit"
             },
             {
               "id": "mlhasyci91n5nedlpsf",
@@ -3074,7 +3077,10 @@
         "subtaskId": "mlhaskjvxbzqac20ftc",
         "time": null,
         "scheduledAt": "2026-02-11T00:35:20.421Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-11T17:02:01.184Z",
+        "completionNotes": "Plan made for pilot 2 exploring effects of culture media and nucleofection on NK cells",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_V1fOjG4g6y-nk-culture-and-ko-pilot-2/edit"
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -4208,9 +4214,18 @@
       "completionNotes": "Added 1 mL of IFNg + LPS containing media to last column of macrophage containing 6 well plate\n",
       "completionLinks": "",
       "date": "2026-02-10"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mlhaql2p4q6z8l0f9n4",
+      "subtaskId": "mlhaskjvxbzqac20ftc",
+      "completedAt": "2026-02-11T17:02:01.185Z",
+      "completionNotes": "Plan made for pilot 2 exploring effects of culture media and nucleofection on NK cells",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_V1fOjG4g6y-nk-culture-and-ko-pilot-2/edit",
+      "date": "2026-02-11"
     }
   ],
-  "lastUpdated": "2026-02-11T16:19:54.262Z",
+  "lastUpdated": "2026-02-11T17:02:01.185Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
