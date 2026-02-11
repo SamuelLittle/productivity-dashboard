@@ -1440,12 +1440,12 @@
           "title": "Meet with Kelly+Pete for GPR35 KO",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-27T19:53:10.575Z",
           "subtasks": [],
-          "completedAt": null,
-          "completionNotes": null,
-          "completionLinks": null
+          "completedAt": "2026-02-11T19:45:08.940Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "ml73fflhsubbxo2vp8c",
@@ -2469,10 +2469,10 @@
         "taskId": "mkx0kcz2o187jm7pao",
         "subtaskId": null,
         "scheduledAt": "2026-01-28T05:21:00.220Z",
-        "completedOnDay": false,
-        "completedAt": null,
-        "completionNotes": null,
-        "completionLinks": null
+        "completedOnDay": true,
+        "completedAt": "2026-02-11T19:45:08.940Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -4223,9 +4223,18 @@
       "completionNotes": "Plan made for pilot 2 exploring effects of culture media and nucleofection on NK cells",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_V1fOjG4g6y-nk-culture-and-ko-pilot-2/edit",
       "date": "2026-02-11"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mkx0kcz2o187jm7pao",
+      "subtaskId": null,
+      "title": "Meet with Kelly+Pete for GPR35 KO",
+      "completedAt": "2026-02-11T19:45:08.940Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-02-11T19:44:57.529Z",
+  "lastUpdated": "2026-02-11T19:45:08.940Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
