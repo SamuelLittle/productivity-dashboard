@@ -1437,8 +1437,11 @@
               "title": "Start IFNg titration",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-10T01:09:09.754Z"
+              "completed": true,
+              "createdAt": "2026-02-10T01:09:09.754Z",
+              "completedAt": "2026-02-11T00:02:39.976Z",
+              "completionNotes": "gamma titration started as per TPP opti protocol. dose added at 4pm on the dot. Takedown in +18hrs\n",
+              "completionLinks": ""
             },
             {
               "id": "mlfwl8el4iwfz01prb4",
@@ -2947,7 +2950,10 @@
         "subtaskId": "mlfwksmy05uuy06cuokr",
         "time": null,
         "scheduledAt": "2026-02-10T01:09:37.667Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-11T00:02:39.975Z",
+        "completionNotes": "gamma titration started as per TPP opti protocol. dose added at 4pm on the dot. Takedown in +18hrs\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -3995,9 +4001,18 @@
       "completionNotes": "",
       "completionLinks": "https://docs.google.com/spreadsheets/d/1xSw15USZE9q0o5W7J7f_eq9uaAuXxlty/edit?gid=558385779#gid=558385779",
       "date": "2026-02-09"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "mlfwksmy05uuy06cuokr",
+      "completedAt": "2026-02-11T00:02:39.976Z",
+      "completionNotes": "gamma titration started as per TPP opti protocol. dose added at 4pm on the dot. Takedown in +18hrs\n",
+      "completionLinks": "",
+      "date": "2026-02-10"
     }
   ],
-  "lastUpdated": "2026-02-10T01:09:37.667Z",
+  "lastUpdated": "2026-02-11T00:02:39.976Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
