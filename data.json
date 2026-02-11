@@ -1123,6 +1123,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-11T00:33:31.842Z"
+            },
+            {
+              "id": "mlhaskjvxbzqac20ftc",
+              "title": "Make NK culture plans",
+              "description": "NK MACS + cytokines vs RPMI + cytokines\n@2 M cells / mL\n\nInclude periodic media changes. ",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-11T00:34:53.323Z"
             }
           ]
         }
@@ -4091,7 +4099,7 @@
       "date": "2026-02-10"
     }
   ],
-  "lastUpdated": "2026-02-11T00:33:31.842Z",
+  "lastUpdated": "2026-02-11T00:34:53.323Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
