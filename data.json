@@ -1131,6 +1131,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-11T00:34:53.323Z"
+            },
+            {
+              "id": "mlhasyci91n5nedlpsf",
+              "title": "Check D1 phenotype",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-11T00:35:11.202Z"
             }
           ]
         }
@@ -3040,6 +3048,14 @@
         "time": null,
         "scheduledAt": "2026-02-10T01:09:30.189Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mlhaql2p4q6z8l0f9n4",
+        "subtaskId": "mlhasyci91n5nedlpsf",
+        "time": null,
+        "scheduledAt": "2026-02-11T00:35:11.203Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-13": [
@@ -4099,7 +4115,7 @@
       "date": "2026-02-10"
     }
   ],
-  "lastUpdated": "2026-02-11T00:34:53.323Z",
+  "lastUpdated": "2026-02-11T00:35:11.203Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
