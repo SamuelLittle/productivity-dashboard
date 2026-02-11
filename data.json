@@ -2991,14 +2991,6 @@
         "completedOnDay": false
       },
       {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mkn0igezgk2t0n91d6u",
-        "subtaskId": "ml8n4wzk1gw2qsnsorf",
-        "time": null,
-        "scheduledAt": "2026-02-09T15:51:23.686Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "ml8iyb0u5om7sbdijba",
         "subtaskId": null,
@@ -4191,7 +4183,7 @@
       "date": "2026-02-10"
     }
   ],
-  "lastUpdated": "2026-02-11T00:38:54.310Z",
+  "lastUpdated": "2026-02-11T00:41:37.334Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
