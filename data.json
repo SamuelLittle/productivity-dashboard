@@ -1976,9 +1976,12 @@
         "title": "Blood Arriving",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-02-04T17:45:38.752Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-02-12T22:50:32.594Z",
+        "completionNotes": "Processing and freezing down PBMCS\n",
+        "completionLinks": ""
       }
     ],
     "2026-02-09": [
@@ -4318,9 +4321,17 @@
       "completionNotes": "Wet run went smoothly - there seems to be some discrepancy in well volumes post pipette betweem 55 and ~70ul.  reliably enough for 5 plates. ",
       "completionLinks": "",
       "date": "2026-02-12"
+    },
+    {
+      "id": "ml8bj64ftc6mgtawe9p",
+      "title": "Blood Arriving",
+      "completedAt": "2026-02-12T22:50:32.594Z",
+      "completionNotes": "Processing and freezing down PBMCS\n",
+      "completionLinks": "",
+      "date": "2026-02-12"
     }
   ],
-  "lastUpdated": "2026-02-12T20:57:11.596Z",
+  "lastUpdated": "2026-02-12T22:50:32.594Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
