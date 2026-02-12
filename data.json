@@ -1175,8 +1175,11 @@
               "title": "Check D0 phenotype",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-11T16:19:49.493Z"
+              "completed": true,
+              "createdAt": "2026-02-11T16:19:49.493Z",
+              "completedAt": "2026-02-12T01:01:23.105Z",
+              "completionNotes": "Decided against doing this - will get D1 phenotype tomorrow\n",
+              "completionLinks": ""
             }
           ]
         }
@@ -3105,7 +3108,10 @@
         "subtaskId": "mli8jrlh0x8ic04ucggm",
         "time": null,
         "scheduledAt": "2026-02-11T16:19:49.493Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-12T01:01:23.105Z",
+        "completionNotes": "Decided against doing this - will get D1 phenotype tomorrow\n",
+        "completionLinks": ""
       }
     ],
     "2026-02-13": [
@@ -4258,9 +4264,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-11"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mlhaql2p4q6z8l0f9n4",
+      "subtaskId": "mli8jrlh0x8ic04ucggm",
+      "completedAt": "2026-02-12T01:01:23.105Z",
+      "completionNotes": "Decided against doing this - will get D1 phenotype tomorrow\n",
+      "completionLinks": "",
+      "date": "2026-02-11"
     }
   ],
-  "lastUpdated": "2026-02-12T01:01:03.972Z",
+  "lastUpdated": "2026-02-12T01:01:23.105Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
