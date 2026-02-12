@@ -1159,8 +1159,11 @@
               "title": "Nucleofection",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-11T00:35:37.452Z"
+              "completed": true,
+              "createdAt": "2026-02-11T00:35:37.452Z",
+              "completedAt": "2026-02-12T20:56:08.492Z",
+              "completionNotes": "Performed blank EP for cells from the two different culture conditions.  Seemingly had far fewer cells from the NK MACS condition",
+              "completionLinks": ""
             },
             {
               "id": "mlhaub0gyg9htkvevrj",
@@ -3137,7 +3140,10 @@
         "subtaskId": "mlhatilolwih1b02p9r",
         "time": null,
         "scheduledAt": "2026-02-11T00:35:37.453Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-12T20:56:08.491Z",
+        "completionNotes": "Performed blank EP for cells from the two different culture conditions.  Seemingly had far fewer cells from the NK MACS condition",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -4288,9 +4294,18 @@
       "completionNotes": "Collected two plate of sup (luminex and nomic).  RNA extracted and stored at -20 with TREX rna\n",
       "completionLinks": "",
       "date": "2026-02-11"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mlhaql2p4q6z8l0f9n4",
+      "subtaskId": "mlhatilolwih1b02p9r",
+      "completedAt": "2026-02-12T20:56:08.492Z",
+      "completionNotes": "Performed blank EP for cells from the two different culture conditions.  Seemingly had far fewer cells from the NK MACS condition",
+      "completionLinks": "",
+      "date": "2026-02-12"
     }
   ],
-  "lastUpdated": "2026-02-12T01:02:01.078Z",
+  "lastUpdated": "2026-02-12T20:56:08.492Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
