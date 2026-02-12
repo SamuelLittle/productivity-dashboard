@@ -2011,6 +2011,17 @@
         "createdAt": "2026-02-11T15:48:52.473Z",
         "time": null
       }
+    ],
+    "2026-02-16": [
+      {
+        "id": "mlk28lahoirblda7u8",
+        "title": "Prep TREX1 KO sup for luminex",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-02-12T22:58:42.762Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -4346,7 +4357,7 @@
       "date": "2026-02-12"
     }
   ],
-  "lastUpdated": "2026-02-12T22:50:49.554Z",
+  "lastUpdated": "2026-02-12T22:58:42.763Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
