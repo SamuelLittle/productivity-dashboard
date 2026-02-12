@@ -3061,14 +3061,6 @@
     "2026-02-11": [
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
-        "taskId": "mkn0e9s5qbl61liiujc",
-        "subtaskId": "mla5m60u3ykgh50ahft",
-        "time": null,
-        "scheduledAt": "2026-02-06T00:35:33.247Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltywpq0yriuhvt8wmb",
         "taskId": "ml73fflhsubbxo2vp8c",
         "subtaskId": "mlfwl8el4iwfz01prb4",
         "time": null,
@@ -3099,14 +3091,6 @@
         "completedAt": "2026-02-11T17:02:01.184Z",
         "completionNotes": "Plan made for pilot 2 exploring effects of culture media and nucleofection on NK cells",
         "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_V1fOjG4g6y-nk-culture-and-ko-pilot-2/edit"
-      },
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "mkx8wznv95wc8en1g2k",
-        "subtaskId": "mla55dm6weloe0vkup",
-        "time": null,
-        "scheduledAt": "2026-02-09T15:50:39.347Z",
-        "completedOnDay": false
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -3177,6 +3161,22 @@
         "subtaskId": "mlhasyci91n5nedlpsf",
         "time": null,
         "scheduledAt": "2026-02-12T01:02:01.067Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mkn0e9s5qbl61liiujc",
+        "subtaskId": "mla5m60u3ykgh50ahft",
+        "time": null,
+        "scheduledAt": "2026-02-12T01:02:01.078Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mkx8wznv95wc8en1g2k",
+        "subtaskId": "mla55dm6weloe0vkup",
+        "time": null,
+        "scheduledAt": "2026-02-09T15:50:39.347Z",
         "completedOnDay": false
       }
     ],
@@ -4290,7 +4290,7 @@
       "date": "2026-02-11"
     }
   ],
-  "lastUpdated": "2026-02-12T01:02:01.067Z",
+  "lastUpdated": "2026-02-12T01:02:01.078Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
