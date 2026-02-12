@@ -1950,9 +1950,12 @@
         "title": "Blood arriving",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-02-04T17:45:27.510Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-02-12T01:01:03.972Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-02-12": [
@@ -4247,9 +4250,17 @@
       "completionNotes": "Isolated ~10M NK cells.  5M isolated in cNKMACs and 5M isolates in cRPMI",
       "completionLinks": "",
       "date": "2026-02-11"
+    },
+    {
+      "id": "ml8bixg6krdz3hcw07",
+      "title": "Blood arriving",
+      "completedAt": "2026-02-12T01:01:03.972Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-11"
     }
   ],
-  "lastUpdated": "2026-02-12T01:00:59.148Z",
+  "lastUpdated": "2026-02-12T01:01:03.972Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
