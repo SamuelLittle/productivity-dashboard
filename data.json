@@ -1154,8 +1154,11 @@
               "title": "Check D1 phenotype",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-11T00:35:11.202Z"
+              "completed": true,
+              "createdAt": "2026-02-11T00:35:11.202Z",
+              "completedAt": "2026-02-12T22:50:49.554Z",
+              "completionNotes": "FACS run - analysis needed\n",
+              "completionLinks": ""
             },
             {
               "id": "mlhatilolwih1b02p9r",
@@ -3176,7 +3179,10 @@
         "subtaskId": "mlhasyci91n5nedlpsf",
         "time": null,
         "scheduledAt": "2026-02-12T01:02:01.067Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-12T22:50:49.554Z",
+        "completionNotes": "FACS run - analysis needed\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -4329,9 +4335,18 @@
       "completionNotes": "Processing and freezing down PBMCS\n",
       "completionLinks": "",
       "date": "2026-02-12"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mlhaql2p4q6z8l0f9n4",
+      "subtaskId": "mlhasyci91n5nedlpsf",
+      "completedAt": "2026-02-12T22:50:49.554Z",
+      "completionNotes": "FACS run - analysis needed\n",
+      "completionLinks": "",
+      "date": "2026-02-12"
     }
   ],
-  "lastUpdated": "2026-02-12T22:50:32.594Z",
+  "lastUpdated": "2026-02-12T22:50:49.554Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
