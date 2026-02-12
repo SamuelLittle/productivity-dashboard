@@ -632,6 +632,14 @@
               "completedAt": "2026-02-12T20:57:11.595Z",
               "completionNotes": "Wet run went smoothly - there seems to be some discrepancy in well volumes post pipette betweem 55 and ~70ul.  reliably enough for 5 plates. ",
               "completionLinks": ""
+            },
+            {
+              "id": "mlk2b63oq518rnkcorr",
+              "title": "Full wet run - test",
+              "description": "Test full treatment plate make and then sub stamp work flow",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-12T23:00:43.044Z"
             }
           ]
         },
@@ -3140,6 +3148,14 @@
         "time": null,
         "scheduledAt": "2026-02-09T15:51:13.757Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "ml2kttyffq66yk0c0tn",
+        "subtaskId": "mlk2b63oq518rnkcorr",
+        "time": null,
+        "scheduledAt": "2026-02-12T23:00:43.044Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-12": [
@@ -4356,7 +4372,7 @@
       "date": "2026-02-12"
     }
   ],
-  "lastUpdated": "2026-02-12T22:59:15.357Z",
+  "lastUpdated": "2026-02-12T23:00:43.044Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
