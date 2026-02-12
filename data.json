@@ -1129,8 +1129,11 @@
               "title": "isolate NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-11T00:33:31.842Z"
+              "completed": true,
+              "createdAt": "2026-02-11T00:33:31.842Z",
+              "completedAt": "2026-02-12T01:00:59.147Z",
+              "completionNotes": "Isolated ~10M NK cells.  5M isolated in cNKMACs and 5M isolates in cRPMI",
+              "completionLinks": ""
             },
             {
               "id": "mlhaskjvxbzqac20ftc",
@@ -3069,7 +3072,10 @@
         "subtaskId": "mlhaqtoiujbet4aiz3g",
         "time": null,
         "scheduledAt": "2026-02-11T00:35:16.237Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-12T01:00:59.146Z",
+        "completionNotes": "Isolated ~10M NK cells.  5M isolated in cNKMACs and 5M isolates in cRPMI",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -4232,9 +4238,18 @@
       "completedAt": "2026-02-11T19:45:08.940Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mlhaql2p4q6z8l0f9n4",
+      "subtaskId": "mlhaqtoiujbet4aiz3g",
+      "completedAt": "2026-02-12T01:00:59.147Z",
+      "completionNotes": "Isolated ~10M NK cells.  5M isolated in cNKMACs and 5M isolates in cRPMI",
+      "completionLinks": "",
+      "date": "2026-02-11"
     }
   ],
-  "lastUpdated": "2026-02-11T19:45:08.940Z",
+  "lastUpdated": "2026-02-12T01:00:59.148Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
