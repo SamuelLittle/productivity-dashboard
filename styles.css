@@ -1283,6 +1283,10 @@ body {
     border: 1px solid var(--color-border);
     padding: 16px;
     overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    /* Fill available viewport height: 100vh minus header, content padding, view header, and some margin */
+    min-height: calc(100vh - var(--header-height) - 140px);
 }
 
 /* Custom scrollbar */
@@ -1310,6 +1314,7 @@ body {
     grid-template-columns: repeat(7, minmax(120px, 1fr));
     gap: 8px;
     min-width: fit-content;
+    flex: 1;
 }
 
 /* Day wrapper - contains header and tasks */
@@ -1365,8 +1370,9 @@ body {
     flex-direction: column;
     gap: 6px;
     padding: 8px;
-    min-height: 200px;
+    min-height: 150px;
     transition: background var(--transition);
+    overflow-y: auto;
 }
 
 .week-day-tasks.drop-target {
@@ -2160,6 +2166,7 @@ body {
     /* Week view responsive */
     .week-view-container {
         padding: 8px;
+        min-height: calc(100vh - var(--header-height) - 120px);
     }
 
     .week-view-grid {
@@ -2180,7 +2187,7 @@ body {
     }
 
     .week-day-tasks {
-        min-height: 120px;
+        min-height: 100px;
         padding: 4px;
     }
 
