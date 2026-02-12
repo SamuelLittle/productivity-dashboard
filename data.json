@@ -1532,8 +1532,11 @@
               "title": "Collect supernatants and extract RNA",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-10T01:09:30.189Z"
+              "completed": true,
+              "createdAt": "2026-02-10T01:09:30.189Z",
+              "completedAt": "2026-02-12T01:01:54.024Z",
+              "completionNotes": "Collected two plate of sup (luminex and nomic).  RNA extracted and stored at -20 with TREX rna\n",
+              "completionLinks": ""
             }
           ]
         },
@@ -3070,7 +3073,10 @@
         "subtaskId": "mlfwl8el4iwfz01prb4",
         "time": null,
         "scheduledAt": "2026-02-10T01:09:30.189Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-12T01:01:54.024Z",
+        "completionNotes": "Collected two plate of sup (luminex and nomic).  RNA extracted and stored at -20 with TREX rna\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -4273,9 +4279,18 @@
       "completionNotes": "Decided against doing this - will get D1 phenotype tomorrow\n",
       "completionLinks": "",
       "date": "2026-02-11"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "mlfwl8el4iwfz01prb4",
+      "completedAt": "2026-02-12T01:01:54.024Z",
+      "completionNotes": "Collected two plate of sup (luminex and nomic).  RNA extracted and stored at -20 with TREX rna\n",
+      "completionLinks": "",
+      "date": "2026-02-11"
     }
   ],
-  "lastUpdated": "2026-02-12T01:01:23.105Z",
+  "lastUpdated": "2026-02-12T01:01:54.024Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
