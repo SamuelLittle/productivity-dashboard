@@ -1287,6 +1287,10 @@ body {
     flex-direction: column;
     /* Fill available viewport height: 100vh minus header, content padding, view header, and some margin */
     min-height: calc(100vh - var(--header-height) - 140px);
+    /* Break out of the max-width content container to use full available width */
+    width: calc(100vw - var(--sidebar-width) - 48px);
+    max-width: calc(100vw - var(--sidebar-width) - 48px);
+    margin-left: calc((100% - (100vw - var(--sidebar-width) - 48px)) / 2);
 }
 
 /* Custom scrollbar */
@@ -2167,6 +2171,10 @@ body {
     .week-view-container {
         padding: 8px;
         min-height: calc(100vh - var(--header-height) - 120px);
+        /* On mobile, sidebar is bottom nav so use full width minus padding */
+        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
+        margin-left: calc((100% - (100vw - 32px)) / 2);
     }
 
     .week-view-grid {
