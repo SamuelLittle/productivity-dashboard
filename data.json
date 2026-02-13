@@ -3167,6 +3167,14 @@
         "time": "15:00",
         "scheduledAt": "2026-02-13T05:02:03.519Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "ml2kttyffq66yk0c0tn",
+        "subtaskId": "ml2kuim9q9603jfi3xa",
+        "time": null,
+        "scheduledAt": "2026-02-11T00:38:54.310Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-12": [
@@ -3191,14 +3199,6 @@
         "completedAt": "2026-02-12T20:57:11.595Z",
         "completionNotes": "Wet run went smoothly - there seems to be some discrepancy in well volumes post pipette betweem 55 and ~70ul.  reliably enough for 5 plates. ",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "ml2kttyffq66yk0c0tn",
-        "subtaskId": "ml2kuim9q9603jfi3xa",
-        "time": null,
-        "scheduledAt": "2026-02-11T00:38:54.310Z",
-        "completedOnDay": false
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
