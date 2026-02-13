@@ -1741,6 +1741,16 @@
       ],
       "progressUpdates": [],
       "archived": false
+    },
+    {
+      "id": "mlld42ihacxlvsot49w",
+      "name": "1-on-1s With Celine",
+      "description": "A project folder to log all 1-on-1s and associated notes",
+      "color": "#8b5cf6",
+      "createdAt": "2026-02-13T20:50:53.753Z",
+      "tasks": [],
+      "progressUpdates": [],
+      "archived": false
     }
   ],
   "dailyLists": {
@@ -4376,7 +4386,7 @@
       "date": "2026-02-12"
     }
   ],
-  "lastUpdated": "2026-02-13T20:50:11.770Z",
+  "lastUpdated": "2026-02-13T20:50:53.753Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
