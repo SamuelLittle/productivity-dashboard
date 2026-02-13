@@ -1751,11 +1751,11 @@
       "tasks": [
         {
           "id": "mlld4hmu05oq0yd2uvvt",
-          "title": "Feb 13 2026",
+          "title": "1-on-1 with Celine @ 11:30",
           "description": "",
           "priority": "medium",
           "completed": false,
-          "createdAt": "2026-02-13T20:51:13.350Z",
+          "createdAt": "2026-02-13T20:51:30.887Z",
           "subtasks": []
         }
       ],
@@ -4404,7 +4404,7 @@
       "date": "2026-02-12"
     }
   ],
-  "lastUpdated": "2026-02-13T20:51:13.351Z",
+  "lastUpdated": "2026-02-13T20:51:30.887Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
