@@ -1754,9 +1754,12 @@
           "title": "1-on-1 with Celine @ 11:30",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-02-13T20:51:30.887Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-02-13T20:51:52.490Z",
+          "completionNotes": "Discussed all 4 major projects.",
+          "completionLinks": "https://docs.google.com/document/d/1_nVX5qGX302fvHpZlv2DNNTywsyG3HURcxxPBk3Yjuk/edit?tab=t.ua2kfyygrhyt"
         }
       ],
       "progressUpdates": [],
@@ -3211,7 +3214,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-02-13T20:51:13.351Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-13T20:51:52.489Z",
+        "completionNotes": "Discussed all 4 major projects.",
+        "completionLinks": "https://docs.google.com/document/d/1_nVX5qGX302fvHpZlv2DNNTywsyG3HURcxxPBk3Yjuk/edit?tab=t.ua2kfyygrhyt"
       }
     ],
     "2026-02-12": [
@@ -4402,9 +4408,17 @@
       "completionNotes": "FACS run - analysis needed\n",
       "completionLinks": "",
       "date": "2026-02-12"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "mlld4hmu05oq0yd2uvvt",
+      "completedAt": "2026-02-13T20:51:52.490Z",
+      "completionNotes": "Discussed all 4 major projects.",
+      "completionLinks": "https://docs.google.com/document/d/1_nVX5qGX302fvHpZlv2DNNTywsyG3HURcxxPBk3Yjuk/edit?tab=t.ua2kfyygrhyt",
+      "date": "2026-02-13"
     }
   ],
-  "lastUpdated": "2026-02-13T20:51:30.887Z",
+  "lastUpdated": "2026-02-13T20:51:52.490Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
