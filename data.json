@@ -578,8 +578,11 @@
               "title": "Make plan of action for replate",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-31T17:19:47.649Z"
+              "completed": true,
+              "createdAt": "2026-01-31T17:19:47.649Z",
+              "completedAt": "2026-02-14T00:11:00.465Z",
+              "completionNotes": "Replating on Monday\n",
+              "completionLinks": ""
             },
             {
               "id": "ml2kyyxpwwt87658dwr",
@@ -3204,7 +3207,10 @@
         "subtaskId": "ml2kuim9q9603jfi3xa",
         "time": null,
         "scheduledAt": "2026-02-11T00:38:54.310Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-14T00:11:00.465Z",
+        "completionNotes": "Replating on Monday\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -4431,9 +4437,18 @@
       "completionNotes": "images taken and stored - need to share with Christine\n",
       "completionLinks": "",
       "date": "2026-02-13"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "ml2kttyffq66yk0c0tn",
+      "subtaskId": "ml2kuim9q9603jfi3xa",
+      "completedAt": "2026-02-14T00:11:00.465Z",
+      "completionNotes": "Replating on Monday\n",
+      "completionLinks": "",
+      "date": "2026-02-13"
     }
   ],
-  "lastUpdated": "2026-02-14T00:10:47.140Z",
+  "lastUpdated": "2026-02-14T00:11:00.465Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
