@@ -1453,8 +1453,11 @@
               "title": "20X images of M0/M1/M2",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-06T00:35:33.246Z"
+              "completed": true,
+              "createdAt": "2026-02-06T00:35:33.246Z",
+              "completedAt": "2026-02-14T00:10:47.140Z",
+              "completionNotes": "images taken and stored - need to share with Christine\n",
+              "completionLinks": ""
             }
           ]
         },
@@ -3190,7 +3193,10 @@
         "subtaskId": "mla5m60u3ykgh50ahft",
         "time": "15:00",
         "scheduledAt": "2026-02-13T05:02:03.519Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-14T00:10:47.140Z",
+        "completionNotes": "images taken and stored - need to share with Christine\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -4416,9 +4422,18 @@
       "completionNotes": "Discussed all 4 major projects.",
       "completionLinks": "https://docs.google.com/document/d/1_nVX5qGX302fvHpZlv2DNNTywsyG3HURcxxPBk3Yjuk/edit?tab=t.ua2kfyygrhyt",
       "date": "2026-02-13"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mkn0e9s5qbl61liiujc",
+      "subtaskId": "mla5m60u3ykgh50ahft",
+      "completedAt": "2026-02-14T00:10:47.140Z",
+      "completionNotes": "images taken and stored - need to share with Christine\n",
+      "completionLinks": "",
+      "date": "2026-02-13"
     }
   ],
-  "lastUpdated": "2026-02-13T20:51:52.490Z",
+  "lastUpdated": "2026-02-14T00:10:47.140Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
