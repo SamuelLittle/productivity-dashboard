@@ -2048,18 +2048,6 @@
         "createdAt": "2026-02-11T15:48:52.473Z",
         "time": null
       }
-    ],
-    "2026-02-14": [
-      {
-        "id": "mlk2byctti61ge0l09r",
-        "title": "1-on-1 w/ Celine",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": "11:30",
-        "createdAt": "2026-02-12T23:01:19.661Z"
-      }
     ]
   },
   "scheduledItems": {
@@ -4448,7 +4436,7 @@
       "date": "2026-02-13"
     }
   ],
-  "lastUpdated": "2026-02-14T00:11:00.465Z",
+  "lastUpdated": "2026-02-16T16:22:48.374Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
