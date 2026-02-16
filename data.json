@@ -837,6 +837,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-16T17:18:50.338Z"
+            },
+            {
+              "id": "mlpfvg11azq1y9psklv",
+              "title": "SMARTseq on extracted RNA",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-16T17:19:14.917Z"
             }
           ]
         }
@@ -4551,7 +4559,7 @@
       "date": "2026-02-13"
     }
   ],
-  "lastUpdated": "2026-02-16T17:18:50.338Z",
+  "lastUpdated": "2026-02-16T17:19:14.917Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
