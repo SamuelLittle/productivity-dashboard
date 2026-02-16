@@ -1811,6 +1811,15 @@
           "completedAt": "2026-02-13T20:51:52.490Z",
           "completionNotes": "Discussed all 4 major projects.",
           "completionLinks": "https://docs.google.com/document/d/1_nVX5qGX302fvHpZlv2DNNTywsyG3HURcxxPBk3Yjuk/edit?tab=t.ua2kfyygrhyt"
+        },
+        {
+          "id": "mlpfqt5qdf96vcpy9mn",
+          "title": "EOY 1-on-1 w/ Celine",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-02-16T17:15:38.654Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -3303,6 +3312,14 @@
         "time": null,
         "scheduledAt": "2026-02-16T17:09:54.326Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mlld42ihacxlvsot49w",
+        "taskId": "mlpfqt5qdf96vcpy9mn",
+        "subtaskId": null,
+        "time": "14:00",
+        "scheduledAt": "2026-02-16T17:15:38.654Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-16": [
@@ -4535,7 +4552,7 @@
       "date": "2026-02-13"
     }
   ],
-  "lastUpdated": "2026-02-16T17:11:44.072Z",
+  "lastUpdated": "2026-02-16T17:15:38.654Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
