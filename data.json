@@ -829,6 +829,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-16T17:18:26.721Z"
+            },
+            {
+              "id": "mlpfux2ax5q4j8sy3d",
+              "title": "RNA extraction from 24hr group",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-16T17:18:50.338Z"
             }
           ]
         }
@@ -3363,6 +3371,14 @@
         "time": null,
         "scheduledAt": "2026-02-16T17:18:26.721Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mlpffj0uea41kpsju7",
+        "subtaskId": "mlpfux2ax5q4j8sy3d",
+        "time": null,
+        "scheduledAt": "2026-02-16T17:18:50.338Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -4535,7 +4551,7 @@
       "date": "2026-02-13"
     }
   ],
-  "lastUpdated": "2026-02-16T17:18:26.721Z",
+  "lastUpdated": "2026-02-16T17:18:50.338Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
