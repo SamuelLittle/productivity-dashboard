@@ -791,48 +791,6 @@
           "completionLinks": "https://gene.benchling.com/s/etr-ZRx3IeT4YslkZhiONxWf?m=slm-seVOhGj1ekXcbb8b8vcX"
         },
         {
-          "id": "ml8iyb0u5om7sbdijba",
-          "title": "Make consolidated Cytokine Screen Slide Deck",
-          "description": "",
-          "priority": "medium",
-          "completed": false,
-          "createdAt": "2026-02-04T21:13:22.255Z",
-          "subtasks": [
-            {
-              "id": "mlpffyp3jjt2kmjsss9",
-              "title": "Isolate Monocytes from whole blood",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:07:12.615Z"
-            },
-            {
-              "id": "mlpfgscjm66bme7k8oi",
-              "title": "Simultaneously perform 3hr and 24hr treatments",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:07:51.044Z"
-            },
-            {
-              "id": "mlpfheiavgc4erlu0jp",
-              "title": "RNA extraction from 3hr group",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:08:19.763Z"
-            },
-            {
-              "id": "mlpfke51uif2h0mjv1b",
-              "title": "Supernatant Recovery from 24 hr plate",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:10:39.254Z"
-            }
-          ]
-        },
-        {
           "id": "mlpffj0uea41kpsju7",
           "title": "Monocytes Cytokine Screen",
           "description": "",
@@ -3290,30 +3248,6 @@
         "completedOnDay": false
       },
       {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "ml8iyb0u5om7sbdijba",
-        "subtaskId": "mlpffyp3jjt2kmjsss9",
-        "time": null,
-        "scheduledAt": "2026-02-16T17:07:12.615Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "ml8iyb0u5om7sbdijba",
-        "subtaskId": "mlpfgscjm66bme7k8oi",
-        "time": null,
-        "scheduledAt": "2026-02-16T17:07:51.044Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "ml8iyb0u5om7sbdijba",
-        "subtaskId": "mlpfheiavgc4erlu0jp",
-        "time": null,
-        "scheduledAt": "2026-02-16T17:09:54.326Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mlld42ihacxlvsot49w",
         "taskId": "mlpfqt5qdf96vcpy9mn",
         "subtaskId": null,
@@ -3329,14 +3263,6 @@
         "subtaskId": "mkyextdeoqytqapjmas",
         "time": null,
         "scheduledAt": "2026-02-12T23:54:03.056Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "ml8iyb0u5om7sbdijba",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-02-16T16:23:03.657Z",
         "completedOnDay": false
       },
       {
@@ -3372,16 +3298,7 @@
         "completedOnDay": false
       }
     ],
-    "2026-02-18": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "ml8iyb0u5om7sbdijba",
-        "subtaskId": "mlpfke51uif2h0mjv1b",
-        "time": null,
-        "scheduledAt": "2026-02-16T17:11:44.072Z",
-        "completedOnDay": false
-      }
-    ]
+    "2026-02-18": []
   },
   "completedTasks": [
     {
@@ -4552,7 +4469,7 @@
       "date": "2026-02-13"
     }
   ],
-  "lastUpdated": "2026-02-16T17:15:38.654Z",
+  "lastUpdated": "2026-02-16T17:17:27.451Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
