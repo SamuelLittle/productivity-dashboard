@@ -797,7 +797,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-02-16T17:06:52.303Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mlpftdfodsz9tu8lh2j",
+              "title": "Isolate Monocytes",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-16T17:17:38.245Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [
@@ -3254,6 +3263,14 @@
         "time": "14:00",
         "scheduledAt": "2026-02-16T17:15:38.654Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mlpffj0uea41kpsju7",
+        "subtaskId": "mlpftdfodsz9tu8lh2j",
+        "time": null,
+        "scheduledAt": "2026-02-16T17:17:38.245Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-16": [
@@ -3297,8 +3314,7 @@
         "scheduledAt": "2026-02-16T17:06:21.913Z",
         "completedOnDay": false
       }
-    ],
-    "2026-02-18": []
+    ]
   },
   "completedTasks": [
     {
@@ -4469,7 +4485,7 @@
       "date": "2026-02-13"
     }
   ],
-  "lastUpdated": "2026-02-16T17:17:27.451Z",
+  "lastUpdated": "2026-02-16T17:17:38.245Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
