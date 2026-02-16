@@ -1087,7 +1087,7 @@
           "title": "PIlot Killing Assay Repeat",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-28T23:13:25.291Z",
           "subtasks": [
             {
@@ -1097,7 +1097,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-28T23:14:05.877Z",
-              "completedAt": "2026-01-29T02:25:42.105Z",
+              "completedAt": "2026-02-16T17:49:42.132Z",
               "completionNotes": "Isolated 27M NK cells from donor.  Seeded at 2M cells/ml in a u bottom 96 wp. Using new media formulation from Mayra",
               "completionLinks": ""
             },
@@ -1108,7 +1108,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-28T23:14:22.060Z",
-              "completedAt": "2026-02-04T17:48:13.860Z",
+              "completedAt": "2026-02-16T17:49:42.132Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1119,7 +1119,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-30T00:57:30.396Z",
-              "completedAt": "2026-01-30T00:58:24.421Z",
+              "completedAt": "2026-02-16T17:49:42.132Z",
               "completionNotes": "Need to log in benchling",
               "completionLinks": ""
             },
@@ -1130,7 +1130,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-30T00:57:50.394Z",
-              "completedAt": "2026-01-30T00:58:44.992Z",
+              "completedAt": "2026-02-16T17:49:42.132Z",
               "completionNotes": "2 nucleofections of 2M c/mL using CM137 for AAVS1 and CD96",
               "completionLinks": ""
             },
@@ -1141,7 +1141,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-02T05:04:37.448Z",
-              "completedAt": "2026-02-04T01:38:05.972Z",
+              "completedAt": "2026-02-16T17:49:42.132Z",
               "completionNotes": "Ran flow - need to analyze data\n",
               "completionLinks": ""
             },
@@ -1152,7 +1152,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-04T03:52:24.488Z",
-              "completedAt": "2026-02-04T22:57:29.309Z",
+              "completedAt": "2026-02-16T17:49:42.132Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1163,11 +1163,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-04T22:57:17.785Z",
-              "completedAt": "2026-02-05T21:12:28.772Z",
+              "completedAt": "2026-02-16T17:49:42.132Z",
               "completionNotes": "Slides added to 2026 1-on-1 slide deck\n",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-02-16T17:49:42.132Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mkz0skpg4z23p4uz9j7",
@@ -4618,9 +4621,18 @@
       "subtaskId": "mkx3hu9zjm6brwpfrpq",
       "title": "20x images of NTC control for 3 different flavours",
       "completedAt": "2026-02-16T17:24:49.828Z"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mkyn5q9752ye45ab8zw",
+      "subtaskId": null,
+      "title": "PIlot Killing Assay Repeat",
+      "completedAt": "2026-02-16T17:49:42.132Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-02-16T17:24:49.828Z",
+  "lastUpdated": "2026-02-16T17:49:42.133Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
