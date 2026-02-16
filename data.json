@@ -805,6 +805,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-16T17:07:12.615Z"
+            },
+            {
+              "id": "mlpfgscjm66bme7k8oi",
+              "title": "Simultaneously perform 3hr and 24hr treatments",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-16T17:07:51.044Z"
             }
           ]
         },
@@ -3263,6 +3271,14 @@
         "time": null,
         "scheduledAt": "2026-02-16T17:07:12.615Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "ml8iyb0u5om7sbdijba",
+        "subtaskId": "mlpfgscjm66bme7k8oi",
+        "time": null,
+        "scheduledAt": "2026-02-16T17:07:51.044Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-16": [
@@ -4485,7 +4501,7 @@
       "date": "2026-02-13"
     }
   ],
-  "lastUpdated": "2026-02-16T17:07:12.615Z",
+  "lastUpdated": "2026-02-16T17:07:51.044Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
