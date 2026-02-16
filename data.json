@@ -1430,8 +1430,11 @@
               "title": "20x images of NTC control for 3 different flavours",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-27T21:15:11.879Z"
+              "completed": true,
+              "createdAt": "2026-01-27T21:15:11.879Z",
+              "completedAt": "2026-02-16T17:24:49.828Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mkyexfraypeeua9wm1",
@@ -4608,9 +4611,16 @@
       "completionNotes": "Completed - was able to make 7 treatment plates.",
       "completionLinks": "",
       "date": "2026-02-13"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mkx3hu9zjm6brwpfrpq",
+      "title": "20x images of NTC control for 3 different flavours",
+      "completedAt": "2026-02-16T17:24:49.828Z"
     }
   ],
-  "lastUpdated": "2026-02-16T17:22:20.059Z",
+  "lastUpdated": "2026-02-16T17:24:49.828Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
