@@ -2216,9 +2216,12 @@
         "title": "Blood Arriving",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-02-11T15:48:52.473Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-02-17T20:24:05.601Z",
+        "completionNotes": "Blood arrived from 39F donor",
+        "completionLinks": ""
       }
     ]
   },
@@ -4772,9 +4775,17 @@
       "completionNotes": "Plate refactored and submitted",
       "completionLinks": "",
       "date": "2026-02-17"
+    },
+    {
+      "id": "mli7fypjlnrgjwy9g6",
+      "title": "Blood Arriving",
+      "completedAt": "2026-02-17T20:24:05.601Z",
+      "completionNotes": "Blood arrived from 39F donor",
+      "completionLinks": "",
+      "date": "2026-02-17"
     }
   ],
-  "lastUpdated": "2026-02-17T18:42:59.591Z",
+  "lastUpdated": "2026-02-17T20:24:05.601Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
