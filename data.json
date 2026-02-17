@@ -1718,6 +1718,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-17T18:39:39.748Z"
+            },
+            {
+              "id": "mlqy76ubea1qg5g1g78",
+              "title": "extract gDNA",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-17T18:40:02.147Z"
             }
           ]
         }
@@ -3552,6 +3560,14 @@
         "time": null,
         "scheduledAt": "2026-02-17T18:39:39.748Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mlqy3dwoui2qz3anm7t",
+        "subtaskId": "mlqy76ubea1qg5g1g78",
+        "time": null,
+        "scheduledAt": "2026-02-17T18:40:02.147Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -4758,7 +4774,7 @@
       "date": "2026-02-17"
     }
   ],
-  "lastUpdated": "2026-02-17T18:39:39.748Z",
+  "lastUpdated": "2026-02-17T18:40:02.147Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
