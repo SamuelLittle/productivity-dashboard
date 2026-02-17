@@ -589,8 +589,11 @@
               "title": "remake treatment plates",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-31T17:23:15.421Z"
+              "completed": true,
+              "createdAt": "2026-01-31T17:23:15.421Z",
+              "completedAt": "2026-02-17T15:22:55.318Z",
+              "completionNotes": "Made 6 new batches of treatment plates containing 20ul of 20X cytokine",
+              "completionLinks": ""
             },
             {
               "id": "mlfosge9b9uq3thy2t",
@@ -3415,7 +3418,10 @@
         "subtaskId": "ml2kyyxpwwt87658dwr",
         "time": null,
         "scheduledAt": "2026-02-16T17:06:21.913Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-17T15:22:55.317Z",
+        "completionNotes": "Made 6 new batches of treatment plates containing 20ul of 20X cytokine",
+        "completionLinks": ""
       }
     ],
     "2026-02-18": [
@@ -4630,9 +4636,18 @@
       "completedAt": "2026-02-16T17:49:42.132Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "ml2kttyffq66yk0c0tn",
+      "subtaskId": "ml2kyyxpwwt87658dwr",
+      "completedAt": "2026-02-17T15:22:55.318Z",
+      "completionNotes": "Made 6 new batches of treatment plates containing 20ul of 20X cytokine",
+      "completionLinks": "",
+      "date": "2026-02-16"
     }
   ],
-  "lastUpdated": "2026-02-16T23:28:44.116Z",
+  "lastUpdated": "2026-02-17T15:22:55.318Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
