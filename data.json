@@ -1678,7 +1678,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-02-17T18:37:04.680Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mlqy48vh5n7ac9nqku7",
+              "title": "Retrieve Donor 4 PBMCs and isolate monocytes",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-17T18:37:44.813Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -3466,6 +3475,16 @@
         "scheduledAt": "2026-02-16T17:20:52.706Z",
         "completedOnDay": false
       }
+    ],
+    "2026-02-19": [
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mlqy3dwoui2qz3anm7t",
+        "subtaskId": "mlqy48vh5n7ac9nqku7",
+        "time": null,
+        "scheduledAt": "2026-02-17T18:37:44.813Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -4671,7 +4690,7 @@
       "date": "2026-02-17"
     }
   ],
-  "lastUpdated": "2026-02-17T18:37:04.680Z",
+  "lastUpdated": "2026-02-17T18:37:44.813Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
