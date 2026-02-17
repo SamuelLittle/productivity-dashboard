@@ -1458,8 +1458,11 @@
               "title": "generate and submit sups for luminex",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-28T19:23:19.154Z"
+              "completed": true,
+              "createdAt": "2026-01-28T19:23:19.154Z",
+              "completedAt": "2026-02-17T17:56:50.593Z",
+              "completionNotes": "Plate refactored and submitted",
+              "completionLinks": ""
             },
             {
               "id": "mkyey4mglvqoabk7hm",
@@ -3379,20 +3382,15 @@
         "completedOnDay": false
       },
       {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mkpmhuejxdahbqqygu",
-        "subtaskId": "ml8n30vvhp5ihiy5xtf",
-        "time": null,
-        "scheduledAt": "2026-02-16T23:28:13.242Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltywpq0yriuhvt8wmb",
         "taskId": "mklu8roio6ns8a57jp",
         "subtaskId": "mkyextdeoqytqapjmas",
         "time": "09:30",
         "scheduledAt": "2026-02-16T23:28:44.116Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-17T17:56:50.593Z",
+        "completionNotes": "Plate refactored and submitted",
+        "completionLinks": ""
       }
     ],
     "2026-02-16": [
@@ -3439,6 +3437,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-02-17T15:23:15.576Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mkpmhuejxdahbqqygu",
+        "subtaskId": "ml8n30vvhp5ihiy5xtf",
+        "time": null,
+        "scheduledAt": "2026-02-17T15:23:15.611Z",
         "completedOnDay": false
       }
     ],
@@ -4645,9 +4651,18 @@
       "completionNotes": "Made 6 new batches of treatment plates containing 20ul of 20X cytokine",
       "completionLinks": "",
       "date": "2026-02-16"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mkyextdeoqytqapjmas",
+      "completedAt": "2026-02-17T17:56:50.594Z",
+      "completionNotes": "Plate refactored and submitted",
+      "completionLinks": "",
+      "date": "2026-02-17"
     }
   ],
-  "lastUpdated": "2026-02-17T15:23:15.576Z",
+  "lastUpdated": "2026-02-17T17:56:50.594Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
