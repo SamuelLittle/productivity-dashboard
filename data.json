@@ -806,8 +806,11 @@
               "title": "Isolate Monocytes",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:17:38.245Z"
+              "completed": true,
+              "createdAt": "2026-02-16T17:17:38.245Z",
+              "completedAt": "2026-02-18T15:32:17.468Z",
+              "completionNotes": "Isolated 95M monocytes from 39F donor\n",
+              "completionLinks": ""
             },
             {
               "id": "mlpftkwdb7n85gtjnx",
@@ -3436,7 +3439,10 @@
         "subtaskId": "mlpftdfodsz9tu8lh2j",
         "time": null,
         "scheduledAt": "2026-02-16T17:17:38.245Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-18T15:32:17.468Z",
+        "completionNotes": "Isolated 95M monocytes from 39F donor\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -4812,9 +4818,18 @@
       "completionNotes": "Need to Analyze FACS.  early look shows NK MACS made a huge difference\n",
       "completionLinks": "",
       "date": "2026-02-17"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": "mlpftdfodsz9tu8lh2j",
+      "completedAt": "2026-02-18T15:32:17.468Z",
+      "completionNotes": "Isolated 95M monocytes from 39F donor\n",
+      "completionLinks": "",
+      "date": "2026-02-17"
     }
   ],
-  "lastUpdated": "2026-02-18T15:31:56.625Z",
+  "lastUpdated": "2026-02-18T15:32:17.469Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
