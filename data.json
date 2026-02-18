@@ -828,8 +828,11 @@
               "title": "RNA extraction from 3hr group",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:17:59.169Z"
+              "completed": true,
+              "createdAt": "2026-02-16T17:17:59.169Z",
+              "completedAt": "2026-02-18T15:32:42.655Z",
+              "completionNotes": "extraction performed starting around 5pm.",
+              "completionLinks": ""
             },
             {
               "id": "mlpfueu9apdsj19gff9",
@@ -3464,7 +3467,10 @@
         "subtaskId": "mlpfttkwmhfs1fbvz0k",
         "time": null,
         "scheduledAt": "2026-02-16T17:17:59.169Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-18T15:32:42.654Z",
+        "completionNotes": "extraction performed starting around 5pm.",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -4842,9 +4848,18 @@
       "completionNotes": "Treated at ~2pm",
       "completionLinks": "",
       "date": "2026-02-17"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": "mlpfttkwmhfs1fbvz0k",
+      "completedAt": "2026-02-18T15:32:42.655Z",
+      "completionNotes": "extraction performed starting around 5pm.",
+      "completionLinks": "",
+      "date": "2026-02-17"
     }
   ],
-  "lastUpdated": "2026-02-18T15:32:28.429Z",
+  "lastUpdated": "2026-02-18T15:32:42.655Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
