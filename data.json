@@ -817,8 +817,11 @@
               "title": "Simultaneously perform 3hr and 24hr treatments",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:17:47.917Z"
+              "completed": true,
+              "createdAt": "2026-02-16T17:17:47.917Z",
+              "completedAt": "2026-02-18T15:32:28.428Z",
+              "completionNotes": "Treated at ~2pm",
+              "completionLinks": ""
             },
             {
               "id": "mlpfttkwmhfs1fbvz0k",
@@ -3450,7 +3453,10 @@
         "subtaskId": "mlpftkwdb7n85gtjnx",
         "time": null,
         "scheduledAt": "2026-02-16T17:17:47.918Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-18T15:32:28.428Z",
+        "completionNotes": "Treated at ~2pm",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -4827,9 +4833,18 @@
       "completionNotes": "Isolated 95M monocytes from 39F donor\n",
       "completionLinks": "",
       "date": "2026-02-17"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": "mlpftkwdb7n85gtjnx",
+      "completedAt": "2026-02-18T15:32:28.429Z",
+      "completionNotes": "Treated at ~2pm",
+      "completionLinks": "",
+      "date": "2026-02-17"
     }
   ],
-  "lastUpdated": "2026-02-18T15:32:17.469Z",
+  "lastUpdated": "2026-02-18T15:32:28.429Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
