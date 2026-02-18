@@ -1063,7 +1063,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-01-20T16:37:18.912Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mlsadp6rtpj6a149b2",
+              "title": "Isolate NKs from Frozen PBMCs",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-18T17:08:47.427Z"
+            }
+          ]
         },
         {
           "id": "mkn0igezgk2t0n91d6u",
@@ -3584,6 +3593,14 @@
         "time": null,
         "scheduledAt": "2026-02-17T18:39:02.276Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mkmthio0tg3y2jko0oi",
+        "subtaskId": "mlsadp6rtpj6a149b2",
+        "time": null,
+        "scheduledAt": "2026-02-18T17:08:47.427Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-25": [
@@ -4870,7 +4887,7 @@
       "date": "2026-02-17"
     }
   ],
-  "lastUpdated": "2026-02-18T16:59:17.518Z",
+  "lastUpdated": "2026-02-18T17:08:47.427Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
