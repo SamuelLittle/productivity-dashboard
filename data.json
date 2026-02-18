@@ -874,8 +874,11 @@
               "title": "Submit luminex request for Monocytes",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-18T17:56:29.948Z"
+              "completed": true,
+              "createdAt": "2026-02-18T17:56:29.948Z",
+              "completedAt": "2026-02-18T17:57:04.506Z",
+              "completionNotes": "Submitted\n",
+              "completionLinks": ""
             }
           ]
         }
@@ -3607,7 +3610,10 @@
         "subtaskId": "mlsc31x8ynbh98ulrkl",
         "time": null,
         "scheduledAt": "2026-02-18T17:56:29.948Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-18T17:57:04.506Z",
+        "completionNotes": "Submitted\n",
+        "completionLinks": ""
       }
     ],
     "2026-02-20": [
@@ -4963,9 +4969,18 @@
       "completedAt": "2026-02-18T17:55:57.358Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": "mlsc31x8ynbh98ulrkl",
+      "completedAt": "2026-02-18T17:57:04.506Z",
+      "completionNotes": "Submitted\n",
+      "completionLinks": "",
+      "date": "2026-02-18"
     }
   ],
-  "lastUpdated": "2026-02-18T17:56:29.948Z",
+  "lastUpdated": "2026-02-18T17:57:04.506Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
