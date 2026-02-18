@@ -1253,8 +1253,11 @@
               "title": "Validate KO and check phenotype",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-11T00:36:14.272Z"
+              "completed": true,
+              "createdAt": "2026-02-11T00:36:14.272Z",
+              "completedAt": "2026-02-18T15:31:56.625Z",
+              "completionNotes": "Need to Analyze FACS.  early look shows NK MACS made a huge difference\n",
+              "completionLinks": ""
             },
             {
               "id": "mli8jrlh0x8ic04ucggm",
@@ -3411,7 +3414,10 @@
         "subtaskId": "mlhaub0gyg9htkvevrj",
         "time": null,
         "scheduledAt": "2026-02-11T00:36:14.273Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-18T15:31:56.624Z",
+        "completionNotes": "Need to Analyze FACS.  early look shows NK MACS made a huge difference\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mlld42ihacxlvsot49w",
@@ -4797,9 +4803,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-17"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mlhaql2p4q6z8l0f9n4",
+      "subtaskId": "mlhaub0gyg9htkvevrj",
+      "completedAt": "2026-02-18T15:31:56.625Z",
+      "completionNotes": "Need to Analyze FACS.  early look shows NK MACS made a huge difference\n",
+      "completionLinks": "",
+      "date": "2026-02-17"
     }
   ],
-  "lastUpdated": "2026-02-18T15:31:33.798Z",
+  "lastUpdated": "2026-02-18T15:31:56.625Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
