@@ -1323,8 +1323,11 @@
               "title": "Analyze Data",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-18T17:55:36.491Z"
+              "completed": true,
+              "createdAt": "2026-02-18T17:55:36.491Z",
+              "completedAt": "2026-02-19T15:48:56.757Z",
+              "completionNotes": "Plots made and added to 1-on-1 slide deck\n",
+              "completionLinks": ""
             }
           ]
         }
@@ -3602,7 +3605,10 @@
         "subtaskId": "mlsc1wobjtwn7hnzn4",
         "time": null,
         "scheduledAt": "2026-02-18T17:55:36.491Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-19T15:48:56.756Z",
+        "completionNotes": "Plots made and added to 1-on-1 slide deck\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -4978,9 +4984,18 @@
       "completionNotes": "Submitted\n",
       "completionLinks": "",
       "date": "2026-02-18"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mlhaql2p4q6z8l0f9n4",
+      "subtaskId": "mlsc1wobjtwn7hnzn4",
+      "completedAt": "2026-02-19T15:48:56.757Z",
+      "completionNotes": "Plots made and added to 1-on-1 slide deck\n",
+      "completionLinks": "",
+      "date": "2026-02-18"
     }
   ],
-  "lastUpdated": "2026-02-18T17:57:04.506Z",
+  "lastUpdated": "2026-02-19T15:48:56.757Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
