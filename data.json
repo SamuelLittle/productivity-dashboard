@@ -853,8 +853,11 @@
               "title": "RNA extraction from 24hr group",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:18:50.338Z"
+              "completed": true,
+              "createdAt": "2026-02-16T17:18:50.338Z",
+              "completedAt": "2026-02-19T15:49:23.291Z",
+              "completionNotes": "Complete. RNA in -20",
+              "completionLinks": ""
             },
             {
               "id": "mlpfvg11azq1y9psklv",
@@ -3579,7 +3582,10 @@
         "subtaskId": "mlpfux2ax5q4j8sy3d",
         "time": null,
         "scheduledAt": "2026-02-16T17:18:50.338Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-19T15:49:23.291Z",
+        "completionNotes": "Complete. RNA in -20",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -5008,9 +5014,18 @@
       "completionNotes": "Plates in -80\n",
       "completionLinks": "",
       "date": "2026-02-18"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": "mlpfux2ax5q4j8sy3d",
+      "completedAt": "2026-02-19T15:49:23.291Z",
+      "completionNotes": "Complete. RNA in -20",
+      "completionLinks": "",
+      "date": "2026-02-18"
     }
   ],
-  "lastUpdated": "2026-02-19T15:49:10.744Z",
+  "lastUpdated": "2026-02-19T15:49:23.291Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
