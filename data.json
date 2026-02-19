@@ -842,8 +842,11 @@
               "title": "Supernatant Recovery from 24 hr plate",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:18:26.721Z"
+              "completed": true,
+              "createdAt": "2026-02-16T17:18:26.721Z",
+              "completedAt": "2026-02-19T15:49:10.744Z",
+              "completionNotes": "Plates in -80\n",
+              "completionLinks": ""
             },
             {
               "id": "mlpfux2ax5q4j8sy3d",
@@ -3565,7 +3568,10 @@
         "subtaskId": "mlpfueu9apdsj19gff9",
         "time": null,
         "scheduledAt": "2026-02-16T17:18:26.721Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-19T15:49:10.744Z",
+        "completionNotes": "Plates in -80\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -4993,9 +4999,18 @@
       "completionNotes": "Plots made and added to 1-on-1 slide deck\n",
       "completionLinks": "",
       "date": "2026-02-18"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": "mlpfueu9apdsj19gff9",
+      "completedAt": "2026-02-19T15:49:10.744Z",
+      "completionNotes": "Plates in -80\n",
+      "completionLinks": "",
+      "date": "2026-02-18"
     }
   ],
-  "lastUpdated": "2026-02-19T15:48:56.757Z",
+  "lastUpdated": "2026-02-19T15:49:10.744Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
