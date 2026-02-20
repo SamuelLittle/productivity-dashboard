@@ -1755,8 +1755,11 @@
               "title": "Retrieve Donor 4 PBMCs and isolate monocytes",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-17T18:37:44.813Z"
+              "completed": true,
+              "createdAt": "2026-02-17T18:37:44.813Z",
+              "completedAt": "2026-02-20T04:45:35.518Z",
+              "completionNotes": "Got 4 vials from biostore - nucleofected and seeded in flatbottom 96 well",
+              "completionLinks": ""
             },
             {
               "id": "mlqy586hek424n5xkx",
@@ -3662,7 +3665,10 @@
         "subtaskId": "mlqy48vh5n7ac9nqku7",
         "time": null,
         "scheduledAt": "2026-02-17T18:37:44.813Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-20T04:45:35.518Z",
+        "completionNotes": "Got 4 vials from biostore - nucleofected and seeded in flatbottom 96 well",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -5038,9 +5044,18 @@
       "completionNotes": "Isolated 70M NK cells from frozen PBMCs",
       "completionLinks": "",
       "date": "2026-02-19"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mlqy3dwoui2qz3anm7t",
+      "subtaskId": "mlqy48vh5n7ac9nqku7",
+      "completedAt": "2026-02-20T04:45:35.518Z",
+      "completionNotes": "Got 4 vials from biostore - nucleofected and seeded in flatbottom 96 well",
+      "completionLinks": "",
+      "date": "2026-02-19"
     }
   ],
-  "lastUpdated": "2026-02-19T21:12:36.967Z",
+  "lastUpdated": "2026-02-20T04:45:35.518Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
