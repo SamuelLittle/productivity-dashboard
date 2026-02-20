@@ -3676,6 +3676,14 @@
         "time": null,
         "scheduledAt": "2026-02-20T04:47:55.530Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mkx8wznv95wc8en1g2k",
+        "subtaskId": "mla55dm6weloe0vkup",
+        "time": null,
+        "scheduledAt": "2026-02-17T15:23:10.593Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-19": [
@@ -3762,16 +3770,7 @@
         "completedOnDay": false
       }
     ],
-    "2026-02-21": [
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "mkx8wznv95wc8en1g2k",
-        "subtaskId": "mla55dm6weloe0vkup",
-        "time": null,
-        "scheduledAt": "2026-02-17T15:23:10.593Z",
-        "completedOnDay": false
-      }
-    ]
+    "2026-02-21": []
   },
   "completedTasks": [
     {
