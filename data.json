@@ -2018,9 +2018,12 @@
           "title": "1-on-1 w/ Celine",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-02-16T17:20:52.706Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-02-22T00:27:02.146Z",
+          "completionNotes": "Need to start working on goals for the year",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -3651,7 +3654,10 @@
         "subtaskId": null,
         "time": "10:00",
         "scheduledAt": "2026-02-16T17:20:52.706Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-22T00:27:02.146Z",
+        "completionNotes": "Need to start working on goals for the year",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -5106,9 +5112,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-19"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "mlpfxjhedehlo9d4x9g",
+      "completedAt": "2026-02-22T00:27:02.146Z",
+      "completionNotes": "Need to start working on goals for the year",
+      "completionLinks": "",
+      "date": "2026-02-20"
     }
   ],
-  "lastUpdated": "2026-02-20T04:47:55.561Z",
+  "lastUpdated": "2026-02-22T00:27:02.146Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
