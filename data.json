@@ -2339,10 +2339,12 @@
         "title": "finalize NK nucleofection plan",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-02-22T00:27:28.167Z",
         "time": null,
-        "createdAt": "2026-02-20T04:46:13.241Z"
+        "createdAt": "2026-02-20T04:46:13.241Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -5130,9 +5132,17 @@
       "completionNotes": "Need to resubmit luminex request for TREX1 KO samples",
       "completionLinks": "",
       "date": "2026-02-20"
+    },
+    {
+      "id": "mlueqgagu6zg4r51wos",
+      "title": "finalize NK nucleofection plan",
+      "completedAt": "2026-02-22T00:27:28.167Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-20"
     }
   ],
-  "lastUpdated": "2026-02-22T00:27:21.753Z",
+  "lastUpdated": "2026-02-22T00:27:28.167Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
