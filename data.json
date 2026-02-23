@@ -716,6 +716,14 @@
               "completedAt": "2026-02-05T23:03:21.779Z",
               "completionNotes": "100ul of media removed and 120ul of fresh media added to 11 plates. Remainder were discarded.",
               "completionLinks": ""
+            },
+            {
+              "id": "mlzsbers3079xt5uxke",
+              "title": "Order DC reagents",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-23T23:05:16.936Z"
             }
           ]
         },
@@ -3801,6 +3809,14 @@
         "time": null,
         "scheduledAt": "2026-02-23T02:23:31.050Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "ml2l62osbaz3iif86w6",
+        "subtaskId": "mlzsbers3079xt5uxke",
+        "time": null,
+        "scheduledAt": "2026-02-23T23:05:16.936Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-23": [
@@ -5250,7 +5266,7 @@
       "date": "2026-02-23"
     }
   ],
-  "lastUpdated": "2026-02-23T17:59:03.242Z",
+  "lastUpdated": "2026-02-23T23:05:16.936Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
