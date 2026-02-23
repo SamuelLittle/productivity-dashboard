@@ -1543,8 +1543,11 @@
               "title": "Analyze luminex data",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-28T19:23:33.736Z"
+              "completed": true,
+              "createdAt": "2026-01-28T19:23:33.736Z",
+              "completedAt": "2026-02-23T02:24:21.626Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mlyjzhrlo5kh1g28nr9",
@@ -5172,9 +5175,16 @@
       "completionNotes": "Performed 48 nucleofections; 4 pulse codes, 2 different gene targets, 3 different cell densities, 2 different payloads",
       "completionLinks": "",
       "date": "2026-02-20"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mkyey4mglvqoabk7hm",
+      "title": "Analyze luminex data",
+      "completedAt": "2026-02-23T02:24:21.626Z"
     }
   ],
-  "lastUpdated": "2026-02-23T02:24:17.842Z",
+  "lastUpdated": "2026-02-23T02:24:21.626Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
