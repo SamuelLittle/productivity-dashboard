@@ -901,6 +901,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-23T23:07:31.065Z"
+            },
+            {
+              "id": "mlzsemkec1ixz09ad29",
+              "title": "monocyte cDNA QC",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-23T23:07:47.006Z"
             }
           ]
         }
@@ -3815,6 +3823,14 @@
         "time": "10:00",
         "scheduledAt": "2026-02-23T23:05:41.921Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mlpffj0uea41kpsju7",
+        "subtaskId": "mlzsemkec1ixz09ad29",
+        "time": null,
+        "scheduledAt": "2026-02-23T23:07:47.007Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-24": [
@@ -5290,7 +5306,7 @@
       "date": "2026-02-23"
     }
   ],
-  "lastUpdated": "2026-02-23T23:07:31.065Z",
+  "lastUpdated": "2026-02-23T23:07:47.007Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
