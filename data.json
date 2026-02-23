@@ -1744,6 +1744,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-16T17:22:20.059Z"
+            },
+            {
+              "id": "mlzhdljb4xzomkm0kbv",
+              "title": "Bring supernatant to luminex team",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-23T17:59:03.242Z"
             }
           ]
         },
@@ -3846,6 +3854,14 @@
         "time": null,
         "scheduledAt": "2026-02-23T02:24:37.660Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "ml73fflhsubbxo2vp8c",
+        "subtaskId": "mlzhdljb4xzomkm0kbv",
+        "time": null,
+        "scheduledAt": "2026-02-23T17:59:03.242Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -5234,7 +5250,7 @@
       "date": "2026-02-23"
     }
   ],
-  "lastUpdated": "2026-02-23T16:38:46.326Z",
+  "lastUpdated": "2026-02-23T17:59:03.242Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
