@@ -1554,8 +1554,11 @@
               "title": "Resubmit Luminex request",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-23T02:24:17.842Z"
+              "completed": true,
+              "createdAt": "2026-02-23T02:24:17.842Z",
+              "completedAt": "2026-02-23T16:38:46.326Z",
+              "completionNotes": "Repeat of 9655 submitted",
+              "completionLinks": ""
             }
           ]
         },
@@ -3815,7 +3818,10 @@
         "subtaskId": "mlyjzhrlo5kh1g28nr9",
         "time": null,
         "scheduledAt": "2026-02-23T02:24:17.842Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-23T16:38:46.325Z",
+        "completionNotes": "Repeat of 9655 submitted",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -5217,9 +5223,18 @@
       "subtaskId": "mkyey4mglvqoabk7hm",
       "title": "Analyze luminex data",
       "completedAt": "2026-02-23T02:24:21.626Z"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": "mlyjzhrlo5kh1g28nr9",
+      "completedAt": "2026-02-23T16:38:46.326Z",
+      "completionNotes": "Repeat of 9655 submitted",
+      "completionLinks": "",
+      "date": "2026-02-23"
     }
   ],
-  "lastUpdated": "2026-02-23T02:25:10.965Z",
+  "lastUpdated": "2026-02-23T16:38:46.326Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
