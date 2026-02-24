@@ -426,8 +426,11 @@
               "title": "Replacement vial arrival and seeding",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-24T00:27:32.429Z"
+              "completed": true,
+              "createdAt": "2026-02-24T00:27:32.429Z",
+              "completedAt": "2026-02-24T00:29:11.018Z",
+              "completionNotes": "Isolated 1.25M cells seeded in culture media - will do pilots next week",
+              "completionLinks": ""
             },
             {
               "id": "mlzv9hga7d59d5k3ctq",
@@ -3964,7 +3967,10 @@
         "subtaskId": "mlzv970siagjusjspb",
         "time": null,
         "scheduledAt": "2026-02-24T00:27:32.431Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-24T00:29:11.018Z",
+        "completionNotes": "Isolated 1.25M cells seeded in culture media - will do pilots next week",
+        "completionLinks": ""
       }
     ]
   },
@@ -5377,9 +5383,18 @@
       "completionNotes": "Need to make SAMIDs\n",
       "completionLinks": "",
       "date": "2026-02-23"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3n6kk2s3eujhd9om",
+      "subtaskId": "mlzv970siagjusjspb",
+      "completedAt": "2026-02-24T00:29:11.018Z",
+      "completionNotes": "Isolated 1.25M cells seeded in culture media - will do pilots next week",
+      "completionLinks": "",
+      "date": "2026-02-23"
     }
   ],
-  "lastUpdated": "2026-02-24T00:28:44.157Z",
+  "lastUpdated": "2026-02-24T00:29:11.018Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
