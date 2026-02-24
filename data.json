@@ -749,8 +749,11 @@
               "title": "Order DC reagents",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-23T23:05:16.936Z"
+              "completed": true,
+              "createdAt": "2026-02-23T23:05:16.936Z",
+              "completedAt": "2026-02-24T22:52:24.979Z",
+              "completionNotes": "Purchase made ~1800USD",
+              "completionLinks": ""
             }
           ]
         },
@@ -3857,6 +3860,14 @@
         "time": null,
         "scheduledAt": "2026-02-24T18:54:06.820Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "ml73fflhsubbxo2vp8c",
+        "subtaskId": "mlpfzevv7jgt4l40fbc",
+        "time": null,
+        "scheduledAt": "2026-02-24T18:54:06.834Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-26": [
@@ -3916,7 +3927,10 @@
         "subtaskId": "mlzsbers3079xt5uxke",
         "time": null,
         "scheduledAt": "2026-02-23T23:05:16.936Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-24T22:52:24.979Z",
+        "completionNotes": "Purchase made ~1800USD",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -3949,14 +3963,6 @@
         "completedAt": "2026-02-24T00:28:44.157Z",
         "completionNotes": "Need to make SAMIDs\n",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltywpq0yriuhvt8wmb",
-        "taskId": "ml73fflhsubbxo2vp8c",
-        "subtaskId": "mlpfzevv7jgt4l40fbc",
-        "time": null,
-        "scheduledAt": "2026-02-23T02:24:37.660Z",
-        "completedOnDay": false
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -5400,9 +5406,18 @@
       "completionNotes": "Isolated 1.25M cells seeded in culture media - will do pilots next week",
       "completionLinks": "",
       "date": "2026-02-23"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "ml2l62osbaz3iif86w6",
+      "subtaskId": "mlzsbers3079xt5uxke",
+      "completedAt": "2026-02-24T22:52:24.979Z",
+      "completionNotes": "Purchase made ~1800USD",
+      "completionLinks": "",
+      "date": "2026-02-24"
     }
   ],
-  "lastUpdated": "2026-02-24T18:54:06.820Z",
+  "lastUpdated": "2026-02-24T22:52:24.979Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
