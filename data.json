@@ -1782,8 +1782,11 @@
               "title": "Create HITSLIMS request",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:22:03.913Z"
+              "completed": true,
+              "createdAt": "2026-02-16T17:22:03.913Z",
+              "completedAt": "2026-02-24T00:28:44.157Z",
+              "completionNotes": "Need to make SAMIDs\n",
+              "completionLinks": ""
             },
             {
               "id": "mlpfzevv7jgt4l40fbc",
@@ -3931,7 +3934,10 @@
         "subtaskId": "mlpfz2fd4mbdxw8x0q8",
         "time": null,
         "scheduledAt": "2026-02-23T02:24:34.586Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-24T00:28:44.157Z",
+        "completionNotes": "Need to make SAMIDs\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -5362,9 +5368,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-23"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "mlpfz2fd4mbdxw8x0q8",
+      "completedAt": "2026-02-24T00:28:44.157Z",
+      "completionNotes": "Need to make SAMIDs\n",
+      "completionLinks": "",
+      "date": "2026-02-23"
     }
   ],
-  "lastUpdated": "2026-02-24T00:27:53.978Z",
+  "lastUpdated": "2026-02-24T00:28:44.157Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
