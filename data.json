@@ -1774,8 +1774,11 @@
               "title": "Bring supernatant to luminex team",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-23T17:59:03.242Z"
+              "completed": true,
+              "createdAt": "2026-02-23T17:59:03.242Z",
+              "completedAt": "2026-02-24T00:24:54.975Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -3920,7 +3923,10 @@
         "subtaskId": "mlzhdljb4xzomkm0kbv",
         "time": null,
         "scheduledAt": "2026-02-23T17:59:03.242Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-24T00:24:54.975Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -5315,9 +5321,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-23"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "mlzhdljb4xzomkm0kbv",
+      "completedAt": "2026-02-24T00:24:54.975Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-23"
     }
   ],
-  "lastUpdated": "2026-02-24T00:18:19.572Z",
+  "lastUpdated": "2026-02-24T00:24:54.975Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
