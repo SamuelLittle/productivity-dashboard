@@ -420,6 +420,14 @@
               "completedAt": "2026-02-05T23:00:49.401Z",
               "completionNotes": "low viability and loss of cells\n",
               "completionLinks": ""
+            },
+            {
+              "id": "mlzv970siagjusjspb",
+              "title": "Replacement vial arrival and seeding",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-24T00:27:32.429Z"
             }
           ]
         },
@@ -3927,6 +3935,14 @@
         "completedAt": "2026-02-24T00:24:54.975Z",
         "completionNotes": "",
         "completionLinks": ""
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mkn3n6kk2s3eujhd9om",
+        "subtaskId": "mlzv970siagjusjspb",
+        "time": null,
+        "scheduledAt": "2026-02-24T00:27:32.431Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -5332,7 +5348,7 @@
       "date": "2026-02-23"
     }
   ],
-  "lastUpdated": "2026-02-24T00:24:54.975Z",
+  "lastUpdated": "2026-02-24T00:27:32.431Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
