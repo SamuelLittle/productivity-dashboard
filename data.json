@@ -436,6 +436,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-24T00:27:45.946Z"
+            },
+            {
+              "id": "mlzv9nnewmv26jfp4l",
+              "title": "Pilot lysate SMARTseq",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-24T00:27:53.978Z"
             }
           ]
         },
@@ -5356,7 +5364,7 @@
       "date": "2026-02-23"
     }
   ],
-  "lastUpdated": "2026-02-24T00:27:45.947Z",
+  "lastUpdated": "2026-02-24T00:27:53.978Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
