@@ -2150,6 +2150,15 @@
           "completedAt": "2026-02-22T00:27:02.146Z",
           "completionNotes": "Need to start working on goals for the year",
           "completionLinks": ""
+        },
+        {
+          "id": "mm2mny4fmw87xka9f8",
+          "title": "1-on-1 w/ Celine",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-02-25T22:50:22.719Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -4031,6 +4040,16 @@
         "completionNotes": "Isolated 1.25M cells seeded in culture media - will do pilots next week",
         "completionLinks": ""
       }
+    ],
+    "2026-02-27": [
+      {
+        "projectId": "mlld42ihacxlvsot49w",
+        "taskId": "mm2mny4fmw87xka9f8",
+        "subtaskId": null,
+        "time": "09:00",
+        "scheduledAt": "2026-02-25T22:50:22.720Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -5497,7 +5516,7 @@
       "date": "2026-02-24"
     }
   ],
-  "lastUpdated": "2026-02-25T22:48:20.725Z",
+  "lastUpdated": "2026-02-25T22:50:22.720Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
