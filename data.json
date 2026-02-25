@@ -939,6 +939,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-02-23T23:07:47.006Z"
+            },
+            {
+              "id": "mm2mg9dumak92po4kx",
+              "title": "Identify Reagents for SS",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-25T22:44:24.067Z"
             }
           ]
         }
@@ -3859,6 +3867,14 @@
         "completedAt": "2026-02-25T22:38:56.942Z",
         "completionNotes": "Cells Treated around 2:30\n",
         "completionLinks": ""
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mlpffj0uea41kpsju7",
+        "subtaskId": "mm2mg9dumak92po4kx",
+        "time": null,
+        "scheduledAt": "2026-02-25T22:44:24.067Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-26": [
@@ -3925,6 +3941,14 @@
         "time": null,
         "scheduledAt": "2026-02-25T22:39:58.908Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mkn0e9s5qbl61liiujc",
+        "subtaskId": "mlpfyj95c2h04cqj60l",
+        "time": null,
+        "scheduledAt": "2026-02-25T22:39:58.938Z",
+        "completedOnDay": false
       }
     ],
     "2026-02-24": [
@@ -3960,14 +3984,6 @@
         "completedAt": "2026-02-24T22:52:24.979Z",
         "completionNotes": "Purchase made ~1800USD",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltywpq0yriuhvt8wmb",
-        "taskId": "mkn0e9s5qbl61liiujc",
-        "subtaskId": "mlpfyj95c2h04cqj60l",
-        "time": null,
-        "scheduledAt": "2026-02-24T18:53:54.152Z",
-        "completedOnDay": false
       }
     ],
     "2026-02-23": [
@@ -5481,7 +5497,7 @@
       "date": "2026-02-24"
     }
   ],
-  "lastUpdated": "2026-02-25T22:39:58.908Z",
+  "lastUpdated": "2026-02-25T22:44:24.067Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
