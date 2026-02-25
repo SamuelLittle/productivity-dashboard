@@ -1165,8 +1165,11 @@
               "title": "Flow readout",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-18T17:28:32.127Z"
+              "completed": true,
+              "createdAt": "2026-02-18T17:28:32.127Z",
+              "completedAt": "2026-02-25T22:39:45.850Z",
+              "completionNotes": "Ran flow for over 150 samples",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_76rxgVVpw0-nk_ko-pilot3/edit"
             },
             {
               "id": "mlzvek7ruu5kppd326i",
@@ -3920,7 +3923,10 @@
         "subtaskId": "mlsb33b2o1hyfs1z4l",
         "time": null,
         "scheduledAt": "2026-02-18T17:28:32.127Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-25T22:39:45.850Z",
+        "completionNotes": "Ran flow for over 150 samples",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_76rxgVVpw0-nk_ko-pilot3/edit"
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -5441,9 +5447,18 @@
       "completionNotes": "isolated PBMCs from 76 y/o w m",
       "completionLinks": "",
       "date": "2026-02-25"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mkmthio0tg3y2jko0oi",
+      "subtaskId": "mlsb33b2o1hyfs1z4l",
+      "completedAt": "2026-02-25T22:39:45.850Z",
+      "completionNotes": "Ran flow for over 150 samples",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_76rxgVVpw0-nk_ko-pilot3/edit",
+      "date": "2026-02-24"
     }
   ],
-  "lastUpdated": "2026-02-25T22:39:13.593Z",
+  "lastUpdated": "2026-02-25T22:39:45.850Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
