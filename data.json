@@ -1820,6 +1820,14 @@
               "completedAt": "2026-02-24T00:24:54.975Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mm2frz0rzeb8vi1s34r",
+              "title": "resubmit HITSLIMS as SMARTseq project",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-02-25T19:37:33.195Z"
             }
           ]
         },
@@ -5409,7 +5417,7 @@
       "date": "2026-02-24"
     }
   ],
-  "lastUpdated": "2026-02-25T19:37:05.194Z",
+  "lastUpdated": "2026-02-25T19:37:33.195Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
