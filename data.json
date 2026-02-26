@@ -1160,7 +1160,7 @@
           "title": "NK Knockout mini-screen",
           "description": "exploring nucleofection parameters and knockout conditions and effects in NK cells",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T16:37:18.912Z",
           "subtasks": [
             {
@@ -1170,7 +1170,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-18T17:08:47.427Z",
-              "completedAt": "2026-02-19T21:12:36.967Z",
+              "completedAt": "2026-02-26T23:22:31.404Z",
               "completionNotes": "Isolated 70M NK cells from frozen PBMCs",
               "completionLinks": ""
             },
@@ -1181,7 +1181,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-18T17:26:29.942Z",
-              "completedAt": "2026-02-22T00:28:54.769Z",
+              "completedAt": "2026-02-26T23:22:31.404Z",
               "completionNotes": "Performed 48 nucleofections; 4 pulse codes, 2 different gene targets, 3 different cell densities, 2 different payloads",
               "completionLinks": ""
             },
@@ -1192,7 +1192,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-18T17:28:32.127Z",
-              "completedAt": "2026-02-25T22:39:45.850Z",
+              "completedAt": "2026-02-26T23:22:31.404Z",
               "completionNotes": "Ran flow for over 150 samples",
               "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_76rxgVVpw0-nk_ko-pilot3/edit"
             },
@@ -1203,11 +1203,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-24T00:31:42.807Z",
-              "completedAt": "2026-02-26T23:22:21.989Z",
+              "completedAt": "2026-02-26T23:22:31.404Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-02-26T23:22:31.404Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mkn0igezgk2t0n91d6u",
@@ -5631,9 +5634,18 @@
       "subtaskId": "mlzvek7ruu5kppd326i",
       "title": "Make flow protocol with counting bead integration",
       "completedAt": "2026-02-26T23:22:21.989Z"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mkmthio0tg3y2jko0oi",
+      "subtaskId": null,
+      "title": "NK Knockout mini-screen",
+      "completedAt": "2026-02-26T23:22:31.405Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-02-26T23:22:21.989Z",
+  "lastUpdated": "2026-02-26T23:22:31.405Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
