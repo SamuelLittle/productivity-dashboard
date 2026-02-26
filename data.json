@@ -1925,8 +1925,11 @@
               "title": "Pass plates to Pete",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-17T18:39:39.748Z"
+              "completed": true,
+              "createdAt": "2026-02-17T18:39:39.748Z",
+              "completedAt": "2026-02-26T23:16:27.759Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mlqy76ubea1qg5g1g78",
@@ -3910,7 +3913,10 @@
         "subtaskId": "mlqy6pk4flx2y4qrb3c",
         "time": null,
         "scheduledAt": "2026-02-17T18:39:39.748Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-26T23:16:27.759Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -5544,9 +5550,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-26"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mlqy3dwoui2qz3anm7t",
+      "subtaskId": "mlqy6pk4flx2y4qrb3c",
+      "completedAt": "2026-02-26T23:16:27.759Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-26"
     }
   ],
-  "lastUpdated": "2026-02-26T18:06:06.683Z",
+  "lastUpdated": "2026-02-26T23:16:27.759Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
