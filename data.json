@@ -1862,8 +1862,11 @@
               "title": "TPP SmartSeq D1",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-26T23:18:21.462Z"
+              "completed": true,
+              "createdAt": "2026-02-26T23:18:21.462Z",
+              "completedAt": "2026-02-26T23:21:22.562Z",
+              "completionNotes": "Completed\n",
+              "completionLinks": ""
             },
             {
               "id": "mm43433u2xnku9rkdh5",
@@ -3989,7 +3992,10 @@
         "subtaskId": "mm433s46y8r1rhzto5j",
         "time": null,
         "scheduledAt": "2026-02-26T23:18:21.463Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-26T23:21:22.562Z",
+        "completionNotes": "Completed\n",
+        "completionLinks": ""
       }
     ],
     "2026-02-24": [
@@ -5606,9 +5612,18 @@
       "completionNotes": "Need new Kapa and new fwd primer for cDNA amp\n",
       "completionLinks": "",
       "date": "2026-02-26"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "mm433s46y8r1rhzto5j",
+      "completedAt": "2026-02-26T23:21:22.562Z",
+      "completionNotes": "Completed\n",
+      "completionLinks": "",
+      "date": "2026-02-26"
     }
   ],
-  "lastUpdated": "2026-02-26T23:19:06.287Z",
+  "lastUpdated": "2026-02-26T23:21:22.562Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
