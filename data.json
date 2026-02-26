@@ -948,8 +948,11 @@
               "title": "Identify Reagents for SS",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-25T22:44:24.067Z"
+              "completed": true,
+              "createdAt": "2026-02-25T22:44:24.067Z",
+              "completedAt": "2026-02-26T23:16:49.915Z",
+              "completionNotes": "Need new Kapa and new fwd primer for cDNA amp\n",
+              "completionLinks": ""
             },
             {
               "id": "mm2mkr22n964im82pqn",
@@ -3919,14 +3922,6 @@
         "completionLinks": ""
       },
       {
-        "projectId": "mkltywpq0yriuhvt8wmb",
-        "taskId": "mlqy3dwoui2qz3anm7t",
-        "subtaskId": "mlqy76ubea1qg5g1g78",
-        "time": null,
-        "scheduledAt": "2026-02-17T18:40:02.147Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "mlpffj0uea41kpsju7",
         "subtaskId": "mlpfw19hbx76oq5q1m5",
@@ -3967,7 +3962,10 @@
         "subtaskId": "mm2mg9dumak92po4kx",
         "time": null,
         "scheduledAt": "2026-02-26T00:04:39.819Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-26T23:16:49.915Z",
+        "completionNotes": "Need new Kapa and new fwd primer for cDNA amp\n",
+        "completionLinks": ""
       }
     ],
     "2026-02-24": [
@@ -4066,6 +4064,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-02-26T23:16:32.022Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mlqy3dwoui2qz3anm7t",
+        "subtaskId": "mlqy76ubea1qg5g1g78",
+        "time": null,
+        "scheduledAt": "2026-02-26T23:16:32.046Z",
         "completedOnDay": false
       }
     ]
@@ -5559,9 +5565,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-26"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": "mm2mg9dumak92po4kx",
+      "completedAt": "2026-02-26T23:16:49.915Z",
+      "completionNotes": "Need new Kapa and new fwd primer for cDNA amp\n",
+      "completionLinks": "",
+      "date": "2026-02-26"
     }
   ],
-  "lastUpdated": "2026-02-26T23:16:32.022Z",
+  "lastUpdated": "2026-02-26T23:16:49.915Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
