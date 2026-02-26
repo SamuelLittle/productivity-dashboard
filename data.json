@@ -910,8 +910,11 @@
               "title": "Luminex on supernatant",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:19:42.437Z"
+              "completed": true,
+              "createdAt": "2026-02-16T17:19:42.437Z",
+              "completedAt": "2026-02-26T18:06:06.683Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mlsc31x8ynbh98ulrkl",
@@ -3923,7 +3926,10 @@
         "subtaskId": "mlpfw19hbx76oq5q1m5",
         "time": "10:00",
         "scheduledAt": "2026-02-23T23:05:41.921Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-26T18:06:06.683Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -5529,9 +5535,18 @@
       "completionNotes": "Plates prepped and in 4c - need to bring to Luminex team tomorrow\n",
       "completionLinks": "",
       "date": "2026-02-25"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": "mlpfw19hbx76oq5q1m5",
+      "completedAt": "2026-02-26T18:06:06.683Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-26"
     }
   ],
-  "lastUpdated": "2026-02-26T00:04:54.602Z",
+  "lastUpdated": "2026-02-26T18:06:06.683Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
