@@ -1882,8 +1882,11 @@
               "title": "TPP cDNA QC",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-26T23:18:35.706Z"
+              "completed": true,
+              "createdAt": "2026-02-26T23:18:35.706Z",
+              "completedAt": "2026-02-27T21:25:46.353Z",
+              "completionNotes": "strong peaks for all observed wells. Proceed to D2\n",
+              "completionLinks": ""
             },
             {
               "id": "mm434h638sq8sleq9l2",
@@ -4128,7 +4131,10 @@
         "subtaskId": "mm43433u2xnku9rkdh5",
         "time": null,
         "scheduledAt": "2026-02-26T23:23:56.291Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-02-27T21:25:46.352Z",
+        "completionNotes": "strong peaks for all observed wells. Proceed to D2\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -5680,9 +5686,18 @@
       "completionNotes": "Notes in Gemini. \n\nMake new plan for nucleofection screen - reach out to lonza\n\nPrep slides for TREX1 - send to Celine \n\nSubmit samples for TPP sequencing\n\n",
       "completionLinks": "https://docs.google.com/document/d/1VZjHj6a2r7VYOpXrdFvinDJ1nFK8FmuHw9LuitS3_Is/edit?tab=t.2di7ez5wkmye",
       "date": "2026-02-27"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "mm43433u2xnku9rkdh5",
+      "completedAt": "2026-02-27T21:25:46.353Z",
+      "completionNotes": "strong peaks for all observed wells. Proceed to D2\n",
+      "completionLinks": "",
+      "date": "2026-02-27"
     }
   ],
-  "lastUpdated": "2026-02-27T18:20:12.711Z",
+  "lastUpdated": "2026-02-27T21:25:46.353Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
