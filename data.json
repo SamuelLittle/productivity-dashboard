@@ -1978,8 +1978,11 @@
               "title": "extract gDNA",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-17T18:40:02.147Z"
+              "completed": true,
+              "createdAt": "2026-02-17T18:40:02.147Z",
+              "completedAt": "2026-03-01T18:08:31.909Z",
+              "completionNotes": "extracted - placed at 4c\n",
+              "completionLinks": ""
             }
           ]
         }
@@ -4115,7 +4118,10 @@
         "subtaskId": "mlqy76ubea1qg5g1g78",
         "time": null,
         "scheduledAt": "2026-02-26T23:16:32.046Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-01T18:08:31.909Z",
+        "completionNotes": "extracted - placed at 4c\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -5695,9 +5701,18 @@
       "completionNotes": "strong peaks for all observed wells. Proceed to D2\n",
       "completionLinks": "",
       "date": "2026-02-27"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mlqy3dwoui2qz3anm7t",
+      "subtaskId": "mlqy76ubea1qg5g1g78",
+      "completedAt": "2026-03-01T18:08:31.910Z",
+      "completionNotes": "extracted - placed at 4c\n",
+      "completionLinks": "",
+      "date": "2026-02-27"
     }
   ],
-  "lastUpdated": "2026-02-27T21:25:46.353Z",
+  "lastUpdated": "2026-03-01T18:08:31.910Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
