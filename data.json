@@ -1449,7 +1449,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-03-02T15:19:03.168Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mm9br6cenvghencsr08",
+              "title": "Contact Lonza regarding optimization",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-02T15:19:20.798Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -5739,7 +5748,7 @@
       "date": "2026-02-27"
     }
   ],
-  "lastUpdated": "2026-03-02T15:19:03.168Z",
+  "lastUpdated": "2026-03-02T15:19:20.798Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
