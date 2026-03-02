@@ -2262,6 +2262,15 @@
           "completedAt": "2026-02-27T18:20:12.711Z",
           "completionNotes": "Notes in Gemini. \n\nMake new plan for nucleofection screen - reach out to lonza\n\nPrep slides for TREX1 - send to Celine \n\nSubmit samples for TPP sequencing\n\n",
           "completionLinks": "https://docs.google.com/document/d/1VZjHj6a2r7VYOpXrdFvinDJ1nFK8FmuHw9LuitS3_Is/edit?tab=t.2di7ez5wkmye"
+        },
+        {
+          "id": "mm9kw5h1ulauyierof",
+          "title": "1-on-1 w/ Celine",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-03-02T19:35:09.493Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -4306,6 +4315,16 @@
         "scheduledAt": "2026-03-02T18:22:44.866Z",
         "completedOnDay": false
       }
+    ],
+    "2026-03-06": [
+      {
+        "projectId": "mlld42ihacxlvsot49w",
+        "taskId": "mm9kw5h1ulauyierof",
+        "subtaskId": null,
+        "time": "11:00",
+        "scheduledAt": "2026-03-02T19:35:09.494Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -5877,7 +5896,7 @@
       "date": "2026-03-02"
     }
   ],
-  "lastUpdated": "2026-03-02T19:33:41.878Z",
+  "lastUpdated": "2026-03-02T19:35:09.494Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
