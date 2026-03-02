@@ -2656,9 +2656,12 @@
         "title": "Eiden/Moffat Lab meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-02T19:28:22.363Z",
-        "time": "14:00"
+        "time": "14:00",
+        "completedAt": "2026-03-02T23:06:25.044Z",
+        "completionNotes": "ZT presentation. \n",
+        "completionLinks": ""
       },
       {
         "id": "mm9knrpejrsbbaoptnh",
@@ -5983,9 +5986,17 @@
       "completionNotes": "meeting tomorrow at 830 am\n",
       "completionLinks": "",
       "date": "2026-03-02"
+    },
+    {
+      "id": "mm9knfbuuoz9pxu9wwe",
+      "title": "Eiden/Moffat Lab meeting",
+      "completedAt": "2026-03-02T23:06:25.044Z",
+      "completionNotes": "ZT presentation. \n",
+      "completionLinks": "",
+      "date": "2026-03-02"
     }
   ],
-  "lastUpdated": "2026-03-02T23:05:12.282Z",
+  "lastUpdated": "2026-03-02T23:06:25.044Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
