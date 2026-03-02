@@ -1455,8 +1455,11 @@
               "title": "Contact Lonza regarding optimization",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-02T15:19:20.798Z"
+              "completed": true,
+              "createdAt": "2026-03-02T15:19:20.798Z",
+              "completedAt": "2026-03-02T23:05:12.282Z",
+              "completionNotes": "meeting tomorrow at 830 am\n",
+              "completionLinks": ""
             },
             {
               "id": "mm9btt9s2avsn7q341t",
@@ -4301,7 +4304,10 @@
         "subtaskId": "mm9br6cenvghencsr08",
         "time": null,
         "scheduledAt": "2026-03-02T19:37:42.558Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-02T23:05:12.282Z",
+        "completionNotes": "meeting tomorrow at 830 am\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -5968,9 +5974,18 @@
       "completionNotes": "Generated NGS7235\n",
       "completionLinks": "",
       "date": "2026-03-02"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9bqsqn24abbz1pnup",
+      "subtaskId": "mm9br6cenvghencsr08",
+      "completedAt": "2026-03-02T23:05:12.282Z",
+      "completionNotes": "meeting tomorrow at 830 am\n",
+      "completionLinks": "",
+      "date": "2026-03-02"
     }
   ],
-  "lastUpdated": "2026-03-02T20:26:04.798Z",
+  "lastUpdated": "2026-03-02T23:05:12.282Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
