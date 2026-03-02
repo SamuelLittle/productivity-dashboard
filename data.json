@@ -1481,6 +1481,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-02T19:38:09.456Z"
+            },
+            {
+              "id": "mm9l1c0dm7i0220y8mf",
+              "title": "Execute nucleofection pilot",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-02T19:39:11.245Z"
             }
           ]
         },
@@ -4373,6 +4381,14 @@
         "time": null,
         "scheduledAt": "2026-03-01T18:09:10.777Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mm9bqsqn24abbz1pnup",
+        "subtaskId": "mm9l1c0dm7i0220y8mf",
+        "time": null,
+        "scheduledAt": "2026-03-02T19:39:11.245Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -5945,7 +5961,7 @@
       "date": "2026-03-02"
     }
   ],
-  "lastUpdated": "2026-03-02T19:38:25.952Z",
+  "lastUpdated": "2026-03-02T19:39:11.245Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
