@@ -1473,6 +1473,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-02T15:21:34.442Z"
+            },
+            {
+              "id": "mm9l00c049cxgyv1f2a",
+              "title": "Thaw PBMCs and isolate NK cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-02T19:38:09.456Z"
             }
           ]
         },
@@ -5921,7 +5929,7 @@
       "date": "2026-03-02"
     }
   ],
-  "lastUpdated": "2026-03-02T19:37:55.059Z",
+  "lastUpdated": "2026-03-02T19:38:09.456Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
