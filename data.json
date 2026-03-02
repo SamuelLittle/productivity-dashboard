@@ -2603,6 +2603,17 @@
         "createdAt": "2026-02-26T23:24:37.375Z",
         "time": null
       }
+    ],
+    "2026-03-02": [
+      {
+        "id": "mm9knfbuuoz9pxu9wwe",
+        "title": "Eiden/Moffat Lab meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-03-02T19:28:22.363Z",
+        "time": "14:00"
+      }
     ]
   },
   "scheduledItems": {
@@ -5809,7 +5820,7 @@
       "date": "2026-03-02"
     }
   ],
-  "lastUpdated": "2026-03-02T19:27:42.895Z",
+  "lastUpdated": "2026-03-02T19:28:22.363Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
