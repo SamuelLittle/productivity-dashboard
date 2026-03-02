@@ -1441,6 +1441,15 @@
           "completedAt": "2026-02-26T23:22:36.272Z",
           "completionNotes": "",
           "completionLinks": ""
+        },
+        {
+          "id": "mm9bqsqn24abbz1pnup",
+          "title": "NK Knockout Pilot 4",
+          "description": "Follow on NK KO screen aiming to improve cell recovery and minimize sample input",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-03-02T15:19:03.168Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -5730,7 +5739,7 @@
       "date": "2026-02-27"
     }
   ],
-  "lastUpdated": "2026-03-02T15:17:28.416Z",
+  "lastUpdated": "2026-03-02T15:19:03.168Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
