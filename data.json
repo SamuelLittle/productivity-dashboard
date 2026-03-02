@@ -4193,7 +4193,9 @@
         "time": null,
         "scheduledAt": "2026-03-02T15:17:20.935Z",
         "completedOnDay": false
-      },
+      }
+    ],
+    "2026-03-04": [
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
         "taskId": "ml73fflhsubbxo2vp8c",
