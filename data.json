@@ -902,8 +902,11 @@
               "title": "SMARTseq on extracted RNA",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:19:14.917Z"
+              "completed": true,
+              "createdAt": "2026-02-16T17:19:14.917Z",
+              "completedAt": "2026-03-03T23:45:49.747Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mlpfw19hbx76oq5q1m5",
@@ -4375,7 +4378,10 @@
         "subtaskId": "mlpfvg11azq1y9psklv",
         "time": null,
         "scheduledAt": "2026-03-02T18:22:20.179Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-03T23:45:49.747Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6076,9 +6082,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-03"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": "mlpfvg11azq1y9psklv",
+      "completedAt": "2026-03-03T23:45:49.747Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-03"
     }
   ],
-  "lastUpdated": "2026-03-03T21:09:05.663Z",
+  "lastUpdated": "2026-03-03T23:45:49.747Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
