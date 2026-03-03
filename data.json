@@ -2655,9 +2655,12 @@
         "title": "Blood Arriving",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-02-26T23:24:37.375Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-03T21:08:48.860Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mm9kto8dsnho2xxf1iq",
@@ -6073,9 +6076,17 @@
       "completionNotes": "2026 goals in workday",
       "completionLinks": "",
       "date": "2026-03-03"
+    },
+    {
+      "id": "mm43bu66kdart42veuq",
+      "title": "Blood Arriving",
+      "completedAt": "2026-03-03T21:08:48.860Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-03"
     }
   ],
-  "lastUpdated": "2026-03-03T21:05:34.919Z",
+  "lastUpdated": "2026-03-03T21:08:48.860Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
