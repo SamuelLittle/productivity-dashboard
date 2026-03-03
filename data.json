@@ -2664,9 +2664,12 @@
         "title": "Lab meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-02T19:33:13.837Z",
-        "time": "12:00"
+        "time": "12:00",
+        "completedAt": "2026-03-03T21:05:34.919Z",
+        "completionNotes": "2026 goals in workday",
+        "completionLinks": ""
       },
       {
         "id": "mm9v6x58qofn8ejib8c",
@@ -6062,9 +6065,17 @@
       "completionNotes": "Met with lonza reps and got new pulse codes\n",
       "completionLinks": "https://docs.google.com/document/d/16I0DdBg1BSmAL1xeUseJUEA80VQFjTz1mXjwJGeQAgE/edit?usp=sharing",
       "date": "2026-03-03"
+    },
+    {
+      "id": "mm9kto8dsnho2xxf1iq",
+      "title": "Lab meeting",
+      "completedAt": "2026-03-03T21:05:34.919Z",
+      "completionNotes": "2026 goals in workday",
+      "completionLinks": "",
+      "date": "2026-03-03"
     }
   ],
-  "lastUpdated": "2026-03-03T21:05:15.839Z",
+  "lastUpdated": "2026-03-03T21:05:34.919Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
