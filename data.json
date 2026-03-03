@@ -2682,9 +2682,12 @@
         "title": "isolate and bank PBMCs",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-03T00:23:28.077Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-03T23:46:20.060Z",
+        "completionNotes": "isolated PBMCs from 62 y/o Chineses M\n",
+        "completionLinks": ""
       }
     ],
     "2026-03-02": [
@@ -6091,9 +6094,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-03"
+    },
+    {
+      "id": "mm9v6x58qofn8ejib8c",
+      "title": "isolate and bank PBMCs",
+      "completedAt": "2026-03-03T23:46:20.060Z",
+      "completionNotes": "isolated PBMCs from 62 y/o Chineses M\n",
+      "completionLinks": "",
+      "date": "2026-03-03"
     }
   ],
-  "lastUpdated": "2026-03-03T23:45:49.747Z",
+  "lastUpdated": "2026-03-03T23:46:20.060Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
