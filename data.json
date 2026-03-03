@@ -1516,9 +1516,12 @@
           "title": "Meet with Lonza",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-02T19:29:39.461Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-03-03T21:05:15.839Z",
+          "completionNotes": "Met with lonza reps and got new pulse codes\n",
+          "completionLinks": "https://docs.google.com/document/d/16I0DdBg1BSmAL1xeUseJUEA80VQFjTz1mXjwJGeQAgE/edit?usp=sharing"
         }
       ],
       "progressUpdates": [],
@@ -4382,7 +4385,10 @@
         "subtaskId": null,
         "time": "08:30",
         "scheduledAt": "2026-03-02T19:29:39.462Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-03T21:05:15.839Z",
+        "completionNotes": "Met with lonza reps and got new pulse codes\n",
+        "completionLinks": "https://docs.google.com/document/d/16I0DdBg1BSmAL1xeUseJUEA80VQFjTz1mXjwJGeQAgE/edit?usp=sharing"
       }
     ],
     "2026-03-05": [
@@ -6048,9 +6054,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-02"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9kp2thy6ktf63iz9",
+      "completedAt": "2026-03-03T21:05:15.839Z",
+      "completionNotes": "Met with lonza reps and got new pulse codes\n",
+      "completionLinks": "https://docs.google.com/document/d/16I0DdBg1BSmAL1xeUseJUEA80VQFjTz1mXjwJGeQAgE/edit?usp=sharing",
+      "date": "2026-03-03"
     }
   ],
-  "lastUpdated": "2026-03-03T00:31:11.354Z",
+  "lastUpdated": "2026-03-03T21:05:15.839Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
