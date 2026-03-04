@@ -473,8 +473,11 @@
               "title": "Order reagents for pilot",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-04T23:48:04.677Z"
+              "completed": true,
+              "createdAt": "2026-03-04T23:48:04.677Z",
+              "completedAt": "2026-03-04T23:48:41.010Z",
+              "completionNotes": "Ordered reagents to trade BLADE-R protocol and oli-dT bead based method",
+              "completionLinks": "https://www.biorxiv.org/content/10.1101/2025.03.27.645479v1.full.pdf"
             }
           ]
         },
@@ -4471,7 +4474,10 @@
         "subtaskId": "mmcot41xzyp0po5uh6r",
         "time": null,
         "scheduledAt": "2026-03-04T23:48:08.912Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-04T23:48:41.010Z",
+        "completionNotes": "Ordered reagents to trade BLADE-R protocol and oli-dT bead based method",
+        "completionLinks": "https://www.biorxiv.org/content/10.1101/2025.03.27.645479v1.full.pdf"
       }
     ]
   },
@@ -6124,9 +6130,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-04"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn5xu0po7lfqnsjdqm",
+      "subtaskId": "mmcot41xzyp0po5uh6r",
+      "completedAt": "2026-03-04T23:48:41.010Z",
+      "completionNotes": "Ordered reagents to trade BLADE-R protocol and oli-dT bead based method",
+      "completionLinks": "https://www.biorxiv.org/content/10.1101/2025.03.27.645479v1.full.pdf",
+      "date": "2026-03-04"
     }
   ],
-  "lastUpdated": "2026-03-04T23:48:08.912Z",
+  "lastUpdated": "2026-03-04T23:48:41.010Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
