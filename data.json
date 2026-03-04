@@ -4332,14 +4332,6 @@
     ],
     "2026-03-02": [
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-03-01T18:09:15.879Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltywpq0yriuhvt8wmb",
         "taskId": "ml73fflhsubbxo2vp8c",
         "subtaskId": "mm2frz0rzeb8vi1s34r",
@@ -4360,16 +4352,6 @@
         "completedAt": "2026-03-02T23:05:12.282Z",
         "completionNotes": "meeting tomorrow at 830 am\n",
         "completionLinks": ""
-      }
-    ],
-    "2026-03-04": [
-      {
-        "projectId": "mkltywpq0yriuhvt8wmb",
-        "taskId": "ml73fflhsubbxo2vp8c",
-        "subtaskId": "mm434h638sq8sleq9l2",
-        "time": null,
-        "scheduledAt": "2026-03-02T15:17:28.416Z",
-        "completedOnDay": false
       }
     ],
     "2026-03-03": [
@@ -4419,6 +4401,22 @@
         "subtaskId": "mm9l00c049cxgyv1f2a",
         "time": null,
         "scheduledAt": "2026-03-02T19:38:25.952Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-03-04T23:47:36.913Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "ml73fflhsubbxo2vp8c",
+        "subtaskId": "mm434h638sq8sleq9l2",
+        "time": null,
+        "scheduledAt": "2026-03-04T23:47:36.947Z",
         "completedOnDay": false
       }
     ],
@@ -6110,7 +6108,7 @@
       "date": "2026-03-04"
     }
   ],
-  "lastUpdated": "2026-03-04T22:21:03.176Z",
+  "lastUpdated": "2026-03-04T23:47:36.947Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
