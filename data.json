@@ -954,8 +954,11 @@
               "title": "monocyte cDNA QC",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-23T23:07:47.006Z"
+              "completed": true,
+              "createdAt": "2026-02-23T23:07:47.006Z",
+              "completedAt": "2026-03-05T16:03:51.961Z",
+              "completionNotes": "no cDNA - Traced this back to low RNA amounts",
+              "completionLinks": ""
             },
             {
               "id": "mm2mg9dumak92po4kx",
@@ -4396,7 +4399,10 @@
         "subtaskId": "mlzsemkec1ixz09ad29",
         "time": null,
         "scheduledAt": "2026-03-02T18:22:44.866Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-05T16:03:51.960Z",
+        "completionNotes": "no cDNA - Traced this back to low RNA amounts",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6139,9 +6145,18 @@
       "completionNotes": "Ordered reagents to trade BLADE-R protocol and oli-dT bead based method",
       "completionLinks": "https://www.biorxiv.org/content/10.1101/2025.03.27.645479v1.full.pdf",
       "date": "2026-03-04"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": "mlzsemkec1ixz09ad29",
+      "completedAt": "2026-03-05T16:03:51.961Z",
+      "completionNotes": "no cDNA - Traced this back to low RNA amounts",
+      "completionLinks": "",
+      "date": "2026-03-05"
     }
   ],
-  "lastUpdated": "2026-03-04T23:48:41.010Z",
+  "lastUpdated": "2026-03-05T16:03:51.961Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
