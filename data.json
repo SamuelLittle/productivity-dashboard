@@ -2736,9 +2736,12 @@
         "title": "pilot Smartseq w/ Caitlynn and Jenny",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-02T19:30:15.025Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-05T22:04:27.336Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mm9mpmymwi6wgv60lt",
@@ -6165,9 +6168,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-05"
+    },
+    {
+      "id": "mm9kpu9dmy1kedflcy",
+      "title": "pilot Smartseq w/ Caitlynn and Jenny",
+      "completedAt": "2026-03-05T22:04:27.336Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-05"
     }
   ],
-  "lastUpdated": "2026-03-05T20:48:04.820Z",
+  "lastUpdated": "2026-03-05T22:04:27.336Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
