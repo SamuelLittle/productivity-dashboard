@@ -1013,6 +1013,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-06T23:28:33.778Z"
+            },
+            {
+              "id": "mmfj0asg9pkwam01gbn",
+              "title": "slide deck overviewing roadblocks and tech dev need",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-06T23:29:00.833Z"
             }
           ]
         }
@@ -4569,6 +4577,14 @@
         "time": null,
         "scheduledAt": "2026-03-06T23:27:19.339Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mmfivhwgj8givm9xdh",
+        "subtaskId": "mmfj0asg9pkwam01gbn",
+        "time": null,
+        "scheduledAt": "2026-03-06T23:29:00.833Z",
+        "completedOnDay": false
       }
     ],
     "2026-03-10": [
@@ -6333,7 +6349,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-06T23:28:33.778Z",
+  "lastUpdated": "2026-03-06T23:29:00.833Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
