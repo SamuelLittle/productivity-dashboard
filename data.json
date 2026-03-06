@@ -848,10 +848,10 @@
         {
           "id": "mlpffj0uea41kpsju7",
           "title": "Monocytes Cytokine Screen",
-          "description": "",
+          "description": "Experiment Failed.  Need to improve RNA extraction",
           "priority": "medium",
           "completed": false,
-          "createdAt": "2026-02-16T17:06:52.303Z",
+          "createdAt": "2026-03-06T23:22:50.113Z",
           "subtasks": [
             {
               "id": "mlpftdfodsz9tu8lh2j",
@@ -6259,7 +6259,7 @@
       "date": "2026-03-06"
     }
   ],
-  "lastUpdated": "2026-03-06T23:18:41.917Z",
+  "lastUpdated": "2026-03-06T23:22:50.113Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
