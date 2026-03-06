@@ -2414,6 +2414,16 @@
       ],
       "progressUpdates": [],
       "archived": false
+    },
+    {
+      "id": "mmfjn4b1w85dvswipdk",
+      "name": "SMARTSeq TechDev",
+      "description": "high-throughput RNA extraction method for myeloid and lymphoid cell",
+      "color": "#ef4444",
+      "createdAt": "2026-03-06T23:46:45.518Z",
+      "tasks": [],
+      "progressUpdates": [],
+      "archived": false
     }
   ],
   "dailyLists": {
@@ -6436,7 +6446,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-06T23:42:16.774Z",
+  "lastUpdated": "2026-03-06T23:46:45.518Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
