@@ -1005,6 +1005,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-06T23:27:19.338Z"
+            },
+            {
+              "id": "mmfizpwyyzkogkthpf",
+              "title": "slide deck overviewing progress to date",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-06T23:28:33.778Z"
             }
           ]
         }
@@ -4571,6 +4579,14 @@
         "time": "09:30",
         "scheduledAt": "2026-03-06T23:25:16.768Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mmfivhwgj8givm9xdh",
+        "subtaskId": "mmfizpwyyzkogkthpf",
+        "time": null,
+        "scheduledAt": "2026-03-06T23:28:33.778Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -6317,7 +6333,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-06T23:27:19.339Z",
+  "lastUpdated": "2026-03-06T23:28:33.778Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
