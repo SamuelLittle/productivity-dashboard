@@ -1433,7 +1433,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-02-04T03:52:55.795Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mmfjhcxywbxwool13mp",
+              "title": "contact honglin about pilot viral particles for testing",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-06T23:42:16.774Z"
+            }
+          ]
         },
         {
           "id": "mlhaql2p4q6z8l0f9n4",
@@ -4643,6 +4652,14 @@
         "time": null,
         "scheduledAt": "2026-03-06T23:36:13.032Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "ml7hsagjyud5rcxh2r",
+        "subtaskId": "mmfjhcxywbxwool13mp",
+        "time": null,
+        "scheduledAt": "2026-03-06T23:42:16.774Z",
+        "completedOnDay": false
       }
     ],
     "2026-03-10": [
@@ -6419,7 +6436,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-06T23:38:16.556Z",
+  "lastUpdated": "2026-03-06T23:42:16.774Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
