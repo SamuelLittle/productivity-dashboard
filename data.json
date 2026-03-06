@@ -2429,7 +2429,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-03-06T23:55:41.423Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mmfjz6hgskmbtvl4q1",
+              "title": "seed DLD1s",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-06T23:56:08.212Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -6456,7 +6465,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-06T23:55:41.423Z",
+  "lastUpdated": "2026-03-06T23:56:08.212Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
