@@ -1483,8 +1483,11 @@
               "title": "make mock optimization protocol",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-02T15:21:23.824Z"
+              "completed": true,
+              "createdAt": "2026-03-02T15:21:23.824Z",
+              "completedAt": "2026-03-06T23:16:50.209Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mm9bu1gqe99dn9ccmy5",
@@ -4499,7 +4502,10 @@
         "subtaskId": "mm9btt9s2avsn7q341t",
         "time": null,
         "scheduledAt": "2026-03-06T18:43:43.609Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-06T23:16:50.209Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-03-10": [
@@ -6260,9 +6266,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-06"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9bqsqn24abbz1pnup",
+      "subtaskId": "mm9btt9s2avsn7q341t",
+      "completedAt": "2026-03-06T23:16:50.209Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-06"
     }
   ],
-  "lastUpdated": "2026-03-06T23:16:45.772Z",
+  "lastUpdated": "2026-03-06T23:16:50.209Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
