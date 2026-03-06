@@ -2421,7 +2421,17 @@
       "description": "high-throughput RNA extraction method for myeloid and lymphoid cell",
       "color": "#ef4444",
       "createdAt": "2026-03-06T23:46:45.518Z",
-      "tasks": [],
+      "tasks": [
+        {
+          "id": "mmfjyltb0cm08ih0bjhd",
+          "title": "Pilot 1: DLD1 hand-scale pilot",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-03-06T23:55:41.423Z",
+          "subtasks": []
+        }
+      ],
       "progressUpdates": [],
       "archived": false
     }
@@ -6446,7 +6456,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-06T23:46:45.518Z",
+  "lastUpdated": "2026-03-06T23:55:41.423Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
