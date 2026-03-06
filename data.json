@@ -850,7 +850,7 @@
           "title": "Monocytes Cytokine Screen",
           "description": "Experiment Failed.  Need to improve RNA extraction",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-06T23:22:50.113Z",
           "subtasks": [
             {
@@ -860,7 +860,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-16T17:17:38.245Z",
-              "completedAt": "2026-02-18T15:32:17.468Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "Isolated 95M monocytes from 39F donor\n",
               "completionLinks": ""
             },
@@ -871,7 +871,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-16T17:17:47.917Z",
-              "completedAt": "2026-02-18T15:32:28.428Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "Treated at ~2pm",
               "completionLinks": ""
             },
@@ -882,7 +882,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-16T17:17:59.169Z",
-              "completedAt": "2026-02-18T15:32:42.655Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "extraction performed starting around 5pm.",
               "completionLinks": ""
             },
@@ -893,7 +893,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-16T17:18:26.721Z",
-              "completedAt": "2026-02-19T15:49:10.744Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "Plates in -80\n",
               "completionLinks": ""
             },
@@ -904,7 +904,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-16T17:18:50.338Z",
-              "completedAt": "2026-02-19T15:49:23.291Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "Complete. RNA in -20",
               "completionLinks": ""
             },
@@ -915,7 +915,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-16T17:19:14.917Z",
-              "completedAt": "2026-03-03T23:45:49.747Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -926,7 +926,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-16T17:19:42.437Z",
-              "completedAt": "2026-02-26T18:06:06.683Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -937,7 +937,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-18T17:56:29.948Z",
-              "completedAt": "2026-02-18T17:57:04.506Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "Submitted\n",
               "completionLinks": ""
             },
@@ -948,7 +948,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-23T23:07:31.065Z",
-              "completedAt": "2026-03-06T23:22:52.836Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -959,7 +959,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-23T23:07:47.006Z",
-              "completedAt": "2026-03-05T16:03:51.961Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "no cDNA - Traced this back to low RNA amounts",
               "completionLinks": ""
             },
@@ -970,7 +970,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-25T22:44:24.067Z",
-              "completedAt": "2026-02-26T23:16:49.915Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "Need new Kapa and new fwd primer for cDNA amp\n",
               "completionLinks": ""
             },
@@ -981,11 +981,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-25T22:47:53.595Z",
-              "completedAt": "2026-02-26T00:04:26.849Z",
+              "completedAt": "2026-03-06T23:23:05.644Z",
               "completionNotes": "Plates prepped and in 4c - need to bring to Luminex team tomorrow\n",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-03-06T23:23:05.644Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [
@@ -6267,9 +6270,18 @@
       "subtaskId": "mlzsea9l1k3jmrxy1si",
       "title": "Smartseq D2",
       "completedAt": "2026-03-06T23:22:52.836Z"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": null,
+      "title": "Monocytes Cytokine Screen",
+      "completedAt": "2026-03-06T23:23:05.644Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-06T23:22:52.836Z",
+  "lastUpdated": "2026-03-06T23:23:05.644Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
