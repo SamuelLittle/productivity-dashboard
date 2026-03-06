@@ -4521,17 +4521,6 @@
         "completedAt": "2026-03-05T16:03:51.960Z",
         "completionNotes": "no cDNA - Traced this back to low RNA amounts",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mm9bqsqn24abbz1pnup",
-        "subtaskId": "mm9l00c049cxgyv1f2a",
-        "time": null,
-        "scheduledAt": "2026-03-02T19:38:25.952Z",
-        "completedOnDay": true,
-        "completedAt": "2026-03-06T00:28:49.917Z",
-        "completionNotes": "Isolate 150M+ NK cells\n",
-        "completionLinks": ""
       }
     ],
     "2026-03-06": [
@@ -4660,6 +4649,16 @@
         "subtaskId": null,
         "time": "09:30",
         "scheduledAt": "2026-03-06T23:25:16.768Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-03-07": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mm9bqsqn24abbz1pnup",
+        "subtaskId": "mm9l00c049cxgyv1f2a",
+        "time": null,
+        "scheduledAt": "2026-03-06T23:37:13.611Z",
         "completedOnDay": false
       }
     ]
@@ -6407,7 +6406,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-06T23:36:13.032Z",
+  "lastUpdated": "2026-03-06T23:37:13.611Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
