@@ -2437,6 +2437,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-06T23:56:08.212Z"
+            },
+            {
+              "id": "mmfjzv55xpc2zwy12rm",
+              "title": "Make new reagents",
+              "description": "binding buffer\nWash 1\nWash 2\nLiCl solution",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-06T23:56:40.170Z"
             }
           ]
         }
@@ -6465,7 +6473,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-06T23:56:08.212Z",
+  "lastUpdated": "2026-03-06T23:56:40.170Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
