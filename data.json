@@ -2817,9 +2817,12 @@
         "title": "Order CS10",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-06T18:43:51.365Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-06T23:16:45.772Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -6249,9 +6252,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-06"
+    },
+    {
+      "id": "mmf8tl1h45tfre5qeed",
+      "title": "Order CS10",
+      "completedAt": "2026-03-06T23:16:45.772Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-06"
     }
   ],
-  "lastUpdated": "2026-03-06T23:16:42.329Z",
+  "lastUpdated": "2026-03-06T23:16:45.772Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
