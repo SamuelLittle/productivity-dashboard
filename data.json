@@ -946,8 +946,11 @@
               "title": "Smartseq D2",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-23T23:07:31.065Z"
+              "completed": true,
+              "createdAt": "2026-02-23T23:07:31.065Z",
+              "completedAt": "2026-03-06T23:22:52.836Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mlzsemkec1ixz09ad29",
@@ -6257,9 +6260,16 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-06"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mlpffj0uea41kpsju7",
+      "subtaskId": "mlzsea9l1k3jmrxy1si",
+      "title": "Smartseq D2",
+      "completedAt": "2026-03-06T23:22:52.836Z"
     }
   ],
-  "lastUpdated": "2026-03-06T23:22:50.113Z",
+  "lastUpdated": "2026-03-06T23:22:52.836Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
