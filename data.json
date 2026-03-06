@@ -4512,14 +4512,6 @@
       {
         "projectId": "mkltwpanzsdw6b96wbe",
         "taskId": "mm9bqsqn24abbz1pnup",
-        "subtaskId": "mm9ve6h998wtxy4kd9j",
-        "time": null,
-        "scheduledAt": "2026-03-03T00:29:06.766Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mm9bqsqn24abbz1pnup",
         "subtaskId": "mm9vgum2bd8dj2jvpwv",
         "time": null,
         "scheduledAt": "2026-03-03T00:31:11.354Z",
@@ -6277,7 +6269,7 @@
       "date": "2026-03-06"
     }
   ],
-  "lastUpdated": "2026-03-06T23:16:50.209Z",
+  "lastUpdated": "2026-03-06T23:18:39.521Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
