@@ -1039,6 +1039,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-06T23:30:10.724Z"
+            },
+            {
+              "id": "mmfj2pmhonrjimbti7f",
+              "title": "SMARTseq cells",
+              "description": "report results to Caitlynn and Jenny\n",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-06T23:30:53.370Z"
             }
           ]
         }
@@ -6383,7 +6391,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-06T23:30:31.916Z",
+  "lastUpdated": "2026-03-06T23:30:53.370Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
