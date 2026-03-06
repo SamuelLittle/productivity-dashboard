@@ -2805,9 +2805,12 @@
         "title": "order NK isolation kit",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-06T18:43:34.245Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-06T23:16:42.329Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mmf8tl1h45tfre5qeed",
@@ -6238,9 +6241,17 @@
       "completionNotes": "",
       "completionLinks": "https://docs.google.com/document/d/1nNQ1cHr_07P_av5u6VWJbGlooXUCEq5dgJsW04JNEkE/edit?tab=t.qybrdsol2zs6",
       "date": "2026-03-06"
+    },
+    {
+      "id": "mmf8t7tx3udp8ukzu4o",
+      "title": "order NK isolation kit",
+      "completedAt": "2026-03-06T23:16:42.329Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-06"
     }
   ],
-  "lastUpdated": "2026-03-06T22:19:21.431Z",
+  "lastUpdated": "2026-03-06T23:16:42.329Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
