@@ -997,7 +997,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-03-06T23:25:32.382Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mmfiy4h63aivpntm3vy",
+              "title": "slide deck overviewing plan forward for filling gaps in adherent cell data set",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-06T23:27:19.338Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [
@@ -4544,6 +4553,14 @@
         "time": null,
         "scheduledAt": "2026-03-05T22:10:59.440Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mmfivhwgj8givm9xdh",
+        "subtaskId": "mmfiy4h63aivpntm3vy",
+        "time": null,
+        "scheduledAt": "2026-03-06T23:27:19.339Z",
+        "completedOnDay": false
       }
     ],
     "2026-03-10": [
@@ -6300,7 +6317,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-06T23:25:32.382Z",
+  "lastUpdated": "2026-03-06T23:27:19.339Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
