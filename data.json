@@ -2326,9 +2326,12 @@
           "title": "1-on-1 w/ Celine",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-02T19:35:09.493Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-03-06T22:19:21.431Z",
+          "completionNotes": "",
+          "completionLinks": "https://docs.google.com/document/d/1nNQ1cHr_07P_av5u6VWJbGlooXUCEq5dgJsW04JNEkE/edit?tab=t.qybrdsol2zs6"
         }
       ],
       "progressUpdates": [],
@@ -4463,7 +4466,10 @@
         "subtaskId": null,
         "time": "11:00",
         "scheduledAt": "2026-03-02T19:35:09.494Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-06T22:19:21.431Z",
+        "completionNotes": "",
+        "completionLinks": "https://docs.google.com/document/d/1nNQ1cHr_07P_av5u6VWJbGlooXUCEq5dgJsW04JNEkE/edit?tab=t.qybrdsol2zs6"
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6224,9 +6230,17 @@
       "completionNotes": "Isolate 150M+ NK cells\n",
       "completionLinks": "",
       "date": "2026-03-05"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "mm9kw5h1ulauyierof",
+      "completedAt": "2026-03-06T22:19:21.431Z",
+      "completionNotes": "",
+      "completionLinks": "https://docs.google.com/document/d/1nNQ1cHr_07P_av5u6VWJbGlooXUCEq5dgJsW04JNEkE/edit?tab=t.qybrdsol2zs6",
+      "date": "2026-03-06"
     }
   ],
-  "lastUpdated": "2026-03-06T18:43:51.366Z",
+  "lastUpdated": "2026-03-06T22:19:21.431Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
