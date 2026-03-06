@@ -1499,8 +1499,11 @@
               "title": "Thaw PBMCs and isolate NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-02T19:38:09.456Z"
+              "completed": true,
+              "createdAt": "2026-03-02T19:38:09.456Z",
+              "completedAt": "2026-03-06T00:28:49.917Z",
+              "completionNotes": "Isolate 150M+ NK cells\n",
+              "completionLinks": ""
             },
             {
               "id": "mm9l1c0dm7i0220y8mf",
@@ -4424,7 +4427,10 @@
         "subtaskId": "mm9l00c049cxgyv1f2a",
         "time": null,
         "scheduledAt": "2026-03-02T19:38:25.952Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-06T00:28:49.917Z",
+        "completionNotes": "Isolate 150M+ NK cells\n",
+        "completionLinks": ""
       }
     ],
     "2026-03-06": [
@@ -6178,9 +6184,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-05"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9bqsqn24abbz1pnup",
+      "subtaskId": "mm9l00c049cxgyv1f2a",
+      "completedAt": "2026-03-06T00:28:49.917Z",
+      "completionNotes": "Isolate 150M+ NK cells\n",
+      "completionLinks": "",
+      "date": "2026-03-05"
     }
   ],
-  "lastUpdated": "2026-03-05T22:10:59.440Z",
+  "lastUpdated": "2026-03-06T00:28:49.917Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
