@@ -1037,8 +1037,11 @@
               "title": "plate DLD1s",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-06T23:30:10.724Z"
+              "completed": true,
+              "createdAt": "2026-03-06T23:30:10.724Z",
+              "completedAt": "2026-03-07T00:37:01.874Z",
+              "completionNotes": "Seeded 96 FB well plate \n",
+              "completionLinks": ""
             },
             {
               "id": "mmfj2pmhonrjimbti7f",
@@ -4633,7 +4636,10 @@
         "subtaskId": "mmfj1spv11yq8uetv5n",
         "time": null,
         "scheduledAt": "2026-03-06T23:30:31.916Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-07T00:37:01.874Z",
+        "completionNotes": "Seeded 96 FB well plate \n",
+        "completionLinks": ""
       }
     ],
     "2026-03-04": [
@@ -6503,9 +6509,18 @@
       "completedAt": "2026-03-06T23:23:05.644Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mmfj1blb1h1c2o3gs28",
+      "subtaskId": "mmfj1spv11yq8uetv5n",
+      "completedAt": "2026-03-07T00:37:01.874Z",
+      "completionNotes": "Seeded 96 FB well plate \n",
+      "completionLinks": "",
+      "date": "2026-03-06"
     }
   ],
-  "lastUpdated": "2026-03-06T23:57:19.398Z",
+  "lastUpdated": "2026-03-07T00:37:01.874Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
