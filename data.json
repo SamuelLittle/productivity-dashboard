@@ -1016,8 +1016,11 @@
               "title": "slide deck overviewing progress to date",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-06T23:28:33.778Z"
+              "completed": true,
+              "createdAt": "2026-03-06T23:28:33.778Z",
+              "completedAt": "2026-03-09T17:33:08.389Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mmfj0asg9pkwam01gbn",
@@ -4686,7 +4689,10 @@
         "subtaskId": "mmfizpwyyzkogkthpf",
         "time": null,
         "scheduledAt": "2026-03-06T23:29:10.661Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-09T17:33:08.389Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -6527,9 +6533,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-09"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mmfivhwgj8givm9xdh",
+      "subtaskId": "mmfizpwyyzkogkthpf",
+      "completedAt": "2026-03-09T17:33:08.389Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-09"
     }
   ],
-  "lastUpdated": "2026-03-09T17:33:03.162Z",
+  "lastUpdated": "2026-03-09T17:33:08.389Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
