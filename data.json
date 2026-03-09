@@ -1027,8 +1027,11 @@
               "title": "slide deck overviewing roadblocks and tech dev need",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-06T23:29:00.833Z"
+              "completed": true,
+              "createdAt": "2026-03-06T23:29:00.833Z",
+              "completedAt": "2026-03-09T17:33:13.241Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -4681,7 +4684,10 @@
         "subtaskId": "mmfj0asg9pkwam01gbn",
         "time": null,
         "scheduledAt": "2026-03-06T23:29:00.833Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-09T17:33:13.241Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -6542,9 +6548,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-09"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mmfivhwgj8givm9xdh",
+      "subtaskId": "mmfj0asg9pkwam01gbn",
+      "completedAt": "2026-03-09T17:33:13.241Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-09"
     }
   ],
-  "lastUpdated": "2026-03-09T17:33:08.389Z",
+  "lastUpdated": "2026-03-09T17:33:13.241Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
