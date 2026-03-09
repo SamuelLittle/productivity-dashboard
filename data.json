@@ -1005,8 +1005,11 @@
               "title": "slide deck overviewing plan forward for filling gaps in adherent cell data set",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-06T23:27:19.338Z"
+              "completed": true,
+              "createdAt": "2026-03-06T23:27:19.338Z",
+              "completedAt": "2026-03-09T17:33:03.162Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mmfizpwyyzkogkthpf",
@@ -4664,7 +4667,10 @@
         "subtaskId": "mmfiy4h63aivpntm3vy",
         "time": null,
         "scheduledAt": "2026-03-06T23:27:19.339Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-09T17:33:03.162Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -6512,9 +6518,18 @@
       "completionNotes": "Seeded 96 FB well plate \n",
       "completionLinks": "",
       "date": "2026-03-06"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mmfivhwgj8givm9xdh",
+      "subtaskId": "mmfiy4h63aivpntm3vy",
+      "completedAt": "2026-03-09T17:33:03.162Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-09"
     }
   ],
-  "lastUpdated": "2026-03-07T00:38:08.627Z",
+  "lastUpdated": "2026-03-09T17:33:03.162Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
