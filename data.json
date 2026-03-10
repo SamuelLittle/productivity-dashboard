@@ -1473,8 +1473,11 @@
               "title": "contact honglin about pilot viral particles for testing",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-06T23:42:16.774Z"
+              "completed": true,
+              "createdAt": "2026-03-06T23:42:16.774Z",
+              "completedAt": "2026-03-10T23:13:34.471Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -4745,7 +4748,10 @@
         "subtaskId": "mmfjhcxywbxwool13mp",
         "time": null,
         "scheduledAt": "2026-03-10T15:13:49.269Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-10T23:13:34.471Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -6634,9 +6640,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-10"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "ml7hsagjyud5rcxh2r",
+      "subtaskId": "mmfjhcxywbxwool13mp",
+      "completedAt": "2026-03-10T23:13:34.471Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-10"
     }
   ],
-  "lastUpdated": "2026-03-10T23:02:12.424Z",
+  "lastUpdated": "2026-03-10T23:13:34.471Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
