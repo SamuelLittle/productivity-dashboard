@@ -445,10 +445,13 @@
               "title": "Pilot lysate SMARTseq",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-02-24T00:27:53.978Z",
               "notes": "Mast Cells\n",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-03-10T15:13:40.443Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -4704,7 +4707,10 @@
         "subtaskId": "mlzv9nnewmv26jfp4l",
         "time": null,
         "scheduledAt": "2026-03-06T23:36:13.032Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-10T15:13:40.443Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6572,9 +6578,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-09"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3n6kk2s3eujhd9om",
+      "subtaskId": "mlzv9nnewmv26jfp4l",
+      "completedAt": "2026-03-10T15:13:40.443Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-09"
     }
   ],
-  "lastUpdated": "2026-03-10T15:13:34.607Z",
+  "lastUpdated": "2026-03-10T15:13:40.443Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
