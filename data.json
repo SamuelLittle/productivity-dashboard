@@ -1059,8 +1059,11 @@
               "title": "SMARTseq cells",
               "description": "report results to Caitlynn and Jenny\n",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-06T23:30:53.370Z"
+              "completed": true,
+              "createdAt": "2026-03-06T23:30:53.370Z",
+              "completedAt": "2026-03-10T15:13:34.605Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -4690,7 +4693,10 @@
         "subtaskId": "mmfj2pmhonrjimbti7f",
         "time": null,
         "scheduledAt": "2026-03-06T23:36:00.684Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-10T15:13:34.603Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -6557,9 +6563,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-09"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mmfj1blb1h1c2o3gs28",
+      "subtaskId": "mmfj2pmhonrjimbti7f",
+      "completedAt": "2026-03-10T15:13:34.605Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-09"
     }
   ],
-  "lastUpdated": "2026-03-09T21:50:01.524Z",
+  "lastUpdated": "2026-03-10T15:13:34.607Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
