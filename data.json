@@ -1076,8 +1076,11 @@
               "title": "QC cDN",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-10T17:53:50.815Z"
+              "completed": true,
+              "createdAt": "2026-03-10T17:53:50.815Z",
+              "completedAt": "2026-03-10T23:02:12.424Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -4750,7 +4753,10 @@
         "subtaskId": "mmkwsogvkglopg4yhk",
         "time": null,
         "scheduledAt": "2026-03-10T17:53:58.424Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-10T23:02:12.424Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-03-12": [
@@ -6619,9 +6625,18 @@
       "completionNotes": "Got greenlight to move ahead with gamma/18/TNFa screening workflow + Bead based RNA extraction tech dev\n",
       "completionLinks": "https://docs.google.com/document/d/1RDnJ08Qi0bpiT036RepnmJGw_7TDXo1-4wW6erHNQfA/edit?tab=t.tcx98ive18n3",
       "date": "2026-03-10"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mmfj1blb1h1c2o3gs28",
+      "subtaskId": "mmkwsogvkglopg4yhk",
+      "completedAt": "2026-03-10T23:02:12.424Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-10"
     }
   ],
-  "lastUpdated": "2026-03-10T23:02:02.297Z",
+  "lastUpdated": "2026-03-10T23:02:12.424Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
