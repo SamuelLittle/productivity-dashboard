@@ -1000,7 +1000,7 @@
           "title": "March Group Update",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-06T23:25:32.382Z",
           "subtasks": [
             {
@@ -1010,7 +1010,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-06T23:27:19.338Z",
-              "completedAt": "2026-03-09T17:33:03.162Z",
+              "completedAt": "2026-03-10T17:10:14.860Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1021,7 +1021,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-06T23:28:33.778Z",
-              "completedAt": "2026-03-09T17:33:08.389Z",
+              "completedAt": "2026-03-10T17:10:14.860Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1032,11 +1032,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-06T23:29:00.833Z",
-              "completedAt": "2026-03-09T17:33:13.241Z",
+              "completedAt": "2026-03-10T17:10:14.860Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-03-10T17:10:14.860Z",
+          "completionNotes": "Got greenlight to move ahead with gamma/18/TNFa screening workflow + Bead based RNA extraction tech dev\n",
+          "completionLinks": "https://docs.google.com/document/d/1RDnJ08Qi0bpiT036RepnmJGw_7TDXo1-4wW6erHNQfA/edit?tab=t.tcx98ive18n3"
         },
         {
           "id": "mmfj1blb1h1c2o3gs28",
@@ -4720,7 +4723,10 @@
         "subtaskId": null,
         "time": "09:30",
         "scheduledAt": "2026-03-06T23:25:16.768Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-10T17:10:14.859Z",
+        "completionNotes": "Got greenlight to move ahead with gamma/18/TNFa screening workflow + Bead based RNA extraction tech dev\n",
+        "completionLinks": "https://docs.google.com/document/d/1RDnJ08Qi0bpiT036RepnmJGw_7TDXo1-4wW6erHNQfA/edit?tab=t.tcx98ive18n3"
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -6587,9 +6593,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-09"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mmfivhwgj8givm9xdh",
+      "completedAt": "2026-03-10T17:10:14.860Z",
+      "completionNotes": "Got greenlight to move ahead with gamma/18/TNFa screening workflow + Bead based RNA extraction tech dev\n",
+      "completionLinks": "https://docs.google.com/document/d/1RDnJ08Qi0bpiT036RepnmJGw_7TDXo1-4wW6erHNQfA/edit?tab=t.tcx98ive18n3",
+      "date": "2026-03-10"
     }
   ],
-  "lastUpdated": "2026-03-10T15:13:49.269Z",
+  "lastUpdated": "2026-03-10T17:10:14.860Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
