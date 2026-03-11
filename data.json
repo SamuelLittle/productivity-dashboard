@@ -1614,11 +1614,11 @@
               "title": "Thaw PBMCs and isolate NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-03-02T19:38:09.456Z",
-              "completedAt": null,
-              "completionNotes": null,
-              "completionLinks": null
+              "completedAt": "2026-03-11T22:49:45.969Z",
+              "completionNotes": "Isolated ~10M NK cells and seeded in NK MACS + IL2/15",
+              "completionLinks": ""
             },
             {
               "id": "mm9l1c0dm7i0220y8mf",
@@ -4801,7 +4801,10 @@
         "subtaskId": "mm9l00c049cxgyv1f2a",
         "time": null,
         "scheduledAt": "2026-03-06T23:37:50.995Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-11T22:49:45.968Z",
+        "completionNotes": "Isolated ~10M NK cells and seeded in NK MACS + IL2/15",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -6660,9 +6663,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-11"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9bqsqn24abbz1pnup",
+      "subtaskId": "mm9l00c049cxgyv1f2a",
+      "completedAt": "2026-03-11T22:49:45.969Z",
+      "completionNotes": "Isolated ~10M NK cells and seeded in NK MACS + IL2/15",
+      "completionLinks": "",
+      "date": "2026-03-11"
     }
   ],
-  "lastUpdated": "2026-03-11T16:26:28.739Z",
+  "lastUpdated": "2026-03-11T22:49:45.969Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
