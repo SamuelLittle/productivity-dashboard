@@ -2112,8 +2112,11 @@
               "title": "TPP cDNA D2",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-26T23:18:53.931Z"
+              "completed": true,
+              "createdAt": "2026-02-26T23:18:53.931Z",
+              "completedAt": "2026-03-11T22:49:55.571Z",
+              "completionNotes": "complete - QC tomorrow\n",
+              "completionLinks": ""
             }
           ]
         },
@@ -4820,7 +4823,10 @@
         "subtaskId": "mm434h638sq8sleq9l2",
         "time": null,
         "scheduledAt": "2026-03-10T23:02:02.297Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-11T22:49:55.571Z",
+        "completionNotes": "complete - QC tomorrow\n",
+        "completionLinks": ""
       }
     ],
     "2026-03-13": [
@@ -6672,9 +6678,18 @@
       "completionNotes": "Isolated ~10M NK cells and seeded in NK MACS + IL2/15",
       "completionLinks": "",
       "date": "2026-03-11"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "mm434h638sq8sleq9l2",
+      "completedAt": "2026-03-11T22:49:55.571Z",
+      "completionNotes": "complete - QC tomorrow\n",
+      "completionLinks": "",
+      "date": "2026-03-11"
     }
   ],
-  "lastUpdated": "2026-03-11T22:49:45.969Z",
+  "lastUpdated": "2026-03-11T22:49:55.571Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
