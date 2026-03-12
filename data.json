@@ -1606,8 +1606,11 @@
               "title": "aliquot IL15 and IL2",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-02T15:21:34.442Z"
+              "completed": true,
+              "createdAt": "2026-03-02T15:21:34.442Z",
+              "completedAt": "2026-03-12T18:05:46.297Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mm9l00c049cxgyv1f2a",
@@ -6727,9 +6730,16 @@
       "completionNotes": "Discussed NK nucleofection optimization plans. \n\nNext steps for cytokine screen and SMARTseq Tech Dev",
       "completionLinks": "https://docs.google.com/document/d/12oF6L6Mx64mL7FZ1-hth_xjs7nXbAxbyITqoV_2mmCo/edit?usp=sharing",
       "date": "2026-03-12"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9bqsqn24abbz1pnup",
+      "subtaskId": "mm9bu1gqe99dn9ccmy5",
+      "title": "aliquot IL15 and IL2",
+      "completedAt": "2026-03-12T18:05:46.297Z"
     }
   ],
-  "lastUpdated": "2026-03-12T18:05:32.629Z",
+  "lastUpdated": "2026-03-12T18:05:46.297Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
