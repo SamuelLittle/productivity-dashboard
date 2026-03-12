@@ -2975,9 +2975,12 @@
         "title": "Blood Arriving",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-06T18:43:09.885Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-12T23:33:18.861Z",
+        "completionNotes": "Isolated 11M NK cells from 61 y/o W M. banked an additional 300M PBMCs.",
+        "completionLinks": ""
       },
       {
         "id": "mmns3fbo4e7eny1v8sf",
@@ -6752,9 +6755,17 @@
       "completionNotes": "Due to incomplete cell retrieval from culture plates this experiment is postponed to tomorrow where I will complete it using cell isolated fresh from blood today",
       "completionLinks": "",
       "date": "2026-03-12"
+    },
+    {
+      "id": "mmf8sp18wftbztx9e99",
+      "title": "Blood Arriving",
+      "completedAt": "2026-03-12T23:33:18.861Z",
+      "completionNotes": "Isolated 11M NK cells from 61 y/o W M. banked an additional 300M PBMCs.",
+      "completionLinks": "",
+      "date": "2026-03-12"
     }
   ],
-  "lastUpdated": "2026-03-12T21:51:57.694Z",
+  "lastUpdated": "2026-03-12T23:33:18.861Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
