@@ -2984,15 +2984,6 @@
         "completedAt": "2026-03-12T23:33:18.861Z",
         "completionNotes": "Isolated 11M NK cells from 61 y/o W M. banked an additional 300M PBMCs.",
         "completionLinks": ""
-      },
-      {
-        "id": "mmns3fbo4e7eny1v8sf",
-        "title": "Order SmartSeq oligos",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-03-12T18:05:32.629Z",
-        "time": null
       }
     ],
     "2026-03-06": [
@@ -3033,6 +3024,18 @@
         "completedAt": "2026-03-11T16:26:28.739Z",
         "completionNotes": "",
         "completionLinks": ""
+      }
+    ],
+    "2026-03-13": [
+      {
+        "id": "mmns3fbo4e7eny1v8sf",
+        "title": "Order SmartSeq oligos",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-03-12T18:05:32.629Z"
       }
     ]
   },
@@ -4885,7 +4888,7 @@
         "taskId": "",
         "subtaskId": null,
         "time": null,
-        "scheduledAt": "2026-03-12T23:33:31.760Z",
+        "scheduledAt": "2026-03-12T23:33:45.421Z",
         "completedOnDay": false
       }
     ]
@@ -6780,7 +6783,7 @@
       "date": "2026-03-12"
     }
   ],
-  "lastUpdated": "2026-03-12T23:33:31.760Z",
+  "lastUpdated": "2026-03-12T23:33:45.421Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
