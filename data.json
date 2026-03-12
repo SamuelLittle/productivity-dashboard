@@ -2493,8 +2493,11 @@
               "title": "seed DLD1s",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-06T23:56:08.212Z"
+              "completed": true,
+              "createdAt": "2026-03-06T23:56:08.212Z",
+              "completedAt": "2026-03-12T23:33:29.132Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mmfjzv55xpc2zwy12rm",
@@ -4819,7 +4822,10 @@
         "subtaskId": "mmfjz6hgskmbtvl4q1",
         "time": null,
         "scheduledAt": "2026-03-06T23:57:01.363Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-12T23:33:29.132Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -6763,9 +6769,18 @@
       "completionNotes": "Isolated 11M NK cells from 61 y/o W M. banked an additional 300M PBMCs.",
       "completionLinks": "",
       "date": "2026-03-12"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mmfjyltb0cm08ih0bjhd",
+      "subtaskId": "mmfjz6hgskmbtvl4q1",
+      "completedAt": "2026-03-12T23:33:29.132Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-12"
     }
   ],
-  "lastUpdated": "2026-03-12T23:33:18.861Z",
+  "lastUpdated": "2026-03-12T23:33:29.133Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
