@@ -2972,6 +2972,15 @@
         "completed": false,
         "createdAt": "2026-03-06T18:43:09.885Z",
         "time": null
+      },
+      {
+        "id": "mmns3fbo4e7eny1v8sf",
+        "title": "Order SmartSeq oligos",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-03-12T18:05:32.629Z",
+        "time": null
       }
     ],
     "2026-03-06": [
@@ -6720,7 +6729,7 @@
       "date": "2026-03-12"
     }
   ],
-  "lastUpdated": "2026-03-12T16:28:01.606Z",
+  "lastUpdated": "2026-03-12T18:05:32.629Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
