@@ -2456,9 +2456,12 @@
           "title": "1-on-1 w/ Celine",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-12T16:25:49.716Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-03-12T16:28:01.606Z",
+          "completionNotes": "Discussed NK nucleofection optimization plans. \n\nNext steps for cytokine screen and SMARTseq Tech Dev",
+          "completionLinks": "https://docs.google.com/document/d/12oF6L6Mx64mL7FZ1-hth_xjs7nXbAxbyITqoV_2mmCo/edit?usp=sharing"
         }
       ],
       "progressUpdates": [],
@@ -4811,7 +4814,10 @@
         "subtaskId": null,
         "time": "08:00",
         "scheduledAt": "2026-03-12T16:25:49.716Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-12T16:28:01.605Z",
+        "completionNotes": "Discussed NK nucleofection optimization plans. \n\nNext steps for cytokine screen and SMARTseq Tech Dev",
+        "completionLinks": "https://docs.google.com/document/d/12oF6L6Mx64mL7FZ1-hth_xjs7nXbAxbyITqoV_2mmCo/edit?usp=sharing"
       }
     ],
     "2026-03-11": [
@@ -6704,9 +6710,17 @@
       "completionNotes": "complete - QC tomorrow\n",
       "completionLinks": "",
       "date": "2026-03-11"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "mmnoj6vnmsvdgit8nbn",
+      "completedAt": "2026-03-12T16:28:01.606Z",
+      "completionNotes": "Discussed NK nucleofection optimization plans. \n\nNext steps for cytokine screen and SMARTseq Tech Dev",
+      "completionLinks": "https://docs.google.com/document/d/12oF6L6Mx64mL7FZ1-hth_xjs7nXbAxbyITqoV_2mmCo/edit?usp=sharing",
+      "date": "2026-03-12"
     }
   ],
-  "lastUpdated": "2026-03-12T16:25:49.716Z",
+  "lastUpdated": "2026-03-12T16:28:01.606Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
