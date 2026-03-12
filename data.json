@@ -1649,6 +1649,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-03T00:31:11.354Z"
+            },
+            {
+              "id": "mmo3u6pjp5p1f8075yh",
+              "title": "Execute nucleofection pilot",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-12T23:34:16.951Z"
             }
           ]
         },
@@ -4831,14 +4839,6 @@
         "completionLinks": ""
       },
       {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mmfjyltb0cm08ih0bjhd",
-        "subtaskId": "mmfjzv55xpc2zwy12rm",
-        "time": null,
-        "scheduledAt": "2026-03-06T23:57:09.613Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mlld42ihacxlvsot49w",
         "taskId": "mmnoj6vnmsvdgit8nbn",
         "subtaskId": null,
@@ -4889,6 +4889,22 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-03-12T23:33:45.421Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mmfjyltb0cm08ih0bjhd",
+        "subtaskId": "mmfjzv55xpc2zwy12rm",
+        "time": null,
+        "scheduledAt": "2026-03-12T23:33:45.459Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mm9bqsqn24abbz1pnup",
+        "subtaskId": "mmo3u6pjp5p1f8075yh",
+        "time": null,
+        "scheduledAt": "2026-03-12T23:34:16.952Z",
         "completedOnDay": false
       }
     ]
@@ -6783,7 +6799,7 @@
       "date": "2026-03-12"
     }
   ],
-  "lastUpdated": "2026-03-12T23:33:45.421Z",
+  "lastUpdated": "2026-03-12T23:34:16.952Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
