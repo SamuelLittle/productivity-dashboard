@@ -1628,8 +1628,11 @@
               "title": "Execute nucleofection pilot",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-02T19:39:11.245Z"
+              "completed": true,
+              "createdAt": "2026-03-02T19:39:11.245Z",
+              "completedAt": "2026-03-12T21:51:57.694Z",
+              "completionNotes": "Due to incomplete cell retrieval from culture plates this experiment is postponed to tomorrow where I will complete it using cell isolated fresh from blood today",
+              "completionLinks": ""
             },
             {
               "id": "mm9ve6h998wtxy4kd9j",
@@ -4802,7 +4805,10 @@
         "subtaskId": "mm9l1c0dm7i0220y8mf",
         "time": null,
         "scheduledAt": "2026-03-06T23:37:41.661Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-12T21:51:57.694Z",
+        "completionNotes": "Due to incomplete cell retrieval from culture plates this experiment is postponed to tomorrow where I will complete it using cell isolated fresh from blood today",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -6737,9 +6743,18 @@
       "subtaskId": "mm9bu1gqe99dn9ccmy5",
       "title": "aliquot IL15 and IL2",
       "completedAt": "2026-03-12T18:05:46.297Z"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9bqsqn24abbz1pnup",
+      "subtaskId": "mm9l1c0dm7i0220y8mf",
+      "completedAt": "2026-03-12T21:51:57.694Z",
+      "completionNotes": "Due to incomplete cell retrieval from culture plates this experiment is postponed to tomorrow where I will complete it using cell isolated fresh from blood today",
+      "completionLinks": "",
+      "date": "2026-03-12"
     }
   ],
-  "lastUpdated": "2026-03-12T18:05:46.297Z",
+  "lastUpdated": "2026-03-12T21:51:57.694Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
