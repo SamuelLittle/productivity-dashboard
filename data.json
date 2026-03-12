@@ -2450,6 +2450,15 @@
           "completedAt": "2026-03-06T22:19:21.431Z",
           "completionNotes": "",
           "completionLinks": "https://docs.google.com/document/d/1nNQ1cHr_07P_av5u6VWJbGlooXUCEq5dgJsW04JNEkE/edit?tab=t.qybrdsol2zs6"
+        },
+        {
+          "id": "mmnoj6vnmsvdgit8nbn",
+          "title": "1-on-1 w/ Celine",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-03-12T16:25:49.716Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -4795,6 +4804,14 @@
         "time": null,
         "scheduledAt": "2026-03-06T23:57:09.613Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mlld42ihacxlvsot49w",
+        "taskId": "mmnoj6vnmsvdgit8nbn",
+        "subtaskId": null,
+        "time": "08:00",
+        "scheduledAt": "2026-03-12T16:25:49.716Z",
+        "completedOnDay": false
       }
     ],
     "2026-03-11": [
@@ -6689,7 +6706,7 @@
       "date": "2026-03-11"
     }
   ],
-  "lastUpdated": "2026-03-11T22:49:55.571Z",
+  "lastUpdated": "2026-03-12T16:25:49.716Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
