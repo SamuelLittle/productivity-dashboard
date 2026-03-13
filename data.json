@@ -2495,7 +2495,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-03-13T20:43:47.882Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mmpd72saseuteh4rbd9",
+              "title": "Email goals to Celine",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-13T20:44:01.114Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -6899,7 +6908,7 @@
       "date": "2026-03-13"
     }
   ],
-  "lastUpdated": "2026-03-13T20:43:47.882Z",
+  "lastUpdated": "2026-03-13T20:44:01.114Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
