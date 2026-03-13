@@ -3146,6 +3146,15 @@
         "completed": false,
         "createdAt": "2026-03-13T23:43:06.185Z",
         "time": null
+      },
+      {
+        "id": "mmpjlx5jicgfp9040zn",
+        "title": "microglia Smartseq for Caitlynn",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-03-13T23:43:31.352Z",
+        "time": null
       }
     ]
   },
@@ -6965,7 +6974,7 @@
       "date": "2026-03-13"
     }
   ],
-  "lastUpdated": "2026-03-13T23:43:06.185Z",
+  "lastUpdated": "2026-03-13T23:43:31.352Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
