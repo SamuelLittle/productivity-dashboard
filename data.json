@@ -3037,16 +3037,6 @@
         "completedAt": "2026-03-12T23:33:18.861Z",
         "completionNotes": "Isolated 11M NK cells from 61 y/o W M. banked an additional 300M PBMCs.",
         "completionLinks": ""
-      },
-      {
-        "id": "mmns3fbo4e7eny1v8sf",
-        "title": "Order SmartSeq oligos",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-03-12T18:05:32.629Z"
       }
     ],
     "2026-03-06": [
@@ -3135,6 +3125,27 @@
         "completedAt": "2026-03-13T23:41:07.946Z",
         "completionNotes": "Got PCR mastermix\nMeasure gDNA concentrations\nMatch fwd+rvs primers + sequencing primers\nmade protocol.",
         "completionLinks": "https://docs.google.com/document/d/1L3FD7dYTJQdDYr5cBgrBH1A21TUt3uCwET-2Oy88fps/edit?usp=sharing"
+      },
+      {
+        "id": "mmns3fbo4e7eny1v8sf",
+        "title": "Order SmartSeq oligos",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-03-12T18:05:32.629Z"
+      }
+    ],
+    "2026-03-16": [
+      {
+        "id": "mmpjldqh41iqiwri6du",
+        "title": "D2 PCRs for Tim",
+        "description": "Make final protocol for amplicon generation\n- amount MM\n-amount H20\n-thermocycle protocol\n\nRun PCR",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-03-13T23:43:06.185Z",
+        "time": null
       }
     ]
   },
@@ -6954,7 +6965,7 @@
       "date": "2026-03-13"
     }
   ],
-  "lastUpdated": "2026-03-13T23:41:20.870Z",
+  "lastUpdated": "2026-03-13T23:43:06.185Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
