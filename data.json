@@ -3083,9 +3083,12 @@
         "title": "Lab meeting at 11am",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-12T23:43:02.280Z",
-        "time": "11:00"
+        "time": "11:00",
+        "completedAt": "2026-03-13T20:43:18.958Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -6877,9 +6880,17 @@
       "completionNotes": "Completed - notes in benchling link",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_9r1m00qX2Y-nk_ko-pilot4/edit",
       "date": "2026-03-13"
+    },
+    {
+      "id": "mmo45g20pthyp3q51g",
+      "title": "Lab meeting at 11am",
+      "completedAt": "2026-03-13T20:43:18.959Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-13"
     }
   ],
-  "lastUpdated": "2026-03-13T17:13:32.524Z",
+  "lastUpdated": "2026-03-13T20:43:18.959Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
