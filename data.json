@@ -4983,14 +4983,6 @@
         "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_9r1m00qX2Y-nk_ko-pilot4/edit"
       },
       {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "ml7hsagjyud5rcxh2r",
-        "subtaskId": "mmo47c2s3okunp6n3jh",
-        "time": null,
-        "scheduledAt": "2026-03-12T23:44:38.101Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mlld42ihacxlvsot49w",
         "taskId": "mmpd6skq431pk2ulpea",
         "subtaskId": "mmpd72saseuteh4rbd9",
@@ -5032,6 +5024,14 @@
         "subtaskId": "mmfjzv55xpc2zwy12rm",
         "time": null,
         "scheduledAt": "2026-03-13T22:32:05.486Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "ml7hsagjyud5rcxh2r",
+        "subtaskId": "mmo47c2s3okunp6n3jh",
+        "time": null,
+        "scheduledAt": "2026-03-13T23:40:15.435Z",
         "completedOnDay": false
       }
     ]
@@ -6943,7 +6943,7 @@
       "date": "2026-03-13"
     }
   ],
-  "lastUpdated": "2026-03-13T22:32:23.087Z",
+  "lastUpdated": "2026-03-13T23:40:15.435Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
