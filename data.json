@@ -3129,9 +3129,12 @@
         "title": "Leg work D1 for Tim PCRs",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-13T22:32:23.087Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-13T23:41:07.946Z",
+        "completionNotes": "Got PCR mastermix\nMeasure gDNA concentrations\nMatch fwd+rvs primers + sequencing primers\nmade protocol.",
+        "completionLinks": "https://docs.google.com/document/d/1L3FD7dYTJQdDYr5cBgrBH1A21TUt3uCwET-2Oy88fps/edit?usp=sharing"
       }
     ]
   },
@@ -6941,9 +6944,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-13"
+    },
+    {
+      "id": "mmph2fqn2fyvagpkqhh",
+      "title": "Leg work D1 for Tim PCRs",
+      "completedAt": "2026-03-13T23:41:07.946Z",
+      "completionNotes": "Got PCR mastermix\nMeasure gDNA concentrations\nMatch fwd+rvs primers + sequencing primers\nmade protocol.",
+      "completionLinks": "https://docs.google.com/document/d/1L3FD7dYTJQdDYr5cBgrBH1A21TUt3uCwET-2Oy88fps/edit?usp=sharing",
+      "date": "2026-03-13"
     }
   ],
-  "lastUpdated": "2026-03-13T23:40:15.435Z",
+  "lastUpdated": "2026-03-13T23:41:07.946Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
