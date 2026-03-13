@@ -1663,8 +1663,11 @@
               "title": "Execute nucleofection pilot",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-12T23:34:16.951Z"
+              "completed": true,
+              "createdAt": "2026-03-12T23:34:16.951Z",
+              "completedAt": "2026-03-13T17:13:32.523Z",
+              "completionNotes": "Completed - notes in benchling link",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_9r1m00qX2Y-nk_ko-pilot4/edit"
             }
           ]
         },
@@ -4944,7 +4947,10 @@
         "subtaskId": "mmo3u6pjp5p1f8075yh",
         "time": null,
         "scheduledAt": "2026-03-12T23:34:16.952Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-13T17:13:32.523Z",
+        "completionNotes": "Completed - notes in benchling link",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_9r1m00qX2Y-nk_ko-pilot4/edit"
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6862,9 +6868,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-12"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9bqsqn24abbz1pnup",
+      "subtaskId": "mmo3u6pjp5p1f8075yh",
+      "completedAt": "2026-03-13T17:13:32.524Z",
+      "completionNotes": "Completed - notes in benchling link",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_9r1m00qX2Y-nk_ko-pilot4/edit",
+      "date": "2026-03-13"
     }
   ],
-  "lastUpdated": "2026-03-12T23:44:38.101Z",
+  "lastUpdated": "2026-03-13T17:13:32.524Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
