@@ -1967,8 +1967,11 @@
               "title": "Send pics to Christine and Zoe Piran",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:21:39.066Z"
+              "completed": true,
+              "createdAt": "2026-02-16T17:21:39.066Z",
+              "completedAt": "2026-03-14T22:56:24.414Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -4722,7 +4725,10 @@
         "subtaskId": "mlpfyj95c2h04cqj60l",
         "time": null,
         "scheduledAt": "2026-02-26T23:23:56.314Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-14T22:56:24.414Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-03-02": [
@@ -6981,9 +6987,18 @@
       "completedAt": "2026-03-14T22:54:16.615Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mkn0e9s5qbl61liiujc",
+      "subtaskId": "mlpfyj95c2h04cqj60l",
+      "completedAt": "2026-03-14T22:56:24.414Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-02-27"
     }
   ],
-  "lastUpdated": "2026-03-14T22:54:16.615Z",
+  "lastUpdated": "2026-03-14T22:56:24.414Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
