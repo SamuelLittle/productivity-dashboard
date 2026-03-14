@@ -3131,16 +3131,6 @@
         "completedAt": "2026-03-13T23:41:07.946Z",
         "completionNotes": "Got PCR mastermix\nMeasure gDNA concentrations\nMatch fwd+rvs primers + sequencing primers\nmade protocol.",
         "completionLinks": "https://docs.google.com/document/d/1L3FD7dYTJQdDYr5cBgrBH1A21TUt3uCwET-2Oy88fps/edit?usp=sharing"
-      },
-      {
-        "id": "mmns3fbo4e7eny1v8sf",
-        "title": "Order SmartSeq oligos",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-03-12T18:05:32.629Z"
       }
     ],
     "2026-03-16": [
@@ -3161,6 +3151,16 @@
         "completed": false,
         "createdAt": "2026-03-13T23:43:31.352Z",
         "time": null
+      },
+      {
+        "id": "mmns3fbo4e7eny1v8sf",
+        "title": "Order SmartSeq oligos",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-03-12T18:05:32.629Z"
       }
     ]
   },
@@ -7013,7 +7013,7 @@
       "date": "2026-03-13"
     }
   ],
-  "lastUpdated": "2026-03-14T22:56:45.622Z",
+  "lastUpdated": "2026-03-14T22:59:52.812Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
