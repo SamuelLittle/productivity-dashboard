@@ -2469,12 +2469,12 @@
           "title": "1-on-1 w/ Celine",
           "description": "",
           "priority": "medium",
-          "completed": true,
+          "completed": false,
           "createdAt": "2026-03-02T19:35:09.493Z",
           "subtasks": [],
-          "completedAt": "2026-03-06T22:19:21.431Z",
-          "completionNotes": "",
-          "completionLinks": "https://docs.google.com/document/d/1nNQ1cHr_07P_av5u6VWJbGlooXUCEq5dgJsW04JNEkE/edit?tab=t.qybrdsol2zs6"
+          "completedAt": null,
+          "completionNotes": null,
+          "completionLinks": null
         },
         {
           "id": "mmnoj6vnmsvdgit8nbn",
@@ -4793,10 +4793,10 @@
         "subtaskId": null,
         "time": "11:00",
         "scheduledAt": "2026-03-02T19:35:09.494Z",
-        "completedOnDay": true,
-        "completedAt": "2026-03-06T22:19:21.431Z",
-        "completionNotes": "",
-        "completionLinks": "https://docs.google.com/document/d/1nNQ1cHr_07P_av5u6VWJbGlooXUCEq5dgJsW04JNEkE/edit?tab=t.qybrdsol2zs6"
+        "completedOnDay": false,
+        "completedAt": null,
+        "completionNotes": null,
+        "completionLinks": null
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6974,7 +6974,7 @@
       "date": "2026-03-13"
     }
   ],
-  "lastUpdated": "2026-03-13T23:43:31.352Z",
+  "lastUpdated": "2026-03-14T22:54:07.648Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
