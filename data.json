@@ -2504,8 +2504,11 @@
               "title": "Email goals to Celine",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-13T20:44:01.114Z"
+              "completed": true,
+              "createdAt": "2026-03-13T20:44:01.114Z",
+              "completedAt": "2026-03-14T22:56:45.622Z",
+              "completionNotes": "",
+              "completionLinks": "https://docs.google.com/document/d/1JkjzaQo-Zz9nrmJ-QRcyyVwKgKD2tbLgBF3h7k7f0U8/edit?usp=sharing"
             },
             {
               "id": "mmpd7looj84s1tynwwl",
@@ -5017,7 +5020,10 @@
         "subtaskId": "mmpd72saseuteh4rbd9",
         "time": null,
         "scheduledAt": "2026-03-13T23:41:20.870Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-14T22:56:45.622Z",
+        "completionNotes": "",
+        "completionLinks": "https://docs.google.com/document/d/1JkjzaQo-Zz9nrmJ-QRcyyVwKgKD2tbLgBF3h7k7f0U8/edit?usp=sharing"
       }
     ],
     "2026-03-17": [
@@ -6996,9 +7002,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-02-27"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "mmpd6skq431pk2ulpea",
+      "subtaskId": "mmpd72saseuteh4rbd9",
+      "completedAt": "2026-03-14T22:56:45.622Z",
+      "completionNotes": "",
+      "completionLinks": "https://docs.google.com/document/d/1JkjzaQo-Zz9nrmJ-QRcyyVwKgKD2tbLgBF3h7k7f0U8/edit?usp=sharing",
+      "date": "2026-03-13"
     }
   ],
-  "lastUpdated": "2026-03-14T22:56:24.414Z",
+  "lastUpdated": "2026-03-14T22:56:45.622Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
