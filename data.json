@@ -3157,10 +3157,12 @@
         "title": "Order SmartSeq oligos",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-03-16T17:19:35.336Z",
         "time": null,
-        "createdAt": "2026-03-12T18:05:32.629Z"
+        "createdAt": "2026-03-12T18:05:32.629Z",
+        "completionNotes": "Ordered + RNA screen tapes\n",
+        "completionLinks": ""
       }
     ]
   },
@@ -7011,9 +7013,17 @@
       "completionNotes": "",
       "completionLinks": "https://docs.google.com/document/d/1JkjzaQo-Zz9nrmJ-QRcyyVwKgKD2tbLgBF3h7k7f0U8/edit?usp=sharing",
       "date": "2026-03-13"
+    },
+    {
+      "id": "mmns3fbo4e7eny1v8sf",
+      "title": "Order SmartSeq oligos",
+      "completedAt": "2026-03-16T17:19:35.336Z",
+      "completionNotes": "Ordered + RNA screen tapes\n",
+      "completionLinks": "",
+      "date": "2026-03-16"
     }
   ],
-  "lastUpdated": "2026-03-14T23:02:38.698Z",
+  "lastUpdated": "2026-03-16T17:19:35.336Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
