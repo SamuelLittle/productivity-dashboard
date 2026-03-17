@@ -4976,14 +4976,6 @@
         "completedAt": "2026-03-12T16:28:01.605Z",
         "completionNotes": "Discussed NK nucleofection optimization plans. \n\nNext steps for cytokine screen and SMARTseq Tech Dev",
         "completionLinks": "https://docs.google.com/document/d/12oF6L6Mx64mL7FZ1-hth_xjs7nXbAxbyITqoV_2mmCo/edit?usp=sharing"
-      },
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-03-12T23:42:00.230Z",
-        "completedOnDay": false
       }
     ],
     "2026-03-11": [
@@ -5049,6 +5041,14 @@
         "subtaskId": "mm9vgum2bd8dj2jvpwv",
         "time": null,
         "scheduledAt": "2026-03-12T23:43:48.233Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-03-17T15:46:52.103Z",
         "completedOnDay": false
       }
     ],
@@ -7053,7 +7053,7 @@
       "date": "2026-03-16"
     }
   ],
-  "lastUpdated": "2026-03-17T15:46:44.067Z",
+  "lastUpdated": "2026-03-17T15:46:52.103Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
