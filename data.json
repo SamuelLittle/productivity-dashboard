@@ -3145,9 +3145,12 @@
         "title": "microglia Smartseq for Caitlynn",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-13T23:43:31.352Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-17T15:47:33.410Z",
+        "completionNotes": "Performed RNA extraction on microglia samples\n",
+        "completionLinks": ""
       },
       {
         "id": "mmns3fbo4e7eny1v8sf",
@@ -7056,9 +7059,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-16"
+    },
+    {
+      "id": "mmpjlx5jicgfp9040zn",
+      "title": "microglia Smartseq for Caitlynn",
+      "completedAt": "2026-03-17T15:47:33.410Z",
+      "completionNotes": "Performed RNA extraction on microglia samples\n",
+      "completionLinks": "",
+      "date": "2026-03-16"
     }
   ],
-  "lastUpdated": "2026-03-17T15:47:05.558Z",
+  "lastUpdated": "2026-03-17T15:47:33.410Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
