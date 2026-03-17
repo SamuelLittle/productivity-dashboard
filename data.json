@@ -3141,15 +3141,6 @@
     ],
     "2026-03-16": [
       {
-        "id": "mmpjldqh41iqiwri6du",
-        "title": "D2 PCRs for Tim",
-        "description": "Make final protocol for amplicon generation\n- amount MM\n-amount H20\n-thermocycle protocol\n\nRun PCR",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-03-13T23:43:06.185Z",
-        "time": null
-      },
-      {
         "id": "mmpjlx5jicgfp9040zn",
         "title": "microglia Smartseq for Caitlynn",
         "description": "",
@@ -3169,6 +3160,18 @@
         "createdAt": "2026-03-12T18:05:32.629Z",
         "completionNotes": "Ordered + RNA screen tapes\n",
         "completionLinks": ""
+      }
+    ],
+    "2026-03-18": [
+      {
+        "id": "mmpjldqh41iqiwri6du",
+        "title": "D2 PCRs for Tim",
+        "description": "Make final protocol for amplicon generation\n- amount MM\n-amount H20\n-thermocycle protocol\n\nRun PCR",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-03-13T23:43:06.185Z"
       }
     ]
   },
@@ -5044,11 +5047,11 @@
         "completedOnDay": false
       },
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "ml7hsagjyud5rcxh2r",
+        "subtaskId": "mmo47c2s3okunp6n3jh",
         "time": null,
-        "scheduledAt": "2026-03-17T15:46:52.103Z",
+        "scheduledAt": "2026-03-17T15:46:52.120Z",
         "completedOnDay": false
       }
     ],
@@ -5074,13 +5077,15 @@
         "completedAt": "2026-03-17T15:46:44.067Z",
         "completionNotes": "",
         "completionLinks": ""
-      },
+      }
+    ],
+    "2026-03-18": [
       {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "ml7hsagjyud5rcxh2r",
-        "subtaskId": "mmo47c2s3okunp6n3jh",
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
         "time": null,
-        "scheduledAt": "2026-03-13T23:40:15.435Z",
+        "scheduledAt": "2026-03-17T15:47:05.533Z",
         "completedOnDay": false
       }
     ]
@@ -7053,7 +7058,7 @@
       "date": "2026-03-16"
     }
   ],
-  "lastUpdated": "2026-03-17T15:46:52.103Z",
+  "lastUpdated": "2026-03-17T15:47:05.558Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
