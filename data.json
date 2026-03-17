@@ -3112,9 +3112,12 @@
         "title": "Blood ordered - confirm delivery",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-12T23:42:24.419Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-17T23:16:09.934Z",
+        "completionNotes": "Isolated PBMCs from W F 73 stored at -80 will move to LN tomorrow\n",
+        "completionLinks": ""
       }
     ],
     "2026-03-19": [
@@ -7113,9 +7116,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-17"
+    },
+    {
+      "id": "mmo44mubuj2f83cbvms",
+      "title": "Blood ordered - confirm delivery",
+      "completedAt": "2026-03-17T23:16:09.934Z",
+      "completionNotes": "Isolated PBMCs from W F 73 stored at -80 will move to LN tomorrow\n",
+      "completionLinks": "",
+      "date": "2026-03-17"
     }
   ],
-  "lastUpdated": "2026-03-17T23:15:45.755Z",
+  "lastUpdated": "2026-03-17T23:16:09.934Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
