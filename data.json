@@ -2571,8 +2571,11 @@
               "title": "run pilot 1",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-06T23:56:47.274Z"
+              "completed": true,
+              "createdAt": "2026-03-06T23:56:47.274Z",
+              "completedAt": "2026-03-17T15:46:37.272Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -5053,7 +5056,10 @@
         "subtaskId": "mmfk00mh24pqxgqo1k8",
         "time": null,
         "scheduledAt": "2026-03-13T22:31:54.390Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-17T15:46:37.272Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -7021,9 +7027,18 @@
       "completionNotes": "Ordered + RNA screen tapes\n",
       "completionLinks": "",
       "date": "2026-03-16"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mmfjyltb0cm08ih0bjhd",
+      "subtaskId": "mmfk00mh24pqxgqo1k8",
+      "completedAt": "2026-03-17T15:46:37.272Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-16"
     }
   ],
-  "lastUpdated": "2026-03-16T17:19:35.336Z",
+  "lastUpdated": "2026-03-17T15:46:37.272Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
