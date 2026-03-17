@@ -2585,6 +2585,14 @@
               "completedAt": "2026-03-17T15:46:37.272Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mmv8fvtuoi47pvprz2h",
+              "title": "Run SMARTseq on extracted RNA samples",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-17T23:17:30.978Z"
             }
           ]
         },
@@ -7141,7 +7149,7 @@
       "date": "2026-03-17"
     }
   ],
-  "lastUpdated": "2026-03-17T23:16:46.890Z",
+  "lastUpdated": "2026-03-17T23:17:30.978Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
