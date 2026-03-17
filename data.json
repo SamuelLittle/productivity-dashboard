@@ -1647,8 +1647,11 @@
               "title": "Flow Prep",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-03T00:29:06.765Z"
+              "completed": true,
+              "createdAt": "2026-03-03T00:29:06.765Z",
+              "completedAt": "2026-03-17T23:16:46.890Z",
+              "completionNotes": "Need to analyze data\n",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_9r1m00qX2Y-nk_ko-pilot4/edit"
             },
             {
               "id": "mm9vgum2bd8dj2jvpwv",
@@ -5057,7 +5060,10 @@
         "subtaskId": "mm9ve6h998wtxy4kd9j",
         "time": null,
         "scheduledAt": "2026-03-12T23:43:33.733Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-17T23:16:46.890Z",
+        "completionNotes": "Need to analyze data\n",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_9r1m00qX2Y-nk_ko-pilot4/edit"
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -5069,14 +5075,6 @@
         "completedAt": "2026-03-17T23:15:45.754Z",
         "completionNotes": "",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "ml7hsagjyud5rcxh2r",
-        "subtaskId": "mmo47c2s3okunp6n3jh",
-        "time": null,
-        "scheduledAt": "2026-03-17T15:46:52.120Z",
-        "completedOnDay": false
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -5121,6 +5119,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-03-17T23:16:14.402Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "ml7hsagjyud5rcxh2r",
+        "subtaskId": "mmo47c2s3okunp6n3jh",
+        "time": null,
+        "scheduledAt": "2026-03-17T23:16:14.448Z",
         "completedOnDay": false
       }
     ]
@@ -7124,9 +7130,18 @@
       "completionNotes": "Isolated PBMCs from W F 73 stored at -80 will move to LN tomorrow\n",
       "completionLinks": "",
       "date": "2026-03-17"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9bqsqn24abbz1pnup",
+      "subtaskId": "mm9ve6h998wtxy4kd9j",
+      "completedAt": "2026-03-17T23:16:46.890Z",
+      "completionNotes": "Need to analyze data\n",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_9r1m00qX2Y-nk_ko-pilot4/edit",
+      "date": "2026-03-17"
     }
   ],
-  "lastUpdated": "2026-03-17T23:16:14.403Z",
+  "lastUpdated": "2026-03-17T23:16:46.890Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
