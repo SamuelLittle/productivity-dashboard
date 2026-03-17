@@ -2587,9 +2587,12 @@
           "title": "Pilot 2",
           "description": "Modifying Lysis buffer",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-17T15:48:16.705Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-03-17T23:15:38.108Z",
+          "completionNotes": "Completed pilot 2 using two different versions of the lysis buffer. \n\nmeasured RNA amounts from all samples. ",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -5072,7 +5075,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-03-17T15:48:16.705Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-17T23:15:38.108Z",
+        "completionNotes": "Completed pilot 2 using two different versions of the lysis buffer. \n\nmeasured RNA amounts from all samples. ",
+        "completionLinks": ""
       }
     ],
     "2026-03-16": [
@@ -7084,9 +7090,17 @@
       "completionNotes": "Performed RNA extraction on microglia samples\n",
       "completionLinks": "",
       "date": "2026-03-16"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mmuse5s1g5lkoezi60c",
+      "completedAt": "2026-03-17T23:15:38.108Z",
+      "completionNotes": "Completed pilot 2 using two different versions of the lysis buffer. \n\nmeasured RNA amounts from all samples. ",
+      "completionLinks": "",
+      "date": "2026-03-17"
     }
   ],
-  "lastUpdated": "2026-03-17T15:48:16.705Z",
+  "lastUpdated": "2026-03-17T23:15:38.108Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
