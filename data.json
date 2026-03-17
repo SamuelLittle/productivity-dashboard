@@ -2563,8 +2563,11 @@
               "title": "Make new reagents",
               "description": "binding buffer\nWash 1\nWash 2\nLiCl solution",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-06T23:56:40.170Z"
+              "completed": true,
+              "createdAt": "2026-03-06T23:56:40.170Z",
+              "completedAt": "2026-03-17T15:46:44.067Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mmfk00mh24pqxgqo1k8",
@@ -5067,7 +5070,10 @@
         "subtaskId": "mmfjzv55xpc2zwy12rm",
         "time": null,
         "scheduledAt": "2026-03-13T22:32:05.486Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-17T15:46:44.067Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -7036,9 +7042,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-16"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mmfjyltb0cm08ih0bjhd",
+      "subtaskId": "mmfjzv55xpc2zwy12rm",
+      "completedAt": "2026-03-17T15:46:44.067Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-16"
     }
   ],
-  "lastUpdated": "2026-03-17T15:46:37.272Z",
+  "lastUpdated": "2026-03-17T15:46:44.067Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
