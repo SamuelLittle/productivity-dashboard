@@ -2593,6 +2593,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-17T23:17:30.978Z"
+            },
+            {
+              "id": "mmv8ggr3toj2ubjvt1f",
+              "title": "Pilot 1 bonus - try BLADE-R on microglia samples.",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-17T23:17:58.096Z"
             }
           ]
         },
@@ -7157,7 +7165,7 @@
       "date": "2026-03-17"
     }
   ],
-  "lastUpdated": "2026-03-17T23:17:35.827Z",
+  "lastUpdated": "2026-03-17T23:17:58.096Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
