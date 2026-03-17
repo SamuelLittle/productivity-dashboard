@@ -1655,8 +1655,11 @@
               "title": "Run flow",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-03T00:31:11.354Z"
+              "completed": true,
+              "createdAt": "2026-03-03T00:31:11.354Z",
+              "completedAt": "2026-03-17T23:15:45.755Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mmo3u6pjp5p1f8075yh",
@@ -5059,7 +5062,10 @@
         "subtaskId": "mm9vgum2bd8dj2jvpwv",
         "time": null,
         "scheduledAt": "2026-03-12T23:43:48.233Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-17T23:15:45.754Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -7098,9 +7104,18 @@
       "completionNotes": "Completed pilot 2 using two different versions of the lysis buffer. \n\nmeasured RNA amounts from all samples. ",
       "completionLinks": "",
       "date": "2026-03-17"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9bqsqn24abbz1pnup",
+      "subtaskId": "mm9vgum2bd8dj2jvpwv",
+      "completedAt": "2026-03-17T23:15:45.755Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-17"
     }
   ],
-  "lastUpdated": "2026-03-17T23:15:38.108Z",
+  "lastUpdated": "2026-03-17T23:15:45.755Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
