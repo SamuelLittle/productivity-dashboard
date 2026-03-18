@@ -2599,8 +2599,11 @@
               "title": "Pilot 1 bonus - try BLADE-R on microglia samples.",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-17T23:17:58.096Z"
+              "completed": true,
+              "createdAt": "2026-03-17T23:17:58.096Z",
+              "completedAt": "2026-03-18T19:47:23.683Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -5168,7 +5171,10 @@
         "subtaskId": "mmv8ggr3toj2ubjvt1f",
         "time": null,
         "scheduledAt": "2026-03-17T23:19:25.374Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-18T19:47:23.683Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -7180,9 +7186,18 @@
       "completionNotes": "Need to analyze data\n",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_9r1m00qX2Y-nk_ko-pilot4/edit",
       "date": "2026-03-17"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mmfjyltb0cm08ih0bjhd",
+      "subtaskId": "mmv8ggr3toj2ubjvt1f",
+      "completedAt": "2026-03-18T19:47:23.683Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-18"
     }
   ],
-  "lastUpdated": "2026-03-18T15:38:28.780Z",
+  "lastUpdated": "2026-03-18T19:47:23.683Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
