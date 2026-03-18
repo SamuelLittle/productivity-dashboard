@@ -3212,6 +3212,15 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-03-13T23:43:06.185Z"
+      },
+      {
+        "id": "mmw7hesqrhgmrah5vuk",
+        "title": "directed lysis SMARTseq on microglia",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-03-18T15:38:28.780Z",
+        "time": null
       }
     ]
   },
@@ -7173,7 +7182,7 @@
       "date": "2026-03-17"
     }
   ],
-  "lastUpdated": "2026-03-17T23:19:25.374Z",
+  "lastUpdated": "2026-03-18T15:38:28.780Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
