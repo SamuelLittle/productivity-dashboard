@@ -2591,8 +2591,11 @@
               "title": "Run SMARTseq on extracted RNA samples",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-17T23:17:30.978Z"
+              "completed": true,
+              "createdAt": "2026-03-17T23:17:30.978Z",
+              "completedAt": "2026-03-19T00:43:58.731Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mmv8ggr3toj2ubjvt1f",
@@ -5163,7 +5166,10 @@
         "subtaskId": "mmv8fvtuoi47pvprz2h",
         "time": null,
         "scheduledAt": "2026-03-17T23:17:35.827Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-19T00:43:58.730Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -7195,9 +7201,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-18"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mmfjyltb0cm08ih0bjhd",
+      "subtaskId": "mmv8fvtuoi47pvprz2h",
+      "completedAt": "2026-03-19T00:43:58.731Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-18"
     }
   ],
-  "lastUpdated": "2026-03-18T19:47:23.683Z",
+  "lastUpdated": "2026-03-19T00:43:58.731Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
