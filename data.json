@@ -3154,6 +3154,16 @@
         "completed": false,
         "createdAt": "2026-03-12T23:42:34.664Z",
         "time": null
+      },
+      {
+        "id": "mmpjldqh41iqiwri6du",
+        "title": "D2 PCRs for Tim",
+        "description": "Make final protocol for amplicon generation\n- amount MM\n-amount H20\n-thermocycle protocol\n\nRun PCR",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-03-13T23:43:06.185Z"
       }
     ],
     "2026-03-13": [
@@ -3209,16 +3219,6 @@
       }
     ],
     "2026-03-18": [
-      {
-        "id": "mmpjldqh41iqiwri6du",
-        "title": "D2 PCRs for Tim",
-        "description": "Make final protocol for amplicon generation\n- amount MM\n-amount H20\n-thermocycle protocol\n\nRun PCR",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-03-13T23:43:06.185Z"
-      },
       {
         "id": "mmw7hesqrhgmrah5vuk",
         "title": "directed lysis SMARTseq on microglia",
@@ -5148,14 +5148,6 @@
     ],
     "2026-03-18": [
       {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "ml7hsagjyud5rcxh2r",
-        "subtaskId": "mmo47c2s3okunp6n3jh",
-        "time": null,
-        "scheduledAt": "2026-03-17T23:16:14.448Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mmfjn4b1w85dvswipdk",
         "taskId": "mmfjyltb0cm08ih0bjhd",
         "subtaskId": "mmv8fvtuoi47pvprz2h",
@@ -5184,7 +5176,15 @@
         "taskId": "",
         "subtaskId": null,
         "time": null,
-        "scheduledAt": "2026-03-19T00:44:07.155Z",
+        "scheduledAt": "2026-03-19T00:44:11.014Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "ml7hsagjyud5rcxh2r",
+        "subtaskId": "mmo47c2s3okunp6n3jh",
+        "time": null,
+        "scheduledAt": "2026-03-19T00:44:11.030Z",
         "completedOnDay": false
       }
     ]
@@ -7225,7 +7225,7 @@
       "date": "2026-03-18"
     }
   ],
-  "lastUpdated": "2026-03-19T00:44:07.155Z",
+  "lastUpdated": "2026-03-19T00:44:11.030Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
