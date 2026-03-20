@@ -1913,7 +1913,7 @@
           "title": "Imaging different macrophage flavours",
           "description": "Obtaining high quality 20x BF images for analysis by GNE postdoc.",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T19:50:44.741Z",
           "subtasks": [
             {
@@ -1921,8 +1921,9 @@
               "title": "Meet with Sarah from CALM",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T19:50:58.990Z"
+              "completed": true,
+              "createdAt": "2026-01-20T19:50:58.990Z",
+              "completedAt": "2026-03-20T15:07:29.324Z"
             },
             {
               "id": "mla5jhc2q822mnm8pxi",
@@ -1931,7 +1932,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-06T00:33:27.938Z",
-              "completedAt": "2026-02-10T00:31:13.290Z",
+              "completedAt": "2026-03-20T15:07:29.324Z",
               "completionNotes": "2ml of MCSF containing media added to all wells ",
               "completionLinks": ""
             },
@@ -1942,7 +1943,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-06T00:33:58.613Z",
-              "completedAt": "2026-02-10T00:30:30.774Z",
+              "completedAt": "2026-03-20T15:07:29.324Z",
               "completionNotes": "Added M2s now in 5mL of media.\n- M2s accidently generated in middle column. label made on the plate.",
               "completionLinks": ""
             },
@@ -1953,7 +1954,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-06T00:34:49.054Z",
-              "completedAt": "2026-02-11T00:32:34.571Z",
+              "completedAt": "2026-03-20T15:07:29.324Z",
               "completionNotes": "Added 1 mL of IFNg + LPS containing media to last column of macrophage containing 6 well plate\n",
               "completionLinks": ""
             },
@@ -1964,7 +1965,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-06T00:35:33.246Z",
-              "completedAt": "2026-02-14T00:10:47.140Z",
+              "completedAt": "2026-03-20T15:07:29.324Z",
               "completionNotes": "images taken and stored - need to share with Christine\n",
               "completionLinks": ""
             },
@@ -1975,11 +1976,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-16T17:21:39.066Z",
-              "completedAt": "2026-03-14T22:56:24.414Z",
+              "completedAt": "2026-03-20T15:07:29.324Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-03-20T15:07:29.324Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mkx0kcz2o187jm7pao",
@@ -7236,9 +7240,18 @@
       "completionNotes": "Isolate ~30M NK cells from whole blood. Seeded in NK MACS ",
       "completionLinks": "",
       "date": "2026-03-19"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mkn0e9s5qbl61liiujc",
+      "subtaskId": null,
+      "title": "Imaging different macrophage flavours",
+      "completedAt": "2026-03-20T15:07:29.324Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-20T14:59:21.758Z",
+  "lastUpdated": "2026-03-20T15:07:29.325Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
