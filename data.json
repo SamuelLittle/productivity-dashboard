@@ -3151,9 +3151,12 @@
         "title": "Blood ordered - confirm delivery",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-12T23:42:34.664Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-20T14:58:34.417Z",
+        "completionNotes": "Isolate ~30M NK cells from whole blood. Seeded in NK MACS ",
+        "completionLinks": ""
       },
       {
         "id": "mmpjldqh41iqiwri6du",
@@ -7223,9 +7226,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-18"
+    },
+    {
+      "id": "mmo44uqwo7w5qk6lojk",
+      "title": "Blood ordered - confirm delivery",
+      "completedAt": "2026-03-20T14:58:34.417Z",
+      "completionNotes": "Isolate ~30M NK cells from whole blood. Seeded in NK MACS ",
+      "completionLinks": "",
+      "date": "2026-03-19"
     }
   ],
-  "lastUpdated": "2026-03-19T00:44:11.030Z",
+  "lastUpdated": "2026-03-20T14:58:34.417Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
