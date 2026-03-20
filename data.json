@@ -7238,7 +7238,7 @@
       "date": "2026-03-19"
     }
   ],
-  "lastUpdated": "2026-03-20T14:58:44.955Z",
+  "lastUpdated": "2026-03-20T14:59:21.758Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -7355,7 +7355,8 @@
   },
   "dailyNotes": {
     "2026-01-21": "Didn't get blood center deliveries until 12:40.  Wasn't able to start isolations until after meeting around 3. Was here late (7:15) Blood center only had 2 donors not 3.",
-    "2026-03-16": "-> Come in an extract RNA from DLD1s and microglia first thing in the morning\n-> order oligos for SMARTseq + RNA tape station tapes\n-> make what can be made for BLADE-R buffers\n-> if I get the buffers in time run the BLADE-R pilot with DLD1s"
+    "2026-03-16": "-> Come in an extract RNA from DLD1s and microglia first thing in the morning\n-> order oligos for SMARTseq + RNA tape station tapes\n-> make what can be made for BLADE-R buffers\n-> if I get the buffers in time run the BLADE-R pilot with DLD1s",
+    "2026-03-19": "Spent big chunk of day organizing results from BLADE-R protocol.  Also went to seminar on Cellanome system and had 1-on-1 with Celine"
   },
   "projectTaskOrder": {},
   "subtaskOrder": {
