@@ -2098,8 +2098,11 @@
               "title": "Prep and submit RNA for sequencing",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-16T17:22:20.059Z"
+              "completed": true,
+              "createdAt": "2026-02-16T17:22:20.059Z",
+              "completedAt": "2026-03-20T18:12:49.967Z",
+              "completionNotes": "Submitted to NGS\n",
+              "completionLinks": ""
             },
             {
               "id": "mlzhdljb4xzomkm0kbv",
@@ -5202,7 +5205,10 @@
         "subtaskId": "mlpfzevv7jgt4l40fbc",
         "time": null,
         "scheduledAt": "2026-03-20T15:07:36.750Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-20T18:12:49.967Z",
+        "completionNotes": "Submitted to NGS\n",
+        "completionLinks": ""
       }
     ]
   },
@@ -7257,9 +7263,18 @@
       "completedAt": "2026-03-20T15:07:29.324Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "ml73fflhsubbxo2vp8c",
+      "subtaskId": "mlpfzevv7jgt4l40fbc",
+      "completedAt": "2026-03-20T18:12:49.967Z",
+      "completionNotes": "Submitted to NGS\n",
+      "completionLinks": "",
+      "date": "2026-03-20"
     }
   ],
-  "lastUpdated": "2026-03-20T15:07:36.750Z",
+  "lastUpdated": "2026-03-20T18:12:49.967Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
