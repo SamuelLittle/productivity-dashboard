@@ -3157,16 +3157,6 @@
         "completedAt": "2026-03-20T14:58:34.417Z",
         "completionNotes": "Isolate ~30M NK cells from whole blood. Seeded in NK MACS ",
         "completionLinks": ""
-      },
-      {
-        "id": "mmpjldqh41iqiwri6du",
-        "title": "D2 PCRs for Tim",
-        "description": "Make final protocol for amplicon generation\n- amount MM\n-amount H20\n-thermocycle protocol\n\nRun PCR",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-03-13T23:43:06.185Z"
       }
     ],
     "2026-03-13": [
@@ -3233,6 +3223,18 @@
         "completedAt": "2026-03-19T00:44:03.795Z",
         "completionNotes": "",
         "completionLinks": ""
+      }
+    ],
+    "2026-03-20": [
+      {
+        "id": "mmpjldqh41iqiwri6du",
+        "title": "D2 PCRs for Tim",
+        "description": "Make final protocol for amplicon generation\n- amount MM\n-amount H20\n-thermocycle protocol\n\nRun PCR",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-03-13T23:43:06.185Z"
       }
     ]
   },
@@ -5173,23 +5175,21 @@
         "completionLinks": ""
       }
     ],
-    "2026-03-19": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "ml7hsagjyud5rcxh2r",
-        "subtaskId": "mmo47c2s3okunp6n3jh",
-        "time": null,
-        "scheduledAt": "2026-03-19T00:44:11.030Z",
-        "completedOnDay": false
-      }
-    ],
     "2026-03-20": [
       {
         "projectId": "",
         "taskId": "",
         "subtaskId": null,
         "time": null,
-        "scheduledAt": "2026-03-20T14:58:40.254Z",
+        "scheduledAt": "2026-03-20T14:58:44.892Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "ml7hsagjyud5rcxh2r",
+        "subtaskId": "mmo47c2s3okunp6n3jh",
+        "time": null,
+        "scheduledAt": "2026-03-20T14:58:44.955Z",
         "completedOnDay": false
       }
     ]
@@ -7238,7 +7238,7 @@
       "date": "2026-03-19"
     }
   ],
-  "lastUpdated": "2026-03-20T14:58:40.254Z",
+  "lastUpdated": "2026-03-20T14:58:44.955Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
