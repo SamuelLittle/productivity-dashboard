@@ -1688,6 +1688,15 @@
           "completedAt": "2026-03-03T21:05:15.839Z",
           "completionNotes": "Met with lonza reps and got new pulse codes\n",
           "completionLinks": "https://docs.google.com/document/d/16I0DdBg1BSmAL1xeUseJUEA80VQFjTz1mXjwJGeQAgE/edit?usp=sharing"
+        },
+        {
+          "id": "mn3bba4xdxq4je3r865",
+          "title": "KO Pilot 4",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-03-23T15:00:04.498Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -5184,14 +5193,6 @@
     ],
     "2026-03-20": [
       {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "ml7hsagjyud5rcxh2r",
-        "subtaskId": "mmo47c2s3okunp6n3jh",
-        "time": null,
-        "scheduledAt": "2026-03-20T14:58:44.955Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltywpq0yriuhvt8wmb",
         "taskId": "ml73fflhsubbxo2vp8c",
         "subtaskId": "mlpfzevv7jgt4l40fbc",
@@ -5210,6 +5211,22 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-03-23T14:59:42.615Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "ml7hsagjyud5rcxh2r",
+        "subtaskId": "mmo47c2s3okunp6n3jh",
+        "time": null,
+        "scheduledAt": "2026-03-23T14:59:42.688Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mn3bba4xdxq4je3r865",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-03-23T15:00:04.500Z",
         "completedOnDay": false
       }
     ]
@@ -7276,7 +7293,7 @@
       "date": "2026-03-20"
     }
   ],
-  "lastUpdated": "2026-03-23T14:59:42.615Z",
+  "lastUpdated": "2026-03-23T15:00:04.500Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
