@@ -1713,8 +1713,11 @@
               "title": "Perform Nucleofection",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-23T15:01:02.236Z"
+              "completed": true,
+              "createdAt": "2026-03-23T15:01:02.236Z",
+              "completedAt": "2026-03-23T15:01:27.559Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mn3bcsw1e4g8vabc1t",
@@ -5237,7 +5240,8 @@
         "subtaskId": "mn3bciorat9taha2u7f",
         "time": null,
         "scheduledAt": "2026-03-23T15:01:25.149Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-23T15:01:27.560Z"
       }
     ],
     "2026-03-23": [
@@ -7345,9 +7349,16 @@
       "subtaskId": "mn3bbpiw5xpzbrje3x6",
       "title": "Isolate NK cells from whole blood",
       "completedAt": "2026-03-23T15:00:36.214Z"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3bba4xdxq4je3r865",
+      "subtaskId": "mn3bciorat9taha2u7f",
+      "title": "Perform Nucleofection",
+      "completedAt": "2026-03-23T15:01:27.560Z"
     }
   ],
-  "lastUpdated": "2026-03-23T15:01:25.149Z",
+  "lastUpdated": "2026-03-23T15:01:27.560Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
