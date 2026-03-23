@@ -1696,7 +1696,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-03-23T15:00:04.498Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mn3bbpiw5xpzbrje3x6",
+              "title": "Isolate NK cells from whole blood",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-23T15:00:24.440Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -7293,7 +7302,7 @@
       "date": "2026-03-20"
     }
   ],
-  "lastUpdated": "2026-03-23T15:00:04.500Z",
+  "lastUpdated": "2026-03-23T15:00:24.440Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
