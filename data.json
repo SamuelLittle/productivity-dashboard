@@ -1753,7 +1753,7 @@
           "title": "TREX1 Knockout",
           "description": "Knockout of TREX1 in monocytes for subsequent differentiation into different \"flavours\" of macrophages.\n\nBased off document here: https://docs.google.com/document/d/1CRQxTqNYtgTY0lftQwkVj91s6Y0K_sSt9zjJOfPrCzI/edit?tab=t.0",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T00:10:44.130Z",
           "subtasks": [
             {
@@ -1763,7 +1763,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T00:11:23.022Z",
-              "completedAt": "2026-01-20T21:55:07.462Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "notes": "later adjusted to equal M-CSF concentrations as pre Christine Everetts recommendation\n",
               "links": ""
             },
@@ -1776,7 +1776,7 @@
               "createdAt": "2026-01-20T00:11:37.998Z",
               "notes": "",
               "links": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit",
-              "completedAt": "2026-01-20T20:19:03.557Z"
+              "completedAt": "2026-03-23T15:18:51.235Z"
             },
             {
               "id": "mklua7fi5tb0qt34jlc",
@@ -1785,7 +1785,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T00:11:51.198Z",
-              "completedAt": "2026-01-21T04:10:23.327Z"
+              "completedAt": "2026-03-23T15:18:51.235Z"
             },
             {
               "id": "mkluax96wzz3ceelt09",
@@ -1794,7 +1794,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T00:12:24.666Z",
-              "completedAt": "2026-01-28T19:23:22.476Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1807,7 +1807,7 @@
               "createdAt": "2026-01-20T00:12:44.128Z",
               "notes": "Isolate ~10M monocytes from all 3 donors\n\nnotified only 2 donors will be coming in. \n",
               "links": "",
-              "completedAt": "2026-01-22T03:16:33.437Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "12.5M from Donor 1\n16M from Donor 2",
               "completionLinks": ""
             },
@@ -1818,7 +1818,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T00:13:12.270Z",
-              "completedAt": "2026-01-22T03:16:41.715Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1829,7 +1829,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T00:13:48.004Z",
-              "completedAt": "2026-01-22T03:17:16.703Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "seeded ~75000 per well",
               "completionLinks": ""
             },
@@ -1840,7 +1840,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T01:01:15.076Z",
-              "completedAt": "2026-01-24T05:59:50.879Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1851,7 +1851,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T02:10:19.650Z",
-              "completedAt": "2026-01-27T01:47:54.698Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "Added 50ul of 100ng/mL IL-10 to M2 Macrophages\n",
               "completionLinks": ""
             },
@@ -1862,7 +1862,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T16:08:11.274Z",
-              "completedAt": "2026-01-28T19:22:00.815Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "Supernatant recovered into two plates (~90ul each) one for luminex one for nomic. plates in -80 outside 3103. ",
               "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit"
             },
@@ -1873,7 +1873,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T16:08:36.963Z",
-              "completedAt": "2026-01-28T19:22:31.926Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "RNA extracted using RNeasy 96 well plate.  eluted RNA in -20 outside of 3103.",
               "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_zUjnhN39N5-macrophage_screening/etr_EXDUEC4Nl1-trex1-ko-in-m0-m1-and-m2-macrophages/edit"
             },
@@ -1884,7 +1884,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-21T17:20:26.407Z",
-              "completedAt": "2026-01-21T17:44:58.133Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "Seeded and divided by donor - all wells in all plates 50ng/mL M-CSF",
               "completionLinks": ""
             },
@@ -1895,7 +1895,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-27T20:07:57.996Z",
-              "completedAt": "2026-01-28T01:00:12.259Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1906,7 +1906,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-27T21:15:11.879Z",
-              "completedAt": "2026-02-16T17:24:49.828Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1917,7 +1917,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-28T19:23:01.510Z",
-              "completedAt": "2026-02-04T18:28:45.698Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "Submitted request for 36 samples",
               "completionLinks": ""
             },
@@ -1928,7 +1928,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-28T19:23:19.154Z",
-              "completedAt": "2026-02-17T17:56:50.593Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "Plate refactored and submitted",
               "completionLinks": ""
             },
@@ -1939,7 +1939,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-28T19:23:33.736Z",
-              "completedAt": "2026-02-23T02:24:21.626Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1950,11 +1950,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-23T02:24:17.842Z",
-              "completedAt": "2026-02-23T16:38:46.326Z",
+              "completedAt": "2026-03-23T15:18:51.235Z",
               "completionNotes": "Repeat of 9655 submitted",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-03-23T15:18:51.235Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mkn0e9s5qbl61liiujc",
@@ -7375,9 +7378,18 @@
       "subtaskId": "mn3bciorat9taha2u7f",
       "title": "Perform Nucleofection",
       "completedAt": "2026-03-23T15:01:27.560Z"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mklu8roio6ns8a57jp",
+      "subtaskId": null,
+      "title": "TREX1 Knockout",
+      "completedAt": "2026-03-23T15:18:51.235Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-23T15:18:29.034Z",
+  "lastUpdated": "2026-03-23T15:18:51.235Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
