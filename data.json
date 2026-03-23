@@ -3299,10 +3299,12 @@
         "title": "D2 PCRs for Tim",
         "description": "Make final protocol for amplicon generation\n- amount MM\n-amount H20\n-thermocycle protocol\n\nRun PCR",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-03-23T18:33:55.427Z",
         "time": null,
-        "createdAt": "2026-03-13T23:43:06.185Z"
+        "createdAt": "2026-03-13T23:43:06.185Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mn3byyehyesv1xv32c",
@@ -7407,9 +7409,17 @@
       "completedAt": "2026-03-23T15:18:51.235Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "id": "mmpjldqh41iqiwri6du",
+      "title": "D2 PCRs for Tim",
+      "completedAt": "2026-03-23T18:33:55.427Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-23"
     }
   ],
-  "lastUpdated": "2026-03-23T16:22:20.302Z",
+  "lastUpdated": "2026-03-23T18:33:55.427Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
