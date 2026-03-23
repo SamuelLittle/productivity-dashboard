@@ -1691,11 +1691,11 @@
         },
         {
           "id": "mn3bba4xdxq4je3r865",
-          "title": "KO Pilot 4",
+          "title": "KO Pilot 5",
           "description": "",
           "priority": "medium",
           "completed": false,
-          "createdAt": "2026-03-23T15:00:04.498Z",
+          "createdAt": "2026-03-23T15:00:52.730Z",
           "subtasks": [
             {
               "id": "mn3bbpiw5xpzbrje3x6",
@@ -7323,7 +7323,7 @@
       "completedAt": "2026-03-23T15:00:36.214Z"
     }
   ],
-  "lastUpdated": "2026-03-23T15:00:36.214Z",
+  "lastUpdated": "2026-03-23T15:00:52.730Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
