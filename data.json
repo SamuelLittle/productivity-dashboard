@@ -2297,6 +2297,14 @@
               "completedAt": "2026-03-01T18:08:31.909Z",
               "completionNotes": "extracted - placed at 4c\n",
               "completionLinks": ""
+            },
+            {
+              "id": "mn3c075v7axn1dq9v39",
+              "title": "Experimental Repeat",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-23T15:19:27.043Z"
             }
           ]
         }
@@ -5302,6 +5310,16 @@
         "scheduledAt": "2026-03-23T15:01:31.719Z",
         "completedOnDay": false
       }
+    ],
+    "2026-03-25": [
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mlqy3dwoui2qz3anm7t",
+        "subtaskId": "mn3c075v7axn1dq9v39",
+        "time": null,
+        "scheduledAt": "2026-03-23T15:19:27.044Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -7389,7 +7407,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-23T15:18:51.235Z",
+  "lastUpdated": "2026-03-23T15:19:27.044Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
