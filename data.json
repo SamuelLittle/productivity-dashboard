@@ -2700,7 +2700,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-03-24T00:19:35.061Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mn3vbhso708lqu7y9i6",
+              "title": "isolate monocytes from frozen PBMCs in LN",
+              "description": "isolate ~ 10M monocytes",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-24T00:20:06.744Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -7461,7 +7470,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-24T00:19:35.061Z",
+  "lastUpdated": "2026-03-24T00:20:06.744Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
