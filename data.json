@@ -2735,8 +2735,11 @@
               "title": "isolate monocytes from frozen PBMCs in LN",
               "description": "isolate ~ 10M monocytes",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-24T00:20:06.744Z"
+              "completed": true,
+              "createdAt": "2026-03-24T00:20:06.744Z",
+              "completedAt": "2026-03-24T18:50:58.823Z",
+              "completionNotes": "isolated 5M monocytes from w/m 62 y/o PBMCS",
+              "completionLinks": ""
             },
             {
               "id": "mn3vckqhudk3xki8ih",
@@ -5389,7 +5392,10 @@
         "subtaskId": "mn3vbhso708lqu7y9i6",
         "time": null,
         "scheduledAt": "2026-03-24T00:21:01.450Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-24T18:50:58.823Z",
+        "completionNotes": "isolated 5M monocytes from w/m 62 y/o PBMCS",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -7547,9 +7553,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-24"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn3vatckm788ja3rlba",
+      "subtaskId": "mn3vbhso708lqu7y9i6",
+      "completedAt": "2026-03-24T18:50:58.823Z",
+      "completionNotes": "isolated 5M monocytes from w/m 62 y/o PBMCS",
+      "completionLinks": "",
+      "date": "2026-03-24"
     }
   ],
-  "lastUpdated": "2026-03-24T17:36:09.026Z",
+  "lastUpdated": "2026-03-24T18:50:58.823Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
