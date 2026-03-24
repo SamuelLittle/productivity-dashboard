@@ -2618,7 +2618,7 @@
           "title": "Pilot 1: DLD1 hand-scale pilot",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-06T23:55:41.423Z",
           "subtasks": [
             {
@@ -2628,7 +2628,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-06T23:56:08.212Z",
-              "completedAt": "2026-03-12T23:33:29.132Z",
+              "completedAt": "2026-03-24T00:19:24.464Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2639,7 +2639,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-06T23:56:40.170Z",
-              "completedAt": "2026-03-17T15:46:44.067Z",
+              "completedAt": "2026-03-24T00:19:24.464Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2650,7 +2650,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-06T23:56:47.274Z",
-              "completedAt": "2026-03-17T15:46:37.272Z",
+              "completedAt": "2026-03-24T00:19:24.464Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2661,7 +2661,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-17T23:17:30.978Z",
-              "completedAt": "2026-03-19T00:43:58.731Z",
+              "completedAt": "2026-03-24T00:19:24.464Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2672,11 +2672,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-17T23:17:58.096Z",
-              "completedAt": "2026-03-18T19:47:23.683Z",
+              "completedAt": "2026-03-24T00:19:24.464Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-03-24T00:19:24.464Z",
+          "completionNotes": "P1 a success generating cDNA from DLD1s and microglia similar to that obtained using column based RNA extraction\n",
+          "completionLinks": ""
         },
         {
           "id": "mmuse5s1g5lkoezi60c",
@@ -7428,9 +7431,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-23"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mmfjyltb0cm08ih0bjhd",
+      "subtaskId": null,
+      "title": "Pilot 1: DLD1 hand-scale pilot",
+      "completedAt": "2026-03-24T00:19:24.464Z",
+      "completionNotes": "P1 a success generating cDNA from DLD1s and microglia similar to that obtained using column based RNA extraction\n",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-24T00:18:38.731Z",
+  "lastUpdated": "2026-03-24T00:19:24.464Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
