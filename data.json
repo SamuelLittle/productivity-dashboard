@@ -1744,7 +1744,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-03-24T00:26:04.813Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mn3vjj1panmcik1o1l",
+              "title": "Contact Mayra about killing targets",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-24T00:26:21.613Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -5378,6 +5387,14 @@
         "time": null,
         "scheduledAt": "2026-03-24T00:21:04.649Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mn3vj631ght8zzcdd8g",
+        "subtaskId": "mn3vjj1panmcik1o1l",
+        "time": null,
+        "scheduledAt": "2026-03-24T00:26:21.613Z",
+        "completedOnDay": false
       }
     ],
     "2026-03-25": [
@@ -7519,7 +7536,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-24T00:26:04.814Z",
+  "lastUpdated": "2026-03-24T00:26:21.613Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
