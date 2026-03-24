@@ -2692,6 +2692,15 @@
           "completedAt": "2026-03-17T23:15:38.108Z",
           "completionNotes": "Completed pilot 2 using two different versions of the lysis buffer. \n\nmeasured RNA amounts from all samples. ",
           "completionLinks": ""
+        },
+        {
+          "id": "mn3vatckm788ja3rlba",
+          "title": "Monocyte Pilots",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-03-24T00:19:35.061Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -5330,6 +5339,16 @@
         "scheduledAt": "2026-03-23T15:19:27.044Z",
         "completedOnDay": false
       }
+    ],
+    "2026-03-23": [
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mn3vatckm788ja3rlba",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-03-24T00:19:35.061Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -7442,7 +7461,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-24T00:19:24.464Z",
+  "lastUpdated": "2026-03-24T00:19:35.061Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
