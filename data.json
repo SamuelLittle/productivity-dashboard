@@ -2325,6 +2325,14 @@
               "createdAt": "2026-03-23T15:19:27.043Z",
               "notes": "GPR35 repeat",
               "links": ""
+            },
+            {
+              "id": "mn4tqk68cf99v8ul32",
+              "title": "send out experimental design to K+P",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-24T16:23:36.609Z"
             }
           ]
         }
@@ -7518,7 +7526,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-24T03:23:14.978Z",
+  "lastUpdated": "2026-03-24T16:23:36.609Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
