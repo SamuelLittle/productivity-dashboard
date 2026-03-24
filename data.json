@@ -2331,8 +2331,11 @@
               "title": "send out experimental design to K+P",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-24T16:23:36.609Z"
+              "completed": true,
+              "createdAt": "2026-03-24T16:23:36.609Z",
+              "completedAt": "2026-03-24T17:36:09.026Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -5410,7 +5413,10 @@
         "subtaskId": "mn4tqk68cf99v8ul32",
         "time": null,
         "scheduledAt": "2026-03-24T16:23:40.690Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-24T17:36:09.025Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-03-25": [
@@ -7532,9 +7538,18 @@
       "completedAt": "2026-03-24T00:19:24.464Z",
       "completionNotes": "P1 a success generating cDNA from DLD1s and microglia similar to that obtained using column based RNA extraction\n",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mlqy3dwoui2qz3anm7t",
+      "subtaskId": "mn4tqk68cf99v8ul32",
+      "completedAt": "2026-03-24T17:36:09.026Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-24"
     }
   ],
-  "lastUpdated": "2026-03-24T16:23:40.690Z",
+  "lastUpdated": "2026-03-24T17:36:09.026Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
