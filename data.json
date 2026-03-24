@@ -5409,14 +5409,6 @@
     ],
     "2026-03-23": [
       {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mn3vatckm788ja3rlba",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-03-24T00:19:35.061Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltwpanzsdw6b96wbe",
         "taskId": "mn3vj631ght8zzcdd8g",
         "subtaskId": null,
@@ -7536,7 +7528,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-24T00:26:21.613Z",
+  "lastUpdated": "2026-03-24T03:23:12.144Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
