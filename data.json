@@ -3304,7 +3304,9 @@
         "time": null,
         "createdAt": "2026-03-13T23:43:06.185Z",
         "completionNotes": "",
-        "completionLinks": ""
+        "completionLinks": "",
+        "notes": "concatemers in the final PCR product.  Repeating PCR using touch down PCR protocol.",
+        "links": ""
       },
       {
         "id": "mn3byyehyesv1xv32c",
@@ -7430,7 +7432,7 @@
       "date": "2026-03-23"
     }
   ],
-  "lastUpdated": "2026-03-24T00:17:59.153Z",
+  "lastUpdated": "2026-03-24T00:18:33.634Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
