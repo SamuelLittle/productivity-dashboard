@@ -2708,6 +2708,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-24T00:20:06.744Z"
+            },
+            {
+              "id": "mn3vckqhudk3xki8ih",
+              "title": "Extract RNA from monocytes using both column and BLADE-R strategies.",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-24T00:20:57.210Z"
             }
           ]
         }
@@ -7470,7 +7478,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-24T00:20:06.744Z",
+  "lastUpdated": "2026-03-24T00:20:57.210Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
