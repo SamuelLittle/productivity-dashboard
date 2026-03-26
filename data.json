@@ -2774,8 +2774,11 @@
               "title": "RNA screen tape analysis",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-26T16:03:23.060Z"
+              "completed": true,
+              "createdAt": "2026-03-26T16:03:23.060Z",
+              "completedAt": "2026-03-26T16:03:46.278Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -5456,7 +5459,10 @@
         "subtaskId": "mn7nw94k4x27jckz55u",
         "time": null,
         "scheduledAt": "2026-03-26T16:03:33.514Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-26T16:03:46.278Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-03-27": [
@@ -7640,9 +7646,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-25"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn3vatckm788ja3rlba",
+      "subtaskId": "mn7nw94k4x27jckz55u",
+      "completedAt": "2026-03-26T16:03:46.278Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-25"
     }
   ],
-  "lastUpdated": "2026-03-26T16:03:33.514Z",
+  "lastUpdated": "2026-03-26T16:03:46.278Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
