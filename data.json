@@ -2638,8 +2638,11 @@
               "title": "Make overview document and slide deck for non-viral delivery",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-13T20:44:54.288Z"
+              "completed": true,
+              "createdAt": "2026-03-13T20:44:54.288Z",
+              "completedAt": "2026-03-26T16:37:33.301Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -7720,9 +7723,16 @@
       "subtaskId": "mmpd7looj84s1tynwwl",
       "title": "Make questionnaire for non-viral delivery solutions",
       "completedAt": "2026-03-26T16:37:30.837Z"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "mmpd6skq431pk2ulpea",
+      "subtaskId": "mmpd87tc4h6nqc23l3f",
+      "title": "Make overview document and slide deck for non-viral delivery",
+      "completedAt": "2026-03-26T16:37:33.301Z"
     }
   ],
-  "lastUpdated": "2026-03-26T16:37:30.837Z",
+  "lastUpdated": "2026-03-26T16:37:33.301Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
