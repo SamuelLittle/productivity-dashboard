@@ -1753,8 +1753,11 @@
               "title": "Contact Mayra about killing targets",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-24T00:26:21.613Z"
+              "completed": true,
+              "createdAt": "2026-03-24T00:26:21.613Z",
+              "completedAt": "2026-03-26T16:02:50.141Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -5423,7 +5426,10 @@
         "subtaskId": "mn3vjj1panmcik1o1l",
         "time": null,
         "scheduledAt": "2026-03-24T00:26:21.613Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-26T16:02:50.141Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -7592,9 +7598,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-24"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mn3vjj1panmcik1o1l",
+      "completedAt": "2026-03-26T16:02:50.141Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-24"
     }
   ],
-  "lastUpdated": "2026-03-25T17:55:58.228Z",
+  "lastUpdated": "2026-03-26T16:02:50.141Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
