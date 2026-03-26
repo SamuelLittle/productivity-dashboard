@@ -2784,11 +2784,11 @@
         },
         {
           "id": "mn7p0zy5airpuqwqq5n",
-          "title": "Automation pilot 1",
+          "title": "BLADE-R Automation pilot 1",
           "description": "",
           "priority": "medium",
           "completed": false,
-          "createdAt": "2026-03-26T16:35:04.062Z",
+          "createdAt": "2026-03-26T16:35:25.695Z",
           "subtasks": []
         }
       ],
@@ -7687,7 +7687,7 @@
       "date": "2026-03-25"
     }
   ],
-  "lastUpdated": "2026-03-26T16:35:04.062Z",
+  "lastUpdated": "2026-03-26T16:35:25.695Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
