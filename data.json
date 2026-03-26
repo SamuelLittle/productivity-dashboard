@@ -2789,7 +2789,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-03-26T16:35:25.695Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mn7p1p1sv18np87r3wo",
+              "title": "Meet with Corinne",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-26T16:35:36.592Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -5511,6 +5520,14 @@
         "time": null,
         "scheduledAt": "2026-03-26T16:35:04.062Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mn7p0zy5airpuqwqq5n",
+        "subtaskId": "mn7p1p1sv18np87r3wo",
+        "time": null,
+        "scheduledAt": "2026-03-26T16:35:36.593Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -7687,7 +7704,7 @@
       "date": "2026-03-25"
     }
   ],
-  "lastUpdated": "2026-03-26T16:35:25.695Z",
+  "lastUpdated": "2026-03-26T16:35:36.593Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
