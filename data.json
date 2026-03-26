@@ -2627,8 +2627,11 @@
               "title": "Make questionnaire for non-viral delivery solutions",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-13T20:44:25.608Z"
+              "completed": true,
+              "createdAt": "2026-03-13T20:44:25.608Z",
+              "completedAt": "2026-03-26T16:37:30.837Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mmpd87tc4h6nqc23l3f",
@@ -7710,9 +7713,16 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-25"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "mmpd6skq431pk2ulpea",
+      "subtaskId": "mmpd7looj84s1tynwwl",
+      "title": "Make questionnaire for non-viral delivery solutions",
+      "completedAt": "2026-03-26T16:37:30.837Z"
     }
   ],
-  "lastUpdated": "2026-03-26T16:35:52.660Z",
+  "lastUpdated": "2026-03-26T16:37:30.837Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
