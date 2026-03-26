@@ -2327,10 +2327,13 @@
               "title": "Experimental Repeat",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-03-23T15:19:27.043Z",
               "notes": "GPR35 repeat",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-03-26T16:03:03.050Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mn4tqk68cf99v8ul32",
@@ -5434,7 +5437,10 @@
         "subtaskId": "mn3c075v7axn1dq9v39",
         "time": null,
         "scheduledAt": "2026-03-23T15:19:27.044Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-26T16:03:03.050Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-03-27": [
@@ -7609,9 +7615,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-24"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mlqy3dwoui2qz3anm7t",
+      "subtaskId": "mn3c075v7axn1dq9v39",
+      "completedAt": "2026-03-26T16:03:03.050Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-25"
     }
   ],
-  "lastUpdated": "2026-03-26T16:02:55.722Z",
+  "lastUpdated": "2026-03-26T16:03:03.050Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
