@@ -2865,7 +2865,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-03-27T17:54:31.070Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mn97b824n3uhy6ekzq",
+              "title": "remake all reagents",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-27T17:54:40.396Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -8013,7 +8022,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-27T17:54:31.070Z",
+  "lastUpdated": "2026-03-27T17:54:40.396Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
