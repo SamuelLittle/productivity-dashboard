@@ -3587,9 +3587,12 @@
         "title": "Order media for HUVEC + BEAS-2B",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-27T17:23:01.369Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-27T21:03:22.814Z",
+        "completionNotes": "Also Ordered SMC and HMVEC media\n",
+        "completionLinks": ""
       }
     ]
   },
@@ -8084,9 +8087,17 @@
       "completionNotes": "Ordered CD96 + 3x AAVS1 5 business days out\n",
       "completionLinks": "",
       "date": "2026-03-27"
+    },
+    {
+      "id": "mn966irdu3qb7ykk0ik",
+      "title": "Order media for HUVEC + BEAS-2B",
+      "completedAt": "2026-03-27T21:03:22.814Z",
+      "completionNotes": "Also Ordered SMC and HMVEC media\n",
+      "completionLinks": "",
+      "date": "2026-03-27"
     }
   ],
-  "lastUpdated": "2026-03-27T20:46:23.574Z",
+  "lastUpdated": "2026-03-27T21:03:22.814Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
