@@ -1025,6 +1025,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-27T17:45:33.464Z"
+            },
+            {
+              "id": "mn970laht5tbwixe38n",
+              "title": "Cytokine Screen plate seeding (target date)",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-27T17:46:24.330Z"
             }
           ]
         }
@@ -5629,6 +5637,16 @@
         "scheduledAt": "2026-03-27T17:45:33.464Z",
         "completedOnDay": false
       }
+    ],
+    "2026-04-20": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn970laht5tbwixe38n",
+        "time": null,
+        "scheduledAt": "2026-03-27T17:46:24.330Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -7882,7 +7900,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:45:33.464Z",
+  "lastUpdated": "2026-03-27T17:46:24.330Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
