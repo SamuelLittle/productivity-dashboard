@@ -2811,7 +2811,7 @@
           "title": "BLADE-R Automation pilot 1",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-26T16:35:25.695Z",
           "subtasks": [
             {
@@ -2821,7 +2821,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-26T16:35:36.592Z",
-              "completedAt": "2026-03-27T17:26:14.783Z",
+              "completedAt": "2026-03-27T17:37:01.856Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2830,10 +2830,14 @@
               "title": "Make i7 protocol",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-26T16:35:52.660Z"
+              "completed": true,
+              "createdAt": "2026-03-26T16:35:52.660Z",
+              "completedAt": "2026-03-27T17:37:01.856Z"
             }
-          ]
+          ],
+          "completedAt": "2026-03-27T17:37:01.856Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mn96b0bm52iua8c95fk",
@@ -5626,7 +5630,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-03-26T16:35:04.062Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-27T17:37:01.856Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -7892,9 +7899,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-26"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn7p0zy5airpuqwqq5n",
+      "completedAt": "2026-03-27T17:37:01.856Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:36:52.219Z",
+  "lastUpdated": "2026-03-27T17:37:01.856Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
