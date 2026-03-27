@@ -1057,6 +1057,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-27T17:48:22.748Z"
+            },
+            {
+              "id": "mn973r0fexd2jqy4iso",
+              "title": "Submit to NGS",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-27T17:48:51.711Z"
             }
           ]
         }
@@ -5701,6 +5709,16 @@
         "scheduledAt": "2026-03-27T17:48:22.748Z",
         "completedOnDay": false
       }
+    ],
+    "2026-04-27": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn973r0fexd2jqy4iso",
+        "time": null,
+        "scheduledAt": "2026-03-27T17:48:51.711Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -7954,7 +7972,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:48:22.748Z",
+  "lastUpdated": "2026-03-27T17:48:51.711Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
