@@ -668,81 +668,6 @@
           "completionLinks": ""
         },
         {
-          "id": "ml2l62osbaz3iif86w6",
-          "title": "Dendritic Cell Cytokine Screen",
-          "description": "",
-          "priority": "medium",
-          "completed": false,
-          "createdAt": "2026-01-31T17:28:46.876Z",
-          "subtasks": [
-            {
-              "id": "ml2l74brocsk2z9rxqi",
-              "title": "Replate Cells",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-31T17:29:35.655Z"
-            },
-            {
-              "id": "ml2l7imffk7dmqezqz7",
-              "title": "24 hour cytokine treatment",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-31T17:29:54.183Z"
-            },
-            {
-              "id": "ml2l7zq6ym9s92of3g8",
-              "title": "3 hr cytokine treatment",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-31T17:30:16.350Z"
-            },
-            {
-              "id": "ml2l8fqr86etsdhx58o",
-              "title": "takedown and SMARTseq sample prep",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-31T17:30:37.107Z"
-            },
-            {
-              "id": "ml4phzz2fm9u3qqf3tg",
-              "title": "Prep SS Reagents",
-              "description": "",
-              "priority": "medium",
-              "completed": true,
-              "createdAt": "2026-02-02T05:05:34.046Z",
-              "completedAt": "2026-02-05T23:51:17.790Z",
-              "completionNotes": "Made new TSO aliquots I will test tomorrow. Ordered More GTP and H-",
-              "completionLinks": ""
-            },
-            {
-              "id": "mla2aksayf45paorg0b",
-              "title": "Swap culture media",
-              "description": "",
-              "priority": "medium",
-              "completed": true,
-              "createdAt": "2026-02-05T23:02:33.659Z",
-              "completedAt": "2026-02-05T23:03:21.779Z",
-              "completionNotes": "100ul of media removed and 120ul of fresh media added to 11 plates. Remainder were discarded.",
-              "completionLinks": ""
-            },
-            {
-              "id": "mlzsbers3079xt5uxke",
-              "title": "Order DC reagents",
-              "description": "",
-              "priority": "medium",
-              "completed": true,
-              "createdAt": "2026-02-23T23:05:16.936Z",
-              "completedAt": "2026-02-24T22:52:24.979Z",
-              "completionNotes": "Purchase made ~1800USD",
-              "completionLinks": ""
-            }
-          ]
-        },
-        {
           "id": "ml73ek4elyct5g4tg9p",
           "title": "Troubleshooting with Hamid and Juliette",
           "description": "",
@@ -4277,17 +4202,6 @@
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "ml2l62osbaz3iif86w6",
-        "subtaskId": "ml4phzz2fm9u3qqf3tg",
-        "time": null,
-        "scheduledAt": "2026-02-02T05:05:34.046Z",
-        "completedOnDay": true,
-        "completedAt": "2026-02-05T23:51:17.790Z",
-        "completionNotes": "Made new TSO aliquots I will test tomorrow. Ordered More GTP and H-",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "mkn3n6kk2s3eujhd9om",
         "subtaskId": "ml8n2dop9wmkax0goo7",
         "time": null,
@@ -4306,17 +4220,6 @@
         "completedOnDay": true,
         "completedAt": "2026-02-05T21:12:28.772Z",
         "completionNotes": "Slides added to 2026 1-on-1 slide deck\n",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "ml2l62osbaz3iif86w6",
-        "subtaskId": "mla2aksayf45paorg0b",
-        "time": null,
-        "scheduledAt": "2026-02-05T23:02:33.659Z",
-        "completedOnDay": true,
-        "completedAt": "2026-02-05T23:03:21.779Z",
-        "completionNotes": "100ul of media removed and 120ul of fresh media added to 11 plates. Remainder were discarded.",
         "completionLinks": ""
       }
     ],
@@ -4979,17 +4882,6 @@
         "completedOnDay": true,
         "completedAt": "2026-02-25T22:39:54.421Z",
         "completionNotes": "Submitted to Holly\n",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "ml2l62osbaz3iif86w6",
-        "subtaskId": "mlzsbers3079xt5uxke",
-        "time": null,
-        "scheduledAt": "2026-02-23T23:05:16.936Z",
-        "completedOnDay": true,
-        "completedAt": "2026-02-24T22:52:24.979Z",
-        "completionNotes": "Purchase made ~1800USD",
         "completionLinks": ""
       }
     ],
@@ -7897,7 +7789,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:39:04.694Z",
+  "lastUpdated": "2026-03-27T17:39:13.237Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
