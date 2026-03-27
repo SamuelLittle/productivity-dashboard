@@ -2832,7 +2832,9 @@
               "createdAt": "2026-03-26T16:35:52.660Z",
               "completedAt": null,
               "completionNotes": null,
-              "completionLinks": null
+              "completionLinks": null,
+              "notes": "written i7 protocol for work with Corinne",
+              "links": ""
             },
             {
               "id": "mn975trbal7d6ceyulh",
@@ -7995,7 +7997,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-27T17:50:42.526Z",
+  "lastUpdated": "2026-03-27T17:54:06.993Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
