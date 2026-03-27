@@ -2348,6 +2348,14 @@
               "completedAt": "2026-03-24T17:36:09.026Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mn96pnxeku9c7xwmd0i",
+              "title": "Imaging D1",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-27T17:37:54.531Z"
             }
           ]
         }
@@ -5654,6 +5662,14 @@
         "completedAt": "2026-03-27T17:36:52.219Z",
         "completionNotes": "",
         "completionLinks": ""
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mlqy3dwoui2qz3anm7t",
+        "subtaskId": "mn96pnxeku9c7xwmd0i",
+        "time": null,
+        "scheduledAt": "2026-03-27T17:37:54.531Z",
+        "completedOnDay": false
       }
     ],
     "2026-03-30": [
@@ -7909,7 +7925,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:37:01.856Z",
+  "lastUpdated": "2026-03-27T17:37:54.531Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
