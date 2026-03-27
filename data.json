@@ -3487,9 +3487,12 @@
         "title": "prep slides for 1-on-1",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-26T18:20:12.682Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-27T17:36:41.817Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-03-27": [
@@ -7855,9 +7858,17 @@
       "subtaskId": "mn7p1p1sv18np87r3wo",
       "title": "Meet with Corinne",
       "completedAt": "2026-03-27T17:26:14.783Z"
+    },
+    {
+      "id": "mn7ss7plegk17z4zf2i",
+      "title": "prep slides for 1-on-1",
+      "completedAt": "2026-03-27T17:36:41.817Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:30:48.735Z",
+  "lastUpdated": "2026-03-27T17:36:41.817Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
