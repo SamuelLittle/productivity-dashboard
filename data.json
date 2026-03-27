@@ -3575,9 +3575,12 @@
         "title": "Order NK screen gRNA",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-27T17:22:40.050Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-27T20:46:23.573Z",
+        "completionNotes": "Ordered CD96 + 3x AAVS1 5 business days out\n",
+        "completionLinks": ""
       },
       {
         "id": "mn966irdu3qb7ykk0ik",
@@ -8073,9 +8076,17 @@
       "completionNotes": "Spring team presentation -> can GPR35 macrophage ko images go into Spring?",
       "completionLinks": "",
       "date": "2026-03-27"
+    },
+    {
+      "id": "mn9662b59w2yklvh2x",
+      "title": "Order NK screen gRNA",
+      "completedAt": "2026-03-27T20:46:23.574Z",
+      "completionNotes": "Ordered CD96 + 3x AAVS1 5 business days out\n",
+      "completionLinks": "",
+      "date": "2026-03-27"
     }
   ],
-  "lastUpdated": "2026-03-27T19:59:59.668Z",
+  "lastUpdated": "2026-03-27T20:46:23.574Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
