@@ -2828,9 +2828,11 @@
               "title": "Make i7 protocol",
               "description": "",
               "priority": "medium",
-              "completed": true,
+              "completed": false,
               "createdAt": "2026-03-26T16:35:52.660Z",
-              "completedAt": "2026-03-27T17:37:01.856Z"
+              "completedAt": null,
+              "completionNotes": null,
+              "completionLinks": null
             }
           ],
           "completedAt": "2026-03-27T17:37:01.856Z",
@@ -5626,7 +5628,8 @@
         "subtaskId": "mn7p21g4ctyxbjm7uri",
         "time": null,
         "scheduledAt": "2026-03-27T17:30:48.735Z",
-        "completedOnDay": false
+        "completedOnDay": false,
+        "completedAt": null
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7984,7 +7987,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-27T17:49:27.111Z",
+  "lastUpdated": "2026-03-27T17:49:38.204Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
