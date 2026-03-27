@@ -2354,8 +2354,11 @@
               "title": "Imaging D1",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:37:54.531Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:37:54.531Z",
+              "completedAt": "2026-03-27T17:38:06.068Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -5669,7 +5672,10 @@
         "subtaskId": "mn96pnxeku9c7xwmd0i",
         "time": null,
         "scheduledAt": "2026-03-27T17:37:54.531Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-27T17:38:06.068Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-03-30": [
@@ -7923,9 +7929,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-26"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mlqy3dwoui2qz3anm7t",
+      "subtaskId": "mn96pnxeku9c7xwmd0i",
+      "completedAt": "2026-03-27T17:38:06.068Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:37:54.531Z",
+  "lastUpdated": "2026-03-27T17:38:06.068Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
