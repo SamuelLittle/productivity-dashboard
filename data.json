@@ -1033,6 +1033,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-27T17:46:24.330Z"
+            },
+            {
+              "id": "mn9719rad6mmtiqmdfw",
+              "title": "Day 0 (24 hr cytokine treatment - target date)",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-27T17:46:56.038Z"
             }
           ]
         }
@@ -5647,6 +5655,16 @@
         "scheduledAt": "2026-03-27T17:46:24.330Z",
         "completedOnDay": false
       }
+    ],
+    "2026-04-21": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn9719rad6mmtiqmdfw",
+        "time": null,
+        "scheduledAt": "2026-03-27T17:46:56.038Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -7900,7 +7918,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:46:24.330Z",
+  "lastUpdated": "2026-03-27T17:46:56.038Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
