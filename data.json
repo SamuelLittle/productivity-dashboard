@@ -1049,6 +1049,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-27T17:47:29.833Z"
+            },
+            {
+              "id": "mn9734nwg8q7inrbwip",
+              "title": "D1 QC + D2 tag index (target date)",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-27T17:48:22.748Z"
             }
           ]
         }
@@ -5683,6 +5691,16 @@
         "scheduledAt": "2026-03-27T17:47:29.834Z",
         "completedOnDay": false
       }
+    ],
+    "2026-04-24": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn9734nwg8q7inrbwip",
+        "time": null,
+        "scheduledAt": "2026-03-27T17:48:22.748Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -7936,7 +7954,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:47:29.834Z",
+  "lastUpdated": "2026-03-27T17:48:22.748Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
