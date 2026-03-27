@@ -456,37 +456,6 @@
           ]
         },
         {
-          "id": "mkn5xu0po7lfqnsjdqm",
-          "title": "SMARTseq pilot using automated bead-based clean up for RNA purification.",
-          "description": "",
-          "priority": "medium",
-          "completed": false,
-          "createdAt": "2026-01-20T22:25:55.513Z",
-          "subtasks": [
-            {
-              "id": "mkn67r0mxdgt41tv9x9",
-              "title": "Make plan for initial \"hand-scale\" pilot",
-              "description": "decide which cells, what bead ratios and what protocol will work. Prepare this for Thursday to discuss with Celine",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-20T22:33:38.182Z",
-              "notes": "Corinne sent documents on slack.  Need to check these out. ",
-              "links": ""
-            },
-            {
-              "id": "mmcot41xzyp0po5uh6r",
-              "title": "Order reagents for pilot",
-              "description": "",
-              "priority": "medium",
-              "completed": true,
-              "createdAt": "2026-03-04T23:48:04.677Z",
-              "completedAt": "2026-03-04T23:48:41.010Z",
-              "completionNotes": "Ordered reagents to trade BLADE-R protocol and oli-dT bead based method",
-              "completionLinks": "https://www.biorxiv.org/content/10.1101/2025.03.27.645479v1.full.pdf"
-            }
-          ]
-        },
-        {
           "id": "mkonl6d0xs68i3hcue",
           "title": "SMARTseq debried meeting with Russell",
           "description": "",
@@ -5212,19 +5181,7 @@
         "completionLinks": ""
       }
     ],
-    "2026-03-04": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mkn5xu0po7lfqnsjdqm",
-        "subtaskId": "mmcot41xzyp0po5uh6r",
-        "time": null,
-        "scheduledAt": "2026-03-04T23:48:08.912Z",
-        "completedOnDay": true,
-        "completedAt": "2026-03-04T23:48:41.010Z",
-        "completionNotes": "Ordered reagents to trade BLADE-R protocol and oli-dT bead based method",
-        "completionLinks": "https://www.biorxiv.org/content/10.1101/2025.03.27.645479v1.full.pdf"
-      }
-    ],
+    "2026-03-04": [],
     "2026-03-09": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7940,7 +7897,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:38:06.068Z",
+  "lastUpdated": "2026-03-27T17:39:04.694Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
