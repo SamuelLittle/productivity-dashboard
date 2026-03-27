@@ -3563,9 +3563,12 @@
         "title": "Lab meeting at 11am",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-26T16:38:27.323Z",
-        "time": "11:00"
+        "time": "11:00",
+        "completedAt": "2026-03-27T19:59:47.540Z",
+        "completionNotes": "Spring team presentation -> can GPR35 macrophage ko images go into Spring?",
+        "completionLinks": ""
       },
       {
         "id": "mn9662b59w2yklvh2x",
@@ -8078,9 +8081,17 @@
       "completedAt": "2026-03-27T17:49:27.111Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "id": "mn7p5csbndcq56zpcb",
+      "title": "Lab meeting at 11am",
+      "completedAt": "2026-03-27T19:59:47.540Z",
+      "completionNotes": "Spring team presentation -> can GPR35 macrophage ko images go into Spring?",
+      "completionLinks": "",
+      "date": "2026-03-27"
     }
   ],
-  "lastUpdated": "2026-03-27T17:55:56.599Z",
+  "lastUpdated": "2026-03-27T19:59:47.540Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
