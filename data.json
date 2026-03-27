@@ -3593,6 +3593,15 @@
         "completedAt": "2026-03-27T21:03:22.814Z",
         "completionNotes": "Also Ordered SMC and HMVEC media\n",
         "completionLinks": ""
+      },
+      {
+        "id": "mn9e7d3335y06q6qw6s",
+        "title": "Write up on HMX immunology courses",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-03-27T21:07:37.599Z",
+        "time": null
       }
     ]
   },
@@ -8097,7 +8106,7 @@
       "date": "2026-03-27"
     }
   ],
-  "lastUpdated": "2026-03-27T21:03:22.814Z",
+  "lastUpdated": "2026-03-27T21:07:37.599Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
