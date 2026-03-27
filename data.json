@@ -993,6 +993,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-27T17:42:24.245Z"
+            },
+            {
+              "id": "mn96w36m4130yvqdq2p",
+              "title": "Make new treatment plates",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-27T17:42:54.238Z"
             }
           ]
         }
@@ -5561,6 +5569,16 @@
         "scheduledAt": "2026-03-27T17:42:24.245Z",
         "completedOnDay": false
       }
+    ],
+    "2026-03-31": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn96w36m4130yvqdq2p",
+        "time": null,
+        "scheduledAt": "2026-03-27T17:42:54.238Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -7814,7 +7832,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:42:24.245Z",
+  "lastUpdated": "2026-03-27T17:42:54.238Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
