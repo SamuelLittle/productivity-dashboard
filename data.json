@@ -1017,6 +1017,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-27T17:43:58.743Z"
+            },
+            {
+              "id": "mn96zi1km7mctizbo9d",
+              "title": "Thaw Cells (target date)",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-27T17:45:33.464Z"
             }
           ]
         }
@@ -5611,6 +5619,16 @@
         "scheduledAt": "2026-03-27T17:43:30.936Z",
         "completedOnDay": false
       }
+    ],
+    "2026-04-10": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn96zi1km7mctizbo9d",
+        "time": null,
+        "scheduledAt": "2026-03-27T17:45:33.464Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -7864,7 +7882,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:43:58.743Z",
+  "lastUpdated": "2026-03-27T17:45:33.464Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
