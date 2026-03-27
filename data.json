@@ -2809,7 +2809,7 @@
           "title": "BLADE-R Automation pilot 1",
           "description": "",
           "priority": "medium",
-          "completed": true,
+          "completed": false,
           "createdAt": "2026-03-26T16:35:25.695Z",
           "subtasks": [
             {
@@ -2835,9 +2835,9 @@
               "completionLinks": null
             }
           ],
-          "completedAt": "2026-03-27T17:37:01.856Z",
-          "completionNotes": "",
-          "completionLinks": ""
+          "completedAt": null,
+          "completionNotes": null,
+          "completionLinks": null
         },
         {
           "id": "mn96b0bm52iua8c95fk",
@@ -5584,10 +5584,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-03-26T16:35:04.062Z",
-        "completedOnDay": true,
-        "completedAt": "2026-03-27T17:37:01.856Z",
-        "completionNotes": "",
-        "completionLinks": ""
+        "completedOnDay": false,
+        "completedAt": null,
+        "completionNotes": null,
+        "completionLinks": null
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -7987,7 +7987,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-27T17:49:38.204Z",
+  "lastUpdated": "2026-03-27T17:49:47.792Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
