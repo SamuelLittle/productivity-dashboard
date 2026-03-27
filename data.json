@@ -3486,6 +3486,15 @@
         "completed": false,
         "createdAt": "2026-03-26T16:38:27.323Z",
         "time": "11:00"
+      },
+      {
+        "id": "mn9662b59w2yklvh2x",
+        "title": "Order NK screen gRNA",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-03-27T17:22:40.050Z",
+        "time": null
       }
     ]
   },
@@ -7791,7 +7800,7 @@
       "date": "2026-03-27"
     }
   ],
-  "lastUpdated": "2026-03-27T17:22:14.082Z",
+  "lastUpdated": "2026-03-27T17:22:40.050Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
