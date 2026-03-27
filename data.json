@@ -1735,8 +1735,11 @@
               "title": "Analyze Data",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-23T15:01:37.538Z"
+              "completed": true,
+              "createdAt": "2026-03-23T15:01:37.538Z",
+              "completedAt": "2026-03-27T17:36:52.219Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -5640,7 +5643,10 @@
         "subtaskId": "mn3bd9xe7wvu1yp0f8w",
         "time": null,
         "scheduledAt": "2026-03-26T18:20:25.321Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-27T17:36:52.219Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-03-30": [
@@ -7877,9 +7883,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-26"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3bba4xdxq4je3r865",
+      "subtaskId": "mn3bd9xe7wvu1yp0f8w",
+      "completedAt": "2026-03-27T17:36:52.219Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:36:45.300Z",
+  "lastUpdated": "2026-03-27T17:36:52.219Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
