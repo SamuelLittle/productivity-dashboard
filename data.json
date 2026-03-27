@@ -977,6 +977,15 @@
               "completionLinks": ""
             }
           ]
+        },
+        {
+          "id": "mn96ur593n4wqfraywg",
+          "title": "Fill-in-the-Gaps-Screen",
+          "description": "Follow up screen looking at IFNg/IL18/TNFa in HUVEC, HMVEC, SMC, IMR90, NHLFs and BEAS-2B\n\nAlso looking at IL36abg + IFNa",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-03-27T17:41:51.981Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [
@@ -7789,7 +7798,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:39:13.237Z",
+  "lastUpdated": "2026-03-27T17:41:51.981Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
