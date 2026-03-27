@@ -3495,6 +3495,15 @@
         "completed": false,
         "createdAt": "2026-03-27T17:22:40.050Z",
         "time": null
+      },
+      {
+        "id": "mn966irdu3qb7ykk0ik",
+        "title": "Order media for HUVEC + BEAS-2B",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-03-27T17:23:01.369Z",
+        "time": null
       }
     ]
   },
@@ -7800,7 +7809,7 @@
       "date": "2026-03-27"
     }
   ],
-  "lastUpdated": "2026-03-27T17:22:40.050Z",
+  "lastUpdated": "2026-03-27T17:23:01.369Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
