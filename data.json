@@ -1001,6 +1001,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-27T17:42:54.238Z"
+            },
+            {
+              "id": "mn96wvhzcp4p8mx2fwd",
+              "title": "Make luminex request for new treatment plates",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-27T17:43:30.935Z"
             }
           ]
         }
@@ -5578,6 +5586,14 @@
         "time": null,
         "scheduledAt": "2026-03-27T17:42:54.238Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn96wvhzcp4p8mx2fwd",
+        "time": null,
+        "scheduledAt": "2026-03-27T17:43:30.936Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -7832,7 +7848,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:42:54.238Z",
+  "lastUpdated": "2026-03-27T17:43:30.936Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
