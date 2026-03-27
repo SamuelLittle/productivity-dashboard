@@ -2752,7 +2752,7 @@
           "title": "Monocyte Pilots",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-24T00:19:35.061Z",
           "subtasks": [
             {
@@ -2762,7 +2762,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-24T00:20:06.744Z",
-              "completedAt": "2026-03-24T18:50:58.823Z",
+              "completedAt": "2026-03-27T17:49:27.111Z",
               "completionNotes": "isolated 5M monocytes from w/m 62 y/o PBMCS",
               "completionLinks": ""
             },
@@ -2773,7 +2773,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-24T00:20:57.210Z",
-              "completedAt": "2026-03-25T17:55:58.228Z",
+              "completedAt": "2026-03-27T17:49:27.111Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2784,7 +2784,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-24T00:22:01.870Z",
-              "completedAt": "2026-03-27T17:26:09.063Z",
+              "completedAt": "2026-03-27T17:49:27.111Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2795,11 +2795,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-26T16:03:23.060Z",
-              "completedAt": "2026-03-26T16:03:46.278Z",
+              "completedAt": "2026-03-27T17:49:27.111Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-03-27T17:49:27.111Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mn7p0zy5airpuqwqq5n",
@@ -7970,9 +7973,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-26"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn3vatckm788ja3rlba",
+      "subtaskId": null,
+      "title": "Monocyte Pilots",
+      "completedAt": "2026-03-27T17:49:27.111Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-27T17:48:51.711Z",
+  "lastUpdated": "2026-03-27T17:49:27.111Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
