@@ -2816,8 +2816,11 @@
               "title": "Meet with Corinne",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-26T16:35:36.592Z"
+              "completed": true,
+              "createdAt": "2026-03-26T16:35:36.592Z",
+              "completedAt": "2026-03-27T17:26:14.783Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mn7p21g4ctyxbjm7uri",
@@ -5605,7 +5608,8 @@
         "subtaskId": "mn7p1p1sv18np87r3wo",
         "time": null,
         "scheduledAt": "2026-03-26T16:35:36.593Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-27T17:26:14.783Z"
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -7817,9 +7821,16 @@
       "subtaskId": "mn3vdymm9v35gspd2da",
       "title": "SMARTseq with extracted RNA",
       "completedAt": "2026-03-27T17:26:09.064Z"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn7p0zy5airpuqwqq5n",
+      "subtaskId": "mn7p1p1sv18np87r3wo",
+      "title": "Meet with Corinne",
+      "completedAt": "2026-03-27T17:26:14.783Z"
     }
   ],
-  "lastUpdated": "2026-03-27T17:26:09.064Z",
+  "lastUpdated": "2026-03-27T17:26:14.783Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
