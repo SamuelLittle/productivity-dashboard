@@ -3478,9 +3478,12 @@
         "title": "run screentape for PCR validation",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-26T16:34:35.257Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-27T17:36:45.300Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mn7ss7plegk17z4zf2i",
@@ -7866,9 +7869,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-26"
+    },
+    {
+      "id": "mn7p0dq0ccep6fupxc",
+      "title": "run screentape for PCR validation",
+      "completedAt": "2026-03-27T17:36:45.300Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:36:41.817Z",
+  "lastUpdated": "2026-03-27T17:36:45.300Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
