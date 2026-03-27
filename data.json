@@ -1009,6 +1009,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-27T17:43:30.935Z"
+            },
+            {
+              "id": "mn96xgyf0c5om039im56",
+              "title": "Make cell thaw protocol and Culture timeline",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-03-27T17:43:58.743Z"
             }
           ]
         }
@@ -5576,6 +5584,14 @@
         "time": null,
         "scheduledAt": "2026-03-27T17:42:24.245Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn96xgyf0c5om039im56",
+        "time": null,
+        "scheduledAt": "2026-03-27T17:43:58.743Z",
+        "completedOnDay": false
       }
     ],
     "2026-03-31": [
@@ -7848,7 +7864,7 @@
       "date": "2026-03-26"
     }
   ],
-  "lastUpdated": "2026-03-27T17:43:30.936Z",
+  "lastUpdated": "2026-03-27T17:43:58.743Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
