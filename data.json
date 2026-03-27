@@ -2857,6 +2857,15 @@
           "completed": false,
           "createdAt": "2026-03-27T17:26:30.754Z",
           "subtasks": []
+        },
+        {
+          "id": "mn97b0v2zsegyrhtwhh",
+          "title": "Full plate BLADE-R prep by hand",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-03-27T17:54:31.070Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -5585,6 +5594,14 @@
         "time": null,
         "scheduledAt": "2026-03-27T17:26:30.754Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mn97b0v2zsegyrhtwhh",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-03-27T17:54:31.070Z",
+        "completedOnDay": false
       }
     ],
     "2026-03-26": [
@@ -5725,7 +5742,6 @@
         "completedOnDay": false
       }
     ],
-    "2026-04-02": [],
     "2026-04-03": [
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -7997,7 +8013,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-03-27T17:54:06.993Z",
+  "lastUpdated": "2026-03-27T17:54:31.070Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
