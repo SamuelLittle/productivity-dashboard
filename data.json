@@ -2784,8 +2784,11 @@
               "title": "SMARTseq with extracted RNA",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-24T00:22:01.870Z"
+              "completed": true,
+              "createdAt": "2026-03-24T00:22:01.870Z",
+              "completedAt": "2026-03-27T17:26:09.063Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mn7nw94k4x27jckz55u",
@@ -7807,9 +7810,16 @@
       "completionNotes": "Good Meeting:\n- Re-do PCR with adjusted touchdown parameters for OR51S\n- Prep for plate scale BLADE-R -> talk to Mark and see what his sequencing schedule is -> make schedule to have samples ready for sequencing -> contact Yuxin to prepare pilot sequencing\n- Cytokine screen fill in the gaps screen -> order all reagents -> Make instrument bookings -> treatment plate making plan -> luminex submission -> Cell thaw + passage -> screen\n-NK cell screen -> reorder gRNAs -> killing assay with KO cells\n",
       "completionLinks": "",
       "date": "2026-03-27"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn3vatckm788ja3rlba",
+      "subtaskId": "mn3vdymm9v35gspd2da",
+      "title": "SMARTseq with extracted RNA",
+      "completedAt": "2026-03-27T17:26:09.064Z"
     }
   ],
-  "lastUpdated": "2026-03-27T17:23:01.369Z",
+  "lastUpdated": "2026-03-27T17:26:09.064Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
