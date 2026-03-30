@@ -3606,6 +3606,17 @@
         "completionNotes": "",
         "completionLinks": "https://docs.google.com/document/d/1G92V7xYlfoN1DuLArLsGF14CLVNriNdbqbT920gLWBE/edit?tab=t.0"
       }
+    ],
+    "2026-03-31": [
+      {
+        "id": "mndkdh5rq15dk5cnql8",
+        "title": "slide deck for meeting with Baptiste and Mayra over to Celine",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-03-30T19:11:25.225Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -8117,7 +8128,7 @@
       "date": "2026-03-27"
     }
   ],
-  "lastUpdated": "2026-03-30T01:07:34.714Z",
+  "lastUpdated": "2026-03-30T19:11:25.225Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
