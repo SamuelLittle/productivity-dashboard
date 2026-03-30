@@ -2828,11 +2828,11 @@
               "title": "Make i7 protocol",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-03-26T16:35:52.660Z",
-              "completedAt": null,
-              "completionNotes": null,
-              "completionLinks": null,
+              "completedAt": "2026-03-30T20:27:15.189Z",
+              "completionNotes": "",
+              "completionLinks": "https://docs.google.com/document/d/1XFbzTSYWXlQD_OVSV3qUKVv7cw58oMdlFg4kAn6eMzM/edit?usp=sharing",
               "notes": "written i7 protocol for work with Corinne",
               "links": ""
             },
@@ -5677,8 +5677,10 @@
         "subtaskId": "mn7p21g4ctyxbjm7uri",
         "time": null,
         "scheduledAt": "2026-03-27T17:30:48.735Z",
-        "completedOnDay": false,
-        "completedAt": null
+        "completedOnDay": true,
+        "completedAt": "2026-03-30T20:27:15.189Z",
+        "completionNotes": "",
+        "completionLinks": "https://docs.google.com/document/d/1XFbzTSYWXlQD_OVSV3qUKVv7cw58oMdlFg4kAn6eMzM/edit?usp=sharing"
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -8126,9 +8128,18 @@
       "completionNotes": "",
       "completionLinks": "https://docs.google.com/document/d/1G92V7xYlfoN1DuLArLsGF14CLVNriNdbqbT920gLWBE/edit?tab=t.0",
       "date": "2026-03-27"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn7p0zy5airpuqwqq5n",
+      "subtaskId": "mn7p21g4ctyxbjm7uri",
+      "completedAt": "2026-03-30T20:27:15.189Z",
+      "completionNotes": "",
+      "completionLinks": "https://docs.google.com/document/d/1XFbzTSYWXlQD_OVSV3qUKVv7cw58oMdlFg4kAn6eMzM/edit?usp=sharing",
+      "date": "2026-03-30"
     }
   ],
-  "lastUpdated": "2026-03-30T19:11:25.225Z",
+  "lastUpdated": "2026-03-30T20:27:15.189Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
