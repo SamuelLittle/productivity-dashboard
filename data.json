@@ -5705,9 +5705,7 @@
         "time": null,
         "scheduledAt": "2026-03-30T01:06:57.654Z",
         "completedOnDay": false
-      }
-    ],
-    "2026-03-31": [
+      },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
         "taskId": "mn97b0v2zsegyrhtwhh",
@@ -5715,7 +5713,9 @@
         "time": null,
         "scheduledAt": "2026-03-27T17:55:56.599Z",
         "completedOnDay": false
-      },
+      }
+    ],
+    "2026-03-31": [
       {
         "projectId": "mmfjn4b1w85dvswipdk",
         "taskId": "mn97b0v2zsegyrhtwhh",
