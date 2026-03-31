@@ -2871,8 +2871,11 @@
               "title": "remake all reagents",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:54:40.396Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:54:40.396Z",
+              "completedAt": "2026-03-31T00:10:46.026Z",
+              "completionNotes": "Started remaking reagents - will finish after isolating monocytes tomorrow morning\n",
+              "completionLinks": ""
             },
             {
               "id": "mn97bgc6ltz7vsoinhr",
@@ -5712,7 +5715,10 @@
         "subtaskId": "mn97b824n3uhy6ekzq",
         "time": null,
         "scheduledAt": "2026-03-27T17:55:56.599Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-31T00:10:46.025Z",
+        "completionNotes": "Started remaking reagents - will finish after isolating monocytes tomorrow morning\n",
+        "completionLinks": ""
       }
     ],
     "2026-03-31": [
@@ -8137,9 +8143,18 @@
       "completionNotes": "",
       "completionLinks": "https://docs.google.com/document/d/1XFbzTSYWXlQD_OVSV3qUKVv7cw58oMdlFg4kAn6eMzM/edit?usp=sharing",
       "date": "2026-03-30"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn97b0v2zsegyrhtwhh",
+      "subtaskId": "mn97b824n3uhy6ekzq",
+      "completedAt": "2026-03-31T00:10:46.026Z",
+      "completionNotes": "Started remaking reagents - will finish after isolating monocytes tomorrow morning\n",
+      "completionLinks": "",
+      "date": "2026-03-30"
     }
   ],
-  "lastUpdated": "2026-03-30T20:27:15.189Z",
+  "lastUpdated": "2026-03-31T00:10:46.026Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
