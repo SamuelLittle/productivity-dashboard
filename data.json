@@ -3622,6 +3622,15 @@
         "completedAt": "2026-03-31T16:17:15.945Z",
         "completionNotes": "",
         "completionLinks": "https://docs.google.com/presentation/d/1Meowla-URtvYa5RHoUMQXdkpJhmPgNymVevBmhif8SY/edit?usp=sharing"
+      },
+      {
+        "id": "mneub14r96s5xolqg6k",
+        "title": "regenerate TREX1 plots",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-03-31T16:37:13.468Z",
+        "time": null
       }
     ]
   },
@@ -8165,7 +8174,7 @@
       "date": "2026-03-31"
     }
   ],
-  "lastUpdated": "2026-03-31T16:17:15.945Z",
+  "lastUpdated": "2026-03-31T16:37:13.468Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
