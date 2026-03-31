@@ -2882,8 +2882,11 @@
               "title": "thaw PBMCs and isolate monocytes",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:54:51.126Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:54:51.126Z",
+              "completedAt": "2026-03-31T23:12:18.563Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mn97bq3tj5or2ocokyd",
@@ -5724,7 +5727,10 @@
         "subtaskId": "mn97bgc6ltz7vsoinhr",
         "time": null,
         "scheduledAt": "2026-03-27T17:55:36.885Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-31T23:12:18.563Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -8172,9 +8178,18 @@
       "completionNotes": "",
       "completionLinks": "https://docs.google.com/presentation/d/1Meowla-URtvYa5RHoUMQXdkpJhmPgNymVevBmhif8SY/edit?usp=sharing",
       "date": "2026-03-31"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn97b0v2zsegyrhtwhh",
+      "subtaskId": "mn97bgc6ltz7vsoinhr",
+      "completedAt": "2026-03-31T23:12:18.563Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-31"
     }
   ],
-  "lastUpdated": "2026-03-31T16:37:13.468Z",
+  "lastUpdated": "2026-03-31T23:12:18.563Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
