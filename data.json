@@ -3616,9 +3616,12 @@
         "title": "slide deck for meeting with Baptiste and Mayra over to Celine",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-30T19:11:25.225Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-03-31T16:17:15.945Z",
+        "completionNotes": "",
+        "completionLinks": "https://docs.google.com/presentation/d/1Meowla-URtvYa5RHoUMQXdkpJhmPgNymVevBmhif8SY/edit?usp=sharing"
       }
     ]
   },
@@ -5686,14 +5689,6 @@
         "completionLinks": "https://docs.google.com/document/d/1XFbzTSYWXlQD_OVSV3qUKVv7cw58oMdlFg4kAn6eMzM/edit?usp=sharing"
       },
       {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "ml7hsagjyud5rcxh2r",
-        "subtaskId": "mmo47c2s3okunp6n3jh",
-        "time": null,
-        "scheduledAt": "2026-03-30T01:06:57.654Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mmfjn4b1w85dvswipdk",
         "taskId": "mn97b0v2zsegyrhtwhh",
         "subtaskId": "mn97b824n3uhy6ekzq",
@@ -5830,6 +5825,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-03-31T15:57:59.593Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "ml7hsagjyud5rcxh2r",
+        "subtaskId": "mmo47c2s3okunp6n3jh",
+        "time": null,
+        "scheduledAt": "2026-03-31T15:57:59.648Z",
         "completedOnDay": false
       }
     ],
@@ -8152,9 +8155,17 @@
       "completionNotes": "Started remaking reagents - will finish after isolating monocytes tomorrow morning\n",
       "completionLinks": "",
       "date": "2026-03-30"
+    },
+    {
+      "id": "mndkdh5rq15dk5cnql8",
+      "title": "slide deck for meeting with Baptiste and Mayra over to Celine",
+      "completedAt": "2026-03-31T16:17:15.945Z",
+      "completionNotes": "",
+      "completionLinks": "https://docs.google.com/presentation/d/1Meowla-URtvYa5RHoUMQXdkpJhmPgNymVevBmhif8SY/edit?usp=sharing",
+      "date": "2026-03-31"
     }
   ],
-  "lastUpdated": "2026-03-31T15:57:59.593Z",
+  "lastUpdated": "2026-03-31T16:17:15.945Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
