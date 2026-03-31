@@ -3644,15 +3644,6 @@
     ],
     "2026-04-01": [
       {
-        "id": "mnf8ha71dgw5rq32b38",
-        "title": "image GPR35 macrophages - orchestra",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-03-31T23:13:59.774Z",
-        "time": null
-      },
-      {
         "id": "mnf8ja93jzjvkfuewv",
         "title": "pre-warm serum free media for Pete",
         "description": "",
@@ -3660,6 +3651,16 @@
         "completed": false,
         "createdAt": "2026-03-31T23:15:33.159Z",
         "time": null
+      },
+      {
+        "id": "mnf8ha71dgw5rq32b38",
+        "title": "image GPR35 macrophages - orchestra",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": "11:00",
+        "createdAt": "2026-03-31T23:13:59.774Z"
       }
     ]
   },
@@ -5867,19 +5868,19 @@
         "completedOnDay": false
       },
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-03-31T15:57:59.593Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltwpanzsdw6b96wbe",
         "taskId": "ml7hsagjyud5rcxh2r",
         "subtaskId": "mmo47c2s3okunp6n3jh",
         "time": null,
         "scheduledAt": "2026-03-31T15:57:59.648Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-03-31T23:15:54.717Z",
         "completedOnDay": false
       }
     ],
@@ -8239,7 +8240,7 @@
       "date": "2026-03-31"
     }
   ],
-  "lastUpdated": "2026-03-31T23:15:33.159Z",
+  "lastUpdated": "2026-03-31T23:15:54.767Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
