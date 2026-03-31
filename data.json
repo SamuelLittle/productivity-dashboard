@@ -2893,8 +2893,11 @@
               "title": "perform full plate scale BLADE-R",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:55:03.785Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:55:03.785Z",
+              "completedAt": "2026-03-31T23:12:54.150Z",
+              "completionNotes": "",
+              "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_eetCXeFSxZ-rna_extraction_techdev/etr_23eBHn8tSY-blade-r_pilot3_monocytesfullplate/edit"
             },
             {
               "id": "mn97bxx4s0itcq7wcu9",
@@ -5719,7 +5722,10 @@
         "subtaskId": "mn97bq3tj5or2ocokyd",
         "time": null,
         "scheduledAt": "2026-03-27T17:55:28.710Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-31T23:12:54.150Z",
+        "completionNotes": "",
+        "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_eetCXeFSxZ-rna_extraction_techdev/etr_23eBHn8tSY-blade-r_pilot3_monocytesfullplate/edit"
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -8187,9 +8193,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-31"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn97b0v2zsegyrhtwhh",
+      "subtaskId": "mn97bq3tj5or2ocokyd",
+      "completedAt": "2026-03-31T23:12:54.150Z",
+      "completionNotes": "",
+      "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_eetCXeFSxZ-rna_extraction_techdev/etr_23eBHn8tSY-blade-r_pilot3_monocytesfullplate/edit",
+      "date": "2026-03-31"
     }
   ],
-  "lastUpdated": "2026-03-31T23:12:18.563Z",
+  "lastUpdated": "2026-03-31T23:12:54.150Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
