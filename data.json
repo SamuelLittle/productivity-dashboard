@@ -2904,8 +2904,11 @@
               "title": "QC RNA",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:55:13.912Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:55:13.912Z",
+              "completedAt": "2026-03-31T23:12:59.630Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -5744,7 +5747,10 @@
         "subtaskId": "mn97bxx4s0itcq7wcu9",
         "time": null,
         "scheduledAt": "2026-03-27T17:55:47.299Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-03-31T23:12:59.630Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-04-10": [
@@ -8202,9 +8208,18 @@
       "completionNotes": "",
       "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_eetCXeFSxZ-rna_extraction_techdev/etr_23eBHn8tSY-blade-r_pilot3_monocytesfullplate/edit",
       "date": "2026-03-31"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn97b0v2zsegyrhtwhh",
+      "subtaskId": "mn97bxx4s0itcq7wcu9",
+      "completedAt": "2026-03-31T23:12:59.630Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-03-31"
     }
   ],
-  "lastUpdated": "2026-03-31T23:12:54.150Z",
+  "lastUpdated": "2026-03-31T23:12:59.630Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
