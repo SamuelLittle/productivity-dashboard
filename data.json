@@ -3648,9 +3648,12 @@
         "title": "pre-warm serum free media for Pete",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-31T23:15:33.159Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-04-01T18:42:27.903Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mnf8ha71dgw5rq32b38",
@@ -8291,9 +8294,17 @@
       "completionNotes": "- Send out surfaceome summary data\n- Set up time for NK killing assay",
       "completionLinks": "",
       "date": "2026-04-01"
+    },
+    {
+      "id": "mnf8ja93jzjvkfuewv",
+      "title": "pre-warm serum free media for Pete",
+      "completedAt": "2026-04-01T18:42:27.903Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-01"
     }
   ],
-  "lastUpdated": "2026-04-01T18:00:50.579Z",
+  "lastUpdated": "2026-04-01T18:42:27.903Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
