@@ -2846,6 +2846,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-03-27T17:50:28.583Z"
+            },
+            {
+              "id": "mngoff3wqnwnivt80u",
+              "title": "Thaw + isolate monocytes + seed in 96 wp",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-01T23:28:12.861Z"
             }
           ],
           "completedAt": null,
@@ -8340,7 +8348,7 @@
       "date": "2026-03-31"
     }
   ],
-  "lastUpdated": "2026-04-01T23:26:26.483Z",
+  "lastUpdated": "2026-04-01T23:28:12.861Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
