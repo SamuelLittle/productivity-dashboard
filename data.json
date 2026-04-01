@@ -3660,10 +3660,12 @@
         "title": "image GPR35 macrophages - orchestra",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-04-01T20:10:55.986Z",
         "time": "11:00",
-        "createdAt": "2026-03-31T23:13:59.774Z"
+        "createdAt": "2026-03-31T23:13:59.774Z",
+        "completionNotes": "Imaged at 4x -> stitch exported -> need to get these into orchestra + spring\n",
+        "completionLinks": ""
       },
       {
         "id": "mnf8kd4vffo9lb32w7n",
@@ -8302,9 +8304,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-01"
+    },
+    {
+      "id": "mnf8ha71dgw5rq32b38",
+      "title": "image GPR35 macrophages - orchestra",
+      "completedAt": "2026-04-01T20:10:55.986Z",
+      "completionNotes": "Imaged at 4x -> stitch exported -> need to get these into orchestra + spring\n",
+      "completionLinks": "",
+      "date": "2026-04-01"
     }
   ],
-  "lastUpdated": "2026-04-01T18:42:27.903Z",
+  "lastUpdated": "2026-04-01T20:10:55.986Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
