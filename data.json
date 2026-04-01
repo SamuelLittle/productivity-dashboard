@@ -991,8 +991,11 @@
               "title": "Make i7 protocol for treatment plate creating",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:42:24.245Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:42:24.245Z",
+              "completedAt": "2026-04-01T20:11:08.555Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mn96w36m4130yvqdq2p",
@@ -5907,7 +5910,10 @@
         "subtaskId": "mn96vg1gtb86b9midj",
         "time": null,
         "scheduledAt": "2026-03-27T17:42:24.245Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-01T20:11:08.554Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -8312,9 +8318,18 @@
       "completionNotes": "Imaged at 4x -> stitch exported -> need to get these into orchestra + spring\n",
       "completionLinks": "",
       "date": "2026-04-01"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "mn96vg1gtb86b9midj",
+      "completedAt": "2026-04-01T20:11:08.555Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-01"
     }
   ],
-  "lastUpdated": "2026-04-01T20:10:55.986Z",
+  "lastUpdated": "2026-04-01T20:11:08.555Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
