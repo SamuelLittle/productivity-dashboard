@@ -3667,9 +3667,12 @@
         "title": "Meet with Baptiste and Mayra",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-03-31T23:16:23.552Z",
-        "time": "10:00"
+        "time": "10:00",
+        "completedAt": "2026-04-01T18:00:50.579Z",
+        "completionNotes": "- Send out surfaceome summary data\n- Set up time for NK killing assay",
+        "completionLinks": ""
       }
     ],
     "2026-04-03": [
@@ -8280,9 +8283,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-03-31"
+    },
+    {
+      "id": "mnf8kd4vffo9lb32w7n",
+      "title": "Meet with Baptiste and Mayra",
+      "completedAt": "2026-04-01T18:00:50.579Z",
+      "completionNotes": "- Send out surfaceome summary data\n- Set up time for NK killing assay",
+      "completionLinks": "",
+      "date": "2026-04-01"
     }
   ],
-  "lastUpdated": "2026-03-31T23:18:06.533Z",
+  "lastUpdated": "2026-04-01T18:00:50.579Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
