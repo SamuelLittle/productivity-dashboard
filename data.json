@@ -2867,8 +2867,11 @@
               "title": "Thaw + isolate monocytes + seed in 96 wp",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-01T23:28:12.861Z"
+              "completed": true,
+              "createdAt": "2026-04-01T23:28:12.861Z",
+              "completedAt": "2026-04-02T23:33:57.731Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ],
           "completedAt": null,
@@ -5968,7 +5971,10 @@
         "subtaskId": "mngoff3wqnwnivt80u",
         "time": null,
         "scheduledAt": "2026-04-01T23:28:29.841Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-02T23:33:57.731Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mlld42ihacxlvsot49w",
@@ -8402,9 +8408,18 @@
       "completionNotes": "Wet run successful.  Bio-run not successful.  Needs improved ethanol removal. ",
       "completionLinks": "",
       "date": "2026-04-02"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn7p0zy5airpuqwqq5n",
+      "subtaskId": "mngoff3wqnwnivt80u",
+      "completedAt": "2026-04-02T23:33:57.731Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-02"
     }
   ],
-  "lastUpdated": "2026-04-02T23:33:41.784Z",
+  "lastUpdated": "2026-04-02T23:33:57.731Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
