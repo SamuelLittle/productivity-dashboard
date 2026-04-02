@@ -2856,8 +2856,11 @@
               "title": "Automation pilot",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:50:28.583Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:50:28.583Z",
+              "completedAt": "2026-04-02T23:33:34.732Z",
+              "completionNotes": "Wet run successful.  Bio-run not successful.  Needs improved ethanol removal. ",
+              "completionLinks": ""
             },
             {
               "id": "mngoff3wqnwnivt80u",
@@ -5930,7 +5933,10 @@
         "subtaskId": "mn975trbal7d6ceyulh",
         "time": null,
         "scheduledAt": "2026-03-30T01:07:34.714Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-02T23:33:34.731Z",
+        "completionNotes": "Wet run successful.  Bio-run not successful.  Needs improved ethanol removal. ",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -8387,9 +8393,18 @@
       "completionNotes": "-  luminex request\n- slides for COPD meeting\n- message Yuxin\n- ",
       "completionLinks": "",
       "date": "2026-04-02"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn7p0zy5airpuqwqq5n",
+      "subtaskId": "mn975trbal7d6ceyulh",
+      "completedAt": "2026-04-02T23:33:34.732Z",
+      "completionNotes": "Wet run successful.  Bio-run not successful.  Needs improved ethanol removal. ",
+      "completionLinks": "",
+      "date": "2026-04-02"
     }
   ],
-  "lastUpdated": "2026-04-02T23:32:57.892Z",
+  "lastUpdated": "2026-04-02T23:33:34.732Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
