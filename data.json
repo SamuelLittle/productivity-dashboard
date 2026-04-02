@@ -2664,9 +2664,12 @@
           "title": "1-on-1 w/ Celine",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-04-01T23:28:55.725Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-04-02T23:32:57.892Z",
+          "completionNotes": "-  luminex request\n- slides for COPD meeting\n- message Yuxin\n- ",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -5975,7 +5978,10 @@
         "subtaskId": null,
         "time": "15:00",
         "scheduledAt": "2026-04-01T23:28:55.725Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-02T23:32:57.891Z",
+        "completionNotes": "-  luminex request\n- slides for COPD meeting\n- message Yuxin\n- ",
+        "completionLinks": ""
       }
     ],
     "2026-04-03": [
@@ -8373,9 +8379,17 @@
       "completionNotes": "sent to Celine\n",
       "completionLinks": "",
       "date": "2026-03-31"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "mngogc6lnnrh4xy881",
+      "completedAt": "2026-04-02T23:32:57.892Z",
+      "completionNotes": "-  luminex request\n- slides for COPD meeting\n- message Yuxin\n- ",
+      "completionLinks": "",
+      "date": "2026-04-02"
     }
   ],
-  "lastUpdated": "2026-04-01T23:28:55.725Z",
+  "lastUpdated": "2026-04-02T23:32:57.892Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
