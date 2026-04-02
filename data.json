@@ -5981,16 +5981,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-04-03": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "ml7hsagjyud5rcxh2r",
-        "subtaskId": "mmo47c2s3okunp6n3jh",
-        "time": null,
-        "scheduledAt": "2026-04-01T23:26:26.483Z",
-        "completedOnDay": false
-      }
-    ],
     "2026-04-07": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -8422,7 +8412,7 @@
       "date": "2026-04-02"
     }
   ],
-  "lastUpdated": "2026-04-02T23:34:30.980Z",
+  "lastUpdated": "2026-04-02T23:34:46.763Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
