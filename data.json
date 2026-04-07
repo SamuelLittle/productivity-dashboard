@@ -2943,6 +2943,15 @@
               "completionLinks": ""
             }
           ]
+        },
+        {
+          "id": "mnosqgbos3c7i6hwcz",
+          "title": "BLADE-R Automation pilot 2",
+          "description": "repeat with improved ethanol removal",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-04-07T15:50:55.524Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -6021,6 +6030,16 @@
         "scheduledAt": "2026-04-02T23:34:30.980Z",
         "completedOnDay": false
       }
+    ],
+    "2026-04-08": [
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mnosqgbos3c7i6hwcz",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-07T15:50:55.525Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8469,7 +8488,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-04-07T15:50:06.382Z",
+  "lastUpdated": "2026-04-07T15:50:55.525Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
