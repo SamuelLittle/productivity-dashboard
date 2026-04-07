@@ -6059,14 +6059,6 @@
         "completedAt": "2026-04-07T23:17:57.705Z",
         "completionNotes": "14 treatment plates containing 12ul of 20x cytokines made for each plate type and placed in labelled bags at -80\n",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mlld42ihacxlvsot49w",
-        "taskId": "mnp9bhxiwag8iums7a",
-        "subtaskId": null,
-        "time": "11:00",
-        "scheduledAt": "2026-04-07T23:35:11.238Z",
-        "completedOnDay": false
       }
     ],
     "2026-04-08": [
@@ -6108,6 +6100,16 @@
         "subtaskId": "mn96xgyf0c5om039im56",
         "time": null,
         "scheduledAt": "2026-04-07T23:34:19.446Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-04-09": [
+      {
+        "projectId": "mlld42ihacxlvsot49w",
+        "taskId": "mnp9bhxiwag8iums7a",
+        "subtaskId": null,
+        "time": "11:00",
+        "scheduledAt": "2026-04-07T23:35:11.238Z",
         "completedOnDay": false
       }
     ]
