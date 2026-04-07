@@ -2676,6 +2676,15 @@
           "completedAt": "2026-04-02T23:32:57.892Z",
           "completionNotes": "-  luminex request\n- slides for COPD meeting\n- message Yuxin\n- ",
           "completionLinks": ""
+        },
+        {
+          "id": "mnp9bhxiwag8iums7a",
+          "title": "1-on-1 w/ Celine",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-04-07T23:35:11.238Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -6050,6 +6059,14 @@
         "completedAt": "2026-04-07T23:17:57.705Z",
         "completionNotes": "14 treatment plates containing 12ul of 20x cytokines made for each plate type and placed in labelled bags at -80\n",
         "completionLinks": ""
+      },
+      {
+        "projectId": "mlld42ihacxlvsot49w",
+        "taskId": "mnp9bhxiwag8iums7a",
+        "subtaskId": null,
+        "time": "11:00",
+        "scheduledAt": "2026-04-07T23:35:11.238Z",
+        "completedOnDay": false
       }
     ],
     "2026-04-08": [
@@ -8558,7 +8575,7 @@
       "date": "2026-04-07"
     }
   ],
-  "lastUpdated": "2026-04-07T23:34:44.588Z",
+  "lastUpdated": "2026-04-07T23:35:11.238Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
