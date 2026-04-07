@@ -2951,7 +2951,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-04-07T15:50:55.524Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mnosqr83l9e7q50dj2",
+              "title": "Isolate + plate Monocytes",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-07T15:51:09.652Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -8488,7 +8497,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-04-07T15:50:55.525Z",
+  "lastUpdated": "2026-04-07T15:51:09.652Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
