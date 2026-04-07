@@ -3778,10 +3778,12 @@
         "title": "Repeat Tim PCR",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-04-07T23:19:30.024Z",
         "time": null,
-        "createdAt": "2026-03-31T23:18:06.533Z"
+        "createdAt": "2026-03-31T23:18:06.533Z",
+        "completionNotes": "repeated PCR using ORS samples as negative controls. ",
+        "completionLinks": "https://docs.google.com/spreadsheets/d/1t1almgE3n8GA6oX7O8fN7asf5-fASl4cOtlcJLBgY5Y/edit?gid=0#gid=0https://docs.google.com/spreadsheets/d/1t1almgE3n8GA6oX7O8fN7asf5-fASl4cOtlcJLBgY5Y/edit?gid=0#gid=0"
       }
     ],
     "2026-04-08": [
@@ -8535,9 +8537,17 @@
       "completionNotes": "14 treatment plates containing 12ul of 20x cytokines made for each plate type and placed in labelled bags at -80\n",
       "completionLinks": "",
       "date": "2026-04-07"
+    },
+    {
+      "id": "mnf8mklhg5kcjo2j6we",
+      "title": "Repeat Tim PCR",
+      "completedAt": "2026-04-07T23:19:30.024Z",
+      "completionNotes": "repeated PCR using ORS samples as negative controls. ",
+      "completionLinks": "https://docs.google.com/spreadsheets/d/1t1almgE3n8GA6oX7O8fN7asf5-fASl4cOtlcJLBgY5Y/edit?gid=0#gid=0https://docs.google.com/spreadsheets/d/1t1almgE3n8GA6oX7O8fN7asf5-fASl4cOtlcJLBgY5Y/edit?gid=0#gid=0",
+      "date": "2026-04-07"
     }
   ],
-  "lastUpdated": "2026-04-07T23:17:57.705Z",
+  "lastUpdated": "2026-04-07T23:19:30.024Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
