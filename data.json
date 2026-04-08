@@ -1756,6 +1756,15 @@
               "completionLinks": ""
             }
           ]
+        },
+        {
+          "id": "mnql3vcskxp9mdmf0ee",
+          "title": "Killing assay pilot 2",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-04-08T21:52:56.957Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -6149,6 +6158,14 @@
         "time": null,
         "scheduledAt": "2026-04-07T23:34:18.575Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mnql3vcskxp9mdmf0ee",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-08T21:52:56.958Z",
+        "completedOnDay": false
       }
     ],
     "2026-04-09": [
@@ -6168,8 +6185,7 @@
         "scheduledAt": "2026-04-07T23:34:19.446Z",
         "completedOnDay": false
       }
-    ],
-    "2026-04-23": []
+    ]
   },
   "completedTasks": [
     {
@@ -8667,7 +8683,7 @@
       "date": "2026-04-08"
     }
   ],
-  "lastUpdated": "2026-04-08T21:52:17.440Z",
+  "lastUpdated": "2026-04-08T21:52:56.958Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
