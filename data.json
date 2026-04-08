@@ -1754,6 +1754,14 @@
               "completedAt": "2026-03-26T16:02:50.141Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mnql4eqw68afig7ys2",
+              "title": "Thaw NK cells for nucleofection",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-08T21:53:22.088Z"
             }
           ]
         }
@@ -8666,7 +8674,7 @@
       "date": "2026-04-08"
     }
   ],
-  "lastUpdated": "2026-04-08T21:53:07.969Z",
+  "lastUpdated": "2026-04-08T21:53:22.088Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
