@@ -3801,10 +3801,12 @@
         "title": "Meet with Mayra and Dan",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-04-08T16:24:08.186Z",
         "time": "09:00",
-        "createdAt": "2026-04-07T05:06:48.598Z"
+        "createdAt": "2026-04-07T05:06:48.598Z",
+        "completionNotes": "Concerns over the efficacy of fresh v frozen cells.  need to add at least one freshly isolated NK cell for comparison. ",
+        "completionLinks": ""
       },
       {
         "id": "mnp9czbyel3hgglbksm",
@@ -8611,9 +8613,17 @@
       "completionNotes": "repeated PCR using ORS samples as negative controls. ",
       "completionLinks": "https://docs.google.com/spreadsheets/d/1t1almgE3n8GA6oX7O8fN7asf5-fASl4cOtlcJLBgY5Y/edit?gid=0#gid=0https://docs.google.com/spreadsheets/d/1t1almgE3n8GA6oX7O8fN7asf5-fASl4cOtlcJLBgY5Y/edit?gid=0#gid=0",
       "date": "2026-04-07"
+    },
+    {
+      "id": "mno5q45x23a3twh7x9r",
+      "title": "Meet with Mayra and Dan",
+      "completedAt": "2026-04-08T16:24:08.187Z",
+      "completionNotes": "Concerns over the efficacy of fresh v frozen cells.  need to add at least one freshly isolated NK cell for comparison. ",
+      "completionLinks": "",
+      "date": "2026-04-08"
     }
   ],
-  "lastUpdated": "2026-04-07T23:37:48.742Z",
+  "lastUpdated": "2026-04-08T16:24:08.187Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
