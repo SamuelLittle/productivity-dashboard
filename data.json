@@ -2969,8 +2969,11 @@
               "title": "Isolate + plate Monocytes",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-07T15:51:09.652Z"
+              "completed": true,
+              "createdAt": "2026-04-07T15:51:09.652Z",
+              "completedAt": "2026-04-08T18:38:05.899Z",
+              "completionNotes": "Adjusted to DLD1 based protocol to minimize isolation requirements. \n\nOnce validated with DLD1s will pivot to monocytes.",
+              "completionLinks": ""
             },
             {
               "id": "mnosswr7xha0basljeg",
@@ -6114,7 +6117,10 @@
         "subtaskId": "mnosqr83l9e7q50dj2",
         "time": null,
         "scheduledAt": "2026-04-07T15:52:36.713Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-08T18:38:05.898Z",
+        "completionNotes": "Adjusted to DLD1 based protocol to minimize isolation requirements. \n\nOnce validated with DLD1s will pivot to monocytes.",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -8621,9 +8627,18 @@
       "completionNotes": "Concerns over the efficacy of fresh v frozen cells.  need to add at least one freshly isolated NK cell for comparison. ",
       "completionLinks": "",
       "date": "2026-04-08"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mnosqgbos3c7i6hwcz",
+      "subtaskId": "mnosqr83l9e7q50dj2",
+      "completedAt": "2026-04-08T18:38:05.899Z",
+      "completionNotes": "Adjusted to DLD1 based protocol to minimize isolation requirements. \n\nOnce validated with DLD1s will pivot to monocytes.",
+      "completionLinks": "",
+      "date": "2026-04-08"
     }
   ],
-  "lastUpdated": "2026-04-08T16:24:08.187Z",
+  "lastUpdated": "2026-04-08T18:38:05.899Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
