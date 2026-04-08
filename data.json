@@ -1802,6 +1802,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-04-08T21:55:03.595Z"
+            },
+            {
+              "id": "mnql6yhgj3drw33bmsd",
+              "title": "Flow for post nucleofection killing assay",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-08T21:55:20.980Z"
             }
           ]
         }
@@ -8714,7 +8722,7 @@
       "date": "2026-04-08"
     }
   ],
-  "lastUpdated": "2026-04-08T21:55:03.595Z",
+  "lastUpdated": "2026-04-08T21:55:20.980Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
