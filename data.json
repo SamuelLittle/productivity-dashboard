@@ -3820,11 +3820,14 @@
         "title": "Meet with Russell",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-04-07T23:36:20.446Z",
         "time": "14:00",
         "notes": "Need to make plan for SMARTseq Tech Dev",
-        "links": ""
+        "links": "",
+        "completedAt": "2026-04-08T21:52:17.440Z",
+        "completionNotes": "Need to make path forward for SMARTseq tech dev",
+        "completionLinks": ""
       },
       {
         "id": "mnp9dznkngtd854rq2",
@@ -8654,9 +8657,17 @@
       "completionNotes": "completed with DLD1 - clear RNA but obvious degradation. ",
       "completionLinks": "",
       "date": "2026-04-08"
+    },
+    {
+      "id": "mnp9czbyel3hgglbksm",
+      "title": "Meet with Russell",
+      "completedAt": "2026-04-08T21:52:17.440Z",
+      "completionNotes": "Need to make path forward for SMARTseq tech dev",
+      "completionLinks": "",
+      "date": "2026-04-08"
     }
   ],
-  "lastUpdated": "2026-04-08T21:46:06.698Z",
+  "lastUpdated": "2026-04-08T21:52:17.440Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
