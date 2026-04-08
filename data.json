@@ -3822,7 +3822,9 @@
         "priority": "medium",
         "completed": false,
         "createdAt": "2026-04-07T23:36:20.446Z",
-        "time": "14:00"
+        "time": "14:00",
+        "notes": "Need to make plan for SMARTseq Tech Dev",
+        "links": ""
       },
       {
         "id": "mnp9dznkngtd854rq2",
@@ -8654,7 +8656,7 @@
       "date": "2026-04-08"
     }
   ],
-  "lastUpdated": "2026-04-08T20:52:01.896Z",
+  "lastUpdated": "2026-04-08T21:46:06.698Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
