@@ -1786,6 +1786,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-04-08T21:54:32.556Z"
+            },
+            {
+              "id": "mnql6e95u4m4vx00nj",
+              "title": "set up killing assay",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-08T21:54:54.761Z"
             }
           ]
         }
@@ -8698,7 +8706,7 @@
       "date": "2026-04-08"
     }
   ],
-  "lastUpdated": "2026-04-08T21:54:32.556Z",
+  "lastUpdated": "2026-04-08T21:54:54.761Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
