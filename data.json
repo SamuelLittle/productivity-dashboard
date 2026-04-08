@@ -1762,6 +1762,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-04-08T21:53:22.088Z"
+            },
+            {
+              "id": "mnql4yzu7p6q3ijhep8",
+              "title": "Nucleofect NK cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-08T21:53:48.330Z"
             }
           ]
         }
@@ -8674,7 +8682,7 @@
       "date": "2026-04-08"
     }
   ],
-  "lastUpdated": "2026-04-08T21:53:22.088Z",
+  "lastUpdated": "2026-04-08T21:53:48.330Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
