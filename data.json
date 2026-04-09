@@ -3058,9 +3058,12 @@
           "title": "BLADE-R Automation pilot 3",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-04-09T00:28:41.703Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-04-09T19:53:10.966Z",
+          "completionNotes": "Ran small scale automation pilot with improved mixing and better dead volume removal. Improved results\n",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -6299,7 +6302,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-04-09T00:28:46.633Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-09T19:53:10.962Z",
+        "completionNotes": "Ran small scale automation pilot with improved mixing and better dead volume removal. Improved results\n",
+        "completionLinks": ""
       }
     ],
     "2026-04-16": [
@@ -8827,9 +8833,17 @@
       "completionNotes": "Need to make path forward for SMARTseq tech dev",
       "completionLinks": "",
       "date": "2026-04-08"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mnqqo5t36a613oe9rmg",
+      "completedAt": "2026-04-09T19:53:10.966Z",
+      "completionNotes": "Ran small scale automation pilot with improved mixing and better dead volume removal. Improved results\n",
+      "completionLinks": "",
+      "date": "2026-04-09"
     }
   ],
-  "lastUpdated": "2026-04-09T00:29:21.941Z",
+  "lastUpdated": "2026-04-09T19:53:10.966Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8966,7 +8980,7 @@
   },
   "dailySummaries": {
     "2026-04-08": {
-      "summary": "**Daily Summary - Wednesday, April 8, 2026**\n\nMade significant progress on BLADE-R automation despite RNA degradation issues, while productive meetings with Russell and the Mayra/Dan team provided clear direction for upcoming tech development and experimental priorities. The automation pilot achieved a key milestone by successfully isolating RNA, though quality improvements are still needed.\n\n**Main Accomplishments:**\n• Completed BLADE-R Automation pilot 2 with DLD1 cells - successfully isolated RNA despite degradation issues\n• Finished \"Isolate + plate Monocytes\" and \"analyze RNA\" subtasks for SMARTSeq TechDev\n• Met with Russell to establish path forward for SMARTseq tech development\n• Met with Mayra and Dan team, identifying need for fresh NK cell comparison in killing assays\n\n**Carry Forward:**\nBLADE-R automation retry scheduled for tomorrow using fresh reagents and monocytes, focusing on improved media removal. SMARTseq tech dev requires protocol review for 10X and NEB kit integration, particularly fragmentation and RT to PCR1 transition. Killing assay pilot planning needs discussion with Celine following blood order for fresh cell isolation.",
+      "summary": "**Daily Summary - Wednesday, April 8, 2026**\n\nMade significant progress on BLADE-R automation despite RNA degradation issues, while productive meetings with Russell and the Mayra/Dan team provided clear direction for upcoming tech development and experimental priorities. The automation pilot achieved a key milestone by successfully isolating RNA, though quality improvements are still needed.\n\n**Main Accomplishments:**\nâ¢ Completed BLADE-R Automation pilot 2 with DLD1 cells - successfully isolated RNA despite degradation issues\nâ¢ Finished \"Isolate + plate Monocytes\" and \"analyze RNA\" subtasks for SMARTSeq TechDev\nâ¢ Met with Russell to establish path forward for SMARTseq tech development\nâ¢ Met with Mayra and Dan team, identifying need for fresh NK cell comparison in killing assays\n\n**Carry Forward:**\nBLADE-R automation retry scheduled for tomorrow using fresh reagents and monocytes, focusing on improved media removal. SMARTseq tech dev requires protocol review for 10X and NEB kit integration, particularly fragmentation and RT to PCR1 transition. Killing assay pilot planning needs discussion with Celine following blood order for fresh cell isolation.",
       "reflections": {
         "accomplishments": "Running the automation pilot for the BLADE-R and actually getting some RNA in the tapestation - heavily degraded but there.",
         "effort": "Making the custom buffers and putting them in the deep well plates.  I'll need to find a way to scale this so I am not doing it custom for each BLADE-R run.",
@@ -8976,5 +8990,6 @@
       "generatedAt": "2026-04-09T03:54:33.412Z",
       "editedAt": "2026-04-09T03:54:33.412Z"
     }
-  }
+  },
+  "weeklySummaries": {}
 }
