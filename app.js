@@ -243,7 +243,23 @@ function initElements() {
         rescheduleTimeToggle: document.getElementById('reschedule-time-toggle'),
         rescheduleTime: document.getElementById('reschedule-time'),
         // Theme toggle
-        themeToggle: document.getElementById('theme-toggle')
+        themeToggle: document.getElementById('theme-toggle'),
+        // EOD Summary modal
+        eodSummaryModal: document.getElementById('eod-summary-modal'),
+        eodSummaryModalTitle: document.getElementById('eod-summary-modal-title'),
+        eodStepReflect: document.getElementById('eod-step-reflect'),
+        eodStepGenerating: document.getElementById('eod-step-generating'),
+        eodStepResult: document.getElementById('eod-step-result'),
+        eodStepNoKey: document.getElementById('eod-step-no-key'),
+        eodAccomplishments: document.getElementById('eod-accomplishments'),
+        eodEffort: document.getElementById('eod-effort'),
+        eodLearned: document.getElementById('eod-learned'),
+        eodCarryForward: document.getElementById('eod-carry-forward'),
+        eodSkipBtn: document.getElementById('eod-skip-btn'),
+        eodGenerateBtn: document.getElementById('eod-generate-btn'),
+        eodSummaryText: document.getElementById('eod-summary-text'),
+        eodSaveBtn: document.getElementById('eod-save-btn'),
+        eodRegenerateBtn: document.getElementById('eod-regenerate-btn')
     });
 }
 
@@ -498,6 +514,9 @@ function migrateDataStructure() {
     if (!state.data.taskOrder) {
         state.data.taskOrder = {};
     }
+    if (!state.data.dailySummaries) {
+        state.data.dailySummaries = {};
+    }
 }
 
 async function saveData() {
@@ -726,6 +745,7 @@ function renderTodayView() {
     if (elements.todayNotesPreview) {
         elements.todayNotesPreview.innerHTML = todayNotes ? formatNotesWithLinks(todayNotes) : '';
     }
+    refreshEodButtons();
 }
 
 function renderPreviousView() {
@@ -760,6 +780,7 @@ function renderPreviousView() {
     if (elements.previousNotesPreview) {
         elements.previousNotesPreview.innerHTML = previousNotes ? formatNotesWithLinks(previousNotes) : '';
     }
+    refreshEodButtons();
 }
 
 function navigatePreviousDate(direction) {
@@ -6407,6 +6428,263 @@ function generatePdfReport(htmlContent, monthStr) {
 }
 
 // ============================================
+// END OF DAY SUMMARY
+// ============================================
+
+let eodCurrentDate = null;
+
+function openEodSummaryModal(date) {
+    const apiKey = localStorage.getItem('anthropic_api_key');
+    eodCurrentDate = date;
+
+    // Update modal title with date
+    elements.eodSummaryModalTitle.textContent = `End of Day Summary — ${formatDate(date)}`;
+
+    // Clear reflection fields
+    elements.eodAccomplishments.value = '';
+    elements.eodEffort.value = '';
+    elements.eodLearned.value = '';
+    elements.eodCarryForward.value = '';
+
+    // Pre-fill from existing saved reflections if available
+    const existing = state.data.dailySummaries?.[date];
+    if (existing?.reflections) {
+        elements.eodAccomplishments.value = existing.reflections.accomplishments || '';
+        elements.eodEffort.value = existing.reflections.effort || '';
+        elements.eodLearned.value = existing.reflections.learned || '';
+        elements.eodCarryForward.value = existing.reflections.carryForward || '';
+    }
+
+    if (!apiKey) {
+        showEodStep('no-key');
+    } else if (existing?.summary) {
+        // Show existing summary in result step for easy re-editing
+        elements.eodSummaryText.value = existing.summary;
+        showEodStep('result');
+    } else {
+        showEodStep('reflect');
+    }
+
+    elements.eodSummaryModal.classList.remove('hidden');
+}
+
+function showEodStep(step) {
+    elements.eodStepReflect.classList.add('hidden');
+    elements.eodStepGenerating.classList.add('hidden');
+    elements.eodStepResult.classList.add('hidden');
+    elements.eodStepNoKey.classList.add('hidden');
+
+    if (step === 'reflect') elements.eodStepReflect.classList.remove('hidden');
+    else if (step === 'generating') elements.eodStepGenerating.classList.remove('hidden');
+    else if (step === 'result') elements.eodStepResult.classList.remove('hidden');
+    else if (step === 'no-key') elements.eodStepNoKey.classList.remove('hidden');
+}
+
+function gatherDayContext(date) {
+    const tasks = getTasksForDate(date, true);
+    const completedTasks = tasks.filter(t => t.completedOnDay || t.completed);
+
+    const taskDetails = completedTasks.map(t => {
+        const detail = { title: t.title, isSubtask: t.isSubtask || false };
+        if (t.projectName) detail.project = t.projectName;
+        if (t.completionNotes) detail.notes = t.completionNotes;
+        if (t.description) detail.description = t.description;
+
+        // Collect completed subtasks for this task
+        if (!t.isSubtask && !t.isStandalone && t.subtasks?.length) {
+            detail.completedSubtasks = t.subtasks
+                .filter(st => {
+                    // Check if subtask was completed on this specific day
+                    const schedRef = state.data.scheduledItems?.[date]?.find(
+                        r => r.projectId === t.projectId && r.taskId === t.id && r.subtaskId === st.id
+                    );
+                    return schedRef?.completedOnDay || st.completed;
+                })
+                .map(st => st.title);
+        }
+        return detail;
+    });
+
+    // Progress updates from this day
+    const progressUpdates = [];
+    (state.data.projects || []).forEach(proj => {
+        (proj.progressUpdates || []).forEach(upd => {
+            if (upd.date && upd.date.startsWith(date)) {
+                progressUpdates.push({ project: proj.name, text: upd.text });
+            }
+        });
+    });
+
+    const dailyNotes = state.data.dailyNotes?.[date] || '';
+    const incompleteTasks = tasks.filter(t => !(t.completedOnDay || t.completed));
+
+    return { date, taskDetails, progressUpdates, dailyNotes, incompleteTasks };
+}
+
+function buildEodPrompt(context, reflections) {
+    const dateFormatted = formatDate(context.date);
+    let prompt = `You are helping someone write a concise end-of-day summary for ${dateFormatted}.\n\n`;
+
+    prompt += `## Completed Work\n`;
+    if (context.taskDetails.length === 0) {
+        prompt += `No tasks were recorded as completed.\n`;
+    } else {
+        context.taskDetails.forEach(t => {
+            const prefix = t.isSubtask ? '  - [subtask]' : '-';
+            const projectTag = t.project ? ` [${t.project}]` : '';
+            prompt += `${prefix} ${t.title}${projectTag}\n`;
+            if (t.notes) prompt += `  Notes: ${t.notes}\n`;
+            if (t.description) prompt += `  Description: ${t.description}\n`;
+            if (t.completedSubtasks?.length) {
+                t.completedSubtasks.forEach(st => { prompt += `    - ${st}\n`; });
+            }
+        });
+    }
+
+    if (context.progressUpdates.length > 0) {
+        prompt += `\n## Project Progress Updates\n`;
+        context.progressUpdates.forEach(u => {
+            prompt += `- [${u.project}] ${u.text}\n`;
+        });
+    }
+
+    if (context.dailyNotes) {
+        prompt += `\n## Daily Notes\n${context.dailyNotes}\n`;
+    }
+
+    if (context.incompleteTasks.length > 0) {
+        prompt += `\n## Incomplete / Carry-Forward\n`;
+        context.incompleteTasks.forEach(t => {
+            prompt += `- ${t.title}${t.projectName ? ` [${t.projectName}]` : ''}\n`;
+        });
+    }
+
+    const hasReflections = reflections && Object.values(reflections).some(v => v.trim());
+    if (hasReflections) {
+        prompt += `\n## Reflection Notes\n`;
+        if (reflections.accomplishments) prompt += `Biggest accomplishments: ${reflections.accomplishments}\n`;
+        if (reflections.effort) prompt += `Took more effort than expected: ${reflections.effort}\n`;
+        if (reflections.learned) prompt += `Learned / decided / unblocked: ${reflections.learned}\n`;
+        if (reflections.carryForward) prompt += `Carry forward: ${reflections.carryForward}\n`;
+    }
+
+    prompt += `\n---\n`;
+    prompt += `Write a concise daily summary with this structure:\n`;
+    prompt += `1. A short overview paragraph (2-4 sentences) summarizing the day\n`;
+    prompt += `2. A bullet list of main accomplishments (be specific, use task names)\n`;
+    prompt += `3. A short "Carry Forward" section only if there are meaningful items to note\n\n`;
+    prompt += `Rules:\n`;
+    prompt += `- Grounded in the actual completed work listed above\n`;
+    prompt += `- Concise and concrete — no filler phrases\n`;
+    prompt += `- Professional but natural tone\n`;
+    prompt += `- Do not invent accomplishments not mentioned in the data\n`;
+    prompt += `- If no tasks were completed, still produce a useful reflection based on the notes\n`;
+    prompt += `- Plain text only, no markdown headers\n`;
+
+    return prompt;
+}
+
+async function runEodGenerate(skipReflections = false) {
+    const apiKey = localStorage.getItem('anthropic_api_key');
+    if (!apiKey) {
+        showToast('Please configure your Anthropic API key first', 'error');
+        return;
+    }
+
+    const reflections = skipReflections ? {} : {
+        accomplishments: elements.eodAccomplishments.value.trim(),
+        effort: elements.eodEffort.value.trim(),
+        learned: elements.eodLearned.value.trim(),
+        carryForward: elements.eodCarryForward.value.trim()
+    };
+
+    showEodStep('generating');
+
+    try {
+        const context = gatherDayContext(eodCurrentDate);
+        const prompt = buildEodPrompt(context, reflections);
+        const summary = await callClaudeApi(apiKey, prompt);
+
+        elements.eodSummaryText.value = summary;
+
+        // Store reflections on state for saving later
+        elements.eodSummaryModal.dataset.reflections = JSON.stringify(skipReflections ? {} : {
+            accomplishments: elements.eodAccomplishments.value.trim(),
+            effort: elements.eodEffort.value.trim(),
+            learned: elements.eodLearned.value.trim(),
+            carryForward: elements.eodCarryForward.value.trim()
+        });
+
+        showEodStep('result');
+    } catch (error) {
+        console.error('EOD summary error:', error);
+        showToast(error.message || 'Failed to generate summary', 'error');
+        showEodStep('reflect');
+    }
+}
+
+async function saveEodSummary() {
+    const summary = elements.eodSummaryText.value.trim();
+    if (!summary) {
+        showToast('Summary is empty', 'error');
+        return;
+    }
+
+    let reflections = {};
+    try {
+        reflections = JSON.parse(elements.eodSummaryModal.dataset.reflections || '{}');
+    } catch (_) {}
+
+    if (!state.data.dailySummaries) state.data.dailySummaries = {};
+
+    const existing = state.data.dailySummaries[eodCurrentDate] || {};
+    state.data.dailySummaries[eodCurrentDate] = {
+        summary,
+        reflections: Object.keys(reflections).length ? reflections : (existing.reflections || {}),
+        generatedAt: existing.generatedAt || new Date().toISOString(),
+        editedAt: new Date().toISOString()
+    };
+
+    await saveData();
+    closeAllModals();
+    showToast('Summary saved', 'success');
+
+    // Update button label if visible
+    updateEodButtonLabel(eodCurrentDate);
+}
+
+function updateEodButtonLabel(date) {
+    const today = getToday();
+    if (date === today && elements.eodSummaryModal) {
+        const btn = document.getElementById('today-eod-summary-btn');
+        if (btn && state.data.dailySummaries?.[date]) {
+            btn.classList.add('btn-has-summary');
+            btn.title = 'View / edit today\'s summary';
+        }
+    }
+}
+
+function refreshEodButtons() {
+    if (!state.data) return;
+    const today = getToday();
+    const prevDate = state.selectedPreviousDate;
+
+    const todayBtn = document.getElementById('today-eod-summary-btn');
+    if (todayBtn) {
+        const hasSummary = !!state.data.dailySummaries?.[today]?.summary;
+        todayBtn.classList.toggle('btn-has-summary', hasSummary);
+        todayBtn.title = hasSummary ? "View / edit today's summary" : 'Create end of day summary';
+    }
+
+    const prevBtn = document.getElementById('previous-eod-summary-btn');
+    if (prevBtn && prevDate) {
+        const hasSummary = !!state.data.dailySummaries?.[prevDate]?.summary;
+        prevBtn.classList.toggle('btn-has-summary', hasSummary);
+        prevBtn.title = hasSummary ? 'View / edit summary' : 'Create end of day summary';
+    }
+}
+
+// ============================================
 // EVENT LISTENERS
 // ============================================
 
@@ -6578,6 +6856,24 @@ function initEventListeners() {
 
     // Task detail save button
     elements.taskDetailSaveBtn?.addEventListener('click', saveTaskNotes);
+
+    // EOD Summary
+    document.getElementById('today-eod-summary-btn')?.addEventListener('click', () => openEodSummaryModal(getToday()));
+    document.getElementById('previous-eod-summary-btn')?.addEventListener('click', () => {
+        const date = state.selectedPreviousDate || getYesterday();
+        openEodSummaryModal(date);
+    });
+    document.getElementById('day-detail-eod-btn')?.addEventListener('click', () => {
+        const date = state.selectedDate;
+        if (date) {
+            elements.dayDetailModal.classList.add('hidden');
+            openEodSummaryModal(date);
+        }
+    });
+    elements.eodGenerateBtn?.addEventListener('click', () => runEodGenerate(false));
+    elements.eodSkipBtn?.addEventListener('click', () => runEodGenerate(true));
+    elements.eodSaveBtn?.addEventListener('click', saveEodSummary);
+    elements.eodRegenerateBtn?.addEventListener('click', () => showEodStep('reflect'));
 
     // Theme toggle
     elements.themeToggle?.addEventListener('click', toggleTheme);

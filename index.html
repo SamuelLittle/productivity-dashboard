@@ -141,13 +141,21 @@
                     <div id="view-today" class="view active">
                         <div class="view-header">
                             <h2>Today's Tasks</h2>
-                            <button id="add-task-btn" class="btn btn-primary">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="12" y1="5" x2="12" y2="19"/>
-                                    <line x1="5" y1="12" x2="19" y2="12"/>
-                                </svg>
-                                Add Task
-                            </button>
+                            <div class="view-header-actions">
+                                <button id="today-eod-summary-btn" class="btn btn-secondary btn-sm">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                                    </svg>
+                                    End of Day Summary
+                                </button>
+                                <button id="add-task-btn" class="btn btn-primary">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                    Add Task
+                                </button>
+                            </div>
                         </div>
                         <div id="today-tasks" class="task-list">
                             <!-- Tasks will be rendered here -->
@@ -181,6 +189,13 @@
                     <div id="view-previous" class="view">
                         <div class="view-header">
                             <h2 id="previous-view-title">Previous Day</h2>
+                            <div class="view-header-actions">
+                            <button id="previous-eod-summary-btn" class="btn btn-secondary btn-sm">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                                </svg>
+                                End of Day Summary
+                            </button>
                             <div class="previous-date-picker">
                                 <button id="previous-date-prev" class="btn btn-ghost btn-icon" title="Previous Day">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -193,6 +208,7 @@
                                         <polyline points="9 18 15 12 9 6"/>
                                     </svg>
                                 </button>
+                            </div>
                             </div>
                         </div>
                         <div id="previous-tasks" class="task-list">
@@ -803,7 +819,15 @@
                             Notes
                         </label>
                         <textarea id="day-detail-notes" class="day-notes-textarea" rows="3" placeholder="Add notes for this day..."></textarea>
-                        <button id="day-detail-save-notes" class="btn btn-secondary btn-sm">Save Notes</button>
+                        <div class="day-notes-footer">
+                            <button id="day-detail-save-notes" class="btn btn-secondary btn-sm">Save Notes</button>
+                            <button id="day-detail-eod-btn" class="btn btn-secondary btn-sm">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                                </svg>
+                                End of Day Summary
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -937,6 +961,80 @@
         <div id="loading" class="loading-overlay hidden">
             <div class="spinner"></div>
             <p>Loading...</p>
+        </div>
+
+        <!-- End of Day Summary Modal -->
+        <div id="eod-summary-modal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content modal-lg">
+                <div class="modal-header">
+                    <h3 id="eod-summary-modal-title">End of Day Summary</h3>
+                    <button class="modal-close">&times;</button>
+                </div>
+
+                <!-- Step 1: Reflection prompts -->
+                <div id="eod-step-reflect" class="eod-step">
+                    <p class="eod-step-intro">Answer a few quick questions or skip to generate from your task data alone.</p>
+                    <div class="form-group">
+                        <label class="form-label">Biggest accomplishments today</label>
+                        <textarea id="eod-accomplishments" class="form-input eod-reflection-input" rows="2" placeholder="What did you actually get done?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">What took more effort than expected?</label>
+                        <textarea id="eod-effort" class="form-input eod-reflection-input" rows="2" placeholder="Anything that was harder or slower than anticipated?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Anything learned, decided, or unblocked?</label>
+                        <textarea id="eod-learned" class="form-input eod-reflection-input" rows="2" placeholder="Insights, decisions made, blockers resolved..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Anything to carry forward?</label>
+                        <textarea id="eod-carry-forward" class="form-input eod-reflection-input" rows="2" placeholder="What needs to move to tomorrow or next time?"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ghost modal-cancel">Cancel</button>
+                        <button type="button" id="eod-skip-btn" class="btn btn-secondary">Skip &amp; Generate from Tasks</button>
+                        <button type="button" id="eod-generate-btn" class="btn btn-primary">Generate Summary</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Generating -->
+                <div id="eod-step-generating" class="eod-step hidden">
+                    <div class="eod-generating">
+                        <div class="eod-spinner"></div>
+                        <p>Generating your summary...</p>
+                    </div>
+                </div>
+
+                <!-- Step 3: Review & Save -->
+                <div id="eod-step-result" class="eod-step hidden">
+                    <p class="eod-step-intro">Review and edit your summary before saving.</p>
+                    <div class="form-group">
+                        <textarea id="eod-summary-text" class="form-input eod-summary-textarea" rows="14"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="eod-regenerate-btn" class="btn btn-ghost">Regenerate</button>
+                        <button type="button" class="btn btn-ghost modal-cancel">Discard</button>
+                        <button type="button" id="eod-save-btn" class="btn btn-primary">Save Summary</button>
+                    </div>
+                </div>
+
+                <!-- No API key warning -->
+                <div id="eod-step-no-key" class="eod-step hidden">
+                    <div class="eod-no-key">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" y1="8" x2="12" y2="12"/>
+                            <line x1="12" y1="16" x2="12.01" y2="16"/>
+                        </svg>
+                        <p>No Anthropic API key configured.</p>
+                        <p class="eod-no-key-hint">Add your API key via the Export panel to enable AI summaries.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ghost modal-cancel">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Toast Notifications -->

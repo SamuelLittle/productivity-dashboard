@@ -2626,3 +2626,97 @@ body {
 .project-mini-calendar td.empty {
     color: var(--color-text-muted);
 }
+
+/* ============================================
+   END OF DAY SUMMARY
+   ============================================ */
+
+.view-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.eod-step {
+    padding: 24px;
+}
+
+.eod-step-intro {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.eod-reflection-input {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.eod-summary-textarea {
+    resize: vertical;
+    min-height: 280px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.eod-generating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 24px;
+    gap: 16px;
+    color: var(--color-text-secondary);
+}
+
+.eod-spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: eod-spin 0.8s linear infinite;
+}
+
+@keyframes eod-spin {
+    to { transform: rotate(360deg); }
+}
+
+.eod-no-key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 24px;
+    gap: 12px;
+    color: var(--color-text-secondary);
+}
+
+.eod-no-key svg {
+    opacity: 0.4;
+}
+
+.eod-no-key p {
+    margin: 0;
+}
+
+.eod-no-key-hint {
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+/* Day notes footer row */
+.day-notes-footer {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+/* Existing summary indicator on EOD button */
+.btn-has-summary {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
