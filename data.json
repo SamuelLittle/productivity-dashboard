@@ -8963,5 +8963,18 @@
       "mklvxbuaoylqrcl5sra",
       "mkmt9zjzsdaha14yg"
     ]
+  },
+  "dailySummaries": {
+    "2026-04-08": {
+      "summary": "**Daily Summary - Wednesday, April 8, 2026**\n\nMade significant progress on BLADE-R automation despite RNA degradation issues, while productive meetings with Russell and the Mayra/Dan team provided clear direction for upcoming tech development and experimental priorities. The automation pilot achieved a key milestone by successfully isolating RNA, though quality improvements are still needed.\n\n**Main Accomplishments:**\n• Completed BLADE-R Automation pilot 2 with DLD1 cells - successfully isolated RNA despite degradation issues\n• Finished \"Isolate + plate Monocytes\" and \"analyze RNA\" subtasks for SMARTSeq TechDev\n• Met with Russell to establish path forward for SMARTseq tech development\n• Met with Mayra and Dan team, identifying need for fresh NK cell comparison in killing assays\n\n**Carry Forward:**\nBLADE-R automation retry scheduled for tomorrow using fresh reagents and monocytes, focusing on improved media removal. SMARTseq tech dev requires protocol review for 10X and NEB kit integration, particularly fragmentation and RT to PCR1 transition. Killing assay pilot planning needs discussion with Celine following blood order for fresh cell isolation.",
+      "reflections": {
+        "accomplishments": "Running the automation pilot for the BLADE-R and actually getting some RNA in the tapestation - heavily degraded but there.",
+        "effort": "Making the custom buffers and putting them in the deep well plates.  I'll need to find a way to scale this so I am not doing it custom for each BLADE-R run.",
+        "learned": "A few things: complete media removal during the BLADE-R automation seems to be really important. I'lll need to keep improving on this. \n\nMeeting with Russell was productive  - the SMARTseq tech dev is straight forward but I need to dig into the protocols for the 10X and NEB kit to understnad how to put it all together.  Specifically how to do the fragmentation and how to move from RT to PCR 1\n\nMayra and Dan had some good insights on the killing assay pilots  - mainly fresh cells need to be included.  I ordered blood for isolation for those experiments.",
+        "carryForward": "BLADE-R automation big step forward but more is needed. trying again tomorrow with fresh reagents and monocytes.  SMARTseq tech dev will need some effort but could be a good opportunity. Killing assay pilot is planned. need to talk it over with Celine."
+      },
+      "generatedAt": "2026-04-09T03:54:33.412Z",
+      "editedAt": "2026-04-09T03:54:33.412Z"
+    }
   }
 }
