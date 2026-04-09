@@ -3933,9 +3933,12 @@
         "title": "Meet with Hamid",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-04-07T23:37:48.742Z",
-        "time": "13:00"
+        "time": "13:00",
+        "completedAt": "2026-04-09T20:38:56.626Z",
+        "completionNotes": "Need to send details to him by next week \n- Source of cells\n- Culture + media conditions\n- Detail heavy when possible\n- How we choose the cytokine concentrations\n- What concentration we chose",
+        "completionLinks": ""
       },
       {
         "id": "mnp9dznkngtd854rq2",
@@ -8855,9 +8858,17 @@
       "completionNotes": "- Need to simplify NK cell killing assay\n- Make proposal for COPD mix\n- Make slides for COPD cytokine screening update tomorrow\n- message Effi / Meng/ Celine anout TPP analysis\n- plan for checkerboard analysis\n- email Yuxin",
       "completionLinks": "",
       "date": "2026-04-09"
+    },
+    {
+      "id": "mnp9evgmb7z916o6wx4",
+      "title": "Meet with Hamid",
+      "completedAt": "2026-04-09T20:38:56.626Z",
+      "completionNotes": "Need to send details to him by next week \n- Source of cells\n- Culture + media conditions\n- Detail heavy when possible\n- How we choose the cytokine concentrations\n- What concentration we chose",
+      "completionLinks": "",
+      "date": "2026-04-09"
     }
   ],
-  "lastUpdated": "2026-04-09T20:36:19.154Z",
+  "lastUpdated": "2026-04-09T20:38:56.626Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
