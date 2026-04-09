@@ -2720,3 +2720,113 @@ body {
     border-color: var(--color-primary);
     color: var(--color-primary);
 }
+
+/* ============================================
+   DAY DETAIL SUMMARY SECTION
+   ============================================ */
+
+.day-summary-section {
+    margin-top: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.day-summary-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: var(--color-surface-raised, var(--color-surface));
+    border-bottom: 1px solid var(--color-border);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}
+
+.day-summary-header svg {
+    flex-shrink: 0;
+}
+
+.day-summary-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 4px;
+}
+
+.day-summary-text {
+    padding: 14px;
+    font-size: 13px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    color: var(--color-text);
+}
+
+/* Calendar summary dot indicator */
+.day-summary-dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
+
+.calendar-day {
+    position: relative;
+}
+
+/* ============================================
+   WEEKLY SUMMARY MODAL
+   ============================================ */
+
+.weekly-confirm-overview {
+    padding: 0 24px 4px;
+}
+
+.weekly-overview-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.weekly-overview-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    padding: 8px 12px;
+    background: var(--color-surface-raised, var(--color-surface));
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+}
+
+.weekly-overview-day {
+    font-weight: 500;
+    min-width: 160px;
+    color: var(--color-text);
+}
+
+.weekly-overview-count {
+    color: var(--color-text-secondary);
+    font-size: 12px;
+}
+
+.weekly-overview-badge {
+    margin-left: auto;
+    font-size: 11px;
+    padding: 2px 7px;
+    background: color-mix(in srgb, var(--color-primary) 15%, transparent);
+    color: var(--color-primary);
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.weekly-existing-note {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    margin-top: 8px;
+}

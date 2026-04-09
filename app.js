@@ -244,6 +244,24 @@ function initElements() {
         rescheduleTime: document.getElementById('reschedule-time'),
         // Theme toggle
         themeToggle: document.getElementById('theme-toggle'),
+        // Weekly Summary modal
+        weeklySummaryModal: document.getElementById('weekly-summary-modal'),
+        weeklySummaryModalTitle: document.getElementById('weekly-summary-modal-title'),
+        weeklyStepConfirm: document.getElementById('weekly-step-confirm'),
+        weeklyStepGenerating: document.getElementById('weekly-step-generating'),
+        weeklyStepResult: document.getElementById('weekly-step-result'),
+        weeklyStepNoKey: document.getElementById('weekly-step-no-key'),
+        weeklyConfirmOverview: document.getElementById('weekly-confirm-overview'),
+        weeklyGenerateBtn: document.getElementById('weekly-generate-btn'),
+        weeklyRegenerateBtn: document.getElementById('weekly-regenerate-btn'),
+        weeklySummaryText: document.getElementById('weekly-summary-text'),
+        weeklySaveBtn: document.getElementById('weekly-save-btn'),
+        weeklyExportPdfBtn: document.getElementById('weekly-export-pdf-btn'),
+        // Day detail summary
+        dayDetailSummarySection: document.getElementById('day-detail-summary-section'),
+        dayDetailSummaryText: document.getElementById('day-detail-summary-text'),
+        dayDetailSummaryEditBtn: document.getElementById('day-detail-summary-edit-btn'),
+        dayDetailSummaryPdfBtn: document.getElementById('day-detail-summary-pdf-btn'),
         // EOD Summary modal
         eodSummaryModal: document.getElementById('eod-summary-modal'),
         eodSummaryModalTitle: document.getElementById('eod-summary-modal-title'),
@@ -516,6 +534,9 @@ function migrateDataStructure() {
     }
     if (!state.data.dailySummaries) {
         state.data.dailySummaries = {};
+    }
+    if (!state.data.weeklySummaries) {
+        state.data.weeklySummaries = {};
     }
 }
 
@@ -1036,9 +1057,11 @@ function renderDayContent(dateStr, dayNum, isOtherMonth) {
     if (isToday) classes += ' today';
     if (status) classes += ' has-tasks';
 
+    const hasSummary = !!state.data?.dailySummaries?.[dateStr]?.summary;
     return `<div class="${classes}" data-date="${dateStr}">
         <span class="day-number">${dayNum}</span>
         ${tasks.length > 0 ? `<span class="day-indicator ${status}" title="${tasks.length} task${tasks.length > 1 ? 's' : ''}">${tasks.length}</span>` : ''}
+        ${hasSummary ? '<span class="day-summary-dot" title="Has daily summary"></span>' : ''}
     </div>`;
 }
 
@@ -1563,7 +1586,20 @@ function openDayDetail(date) {
         elements.dayDetailNotes.value = notes;
     }
 
+    renderDayDetailSummary(date);
     elements.dayDetailModal.classList.remove('hidden');
+}
+
+function renderDayDetailSummary(date) {
+    const summary = state.data.dailySummaries?.[date]?.summary;
+    if (!elements.dayDetailSummarySection) return;
+
+    if (summary) {
+        elements.dayDetailSummaryText.textContent = summary;
+        elements.dayDetailSummarySection.classList.remove('hidden');
+    } else {
+        elements.dayDetailSummarySection.classList.add('hidden');
+    }
 }
 
 function renderDayDetailTasks(date) {
@@ -1595,6 +1631,8 @@ function navigateDayDetail(direction) {
     if (elements.dayDetailNotes) {
         elements.dayDetailNotes.value = notes;
     }
+
+    renderDayDetailSummary(newDate);
 }
 
 async function saveDailyNotes() {
@@ -6428,6 +6466,455 @@ function generatePdfReport(htmlContent, monthStr) {
 }
 
 // ============================================
+// DAY PDF EXPORT
+// ============================================
+
+function exportDayAsPdf(date) {
+    const tasks = getTasksForDate(date, true);
+    const completedTasks = tasks.filter(t => t.completedOnDay || t.completed);
+    const incompleteTasks = tasks.filter(t => !(t.completedOnDay || t.completed));
+    const dailyNotes = state.data.dailyNotes?.[date] || '';
+    const summaryObj = state.data.dailySummaries?.[date];
+    const dateLabel = formatDate(date);
+
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+    function taskRow(t) {
+        const projectTag = t.projectName ? `<span style="font-size:11px;color:#6b7280;margin-left:6px;">[${escapeHtml(t.projectName)}]</span>` : '';
+        const notes = t.completionNotes ? `<div style="font-size:12px;color:#6b7280;margin-top:2px;padding-left:16px;">Notes: ${escapeHtml(t.completionNotes)}</div>` : '';
+        let subtasksHtml = '';
+        if (!t.isSubtask && !t.isStandalone && t.subtasks?.length) {
+            const completedSubs = t.subtasks.filter(st => {
+                const schedRef = state.data.scheduledItems?.[date]?.find(
+                    r => r.projectId === t.projectId && r.taskId === t.id && r.subtaskId === st.id
+                );
+                return schedRef?.completedOnDay || st.completed;
+            });
+            if (completedSubs.length) {
+                subtasksHtml = completedSubs.map(st =>
+                    `<div style="font-size:12px;color:#374151;padding-left:24px;margin-top:2px;">&#8627; ${escapeHtml(st.title)}</div>`
+                ).join('');
+            }
+        }
+        return `<div style="margin-bottom:8px;">
+            <div style="display:flex;align-items:baseline;gap:4px;">
+                <span style="color:#10b981;font-weight:600;">&#10003;</span>
+                <span>${escapeHtml(t.title)}</span>${projectTag}
+            </div>${notes}${subtasksHtml}
+        </div>`;
+    }
+
+    let html = `<!DOCTYPE html><html><head><meta charset="UTF-8">
+    <title>Daily Summary — ${dateLabel}</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 720px; margin: 40px auto; padding: 0 24px; color: #111827; line-height: 1.6; }
+        h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+        .date { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
+        h2 { font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7280; border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 28px; margin-bottom: 14px; }
+        .summary-text { font-size: 14px; white-space: pre-wrap; line-height: 1.7; color: #1f2937; }
+        .reflections-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .reflection-box { background: #f9fafb; border-radius: 6px; padding: 12px; }
+        .reflection-label { font-size: 11px; font-weight: 600; text-transform: uppercase; color: #9ca3af; margin-bottom: 4px; }
+        .reflection-val { font-size: 13px; color: #374151; }
+        .notes-text { font-size: 14px; white-space: pre-wrap; color: #374151; }
+        @media print { body { margin: 20px; } }
+    </style></head><body>
+    <h1>Daily Summary</h1>
+    <div class="date">${dateLabel}</div>`;
+
+    if (summaryObj?.summary) {
+        html += `<h2>Summary</h2><div class="summary-text">${escapeHtml(summaryObj.summary)}</div>`;
+    }
+
+    if (completedTasks.length) {
+        html += `<h2>Completed (${completedTasks.length})</h2>`;
+        completedTasks.forEach(t => { html += taskRow(t); });
+    }
+
+    if (incompleteTasks.length) {
+        html += `<h2>Incomplete</h2>`;
+        incompleteTasks.forEach(t => {
+            html += `<div style="margin-bottom:6px;color:#6b7280;">&#9675; ${escapeHtml(t.title)}${t.projectName ? ` [${escapeHtml(t.projectName)}]` : ''}</div>`;
+        });
+    }
+
+    if (dailyNotes) {
+        html += `<h2>Daily Notes</h2><div class="notes-text">${escapeHtml(dailyNotes)}</div>`;
+    }
+
+    const r = summaryObj?.reflections;
+    if (r && Object.values(r).some(v => v)) {
+        html += `<h2>Reflections</h2><div class="reflections-grid">`;
+        if (r.accomplishments) html += `<div class="reflection-box"><div class="reflection-label">Accomplishments</div><div class="reflection-val">${escapeHtml(r.accomplishments)}</div></div>`;
+        if (r.effort) html += `<div class="reflection-box"><div class="reflection-label">More effort than expected</div><div class="reflection-val">${escapeHtml(r.effort)}</div></div>`;
+        if (r.learned) html += `<div class="reflection-box"><div class="reflection-label">Learned / Decided / Unblocked</div><div class="reflection-val">${escapeHtml(r.learned)}</div></div>`;
+        if (r.carryForward) html += `<div class="reflection-box"><div class="reflection-label">Carry Forward</div><div class="reflection-val">${escapeHtml(r.carryForward)}</div></div>`;
+        html += `</div>`;
+    }
+
+    html += `</body></html>`;
+
+    const win = window.open('', '_blank');
+    if (win) {
+        win.document.write(html);
+        win.document.close();
+        showToast('Opened — use Ctrl+P to save as PDF', 'info');
+    } else {
+        const blob = new Blob([html], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `daily-summary-${date}.html`;
+        a.click();
+        URL.revokeObjectURL(url);
+        showToast('Popup blocked — downloaded as HTML', 'warning');
+    }
+}
+
+// ============================================
+// WEEKLY SUMMARY
+// ============================================
+
+let weeklyCurrentKey = null; // week start date string
+
+function getWeekKeyForCurrentView() {
+    // Returns the Sunday start date string for whichever week is visible
+    if (state.calendarViewMode === 'week' && state.weekStartDate) {
+        return getLocalDateString(state.weekStartDate);
+    }
+    // For month view, use the week containing today (or the calendar month's start)
+    return getLocalDateString(getWeekStart(state.calendarDate));
+}
+
+function openWeeklySummaryModal() {
+    const apiKey = localStorage.getItem('anthropic_api_key');
+    weeklyCurrentKey = getWeekKeyForCurrentView();
+    const weekDates = getWeekDates(new Date(weeklyCurrentKey));
+
+    const startLabel = formatDate(weekDates[0]);
+    const endLabel = formatDate(weekDates[6]);
+    elements.weeklySummaryModalTitle.textContent = `Weekly Summary — ${startLabel} to ${endLabel}`;
+
+    if (!apiKey) {
+        showWeeklyStep('no-key');
+        elements.weeklySummaryModal.classList.remove('hidden');
+        return;
+    }
+
+    // Build confirm overview: show which days have summaries + task counts
+    const overviewRows = weekDates.map(d => {
+        const tasks = getTasksForDate(d, true);
+        const done = tasks.filter(t => t.completedOnDay || t.completed).length;
+        const hasSummary = !!state.data.dailySummaries?.[d]?.summary;
+        const dayName = new Date(d).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+        return `<div class="weekly-overview-row">
+            <span class="weekly-overview-day">${dayName}</span>
+            <span class="weekly-overview-count">${done} task${done !== 1 ? 's' : ''} completed</span>
+            ${hasSummary ? '<span class="weekly-overview-badge">has daily summary</span>' : ''}
+        </div>`;
+    });
+
+    const existingSummary = state.data.weeklySummaries?.[weeklyCurrentKey]?.summary;
+    elements.weeklyConfirmOverview.innerHTML = `
+        <p class="eod-step-intro">The weekly summary will use all task data, daily summaries, and reflection notes for this week.</p>
+        <div class="weekly-overview-list">${overviewRows.join('')}</div>
+        ${existingSummary ? '<p class="weekly-existing-note">A summary already exists for this week — generating will replace it.</p>' : ''}
+    `;
+
+    // If existing summary, show it in result step directly
+    if (existingSummary) {
+        elements.weeklySummaryText.value = existingSummary;
+    }
+
+    showWeeklyStep('confirm');
+    elements.weeklySummaryModal.classList.remove('hidden');
+}
+
+function showWeeklyStep(step) {
+    elements.weeklyStepConfirm.classList.add('hidden');
+    elements.weeklyStepGenerating.classList.add('hidden');
+    elements.weeklyStepResult.classList.add('hidden');
+    elements.weeklyStepNoKey.classList.add('hidden');
+
+    if (step === 'confirm') elements.weeklyStepConfirm.classList.remove('hidden');
+    else if (step === 'generating') elements.weeklyStepGenerating.classList.remove('hidden');
+    else if (step === 'result') elements.weeklyStepResult.classList.remove('hidden');
+    else if (step === 'no-key') elements.weeklyStepNoKey.classList.remove('hidden');
+}
+
+function gatherWeekData(weekDates) {
+    const days = weekDates.map(date => {
+        const tasks = getTasksForDate(date, true);
+        const completedTasks = tasks.filter(t => t.completedOnDay || t.completed);
+        const incompleteTasks = tasks.filter(t => !(t.completedOnDay || t.completed));
+
+        const taskDetails = completedTasks.map(t => {
+            const detail = { title: t.title, isSubtask: !!t.isSubtask };
+            if (t.projectName) detail.project = t.projectName;
+            if (t.completionNotes) detail.notes = t.completionNotes;
+            if (t.description) detail.description = t.description;
+            if (!t.isSubtask && !t.isStandalone && t.subtasks?.length) {
+                detail.completedSubtasks = t.subtasks
+                    .filter(st => {
+                        const ref = state.data.scheduledItems?.[date]?.find(
+                            r => r.projectId === t.projectId && r.taskId === t.id && r.subtaskId === st.id
+                        );
+                        return ref?.completedOnDay || st.completed;
+                    })
+                    .map(st => st.title);
+            }
+            return detail;
+        });
+
+        const progressUpdates = [];
+        (state.data.projects || []).forEach(proj => {
+            (proj.progressUpdates || []).forEach(upd => {
+                if (upd.date?.startsWith(date)) {
+                    progressUpdates.push({ project: proj.name, text: upd.text });
+                }
+            });
+        });
+
+        return {
+            date,
+            taskDetails,
+            incompleteTasks: incompleteTasks.map(t => ({ title: t.title, project: t.projectName })),
+            progressUpdates,
+            dailyNotes: state.data.dailyNotes?.[date] || '',
+            dailySummary: state.data.dailySummaries?.[date]?.summary || '',
+            reflections: state.data.dailySummaries?.[date]?.reflections || {}
+        };
+    });
+
+    const totalCompleted = days.reduce((sum, d) => sum + d.taskDetails.length, 0);
+    const weekStart = weekDates[0];
+    const weekEnd = weekDates[6];
+
+    return { days, totalCompleted, weekStart, weekEnd };
+}
+
+function buildWeeklyPrompt(weekData) {
+    const startLabel = formatDate(weekData.weekStart);
+    const endLabel = formatDate(weekData.weekEnd);
+    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    let prompt = `You are helping someone write a thorough weekly summary for the week of ${startLabel} to ${endLabel}.\n\n`;
+    prompt += `Total tasks completed this week: ${weekData.totalCompleted}\n\n`;
+
+    weekData.days.forEach(day => {
+        const d = new Date(day.date);
+        const dayName = dayNames[d.getDay()];
+        const dateLabel = formatDate(day.date);
+        const hasActivity = day.taskDetails.length > 0 || day.progressUpdates.length > 0 || day.dailyNotes || day.dailySummary;
+
+        if (!hasActivity) return;
+
+        prompt += `## ${dayName}, ${dateLabel}\n`;
+
+        if (day.taskDetails.length > 0) {
+            prompt += `### Completed Tasks\n`;
+            day.taskDetails.forEach(t => {
+                const projectTag = t.project ? ` [${t.project}]` : '';
+                prompt += `- ${t.title}${projectTag}\n`;
+                if (t.notes) prompt += `  Completion notes: ${t.notes}\n`;
+                if (t.description) prompt += `  Description: ${t.description}\n`;
+                if (t.completedSubtasks?.length) {
+                    t.completedSubtasks.forEach(st => { prompt += `  - Subtask: ${st}\n`; });
+                }
+            });
+        }
+
+        if (day.incompleteTasks.length > 0) {
+            prompt += `### Incomplete\n`;
+            day.incompleteTasks.forEach(t => {
+                prompt += `- ${t.title}${t.project ? ` [${t.project}]` : ''}\n`;
+            });
+        }
+
+        if (day.progressUpdates.length > 0) {
+            prompt += `### Project Progress\n`;
+            day.progressUpdates.forEach(u => { prompt += `- [${u.project}] ${u.text}\n`; });
+        }
+
+        if (day.dailyNotes) {
+            prompt += `### Daily Notes\n${day.dailyNotes}\n`;
+        }
+
+        const r = day.reflections;
+        const hasReflections = r && Object.values(r).some(v => v?.trim());
+        if (day.dailySummary) {
+            prompt += `### End-of-Day Summary\n${day.dailySummary}\n`;
+        } else if (hasReflections) {
+            prompt += `### Reflections\n`;
+            if (r.accomplishments) prompt += `Accomplishments: ${r.accomplishments}\n`;
+            if (r.effort) prompt += `More effort than expected: ${r.effort}\n`;
+            if (r.learned) prompt += `Learned / decided / unblocked: ${r.learned}\n`;
+            if (r.carryForward) prompt += `Carry forward: ${r.carryForward}\n`;
+        }
+
+        prompt += '\n';
+    });
+
+    prompt += `---\n`;
+    prompt += `Write a thorough but well-structured weekly summary. Include:\n\n`;
+    prompt += `1. **Week Overview** — 3-5 sentence paragraph covering the overall shape of the week, major themes, and pace\n`;
+    prompt += `2. **Completed Work** — a detailed breakdown of all completed tasks and subtasks, organized by project or theme (not by day). Be specific and name the actual tasks. Include all subtasks. This section should be comprehensive.\n`;
+    prompt += `3. **Recurring Themes & Patterns** — pull out cross-day themes from the reflections and notes (what was consistently hard, what momentum built, key decisions or insights)\n`;
+    prompt += `4. **Carry Forward** — concrete items to bring into next week, pulled from incomplete tasks and reflection notes\n\n`;
+    prompt += `Rules:\n`;
+    prompt += `- Grounded entirely in the data above — no invented content\n`;
+    prompt += `- Professional but natural tone\n`;
+    prompt += `- Specific and concrete — use real task names\n`;
+    prompt += `- Plain text only, no markdown headers (use plain section labels if needed)\n`;
+    prompt += `- This will be saved and may be reviewed later, so it should be genuinely useful\n`;
+
+    return prompt;
+}
+
+async function runWeeklySummaryGenerate() {
+    const apiKey = localStorage.getItem('anthropic_api_key');
+    if (!apiKey) {
+        showToast('Please configure your Anthropic API key first', 'error');
+        return;
+    }
+
+    showWeeklyStep('generating');
+
+    try {
+        const weekDates = getWeekDates(new Date(weeklyCurrentKey));
+        const weekData = gatherWeekData(weekDates);
+        const prompt = buildWeeklyPrompt(weekData);
+        const summary = await callClaudeApi(apiKey, prompt);
+
+        elements.weeklySummaryText.value = summary;
+        showWeeklyStep('result');
+    } catch (error) {
+        console.error('Weekly summary error:', error);
+        showToast(error.message || 'Failed to generate weekly summary', 'error');
+        showWeeklyStep('confirm');
+    }
+}
+
+async function saveWeeklySummary() {
+    const summary = elements.weeklySummaryText.value.trim();
+    if (!summary) {
+        showToast('Summary is empty', 'error');
+        return;
+    }
+
+    if (!state.data.weeklySummaries) state.data.weeklySummaries = {};
+    const existing = state.data.weeklySummaries[weeklyCurrentKey] || {};
+    state.data.weeklySummaries[weeklyCurrentKey] = {
+        summary,
+        weekStart: weeklyCurrentKey,
+        generatedAt: existing.generatedAt || new Date().toISOString(),
+        editedAt: new Date().toISOString()
+    };
+
+    await saveData();
+    closeAllModals();
+    showToast('Weekly summary saved', 'success');
+}
+
+function exportWeeklySummaryAsPdf() {
+    const summary = elements.weeklySummaryText.value.trim();
+    const weekDates = getWeekDates(new Date(weeklyCurrentKey));
+    const weekData = gatherWeekData(weekDates);
+    const startLabel = formatDate(weekData.weekStart);
+    const endLabel = formatDate(weekData.weekEnd);
+    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    let html = `<!DOCTYPE html><html><head><meta charset="UTF-8">
+    <title>Weekly Summary — ${startLabel} to ${endLabel}</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 740px; margin: 40px auto; padding: 0 24px; color: #111827; line-height: 1.7; }
+        h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+        .subtitle { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
+        h2 { font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7280; border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-top: 32px; margin-bottom: 14px; }
+        h3 { font-size: 13px; font-weight: 600; color: #374151; margin: 16px 0 8px; }
+        .summary-text { font-size: 14px; white-space: pre-wrap; color: #1f2937; }
+        .day-block { margin-bottom: 24px; border-left: 3px solid #e5e7eb; padding-left: 16px; }
+        .day-label { font-size: 14px; font-weight: 600; color: #374151; margin-bottom: 8px; }
+        .task-row { font-size: 13px; margin-bottom: 4px; }
+        .task-project { font-size: 11px; color: #9ca3af; margin-left: 4px; }
+        .subtask { font-size: 12px; color: #6b7280; padding-left: 20px; }
+        .notes-text { font-size: 13px; white-space: pre-wrap; color: #6b7280; }
+        .reflection-row { font-size: 13px; color: #374151; margin-bottom: 4px; }
+        .reflection-label { font-weight: 600; }
+        @media print { body { margin: 20px; } }
+    </style></head><body>
+    <h1>Weekly Summary</h1>
+    <div class="subtitle">${startLabel} &ndash; ${endLabel} &nbsp;&middot;&nbsp; ${weekData.totalCompleted} tasks completed</div>`;
+
+    if (summary) {
+        html += `<h2>Summary</h2><div class="summary-text">${escapeHtml(summary)}</div>`;
+    }
+
+    html += `<h2>Day-by-Day Breakdown</h2>`;
+    weekData.days.forEach(day => {
+        const d = new Date(day.date);
+        const dayName = dayNames[d.getDay()];
+        const hasActivity = day.taskDetails.length > 0 || day.progressUpdates.length > 0 || day.dailyNotes;
+        if (!hasActivity) return;
+
+        html += `<div class="day-block"><div class="day-label">${dayName}, ${formatDate(day.date)}</div>`;
+
+        if (day.taskDetails.length) {
+            html += `<h3>Completed (${day.taskDetails.length})</h3>`;
+            day.taskDetails.forEach(t => {
+                const projectTag = t.project ? `<span class="task-project">[${escapeHtml(t.project)}]</span>` : '';
+                html += `<div class="task-row">&#10003; ${escapeHtml(t.title)}${projectTag}</div>`;
+                if (t.notes) html += `<div class="subtask">Notes: ${escapeHtml(t.notes)}</div>`;
+                (t.completedSubtasks || []).forEach(st => {
+                    html += `<div class="subtask">&#8627; ${escapeHtml(st)}</div>`;
+                });
+            });
+        }
+
+        if (day.progressUpdates.length) {
+            html += `<h3>Progress Updates</h3>`;
+            day.progressUpdates.forEach(u => {
+                html += `<div class="task-row">[${escapeHtml(u.project)}] ${escapeHtml(u.text)}</div>`;
+            });
+        }
+
+        if (day.dailyNotes) {
+            html += `<h3>Notes</h3><div class="notes-text">${escapeHtml(day.dailyNotes)}</div>`;
+        }
+
+        const r = day.reflections;
+        const hasReflections = r && Object.values(r).some(v => v?.trim());
+        if (hasReflections) {
+            html += `<h3>Reflections</h3>`;
+            if (r.accomplishments) html += `<div class="reflection-row"><span class="reflection-label">Accomplishments:</span> ${escapeHtml(r.accomplishments)}</div>`;
+            if (r.effort) html += `<div class="reflection-row"><span class="reflection-label">More effort than expected:</span> ${escapeHtml(r.effort)}</div>`;
+            if (r.learned) html += `<div class="reflection-row"><span class="reflection-label">Learned / Decided:</span> ${escapeHtml(r.learned)}</div>`;
+            if (r.carryForward) html += `<div class="reflection-row"><span class="reflection-label">Carry forward:</span> ${escapeHtml(r.carryForward)}</div>`;
+        }
+
+        html += `</div>`;
+    });
+
+    html += `</body></html>`;
+
+    const win = window.open('', '_blank');
+    if (win) {
+        win.document.write(html);
+        win.document.close();
+        showToast('Opened — use Ctrl+P to save as PDF', 'info');
+    } else {
+        const blob = new Blob([html], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `weekly-summary-${weeklyCurrentKey}.html`;
+        a.click();
+        URL.revokeObjectURL(url);
+        showToast('Popup blocked — downloaded as HTML', 'warning');
+    }
+}
+
+// ============================================
 // END OF DAY SUMMARY
 // ============================================
 
@@ -6651,6 +7138,11 @@ async function saveEodSummary() {
 
     // Update button label if visible
     updateEodButtonLabel(eodCurrentDate);
+
+    // Refresh day detail summary panel if open for same date
+    if (state.selectedDate === eodCurrentDate) {
+        renderDayDetailSummary(eodCurrentDate);
+    }
 }
 
 function updateEodButtonLabel(date) {
@@ -6856,6 +7348,25 @@ function initEventListeners() {
 
     // Task detail save button
     elements.taskDetailSaveBtn?.addEventListener('click', saveTaskNotes);
+
+    // Weekly Summary
+    document.getElementById('weekly-summary-btn')?.addEventListener('click', openWeeklySummaryModal);
+    elements.weeklyGenerateBtn?.addEventListener('click', runWeeklySummaryGenerate);
+    elements.weeklyRegenerateBtn?.addEventListener('click', () => showWeeklyStep('confirm'));
+    elements.weeklySaveBtn?.addEventListener('click', saveWeeklySummary);
+    elements.weeklyExportPdfBtn?.addEventListener('click', exportWeeklySummaryAsPdf);
+
+    // Day detail summary buttons
+    elements.dayDetailSummaryEditBtn?.addEventListener('click', () => {
+        const date = state.selectedDate;
+        if (date) {
+            elements.dayDetailModal.classList.add('hidden');
+            openEodSummaryModal(date);
+        }
+    });
+    elements.dayDetailSummaryPdfBtn?.addEventListener('click', () => {
+        if (state.selectedDate) exportDayAsPdf(state.selectedDate);
+    });
 
     // EOD Summary
     document.getElementById('today-eod-summary-btn')?.addEventListener('click', () => openEodSummaryModal(getToday()));
