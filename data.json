@@ -3924,9 +3924,12 @@
         "title": "prep info for Hamid",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-04-07T23:37:21.986Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-04-09T20:42:31.674Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mnp9evgmb7z916o6wx4",
@@ -8866,9 +8869,17 @@
       "completionNotes": "Need to send details to him by next week \n- Source of cells\n- Culture + media conditions\n- Detail heavy when possible\n- How we choose the cytokine concentrations\n- What concentration we chose",
       "completionLinks": "",
       "date": "2026-04-09"
+    },
+    {
+      "id": "mnp9eatel4lt1klsvd",
+      "title": "prep info for Hamid",
+      "completedAt": "2026-04-09T20:42:31.674Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-09"
     }
   ],
-  "lastUpdated": "2026-04-09T20:38:56.626Z",
+  "lastUpdated": "2026-04-09T20:42:31.674Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
