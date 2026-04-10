@@ -3088,6 +3088,15 @@
           "completed": false,
           "createdAt": "2026-04-10T14:51:53.654Z",
           "subtasks": []
+        },
+        {
+          "id": "mntcf009zrhd24a2cu",
+          "title": "Automated Monocytes RNA extraction",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-04-10T20:12:58.185Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -6407,6 +6416,16 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-04-13": [
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mntcf009zrhd24a2cu",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-10T20:12:58.186Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8953,7 +8972,7 @@
       "date": "2026-04-10"
     }
   ],
-  "lastUpdated": "2026-04-10T20:12:19.516Z",
+  "lastUpdated": "2026-04-10T20:12:58.186Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
