@@ -3070,11 +3070,11 @@
         },
         {
           "id": "mnt0xv1jbkcrr9f6yvp",
-          "title": "Reagent restocl",
+          "title": "Reagent restock",
           "description": "",
           "priority": "medium",
           "completed": false,
-          "createdAt": "2026-04-10T14:51:42.824Z",
+          "createdAt": "2026-04-10T14:51:53.654Z",
           "subtasks": []
         }
       ],
@@ -8911,7 +8911,7 @@
       "date": "2026-04-09"
     }
   ],
-  "lastUpdated": "2026-04-10T14:51:42.825Z",
+  "lastUpdated": "2026-04-10T14:51:53.654Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
