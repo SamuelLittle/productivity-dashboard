@@ -2418,6 +2418,15 @@
               "completionLinks": ""
             }
           ]
+        },
+        {
+          "id": "mnt1n66oq2xa1vds7g9",
+          "title": "GPR35 KO images into orchestra",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-04-10T15:11:23.664Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -6372,6 +6381,14 @@
         "time": null,
         "scheduledAt": "2026-04-10T14:51:42.825Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mnt1n66oq2xa1vds7g9",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-10T15:11:23.664Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -8911,7 +8928,7 @@
       "date": "2026-04-09"
     }
   ],
-  "lastUpdated": "2026-04-10T14:51:53.654Z",
+  "lastUpdated": "2026-04-10T15:11:23.664Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
