@@ -1819,8 +1819,11 @@
               "title": "Make protocol and send to Mayra + Dan",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-08T21:55:37.394Z"
+              "completed": true,
+              "createdAt": "2026-04-08T21:55:37.394Z",
+              "completedAt": "2026-04-13T18:12:58.630Z",
+              "completionNotes": "",
+              "completionLinks": "https://gene.benchling.com/s/etr-awZ3sgKdwULVehCzSgbZ?m=slm-6XmMq5Wkb3OYsDmyO2Le"
             }
           ]
         }
@@ -6434,7 +6437,10 @@
         "subtaskId": "mnql7b5eo9kxkbz49or",
         "time": null,
         "scheduledAt": "2026-04-10T22:55:27.593Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-13T18:12:58.630Z",
+        "completionNotes": "",
+        "completionLinks": "https://gene.benchling.com/s/etr-awZ3sgKdwULVehCzSgbZ?m=slm-6XmMq5Wkb3OYsDmyO2Le"
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -9005,9 +9011,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-10"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mnql7b5eo9kxkbz49or",
+      "completedAt": "2026-04-13T18:12:58.630Z",
+      "completionNotes": "",
+      "completionLinks": "https://gene.benchling.com/s/etr-awZ3sgKdwULVehCzSgbZ?m=slm-6XmMq5Wkb3OYsDmyO2Le",
+      "date": "2026-04-13"
     }
   ],
-  "lastUpdated": "2026-04-10T23:24:40.937Z",
+  "lastUpdated": "2026-04-13T18:12:58.630Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -9144,7 +9159,7 @@
   },
   "dailySummaries": {
     "2026-04-08": {
-      "summary": "**Daily Summary - Wednesday, April 8, 2026**\n\nMade significant progress on BLADE-R automation despite RNA degradation issues, while productive meetings with Russell and the Mayra/Dan team provided clear direction for upcoming tech development and experimental priorities. The automation pilot achieved a key milestone by successfully isolating RNA, though quality improvements are still needed.\n\n**Main Accomplishments:**\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Completed BLADE-R Automation pilot 2 with DLD1 cells - successfully isolated RNA despite degradation issues\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Finished \"Isolate + plate Monocytes\" and \"analyze RNA\" subtasks for SMARTSeq TechDev\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Met with Russell to establish path forward for SMARTseq tech development\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Met with Mayra and Dan team, identifying need for fresh NK cell comparison in killing assays\n\n**Carry Forward:**\nBLADE-R automation retry scheduled for tomorrow using fresh reagents and monocytes, focusing on improved media removal. SMARTseq tech dev requires protocol review for 10X and NEB kit integration, particularly fragmentation and RT to PCR1 transition. Killing assay pilot planning needs discussion with Celine following blood order for fresh cell isolation.",
+      "summary": "**Daily Summary - Wednesday, April 8, 2026**\n\nMade significant progress on BLADE-R automation despite RNA degradation issues, while productive meetings with Russell and the Mayra/Dan team provided clear direction for upcoming tech development and experimental priorities. The automation pilot achieved a key milestone by successfully isolating RNA, though quality improvements are still needed.\n\n**Main Accomplishments:**\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Completed BLADE-R Automation pilot 2 with DLD1 cells - successfully isolated RNA despite degradation issues\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Finished \"Isolate + plate Monocytes\" and \"analyze RNA\" subtasks for SMARTSeq TechDev\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Met with Russell to establish path forward for SMARTseq tech development\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Met with Mayra and Dan team, identifying need for fresh NK cell comparison in killing assays\n\n**Carry Forward:**\nBLADE-R automation retry scheduled for tomorrow using fresh reagents and monocytes, focusing on improved media removal. SMARTseq tech dev requires protocol review for 10X and NEB kit integration, particularly fragmentation and RT to PCR1 transition. Killing assay pilot planning needs discussion with Celine following blood order for fresh cell isolation.",
       "reflections": {
         "accomplishments": "Running the automation pilot for the BLADE-R and actually getting some RNA in the tapestation - heavily degraded but there.",
         "effort": "Making the custom buffers and putting them in the deep well plates.  I'll need to find a way to scale this so I am not doing it custom for each BLADE-R run.",
@@ -9155,7 +9170,7 @@
       "editedAt": "2026-04-09T03:54:33.412Z"
     },
     "2026-04-09": {
-      "summary": "**Thursday, April 9, 2026**\n\nMade significant progress on BLADE-R automation with improved protocol modifications, while advancing COPD cytokine screening preparations. Productive meetings with both Celine and Hamid helped clarify next steps for ongoing projects and identified areas for protocol simplification.\n\n**Main Accomplishments:**\nÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Completed BLADE-R Automation pilot 3 with improved mixing and dead volume removal, achieving high quality RNA extraction\nÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Prepared slides for tomorrow's COPD cytokine screening update\nÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Created proposal for COPD mix and planned checkerboard analysis approach\nÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Met with Hamid to discuss cytokine screening dashboard requirements\nÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Had productive 1-on-1 with Celine, identified need to simplify NK cell killing assay\nÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Coordinated with team on TPP analysis via messages to Effi, Meng, and Celine\n\n**Carry Forward:**\nBLADE-R protocol still has room for improvement - need to consult with Corinne on better mixing and dead volume elimination. Must prepare detailed culture conditions and cytokine concentration methodology for Hamid by next week to enable dashboard development.",
+      "summary": "**Thursday, April 9, 2026**\n\nMade significant progress on BLADE-R automation with improved protocol modifications, while advancing COPD cytokine screening preparations. Productive meetings with both Celine and Hamid helped clarify next steps for ongoing projects and identified areas for protocol simplification.\n\n**Main Accomplishments:**\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Completed BLADE-R Automation pilot 3 with improved mixing and dead volume removal, achieving high quality RNA extraction\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Prepared slides for tomorrow's COPD cytokine screening update\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Created proposal for COPD mix and planned checkerboard analysis approach\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Met with Hamid to discuss cytokine screening dashboard requirements\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Had productive 1-on-1 with Celine, identified need to simplify NK cell killing assay\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Coordinated with team on TPP analysis via messages to Effi, Meng, and Celine\n\n**Carry Forward:**\nBLADE-R protocol still has room for improvement - need to consult with Corinne on better mixing and dead volume elimination. Must prepare detailed culture conditions and cytokine concentration methodology for Hamid by next week to enable dashboard development.",
       "reflections": {
         "accomplishments": "Validated BLADE-R with modifed protocol to improve mixing and eliminate dead volume.  Achieved high quality extracted RNA. Improvements can still be made.",
         "effort": "Isolating PBMCs as always.",
@@ -9166,7 +9181,7 @@
       "editedAt": "2026-04-09T23:55:55.073Z"
     },
     "2026-04-10": {
-      "summary": "**Daily Summary - Friday, April 10, 2026**\n\nMade solid progress across multiple screening projects today, with a particularly productive COPD cytokine screen meeting that clarified next steps. The day involved significant data handling work, though Orchestra proved more challenging to navigate than anticipated. Several follow-up actions were identified that will need attention moving forward.\n\n**Main Accomplishments:**\n• Created cell thaw protocol and culture timeline for Cytokine Screen\n• Successfully loaded GPR35 KO images into Orchestra for Macrophage Screen analysis\n• Participated in COPD cytokine screen meeting and captured action items\n• Compiled data package for Mast cell project\n• Contacted Russell regarding pair-end sequencing requirements\n• Completed dashboard updates incorporating cell culture information\n\n**Carry Forward:**\nNeed to transfer GPR35 KO images from Orchestra to Spring for final analysis. Must restock BLADE-R materials and follow up on meeting action items: contact Genoskin for scale-up discussions and continue BLADE-R progress work.",
+      "summary": "**Daily Summary - Friday, April 10, 2026**\n\nMade solid progress across multiple screening projects today, with a particularly productive COPD cytokine screen meeting that clarified next steps. The day involved significant data handling work, though Orchestra proved more challenging to navigate than anticipated. Several follow-up actions were identified that will need attention moving forward.\n\n**Main Accomplishments:**\nâ¢ Created cell thaw protocol and culture timeline for Cytokine Screen\nâ¢ Successfully loaded GPR35 KO images into Orchestra for Macrophage Screen analysis\nâ¢ Participated in COPD cytokine screen meeting and captured action items\nâ¢ Compiled data package for Mast cell project\nâ¢ Contacted Russell regarding pair-end sequencing requirements\nâ¢ Completed dashboard updates incorporating cell culture information\n\n**Carry Forward:**\nNeed to transfer GPR35 KO images from Orchestra to Spring for final analysis. Must restock BLADE-R materials and follow up on meeting action items: contact Genoskin for scale-up discussions and continue BLADE-R progress work.",
       "reflections": {
         "accomplishments": "Loaded GPR35 KO images into Orchestra but still need to get images into Spring for final analysis",
         "effort": "Orchestra.  Its very dense to use.",
