@@ -1823,7 +1823,9 @@
               "createdAt": "2026-04-08T21:55:37.394Z",
               "completedAt": "2026-04-13T18:12:58.630Z",
               "completionNotes": "",
-              "completionLinks": "https://gene.benchling.com/s/etr-awZ3sgKdwULVehCzSgbZ?m=slm-6XmMq5Wkb3OYsDmyO2Le"
+              "completionLinks": "https://gene.benchling.com/s/etr-awZ3sgKdwULVehCzSgbZ?m=slm-6XmMq5Wkb3OYsDmyO2Le",
+              "notes": "Protocol sent to mayra and Dan detailing killing assay to be started at the end of this week and completed at the beginning of next week",
+              "links": ""
             }
           ]
         }
@@ -9022,7 +9024,7 @@
       "date": "2026-04-13"
     }
   ],
-  "lastUpdated": "2026-04-13T18:12:58.630Z",
+  "lastUpdated": "2026-04-13T18:13:34.286Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
