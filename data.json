@@ -6423,14 +6423,6 @@
         "completionLinks": ""
       },
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-09T23:48:13.139Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltywpq0yriuhvt8wmb",
         "taskId": "mnt1n66oq2xa1vds7g9",
         "subtaskId": null,
@@ -6475,6 +6467,16 @@
         "completedAt": "2026-04-13T23:05:09.038Z",
         "completionNotes": "purchased \n- GTC\n- LiCl\n- PEG8000\n\nlarge quantities of each\n",
         "completionLinks": ""
+      }
+    ],
+    "2026-04-14": [
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-13T23:10:30.782Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -9064,7 +9066,7 @@
       "date": "2026-04-13"
     }
   ],
-  "lastUpdated": "2026-04-13T23:05:09.038Z",
+  "lastUpdated": "2026-04-13T23:10:30.782Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
