@@ -3093,9 +3093,12 @@
           "title": "Reagent restock",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-04-10T14:51:53.654Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-04-13T23:05:09.038Z",
+          "completionNotes": "purchased \n- GTC\n- LiCl\n- PEG8000\n\nlarge quantities of each\n",
+          "completionLinks": ""
         },
         {
           "id": "mntcf009zrhd24a2cu",
@@ -6468,7 +6471,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-04-10T23:24:40.937Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-13T23:05:09.038Z",
+        "completionNotes": "purchased \n- GTC\n- LiCl\n- PEG8000\n\nlarge quantities of each\n",
+        "completionLinks": ""
       }
     ]
   },
@@ -9048,9 +9054,17 @@
       "completionNotes": "performed BLADE-R with monocytes and got poor performance with heavily degraded RNA across all samples.  Possible culprits include old wash + bead buffers and dead volume carryover, \n\nGoing to make fresh tomorrow and try again.",
       "completionLinks": "",
       "date": "2026-04-13"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mnt0xv1jbkcrr9f6yvp",
+      "completedAt": "2026-04-13T23:05:09.038Z",
+      "completionNotes": "purchased \n- GTC\n- LiCl\n- PEG8000\n\nlarge quantities of each\n",
+      "completionLinks": "",
+      "date": "2026-04-13"
     }
   ],
-  "lastUpdated": "2026-04-13T22:20:21.291Z",
+  "lastUpdated": "2026-04-13T23:05:09.038Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
