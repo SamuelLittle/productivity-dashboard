@@ -3156,6 +3156,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-04-14T22:14:11.158Z"
+            },
+            {
+              "id": "mnz6itiz1ntvxycfiyr",
+              "title": "BLADE-R automation pilot 4 w/ monocytes",
+              "description": "using fresh reagents. ",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-14T22:14:35.771Z"
             }
           ]
         }
@@ -6563,6 +6571,14 @@
         "time": null,
         "scheduledAt": "2026-04-14T22:13:59.160Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mnywuk88jf98pxpt8k",
+        "subtaskId": "mnz6itiz1ntvxycfiyr",
+        "time": null,
+        "scheduledAt": "2026-04-14T22:14:35.771Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -9178,7 +9194,7 @@
       "date": "2026-04-14"
     }
   ],
-  "lastUpdated": "2026-04-14T22:14:11.159Z",
+  "lastUpdated": "2026-04-14T22:14:35.771Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
