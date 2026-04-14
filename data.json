@@ -3105,6 +3105,15 @@
           "completedAt": "2026-04-13T22:20:21.291Z",
           "completionNotes": "performed BLADE-R with monocytes and got poor performance with heavily degraded RNA across all samples.  Possible culprits include old wash + bead buffers and dead volume carryover, \n\nGoing to make fresh tomorrow and try again.",
           "completionLinks": ""
+        },
+        {
+          "id": "mnywuk88jf98pxpt8k",
+          "title": "Monocyte Full Automation Run",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-04-14T17:43:47.432Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -9079,7 +9088,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-04-14T17:43:20.188Z",
+  "lastUpdated": "2026-04-14T17:43:47.432Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
