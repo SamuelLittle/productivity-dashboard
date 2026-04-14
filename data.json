@@ -3113,7 +3113,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-04-14T17:43:47.432Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mnywvben5tp5u4oxdec",
+              "title": "meet w/ Corinne to adjust auto protocol",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-14T17:44:22.656Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -6373,6 +6382,14 @@
         "time": null,
         "scheduledAt": "2026-04-09T19:55:32.622Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mnywuk88jf98pxpt8k",
+        "subtaskId": "mnywvben5tp5u4oxdec",
+        "time": "13:30",
+        "scheduledAt": "2026-04-14T17:44:22.656Z",
+        "completedOnDay": false
       }
     ],
     "2026-04-28": [
@@ -9088,7 +9105,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-04-14T17:43:47.432Z",
+  "lastUpdated": "2026-04-14T17:44:22.656Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
