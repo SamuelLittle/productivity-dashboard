@@ -1065,8 +1065,11 @@
               "title": "Prep Media",
               "description": "Assemble bullet kits from Lonza for \n- EGM 2 endothelial (HUVEC)\n- EGM 2 microvascular (HMVEC)\n- smGM-2 (SMCs)\n- BEGM (BEAS-2B)",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-14T19:23:37.721Z"
+              "completed": true,
+              "createdAt": "2026-04-14T19:23:37.721Z",
+              "completedAt": "2026-04-14T22:12:42.590Z",
+              "completionNotes": "Made media for all cells for Friday's thaw",
+              "completionLinks": ""
             }
           ]
         },
@@ -6504,7 +6507,10 @@
         "subtaskId": "mnz0eyd5kss9eijy2d",
         "time": null,
         "scheduledAt": "2026-04-14T19:23:37.721Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-14T22:12:42.590Z",
+        "completionNotes": "Made media for all cells for Friday's thaw",
+        "completionLinks": ""
       }
     ],
     "2026-04-15": [
@@ -9119,9 +9125,18 @@
       "completedAt": "2026-04-14T17:43:20.187Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "mnz0eyd5kss9eijy2d",
+      "completedAt": "2026-04-14T22:12:42.590Z",
+      "completionNotes": "Made media for all cells for Friday's thaw",
+      "completionLinks": "",
+      "date": "2026-04-14"
     }
   ],
-  "lastUpdated": "2026-04-14T19:23:37.721Z",
+  "lastUpdated": "2026-04-14T22:12:42.590Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
