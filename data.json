@@ -9396,6 +9396,17 @@
       },
       "generatedAt": "2026-04-13T23:32:34.620Z",
       "editedAt": "2026-04-13T23:32:34.620Z"
+    },
+    "2026-04-14": {
+      "summary": "**Tuesday, April 14, 2026 Daily Summary**\n\nA slower preparation day focused on setting up for upcoming experiments later in the week. The main activities involved preparing cell culture media for Friday's cell thaw and making fresh reagents for tomorrow's BLADE-R work, plus submitting luminex samples for analysis.\n\n**Main Accomplishments:**\n• Completed Luminex submission - samples delivered with data expected tomorrow\n• Prepared media for Friday's cytokine screen cell thaw (assembled Lonza bullet kits for EGM 2 endothelial, EGM 2 microvascular, smGM-2, and BEGM)\n• Made new SMARTSeq reagents (Lysis buffer, Wash 1, and Wash 2) for tomorrow's work\n\n**Carry Forward:**\nNeed to allocate time to prepare SMARTseq reagents for the Fill-in-the-gaps screen scheduled for the week after next.",
+      "reflections": {
+        "accomplishments": "Slow day.  Made medias for Friday's cell thaw. Made buffers for tomorrow's BLADE-R. Submitted the luminex for treatment plate analysis",
+        "effort": "Making medias took nearly an hour to assemble the lonza bullet kits.",
+        "learned": "Nothing major today.  Mostly setting the stage for more valuable experiments later in the week.",
+        "carryForward": "Need to set some time aside and put together SMARTseq reagents for Fill-in-the-gaps screen to come week after next."
+      },
+      "generatedAt": "2026-04-14T23:14:30.408Z",
+      "editedAt": "2026-04-14T23:14:30.408Z"
     }
   },
   "weeklySummaries": {
