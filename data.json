@@ -1070,6 +1070,14 @@
               "completedAt": "2026-04-14T22:12:42.590Z",
               "completionNotes": "Made media for all cells for Friday's thaw",
               "completionLinks": ""
+            },
+            {
+              "id": "mnz6hbhemnzsgdmpwgl",
+              "title": "Analyze treatment plate luminex data",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-14T22:13:25.730Z"
             }
           ]
         },
@@ -4016,16 +4024,6 @@
     ],
     "2026-04-14": [
       {
-        "id": "mnp9dznkngtd854rq2",
-        "title": "email Yuxin",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-04-07T23:37:07.520Z"
-      },
-      {
         "id": "mnqqp0us5z8vzjnlori",
         "title": "Luminex submission",
         "description": "",
@@ -4062,6 +4060,18 @@
         "completedAt": null,
         "time": "10:00",
         "createdAt": "2026-04-13T21:19:01.713Z"
+      }
+    ],
+    "2026-04-15": [
+      {
+        "id": "mnp9dznkngtd854rq2",
+        "title": "email Yuxin",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-04-07T23:37:07.520Z"
       }
     ]
   },
@@ -6520,6 +6530,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-04-14T22:12:46.390Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mnz6hbhemnzsgdmpwgl",
+        "time": null,
+        "scheduledAt": "2026-04-14T22:13:25.730Z",
         "completedOnDay": false
       }
     ]
@@ -9136,7 +9154,7 @@
       "date": "2026-04-14"
     }
   ],
-  "lastUpdated": "2026-04-14T22:12:46.390Z",
+  "lastUpdated": "2026-04-14T22:13:25.730Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
