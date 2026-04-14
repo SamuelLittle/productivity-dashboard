@@ -468,24 +468,6 @@
           "completionLinks": "https://maayanlab.cloud/Enrichr/"
         },
         {
-          "id": "mkpmhuejxdahbqqygu",
-          "title": "scRNAseq pilot for cytokine screen",
-          "description": "Test the core methods of the 10X Flex V2 system to see if this technique is compatible and cost competitive for the cytokine screen.",
-          "priority": "medium",
-          "completed": false,
-          "createdAt": "2026-01-22T15:44:55.339Z",
-          "subtasks": [
-            {
-              "id": "ml8n30vvhp5ihiy5xtf",
-              "title": "Make materials list for Flex pilot",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-04T23:09:00.860Z"
-            }
-          ]
-        },
-        {
           "id": "mkprwk8ffdngatq3zsn",
           "title": "Nomic collaboration",
           "description": "Establish the feasibility of using nomic tools for screening 100s of cytokines in supernatant from cytokine screen. \n\nNeed to get pricing information, choose panel, figure out workflow, set up collab.\n\nAlso useful for Kelly Storek w/ Macrophage screen",
@@ -9066,7 +9048,7 @@
       "date": "2026-04-14"
     }
   ],
-  "lastUpdated": "2026-04-14T16:46:48.227Z",
+  "lastUpdated": "2026-04-14T16:51:53.966Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
