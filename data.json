@@ -3148,6 +3148,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-04-14T22:13:55.688Z"
+            },
+            {
+              "id": "mnz6iajaz2nz31ixf6p",
+              "title": "isolate monocytes and plate for BLADE-R test",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-14T22:14:11.158Z"
             }
           ]
         }
@@ -9170,7 +9178,7 @@
       "date": "2026-04-14"
     }
   ],
-  "lastUpdated": "2026-04-14T22:13:59.160Z",
+  "lastUpdated": "2026-04-14T22:14:11.159Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
