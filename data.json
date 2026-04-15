@@ -2440,8 +2440,11 @@
               "title": "submit primers for order",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-15T16:20:14.355Z"
+              "completed": true,
+              "createdAt": "2026-04-15T16:20:14.355Z",
+              "completedAt": "2026-04-15T16:50:15.412Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -6608,7 +6611,8 @@
         "subtaskId": "mo09ays396kj85t3ayn",
         "time": null,
         "scheduledAt": "2026-04-15T16:20:14.355Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-15T16:50:15.413Z"
       }
     ]
   },
@@ -9231,9 +9235,16 @@
       "completionNotes": "Remade Lysis buffer, Wash 1, and Wash 2. Placed at 4c, ready for tomorrow. ",
       "completionLinks": "",
       "date": "2026-04-14"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mlqy3dwoui2qz3anm7t",
+      "subtaskId": "mo09ays396kj85t3ayn",
+      "title": "submit primers for order",
+      "completedAt": "2026-04-15T16:50:15.413Z"
     }
   ],
-  "lastUpdated": "2026-04-15T16:20:14.355Z",
+  "lastUpdated": "2026-04-15T16:50:15.413Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
