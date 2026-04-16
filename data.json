@@ -4122,10 +4122,12 @@
         "title": "Sorter setup for Christine",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-04-16T19:48:24.494Z",
         "time": "10:00",
-        "createdAt": "2026-04-13T21:19:01.713Z"
+        "createdAt": "2026-04-13T21:19:01.713Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mnp9dznkngtd854rq2",
@@ -9339,9 +9341,17 @@
       "completionNotes": "PCR run and clear editing visualized for GPR35 edited using dharmacon guides. ",
       "completionLinks": "https://docs.google.com/presentation/d/1WMeJd1sRPVClQ2tgxTADm3skdbfHUdZp4urQ1Se2IeA/edit?slide=id.g3d685553849_0_19#slide=id.g3d685553849_0_19",
       "date": "2026-04-15"
+    },
+    {
+      "id": "mnxp3ia840x2v4nvvwu",
+      "title": "Sorter setup for Christine",
+      "completedAt": "2026-04-16T19:48:24.495Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-16"
     }
   ],
-  "lastUpdated": "2026-04-16T15:14:10.577Z",
+  "lastUpdated": "2026-04-16T19:48:24.495Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
