@@ -1776,8 +1776,11 @@
               "title": "Thaw NK cells for nucleofection",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-08T21:53:22.088Z"
+              "completed": true,
+              "createdAt": "2026-04-08T21:53:22.088Z",
+              "completedAt": "2026-04-16T23:05:40.452Z",
+              "completionNotes": "Thawed ~500M NK cells and isolated ~25M NK cells.  Seeded at a little over 2M cells/mL in u bottom well plate in cNK MACS media.",
+              "completionLinks": ""
             },
             {
               "id": "mnql4yzu7p6q3ijhep8",
@@ -6463,7 +6466,10 @@
         "subtaskId": "mnql4eqw68afig7ys2",
         "time": null,
         "scheduledAt": "2026-04-08T22:00:29.795Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-16T23:05:40.452Z",
+        "completionNotes": "Thawed ~500M NK cells and isolated ~25M NK cells.  Seeded at a little over 2M cells/mL in u bottom well plate in cNK MACS media.",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -9364,9 +9370,18 @@
       "completionNotes": "Divided the protocol into two parts 1. lysis -> wash 1, and 2. Wash 1 -> completion. Allowed for tip swap after wash 1 also created additional space on i7 bed for protocol expansion.\n\nReduced lysis time to 5 minutes.  Protocol changes did seem to lead to a significant improvement for monocyte samples.  DLD1 samples still look very good meaning the overall procedure is still working. \n\nI think improvements can be made in the mixing protocol and in removal of dead volume. ",
       "completionLinks": "",
       "date": "2026-04-16"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mnql4eqw68afig7ys2",
+      "completedAt": "2026-04-16T23:05:40.452Z",
+      "completionNotes": "Thawed ~500M NK cells and isolated ~25M NK cells.  Seeded at a little over 2M cells/mL in u bottom well plate in cNK MACS media.",
+      "completionLinks": "",
+      "date": "2026-04-16"
     }
   ],
-  "lastUpdated": "2026-04-16T20:51:36.780Z",
+  "lastUpdated": "2026-04-16T23:05:40.452Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
