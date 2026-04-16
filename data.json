@@ -3182,8 +3182,11 @@
               "title": "BLADE-R automation pilot 4 w/ monocytes",
               "description": "using fresh reagents. ",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-14T22:14:35.771Z"
+              "completed": true,
+              "createdAt": "2026-04-14T22:14:35.771Z",
+              "completedAt": "2026-04-16T00:41:04.843Z",
+              "completionNotes": "Poor RNA again.  Need to dial this procedure in.  Curious why it didn't work for DLD1s, then did work.  Now back to not working again.  For pilot 5 tomorrow I can try break lysis and bead clean up into two discreet steps and swap to fresh tips for wash 1 onwards. ",
+              "completionLinks": ""
             }
           ]
         }
@@ -6604,7 +6607,10 @@
         "subtaskId": "mnz6itiz1ntvxycfiyr",
         "time": null,
         "scheduledAt": "2026-04-14T22:14:35.771Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-16T00:41:04.843Z",
+        "completionNotes": "Poor RNA again.  Need to dial this procedure in.  Curious why it didn't work for DLD1s, then did work.  Now back to not working again.  For pilot 5 tomorrow I can try break lysis and bead clean up into two discreet steps and swap to fresh tips for wash 1 onwards. ",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -9272,9 +9278,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-15"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mnywuk88jf98pxpt8k",
+      "subtaskId": "mnz6itiz1ntvxycfiyr",
+      "completedAt": "2026-04-16T00:41:04.843Z",
+      "completionNotes": "Poor RNA again.  Need to dial this procedure in.  Curious why it didn't work for DLD1s, then did work.  Now back to not working again.  For pilot 5 tomorrow I can try break lysis and bead clean up into two discreet steps and swap to fresh tips for wash 1 onwards. ",
+      "completionLinks": "",
+      "date": "2026-04-15"
     }
   ],
-  "lastUpdated": "2026-04-16T00:37:58.066Z",
+  "lastUpdated": "2026-04-16T00:41:04.843Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
