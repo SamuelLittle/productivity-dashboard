@@ -3204,8 +3204,11 @@
               "title": "Automation Pilot 5 ",
               "description": "Implementing breaking the protocol into two steps. Adding DLD1s to the plate to see delta between mono and DLD1",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-16T15:14:10.576Z"
+              "completed": true,
+              "createdAt": "2026-04-16T15:14:10.576Z",
+              "completedAt": "2026-04-16T20:51:36.780Z",
+              "completionNotes": "Divided the protocol into two parts 1. lysis -> wash 1, and 2. Wash 1 -> completion. Allowed for tip swap after wash 1 also created additional space on i7 bed for protocol expansion.\n\nReduced lysis time to 5 minutes.  Protocol changes did seem to lead to a significant improvement for monocyte samples.  DLD1 samples still look very good meaning the overall procedure is still working. \n\nI think improvements can be made in the mixing protocol and in removal of dead volume. ",
+              "completionLinks": ""
             }
           ]
         }
@@ -6484,7 +6487,10 @@
         "subtaskId": "mo1mduz4qct1rdbkbih",
         "time": null,
         "scheduledAt": "2026-04-16T15:14:10.577Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-16T20:51:36.780Z",
+        "completionNotes": "Divided the protocol into two parts 1. lysis -> wash 1, and 2. Wash 1 -> completion. Allowed for tip swap after wash 1 also created additional space on i7 bed for protocol expansion.\n\nReduced lysis time to 5 minutes.  Protocol changes did seem to lead to a significant improvement for monocyte samples.  DLD1 samples still look very good meaning the overall procedure is still working. \n\nI think improvements can be made in the mixing protocol and in removal of dead volume. ",
+        "completionLinks": ""
       }
     ],
     "2026-04-17": [
@@ -9349,9 +9355,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-16"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mnywuk88jf98pxpt8k",
+      "subtaskId": "mo1mduz4qct1rdbkbih",
+      "completedAt": "2026-04-16T20:51:36.780Z",
+      "completionNotes": "Divided the protocol into two parts 1. lysis -> wash 1, and 2. Wash 1 -> completion. Allowed for tip swap after wash 1 also created additional space on i7 bed for protocol expansion.\n\nReduced lysis time to 5 minutes.  Protocol changes did seem to lead to a significant improvement for monocyte samples.  DLD1 samples still look very good meaning the overall procedure is still working. \n\nI think improvements can be made in the mixing protocol and in removal of dead volume. ",
+      "completionLinks": "",
+      "date": "2026-04-16"
     }
   ],
-  "lastUpdated": "2026-04-16T19:48:24.495Z",
+  "lastUpdated": "2026-04-16T20:51:36.780Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
