@@ -6484,14 +6484,6 @@
         "completedOnDay": false
       },
       {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mnyv06u2qy3fd3cl2b",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-16T00:44:41.252Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mmfjn4b1w85dvswipdk",
         "taskId": "mnywuk88jf98pxpt8k",
         "subtaskId": "mo1mduz4qct1rdbkbih",
@@ -6534,6 +6526,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-04-16T23:05:51.489Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mnyv06u2qy3fd3cl2b",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-16T23:05:51.748Z",
         "completedOnDay": false
       }
     ],
@@ -9385,7 +9385,7 @@
       "date": "2026-04-16"
     }
   ],
-  "lastUpdated": "2026-04-16T23:05:51.489Z",
+  "lastUpdated": "2026-04-16T23:05:51.748Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -9586,6 +9586,17 @@
       },
       "generatedAt": "2026-04-16T00:47:39.714Z",
       "editedAt": "2026-04-16T00:47:39.714Z"
+    },
+    "2026-04-16": {
+      "summary": "**Thursday, April 16, 2026 - Daily Summary**\n\nFocused day on advancing multiple ongoing projects with steady progress across cell preparation, automation development, and lab setup tasks. Made meaningful improvements to the BLADE-R automation protocol and successfully prepared cells for upcoming experiments.\n\n**Main Accomplishments:**\n• Completed Automation Pilot 5 for SMARTSeq TechDev - divided protocol into two parts with tip swap capability and reduced lysis time to 5 minutes, showing significant improvement for monocyte samples\n• Thawed and isolated NK cells for nucleofection - recovered ~25M viable cells from ~500M thawed, seeded in cNK MACS media for tomorrow's Natural Killer Cell CRISPR Screen\n• Set up sorter for Christine including full sheath fluid bleed\n• Ran PCR and analyzed results for Macrophage Screen\n• Started NHLFs and IMR90s cell culture preparation for upcoming work\n\n**Carry Forward:**\nContinue optimizing BLADE-R protocol focusing on improved mixing methods and dead volume removal to further enhance RNA quality results.",
+      "reflections": {
+        "accomplishments": "Nothing major today but several small important things:\n1. Ran pilot 5 for BLADE-R, got some good insights on whats needed to get good qualit RNA.  Definitely a step forward. \n2. Thawed NK cells for tomorrows nucleofection. Got a lot of cells (~25M) should be enough for what is needed\n3. Got a jump start on tomorrow's cell thawing with NHLFs and IMR90s in culture.  A little nervous because they have been at -80 for nearly a year. \n4. Set up sorter for Christine",
+        "effort": "Sorter set up needed a full sheath fluid bleed which took some time.  Isolated NK cells as always takes time.",
+        "learned": "Swapping tips after lysis and shorter lysis time seemed to help for BLADE-R but still doesn't totally make sense because the hand scale experiments I did a 15 min lysis and things were fine.  I think more thorough mixing and better dv removal is needed.",
+        "carryForward": "BLADE-R fixes."
+      },
+      "generatedAt": "2026-04-16T23:10:39.271Z",
+      "editedAt": "2026-04-16T23:10:39.271Z"
     }
   },
   "weeklySummaries": {
