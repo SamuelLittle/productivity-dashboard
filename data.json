@@ -3171,8 +3171,11 @@
               "title": "isolate monocytes and plate for BLADE-R test",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-14T22:14:11.158Z"
+              "completed": true,
+              "createdAt": "2026-04-14T22:14:11.158Z",
+              "completedAt": "2026-04-16T00:37:58.066Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mnz6itiz1ntvxycfiyr",
@@ -6609,7 +6612,10 @@
         "subtaskId": "mnz6iajaz2nz31ixf6p",
         "time": null,
         "scheduledAt": "2026-04-14T22:16:25.167Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-16T00:37:58.066Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -9257,9 +9263,18 @@
       "completionNotes": "analysis back and overview sent to Celine.  BSA seems to improve degradation but not to the degree we were hoping. ",
       "completionLinks": "",
       "date": "2026-04-15"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mnywuk88jf98pxpt8k",
+      "subtaskId": "mnz6iajaz2nz31ixf6p",
+      "completedAt": "2026-04-16T00:37:58.066Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-15"
     }
   ],
-  "lastUpdated": "2026-04-16T00:37:47.041Z",
+  "lastUpdated": "2026-04-16T00:37:58.066Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
