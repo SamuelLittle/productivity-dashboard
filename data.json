@@ -6443,6 +6443,14 @@
         "time": null,
         "scheduledAt": "2026-04-08T22:00:29.795Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mlqy3dwoui2qz3anm7t",
+        "subtaskId": "mo0r9swf6ehbu54xoqt",
+        "time": null,
+        "scheduledAt": "2026-04-16T00:44:33.389Z",
+        "completedOnDay": false
       }
     ],
     "2026-04-17": [
@@ -6642,17 +6650,6 @@
         "scheduledAt": "2026-04-15T16:20:14.355Z",
         "completedOnDay": true,
         "completedAt": "2026-04-15T16:50:15.413Z"
-      },
-      {
-        "projectId": "mkltywpq0yriuhvt8wmb",
-        "taskId": "mlqy3dwoui2qz3anm7t",
-        "subtaskId": "mo0r9swf6ehbu54xoqt",
-        "time": null,
-        "scheduledAt": "2026-04-16T00:43:18.883Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-16T00:43:48.806Z",
-        "completionNotes": "PCR run and clear editing visualized for GPR35 edited using dharmacon guides. ",
-        "completionLinks": "https://docs.google.com/presentation/d/1WMeJd1sRPVClQ2tgxTADm3skdbfHUdZp4urQ1Se2IeA/edit?slide=id.g3d685553849_0_19#slide=id.g3d685553849_0_19"
       }
     ]
   },
@@ -9320,7 +9317,7 @@
       "date": "2026-04-15"
     }
   ],
-  "lastUpdated": "2026-04-16T00:43:48.806Z",
+  "lastUpdated": "2026-04-16T00:44:33.389Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
