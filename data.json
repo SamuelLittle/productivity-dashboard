@@ -6459,6 +6459,14 @@
         "time": null,
         "scheduledAt": "2026-04-16T00:44:41.108Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mnyv06u2qy3fd3cl2b",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-16T00:44:41.252Z",
+        "completedOnDay": false
       }
     ],
     "2026-04-17": [
@@ -6601,14 +6609,6 @@
       }
     ],
     "2026-04-15": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mnyv06u2qy3fd3cl2b",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-14T16:52:10.780Z",
-        "completedOnDay": false
-      },
       {
         "projectId": "",
         "taskId": "",
@@ -9325,7 +9325,7 @@
       "date": "2026-04-15"
     }
   ],
-  "lastUpdated": "2026-04-16T00:44:41.108Z",
+  "lastUpdated": "2026-04-16T00:44:41.252Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -9515,6 +9515,17 @@
       },
       "generatedAt": "2026-04-14T23:14:30.408Z",
       "editedAt": "2026-04-14T23:14:30.408Z"
+    },
+    "2026-04-15": {
+      "summary": "**Wednesday, April 15, 2026**\n\nToday focused on data analysis for the cytokine screen and troubleshooting the BLADE-R automation protocol with monocytes. While the cytokine analysis showed BSA improvements weren't as strong as hoped, the editing efficiency results from amplicon PCR provided valuable insights for the macrophage screen. BLADE-R automation continues to present challenges with inconsistent RNA quality.\n\n**Main Accomplishments:**\n• Completed luminex data analysis for cytokine screen treatment plates and sent overview to Celine\n• Executed BLADE-R automation pilot 4 with monocytes using fresh reagents\n• Isolated and plated monocytes for BLADE-R testing\n• Submitted primer orders for macrophage screen\n• Achieved clean GPR35 PCR bands with minimal template, potentially useful for Tim's PCRs\n\n**Carry Forward:**\nBLADE-R protocol needs refinement - will attempt pilot 5 tomorrow with modified approach: separating lysis and bead cleanup into discrete steps and using fresh tips from wash 1 onward. Have backup plate available for additional testing.",
+      "reflections": {
+        "accomplishments": "Getting the editing efficiancy via amplicon PCR for the macrophage screen was valuable",
+        "effort": "Setting up the PCR and getting all the gDNA concentrations.  Isolating monocytes for the BLADE-R pilots",
+        "learned": "The bands for the GPR35 PCR were super clean and I was using very very little template.  Maybe this is the path for the PCRs for Tim.  Worth checking.",
+        "carryForward": "Continued frustration for BLADE-R with monocytes.  I have an extra plate to try again tomorrow implementing fresh tips after W1 and breaking lysis and BLADE-R into two different steps"
+      },
+      "generatedAt": "2026-04-16T00:47:39.714Z",
+      "editedAt": "2026-04-16T00:47:39.714Z"
     }
   },
   "weeklySummaries": {
