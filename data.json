@@ -1076,8 +1076,11 @@
               "title": "Analyze treatment plate luminex data",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-14T22:13:25.730Z"
+              "completed": true,
+              "createdAt": "2026-04-14T22:13:25.730Z",
+              "completedAt": "2026-04-16T00:37:47.041Z",
+              "completionNotes": "analysis back and overview sent to Celine.  BSA seems to improve degradation but not to the degree we were hoping. ",
+              "completionLinks": ""
             }
           ]
         },
@@ -6587,7 +6590,10 @@
         "subtaskId": "mnz6hbhemnzsgdmpwgl",
         "time": null,
         "scheduledAt": "2026-04-14T22:13:25.730Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-16T00:37:47.040Z",
+        "completionNotes": "analysis back and overview sent to Celine.  BSA seems to improve degradation but not to the degree we were hoping. ",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -9242,9 +9248,18 @@
       "subtaskId": "mo09ays396kj85t3ayn",
       "title": "submit primers for order",
       "completedAt": "2026-04-15T16:50:15.413Z"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "mnz6hbhemnzsgdmpwgl",
+      "completedAt": "2026-04-16T00:37:47.041Z",
+      "completionNotes": "analysis back and overview sent to Celine.  BSA seems to improve degradation but not to the degree we were hoping. ",
+      "completionLinks": "",
+      "date": "2026-04-15"
     }
   ],
-  "lastUpdated": "2026-04-15T16:50:15.413Z",
+  "lastUpdated": "2026-04-16T00:37:47.041Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
