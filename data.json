@@ -2454,8 +2454,11 @@
               "title": "Run PCR and analyze results",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-16T00:43:13.167Z"
+              "completed": true,
+              "createdAt": "2026-04-16T00:43:13.167Z",
+              "completedAt": "2026-04-16T00:43:48.806Z",
+              "completionNotes": "PCR run and clear editing visualized for GPR35 edited using dharmacon guides. ",
+              "completionLinks": "https://docs.google.com/presentation/d/1WMeJd1sRPVClQ2tgxTADm3skdbfHUdZp4urQ1Se2IeA/edit?slide=id.g3d685553849_0_19#slide=id.g3d685553849_0_19"
             }
           ]
         },
@@ -6646,7 +6649,10 @@
         "subtaskId": "mo0r9swf6ehbu54xoqt",
         "time": null,
         "scheduledAt": "2026-04-16T00:43:18.883Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-16T00:43:48.806Z",
+        "completionNotes": "PCR run and clear editing visualized for GPR35 edited using dharmacon guides. ",
+        "completionLinks": "https://docs.google.com/presentation/d/1WMeJd1sRPVClQ2tgxTADm3skdbfHUdZp4urQ1Se2IeA/edit?slide=id.g3d685553849_0_19#slide=id.g3d685553849_0_19"
       }
     ]
   },
@@ -9303,9 +9309,18 @@
       "completionNotes": "Poor RNA again.  Need to dial this procedure in.  Curious why it didn't work for DLD1s, then did work.  Now back to not working again.  For pilot 5 tomorrow I can try break lysis and bead clean up into two discreet steps and swap to fresh tips for wash 1 onwards. ",
       "completionLinks": "",
       "date": "2026-04-15"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mlqy3dwoui2qz3anm7t",
+      "subtaskId": "mo0r9swf6ehbu54xoqt",
+      "completedAt": "2026-04-16T00:43:48.806Z",
+      "completionNotes": "PCR run and clear editing visualized for GPR35 edited using dharmacon guides. ",
+      "completionLinks": "https://docs.google.com/presentation/d/1WMeJd1sRPVClQ2tgxTADm3skdbfHUdZp4urQ1Se2IeA/edit?slide=id.g3d685553849_0_19#slide=id.g3d685553849_0_19",
+      "date": "2026-04-15"
     }
   ],
-  "lastUpdated": "2026-04-16T00:43:18.883Z",
+  "lastUpdated": "2026-04-16T00:43:48.806Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
