@@ -1020,8 +1020,11 @@
               "title": "Thaw Cells (target date)",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:45:33.464Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:45:33.464Z",
+              "completedAt": "2026-04-17T23:24:41.034Z",
+              "completionNotes": "All cells thawed and in 37c.  Looked before I left for the day and HMVECs werent adhered yet.  Might still be premature. ",
+              "completionLinks": ""
             },
             {
               "id": "mn970laht5tbwixe38n",
@@ -6460,7 +6463,10 @@
         "subtaskId": "mn96zi1km7mctizbo9d",
         "time": null,
         "scheduledAt": "2026-04-09T19:55:32.622Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-17T23:24:41.033Z",
+        "completionNotes": "All cells thawed and in 37c.  Looked before I left for the day and HMVECs werent adhered yet.  Might still be premature. ",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -9414,9 +9420,18 @@
       "subtaskId": "mlzv9hga7d59d5k3ctq",
       "title": "Pilot RNA extraction",
       "completedAt": "2026-04-17T16:55:47.707Z"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "mn96zi1km7mctizbo9d",
+      "completedAt": "2026-04-17T23:24:41.034Z",
+      "completionNotes": "All cells thawed and in 37c.  Looked before I left for the day and HMVECs werent adhered yet.  Might still be premature. ",
+      "completionLinks": "",
+      "date": "2026-04-17"
     }
   ],
-  "lastUpdated": "2026-04-17T18:26:20.366Z",
+  "lastUpdated": "2026-04-17T23:24:41.034Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
