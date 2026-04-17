@@ -3180,8 +3180,11 @@
               "title": "meet w/ Corinne to adjust auto protocol",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-14T17:44:22.656Z"
+              "completed": true,
+              "createdAt": "2026-04-14T17:44:22.656Z",
+              "completedAt": "2026-04-17T23:26:10.466Z",
+              "completionNotes": "Adjusted protocol to improve mixing and aspiration.  Will test again on Monday with monocytes. ",
+              "completionLinks": ""
             },
             {
               "id": "mnz6hylkm7hjz0e7c3",
@@ -6474,15 +6477,10 @@
         "subtaskId": "mnywvben5tp5u4oxdec",
         "time": "13:30",
         "scheduledAt": "2026-04-14T17:44:22.656Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mnyv06u2qy3fd3cl2b",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-16T23:05:51.748Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-17T23:26:10.466Z",
+        "completionNotes": "Adjusted protocol to improve mixing and aspiration.  Will test again on Monday with monocytes. ",
+        "completionLinks": ""
       }
     ],
     "2026-04-28": [
@@ -6723,6 +6721,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-04-17T23:24:48.820Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mnyv06u2qy3fd3cl2b",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-17T23:24:49.340Z",
         "completedOnDay": false
       }
     ]
@@ -9431,9 +9437,18 @@
       "completionNotes": "All cells thawed and in 37c.  Looked before I left for the day and HMVECs werent adhered yet.  Might still be premature. ",
       "completionLinks": "",
       "date": "2026-04-17"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mnywuk88jf98pxpt8k",
+      "subtaskId": "mnywvben5tp5u4oxdec",
+      "completedAt": "2026-04-17T23:26:10.466Z",
+      "completionNotes": "Adjusted protocol to improve mixing and aspiration.  Will test again on Monday with monocytes. ",
+      "completionLinks": "",
+      "date": "2026-04-17"
     }
   ],
-  "lastUpdated": "2026-04-17T23:24:48.820Z",
+  "lastUpdated": "2026-04-17T23:26:10.466Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
