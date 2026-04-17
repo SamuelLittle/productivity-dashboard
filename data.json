@@ -437,8 +437,11 @@
               "title": "Pilot RNA extraction",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-24T00:27:45.946Z"
+              "completed": true,
+              "createdAt": "2026-02-24T00:27:45.946Z",
+              "completedAt": "2026-04-17T16:55:47.707Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mlzv9nnewmv26jfp4l",
@@ -9401,9 +9404,16 @@
       "completionNotes": "Thawed ~500M NK cells and isolated ~25M NK cells.  Seeded at a little over 2M cells/mL in u bottom well plate in cNK MACS media.",
       "completionLinks": "",
       "date": "2026-04-16"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3n6kk2s3eujhd9om",
+      "subtaskId": "mlzv9hga7d59d5k3ctq",
+      "title": "Pilot RNA extraction",
+      "completedAt": "2026-04-17T16:55:47.707Z"
     }
   ],
-  "lastUpdated": "2026-04-17T16:53:10.661Z",
+  "lastUpdated": "2026-04-17T16:55:47.707Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
