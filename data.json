@@ -9658,6 +9658,17 @@
       },
       "generatedAt": "2026-04-16T23:10:39.271Z",
       "editedAt": "2026-04-16T23:10:39.271Z"
+    },
+    "2026-04-17": {
+      "summary": "**Friday, April 17, 2026 - Daily Summary**\n\nFocused day on protocol optimization and cell preparation. Made solid progress adjusting the BLADE-R automation protocol with Corinne, though troubleshooting the i7 instrument required more iterations than expected. Successfully thawed all cells for the cytokine screen, but HMVECs hadn't adhered by end of day and NK cells from yesterday showed poor viability.\n\n**Main Accomplishments:**\n• Adjusted BLADE-R automation protocol mixing and aspiration steps (SMARTSeq TechDev)\n• Thawed all target cells for Cytokine Screen experiment\n• Completed multiple troubleshooting iterations on i7 workflow\n• Identified and resolved mixing protocol issues\n\n**Carry Forward:**\nTest updated BLADE-R protocol on Monday with monocytes. Re-thaw NK cells next week due to poor viability. Monitor HMVEC adherence status.",
+      "reflections": {
+        "accomplishments": "Adjusting the BLADE-R automation protocol and getting all the cells thawed.",
+        "effort": "The i7 was being fidgety and trouble shooting the workflow was challenging. I needed to run through several iterations to test the things I wanted to test.",
+        "learned": "I think the mix protocol is fully fixed. the aspiration may need some more work.",
+        "carryForward": "I will test BLADE-R on monday and find out. \n\nI also looked at the NK cells thawed yesterday and viability was really poor.  Scrapped and going to try again next week."
+      },
+      "generatedAt": "2026-04-17T23:30:21.943Z",
+      "editedAt": "2026-04-17T23:30:21.943Z"
     }
   },
   "weeklySummaries": {
