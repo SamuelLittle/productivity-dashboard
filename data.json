@@ -1842,6 +1842,14 @@
               "completionLinks": "https://gene.benchling.com/s/etr-awZ3sgKdwULVehCzSgbZ?m=slm-6XmMq5Wkb3OYsDmyO2Le",
               "notes": "Protocol sent to mayra and Dan detailing killing assay to be started at the end of this week and completed at the beginning of next week",
               "links": ""
+            },
+            {
+              "id": "mo35d11eizzvdqf2d6k",
+              "title": "Repeat Thaw for nucleofection",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-17T16:53:10.659Z"
             }
           ]
         }
@@ -6315,6 +6323,14 @@
         "time": null,
         "scheduledAt": "2026-04-08T22:08:06.380Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mn3vj631ght8zzcdd8g",
+        "subtaskId": "mo35d11eizzvdqf2d6k",
+        "time": null,
+        "scheduledAt": "2026-04-17T16:53:10.660Z",
+        "completedOnDay": false
       }
     ],
     "2026-04-27": [
@@ -9385,7 +9401,7 @@
       "date": "2026-04-16"
     }
   ],
-  "lastUpdated": "2026-04-16T23:05:51.748Z",
+  "lastUpdated": "2026-04-17T16:53:10.661Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
