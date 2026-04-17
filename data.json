@@ -4170,6 +4170,17 @@
         "time": null,
         "createdAt": "2026-04-07T23:37:07.520Z"
       }
+    ],
+    "2026-04-20": [
+      {
+        "id": "mo38ou32ovpgb5i1af",
+        "title": "Blood Arriving - isolate NK cells",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-04-17T18:26:20.366Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -9405,7 +9416,7 @@
       "completedAt": "2026-04-17T16:55:47.707Z"
     }
   ],
-  "lastUpdated": "2026-04-17T17:19:05.762Z",
+  "lastUpdated": "2026-04-17T18:26:20.366Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
