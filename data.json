@@ -3231,6 +3231,15 @@
               "completionLinks": ""
             }
           ]
+        },
+        {
+          "id": "mo4w58ixhq5o8hrao2u",
+          "title": "Monocyte automation Pilot 6",
+          "description": "Full automation run implementing new mixing and aspirating methodologies",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-04-18T22:10:42.921Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -6729,6 +6738,16 @@
         "scheduledAt": "2026-04-17T23:24:49.340Z",
         "completedOnDay": false
       }
+    ],
+    "2026-04-20": [
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mo4w58ixhq5o8hrao2u",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-18T22:10:42.922Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -9446,7 +9465,7 @@
       "date": "2026-04-17"
     }
   ],
-  "lastUpdated": "2026-04-17T23:26:36.426Z",
+  "lastUpdated": "2026-04-18T22:10:42.922Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
