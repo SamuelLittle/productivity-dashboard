@@ -3239,7 +3239,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-04-18T22:10:42.921Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mo4w5jd7od3zqhnsp38",
+              "title": "Isolate Monocytes",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-18T22:10:56.971Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -9465,7 +9474,7 @@
       "date": "2026-04-17"
     }
   ],
-  "lastUpdated": "2026-04-18T22:10:42.922Z",
+  "lastUpdated": "2026-04-18T22:10:56.971Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
