@@ -3255,6 +3255,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-04-18T22:11:17.487Z"
+            },
+            {
+              "id": "mo4w75loqu8js7k7dm",
+              "title": "run BLADE-R for monocytes",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-18T22:12:12.444Z"
             }
           ]
         }
@@ -6764,6 +6772,14 @@
         "time": null,
         "scheduledAt": "2026-04-18T22:10:42.922Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mo4w58ixhq5o8hrao2u",
+        "subtaskId": "mo4w75loqu8js7k7dm",
+        "time": null,
+        "scheduledAt": "2026-04-18T22:12:12.445Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -9482,7 +9498,7 @@
       "date": "2026-04-17"
     }
   ],
-  "lastUpdated": "2026-04-18T22:11:17.487Z",
+  "lastUpdated": "2026-04-18T22:12:12.445Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
