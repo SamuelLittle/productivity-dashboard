@@ -4232,9 +4232,12 @@
         "title": "repeat Tim PCR using low template input",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-04-20T14:54:50.546Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-04-20T20:29:24.278Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -9519,9 +9522,17 @@
       "completionNotes": "Adjusted protocol to improve mixing and aspiration.  Will test again on Monday with monocytes. ",
       "completionLinks": "",
       "date": "2026-04-17"
+    },
+    {
+      "id": "mo7bgek1xgxqtooxxv",
+      "title": "repeat Tim PCR using low template input",
+      "completedAt": "2026-04-20T20:29:24.278Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-20"
     }
   ],
-  "lastUpdated": "2026-04-20T14:54:50.546Z",
+  "lastUpdated": "2026-04-20T20:29:24.278Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
