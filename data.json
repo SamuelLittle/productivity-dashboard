@@ -6816,14 +6816,6 @@
         "time": null,
         "scheduledAt": "2026-04-18T22:15:27.906Z",
         "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mnyv06u2qy3fd3cl2b",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-19T21:00:01.175Z",
-        "completedOnDay": false
       }
     ],
     "2026-04-21": [
@@ -6833,6 +6825,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-04-21T14:43:48.894Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mnyv06u2qy3fd3cl2b",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-21T14:43:49.225Z",
         "completedOnDay": false
       }
     ]
@@ -9576,7 +9576,7 @@
       "date": "2026-04-20"
     }
   ],
-  "lastUpdated": "2026-04-21T14:43:48.894Z",
+  "lastUpdated": "2026-04-21T14:43:49.225Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -9799,6 +9799,17 @@
       },
       "generatedAt": "2026-04-17T23:30:21.943Z",
       "editedAt": "2026-04-17T23:30:21.943Z"
+    },
+    "2026-04-20": {
+      "summary": "**Monday, April 20, 2026 - End of Day Summary**\n\nCompleted a successful automation run for Monocyte Pilot 6, achieving usable BLADE-R results for monocytes despite some data imperfections. Also processed incoming blood samples to isolate NK cells and repeated Tim PCR work with low template input. The day focused heavily on refining automated protocols and RNA analysis workflows.\n\n**Main Accomplishments:**\n• Completed Monocyte automation Pilot 6 full run with new mixing and aspirating methodologies\n• Successfully ran BLADE-R for monocytes - achieved usable results marking significant progress\n• Completed RNA analysis for monocyte samples\n• Isolated NK cells from blood samples and froze ~700M PBMCs\n• Repeated Tim PCR using low template input protocol\n\n**Carry Forward:**\nImplement tip changes after wash1 and wash2 in BLADE-R protocol, requiring sophisticated automation development. Scale up to full automation for 3 plates simultaneously while maintaining current protocol improvements.",
+      "reflections": {
+        "accomplishments": "Succesfull run of BLADE-R for monocytes.  Data isn't perfect but a big step in the right direction.  I would say usable moving forward.",
+        "effort": "as always the work surrounding BLADE-R was time consuming.  I need to figure out how to streamline this.",
+        "learned": "Modified BLADE-R was worth the effort.  I need a tip change after wash1 and wash 2.  I will need some sophisticated automation to handle this.",
+        "carryForward": "Keep protocol changes. Implement full auto for 3 plates simultaneously."
+      },
+      "generatedAt": "2026-04-21T15:00:55.969Z",
+      "editedAt": "2026-04-21T15:00:55.969Z"
     }
   },
   "weeklySummaries": {
