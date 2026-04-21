@@ -3265,7 +3265,9 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-18T22:12:12.444Z",
-              "completedAt": "2026-04-21T14:41:42.968Z"
+              "completedAt": "2026-04-21T14:41:42.968Z",
+              "notes": "Got low quantities of high quality RNA from monocytes. \n\nImplemented the new wash and aspirate methods + 3 tip changes: after lysis, after wash 2, before h2o elution. ",
+              "links": ""
             },
             {
               "id": "mo4wbcf633wi8ncce13",
@@ -9572,7 +9574,7 @@
       "date": "2026-04-20"
     }
   ],
-  "lastUpdated": "2026-04-21T14:41:42.968Z",
+  "lastUpdated": "2026-04-21T14:43:38.142Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
