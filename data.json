@@ -4213,9 +4213,12 @@
         "title": "Blood Arriving - isolate NK cells",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-04-17T18:26:20.366Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-04-21T14:41:34.521Z",
+        "completionNotes": "froze ~700M PBMCs",
+        "completionLinks": ""
       },
       {
         "id": "mnp9dznkngtd854rq2",
@@ -9541,9 +9544,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-20"
+    },
+    {
+      "id": "mo38ou32ovpgb5i1af",
+      "title": "Blood Arriving - isolate NK cells",
+      "completedAt": "2026-04-21T14:41:34.522Z",
+      "completionNotes": "froze ~700M PBMCs",
+      "completionLinks": "",
+      "date": "2026-04-20"
     }
   ],
-  "lastUpdated": "2026-04-20T20:29:47.821Z",
+  "lastUpdated": "2026-04-21T14:41:34.522Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
