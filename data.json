@@ -3237,7 +3237,7 @@
           "title": "Monocyte automation Pilot 6",
           "description": "Full automation run implementing new mixing and aspirating methodologies",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-04-18T22:10:42.921Z",
           "subtasks": [
             {
@@ -3245,34 +3245,41 @@
               "title": "Isolate Monocytes",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-18T22:10:56.971Z"
+              "completed": true,
+              "createdAt": "2026-04-18T22:10:56.971Z",
+              "completedAt": "2026-04-21T14:41:42.968Z"
             },
             {
               "id": "mo4w5z73bv4ek8z9htq",
               "title": "Implement changes into i7 protocol",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-18T22:11:17.487Z"
+              "completed": true,
+              "createdAt": "2026-04-18T22:11:17.487Z",
+              "completedAt": "2026-04-21T14:41:42.968Z"
             },
             {
               "id": "mo4w75loqu8js7k7dm",
               "title": "run BLADE-R for monocytes",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-18T22:12:12.444Z"
+              "completed": true,
+              "createdAt": "2026-04-18T22:12:12.444Z",
+              "completedAt": "2026-04-21T14:41:42.968Z"
             },
             {
               "id": "mo4wbcf633wi8ncce13",
               "title": "analyze RNA",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-18T22:15:27.906Z"
+              "completed": true,
+              "createdAt": "2026-04-18T22:15:27.906Z",
+              "completedAt": "2026-04-21T14:41:42.968Z"
             }
-          ]
+          ],
+          "completedAt": "2026-04-21T14:41:42.968Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -6787,7 +6794,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-04-18T22:10:42.922Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-21T14:41:42.968Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -9552,9 +9562,17 @@
       "completionNotes": "froze ~700M PBMCs",
       "completionLinks": "",
       "date": "2026-04-20"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mo4w58ixhq5o8hrao2u",
+      "completedAt": "2026-04-21T14:41:42.968Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-20"
     }
   ],
-  "lastUpdated": "2026-04-21T14:41:34.522Z",
+  "lastUpdated": "2026-04-21T14:41:42.968Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
