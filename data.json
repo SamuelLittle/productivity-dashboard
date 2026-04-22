@@ -2846,6 +2846,15 @@
           "completedAt": "2026-04-09T20:36:19.154Z",
           "completionNotes": "- Need to simplify NK cell killing assay\n- Make proposal for COPD mix\n- Make slides for COPD cytokine screening update tomorrow\n- message Effi / Meng/ Celine anout TPP analysis\n- plan for checkerboard analysis\n- email Yuxin",
           "completionLinks": ""
+        },
+        {
+          "id": "moapj9mmouvdcyjcjko",
+          "title": "1-on-1 w/ Celine",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-04-22T23:52:17.278Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -6851,6 +6860,14 @@
         "time": null,
         "scheduledAt": "2026-04-17T17:09:33.785Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mlld42ihacxlvsot49w",
+        "taskId": "moapj9mmouvdcyjcjko",
+        "subtaskId": null,
+        "time": "10:00",
+        "scheduledAt": "2026-04-22T23:52:17.279Z",
+        "completedOnDay": false
       }
     ],
     "2026-04-27": [
@@ -9689,7 +9706,7 @@
       "date": "2026-04-22"
     }
   ],
-  "lastUpdated": "2026-04-22T23:45:04.128Z",
+  "lastUpdated": "2026-04-22T23:52:17.279Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
