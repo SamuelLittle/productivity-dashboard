@@ -4275,6 +4275,15 @@
         "completed": false,
         "createdAt": "2026-04-22T00:04:04.000Z",
         "time": null
+      },
+      {
+        "id": "mo9aiq5tx4zw38mx2l",
+        "title": "New BCL2 primers",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-04-22T00:04:11.633Z",
+        "time": null
       }
     ]
   },
@@ -9592,7 +9601,7 @@
       "date": "2026-04-20"
     }
   ],
-  "lastUpdated": "2026-04-22T00:04:04.000Z",
+  "lastUpdated": "2026-04-22T00:04:11.633Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
