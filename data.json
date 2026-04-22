@@ -1098,6 +1098,14 @@
               "completedAt": "2026-04-22T22:51:22.171Z",
               "completionNotes": "Passaged NHLFs, HUVEC, and SMCs.  BEAS2Bs passaged last nigth and are fine. Will need to be passaged either tomorrow or friday.  HMVECs are coming along and will likely have the culture take hold in time for next tuesday.  New vial of IMR90s look good.  Will passage tomorrow or Friday",
               "completionLinks": ""
+            },
+            {
+              "id": "moap9tbnw2uvyymrnhi",
+              "title": "Make aliquots for mastermixes for gap screen",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-22T23:44:56.244Z"
             }
           ]
         },
@@ -6825,6 +6833,14 @@
         "time": null,
         "scheduledAt": "2026-04-22T22:55:32.973Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "moap9tbnw2uvyymrnhi",
+        "time": null,
+        "scheduledAt": "2026-04-22T23:44:56.244Z",
+        "completedOnDay": false
       }
     ],
     "2026-04-24": [
@@ -9673,7 +9689,7 @@
       "date": "2026-04-22"
     }
   ],
-  "lastUpdated": "2026-04-22T23:43:46.268Z",
+  "lastUpdated": "2026-04-22T23:44:56.244Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
