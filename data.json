@@ -4272,9 +4272,12 @@
         "title": "Final ReRun PCR for Tim",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-04-22T00:04:04.000Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-04-22T00:12:38.897Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mo9aiq5tx4zw38mx2l",
@@ -9599,9 +9602,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-20"
+    },
+    {
+      "id": "mo9aik9rplmendmowuj",
+      "title": "Final ReRun PCR for Tim",
+      "completedAt": "2026-04-22T00:12:38.897Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-21"
     }
   ],
-  "lastUpdated": "2026-04-22T00:04:11.633Z",
+  "lastUpdated": "2026-04-22T00:12:38.897Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
