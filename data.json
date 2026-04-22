@@ -4228,6 +4228,16 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-04-07T23:37:07.520Z"
+      },
+      {
+        "id": "mo7nf5pobjk3pfe767m",
+        "title": "PCR cleanups and submission",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-04-20T20:29:47.820Z"
       }
     ],
     "2026-04-20": [
@@ -4254,18 +4264,6 @@
         "completedAt": "2026-04-20T20:29:24.278Z",
         "completionNotes": "",
         "completionLinks": ""
-      }
-    ],
-    "2026-04-22": [
-      {
-        "id": "mo7nf5pobjk3pfe767m",
-        "title": "PCR cleanups and submission",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-04-20T20:29:47.820Z"
       }
     ],
     "2026-04-24": [
@@ -6810,6 +6808,14 @@
         "time": null,
         "scheduledAt": "2026-04-17T17:09:20.178Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-22T22:55:32.973Z",
+        "completedOnDay": false
       }
     ],
     "2026-04-24": [
@@ -6872,14 +6878,6 @@
         "completedAt": "2026-04-22T22:51:22.171Z",
         "completionNotes": "Passaged NHLFs, HUVEC, and SMCs.  BEAS2Bs passaged last nigth and are fine. Will need to be passaged either tomorrow or friday.  HMVECs are coming along and will likely have the culture take hold in time for next tuesday.  New vial of IMR90s look good.  Will passage tomorrow or Friday",
         "completionLinks": ""
-      },
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-22T15:08:03.239Z",
-        "completedOnDay": false
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9666,7 +9664,7 @@
       "date": "2026-04-22"
     }
   ],
-  "lastUpdated": "2026-04-22T22:51:22.171Z",
+  "lastUpdated": "2026-04-22T22:55:33.215Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
