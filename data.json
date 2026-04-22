@@ -2855,6 +2855,15 @@
           "completed": false,
           "createdAt": "2026-04-22T23:52:17.278Z",
           "subtasks": []
+        },
+        {
+          "id": "moapk67qjk1ei052kai",
+          "title": "1-on-1 w/ ZT",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-04-22T23:52:59.510Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -6868,6 +6877,14 @@
         "time": "10:00",
         "scheduledAt": "2026-04-22T23:52:17.279Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mlld42ihacxlvsot49w",
+        "taskId": "moapk67qjk1ei052kai",
+        "subtaskId": null,
+        "time": "13:00",
+        "scheduledAt": "2026-04-22T23:52:59.510Z",
+        "completedOnDay": false
       }
     ],
     "2026-04-27": [
@@ -9706,7 +9723,7 @@
       "date": "2026-04-22"
     }
   ],
-  "lastUpdated": "2026-04-22T23:52:17.279Z",
+  "lastUpdated": "2026-04-22T23:52:59.510Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
