@@ -1103,9 +1103,12 @@
           "title": "Culture info for cytokine screen dashboard",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-04-14T16:52:10.779Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-04-22T18:38:11.637Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [
@@ -6855,16 +6858,6 @@
         "completedOnDay": false
       }
     ],
-    "2026-04-21": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mnyv06u2qy3fd3cl2b",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-21T14:43:49.225Z",
-        "completedOnDay": false
-      }
-    ],
     "2026-04-22": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -6881,6 +6874,17 @@
         "time": null,
         "scheduledAt": "2026-04-22T15:08:03.239Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mnyv06u2qy3fd3cl2b",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-22T15:08:03.554Z",
+        "completedOnDay": true,
+        "completedAt": "2026-04-22T18:38:11.636Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -9637,9 +9641,17 @@
       "completionNotes": "ordered 5 new primer pairs",
       "completionLinks": "",
       "date": "2026-04-21"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mnyv06u2qy3fd3cl2b",
+      "completedAt": "2026-04-22T18:38:11.637Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-22"
     }
   ],
-  "lastUpdated": "2026-04-22T15:08:03.239Z",
+  "lastUpdated": "2026-04-22T18:38:11.637Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
