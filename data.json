@@ -1087,6 +1087,14 @@
               "completedAt": "2026-04-16T00:37:47.041Z",
               "completionNotes": "analysis back and overview sent to Celine.  BSA seems to improve degradation but not to the degree we were hoping. ",
               "completionLinks": ""
+            },
+            {
+              "id": "mo9ekjekh8f58tq3b2e",
+              "title": "Cell Passaging for gap-screen",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-22T01:57:34.652Z"
             }
           ]
         },
@@ -4284,9 +4292,12 @@
         "title": "New BCL2 primers",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-04-22T00:04:11.633Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-04-22T15:07:58.002Z",
+        "completionNotes": "ordered 5 new primer pairs",
+        "completionLinks": ""
       }
     ]
   },
@@ -6861,6 +6872,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-04-22T00:03:40.688Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mo9ekjekh8f58tq3b2e",
+        "time": null,
+        "scheduledAt": "2026-04-22T01:57:34.652Z",
         "completedOnDay": false
       }
     ]
@@ -9610,9 +9629,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-21"
+    },
+    {
+      "id": "mo9aiq5tx4zw38mx2l",
+      "title": "New BCL2 primers",
+      "completedAt": "2026-04-22T15:07:58.002Z",
+      "completionNotes": "ordered 5 new primer pairs",
+      "completionLinks": "",
+      "date": "2026-04-21"
     }
   ],
-  "lastUpdated": "2026-04-22T00:12:38.897Z",
+  "lastUpdated": "2026-04-22T15:07:58.002Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
