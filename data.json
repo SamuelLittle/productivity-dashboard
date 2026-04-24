@@ -2852,12 +2852,12 @@
           "title": "1-on-1 w/ Celine",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-04-22T23:52:17.278Z",
           "subtasks": [],
-          "completedAt": null,
-          "completionNotes": null,
-          "completionLinks": null
+          "completedAt": "2026-04-24T19:36:04.039Z",
+          "completionNotes": "Incredibly productive meeting with Celine.  Take the bull by the horns., Seek out publications, advocate for projects, take the lead on advancements, engage stakeholders. ",
+          "completionLinks": ""
         },
         {
           "id": "moapk67qjk1ei052kai",
@@ -6891,10 +6891,10 @@
         "subtaskId": null,
         "time": "10:00",
         "scheduledAt": "2026-04-22T23:52:17.279Z",
-        "completedOnDay": false,
-        "completedAt": null,
-        "completionNotes": null,
-        "completionLinks": null
+        "completedOnDay": true,
+        "completedAt": "2026-04-24T19:36:04.039Z",
+        "completionNotes": "Incredibly productive meeting with Celine.  Take the bull by the horns., Seek out publications, advocate for projects, take the lead on advancements, engage stakeholders. ",
+        "completionLinks": ""
       },
       {
         "projectId": "mlld42ihacxlvsot49w",
@@ -9755,9 +9755,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-24"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "moapj9mmouvdcyjcjko",
+      "completedAt": "2026-04-24T19:36:04.039Z",
+      "completionNotes": "Incredibly productive meeting with Celine.  Take the bull by the horns., Seek out publications, advocate for projects, take the lead on advancements, engage stakeholders. ",
+      "completionLinks": "",
+      "date": "2026-04-24"
     }
   ],
-  "lastUpdated": "2026-04-24T19:34:45.976Z",
+  "lastUpdated": "2026-04-24T19:36:04.039Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
