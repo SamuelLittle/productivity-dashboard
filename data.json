@@ -2852,9 +2852,12 @@
           "title": "1-on-1 w/ Celine",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-04-22T23:52:17.278Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-04-24T19:34:41.051Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "moapk67qjk1ei052kai",
@@ -4260,9 +4263,12 @@
         "title": "work on lab presentation",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-04-22T22:57:42.906Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-04-23T18:16:22.100Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-04-20": [
@@ -6885,7 +6891,10 @@
         "subtaskId": null,
         "time": "10:00",
         "scheduledAt": "2026-04-22T23:52:17.279Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-24T19:34:41.050Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mlld42ihacxlvsot49w",
@@ -9730,9 +9739,25 @@
       "completionNotes": "Passaged NHLFs, HUVEC, and SMCs.  BEAS2Bs passaged last nigth and are fine. Will need to be passaged either tomorrow or friday.  HMVECs are coming along and will likely have the culture take hold in time for next tuesday.  New vial of IMR90s look good.  Will passage tomorrow or Friday",
       "completionLinks": "",
       "date": "2026-04-22"
+    },
+    {
+      "id": "moanl33ulcldooftr7",
+      "title": "work on lab presentation",
+      "completedAt": "2026-04-23T18:16:22.101Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-23"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "moapj9mmouvdcyjcjko",
+      "completedAt": "2026-04-24T19:34:41.051Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-24"
     }
   ],
-  "lastUpdated": "2026-04-22T23:53:23.685Z",
+  "lastUpdated": "2026-04-24T19:34:41.051Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
