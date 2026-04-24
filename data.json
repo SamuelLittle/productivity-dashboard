@@ -2852,12 +2852,12 @@
           "title": "1-on-1 w/ Celine",
           "description": "",
           "priority": "medium",
-          "completed": true,
+          "completed": false,
           "createdAt": "2026-04-22T23:52:17.278Z",
           "subtasks": [],
-          "completedAt": "2026-04-24T19:34:41.051Z",
-          "completionNotes": "",
-          "completionLinks": ""
+          "completedAt": null,
+          "completionNotes": null,
+          "completionLinks": null
         },
         {
           "id": "moapk67qjk1ei052kai",
@@ -6891,10 +6891,10 @@
         "subtaskId": null,
         "time": "10:00",
         "scheduledAt": "2026-04-22T23:52:17.279Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-24T19:34:41.050Z",
-        "completionNotes": "",
-        "completionLinks": ""
+        "completedOnDay": false,
+        "completedAt": null,
+        "completionNotes": null,
+        "completionLinks": null
       },
       {
         "projectId": "mlld42ihacxlvsot49w",
@@ -9757,7 +9757,7 @@
       "date": "2026-04-24"
     }
   ],
-  "lastUpdated": "2026-04-24T19:34:41.051Z",
+  "lastUpdated": "2026-04-24T19:34:45.976Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
