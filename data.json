@@ -1876,8 +1876,11 @@
               "title": "Repeat Thaw for nucleofection",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-17T16:53:10.659Z"
+              "completed": true,
+              "createdAt": "2026-04-17T16:53:10.659Z",
+              "completedAt": "2026-04-24T22:55:16.476Z",
+              "completionNotes": "Thawed NK cells - got about 10M cells",
+              "completionLinks": ""
             }
           ]
         }
@@ -6863,7 +6866,10 @@
         "subtaskId": "mo35d11eizzvdqf2d6k",
         "time": null,
         "scheduledAt": "2026-04-17T17:09:20.178Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-24T22:55:16.476Z",
+        "completionNotes": "Thawed NK cells - got about 10M cells",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -9788,9 +9794,18 @@
       "completionNotes": "Jimmie came.  Super terrifying but I think we crushed it.",
       "completionLinks": "",
       "date": "2026-04-24"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mo35d11eizzvdqf2d6k",
+      "completedAt": "2026-04-24T22:55:16.476Z",
+      "completionNotes": "Thawed NK cells - got about 10M cells",
+      "completionLinks": "",
+      "date": "2026-04-23"
     }
   ],
-  "lastUpdated": "2026-04-24T19:38:13.834Z",
+  "lastUpdated": "2026-04-24T22:55:16.476Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
