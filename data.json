@@ -4259,10 +4259,12 @@
         "title": "PCR cleanups and submission",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-04-25T00:01:30.203Z",
         "time": null,
-        "createdAt": "2026-04-20T20:29:47.820Z"
+        "createdAt": "2026-04-20T20:29:47.820Z",
+        "completionNotes": "Had to repeat PCRs due to lack of amplicons. Final cleanup and submissions on monday",
+        "completionLinks": ""
       },
       {
         "id": "moanl33ulcldooftr7",
@@ -9803,9 +9805,17 @@
       "completionNotes": "Thawed NK cells - got about 10M cells",
       "completionLinks": "",
       "date": "2026-04-23"
+    },
+    {
+      "id": "mo7nf5pobjk3pfe767m",
+      "title": "PCR cleanups and submission",
+      "completedAt": "2026-04-25T00:01:30.203Z",
+      "completionNotes": "Had to repeat PCRs due to lack of amplicons. Final cleanup and submissions on monday",
+      "completionLinks": "",
+      "date": "2026-04-23"
     }
   ],
-  "lastUpdated": "2026-04-24T22:55:16.476Z",
+  "lastUpdated": "2026-04-25T00:01:30.203Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
