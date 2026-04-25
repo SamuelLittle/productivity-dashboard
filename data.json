@@ -1815,8 +1815,11 @@
               "title": "Nucleofect NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-08T21:53:48.330Z"
+              "completed": true,
+              "createdAt": "2026-04-08T21:53:48.330Z",
+              "completedAt": "2026-04-25T00:02:40.105Z",
+              "completionNotes": "Performed 2 CD96 nucleofections and 6 AAVS1 nucleofections.  saved ~1M cells for control. \n\nThaw and isolation on Monday\n",
+              "completionLinks": ""
             },
             {
               "id": "mnql59pwf2uctc4bz1h",
@@ -6889,7 +6892,10 @@
         "subtaskId": "mnql4yzu7p6q3ijhep8",
         "time": null,
         "scheduledAt": "2026-04-17T17:09:33.785Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-25T00:02:40.105Z",
+        "completionNotes": "Performed 2 CD96 nucleofections and 6 AAVS1 nucleofections.  saved ~1M cells for control. \n\nThaw and isolation on Monday\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mlld42ihacxlvsot49w",
@@ -9813,9 +9819,18 @@
       "completionNotes": "Had to repeat PCRs due to lack of amplicons. Final cleanup and submissions on monday",
       "completionLinks": "",
       "date": "2026-04-23"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mnql4yzu7p6q3ijhep8",
+      "completedAt": "2026-04-25T00:02:40.105Z",
+      "completionNotes": "Performed 2 CD96 nucleofections and 6 AAVS1 nucleofections.  saved ~1M cells for control. \n\nThaw and isolation on Monday\n",
+      "completionLinks": "",
+      "date": "2026-04-24"
     }
   ],
-  "lastUpdated": "2026-04-25T00:01:44.699Z",
+  "lastUpdated": "2026-04-25T00:02:40.105Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
