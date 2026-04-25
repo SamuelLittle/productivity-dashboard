@@ -6852,6 +6852,14 @@
         "time": null,
         "scheduledAt": "2026-04-09T19:56:53.681Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-25T00:02:48.844Z",
+        "completedOnDay": false
       }
     ],
     "2026-05-04": [
@@ -6875,14 +6883,6 @@
         "completedAt": "2026-04-24T22:55:16.476Z",
         "completionNotes": "Thawed NK cells - got about 10M cells",
         "completionLinks": ""
-      },
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-22T22:55:32.973Z",
-        "completedOnDay": false
       }
     ],
     "2026-04-24": [
@@ -9830,7 +9830,7 @@
       "date": "2026-04-24"
     }
   ],
-  "lastUpdated": "2026-04-25T00:02:40.105Z",
+  "lastUpdated": "2026-04-25T00:02:48.845Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
