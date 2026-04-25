@@ -4310,26 +4310,6 @@
     ],
     "2026-04-24": [
       {
-        "id": "mnp9dznkngtd854rq2",
-        "title": "email Yuxin",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-04-07T23:37:07.520Z"
-      },
-      {
-        "id": "mnp9dznkngtd854rq2",
-        "title": "email Yuxin",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-04-07T23:37:07.520Z"
-      },
-      {
         "id": "moapkov9xbr53ragy9",
         "title": "Lab meeting at 11am",
         "description": "",
@@ -4366,6 +4346,18 @@
         "completedAt": "2026-04-22T15:07:58.002Z",
         "completionNotes": "ordered 5 new primer pairs",
         "completionLinks": ""
+      }
+    ],
+    "2026-05-01": [
+      {
+        "id": "mnp9dznkngtd854rq2",
+        "title": "email Yuxin",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-04-07T23:37:07.520Z"
       }
     ]
   },
@@ -9830,7 +9822,7 @@
       "date": "2026-04-24"
     }
   ],
-  "lastUpdated": "2026-04-25T00:02:48.845Z",
+  "lastUpdated": "2026-04-25T00:02:49.107Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -10102,6 +10094,17 @@
       },
       "generatedAt": "2026-04-22T23:43:04.283Z",
       "editedAt": "2026-04-22T23:43:04.283Z"
+    },
+    "2026-04-24": {
+      "summary": "**Friday, April 24, 2026 Summary**\n\nStrong day with key leadership meetings and lab progress. Had productive 1-on-1s with Celine and ZT focused on taking initiative and seeking impact, plus presented to new VP Jimmie during lab meeting. Successfully nucleofected NK cells for the CRISPR screen despite some protocol challenges.\n\n**Main Accomplishments:**\n• Completed 1-on-1 with Celine - discussed taking leadership on publications and stakeholder engagement\n• Completed 1-on-1 with ZT - aligned on project direction and demanding answers from collaborators  \n• Presented at lab meeting to new VP Jimmie in small group setting\n• Nucleofected NK cells (2 CD96, 6 AAVS1) for Natural Killer Cell CRISPR Screen with ~1M control cells saved\n\n**Carry Forward:**\nNeed to advocate responsibly for the cytokine screen given enthusiasm from Celine, Jimmie, and ZT. Thaw and isolation scheduled for Monday. Will assess whether NK nucleofection needs repeating based on upcoming results.",
+      "reflections": {
+        "accomplishments": "Group presentation with new VP Jimmie.  Really cool opportunity to present my work in such a small setting with a senior leader. \n\nNucleofected the NK cells.  Needed to adapt the protocol but it was mostly okay.",
+        "effort": "Things moved mostly as expected today. Wasn't able to make time to QC the PCR products but I sort of knew that would be the case",
+        "learned": "Decided to move ahead with NK nucleofection even though the cells didn't look perfect.  I think it was the right move but time will tell if I need to repeat.  No harm in trying here.",
+        "carryForward": "Lots of enthusiasm for the cytokine screen. From departing Celine and from incoming Jimmi + ZT.  I need to be an advocate for this screen in a responsible way.  Impactful work."
+      },
+      "generatedAt": "2026-04-25T00:07:11.957Z",
+      "editedAt": "2026-04-25T00:07:11.957Z"
     }
   },
   "weeklySummaries": {
