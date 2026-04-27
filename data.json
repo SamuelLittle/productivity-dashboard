@@ -4374,9 +4374,12 @@
         "title": "organoid scale-up meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-04-27T16:27:02.818Z",
-        "time": "12:30"
+        "time": "12:30",
+        "completedAt": "2026-04-27T22:43:20.836Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "moheujxdnpovftqzqzq",
@@ -9856,9 +9859,17 @@
       "completionNotes": "Performed 2 CD96 nucleofections and 6 AAVS1 nucleofections.  saved ~1M cells for control. \n\nThaw and isolation on Monday\n",
       "completionLinks": "",
       "date": "2026-04-24"
+    },
+    {
+      "id": "mohetxya0x32amhbw74",
+      "title": "organoid scale-up meeting",
+      "completedAt": "2026-04-27T22:43:20.836Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-27"
     }
   ],
-  "lastUpdated": "2026-04-27T16:27:31.298Z",
+  "lastUpdated": "2026-04-27T22:43:20.836Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
