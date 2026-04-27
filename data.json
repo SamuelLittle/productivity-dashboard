@@ -4386,9 +4386,12 @@
         "title": "Moffat Lab meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-04-27T16:27:31.298Z",
-        "time": "14:00"
+        "time": "14:00",
+        "completedAt": "2026-04-27T22:43:25.725Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -9867,9 +9870,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-27"
+    },
+    {
+      "id": "moheujxdnpovftqzqzq",
+      "title": "Moffat Lab meeting",
+      "completedAt": "2026-04-27T22:43:25.725Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-27"
     }
   ],
-  "lastUpdated": "2026-04-27T22:43:20.836Z",
+  "lastUpdated": "2026-04-27T22:43:25.725Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
