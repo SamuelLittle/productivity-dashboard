@@ -1826,8 +1826,11 @@
               "title": "Thaw NK cells for killing assay",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-08T21:54:02.228Z"
+              "completed": true,
+              "createdAt": "2026-04-08T21:54:02.228Z",
+              "completedAt": "2026-04-27T22:43:55.061Z",
+              "completionNotes": "Thawed ~5M cells into cNK-MACS at 2M c/ml\n",
+              "completionLinks": ""
             },
             {
               "id": "mnql5x4cdks9ucxw7e6",
@@ -6953,7 +6956,10 @@
         "subtaskId": "mnql59pwf2uctc4bz1h",
         "time": null,
         "scheduledAt": "2026-04-17T17:09:51.332Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-27T22:43:55.059Z",
+        "completionNotes": "Thawed ~5M cells into cNK-MACS at 2M c/ml\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9878,9 +9884,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-27"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mnql59pwf2uctc4bz1h",
+      "completedAt": "2026-04-27T22:43:55.061Z",
+      "completionNotes": "Thawed ~5M cells into cNK-MACS at 2M c/ml\n",
+      "completionLinks": "",
+      "date": "2026-04-27"
     }
   ],
-  "lastUpdated": "2026-04-27T22:43:25.725Z",
+  "lastUpdated": "2026-04-27T22:43:55.061Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
