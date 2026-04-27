@@ -1884,6 +1884,14 @@
               "completedAt": "2026-04-24T22:55:16.476Z",
               "completionNotes": "Thawed NK cells - got about 10M cells",
               "completionLinks": ""
+            },
+            {
+              "id": "mohe67vvh9ytjsmapya",
+              "title": "isolate fresh NKs for comparison killing. ",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-04-27T16:08:35.947Z"
             }
           ]
         }
@@ -4358,6 +4366,17 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-04-07T23:37:07.520Z"
+      }
+    ],
+    "2026-04-27": [
+      {
+        "id": "mohetxya0x32amhbw74",
+        "title": "organoid scale-up meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-04-27T16:27:02.818Z",
+        "time": "12:30"
       }
     ]
   },
@@ -6927,6 +6946,14 @@
         "subtaskId": "moap9tbnw2uvyymrnhi",
         "time": null,
         "scheduledAt": "2026-04-25T00:01:44.699Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mn3vj631ght8zzcdd8g",
+        "subtaskId": "mohe67vvh9ytjsmapya",
+        "time": null,
+        "scheduledAt": "2026-04-27T16:08:35.948Z",
         "completedOnDay": false
       }
     ],
@@ -9822,7 +9849,7 @@
       "date": "2026-04-24"
     }
   ],
-  "lastUpdated": "2026-04-25T00:02:49.107Z",
+  "lastUpdated": "2026-04-27T16:27:02.818Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
