@@ -6719,6 +6719,14 @@
         "time": null,
         "scheduledAt": "2026-04-28T15:19:16.264Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "moap9tbnw2uvyymrnhi",
+        "time": null,
+        "scheduledAt": "2026-04-28T15:19:16.577Z",
+        "completedOnDay": false
       }
     ],
     "2026-04-29": [
@@ -6963,14 +6971,6 @@
         "completedAt": "2026-04-27T22:43:55.059Z",
         "completionNotes": "Thawed ~5M cells into cNK-MACS at 2M c/ml\n",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mn96ur593n4wqfraywg",
-        "subtaskId": "moap9tbnw2uvyymrnhi",
-        "time": null,
-        "scheduledAt": "2026-04-25T00:01:44.699Z",
-        "completedOnDay": false
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -9910,7 +9910,7 @@
       "date": "2026-04-27"
     }
   ],
-  "lastUpdated": "2026-04-28T15:19:16.264Z",
+  "lastUpdated": "2026-04-28T15:19:16.577Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -10193,6 +10193,17 @@
       },
       "generatedAt": "2026-04-25T00:07:11.957Z",
       "editedAt": "2026-04-25T00:07:11.957Z"
+    },
+    "2026-04-27": {
+      "summary": "**Monday, April 27, 2026 Summary**\n\nToday focused on research collaboration and experimental preparation with productive meetings and lab work. The Moffat Lab meeting went well, and I successfully prepared NK cell samples from both frozen and fresh sources for upcoming killing assays. While meeting coordination took more effort than anticipated, the day was primarily about unblocking work and moving experiments forward.\n\n**Main Accomplishments:**\n• Participated in organoid scale-up meeting\n• Conducted productive Moffat Lab meeting presentation\n• Thawed ~5M NK cells into cNK-MACS medium at 2M cells/ml for Natural Killer Cell CRISPR Screen\n• Isolated ~3M fresh NK cells from blood for comparison killing assay\n\n**Carry Forward**\nNo significant items to carry forward.",
+      "reflections": {
+        "accomplishments": "Presentation with Moffat lab was good and productive.  Thawing and isolating NK cells from fresh and frozen samples was productive.",
+        "effort": "Navigating meetings.",
+        "learned": "Nothing major.  mostly and unlocking day.",
+        "carryForward": "No."
+      },
+      "generatedAt": "2026-04-28T15:21:32.580Z",
+      "editedAt": "2026-04-28T15:21:32.580Z"
     }
   },
   "weeklySummaries": {
