@@ -10220,6 +10220,17 @@
       },
       "generatedAt": "2026-04-28T15:21:32.580Z",
       "editedAt": "2026-04-28T15:21:32.580Z"
+    },
+    "2026-04-28": {
+      "summary": "**Tuesday, April 28, 2026**\n\nFocused day on the Natural Killer Cell CRISPR Screen with the main effort going into setting up the killing assay, which proved more complex than anticipated. Also completed PCR purifications for sequencing prep. Tomorrow brings key readouts from the NK cell screen.\n\n**Main Accomplishments:**\n• Set up killing assay for Natural Killer Cell CRISPR Screen using 4 killing conditions with ratios from 4:1 down in 7 dilutions against 25k target cells mixed 1:1 with RQR8 and CD300a T cells\n• Ran PCR purifications for all amplicons to be sequenced\n\n**Carry Forward:**\nBig readouts expected tomorrow for NK cell screen.",
+      "reflections": {
+        "accomplishments": "Setting up the killing assay.",
+        "effort": "Setting up the killing assay",
+        "learned": "Nothing major.  Big readouts tomorrow for NK cell screen.",
+        "carryForward": "Nothin major."
+      },
+      "generatedAt": "2026-04-29T00:33:07.270Z",
+      "editedAt": "2026-04-29T00:33:07.270Z"
     }
   },
   "weeklySummaries": {
