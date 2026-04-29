@@ -1845,8 +1845,11 @@
               "title": "set up killing assay",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-08T21:54:54.761Z"
+              "completed": true,
+              "createdAt": "2026-04-08T21:54:54.761Z",
+              "completedAt": "2026-04-29T00:31:45.999Z",
+              "completionNotes": "Set up 4 killing conditions using ratios from 4:1 down in 7 dilutions against 25k target cells mixed 1:1 with RQR8 and CD300a T cells",
+              "completionLinks": ""
             },
             {
               "id": "mnql6l2jzi2gy84u0u",
@@ -4399,17 +4402,6 @@
         "completionNotes": "",
         "completionLinks": ""
       }
-    ],
-    "2026-04-28": [
-      {
-        "id": "moiwopuzy3t6o8bghtj",
-        "title": "PCR cleanups",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-04-28T17:34:38.315Z",
-        "time": null
-      }
     ]
   },
   "scheduledItems": {
@@ -6713,15 +6705,10 @@
         "subtaskId": "mnql6e95u4m4vx00nj",
         "time": null,
         "scheduledAt": "2026-04-17T17:10:34.127Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-28T15:19:16.264Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-29T00:31:45.998Z",
+        "completionNotes": "Set up 4 killing conditions using ratios from 4:1 down in 7 dilutions against 25k target cells mixed 1:1 with RQR8 and CD300a T cells",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -6755,6 +6742,14 @@
         "subtaskId": "mn970laht5tbwixe38n",
         "time": null,
         "scheduledAt": "2026-04-09T19:56:00.669Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-04-29T00:32:04.040Z",
         "completedOnDay": false
       }
     ],
@@ -9919,9 +9914,18 @@
       "completionNotes": "isolated ~3M NK cells from fresh blood\n",
       "completionLinks": "",
       "date": "2026-04-27"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mnql6e95u4m4vx00nj",
+      "completedAt": "2026-04-29T00:31:45.999Z",
+      "completionNotes": "Set up 4 killing conditions using ratios from 4:1 down in 7 dilutions against 25k target cells mixed 1:1 with RQR8 and CD300a T cells",
+      "completionLinks": "",
+      "date": "2026-04-28"
     }
   ],
-  "lastUpdated": "2026-04-28T17:34:38.315Z",
+  "lastUpdated": "2026-04-29T00:32:04.040Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
