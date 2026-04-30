@@ -6799,14 +6799,6 @@
         "time": null,
         "scheduledAt": "2026-04-30T18:49:23.477Z",
         "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mn96ur593n4wqfraywg",
-        "subtaskId": "moap9tbnw2uvyymrnhi",
-        "time": null,
-        "scheduledAt": "2026-04-30T18:49:23.745Z",
-        "completedOnDay": false
       }
     ],
     "2026-04-10": [
@@ -6951,6 +6943,14 @@
         "subtaskId": "molwfkjef391k50mf0q",
         "time": null,
         "scheduledAt": "2026-04-30T22:50:27.484Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "moap9tbnw2uvyymrnhi",
+        "time": null,
+        "scheduledAt": "2026-04-30T22:50:27.796Z",
         "completedOnDay": false
       }
     ],
@@ -10023,7 +10023,7 @@
       "date": "2026-04-30"
     }
   ],
-  "lastUpdated": "2026-04-30T22:50:27.484Z",
+  "lastUpdated": "2026-04-30T22:50:27.796Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -10340,6 +10340,17 @@
       },
       "generatedAt": "2026-04-30T18:52:11.171Z",
       "editedAt": "2026-04-30T18:52:11.171Z"
+    },
+    "2026-04-30": {
+      "summary": "**Daily Summary - Thursday, April 30, 2026**\n\nSuccessfully executed the critical Day 0 treatments for the cytokine screen despite requiring significant problem-solving to accommodate the 24-hour treatment timeline. The day involved troubleshooting a new protocol under time pressure and completing multiple Sanger sequencing submissions that proved more complex than anticipated.\n\n**Main Accomplishments:**\n• Completed Day 0 cytokine treatments for gap fill screen (cells treated 10-11 AM)\n• Tested and troubleshot new i7 protocol in time for treatments\n• Submitted Sanger sequencing requests for Tim and Pete/Kelly projects\n• Learned Sanger submission process workflow\n\n**Carry Forward:**\nMonitor cytokine-treated cells for next phase of screen timeline.",
+      "reflections": {
+        "accomplishments": "Had to do some problem solving to accommodate the 24 hr treatments for the gap fill screen.  Was able to make test and trouble shoot the new i7 protocol in time to perform the treatments before 11. \n\nGot sanger sequecing submitted for Tim and for Pete/Kelly",
+        "effort": "Everything.",
+        "learned": "Figured out how to do the Sanger submissions.",
+        "carryForward": ""
+      },
+      "generatedAt": "2026-04-30T22:52:18.593Z",
+      "editedAt": "2026-04-30T22:52:18.593Z"
     }
   },
   "weeklySummaries": {
