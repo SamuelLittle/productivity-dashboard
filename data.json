@@ -4429,9 +4429,12 @@
         "title": "Sanger Submission Process",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-04-30T19:50:23.245Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-04-30T22:48:26.134Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -6804,14 +6807,6 @@
         "time": null,
         "scheduledAt": "2026-04-30T18:49:23.745Z",
         "completedOnDay": false
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mn3vj631ght8zzcdd8g",
-        "subtaskId": "molwfkjef391k50mf0q",
-        "time": null,
-        "scheduledAt": "2026-04-30T19:50:55.095Z",
-        "completedOnDay": false
       }
     ],
     "2026-04-10": [
@@ -6948,6 +6943,14 @@
         "subtaskId": "mn971zu1tovrvb8oe1c",
         "time": null,
         "scheduledAt": "2026-04-09T19:56:30.343Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mn3vj631ght8zzcdd8g",
+        "subtaskId": "molwfkjef391k50mf0q",
+        "time": null,
+        "scheduledAt": "2026-04-30T19:50:56.333Z",
         "completedOnDay": false
       }
     ],
@@ -10010,9 +10013,17 @@
       "completionNotes": "Cells treated between 10 and 11 am. ",
       "completionLinks": "",
       "date": "2026-04-30"
+    },
+    {
+      "id": "molwezv1jisy876rc1h",
+      "title": "Sanger Submission Process",
+      "completedAt": "2026-04-30T22:48:26.134Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-30"
     }
   ],
-  "lastUpdated": "2026-04-30T19:50:55.095Z",
+  "lastUpdated": "2026-04-30T22:48:26.134Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
