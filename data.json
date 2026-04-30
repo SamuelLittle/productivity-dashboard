@@ -1856,8 +1856,11 @@
               "title": "Flow cytometry prep",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-08T21:55:03.595Z"
+              "completed": true,
+              "createdAt": "2026-04-08T21:55:03.595Z",
+              "completedAt": "2026-04-30T18:49:04.901Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mnql6yhgj3drw33bmsd",
@@ -6718,7 +6721,10 @@
         "subtaskId": "mnql6l2jzi2gy84u0u",
         "time": null,
         "scheduledAt": "2026-04-17T17:10:56.258Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-30T18:49:04.900Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -9923,9 +9929,18 @@
       "completionNotes": "Set up 4 killing conditions using ratios from 4:1 down in 7 dilutions against 25k target cells mixed 1:1 with RQR8 and CD300a T cells",
       "completionLinks": "",
       "date": "2026-04-28"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mnql6l2jzi2gy84u0u",
+      "completedAt": "2026-04-30T18:49:04.901Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-29"
     }
   ],
-  "lastUpdated": "2026-04-29T00:32:16.955Z",
+  "lastUpdated": "2026-04-30T18:49:04.901Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
