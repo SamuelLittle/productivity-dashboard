@@ -1031,8 +1031,11 @@
               "title": "Cytokine Screen plate seeding (target date)",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:46:24.330Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:46:24.330Z",
+              "completedAt": "2026-04-30T18:49:16.267Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mn9719rad6mmtiqmdfw",
@@ -6746,7 +6749,10 @@
         "subtaskId": "mn970laht5tbwixe38n",
         "time": null,
         "scheduledAt": "2026-04-09T19:56:00.669Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-30T18:49:16.267Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -9953,9 +9959,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-29"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "mn970laht5tbwixe38n",
+      "completedAt": "2026-04-30T18:49:16.267Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-29"
     }
   ],
-  "lastUpdated": "2026-04-30T18:49:11.348Z",
+  "lastUpdated": "2026-04-30T18:49:16.267Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
