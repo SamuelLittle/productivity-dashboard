@@ -1042,8 +1042,11 @@
               "title": "Day 0 (24 hr cytokine treatment - target date)",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:46:56.038Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:46:56.038Z",
+              "completedAt": "2026-04-30T18:52:31.617Z",
+              "completionNotes": "Cells treated between 10 and 11 am. ",
+              "completionLinks": ""
             },
             {
               "id": "mn971zu1tovrvb8oe1c",
@@ -6762,7 +6765,10 @@
         "subtaskId": "mn9719rad6mmtiqmdfw",
         "time": null,
         "scheduledAt": "2026-04-09T19:56:17.755Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-04-30T18:52:31.617Z",
+        "completionNotes": "Cells treated between 10 and 11 am. ",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -9968,9 +9974,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-29"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "mn9719rad6mmtiqmdfw",
+      "completedAt": "2026-04-30T18:52:31.617Z",
+      "completionNotes": "Cells treated between 10 and 11 am. ",
+      "completionLinks": "",
+      "date": "2026-04-30"
     }
   ],
-  "lastUpdated": "2026-04-30T18:49:23.745Z",
+  "lastUpdated": "2026-04-30T18:52:31.617Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
