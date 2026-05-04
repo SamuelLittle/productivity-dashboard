@@ -6811,14 +6811,6 @@
         "completedAt": "2026-04-30T18:52:31.617Z",
         "completionNotes": "Cells treated between 10 and 11 am. ",
         "completionLinks": ""
-      },
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-30T18:49:23.477Z",
-        "completedOnDay": false
       }
     ],
     "2026-04-10": [
@@ -7121,6 +7113,16 @@
         "completedAt": "2026-04-22T18:38:11.636Z",
         "completionNotes": "",
         "completionLinks": ""
+      }
+    ],
+    "2026-05-05": [
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-05-04T15:23:36.534Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -10075,7 +10077,7 @@
       "date": "2026-05-01"
     }
   ],
-  "lastUpdated": "2026-05-04T15:23:31.011Z",
+  "lastUpdated": "2026-05-04T15:23:36.534Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
