@@ -1120,6 +1120,14 @@
               "completedAt": "2026-05-04T15:23:24.865Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "morqnxn4l8ab9ny6nu",
+              "title": "HITSLIMS project submission",
+              "description": "Make project submission and sample IDS for gap fill\n",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-04T21:55:59.632Z"
             }
           ]
         },
@@ -10094,7 +10102,7 @@
       "date": "2026-05-01"
     }
   ],
-  "lastUpdated": "2026-05-04T21:37:29.401Z",
+  "lastUpdated": "2026-05-04T21:55:59.633Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
