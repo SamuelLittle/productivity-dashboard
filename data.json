@@ -1113,10 +1113,13 @@
               "title": "Make aliquots for mastermixes for gap screen",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-04-22T23:44:56.244Z",
               "notes": "Make treatment plates",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-05-04T15:23:24.865Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -6968,7 +6971,10 @@
         "subtaskId": "moap9tbnw2uvyymrnhi",
         "time": null,
         "scheduledAt": "2026-04-30T22:50:27.796Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-04T15:23:24.865Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-05-04": [
@@ -10047,9 +10053,18 @@
       "completionNotes": "Completed 3 hr treatments and full SS D1 takedowns. QC monday. \n",
       "completionLinks": "",
       "date": "2026-05-01"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "moap9tbnw2uvyymrnhi",
+      "completedAt": "2026-05-04T15:23:24.865Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-01"
     }
   ],
-  "lastUpdated": "2026-05-04T15:23:19.632Z",
+  "lastUpdated": "2026-05-04T15:23:24.865Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
