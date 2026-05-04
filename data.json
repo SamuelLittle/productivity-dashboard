@@ -1927,8 +1927,11 @@
               "title": "Flow Analaysis",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-30T19:50:50.042Z"
+              "completed": true,
+              "createdAt": "2026-04-30T19:50:50.042Z",
+              "completedAt": "2026-05-04T15:23:42.627Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -4395,16 +4398,6 @@
     ],
     "2026-05-01": [
       {
-        "id": "mnp9dznkngtd854rq2",
-        "title": "email Yuxin",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-04-07T23:37:07.520Z"
-      },
-      {
         "id": "mon24ezkueih9phr0r",
         "title": "Validate wash protocol",
         "description": "",
@@ -4455,6 +4448,18 @@
         "completedAt": "2026-04-30T22:48:26.134Z",
         "completionNotes": "",
         "completionLinks": ""
+      }
+    ],
+    "2026-05-05": [
+      {
+        "id": "mnp9dznkngtd854rq2",
+        "title": "email Yuxin",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-04-07T23:37:07.520Z"
       }
     ]
   },
@@ -6958,7 +6963,10 @@
         "subtaskId": "molwfkjef391k50mf0q",
         "time": null,
         "scheduledAt": "2026-04-30T22:50:27.484Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-04T15:23:42.627Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -10075,9 +10083,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-01"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "molwfkjef391k50mf0q",
+      "completedAt": "2026-05-04T15:23:42.627Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-01"
     }
   ],
-  "lastUpdated": "2026-05-04T15:23:36.534Z",
+  "lastUpdated": "2026-05-04T15:23:42.627Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
