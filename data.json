@@ -1134,8 +1134,11 @@
               "title": "D1 QC",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-04T21:56:13.344Z"
+              "completed": true,
+              "createdAt": "2026-05-04T21:56:13.344Z",
+              "completedAt": "2026-05-05T16:55:17.217Z",
+              "completionNotes": "confirmed high quality cDNA from all 6 cell types - DLD1",
+              "completionLinks": ""
             }
           ]
         },
@@ -7137,6 +7140,14 @@
         "time": null,
         "scheduledAt": "2026-05-04T21:37:20.814Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "morqnxn4l8ab9ny6nu",
+        "time": null,
+        "scheduledAt": "2026-05-04T21:56:20.736Z",
+        "completedOnDay": false
       }
     ],
     "2026-05-06": [
@@ -7156,15 +7167,10 @@
         "subtaskId": "morqo880okzzah696co",
         "time": null,
         "scheduledAt": "2026-05-04T21:56:13.344Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mn96ur593n4wqfraywg",
-        "subtaskId": "morqnxn4l8ab9ny6nu",
-        "time": null,
-        "scheduledAt": "2026-05-04T21:56:20.027Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-05T16:55:17.217Z",
+        "completionNotes": "confirmed high quality cDNA from all 6 cell types - DLD1",
+        "completionLinks": ""
       }
     ]
   },
@@ -10126,9 +10132,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-01"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "morqo880okzzah696co",
+      "completedAt": "2026-05-05T16:55:17.217Z",
+      "completionNotes": "confirmed high quality cDNA from all 6 cell types - DLD1",
+      "completionLinks": "",
+      "date": "2026-05-04"
     }
   ],
-  "lastUpdated": "2026-05-04T21:56:20.027Z",
+  "lastUpdated": "2026-05-05T16:55:17.217Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
