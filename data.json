@@ -1129,8 +1129,11 @@
               "title": "HITSLIMS project submission",
               "description": "Make project submission and sample IDS for gap fill\n",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-04T21:55:59.632Z"
+              "completed": true,
+              "createdAt": "2026-05-04T21:55:59.632Z",
+              "completedAt": "2026-05-06T00:15:47.101Z",
+              "completionNotes": "Started generating metadata but need to complete submission tomorrow. ",
+              "completionLinks": ""
             },
             {
               "id": "morqo880okzzah696co",
@@ -4472,7 +4475,7 @@
         "completionLinks": ""
       }
     ],
-    "2026-05-05": [
+    "2026-05-06": [
       {
         "id": "mnp9dznkngtd854rq2",
         "title": "email Yuxin",
@@ -7145,7 +7148,10 @@
         "subtaskId": "morqnxn4l8ab9ny6nu",
         "time": null,
         "scheduledAt": "2026-05-04T21:56:20.736Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-06T00:15:47.101Z",
+        "completionNotes": "Started generating metadata but need to complete submission tomorrow. ",
+        "completionLinks": ""
       }
     ],
     "2026-05-06": [
@@ -10156,9 +10162,18 @@
       "completionNotes": "completed QC and finished tag + indexing.  D2 QC tomorrow mornign\n",
       "completionLinks": "",
       "date": "2026-05-05"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "morqnxn4l8ab9ny6nu",
+      "completedAt": "2026-05-06T00:15:47.101Z",
+      "completionNotes": "Started generating metadata but need to complete submission tomorrow. ",
+      "completionLinks": "",
+      "date": "2026-05-05"
     }
   ],
-  "lastUpdated": "2026-05-06T00:15:27.707Z",
+  "lastUpdated": "2026-05-06T00:15:47.101Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
