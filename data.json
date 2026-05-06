@@ -2769,9 +2769,12 @@
           "title": "Meet with Jenny -iAstro team",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-05-06T00:21:30.744Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-05-06T20:23:40.331Z",
+          "completionNotes": "Met with Jenny + Thomas.  Thomas will decide on a small panel of genes for a nucleoection pilot.  Need to continue developing RNA extraction to enable microglia screening. ",
+          "completionLinks": ""
         },
         {
           "id": "motbc8vgyoek3ln8fga",
@@ -7224,7 +7227,10 @@
         "subtaskId": null,
         "time": "12:00",
         "scheduledAt": "2026-05-06T00:21:30.745Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-06T20:23:40.331Z",
+        "completionNotes": "Met with Jenny + Thomas.  Thomas will decide on a small panel of genes for a nucleoection pilot.  Need to continue developing RNA extraction to enable microglia screening. ",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -10234,9 +10240,17 @@
       "completionNotes": "Started generating metadata but need to complete submission tomorrow. ",
       "completionLinks": "",
       "date": "2026-05-05"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "motbaxa0lq43ysng63",
+      "completedAt": "2026-05-06T20:23:40.331Z",
+      "completionNotes": "Met with Jenny + Thomas.  Thomas will decide on a small panel of genes for a nucleoection pilot.  Need to continue developing RNA extraction to enable microglia screening. ",
+      "completionLinks": "",
+      "date": "2026-05-06"
     }
   ],
-  "lastUpdated": "2026-05-06T00:22:49.207Z",
+  "lastUpdated": "2026-05-06T20:23:40.331Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
