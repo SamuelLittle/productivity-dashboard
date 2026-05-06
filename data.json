@@ -10501,6 +10501,17 @@
       },
       "generatedAt": "2026-04-30T22:52:18.593Z",
       "editedAt": "2026-04-30T22:52:18.593Z"
+    },
+    "2026-05-05": {
+      "summary": "**Tuesday, May 5, 2026 Summary**\n\nMade solid progress on the Cytokine Screen project, completing key sample preparation steps and advancing the HITSLIMS submission. Troubleshooting indexing master mix dispensing issues led to identifying lower volume dispensing as a solution. Confirmed GPR35 KO via Sanger sequencing and had a productive planning discussion with ZT.\n\n**Main Accomplishments:**\n• Completed D1 QC and D2 tag indexing for Cytokine Screen (gap fill)\n• Started HITSLIMS project submission and metadata generation for Cytokine Screen\n• Resolved Mantis dispensing issues with indexing master mix by using lower volumes\n• Confirmed GPR35 KO via Sanger sequencing\n\n**Carry Forward:**\nD2 QC scheduled for tomorrow morning, complete HITSLIMS submission, prepare for organoid dissociation assistance, and plan for upcoming iAstro screening with expanded gene sets. Kelly's team requires AAVS1 confirmation for GPR35 KO.",
+      "reflections": {
+        "accomplishments": "Finishing D2 tagging and indexing for gap fill screen",
+        "effort": "trouble shooting making the master mixed.  Indexing master mix continues to cause surface tension issues when dispensing with mantis.  Dispensing lower volumes seems to fix this.",
+        "learned": "GPR35 KO confirmed via sanger - Kelly + co want AAVS1 confirmation.",
+        "carryForward": "very productive 1-on-1 with ZT today.  Need to start preparing for assisting with organoid dissociation.  also iAstro screening is coming back for larger gene sets with same basic workflow."
+      },
+      "generatedAt": "2026-05-06T00:20:46.818Z",
+      "editedAt": "2026-05-06T00:20:46.818Z"
     }
   },
   "weeklySummaries": {
