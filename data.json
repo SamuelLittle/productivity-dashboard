@@ -2772,6 +2772,15 @@
           "completed": false,
           "createdAt": "2026-05-06T00:21:30.744Z",
           "subtasks": []
+        },
+        {
+          "id": "motbc8vgyoek3ln8fga",
+          "title": "write iAstro methodology",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-05-06T00:22:32.428Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -7207,6 +7216,14 @@
         "time": "12:00",
         "scheduledAt": "2026-05-06T00:21:30.745Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "motbc8vgyoek3ln8fga",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-05-06T00:22:32.428Z",
+        "completedOnDay": false
       }
     ],
     "2026-05-04": [
@@ -10210,7 +10227,7 @@
       "date": "2026-05-05"
     }
   ],
-  "lastUpdated": "2026-05-06T00:22:04.552Z",
+  "lastUpdated": "2026-05-06T00:22:32.428Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
