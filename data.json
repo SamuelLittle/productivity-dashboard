@@ -1064,8 +1064,11 @@
               "title": "D1 QC + D2 tag index (target date)",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:48:22.748Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:48:22.748Z",
+              "completedAt": "2026-05-06T00:15:19.863Z",
+              "completionNotes": "completed QC and finished tag + indexing.  D2 QC tomorrow mornign\n",
+              "completionLinks": ""
             },
             {
               "id": "mn973r0fexd2jqy4iso",
@@ -7139,7 +7142,10 @@
         "subtaskId": "mn9734nwg8q7inrbwip",
         "time": null,
         "scheduledAt": "2026-05-04T21:37:20.814Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-06T00:15:19.862Z",
+        "completionNotes": "completed QC and finished tag + indexing.  D2 QC tomorrow mornign\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -10141,9 +10147,18 @@
       "completionNotes": "confirmed high quality cDNA from all 6 cell types - DLD1",
       "completionLinks": "",
       "date": "2026-05-04"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "mn9734nwg8q7inrbwip",
+      "completedAt": "2026-05-06T00:15:19.863Z",
+      "completionNotes": "completed QC and finished tag + indexing.  D2 QC tomorrow mornign\n",
+      "completionLinks": "",
+      "date": "2026-05-05"
     }
   ],
-  "lastUpdated": "2026-05-05T16:55:17.217Z",
+  "lastUpdated": "2026-05-06T00:15:19.863Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
