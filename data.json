@@ -4494,6 +4494,15 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-04-07T23:37:07.520Z"
+      },
+      {
+        "id": "motbbnd47f5tx8scu1",
+        "title": "order primers for AAVS1",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-05-06T00:22:04.552Z",
+        "time": null
       }
     ],
     "2026-05-07": [
@@ -10201,7 +10210,7 @@
       "date": "2026-05-05"
     }
   ],
-  "lastUpdated": "2026-05-06T00:21:47.744Z",
+  "lastUpdated": "2026-05-06T00:22:04.552Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
