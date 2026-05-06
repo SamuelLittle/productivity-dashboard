@@ -2781,9 +2781,12 @@
           "title": "write iAstro methodology",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-05-06T00:22:32.428Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-05-06T20:24:15.506Z",
+          "completionNotes": "Submitted large portion of iAstro methodology.  Still need some notes on supernatant analysis. ",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -7238,7 +7241,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-05-06T00:22:32.428Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-06T20:24:15.506Z",
+        "completionNotes": "Submitted large portion of iAstro methodology.  Still need some notes on supernatant analysis. ",
+        "completionLinks": ""
       }
     ],
     "2026-05-04": [
@@ -10248,9 +10254,17 @@
       "completionNotes": "Met with Jenny + Thomas.  Thomas will decide on a small panel of genes for a nucleoection pilot.  Need to continue developing RNA extraction to enable microglia screening. ",
       "completionLinks": "",
       "date": "2026-05-06"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "motbc8vgyoek3ln8fga",
+      "completedAt": "2026-05-06T20:24:15.506Z",
+      "completionNotes": "Submitted large portion of iAstro methodology.  Still need some notes on supernatant analysis. ",
+      "completionLinks": "",
+      "date": "2026-05-06"
     }
   ],
-  "lastUpdated": "2026-05-06T20:23:40.331Z",
+  "lastUpdated": "2026-05-06T20:24:15.506Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
