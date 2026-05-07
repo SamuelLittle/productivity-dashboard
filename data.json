@@ -2732,7 +2732,7 @@
           "title": "Import Data in Orchestra",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-27T23:46:56.779Z",
           "subtasks": [
             {
@@ -2740,8 +2740,9 @@
               "title": "Meet with Holly pt 3 ",
               "description": "Meet with Holly to continue the data ingestion process. \n\nIn prep - complete writing protocol for iAstro workflow in Orchestra\nlocate images on IXM",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-01-27T23:49:00.254Z"
+              "completed": true,
+              "createdAt": "2026-01-27T23:49:00.254Z",
+              "completedAt": "2026-05-07T14:16:47.426Z"
             },
             {
               "id": "mla551ifbbo5u19tsku",
@@ -2750,7 +2751,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-06T00:22:14.248Z",
-              "completedAt": "2026-02-06T22:51:48.108Z",
+              "completedAt": "2026-05-07T14:16:47.426Z",
               "completionNotes": "sent notes to holly - follow up inevitable ",
               "completionLinks": ""
             },
@@ -2761,11 +2762,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-06T00:22:29.935Z",
-              "completedAt": "2026-02-25T22:39:54.421Z",
+              "completedAt": "2026-05-07T14:16:47.426Z",
               "completionNotes": "Submitted to Holly\n",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-05-07T14:16:47.426Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "motbaxa0lq43ysng63",
@@ -10300,9 +10304,18 @@
       "subtaskId": "mla55u9r0fbf2euf27os",
       "title": "Analyze Supernatant",
       "completedAt": "2026-05-07T14:16:31.297Z"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkx8wznv95wc8en1g2k",
+      "subtaskId": null,
+      "title": "Import Data in Orchestra",
+      "completedAt": "2026-05-07T14:16:47.426Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-05-07T14:16:31.297Z",
+  "lastUpdated": "2026-05-07T14:16:47.426Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
