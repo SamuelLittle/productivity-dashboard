@@ -2802,7 +2802,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-05-07T14:17:42.543Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "movknnqkuqthn4ibzng",
+              "title": "Order gRNAs for pilot screening",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-07T14:18:53.804Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -10324,7 +10333,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-05-07T14:17:42.543Z",
+  "lastUpdated": "2026-05-07T14:18:53.805Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
