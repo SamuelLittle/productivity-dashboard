@@ -1965,6 +1965,15 @@
           "completedAt": "2026-05-07T17:12:09.503Z",
           "completionNotes": "",
           "completionLinks": ""
+        },
+        {
+          "id": "movqvib91fmi31nrat2",
+          "title": "384 well killing assay",
+          "description": "Repeat of killing assay comparing Control vs edited NK cells performing coculture in 384 well plate. ",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-05-07T17:12:57.717Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -10355,7 +10364,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-05-07T17:12:09.504Z",
+  "lastUpdated": "2026-05-07T17:12:57.717Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
