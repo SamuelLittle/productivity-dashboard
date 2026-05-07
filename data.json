@@ -2005,6 +2005,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-05-07T17:14:24.133Z"
+            },
+            {
+              "id": "movqxtz5s7gdg2z06bm",
+              "title": "Flow cytometry prep",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-07T17:14:46.145Z"
             }
           ]
         }
@@ -7388,6 +7396,16 @@
         "scheduledAt": "2026-05-07T17:14:24.134Z",
         "completedOnDay": false
       }
+    ],
+    "2026-05-13": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "movqvib91fmi31nrat2",
+        "subtaskId": "movqxtz5s7gdg2z06bm",
+        "time": null,
+        "scheduledAt": "2026-05-07T17:14:46.145Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -10433,7 +10451,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-05-07T17:14:24.134Z",
+  "lastUpdated": "2026-05-07T17:14:46.145Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
