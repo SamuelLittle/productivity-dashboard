@@ -7220,14 +7220,6 @@
         "completedOnDay": false
       },
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-05-06T00:15:27.707Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mklu1lye4czo9brjznq",
         "taskId": "motbaxa0lq43ysng63",
         "subtaskId": null,
@@ -7261,6 +7253,16 @@
         "completedAt": "2026-05-05T16:55:17.217Z",
         "completionNotes": "confirmed high quality cDNA from all 6 cell types - DLD1",
         "completionLinks": ""
+      }
+    ],
+    "2026-05-07": [
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-05-07T01:03:40.999Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -10275,7 +10277,7 @@
       "date": "2026-05-06"
     }
   ],
-  "lastUpdated": "2026-05-07T01:03:35.111Z",
+  "lastUpdated": "2026-05-07T01:03:40.999Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
