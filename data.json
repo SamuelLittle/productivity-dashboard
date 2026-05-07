@@ -2794,6 +2794,15 @@
           "completedAt": "2026-05-06T20:24:15.506Z",
           "completionNotes": "Submitted large portion of iAstro methodology.  Still need some notes on supernatant analysis. ",
           "completionLinks": ""
+        },
+        {
+          "id": "movkm4r357gxwt3fz3f",
+          "title": "GNE iAstro Pilots",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-05-07T14:17:42.543Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -10315,7 +10324,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-05-07T14:16:47.426Z",
+  "lastUpdated": "2026-05-07T14:17:42.543Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
