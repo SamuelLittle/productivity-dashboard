@@ -1876,8 +1876,11 @@
               "title": "Thaw NK cells for killing assay (D5 cells)",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-04-08T21:54:32.556Z"
+              "completed": true,
+              "createdAt": "2026-04-08T21:54:32.556Z",
+              "completedAt": "2026-05-07T17:12:04.643Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mnql6e95u4m4vx00nj",
@@ -10331,9 +10334,16 @@
       "completedAt": "2026-05-07T14:16:47.426Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mnql5x4cdks9ucxw7e6",
+      "title": "Thaw NK cells for killing assay (D5 cells)",
+      "completedAt": "2026-05-07T17:12:04.643Z"
     }
   ],
-  "lastUpdated": "2026-05-07T14:18:53.805Z",
+  "lastUpdated": "2026-05-07T17:12:04.643Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
