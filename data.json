@@ -1989,6 +1989,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-05-07T17:13:34.148Z"
+            },
+            {
+              "id": "movqwnja8watng79th9",
+              "title": "Thaw T cells for killing assay",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-07T17:13:51.142Z"
             }
           ]
         }
@@ -10397,7 +10405,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-05-07T17:13:34.148Z",
+  "lastUpdated": "2026-05-07T17:13:51.142Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
