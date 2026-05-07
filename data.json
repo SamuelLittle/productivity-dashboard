@@ -4524,9 +4524,12 @@
         "title": "cytokine screen experimental overview",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-05-06T00:22:49.207Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-05-07T01:03:35.111Z",
+        "completionNotes": "finished all urgent items.  Need to complete no urgent items (ie. T cell culture protocols).",
+        "completionLinks": ""
       }
     ],
     "2026-05-07": [
@@ -10262,9 +10265,17 @@
       "completionNotes": "Submitted large portion of iAstro methodology.  Still need some notes on supernatant analysis. ",
       "completionLinks": "",
       "date": "2026-05-06"
+    },
+    {
+      "id": "motbcltioojrtsfa9r",
+      "title": "cytokine screen experimental overview",
+      "completedAt": "2026-05-07T01:03:35.111Z",
+      "completionNotes": "finished all urgent items.  Need to complete no urgent items (ie. T cell culture protocols).",
+      "completionLinks": "",
+      "date": "2026-05-06"
     }
   ],
-  "lastUpdated": "2026-05-06T20:24:15.506Z",
+  "lastUpdated": "2026-05-07T01:03:35.111Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
