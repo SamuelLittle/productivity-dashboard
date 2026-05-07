@@ -2708,8 +2708,11 @@
               "title": "Analyze Supernatant",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-06T00:22:51.519Z"
+              "completed": true,
+              "createdAt": "2026-02-06T00:22:51.519Z",
+              "completedAt": "2026-05-07T14:16:31.297Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mlfv9ic3joy5qhrmwlh",
@@ -10290,9 +10293,16 @@
       "completionNotes": "finished all urgent items.  Need to complete no urgent items (ie. T cell culture protocols).",
       "completionLinks": "",
       "date": "2026-05-06"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkmsy72n9wkp209y165",
+      "subtaskId": "mla55u9r0fbf2euf27os",
+      "title": "Analyze Supernatant",
+      "completedAt": "2026-05-07T14:16:31.297Z"
     }
   ],
-  "lastUpdated": "2026-05-07T14:16:13.895Z",
+  "lastUpdated": "2026-05-07T14:16:31.297Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
