@@ -1990,8 +1990,11 @@
               "title": "Nucleofect NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-07T17:13:34.148Z"
+              "completed": true,
+              "createdAt": "2026-05-07T17:13:34.148Z",
+              "completedAt": "2026-05-08T21:08:15.900Z",
+              "completionNotes": "Nucleofected 3 rxns of CD96 (1.5M cells) and 15 rxns of AAVS1 (7.5M cells)",
+              "completionLinks": ""
             },
             {
               "id": "movqwnja8watng79th9",
@@ -7375,7 +7378,10 @@
         "subtaskId": "movqwaf731v3hkof11s",
         "time": null,
         "scheduledAt": "2026-05-07T17:13:34.148Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-08T21:08:15.900Z",
+        "completionNotes": "Nucleofected 3 rxns of CD96 (1.5M cells) and 15 rxns of AAVS1 (7.5M cells)",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -10491,9 +10497,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-07"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "movqvib91fmi31nrat2",
+      "subtaskId": "movqwaf731v3hkof11s",
+      "completedAt": "2026-05-08T21:08:15.900Z",
+      "completionNotes": "Nucleofected 3 rxns of CD96 (1.5M cells) and 15 rxns of AAVS1 (7.5M cells)",
+      "completionLinks": "",
+      "date": "2026-05-08"
     }
   ],
-  "lastUpdated": "2026-05-08T16:18:55.039Z",
+  "lastUpdated": "2026-05-08T21:08:15.900Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
