@@ -4611,19 +4611,12 @@
         "title": "Hive bi-weekly",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-05-06T00:21:47.744Z",
-        "time": null
-      },
-      {
-        "id": "motbbnd47f5tx8scu1",
-        "title": "order primers for AAVS1",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
         "time": null,
-        "createdAt": "2026-05-06T00:22:04.552Z"
+        "completedAt": "2026-05-08T16:11:27.416Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-05-08": [
@@ -4646,6 +4639,16 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-04-07T23:37:07.520Z"
+      },
+      {
+        "id": "motbbnd47f5tx8scu1",
+        "title": "order primers for AAVS1",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-05-06T00:22:04.552Z"
       }
     ]
   },
@@ -10478,9 +10481,17 @@
       "completionNotes": "Thawed and isolated roughly ~30M NK cells.  Well assess viability and cell count tomorrow to determine plan of action. ",
       "completionLinks": "",
       "date": "2026-05-07"
+    },
+    {
+      "id": "motbbae8uohpqov0le",
+      "title": "Hive bi-weekly",
+      "completedAt": "2026-05-08T16:11:27.416Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-07"
     }
   ],
-  "lastUpdated": "2026-05-08T16:11:14.394Z",
+  "lastUpdated": "2026-05-08T16:11:27.416Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
