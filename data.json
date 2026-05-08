@@ -1979,8 +1979,11 @@
               "title": "Thaw PBMCs and isolate NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-07T17:13:21.231Z"
+              "completed": true,
+              "createdAt": "2026-05-07T17:13:21.231Z",
+              "completedAt": "2026-05-08T16:11:04.589Z",
+              "completionNotes": "Thawed and isolated roughly ~30M NK cells.  Well assess viability and cell count tomorrow to determine plan of action. ",
+              "completionLinks": ""
             },
             {
               "id": "movqwaf731v3hkof11s",
@@ -7351,20 +7354,15 @@
     ],
     "2026-05-07": [
       {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mn96ur593n4wqfraywg",
-        "subtaskId": "mn973r0fexd2jqy4iso",
-        "time": null,
-        "scheduledAt": "2026-05-07T01:03:41.344Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltwpanzsdw6b96wbe",
         "taskId": "movqvib91fmi31nrat2",
         "subtaskId": "movqw0gfmw5rehb9krm",
         "time": null,
         "scheduledAt": "2026-05-07T17:13:21.232Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-08T16:11:04.589Z",
+        "completionNotes": "Thawed and isolated roughly ~30M NK cells.  Well assess viability and cell count tomorrow to determine plan of action. ",
+        "completionLinks": ""
       }
     ],
     "2026-05-08": [
@@ -7390,6 +7388,14 @@
         "subtaskId": "movqwnja8watng79th9",
         "time": null,
         "scheduledAt": "2026-05-07T17:15:37.791Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn973r0fexd2jqy4iso",
+        "time": null,
+        "scheduledAt": "2026-05-07T17:15:38.099Z",
         "completedOnDay": false
       }
     ],
@@ -10463,9 +10469,18 @@
       "completedAt": "2026-05-07T17:12:09.504Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "movqvib91fmi31nrat2",
+      "subtaskId": "movqw0gfmw5rehb9krm",
+      "completedAt": "2026-05-08T16:11:04.589Z",
+      "completionNotes": "Thawed and isolated roughly ~30M NK cells.  Well assess viability and cell count tomorrow to determine plan of action. ",
+      "completionLinks": "",
+      "date": "2026-05-07"
     }
   ],
-  "lastUpdated": "2026-05-07T17:15:37.791Z",
+  "lastUpdated": "2026-05-08T16:11:04.589Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
