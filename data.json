@@ -3604,7 +3604,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-05-10T20:30:22.551Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mp089zc0yje29w9730f",
+              "title": "protocol first draft",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-10T20:31:11.136Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -7451,6 +7460,14 @@
         "time": null,
         "scheduledAt": "2026-05-07T17:14:24.134Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mp088xufq5tucagq0si",
+        "subtaskId": "mp089zc0yje29w9730f",
+        "time": null,
+        "scheduledAt": "2026-05-10T20:31:11.136Z",
+        "completedOnDay": false
       }
     ],
     "2026-05-13": [
@@ -10629,7 +10646,7 @@
       "date": "2026-05-08"
     }
   ],
-  "lastUpdated": "2026-05-10T20:30:22.552Z",
+  "lastUpdated": "2026-05-10T20:31:11.136Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
