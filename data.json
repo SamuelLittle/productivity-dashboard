@@ -2890,7 +2890,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-05-10T20:11:42.965Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mp07md6tdnuojwgmhpp",
+              "title": "Cell + RNP -> nucleoplate",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-10T20:12:49.349Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -10573,7 +10582,7 @@
       "date": "2026-05-08"
     }
   ],
-  "lastUpdated": "2026-05-10T20:11:42.965Z",
+  "lastUpdated": "2026-05-10T20:12:49.350Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
