@@ -4624,16 +4624,6 @@
     ],
     "2026-05-08": [
       {
-        "id": "motbbnd47f5tx8scu1",
-        "title": "order primers for AAVS1",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-05-06T00:22:04.552Z"
-      },
-      {
         "id": "mnp9dznkngtd854rq2",
         "title": "email Yuxin",
         "description": "",
@@ -4642,16 +4632,6 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-04-07T23:37:07.520Z"
-      },
-      {
-        "id": "motbbnd47f5tx8scu1",
-        "title": "order primers for AAVS1",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-05-06T00:22:04.552Z"
       }
     ]
   },
@@ -7382,14 +7362,6 @@
         "completedAt": "2026-05-08T21:08:15.900Z",
         "completionNotes": "Nucleofected 3 rxns of CD96 (1.5M cells) and 15 rxns of AAVS1 (7.5M cells)",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mn96ur593n4wqfraywg",
-        "subtaskId": "mn973r0fexd2jqy4iso",
-        "time": null,
-        "scheduledAt": "2026-05-07T17:15:38.099Z",
-        "completedOnDay": false
       }
     ],
     "2026-05-12": [
@@ -7435,6 +7407,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-05-10T19:50:36.100Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn973r0fexd2jqy4iso",
+        "time": null,
+        "scheduledAt": "2026-05-10T19:50:36.545Z",
         "completedOnDay": false
       }
     ]
@@ -10508,7 +10488,7 @@
       "date": "2026-05-08"
     }
   ],
-  "lastUpdated": "2026-05-10T19:50:36.100Z",
+  "lastUpdated": "2026-05-10T19:50:41.119Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
