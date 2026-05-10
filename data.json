@@ -4622,7 +4622,7 @@
         "completionLinks": ""
       }
     ],
-    "2026-05-08": [
+    "2026-05-11": [
       {
         "id": "mnp9dznkngtd854rq2",
         "title": "email Yuxin",
@@ -10488,7 +10488,7 @@
       "date": "2026-05-08"
     }
   ],
-  "lastUpdated": "2026-05-10T19:50:49.479Z",
+  "lastUpdated": "2026-05-10T19:50:49.807Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -10827,6 +10827,17 @@
       },
       "generatedAt": "2026-05-06T00:20:46.818Z",
       "editedAt": "2026-05-06T00:20:49.588Z"
+    },
+    "2026-05-08": {
+      "summary": "**Friday, May 8, 2026 - Daily Summary**\n\nSuccessfully advanced the Natural Killer Cell CRISPR Screen project by nucleofecting NK cells for next week's 384-well killing assay. Additionally made significant progress on automating the BLADE-R RNA extraction protocol, developing a modular approach that can handle multiple plates simultaneously on the i7 deck.\n\n**Main Accomplishments:**\n• Nucleofected NK cells for Natural Killer Cell CRISPR Screen - 3 reactions of CD96 (1.5M cells) and 15 reactions of AAVS1 (7.5M cells)\n• Developed i7 protocol for automated BLADE-R RNA extraction across 3 plates simultaneously\n• Solved deck space constraints for automated BLADE-R setup with modular protocol design\n\n**Carry Forward:**\nTest the automated BLADE-R procedure next week to validate the new protocol setup.",
+      "reflections": {
+        "accomplishments": "Nucleofected NK cells for 384 well killing assay next week. Also made the i7 protocol for BLADE-R RNA extraction in 3 plates simulataneously.",
+        "effort": "Everything was as expectd",
+        "learned": "Figured out how to fit all the required materials on the i7 deck for automated BLADE-R. Modular protocol for multiple plates and different stopping points",
+        "carryForward": "Need to test automated procedure next week."
+      },
+      "generatedAt": "2026-05-10T19:54:03.051Z",
+      "editedAt": "2026-05-10T19:54:03.051Z"
     }
   },
   "weeklySummaries": {
