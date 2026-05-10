@@ -3552,6 +3552,14 @@
               "createdAt": "2026-05-10T19:59:09.766Z",
               "notes": "Lyse a plate of monocytes all the way to end of wash 1. store at 4c. ",
               "links": ""
+            },
+            {
+              "id": "mp076nogs4d3sw4wg9r",
+              "title": "Run 1 plate end-to-end BLADE-R",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-10T20:00:36.448Z"
             }
           ]
         }
@@ -7452,6 +7460,14 @@
         "time": null,
         "scheduledAt": "2026-05-10T19:58:40.264Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mp06zu8qc15ado9pfxm",
+        "subtaskId": "mp076nogs4d3sw4wg9r",
+        "time": null,
+        "scheduledAt": "2026-05-10T20:00:36.448Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -10524,7 +10540,7 @@
       "date": "2026-05-08"
     }
   ],
-  "lastUpdated": "2026-05-10T19:59:47.359Z",
+  "lastUpdated": "2026-05-10T20:00:36.448Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
