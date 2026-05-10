@@ -3549,7 +3549,9 @@
               "description": "",
               "priority": "medium",
               "completed": false,
-              "createdAt": "2026-05-10T19:59:09.766Z"
+              "createdAt": "2026-05-10T19:59:09.766Z",
+              "notes": "Lyse a plate of monocytes all the way to end of wash 1. store at 4c. ",
+              "links": ""
             }
           ]
         }
@@ -10522,7 +10524,7 @@
       "date": "2026-05-08"
     }
   ],
-  "lastUpdated": "2026-05-10T19:59:09.767Z",
+  "lastUpdated": "2026-05-10T19:59:47.359Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
