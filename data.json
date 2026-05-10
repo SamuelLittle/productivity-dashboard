@@ -3560,6 +3560,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-05-10T20:00:36.448Z"
+            },
+            {
+              "id": "mp0779sveyet0ql58wc",
+              "title": "finish 1 plate BLADE-R (afternoon run)",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-10T20:01:05.119Z"
             }
           ]
         }
@@ -7468,6 +7476,14 @@
         "time": null,
         "scheduledAt": "2026-05-10T20:00:36.448Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mp06zu8qc15ado9pfxm",
+        "subtaskId": "mp0779sveyet0ql58wc",
+        "time": null,
+        "scheduledAt": "2026-05-10T20:01:05.119Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -10540,7 +10556,7 @@
       "date": "2026-05-08"
     }
   ],
-  "lastUpdated": "2026-05-10T20:00:36.448Z",
+  "lastUpdated": "2026-05-10T20:01:05.119Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
