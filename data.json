@@ -3577,10 +3577,13 @@
               "title": "Run 1 plate Blade-R (morning run)",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-05-10T19:59:09.766Z",
               "notes": "Lyse a plate of monocytes all the way to end of wash 1. store at 4c. ",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-05-11T19:41:39.890Z",
+              "completionNotes": "Performed Lysis + wash 1 of BLADE-R on two plates of monocytes. \n\nFor plate 1 there was poor washing resulting in beads not getting resuspended.  An earlier tip change before wash 1 resuspension improved wash performance.  Both plates were place at 4c. remainder of the protocol will be performed this aft. ",
+              "completionLinks": ""
             },
             {
               "id": "mp076nogs4d3sw4wg9r",
@@ -7549,7 +7552,10 @@
         "subtaskId": "mp074ssmfyo58fk68oc",
         "time": null,
         "scheduledAt": "2026-05-10T20:01:56.909Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-11T19:41:39.890Z",
+        "completionNotes": "Performed Lysis + wash 1 of BLADE-R on two plates of monocytes. \n\nFor plate 1 there was poor washing resulting in beads not getting resuspended.  An earlier tip change before wash 1 resuspension improved wash performance.  Both plates were place at 4c. remainder of the protocol will be performed this aft. ",
+        "completionLinks": ""
       }
     ],
     "2026-05-15": [
@@ -10658,9 +10664,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-11"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mp06zu8qc15ado9pfxm",
+      "subtaskId": "mp074ssmfyo58fk68oc",
+      "completedAt": "2026-05-11T19:41:39.890Z",
+      "completionNotes": "Performed Lysis + wash 1 of BLADE-R on two plates of monocytes. \n\nFor plate 1 there was poor washing resulting in beads not getting resuspended.  An earlier tip change before wash 1 resuspension improved wash performance.  Both plates were place at 4c. remainder of the protocol will be performed this aft. ",
+      "completionLinks": "",
+      "date": "2026-05-11"
     }
   ],
-  "lastUpdated": "2026-05-11T17:43:15.194Z",
+  "lastUpdated": "2026-05-11T19:41:39.890Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
