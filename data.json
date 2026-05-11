@@ -3566,8 +3566,11 @@
               "title": "Isolate Monocytes",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-10T19:58:40.264Z"
+              "completed": true,
+              "createdAt": "2026-05-10T19:58:40.264Z",
+              "completedAt": "2026-05-11T17:43:15.194Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mp074ssmfyo58fk68oc",
@@ -7519,7 +7522,10 @@
         "subtaskId": "mp074613o0vyskgcoh",
         "time": null,
         "scheduledAt": "2026-05-10T19:58:40.264Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-11T17:43:15.194Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -10643,9 +10649,18 @@
       "completionNotes": "Nucleofected 3 rxns of CD96 (1.5M cells) and 15 rxns of AAVS1 (7.5M cells)",
       "completionLinks": "",
       "date": "2026-05-08"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mp06zu8qc15ado9pfxm",
+      "subtaskId": "mp074613o0vyskgcoh",
+      "completedAt": "2026-05-11T17:43:15.194Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-11"
     }
   ],
-  "lastUpdated": "2026-05-10T20:31:11.136Z",
+  "lastUpdated": "2026-05-11T17:43:15.194Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
