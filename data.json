@@ -3601,8 +3601,11 @@
               "title": "finish 1 plate BLADE-R (afternoon run)",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-10T20:01:05.119Z"
+              "completed": true,
+              "createdAt": "2026-05-10T20:01:05.119Z",
+              "completedAt": "2026-05-12T00:11:46.459Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -7550,7 +7553,10 @@
         "subtaskId": "mp0779sveyet0ql58wc",
         "time": null,
         "scheduledAt": "2026-05-10T20:01:05.119Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-12T00:11:46.459Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -10688,9 +10694,18 @@
       "completionNotes": "thawed RQR8s + GNEs\n",
       "completionLinks": "",
       "date": "2026-05-11"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mp06zu8qc15ado9pfxm",
+      "subtaskId": "mp0779sveyet0ql58wc",
+      "completedAt": "2026-05-12T00:11:46.459Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-11"
     }
   ],
-  "lastUpdated": "2026-05-12T00:11:36.001Z",
+  "lastUpdated": "2026-05-12T00:11:46.459Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
