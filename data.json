@@ -3593,8 +3593,11 @@
               "title": "Run 1 plate end-to-end BLADE-R",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-10T20:00:36.448Z"
+              "completed": true,
+              "createdAt": "2026-05-10T20:00:36.448Z",
+              "completedAt": "2026-05-12T00:12:26.798Z",
+              "completionNotes": "Lots of hiccups throughout the automated protocol.  Need to QC RNA tomorrow.  If it doesnt work I will tighten the screws and try again. ",
+              "completionLinks": ""
             },
             {
               "id": "mp0779sveyet0ql58wc",
@@ -7545,7 +7548,10 @@
         "subtaskId": "mp076nogs4d3sw4wg9r",
         "time": null,
         "scheduledAt": "2026-05-10T20:00:36.448Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-12T00:12:26.798Z",
+        "completionNotes": "Lots of hiccups throughout the automated protocol.  Need to QC RNA tomorrow.  If it doesnt work I will tighten the screws and try again. ",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -10703,9 +10709,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-11"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mp06zu8qc15ado9pfxm",
+      "subtaskId": "mp076nogs4d3sw4wg9r",
+      "completedAt": "2026-05-12T00:12:26.798Z",
+      "completionNotes": "Lots of hiccups throughout the automated protocol.  Need to QC RNA tomorrow.  If it doesnt work I will tighten the screws and try again. ",
+      "completionLinks": "",
+      "date": "2026-05-11"
     }
   ],
-  "lastUpdated": "2026-05-12T00:11:46.459Z",
+  "lastUpdated": "2026-05-12T00:12:26.798Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
