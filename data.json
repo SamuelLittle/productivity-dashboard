@@ -2001,8 +2001,11 @@
               "title": "Thaw T cells for killing assay",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-07T17:13:51.142Z"
+              "completed": true,
+              "createdAt": "2026-05-07T17:13:51.142Z",
+              "completedAt": "2026-05-12T00:11:36.001Z",
+              "completionNotes": "thawed RQR8s + GNEs\n",
+              "completionLinks": ""
             },
             {
               "id": "movqxczpeylxy903wy",
@@ -7509,7 +7512,10 @@
         "subtaskId": "movqwnja8watng79th9",
         "time": null,
         "scheduledAt": "2026-05-08T16:18:55.039Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-12T00:11:36.000Z",
+        "completionNotes": "thawed RQR8s + GNEs\n",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -10673,9 +10679,18 @@
       "completionNotes": "Performed Lysis + wash 1 of BLADE-R on two plates of monocytes. \n\nFor plate 1 there was poor washing resulting in beads not getting resuspended.  An earlier tip change before wash 1 resuspension improved wash performance.  Both plates were place at 4c. remainder of the protocol will be performed this aft. ",
       "completionLinks": "",
       "date": "2026-05-11"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "movqvib91fmi31nrat2",
+      "subtaskId": "movqwnja8watng79th9",
+      "completedAt": "2026-05-12T00:11:36.001Z",
+      "completionNotes": "thawed RQR8s + GNEs\n",
+      "completionLinks": "",
+      "date": "2026-05-11"
     }
   ],
-  "lastUpdated": "2026-05-11T19:41:39.890Z",
+  "lastUpdated": "2026-05-12T00:11:36.001Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
