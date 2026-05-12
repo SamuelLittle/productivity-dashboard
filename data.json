@@ -11069,6 +11069,17 @@
       },
       "generatedAt": "2026-05-10T19:54:03.051Z",
       "editedAt": "2026-05-10T19:54:03.051Z"
+    },
+    "2026-05-11": {
+      "summary": "**Monday, May 11, 2026 Daily Summary**\n\nFocused primarily on BLADE-R automation testing for the SMARTSeq TechDev project, running multiple plates through the protocol and troubleshooting workflow issues. Also completed cell preparation work for the Natural Killer Cell CRISPR Screen. Made significant progress debugging the automated BLADE-R protocol, though RNA quality control is still pending.\n\n**Main Accomplishments:**\n• Thawed T cells (RQR8s + GNEs) for Natural Killer Cell CRISPR Screen killing assay\n• Isolated monocytes and ran end-to-end BLADE-R plate with automated protocol debugging\n• Completed afternoon BLADE-R plate run for SMARTSeq TechDev\n• Performed morning BLADE-R lysis and wash steps on two monocyte plates, identifying tip change timing improvement for better wash performance\n\n**Carry Forward:**\nRNA quality control needed tomorrow for BLADE-R plates. Implement automated reagent plate preparation for high-throughput BLADE-R workflow. Apply stamping technique learned in team meeting (intermediary plate for even nucleofected cell distribution) on Friday.",
+      "reflections": {
+        "accomplishments": "Testing for BLADE-R automation - need to do all the readouts tomorrow but the automated workflow runs relatively bug free now.",
+        "effort": "everything as expected.",
+        "learned": "got all the kinks in the automation out.  During team meeting I learned that the best way to get even distribution of nucleofected cells out into culture plates is to first stamp into an intermediary plate. will implement on Friday",
+        "carryForward": "Need to implement an automated way to make all the reagent plates for ht BLADE-R"
+      },
+      "generatedAt": "2026-05-12T14:09:35.604Z",
+      "editedAt": "2026-05-12T14:09:35.604Z"
     }
   },
   "weeklySummaries": {
