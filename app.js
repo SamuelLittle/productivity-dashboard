@@ -488,8 +488,21 @@ async function loadData() {
         if (response.ok) {
             const fileData = await response.json();
             state.fileSha = fileData.sha;
-            const content = atob(fileData.content);
-            state.data = JSON.parse(content);
+
+            let jsonString;
+            if (fileData.content) {
+                // Strip newlines GitHub wraps base64 with, then decode UTF-8
+                const binaryStr = atob(fileData.content.replace(/\s/g, ''));
+                const bytes = Uint8Array.from(binaryStr, c => c.charCodeAt(0));
+                jsonString = new TextDecoder('utf-8').decode(bytes);
+            } else if (fileData.download_url) {
+                // File exceeds GitHub's 1MB Contents API limit — fetch raw
+                const dlResponse = await fetch(fileData.download_url);
+                jsonString = await dlResponse.text();
+            } else {
+                throw new Error('No content available from GitHub');
+            }
+            state.data = JSON.parse(jsonString);
             migrateDataStructure();
         } else if (response.status === 404) {
             state.data = createInitialData();
