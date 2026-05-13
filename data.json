@@ -11098,6 +11098,17 @@
       },
       "generatedAt": "2026-05-12T14:09:35.604Z",
       "editedAt": "2026-05-12T14:09:35.604Z"
+    },
+    "2026-05-12": {
+      "summary": "**Daily Summary - Tuesday, May 12, 2026**\n\nFocused day on advancing the Natural Killer Cell CRISPR Screen with experimental setup and planning. Set up killing assay for tomorrow's readout and analyzed RNA data from yesterday's BLADE-R experiment. Met with ZT to discuss project direction and identified need for more structured approach to the NK cell screen.\n\n**Main Accomplishments:**\n• Set up killing assay against RQR8 cells (384 + 96 well format, 8:1 to 0:1 ratio) for Natural Killer Cell CRISPR Screen\n• Analyzed RNA data from previous day's BLADE-R experiment\n• Met with ZT regarding project coordination\n\n**Carry Forward:**\nNeed to develop formal, detailed screen plan for NK cell screen and prepare screen proposal for next week presentation. BLADE-R optimization shows within-run variability is more critical than post-wash timing.",
+      "reflections": {
+        "accomplishments": "Set up killing assay for readout tomorrow. analyzed RNA from yesterdays BLADE-R. Met with ZT. need to button up NK cell screen more tightly. Need to prepare screen proposal for next week",
+        "effort": "n/a",
+        "learned": "BLADE-R: variability within runs is more impactful then time post wash 1. Perfect clean runs with current set up should lead to success.",
+        "carryForward": "Need to make a toght formal screen plan for NK cell screen."
+      },
+      "generatedAt": "2026-05-13T03:09:36.600Z",
+      "editedAt": "2026-05-13T03:09:36.600Z"
     }
   },
   "weeklySummaries": {
