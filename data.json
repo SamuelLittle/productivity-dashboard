@@ -2012,8 +2012,11 @@
               "title": "set up killing assay",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-07T17:14:24.133Z"
+              "completed": true,
+              "createdAt": "2026-05-07T17:14:24.133Z",
+              "completedAt": "2026-05-13T03:06:43.128Z",
+              "completionNotes": "Set up killing assay against RQR8 cells only. \n\n384 + 96 well for 8:1 -> 0:1 ",
+              "completionLinks": ""
             },
             {
               "id": "movqxtz5s7gdg2z06bm",
@@ -7485,7 +7488,10 @@
         "subtaskId": "movqxczpeylxy903wy",
         "time": null,
         "scheduledAt": "2026-05-07T17:14:24.134Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-13T03:06:43.128Z",
+        "completionNotes": "Set up killing assay against RQR8 cells only. \n\n384 + 96 well for 8:1 -> 0:1 ",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -10728,9 +10734,18 @@
       "completionNotes": "Lots of hiccups throughout the automated protocol.  Need to QC RNA tomorrow.  If it doesnt work I will tighten the screws and try again. ",
       "completionLinks": "",
       "date": "2026-05-11"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "movqvib91fmi31nrat2",
+      "subtaskId": "movqxczpeylxy903wy",
+      "completedAt": "2026-05-13T03:06:43.128Z",
+      "completionNotes": "Set up killing assay against RQR8 cells only. \n\n384 + 96 well for 8:1 -> 0:1 ",
+      "completionLinks": "",
+      "date": "2026-05-12"
     }
   ],
-  "lastUpdated": "2026-05-12T18:36:06.306Z",
+  "lastUpdated": "2026-05-13T03:06:43.128Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
