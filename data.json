@@ -7492,22 +7492,6 @@
         "completedAt": "2026-05-13T03:06:43.128Z",
         "completionNotes": "Set up killing assay against RQR8 cells only. \n\n384 + 96 well for 8:1 -> 0:1 ",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mp088xufq5tucagq0si",
-        "subtaskId": "mp089zc0yje29w9730f",
-        "time": null,
-        "scheduledAt": "2026-05-10T20:31:11.136Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mp088xufq5tucagq0si",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-05-10T20:30:22.552Z",
-        "completedOnDay": false
       }
     ],
     "2026-05-13": [
@@ -7533,6 +7517,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-05-13T03:06:57.550Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mp088xufq5tucagq0si",
+        "subtaskId": "mp089zc0yje29w9730f",
+        "time": null,
+        "scheduledAt": "2026-05-13T03:06:57.871Z",
         "completedOnDay": false
       }
     ],
@@ -10745,7 +10737,7 @@
       "date": "2026-05-12"
     }
   ],
-  "lastUpdated": "2026-05-13T03:06:57.550Z",
+  "lastUpdated": "2026-05-13T03:07:22.999Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
