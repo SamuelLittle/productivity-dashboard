@@ -2944,8 +2944,11 @@
               "title": "Cell + RNP -> nucleoplate",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-10T20:12:49.349Z"
+              "completed": true,
+              "createdAt": "2026-05-10T20:12:49.349Z",
+              "completedAt": "2026-05-15T23:32:23.060Z",
+              "completionNotes": "Validated version of this.  Need to dig more in with a custom aspiration to get lower in the plate and a custom dispense to avoid bubbles and ensure even dispresion across cuvette footprint",
+              "completionLinks": ""
             },
             {
               "id": "mp07mqqlw1bk2vepds",
@@ -7634,7 +7637,10 @@
         "subtaskId": "mp07md6tdnuojwgmhpp",
         "time": null,
         "scheduledAt": "2026-05-10T20:13:23.087Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-15T23:32:23.059Z",
+        "completionNotes": "Validated version of this.  Need to dig more in with a custom aspiration to get lower in the plate and a custom dispense to avoid bubbles and ensure even dispresion across cuvette footprint",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -10805,9 +10811,18 @@
       "completionNotes": "Set up killing assay against RQR8 cells only. \n\n384 + 96 well for 8:1 -> 0:1 ",
       "completionLinks": "",
       "date": "2026-05-12"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mp07kxytswogf1924m",
+      "subtaskId": "mp07md6tdnuojwgmhpp",
+      "completedAt": "2026-05-15T23:32:23.060Z",
+      "completionNotes": "Validated version of this.  Need to dig more in with a custom aspiration to get lower in the plate and a custom dispense to avoid bubbles and ensure even dispresion across cuvette footprint",
+      "completionLinks": "",
+      "date": "2026-05-15"
     }
   ],
-  "lastUpdated": "2026-05-15T00:41:08.035Z",
+  "lastUpdated": "2026-05-15T23:32:23.060Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
