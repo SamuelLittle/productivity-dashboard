@@ -7697,19 +7697,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-05-14": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mp66vaik80f35xv2ryp",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-05-15T00:38:23.230Z",
-        "completedOnDay": false,
-        "completedAt": null,
-        "completionNotes": null,
-        "completionLinks": null
-      }
-    ],
     "2026-05-19": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -10927,7 +10914,7 @@
       "date": "2026-05-13"
     }
   ],
-  "lastUpdated": "2026-05-15T23:45:38.685Z",
+  "lastUpdated": "2026-05-15T23:45:48.695Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
