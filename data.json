@@ -2035,6 +2035,15 @@
               "createdAt": "2026-05-07T17:15:05.840Z"
             }
           ]
+        },
+        {
+          "id": "mp66vaik80f35xv2ryp",
+          "title": "384 well killing assay - pilot 2",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-05-15T00:38:23.229Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -7602,6 +7611,16 @@
         "scheduledAt": "2026-05-10T20:13:46.744Z",
         "completedOnDay": false
       }
+    ],
+    "2026-05-14": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mp66vaik80f35xv2ryp",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-05-15T00:38:23.230Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -10727,7 +10746,7 @@
       "date": "2026-05-12"
     }
   ],
-  "lastUpdated": "2026-05-15T00:37:29.667Z",
+  "lastUpdated": "2026-05-15T00:38:23.230Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
