@@ -2043,7 +2043,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-05-15T00:38:23.229Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mp66vo8bct6wc2int05",
+              "title": "Nucleofect cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-15T00:38:41.004Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -7610,6 +7619,14 @@
         "time": null,
         "scheduledAt": "2026-05-10T20:13:46.744Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mp66vaik80f35xv2ryp",
+        "subtaskId": "mp66vo8bct6wc2int05",
+        "time": null,
+        "scheduledAt": "2026-05-15T00:38:41.004Z",
+        "completedOnDay": false
       }
     ],
     "2026-05-14": [
@@ -10746,7 +10763,7 @@
       "date": "2026-05-12"
     }
   ],
-  "lastUpdated": "2026-05-15T00:38:23.230Z",
+  "lastUpdated": "2026-05-15T00:38:41.004Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
