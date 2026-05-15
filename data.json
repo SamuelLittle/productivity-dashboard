@@ -3688,8 +3688,11 @@
               "title": "protocol first draft",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-10T20:31:11.136Z"
+              "completed": true,
+              "createdAt": "2026-05-10T20:31:11.136Z",
+              "completedAt": "2026-05-15T23:40:04.947Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -7583,7 +7586,10 @@
         "subtaskId": "mp089zc0yje29w9730f",
         "time": null,
         "scheduledAt": "2026-05-13T03:06:57.871Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-15T23:40:04.947Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -10884,9 +10890,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-13"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mp088xufq5tucagq0si",
+      "subtaskId": "mp089zc0yje29w9730f",
+      "completedAt": "2026-05-15T23:40:04.947Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-13"
     }
   ],
-  "lastUpdated": "2026-05-15T23:39:58.359Z",
+  "lastUpdated": "2026-05-15T23:40:04.947Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
