@@ -2067,6 +2067,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-05-15T00:40:52.486Z"
+            },
+            {
+              "id": "mp66ytojzvyat8n77ec",
+              "title": "Readout",
+              "description": "Flow readout and imaging readout. ",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-15T00:41:08.035Z"
             }
           ]
         }
@@ -10799,7 +10807,7 @@
       "date": "2026-05-12"
     }
   ],
-  "lastUpdated": "2026-05-15T00:40:52.487Z",
+  "lastUpdated": "2026-05-15T00:41:08.035Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
