@@ -2077,9 +2077,11 @@
               "title": "Flow Prep",
               "description": "",
               "priority": "medium",
-              "completed": true,
+              "completed": false,
               "createdAt": "2026-05-15T00:40:52.486Z",
-              "completedAt": "2026-05-15T23:39:39.349Z"
+              "completedAt": null,
+              "completionNotes": null,
+              "completionLinks": null
             },
             {
               "id": "mp66ytojzvyat8n77ec",
@@ -7724,7 +7726,8 @@
         "subtaskId": "mp66yhomauanayu2mif",
         "time": null,
         "scheduledAt": "2026-05-15T00:40:52.487Z",
-        "completedOnDay": false
+        "completedOnDay": false,
+        "completedAt": null
       }
     ],
     "2026-05-18": [
@@ -10914,7 +10917,7 @@
       "date": "2026-05-13"
     }
   ],
-  "lastUpdated": "2026-05-15T23:45:16.257Z",
+  "lastUpdated": "2026-05-15T23:45:23.856Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
