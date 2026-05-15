@@ -2049,8 +2049,11 @@
               "title": "Nucleofect cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-15T00:38:41.004Z"
+              "completed": true,
+              "createdAt": "2026-05-15T00:38:41.004Z",
+              "completedAt": "2026-05-15T23:33:57.486Z",
+              "completionNotes": "nucleofected ~10M cells with AAVS1 RNP,  readout next week. ",
+              "completionLinks": ""
             },
             {
               "id": "mp66xzlgnw6gfx1iay",
@@ -7648,7 +7651,10 @@
         "subtaskId": "mp66vo8bct6wc2int05",
         "time": null,
         "scheduledAt": "2026-05-15T00:38:41.004Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-15T23:33:57.486Z",
+        "completionNotes": "nucleofected ~10M cells with AAVS1 RNP,  readout next week. ",
+        "completionLinks": ""
       }
     ],
     "2026-05-14": [
@@ -10822,9 +10828,18 @@
       "completionNotes": "Validated version of this.  Need to dig more in with a custom aspiration to get lower in the plate and a custom dispense to avoid bubbles and ensure even dispresion across cuvette footprint",
       "completionLinks": "",
       "date": "2026-05-15"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": "mp66vo8bct6wc2int05",
+      "completedAt": "2026-05-15T23:33:57.486Z",
+      "completionNotes": "nucleofected ~10M cells with AAVS1 RNP,  readout next week. ",
+      "completionLinks": "",
+      "date": "2026-05-15"
     }
   ],
-  "lastUpdated": "2026-05-15T23:32:32.711Z",
+  "lastUpdated": "2026-05-15T23:33:57.486Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
