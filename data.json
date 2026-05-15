@@ -2041,7 +2041,7 @@
           "title": "384 well killing assay - pilot 2",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-05-15T00:38:23.229Z",
           "subtasks": [
             {
@@ -2051,7 +2051,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-15T00:38:41.004Z",
-              "completedAt": "2026-05-15T23:33:57.486Z",
+              "completedAt": "2026-05-15T23:39:39.349Z",
               "completionNotes": "nucleofected ~10M cells with AAVS1 RNP,  readout next week. ",
               "completionLinks": ""
             },
@@ -2060,26 +2060,32 @@
               "title": "set up killing assay",
               "description": "Need extensive controls for imaging readout. ",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-15T00:40:29.044Z"
+              "completed": true,
+              "createdAt": "2026-05-15T00:40:29.044Z",
+              "completedAt": "2026-05-15T23:39:39.349Z"
             },
             {
               "id": "mp66yhomauanayu2mif",
               "title": "Flow Prep",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-15T00:40:52.486Z"
+              "completed": true,
+              "createdAt": "2026-05-15T00:40:52.486Z",
+              "completedAt": "2026-05-15T23:39:39.349Z"
             },
             {
               "id": "mp66ytojzvyat8n77ec",
               "title": "Readout",
               "description": "Flow readout and imaging readout. ",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-15T00:41:08.035Z"
+              "completed": true,
+              "createdAt": "2026-05-15T00:41:08.035Z",
+              "completedAt": "2026-05-15T23:39:39.349Z"
             }
-          ]
+          ],
+          "completedAt": "2026-05-15T23:39:39.349Z",
+          "completionNotes": "Thawed cells and began set up for this assay.",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -7664,7 +7670,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-05-15T00:38:23.230Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-15T23:39:39.348Z",
+        "completionNotes": "Thawed cells and began set up for this assay.",
+        "completionLinks": ""
       }
     ],
     "2026-05-19": [
@@ -10837,9 +10846,17 @@
       "completionNotes": "nucleofected ~10M cells with AAVS1 RNP,  readout next week. ",
       "completionLinks": "",
       "date": "2026-05-15"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "completedAt": "2026-05-15T23:39:39.349Z",
+      "completionNotes": "Thawed cells and began set up for this assay.",
+      "completionLinks": "",
+      "date": "2026-05-14"
     }
   ],
-  "lastUpdated": "2026-05-15T23:33:57.486Z",
+  "lastUpdated": "2026-05-15T23:39:39.349Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
