@@ -2023,8 +2023,11 @@
               "title": "Flow cytometry prep",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-07T17:14:46.145Z"
+              "completed": true,
+              "createdAt": "2026-05-07T17:14:46.145Z",
+              "completedAt": "2026-05-15T23:39:54.267Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "movqy9681pqxg4hywaui",
@@ -7555,7 +7558,10 @@
         "subtaskId": "movqxtz5s7gdg2z06bm",
         "time": null,
         "scheduledAt": "2026-05-07T17:14:46.145Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-15T23:39:54.266Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -10854,9 +10860,18 @@
       "completionNotes": "Thawed cells and began set up for this assay.",
       "completionLinks": "",
       "date": "2026-05-14"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "movqvib91fmi31nrat2",
+      "subtaskId": "movqxtz5s7gdg2z06bm",
+      "completedAt": "2026-05-15T23:39:54.267Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-13"
     }
   ],
-  "lastUpdated": "2026-05-15T23:39:39.349Z",
+  "lastUpdated": "2026-05-15T23:39:54.267Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
