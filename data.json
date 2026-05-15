@@ -2034,8 +2034,11 @@
               "title": "Flow readout",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-07T17:15:05.840Z"
+              "completed": true,
+              "createdAt": "2026-05-07T17:15:05.840Z",
+              "completedAt": "2026-05-15T23:39:58.359Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -7569,7 +7572,10 @@
         "subtaskId": "movqy9681pqxg4hywaui",
         "time": null,
         "scheduledAt": "2026-05-07T17:15:05.840Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-15T23:39:58.359Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -10869,9 +10875,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-13"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "movqvib91fmi31nrat2",
+      "subtaskId": "movqy9681pqxg4hywaui",
+      "completedAt": "2026-05-15T23:39:58.359Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-13"
     }
   ],
-  "lastUpdated": "2026-05-15T23:39:54.267Z",
+  "lastUpdated": "2026-05-15T23:39:58.359Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
