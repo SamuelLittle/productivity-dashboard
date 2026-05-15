@@ -11212,6 +11212,17 @@
       },
       "generatedAt": "2026-05-13T03:09:36.600Z",
       "editedAt": "2026-05-13T03:09:36.600Z"
+    },
+    "2026-05-15": {
+      "summary": "**Friday, May 15, 2026 Daily Summary**\n\nFocused day on advancing two CRISPR screening projects with nucleofection work while setting up for next week's experiments. Made progress on protocol optimization and connected with team members on upcoming collaborative work.\n\n**Main Accomplishments:**\n• Validated cell + RNP to nucleoplate protocol for iAstro CRISPR Screen, identifying needs for custom aspiration and dispense improvements\n• Nucleofected ~10M cells with AAVS1 RNP for Natural Killer Cell CRISPR Screen, with readout scheduled for next week\n• Reviewed pTOX assay protocol to build understanding for upcoming work\n• Coordinated with Michelle on liberase pilot assistance for next week\n\n**Carry Forward:**\nProtocol refinements needed for nucleoplate workflow - implement custom aspiration for better plate positioning and custom dispense to reduce bubbles and improve distribution.",
+      "reflections": {
+        "accomplishments": "Performed nucleofection for next weeks killing assays. Read through and began to understand pTOX assay protocol.  Volunteered to assist Michelle next week with liberase pilots.",
+        "effort": "signals training.",
+        "learned": "Qiao encouraged me to stick with FACS as the readout for the killing assay.  I still think imaging has potential but I understand his hesitancy.",
+        "carryForward": "Nothing major today. Mostly setting up next week and problem solving on existing projects."
+      },
+      "generatedAt": "2026-05-15T23:38:20.575Z",
+      "editedAt": "2026-05-15T23:38:20.575Z"
     }
   },
   "weeklySummaries": {
