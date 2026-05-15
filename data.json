@@ -2047,7 +2047,7 @@
           "title": "384 well killing assay - pilot 2",
           "description": "",
           "priority": "medium",
-          "completed": true,
+          "completed": false,
           "createdAt": "2026-05-15T00:38:23.229Z",
           "subtasks": [
             {
@@ -2095,9 +2095,9 @@
               "completionLinks": null
             }
           ],
-          "completedAt": "2026-05-15T23:39:39.349Z",
-          "completionNotes": "Thawed cells and began set up for this assay.",
-          "completionLinks": ""
+          "completedAt": null,
+          "completionNotes": null,
+          "completionLinks": null
         }
       ],
       "progressUpdates": [],
@@ -7704,10 +7704,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-05-15T00:38:23.230Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-15T23:39:39.348Z",
-        "completionNotes": "Thawed cells and began set up for this assay.",
-        "completionLinks": ""
+        "completedOnDay": false,
+        "completedAt": null,
+        "completionNotes": null,
+        "completionLinks": null
       }
     ],
     "2026-05-19": [
@@ -10927,7 +10927,7 @@
       "date": "2026-05-13"
     }
   ],
-  "lastUpdated": "2026-05-15T23:45:33.778Z",
+  "lastUpdated": "2026-05-15T23:45:38.685Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
