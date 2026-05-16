@@ -2093,6 +2093,14 @@
               "completedAt": null,
               "completionNotes": null,
               "completionLinks": null
+            },
+            {
+              "id": "mp8pk91z1t99lgnx0ph",
+              "title": "make plan for imaging readout",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-16T18:57:13.178Z"
             }
           ],
           "completedAt": null,
@@ -10914,7 +10922,7 @@
       "date": "2026-05-13"
     }
   ],
-  "lastUpdated": "2026-05-15T23:45:48.695Z",
+  "lastUpdated": "2026-05-16T18:57:13.178Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
