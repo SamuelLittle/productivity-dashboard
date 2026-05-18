@@ -4870,6 +4870,15 @@
         "completed": false,
         "createdAt": "2026-05-18T15:03:13.761Z",
         "time": "10:30"
+      },
+      {
+        "id": "mpbjuqwexuitzlf84o",
+        "title": "Assemble required reagents for NK-T cells screen",
+        "description": "- round bottom 384 well plate\n- flat bottom glass 384 well plate\n- CTV\n- sytox green\n- write out methodology",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-05-18T18:40:43.694Z",
+        "time": null
       }
     ],
     "2026-05-21": [
@@ -11001,7 +11010,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-05-18T17:22:28.176Z",
+  "lastUpdated": "2026-05-18T18:40:43.694Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
