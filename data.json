@@ -2101,6 +2101,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-05-16T18:57:13.178Z"
+            },
+            {
+              "id": "mpbfhdlnex793h6bcmo",
+              "title": "Thaw out T cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-18T16:38:21.468Z"
             }
           ],
           "completedAt": null,
@@ -7777,6 +7785,14 @@
         "time": "13:30",
         "scheduledAt": "2026-05-18T15:04:22.530Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mp66vaik80f35xv2ryp",
+        "subtaskId": "mpbfhdlnex793h6bcmo",
+        "time": null,
+        "scheduledAt": "2026-05-18T16:38:21.469Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -10974,7 +10990,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-05-18T16:34:23.327Z",
+  "lastUpdated": "2026-05-18T16:38:21.469Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
