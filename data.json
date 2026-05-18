@@ -4867,9 +4867,12 @@
         "title": "gpr35 Meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-05-18T15:03:13.761Z",
-        "time": "10:30"
+        "time": "10:30",
+        "completedAt": "2026-05-18T18:44:23.412Z",
+        "completionNotes": "Productive meeting with Pete + Kelly + Javi + ZT\n\ngoing to move forward with Bulk RNA seq of GPR35 expressing donor under small collection of experimental conditions.  Will expand out to more targets as neccessary. ",
+        "completionLinks": ""
       },
       {
         "id": "mpbjuqwexuitzlf84o",
@@ -11008,9 +11011,17 @@
       "completedAt": "2026-05-18T16:34:23.327Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "id": "mpbc31i8jc2651zco1p",
+      "title": "gpr35 Meeting",
+      "completedAt": "2026-05-18T18:44:23.412Z",
+      "completionNotes": "Productive meeting with Pete + Kelly + Javi + ZT\n\ngoing to move forward with Bulk RNA seq of GPR35 expressing donor under small collection of experimental conditions.  Will expand out to more targets as neccessary. ",
+      "completionLinks": "",
+      "date": "2026-05-18"
     }
   ],
-  "lastUpdated": "2026-05-18T18:40:43.694Z",
+  "lastUpdated": "2026-05-18T18:44:23.412Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
