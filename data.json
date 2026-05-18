@@ -2112,6 +2112,14 @@
               "completedAt": "2026-05-18T22:58:06.161Z",
               "completionNotes": "Thawed roughly 7M T cells from two vials of RQR8 KO cell lines.",
               "completionLinks": ""
+            },
+            {
+              "id": "mpbto3v8lr9d3j9sxyr",
+              "title": "CTV staining",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-18T23:15:30.069Z"
             }
           ],
           "completedAt": null,
@@ -7780,6 +7788,14 @@
         "time": null,
         "scheduledAt": "2026-05-18T21:41:07.927Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mp66vaik80f35xv2ryp",
+        "subtaskId": "mpbto3v8lr9d3j9sxyr",
+        "time": null,
+        "scheduledAt": "2026-05-18T23:15:30.069Z",
+        "completedOnDay": false
       }
     ],
     "2026-05-20": [
@@ -11063,7 +11079,7 @@
       "date": "2026-05-18"
     }
   ],
-  "lastUpdated": "2026-05-18T23:14:45.222Z",
+  "lastUpdated": "2026-05-18T23:15:30.069Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
