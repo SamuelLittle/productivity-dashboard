@@ -2106,6 +2106,15 @@
           "completedAt": null,
           "completionNotes": null,
           "completionLinks": null
+        },
+        {
+          "id": "mpbc4ikhimw5v6go98m",
+          "title": "nk Screening alignment with ZT + Qiao",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-05-18T15:04:22.530Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -7754,6 +7763,14 @@
         "time": null,
         "scheduledAt": "2026-05-15T23:32:32.711Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mpbc4ikhimw5v6go98m",
+        "subtaskId": null,
+        "time": "13:30",
+        "scheduledAt": "2026-05-18T15:04:22.530Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -10933,7 +10950,7 @@
       "date": "2026-05-13"
     }
   ],
-  "lastUpdated": "2026-05-18T15:03:13.761Z",
+  "lastUpdated": "2026-05-18T15:04:22.530Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
