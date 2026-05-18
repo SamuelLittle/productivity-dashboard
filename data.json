@@ -3647,7 +3647,7 @@
           "title": "Multi-Plate BLADE-R automation",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-05-10T19:55:18.363Z",
           "subtasks": [
             {
@@ -3657,7 +3657,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-10T19:58:40.264Z",
-              "completedAt": "2026-05-11T17:43:15.194Z",
+              "completedAt": "2026-05-18T16:34:15.923Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3670,7 +3670,7 @@
               "createdAt": "2026-05-10T19:59:09.766Z",
               "notes": "Lyse a plate of monocytes all the way to end of wash 1. store at 4c. ",
               "links": "",
-              "completedAt": "2026-05-11T19:41:39.890Z",
+              "completedAt": "2026-05-18T16:34:15.923Z",
               "completionNotes": "Performed Lysis + wash 1 of BLADE-R on two plates of monocytes. \n\nFor plate 1 there was poor washing resulting in beads not getting resuspended.  An earlier tip change before wash 1 resuspension improved wash performance.  Both plates were place at 4c. remainder of the protocol will be performed this aft. ",
               "completionLinks": ""
             },
@@ -3681,7 +3681,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-10T20:00:36.448Z",
-              "completedAt": "2026-05-12T00:12:26.798Z",
+              "completedAt": "2026-05-18T16:34:15.923Z",
               "completionNotes": "Lots of hiccups throughout the automated protocol.  Need to QC RNA tomorrow.  If it doesnt work I will tighten the screws and try again. ",
               "completionLinks": ""
             },
@@ -3692,11 +3692,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-10T20:01:05.119Z",
-              "completedAt": "2026-05-12T00:11:46.459Z",
+              "completedAt": "2026-05-18T16:34:15.923Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-05-18T16:34:15.923Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mp088xufq5tucagq0si",
@@ -10948,9 +10951,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-13"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mp06zu8qc15ado9pfxm",
+      "subtaskId": null,
+      "title": "Multi-Plate BLADE-R automation",
+      "completedAt": "2026-05-18T16:34:15.923Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-05-18T15:04:22.530Z",
+  "lastUpdated": "2026-05-18T16:34:15.923Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
