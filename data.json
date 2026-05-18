@@ -2107,8 +2107,11 @@
               "title": "Thaw out T cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-18T16:38:21.468Z"
+              "completed": true,
+              "createdAt": "2026-05-18T16:38:21.468Z",
+              "completedAt": "2026-05-18T22:58:06.161Z",
+              "completionNotes": "Thawed roughly 7M T cells from two vials of RQR8 KO cell lines.",
+              "completionLinks": ""
             }
           ],
           "completedAt": null,
@@ -7780,7 +7783,7 @@
         "taskId": "mp07kxytswogf1924m",
         "subtaskId": "mp07mqqlw1bk2vepds",
         "time": null,
-        "scheduledAt": "2026-05-18T21:41:08.362Z",
+        "scheduledAt": "2026-05-18T21:41:10.109Z",
         "completedOnDay": false
       }
     ],
@@ -7821,7 +7824,10 @@
         "subtaskId": "mpbfhdlnex793h6bcmo",
         "time": null,
         "scheduledAt": "2026-05-18T16:38:21.469Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-18T22:58:06.160Z",
+        "completionNotes": "Thawed roughly 7M T cells from two vials of RQR8 KO cell lines.",
+        "completionLinks": ""
       }
     ]
   },
@@ -11033,9 +11039,18 @@
       "completionNotes": "Moving forward with single k/a plate with single set of controls on each plate\n",
       "completionLinks": "",
       "date": "2026-05-18"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": "mpbfhdlnex793h6bcmo",
+      "completedAt": "2026-05-18T22:58:06.161Z",
+      "completionNotes": "Thawed roughly 7M T cells from two vials of RQR8 KO cell lines.",
+      "completionLinks": "",
+      "date": "2026-05-18"
     }
   ],
-  "lastUpdated": "2026-05-18T21:41:08.362Z",
+  "lastUpdated": "2026-05-18T22:58:06.161Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
