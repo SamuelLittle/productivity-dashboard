@@ -4885,9 +4885,12 @@
         "title": "Assemble required reagents for NK-T cells screen",
         "description": "- round bottom 384 well plate\n- flat bottom glass 384 well plate\n- CTV\n- sytox green\n- write out methodology",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-05-18T18:40:43.694Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-05-18T23:14:45.222Z",
+        "completionNotes": "Got ULA u bottom 384 well plates.  Sytox green has arrived but not delivered to me yet.  Need to get 384 imaging plates and CTV - can do that tomorrow morning. ",
+        "completionLinks": ""
       }
     ],
     "2026-05-21": [
@@ -11048,9 +11051,17 @@
       "completionNotes": "Thawed roughly 7M T cells from two vials of RQR8 KO cell lines.",
       "completionLinks": "",
       "date": "2026-05-18"
+    },
+    {
+      "id": "mpbjuqwexuitzlf84o",
+      "title": "Assemble required reagents for NK-T cells screen",
+      "completedAt": "2026-05-18T23:14:45.222Z",
+      "completionNotes": "Got ULA u bottom 384 well plates.  Sytox green has arrived but not delivered to me yet.  Need to get 384 imaging plates and CTV - can do that tomorrow morning. ",
+      "completionLinks": "",
+      "date": "2026-05-18"
     }
   ],
-  "lastUpdated": "2026-05-18T22:58:06.161Z",
+  "lastUpdated": "2026-05-18T23:14:45.222Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
