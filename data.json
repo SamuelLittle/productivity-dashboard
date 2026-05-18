@@ -3531,7 +3531,7 @@
           "title": "Monocyte Full Automation Run",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-04-14T17:43:47.432Z",
           "subtasks": [
             {
@@ -3541,7 +3541,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-14T17:44:22.656Z",
-              "completedAt": "2026-04-17T23:26:10.466Z",
+              "completedAt": "2026-05-18T16:34:23.327Z",
               "completionNotes": "Adjusted protocol to improve mixing and aspiration.  Will test again on Monday with monocytes. ",
               "completionLinks": ""
             },
@@ -3552,7 +3552,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-14T22:13:55.688Z",
-              "completedAt": "2026-04-14T23:11:52.101Z",
+              "completedAt": "2026-05-18T16:34:23.327Z",
               "completionNotes": "Remade Lysis buffer, Wash 1, and Wash 2. Placed at 4c, ready for tomorrow. ",
               "completionLinks": ""
             },
@@ -3563,7 +3563,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-14T22:14:11.158Z",
-              "completedAt": "2026-04-16T00:37:58.066Z",
+              "completedAt": "2026-05-18T16:34:23.327Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3574,7 +3574,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-14T22:14:35.771Z",
-              "completedAt": "2026-04-16T00:41:04.843Z",
+              "completedAt": "2026-05-18T16:34:23.327Z",
               "completionNotes": "Poor RNA again.  Need to dial this procedure in.  Curious why it didn't work for DLD1s, then did work.  Now back to not working again.  For pilot 5 tomorrow I can try break lysis and bead clean up into two discreet steps and swap to fresh tips for wash 1 onwards. ",
               "completionLinks": ""
             },
@@ -3585,11 +3585,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-16T15:14:10.576Z",
-              "completedAt": "2026-04-16T20:51:36.780Z",
+              "completedAt": "2026-05-18T16:34:23.327Z",
               "completionNotes": "Divided the protocol into two parts 1. lysis -> wash 1, and 2. Wash 1 -> completion. Allowed for tip swap after wash 1 also created additional space on i7 bed for protocol expansion.\n\nReduced lysis time to 5 minutes.  Protocol changes did seem to lead to a significant improvement for monocyte samples.  DLD1 samples still look very good meaning the overall procedure is still working. \n\nI think improvements can be made in the mixing protocol and in removal of dead volume. ",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-05-18T16:34:23.327Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mo4w58ixhq5o8hrao2u",
@@ -10960,9 +10963,18 @@
       "completedAt": "2026-05-18T16:34:15.923Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mnywuk88jf98pxpt8k",
+      "subtaskId": null,
+      "title": "Monocyte Full Automation Run",
+      "completedAt": "2026-05-18T16:34:23.327Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-05-18T16:34:15.923Z",
+  "lastUpdated": "2026-05-18T16:34:23.327Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
