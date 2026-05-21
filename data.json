@@ -7840,16 +7840,6 @@
         "completionNotes": "Thawed roughly 7M T cells from two vials of RQR8 KO cell lines.",
         "completionLinks": ""
       }
-    ],
-    "2026-05-21": [
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "mp07kxytswogf1924m",
-        "subtaskId": "mp07mqqlw1bk2vepds",
-        "time": null,
-        "scheduledAt": "2026-05-18T21:41:10.109Z",
-        "completedOnDay": false
-      }
     ]
   },
   "completedTasks": [
@@ -11079,7 +11069,7 @@
       "date": "2026-05-18"
     }
   ],
-  "lastUpdated": "2026-05-18T23:15:30.069Z",
+  "lastUpdated": "2026-05-21T23:00:56.916Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
