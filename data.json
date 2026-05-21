@@ -4916,9 +4916,12 @@
         "title": "isolate + plate monocytes for 384 BLADE-R next week",
         "description": "isolated monocytes and plated in MCSF in 394 well plate with 20, 10, 5, 2.5, and 1.25k cells per well. ",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-05-21T23:02:08.482Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-05-21T23:04:19.835Z",
+        "completionNotes": "Also plated a 96 well plate with 40, 20, 10k cells per well",
+        "completionLinks": ""
       }
     ]
   },
@@ -11076,9 +11079,17 @@
       "completionNotes": "Got ULA u bottom 384 well plates.  Sytox green has arrived but not delivered to me yet.  Need to get 384 imaging plates and CTV - can do that tomorrow morning. ",
       "completionLinks": "",
       "date": "2026-05-18"
+    },
+    {
+      "id": "mpg3ihcxq9786iekuk",
+      "title": "isolate + plate monocytes for 384 BLADE-R next week",
+      "completedAt": "2026-05-21T23:04:19.835Z",
+      "completionNotes": "Also plated a 96 well plate with 40, 20, 10k cells per well",
+      "completionLinks": "",
+      "date": "2026-05-21"
     }
   ],
-  "lastUpdated": "2026-05-21T23:02:08.482Z",
+  "lastUpdated": "2026-05-21T23:04:19.835Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
