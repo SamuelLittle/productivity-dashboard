@@ -2077,11 +2077,11 @@
               "title": "Flow Prep",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-05-15T00:40:52.486Z",
-              "completedAt": null,
-              "completionNotes": null,
-              "completionLinks": null
+              "completedAt": "2026-05-25T23:43:42.327Z",
+              "completionNotes": "Imaged at 10x and 4x - need to analyze images.  Ran samples on flow cytometer to give anchor point. ",
+              "completionLinks": ""
             },
             {
               "id": "mp66ytojzvyat8n77ec",
@@ -7831,8 +7831,10 @@
         "subtaskId": "mp66yhomauanayu2mif",
         "time": null,
         "scheduledAt": "2026-05-15T00:40:52.487Z",
-        "completedOnDay": false,
-        "completedAt": null
+        "completedOnDay": true,
+        "completedAt": "2026-05-25T23:43:42.326Z",
+        "completionNotes": "Imaged at 10x and 4x - need to analyze images.  Ran samples on flow cytometer to give anchor point. ",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -11135,9 +11137,18 @@
       "completionNotes": "isolated PBMCs and stored in -80",
       "completionLinks": "",
       "date": "2026-05-19"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": "mp66yhomauanayu2mif",
+      "completedAt": "2026-05-25T23:43:42.327Z",
+      "completionNotes": "Imaged at 10x and 4x - need to analyze images.  Ran samples on flow cytometer to give anchor point. ",
+      "completionLinks": "",
+      "date": "2026-05-20"
     }
   ],
-  "lastUpdated": "2026-05-25T23:43:00.235Z",
+  "lastUpdated": "2026-05-25T23:43:42.327Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
