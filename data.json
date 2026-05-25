@@ -2088,11 +2088,11 @@
               "title": "Readout",
               "description": "Flow readout and imaging readout. ",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-05-15T00:41:08.035Z",
-              "completedAt": null,
-              "completionNotes": null,
-              "completionLinks": null
+              "completedAt": "2026-05-25T23:43:48.683Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mp8pk91z1t99lgnx0ph",
@@ -7842,7 +7842,10 @@
         "subtaskId": "mp66ytojzvyat8n77ec",
         "time": null,
         "scheduledAt": "2026-05-15T23:45:33.778Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-25T23:43:48.683Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-05-18": [
@@ -11146,9 +11149,18 @@
       "completionNotes": "Imaged at 10x and 4x - need to analyze images.  Ran samples on flow cytometer to give anchor point. ",
       "completionLinks": "",
       "date": "2026-05-20"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": "mp66ytojzvyat8n77ec",
+      "completedAt": "2026-05-25T23:43:48.683Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-20"
     }
   ],
-  "lastUpdated": "2026-05-25T23:43:42.327Z",
+  "lastUpdated": "2026-05-25T23:43:48.683Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
