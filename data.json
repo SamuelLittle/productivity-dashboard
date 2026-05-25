@@ -2118,8 +2118,11 @@
               "title": "CTV staining",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-18T23:15:30.069Z"
+              "completed": true,
+              "createdAt": "2026-05-18T23:15:30.069Z",
+              "completedAt": "2026-05-25T23:42:47.921Z",
+              "completionNotes": "stained using published protocol. ",
+              "completionLinks": "https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.24830"
             }
           ],
           "completedAt": null,
@@ -7812,7 +7815,10 @@
         "subtaskId": "mpbto3v8lr9d3j9sxyr",
         "time": null,
         "scheduledAt": "2026-05-18T23:15:30.069Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-25T23:42:47.921Z",
+        "completionNotes": "stained using published protocol. ",
+        "completionLinks": "https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.24830"
       }
     ],
     "2026-05-20": [
@@ -11109,9 +11115,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-19"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": "mpbto3v8lr9d3j9sxyr",
+      "completedAt": "2026-05-25T23:42:47.921Z",
+      "completionNotes": "stained using published protocol. ",
+      "completionLinks": "https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.24830",
+      "date": "2026-05-19"
     }
   ],
-  "lastUpdated": "2026-05-25T23:42:13.726Z",
+  "lastUpdated": "2026-05-25T23:42:47.921Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
