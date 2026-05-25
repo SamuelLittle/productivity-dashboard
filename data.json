@@ -4851,9 +4851,12 @@
         "title": "4X blood arriving.",
         "description": "Isolated PBMCs and bank from all 4 donors. ",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-05-12T18:36:06.306Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-05-25T23:43:00.235Z",
+        "completionNotes": "isolated PBMCs and stored in -80",
+        "completionLinks": ""
       }
     ],
     "2026-05-22": [
@@ -11124,9 +11127,17 @@
       "completionNotes": "stained using published protocol. ",
       "completionLinks": "https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.24830",
       "date": "2026-05-19"
+    },
+    {
+      "id": "mp2z1ov6ojxw074oud9",
+      "title": "4X blood arriving.",
+      "completedAt": "2026-05-25T23:43:00.235Z",
+      "completionNotes": "isolated PBMCs and stored in -80",
+      "completionLinks": "",
+      "date": "2026-05-19"
     }
   ],
-  "lastUpdated": "2026-05-25T23:42:47.921Z",
+  "lastUpdated": "2026-05-25T23:43:00.235Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
