@@ -2099,8 +2099,11 @@
               "title": "make plan for imaging readout",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-16T18:57:13.178Z"
+              "completed": true,
+              "createdAt": "2026-05-16T18:57:13.178Z",
+              "completedAt": "2026-05-25T23:48:36.775Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mpbfhdlnex793h6bcmo",
@@ -11199,9 +11202,16 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-25"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": "mp8pk91z1t99lgnx0ph",
+      "title": "make plan for imaging readout",
+      "completedAt": "2026-05-25T23:48:36.775Z"
     }
   ],
-  "lastUpdated": "2026-05-25T23:48:08.391Z",
+  "lastUpdated": "2026-05-25T23:48:36.775Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
