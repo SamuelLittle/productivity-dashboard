@@ -3208,6 +3208,15 @@
           "completedAt": "2026-04-24T19:36:42.564Z",
           "completionNotes": "Good meetign with ZT.  Projects with purpose and direction.  Don't be afraid to demand answers form collaborators.  Seek out impact. ",
           "completionLinks": ""
+        },
+        {
+          "id": "mplux1l218k8fqcevxni",
+          "title": "ZT 1 on 1",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-05-25T23:48:08.390Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -7877,6 +7886,16 @@
         "completionNotes": "Thawed roughly 7M T cells from two vials of RQR8 KO cell lines.",
         "completionLinks": ""
       }
+    ],
+    "2026-05-26": [
+      {
+        "projectId": "mlld42ihacxlvsot49w",
+        "taskId": "mplux1l218k8fqcevxni",
+        "subtaskId": null,
+        "time": "10:00",
+        "scheduledAt": "2026-05-25T23:48:08.391Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -11182,7 +11201,7 @@
       "date": "2026-05-25"
     }
   ],
-  "lastUpdated": "2026-05-25T23:44:34.087Z",
+  "lastUpdated": "2026-05-25T23:48:08.391Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
