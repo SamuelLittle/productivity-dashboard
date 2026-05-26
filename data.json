@@ -1968,6 +1968,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-05-25T23:48:59.128Z"
+            },
+            {
+              "id": "mpn2xkwcf4zbq8d9bwk",
+              "title": "Pilot Debrief with Baptiste, Mayra, ZT",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-26T20:20:16.524Z"
             }
           ],
           "completedAt": null,
@@ -8052,6 +8060,16 @@
         "scheduledAt": "2026-05-26T00:04:05.036Z",
         "completedOnDay": false
       }
+    ],
+    "2026-05-29": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mn3vj631ght8zzcdd8g",
+        "subtaskId": "mpn2xkwcf4zbq8d9bwk",
+        "time": null,
+        "scheduledAt": "2026-05-26T20:20:16.525Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -11372,7 +11390,7 @@
       "date": "2026-05-26"
     }
   ],
-  "lastUpdated": "2026-05-26T20:19:50.486Z",
+  "lastUpdated": "2026-05-26T20:20:16.525Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
