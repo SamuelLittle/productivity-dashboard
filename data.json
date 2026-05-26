@@ -3801,6 +3801,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-05-26T00:03:37.292Z"
+            },
+            {
+              "id": "mplvhjqkk3nccdsqny",
+              "title": "BLADE-R data analysis",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-26T00:04:05.036Z"
             }
           ]
         }
@@ -8003,6 +8011,14 @@
         "time": null,
         "scheduledAt": "2026-05-26T00:03:48.131Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mplvdt710oeiytcvajhq",
+        "subtaskId": "mplvhjqkk3nccdsqny",
+        "time": null,
+        "scheduledAt": "2026-05-26T00:04:05.036Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -11316,7 +11332,7 @@
       "completedAt": "2026-05-25T23:48:36.775Z"
     }
   ],
-  "lastUpdated": "2026-05-26T00:03:48.131Z",
+  "lastUpdated": "2026-05-26T00:04:05.036Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
