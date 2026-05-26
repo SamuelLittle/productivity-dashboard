@@ -3225,9 +3225,12 @@
           "title": "ZT 1 on 1",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-05-25T23:48:08.390Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-05-26T18:36:03.396Z",
+          "completionNotes": "- Debriefed on liberase work with Michelle\n- Aligned on meeting w/ Baptiste and co\n- next steps for iAstro plan\n\n\nNeed to:\n- finalize imaging readout from NK cell screen\n- Make auto plan for NK screening\n- Make auto plan for iAstro\n",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -7978,7 +7981,10 @@
         "subtaskId": null,
         "time": "10:00",
         "scheduledAt": "2026-05-25T23:48:08.391Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-26T18:36:03.396Z",
+        "completionNotes": "- Debriefed on liberase work with Michelle\n- Aligned on meeting w/ Baptiste and co\n- next steps for iAstro plan\n\n\nNeed to:\n- finalize imaging readout from NK cell screen\n- Make auto plan for NK screening\n- Make auto plan for iAstro\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -11332,9 +11338,17 @@
       "subtaskId": "mp8pk91z1t99lgnx0ph",
       "title": "make plan for imaging readout",
       "completedAt": "2026-05-25T23:48:36.775Z"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "mplux1l218k8fqcevxni",
+      "completedAt": "2026-05-26T18:36:03.397Z",
+      "completionNotes": "- Debriefed on liberase work with Michelle\n- Aligned on meeting w/ Baptiste and co\n- next steps for iAstro plan\n\n\nNeed to:\n- finalize imaging readout from NK cell screen\n- Make auto plan for NK screening\n- Make auto plan for iAstro\n",
+      "completionLinks": "",
+      "date": "2026-05-26"
     }
   ],
-  "lastUpdated": "2026-05-26T00:10:21.636Z",
+  "lastUpdated": "2026-05-26T18:36:03.397Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
