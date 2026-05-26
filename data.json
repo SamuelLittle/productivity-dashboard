@@ -5017,15 +5017,6 @@
         "time": "14:00"
       },
       {
-        "id": "mplv65h3vxhxfb1ksc",
-        "title": "pilot alignment w Thomas",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-05-25T23:55:13.335Z",
-        "time": "15:30"
-      },
-      {
         "id": "mplva77wdpfx4dw92wm",
         "title": "Mac diff update",
         "description": "",
@@ -11381,7 +11372,7 @@
       "date": "2026-05-26"
     }
   ],
-  "lastUpdated": "2026-05-26T20:19:15.491Z",
+  "lastUpdated": "2026-05-26T20:19:25.512Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
