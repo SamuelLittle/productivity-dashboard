@@ -3808,7 +3808,9 @@
               "description": "",
               "priority": "medium",
               "completed": false,
-              "createdAt": "2026-05-26T00:04:05.036Z"
+              "createdAt": "2026-05-26T00:04:05.036Z",
+              "notes": "- Tapestation RNA readouts from 1st and last plate\n- RNA from Top, Middle, and bottom row\n- take a select handful of samples for cDNA validation\n\n-Time estimates, RNA quality estimates vs time. ",
+              "links": ""
             }
           ]
         }
@@ -11332,7 +11334,7 @@
       "completedAt": "2026-05-25T23:48:36.775Z"
     }
   ],
-  "lastUpdated": "2026-05-26T00:09:04.559Z",
+  "lastUpdated": "2026-05-26T00:10:21.636Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
