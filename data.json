@@ -5029,9 +5029,12 @@
         "title": "Mac diff update",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-05-25T23:58:22.220Z",
-        "time": "13:30"
+        "time": "13:30",
+        "completedAt": "2026-05-26T23:03:27.522Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-06-02": [
@@ -11388,9 +11391,17 @@
       "completionNotes": "- Debriefed on liberase work with Michelle\n- Aligned on meeting w/ Baptiste and co\n- next steps for iAstro plan\n\n\nNeed to:\n- finalize imaging readout from NK cell screen\n- Make auto plan for NK screening\n- Make auto plan for iAstro\n",
       "completionLinks": "",
       "date": "2026-05-26"
+    },
+    {
+      "id": "mplva77wdpfx4dw92wm",
+      "title": "Mac diff update",
+      "completedAt": "2026-05-26T23:03:27.523Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-26"
     }
   ],
-  "lastUpdated": "2026-05-26T20:20:16.525Z",
+  "lastUpdated": "2026-05-26T23:03:27.523Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
