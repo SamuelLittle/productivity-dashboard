@@ -3773,10 +3773,10 @@
         {
           "id": "mplvdt710oeiytcvajhq",
           "title": "Final BLADE-R Pilot",
-          "description": "Final BLADE-R validation pre deployment",
+          "description": "Final BLADE-R validation pre deployment: https://docs.google.com/document/d/1uwf9Uubq7TNcKj-bP0SOC3Iod5YD-zbXyoNFFkiR6lo/edit?usp=sharing\n",
           "priority": "medium",
           "completed": false,
-          "createdAt": "2026-05-26T00:01:10.669Z",
+          "createdAt": "2026-05-26T00:08:57.049Z",
           "subtasks": [
             {
               "id": "mplvg0wyaoiwqmypuav",
@@ -11332,7 +11332,7 @@
       "completedAt": "2026-05-25T23:48:36.775Z"
     }
   ],
-  "lastUpdated": "2026-05-26T00:04:05.036Z",
+  "lastUpdated": "2026-05-26T00:08:57.049Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
