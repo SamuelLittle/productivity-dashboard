@@ -7953,16 +7953,6 @@
         "scheduledAt": "2026-05-25T23:48:59.128Z",
         "completedOnDay": false
       }
-    ],
-    "2026-05-25": [
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mplvdt710oeiytcvajhq",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-05-26T00:01:10.669Z",
-        "completedOnDay": false
-      }
     ]
   },
   "completedTasks": [
@@ -11275,7 +11265,7 @@
       "completedAt": "2026-05-25T23:48:36.775Z"
     }
   ],
-  "lastUpdated": "2026-05-26T00:01:10.669Z",
+  "lastUpdated": "2026-05-26T00:01:27.672Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
