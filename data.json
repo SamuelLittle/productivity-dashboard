@@ -3785,6 +3785,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-05-26T00:02:53.987Z"
+            },
+            {
+              "id": "mplvgcslahchdr237dt",
+              "title": "BLADE-R plate prep",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-26T00:03:09.381Z"
             }
           ]
         }
@@ -7971,6 +7979,14 @@
         "time": null,
         "scheduledAt": "2026-05-26T00:02:53.987Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mplvdt710oeiytcvajhq",
+        "subtaskId": "mplvgcslahchdr237dt",
+        "time": null,
+        "scheduledAt": "2026-05-26T00:03:09.382Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -11284,7 +11300,7 @@
       "completedAt": "2026-05-25T23:48:36.775Z"
     }
   ],
-  "lastUpdated": "2026-05-26T00:02:53.987Z",
+  "lastUpdated": "2026-05-26T00:03:09.382Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
