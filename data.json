@@ -3777,7 +3777,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-05-26T00:01:10.669Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mplvg0wyaoiwqmypuav",
+              "title": "Monocyte isolation",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-05-26T00:02:53.987Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -7953,6 +7962,16 @@
         "scheduledAt": "2026-05-25T23:48:59.128Z",
         "completedOnDay": false
       }
+    ],
+    "2026-05-27": [
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mplvdt710oeiytcvajhq",
+        "subtaskId": "mplvg0wyaoiwqmypuav",
+        "time": null,
+        "scheduledAt": "2026-05-26T00:02:53.987Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -11265,7 +11284,7 @@
       "completedAt": "2026-05-25T23:48:36.775Z"
     }
   ],
-  "lastUpdated": "2026-05-26T00:01:27.672Z",
+  "lastUpdated": "2026-05-26T00:02:53.987Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
