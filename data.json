@@ -1966,8 +1966,11 @@
               "title": "Analyze images + flow data",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-25T23:48:59.128Z"
+              "completed": true,
+              "createdAt": "2026-05-25T23:48:59.128Z",
+              "completedAt": "2026-05-27T16:35:24.157Z",
+              "completionNotes": "Completed image gating workflow and launched plate analysis. ",
+              "completionLinks": ""
             },
             {
               "id": "mpn2xkwcf4zbq8d9bwk",
@@ -8030,7 +8033,10 @@
         "subtaskId": "mpluy4qgzebfxogxq9b",
         "time": null,
         "scheduledAt": "2026-05-25T23:48:59.128Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-27T16:35:24.147Z",
+        "completionNotes": "Completed image gating workflow and launched plate analysis. ",
+        "completionLinks": ""
       }
     ],
     "2026-05-27": [
@@ -11410,9 +11416,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-26"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mpluy4qgzebfxogxq9b",
+      "completedAt": "2026-05-27T16:35:24.157Z",
+      "completionNotes": "Completed image gating workflow and launched plate analysis. ",
+      "completionLinks": "",
+      "date": "2026-05-26"
     }
   ],
-  "lastUpdated": "2026-05-26T23:03:32.059Z",
+  "lastUpdated": "2026-05-27T16:35:24.157Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
