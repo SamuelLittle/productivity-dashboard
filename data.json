@@ -3819,8 +3819,11 @@
               "title": "BLADE_R deployment",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-26T00:03:37.292Z"
+              "completed": true,
+              "createdAt": "2026-05-26T00:03:37.292Z",
+              "completedAt": "2026-05-29T03:56:52.716Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mplvhjqkk3nccdsqny",
@@ -8077,7 +8080,10 @@
         "subtaskId": "mplvgybwp7mlvba8ybk",
         "time": null,
         "scheduledAt": "2026-05-26T00:03:48.131Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-29T03:56:52.716Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -11466,9 +11472,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-27"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mplvdt710oeiytcvajhq",
+      "subtaskId": "mplvgybwp7mlvba8ybk",
+      "completedAt": "2026-05-29T03:56:52.716Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-27"
     }
   ],
-  "lastUpdated": "2026-05-29T03:56:47.507Z",
+  "lastUpdated": "2026-05-29T03:56:52.716Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
