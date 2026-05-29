@@ -5066,17 +5066,6 @@
         "time": null
       }
     ],
-    "2026-05-28": [
-      {
-        "id": "mpmzms0urpp9f6oyi89",
-        "title": "SMARTseq Reagent Wrangling",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-05-26T18:47:53.694Z",
-        "time": null
-      }
-    ],
     "2026-05-27": [
       {
         "id": "mpn2w9sy9y6lryz129",
@@ -5089,6 +5078,29 @@
         "completedAt": "2026-05-29T03:56:36.745Z",
         "completionNotes": "",
         "completionLinks": "https://docs.google.com/document/d/1lxYnYg7k8IfdWt7esI3oDDerRCDY12AAJnUAZeOfibw/edit?usp=sharing"
+      }
+    ],
+    "2026-05-29": [
+      {
+        "id": "mpmzms0urpp9f6oyi89",
+        "title": "SMARTseq Reagent Wrangling",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-05-26T18:47:53.694Z"
+      }
+    ],
+    "2026-05-28": [
+      {
+        "id": "mpqe9f37hrhb84cc1sk",
+        "title": "Tapestation readouts for BLADE-R",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-05-29T04:00:43.171Z",
+        "time": null
       }
     ]
   },
@@ -11498,7 +11510,7 @@
       "date": "2026-05-27"
     }
   ],
-  "lastUpdated": "2026-05-29T03:57:10.487Z",
+  "lastUpdated": "2026-05-29T04:00:43.171Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
