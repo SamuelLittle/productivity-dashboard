@@ -5098,9 +5098,12 @@
         "title": "Tapestation readouts for BLADE-R",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-05-29T04:00:43.171Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-05-29T04:00:47.539Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -11508,9 +11511,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-27"
+    },
+    {
+      "id": "mpqe9f37hrhb84cc1sk",
+      "title": "Tapestation readouts for BLADE-R",
+      "completedAt": "2026-05-29T04:00:47.539Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-28"
     }
   ],
-  "lastUpdated": "2026-05-29T04:00:43.171Z",
+  "lastUpdated": "2026-05-29T04:00:47.539Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
