@@ -3797,8 +3797,11 @@
               "title": "Monocyte isolation",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-26T00:02:53.987Z"
+              "completed": true,
+              "createdAt": "2026-05-26T00:02:53.987Z",
+              "completedAt": "2026-05-29T03:56:42.096Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mplvgcslahchdr237dt",
@@ -8049,7 +8052,10 @@
         "subtaskId": "mplvg0wyaoiwqmypuav",
         "time": null,
         "scheduledAt": "2026-05-26T00:02:53.987Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-29T03:56:42.096Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -11436,9 +11442,18 @@
       "completionNotes": "",
       "completionLinks": "https://docs.google.com/document/d/1lxYnYg7k8IfdWt7esI3oDDerRCDY12AAJnUAZeOfibw/edit?usp=sharing",
       "date": "2026-05-27"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mplvdt710oeiytcvajhq",
+      "subtaskId": "mplvg0wyaoiwqmypuav",
+      "completedAt": "2026-05-29T03:56:42.096Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-27"
     }
   ],
-  "lastUpdated": "2026-05-29T03:56:36.746Z",
+  "lastUpdated": "2026-05-29T03:56:42.096Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
