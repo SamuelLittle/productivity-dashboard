@@ -3808,8 +3808,11 @@
               "title": "BLADE-R plate prep",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-26T00:03:09.381Z"
+              "completed": true,
+              "createdAt": "2026-05-26T00:03:09.381Z",
+              "completedAt": "2026-05-29T03:56:47.507Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mplvgybwp7mlvba8ybk",
@@ -8063,7 +8066,10 @@
         "subtaskId": "mplvgcslahchdr237dt",
         "time": null,
         "scheduledAt": "2026-05-26T00:03:09.382Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-29T03:56:47.507Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mmfjn4b1w85dvswipdk",
@@ -11451,9 +11457,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-27"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mplvdt710oeiytcvajhq",
+      "subtaskId": "mplvgcslahchdr237dt",
+      "completedAt": "2026-05-29T03:56:47.507Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-27"
     }
   ],
-  "lastUpdated": "2026-05-29T03:56:42.096Z",
+  "lastUpdated": "2026-05-29T03:56:47.507Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
