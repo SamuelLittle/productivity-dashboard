@@ -3830,10 +3830,13 @@
               "title": "BLADE-R data analysis",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-05-26T00:04:05.036Z",
               "notes": "- Tapestation RNA readouts from 1st and last plate\n- RNA from Top, Middle, and bottom row\n- take a select handful of samples for cDNA validation\n\n-Time estimates, RNA quality estimates vs time. ",
-              "links": ""
+              "links": "",
+              "completedAt": "2026-05-29T03:56:57.429Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -8091,7 +8094,10 @@
         "subtaskId": "mplvhjqkk3nccdsqny",
         "time": null,
         "scheduledAt": "2026-05-26T00:04:05.036Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-05-29T03:56:57.429Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-05-29": [
@@ -11481,9 +11487,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-27"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mplvdt710oeiytcvajhq",
+      "subtaskId": "mplvhjqkk3nccdsqny",
+      "completedAt": "2026-05-29T03:56:57.429Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-27"
     }
   ],
-  "lastUpdated": "2026-05-29T03:56:52.716Z",
+  "lastUpdated": "2026-05-29T03:56:57.429Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
