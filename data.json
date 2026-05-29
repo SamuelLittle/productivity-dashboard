@@ -5071,9 +5071,12 @@
         "title": "iAstro Alignment w/ Thomas",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-05-26T20:19:15.491Z",
-        "time": "13:00"
+        "time": "13:00",
+        "completedAt": "2026-05-29T03:56:36.745Z",
+        "completionNotes": "",
+        "completionLinks": "https://docs.google.com/document/d/1lxYnYg7k8IfdWt7esI3oDDerRCDY12AAJnUAZeOfibw/edit?usp=sharing"
       }
     ]
   },
@@ -11425,9 +11428,17 @@
       "completionNotes": "Completed image gating workflow and launched plate analysis. ",
       "completionLinks": "",
       "date": "2026-05-26"
+    },
+    {
+      "id": "mpn2w9sy9y6lryz129",
+      "title": "iAstro Alignment w/ Thomas",
+      "completedAt": "2026-05-29T03:56:36.746Z",
+      "completionNotes": "",
+      "completionLinks": "https://docs.google.com/document/d/1lxYnYg7k8IfdWt7esI3oDDerRCDY12AAJnUAZeOfibw/edit?usp=sharing",
+      "date": "2026-05-27"
     }
   ],
-  "lastUpdated": "2026-05-27T16:35:24.157Z",
+  "lastUpdated": "2026-05-29T03:56:36.746Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
