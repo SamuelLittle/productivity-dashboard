@@ -5110,9 +5110,12 @@
         "title": "Meeting prep for NK screen",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-05-29T04:00:58.356Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-05-29T04:01:02.435Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -11528,9 +11531,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-28"
+    },
+    {
+      "id": "mpqe9qt00x7r7631i9g",
+      "title": "Meeting prep for NK screen",
+      "completedAt": "2026-05-29T04:01:02.435Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-28"
     }
   ],
-  "lastUpdated": "2026-05-29T04:00:58.356Z",
+  "lastUpdated": "2026-05-29T04:01:02.435Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
