@@ -1207,6 +1207,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-01T21:16:04.133Z"
+            },
+            {
+              "id": "mpvpkt62wbj0cxd65j",
+              "title": "D1 QC",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-01T21:16:21.290Z"
             }
           ]
         }
@@ -8248,6 +8256,14 @@
         "time": null,
         "scheduledAt": "2026-06-01T21:16:04.133Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpvor2egyd9fn0kywu9",
+        "subtaskId": "mpvpkt62wbj0cxd65j",
+        "time": null,
+        "scheduledAt": "2026-06-01T21:16:21.290Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -11663,7 +11679,7 @@
       "date": "2026-05-29"
     }
   ],
-  "lastUpdated": "2026-06-01T21:16:04.133Z",
+  "lastUpdated": "2026-06-01T21:16:21.290Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
