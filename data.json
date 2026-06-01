@@ -8133,13 +8133,15 @@
         "completedAt": "2026-06-01T16:46:11.858Z",
         "completionNotes": "Successfull meeting. \n\nNext steps are determine assay window via Grnzy B + perforin 1 KO and test assay with actual target cells. See what additional stainings we can add. \n\nNeed to follow up with B + M for next steps. ",
         "completionLinks": ""
-      },
+      }
+    ],
+    "2026-06-01": [
       {
         "projectId": "",
         "taskId": "",
         "subtaskId": null,
         "time": null,
-        "scheduledAt": "2026-05-29T03:57:10.486Z",
+        "scheduledAt": "2026-06-01T16:46:17.966Z",
         "completedOnDay": false
       }
     ]
@@ -11556,7 +11558,7 @@
       "date": "2026-05-29"
     }
   ],
-  "lastUpdated": "2026-06-01T16:46:11.859Z",
+  "lastUpdated": "2026-06-01T16:46:17.966Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
