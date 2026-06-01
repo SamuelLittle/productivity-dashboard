@@ -1183,6 +1183,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-01T20:54:23.305Z"
+            },
+            {
+              "id": "mpvoszczo1qaiaa3xl",
+              "title": "3 hr treatments group RNA extraction via BLADE-R",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-01T20:54:42.947Z"
             }
           ]
         }
@@ -8196,6 +8204,14 @@
         "time": null,
         "scheduledAt": "2026-06-01T20:54:23.306Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpvor2egyd9fn0kywu9",
+        "subtaskId": "mpvoszczo1qaiaa3xl",
+        "time": null,
+        "scheduledAt": "2026-06-01T20:54:42.948Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -11611,7 +11627,7 @@
       "date": "2026-05-29"
     }
   ],
-  "lastUpdated": "2026-06-01T20:54:23.306Z",
+  "lastUpdated": "2026-06-01T20:54:42.948Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
