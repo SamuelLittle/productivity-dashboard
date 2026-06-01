@@ -1215,6 +1215,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-01T21:16:21.290Z"
+            },
+            {
+              "id": "mpvplbr81rreon4kadvi",
+              "title": "D2 processing",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-01T21:16:45.380Z"
             }
           ]
         }
@@ -8265,6 +8273,16 @@
         "scheduledAt": "2026-06-01T21:16:21.290Z",
         "completedOnDay": false
       }
+    ],
+    "2026-06-05": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpvor2egyd9fn0kywu9",
+        "subtaskId": "mpvplbr81rreon4kadvi",
+        "time": null,
+        "scheduledAt": "2026-06-01T21:16:45.381Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -11679,7 +11697,7 @@
       "date": "2026-05-29"
     }
   ],
-  "lastUpdated": "2026-06-01T21:16:21.290Z",
+  "lastUpdated": "2026-06-01T21:16:45.381Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
