@@ -5199,10 +5199,12 @@
         "title": "SMARTseq Reagent Wrangling",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-06-01T23:13:23.408Z",
         "time": null,
-        "createdAt": "2026-05-26T18:47:53.694Z"
+        "createdAt": "2026-05-26T18:47:53.694Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mpvojyfd13fh0187h3cb",
@@ -11761,9 +11763,17 @@
       "completionNotes": "complete\n",
       "completionLinks": "",
       "date": "2026-06-01"
+    },
+    {
+      "id": "mpmzms0urpp9f6oyi89",
+      "title": "SMARTseq Reagent Wrangling",
+      "completedAt": "2026-06-01T23:13:23.408Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-01"
     }
   ],
-  "lastUpdated": "2026-06-01T21:23:48.526Z",
+  "lastUpdated": "2026-06-01T23:13:23.408Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
