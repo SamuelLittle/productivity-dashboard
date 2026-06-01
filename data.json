@@ -3113,6 +3113,15 @@
               "createdAt": "2026-05-10T20:13:06.910Z"
             }
           ]
+        },
+        {
+          "id": "mpvpsn6lk6sxyycervo",
+          "title": "Orchestra Registration",
+          "description": "Register new iAstro project in Orchestra",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-06-01T21:22:26.781Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -11708,7 +11717,7 @@
       "date": "2026-05-29"
     }
   ],
-  "lastUpdated": "2026-06-01T21:17:11.840Z",
+  "lastUpdated": "2026-06-01T21:22:26.781Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
