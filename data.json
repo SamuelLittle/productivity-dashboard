@@ -5223,9 +5223,12 @@
         "title": "Make BLADE-R reagents. ",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-01T21:23:22.500Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-01T23:13:29.554Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mpvpue99ifpz3qe7ho9",
@@ -11771,9 +11774,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-01"
+    },
+    {
+      "id": "mpvptu6c7uqgsn0zr4u",
+      "title": "Make BLADE-R reagents. ",
+      "completedAt": "2026-06-01T23:13:29.554Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-01"
     }
   ],
-  "lastUpdated": "2026-06-01T23:13:23.408Z",
+  "lastUpdated": "2026-06-01T23:13:29.554Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
