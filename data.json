@@ -1199,6 +1199,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-01T21:11:59.186Z"
+            },
+            {
+              "id": "mpvpkfxh3tktllt2hg1",
+              "title": "D1 SMARTseq Processing",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-01T21:16:04.133Z"
             }
           ]
         }
@@ -8231,6 +8239,16 @@
         "scheduledAt": "2026-06-01T21:11:59.186Z",
         "completedOnDay": false
       }
+    ],
+    "2026-06-04": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpvor2egyd9fn0kywu9",
+        "subtaskId": "mpvpkfxh3tktllt2hg1",
+        "time": null,
+        "scheduledAt": "2026-06-01T21:16:04.133Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -11645,7 +11663,7 @@
       "date": "2026-05-29"
     }
   ],
-  "lastUpdated": "2026-06-01T21:11:59.186Z",
+  "lastUpdated": "2026-06-01T21:16:04.133Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
