@@ -5119,6 +5119,15 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-05-26T18:47:53.694Z"
+      },
+      {
+        "id": "mpvojyfd13fh0187h3cb",
+        "title": "measure d2 cDNA from fill in the gaps screen",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-06-01T20:47:41.833Z",
+        "time": null
       }
     ]
   },
@@ -11558,7 +11567,7 @@
       "date": "2026-05-29"
     }
   ],
-  "lastUpdated": "2026-06-01T16:46:37.941Z",
+  "lastUpdated": "2026-06-01T20:47:41.833Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
