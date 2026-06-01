@@ -5195,6 +5195,17 @@
         "createdAt": "2026-06-01T20:47:41.833Z",
         "time": null
       }
+    ],
+    "2026-06-03": [
+      {
+        "id": "mpvplw68hebdriks1fk",
+        "title": "pTox Flex meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-06-01T21:17:11.840Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -11697,7 +11708,7 @@
       "date": "2026-05-29"
     }
   ],
-  "lastUpdated": "2026-06-01T21:16:45.381Z",
+  "lastUpdated": "2026-06-01T21:17:11.840Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
