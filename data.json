@@ -5083,18 +5083,6 @@
         "completionLinks": "https://docs.google.com/document/d/1lxYnYg7k8IfdWt7esI3oDDerRCDY12AAJnUAZeOfibw/edit?usp=sharing"
       }
     ],
-    "2026-05-29": [
-      {
-        "id": "mpmzms0urpp9f6oyi89",
-        "title": "SMARTseq Reagent Wrangling",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-05-26T18:47:53.694Z"
-      }
-    ],
     "2026-05-28": [
       {
         "id": "mpqe9f37hrhb84cc1sk",
@@ -5119,6 +5107,18 @@
         "completedAt": "2026-05-29T04:01:02.435Z",
         "completionNotes": "",
         "completionLinks": ""
+      }
+    ],
+    "2026-06-01": [
+      {
+        "id": "mpmzms0urpp9f6oyi89",
+        "title": "SMARTseq Reagent Wrangling",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-05-26T18:47:53.694Z"
       }
     ]
   },
@@ -11558,7 +11558,7 @@
       "date": "2026-05-29"
     }
   ],
-  "lastUpdated": "2026-06-01T16:46:17.966Z",
+  "lastUpdated": "2026-06-01T16:46:37.941Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -11680,7 +11680,8 @@
     "2026-03-25": "Also presented at the respiratory program update.",
     "2026-04-28": "Also ran PCR purifications for all amplicons to be sequenced.",
     "2026-05-12": "2hr Orchestra training session.  Need to review video and try small batch reg.",
-    "2026-05-14": "isolated NK cells for cloaking experiments\nmet with Russel and worked on protocol for post RT pooling\norganoid meeting\nreviewed protocol for Flex v2 fixations wokr"
+    "2026-05-14": "isolated NK cells for cloaking experiments\nmet with Russel and worked on protocol for post RT pooling\norganoid meeting\nreviewed protocol for Flex v2 fixations wokr",
+    "2026-05-29": "Also finished final testing of BLADE-R need to put together results."
   },
   "projectTaskOrder": {},
   "subtaskOrder": {
