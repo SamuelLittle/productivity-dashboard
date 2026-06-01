@@ -1175,6 +1175,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-01T20:54:03.331Z"
+            },
+            {
+              "id": "mpvosk7djr2nidgnsyd",
+              "title": "3 hr + 24 hr treatments for monocytes. ",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-01T20:54:23.305Z"
             }
           ]
         }
@@ -8180,6 +8188,14 @@
         "time": null,
         "scheduledAt": "2026-06-01T20:54:03.331Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpvor2egyd9fn0kywu9",
+        "subtaskId": "mpvosk7djr2nidgnsyd",
+        "time": null,
+        "scheduledAt": "2026-06-01T20:54:23.306Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -11595,7 +11611,7 @@
       "date": "2026-05-29"
     }
   ],
-  "lastUpdated": "2026-06-01T20:54:03.331Z",
+  "lastUpdated": "2026-06-01T20:54:23.306Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
