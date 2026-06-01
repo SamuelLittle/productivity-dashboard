@@ -5209,9 +5209,12 @@
         "title": "measure d2 cDNA from fill in the gaps screen",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-01T20:47:41.833Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-01T21:23:33.748Z",
+        "completionNotes": "complete\n",
+        "completionLinks": ""
       },
       {
         "id": "mpvptu6c7uqgsn0zr4u",
@@ -11741,9 +11744,17 @@
       "completionNotes": "Successfull meeting. \n\nNext steps are determine assay window via Grnzy B + perforin 1 KO and test assay with actual target cells. See what additional stainings we can add. \n\nNeed to follow up with B + M for next steps. ",
       "completionLinks": "",
       "date": "2026-05-29"
+    },
+    {
+      "id": "mpvojyfd13fh0187h3cb",
+      "title": "measure d2 cDNA from fill in the gaps screen",
+      "completedAt": "2026-06-01T21:23:33.748Z",
+      "completionNotes": "complete\n",
+      "completionLinks": "",
+      "date": "2026-06-01"
     }
   ],
-  "lastUpdated": "2026-06-01T21:23:22.500Z",
+  "lastUpdated": "2026-06-01T21:23:33.748Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
