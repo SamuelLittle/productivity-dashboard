@@ -1977,8 +1977,11 @@
               "title": "Pilot Debrief with Baptiste, Mayra, ZT",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-26T20:20:16.524Z"
+              "completed": true,
+              "createdAt": "2026-05-26T20:20:16.524Z",
+              "completedAt": "2026-06-01T16:46:11.859Z",
+              "completionNotes": "Successfull meeting. \n\nNext steps are determine assay window via Grnzy B + perforin 1 KO and test assay with actual target cells. See what additional stainings we can add. \n\nNeed to follow up with B + M for next steps. ",
+              "completionLinks": ""
             }
           ],
           "completedAt": null,
@@ -8126,7 +8129,10 @@
         "subtaskId": "mpn2xkwcf4zbq8d9bwk",
         "time": null,
         "scheduledAt": "2026-05-26T20:20:16.525Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-01T16:46:11.858Z",
+        "completionNotes": "Successfull meeting. \n\nNext steps are determine assay window via Grnzy B + perforin 1 KO and test assay with actual target cells. See what additional stainings we can add. \n\nNeed to follow up with B + M for next steps. ",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -11539,9 +11545,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-05-28"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mpn2xkwcf4zbq8d9bwk",
+      "completedAt": "2026-06-01T16:46:11.859Z",
+      "completionNotes": "Successfull meeting. \n\nNext steps are determine assay window via Grnzy B + perforin 1 KO and test assay with actual target cells. See what additional stainings we can add. \n\nNeed to follow up with B + M for next steps. ",
+      "completionLinks": "",
+      "date": "2026-05-29"
     }
   ],
-  "lastUpdated": "2026-05-29T04:01:02.435Z",
+  "lastUpdated": "2026-06-01T16:46:11.859Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
