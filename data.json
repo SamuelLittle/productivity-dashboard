@@ -3089,8 +3089,11 @@
               "title": "Order gRNAs for pilot screening",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-07T14:18:53.804Z"
+              "completed": true,
+              "createdAt": "2026-05-07T14:18:53.804Z",
+              "completedAt": "2026-06-03T03:01:00.346Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -11849,9 +11852,16 @@
       "completionNotes": "extracted RNA from plates 1-5 starting at 6pm",
       "completionLinks": "",
       "date": "2026-06-02"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "movkm4r357gxwt3fz3f",
+      "subtaskId": "movknnqkuqthn4ibzng",
+      "title": "Order gRNAs for pilot screening",
+      "completedAt": "2026-06-03T03:01:00.346Z"
     }
   ],
-  "lastUpdated": "2026-06-03T02:55:00.145Z",
+  "lastUpdated": "2026-06-03T03:01:00.346Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
