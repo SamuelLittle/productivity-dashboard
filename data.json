@@ -5327,6 +5327,15 @@
         "completed": false,
         "createdAt": "2026-06-01T21:17:11.840Z",
         "time": null
+      },
+      {
+        "id": "mpydbkfhg47wtrzov3u",
+        "title": "yesterday RNA extraction QC",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-06-03T17:56:33.198Z",
+        "time": null
       }
     ]
   },
@@ -8426,7 +8435,7 @@
         "taskId": "mpvpsn6lk6sxyycervo",
         "subtaskId": "mpvpt4hp39ene1hfnjl",
         "time": null,
-        "scheduledAt": "2026-06-03T17:56:18.923Z",
+        "scheduledAt": "2026-06-03T17:56:20.668Z",
         "completedOnDay": false
       }
     ],
@@ -11967,7 +11976,7 @@
       "completedAt": "2026-06-03T03:01:00.346Z"
     }
   ],
-  "lastUpdated": "2026-06-03T17:56:18.923Z",
+  "lastUpdated": "2026-06-03T17:56:33.198Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
