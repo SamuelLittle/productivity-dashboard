@@ -1195,8 +1195,11 @@
               "title": "3 hr treatments group RNA extraction via BLADE-R",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-01T20:54:42.947Z"
+              "completed": true,
+              "createdAt": "2026-06-01T20:54:42.947Z",
+              "completedAt": "2026-06-03T02:55:00.145Z",
+              "completionNotes": "extracted RNA from plates 1-5 starting at 6pm",
+              "completionLinks": ""
             },
             {
               "id": "mpvpf6xe932p1vx66k",
@@ -8316,7 +8319,10 @@
         "subtaskId": "mpvoszczo1qaiaa3xl",
         "time": null,
         "scheduledAt": "2026-06-01T20:54:42.948Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-03T02:55:00.145Z",
+        "completionNotes": "extracted RNA from plates 1-5 starting at 6pm",
+        "completionLinks": ""
       }
     ],
     "2026-06-03": [
@@ -11834,9 +11840,18 @@
       "completionNotes": "Completed treatments at ~3pm",
       "completionLinks": "",
       "date": "2026-06-02"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpvor2egyd9fn0kywu9",
+      "subtaskId": "mpvoszczo1qaiaa3xl",
+      "completedAt": "2026-06-03T02:55:00.145Z",
+      "completionNotes": "extracted RNA from plates 1-5 starting at 6pm",
+      "completionLinks": "",
+      "date": "2026-06-02"
     }
   ],
-  "lastUpdated": "2026-06-03T02:54:36.309Z",
+  "lastUpdated": "2026-06-03T02:55:00.145Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
