@@ -1173,8 +1173,11 @@
               "title": "Isolate + plate Monocytes",
               "description": "targeting 100k monocytes per well. ",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-01T20:54:03.331Z"
+              "completed": true,
+              "createdAt": "2026-06-01T20:54:03.331Z",
+              "completedAt": "2026-06-03T02:54:22.288Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mpvosk7djr2nidgnsyd",
@@ -8288,7 +8291,10 @@
         "subtaskId": "mpvos4sjooc9q9q1zv",
         "time": null,
         "scheduledAt": "2026-06-01T20:54:03.331Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-03T02:54:22.287Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -11804,9 +11810,18 @@
       "completionNotes": "Isolated ~60M monocytes and seeded 10x well plates",
       "completionLinks": "",
       "date": "2026-06-02"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpvor2egyd9fn0kywu9",
+      "subtaskId": "mpvos4sjooc9q9q1zv",
+      "completedAt": "2026-06-03T02:54:22.288Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-02"
     }
   ],
-  "lastUpdated": "2026-06-03T02:54:16.043Z",
+  "lastUpdated": "2026-06-03T02:54:22.288Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
