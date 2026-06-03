@@ -1184,8 +1184,11 @@
               "title": "3 hr + 24 hr treatments for monocytes. ",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-01T20:54:23.305Z"
+              "completed": true,
+              "createdAt": "2026-06-01T20:54:23.305Z",
+              "completedAt": "2026-06-03T02:54:36.309Z",
+              "completionNotes": "Completed treatments at ~3pm",
+              "completionLinks": ""
             },
             {
               "id": "mpvoszczo1qaiaa3xl",
@@ -8302,7 +8305,10 @@
         "subtaskId": "mpvosk7djr2nidgnsyd",
         "time": null,
         "scheduledAt": "2026-06-01T20:54:23.306Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-03T02:54:36.309Z",
+        "completionNotes": "Completed treatments at ~3pm",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -11819,9 +11825,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-02"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpvor2egyd9fn0kywu9",
+      "subtaskId": "mpvosk7djr2nidgnsyd",
+      "completedAt": "2026-06-03T02:54:36.309Z",
+      "completionNotes": "Completed treatments at ~3pm",
+      "completionLinks": "",
+      "date": "2026-06-02"
     }
   ],
-  "lastUpdated": "2026-06-03T02:54:22.288Z",
+  "lastUpdated": "2026-06-03T02:54:36.309Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
