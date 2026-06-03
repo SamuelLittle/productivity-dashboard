@@ -5333,9 +5333,12 @@
         "title": "yesterday RNA extraction QC",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-03T17:56:33.198Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-03T19:41:01.493Z",
+        "completionNotes": "RNA looks okay.  p4 and p5 have usable RNA - may need extra cDNA amplification rounds.  tbd\n",
+        "completionLinks": ""
       }
     ]
   },
@@ -11974,9 +11977,17 @@
       "subtaskId": "movknnqkuqthn4ibzng",
       "title": "Order gRNAs for pilot screening",
       "completedAt": "2026-06-03T03:01:00.346Z"
+    },
+    {
+      "id": "mpydbkfhg47wtrzov3u",
+      "title": "yesterday RNA extraction QC",
+      "completedAt": "2026-06-03T19:41:01.493Z",
+      "completionNotes": "RNA looks okay.  p4 and p5 have usable RNA - may need extra cDNA amplification rounds.  tbd\n",
+      "completionLinks": "",
+      "date": "2026-06-03"
     }
   ],
-  "lastUpdated": "2026-06-03T17:56:33.198Z",
+  "lastUpdated": "2026-06-03T19:41:01.493Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
