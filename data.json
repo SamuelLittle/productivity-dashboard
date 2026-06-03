@@ -3094,6 +3094,14 @@
               "completedAt": "2026-06-03T03:01:00.346Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mpxhcv566gaedba57qj",
+              "title": "Thaw, nucleofect and plate iAstro Cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-03T03:01:46.027Z"
             }
           ]
         },
@@ -8373,6 +8381,16 @@
         "scheduledAt": "2026-06-01T21:16:45.381Z",
         "completedOnDay": false
       }
+    ],
+    "2026-06-08": [
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "movkm4r357gxwt3fz3f",
+        "subtaskId": "mpxhcv566gaedba57qj",
+        "time": null,
+        "scheduledAt": "2026-06-03T03:01:46.028Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -11861,7 +11879,7 @@
       "completedAt": "2026-06-03T03:01:00.346Z"
     }
   ],
-  "lastUpdated": "2026-06-03T03:01:00.346Z",
+  "lastUpdated": "2026-06-03T03:01:46.028Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
