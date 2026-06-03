@@ -5148,9 +5148,12 @@
         "title": "Blood Arriving",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-05-26T18:47:31.777Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-03T02:54:16.042Z",
+        "completionNotes": "Isolated ~60M monocytes and seeded 10x well plates",
+        "completionLinks": ""
       }
     ],
     "2026-05-27": [
@@ -11793,9 +11796,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-01"
+    },
+    {
+      "id": "mpmzmb41xct6pwnrg99",
+      "title": "Blood Arriving",
+      "completedAt": "2026-06-03T02:54:16.043Z",
+      "completionNotes": "Isolated ~60M monocytes and seeded 10x well plates",
+      "completionLinks": "",
+      "date": "2026-06-02"
     }
   ],
-  "lastUpdated": "2026-06-02T14:51:15.225Z",
+  "lastUpdated": "2026-06-03T02:54:16.043Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
