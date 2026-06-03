@@ -5324,9 +5324,12 @@
         "title": "pTox Flex meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-01T21:17:11.840Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-03T23:22:35.315Z",
+        "completionNotes": "aligned on next steps for pTox - ZT will onboard me for \"walk up protocols - Sean and I will perform walk up week of 15th",
+        "completionLinks": ""
       },
       {
         "id": "mpydbkfhg47wtrzov3u",
@@ -11985,9 +11988,17 @@
       "completionNotes": "RNA looks okay.  p4 and p5 have usable RNA - may need extra cDNA amplification rounds.  tbd\n",
       "completionLinks": "",
       "date": "2026-06-03"
+    },
+    {
+      "id": "mpvplw68hebdriks1fk",
+      "title": "pTox Flex meeting",
+      "completedAt": "2026-06-03T23:22:35.315Z",
+      "completionNotes": "aligned on next steps for pTox - ZT will onboard me for \"walk up protocols - Sean and I will perform walk up week of 15th",
+      "completionLinks": "",
+      "date": "2026-06-03"
     }
   ],
-  "lastUpdated": "2026-06-03T19:41:01.493Z",
+  "lastUpdated": "2026-06-03T23:22:35.315Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
