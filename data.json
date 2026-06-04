@@ -4034,6 +4034,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-04T00:35:13.491Z"
+            },
+            {
+              "id": "mpyrkmlrz606f5xwv8",
+              "title": "Pilot 1 with Sean",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-04T00:35:30.543Z"
             }
           ]
         }
@@ -8547,6 +8555,14 @@
         "time": null,
         "scheduledAt": "2026-06-03T03:19:29.842Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mpyrjid0lf6usyodvu",
+        "subtaskId": "mpyrkmlrz606f5xwv8",
+        "time": null,
+        "scheduledAt": "2026-06-04T00:35:30.543Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -12052,7 +12068,7 @@
       "date": "2026-06-03"
     }
   ],
-  "lastUpdated": "2026-06-04T00:35:13.491Z",
+  "lastUpdated": "2026-06-04T00:35:30.543Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
