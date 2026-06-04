@@ -931,7 +931,7 @@
           "title": "DLD1 sanity check",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-06T23:30:23.449Z",
           "subtasks": [
             {
@@ -941,7 +941,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-06T23:30:10.724Z",
-              "completedAt": "2026-03-07T00:37:01.874Z",
+              "completedAt": "2026-06-04T00:36:43.833Z",
               "completionNotes": "Seeded 96 FB well plate \n",
               "completionLinks": ""
             },
@@ -952,7 +952,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-06T23:30:53.370Z",
-              "completedAt": "2026-03-10T15:13:34.605Z",
+              "completedAt": "2026-06-04T00:36:43.833Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -963,11 +963,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-10T17:53:50.815Z",
-              "completedAt": "2026-03-10T23:02:12.424Z",
+              "completedAt": "2026-06-04T00:36:43.833Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-06-04T00:36:43.833Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mn96ur593n4wqfraywg",
@@ -12091,9 +12094,18 @@
       "completedAt": "2026-06-04T00:36:39.225Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mmfj1blb1h1c2o3gs28",
+      "subtaskId": null,
+      "title": "DLD1 sanity check",
+      "completedAt": "2026-06-04T00:36:43.833Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-06-04T00:36:39.226Z",
+  "lastUpdated": "2026-06-04T00:36:43.833Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
