@@ -396,7 +396,7 @@
           "title": "Mast cell pilots",
           "description": "run cytokine screen pilots on Mast cells\n",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T21:21:39.332Z",
           "subtasks": [
             {
@@ -406,7 +406,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-04T01:40:35.462Z",
-              "completedAt": "2026-02-04T16:56:30.506Z",
+              "completedAt": "2026-06-04T00:36:35.036Z",
               "completionNotes": "Need to check on viability and cell count again today\n",
               "completionLinks": ""
             },
@@ -417,7 +417,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-04T23:08:30.793Z",
-              "completedAt": "2026-02-05T23:00:49.401Z",
+              "completedAt": "2026-06-04T00:36:35.036Z",
               "completionNotes": "low viability and loss of cells\n",
               "completionLinks": ""
             },
@@ -428,7 +428,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-24T00:27:32.429Z",
-              "completedAt": "2026-02-24T00:29:11.018Z",
+              "completedAt": "2026-06-04T00:36:35.036Z",
               "completionNotes": "Isolated 1.25M cells seeded in culture media - will do pilots next week",
               "completionLinks": ""
             },
@@ -439,7 +439,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-24T00:27:45.946Z",
-              "completedAt": "2026-04-17T16:55:47.707Z",
+              "completedAt": "2026-06-04T00:36:35.036Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -452,11 +452,14 @@
               "createdAt": "2026-02-24T00:27:53.978Z",
               "notes": "Mast Cells\n",
               "links": "",
-              "completedAt": "2026-03-10T15:13:40.443Z",
+              "completedAt": "2026-06-04T00:36:35.036Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-06-04T00:36:35.036Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mkonl6d0xs68i3hcue",
@@ -12067,9 +12070,18 @@
       "completionNotes": "aligned on next steps for pTox - ZT will onboard me for \"walk up protocols - Sean and I will perform walk up week of 15th",
       "completionLinks": "",
       "date": "2026-06-03"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkn3n6kk2s3eujhd9om",
+      "subtaskId": null,
+      "title": "Mast cell pilots",
+      "completedAt": "2026-06-04T00:36:35.036Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-06-04T00:35:30.543Z",
+  "lastUpdated": "2026-06-04T00:36:35.037Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
