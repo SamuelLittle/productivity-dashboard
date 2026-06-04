@@ -4011,6 +4011,16 @@
       ],
       "progressUpdates": [],
       "archived": false
+    },
+    {
+      "id": "mpyqnvm6p9zp4xlp64m",
+      "name": "pTox Mapping with Flex V2",
+      "description": "",
+      "color": "#3b82f6",
+      "createdAt": "2026-06-04T00:10:02.574Z",
+      "tasks": [],
+      "progressUpdates": [],
+      "archived": false
     }
   ],
   "dailyLists": {
@@ -12015,7 +12025,7 @@
       "date": "2026-06-03"
     }
   ],
-  "lastUpdated": "2026-06-03T23:29:46.585Z",
+  "lastUpdated": "2026-06-04T00:10:02.574Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
