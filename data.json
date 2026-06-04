@@ -1267,6 +1267,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-04T00:37:47.311Z"
+            },
+            {
+              "id": "mpyrny5mnb8sb96hlra",
+              "title": "3hr RNA extraction",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-04T00:38:05.482Z"
             }
           ]
         },
@@ -8560,6 +8568,14 @@
         "time": null,
         "scheduledAt": "2026-06-04T00:37:47.311Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhr7xbgjd9lgr32a",
+        "subtaskId": "mpyrny5mnb8sb96hlra",
+        "time": null,
+        "scheduledAt": "2026-06-04T00:38:05.482Z",
+        "completedOnDay": false
       }
     ],
     "2026-06-15": [
@@ -12120,7 +12136,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-06-04T00:37:47.311Z",
+  "lastUpdated": "2026-06-04T00:38:05.482Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
