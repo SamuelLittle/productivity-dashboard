@@ -8527,16 +8527,7 @@
         "completedOnDay": false
       }
     ],
-    "2026-06-17": [
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "movkm4r357gxwt3fz3f",
-        "subtaskId": "mpxhe6ovtz24vw44ypl",
-        "time": null,
-        "scheduledAt": "2026-06-03T03:02:47.648Z",
-        "completedOnDay": false
-      }
-    ],
+    "2026-06-17": [],
     "2026-06-10": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -8562,6 +8553,16 @@
         "subtaskId": "mpyrkmlrz606f5xwv8",
         "time": null,
         "scheduledAt": "2026-06-04T00:35:30.543Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-06-18": [
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "movkm4r357gxwt3fz3f",
+        "subtaskId": "mpxhe6ovtz24vw44ypl",
+        "time": null,
+        "scheduledAt": "2026-06-03T03:02:47.648Z",
         "completedOnDay": false
       }
     ]
