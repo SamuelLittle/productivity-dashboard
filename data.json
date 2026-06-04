@@ -1317,6 +1317,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-04T00:39:58.886Z"
+            },
+            {
+              "id": "mpyrqzt1v3cmkvltwt7",
+              "title": "joint 3hr/24hr RNA extraction",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-04T00:40:27.589Z"
             }
           ]
         }
@@ -8656,6 +8664,14 @@
         "time": null,
         "scheduledAt": "2026-06-04T00:39:58.886Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mpyrqzt1v3cmkvltwt7",
+        "time": null,
+        "scheduledAt": "2026-06-04T00:40:27.589Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -12188,7 +12204,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-06-04T00:39:58.886Z",
+  "lastUpdated": "2026-06-04T00:40:27.589Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
