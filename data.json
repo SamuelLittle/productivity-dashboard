@@ -1309,6 +1309,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-04T00:39:39.551Z"
+            },
+            {
+              "id": "mpyrqdnqxg3ptjlijxm",
+              "title": "3 hr Cytokine treatment",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-04T00:39:58.886Z"
             }
           ]
         }
@@ -8639,6 +8647,16 @@
         "scheduledAt": "2026-06-04T00:39:39.551Z",
         "completedOnDay": false
       }
+    ],
+    "2026-06-17": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mpyrqdnqxg3ptjlijxm",
+        "time": null,
+        "scheduledAt": "2026-06-04T00:39:58.886Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -12170,7 +12188,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-06-04T00:39:39.551Z",
+  "lastUpdated": "2026-06-04T00:39:58.886Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
