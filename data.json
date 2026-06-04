@@ -1293,6 +1293,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-03T03:19:29.841Z"
+            },
+            {
+              "id": "mpyrp88n4tf02yhoxpx",
+              "title": "Isolate CD4+ cells and plate",
+              "description": "Complete T cells + 1% TransAct",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-04T00:39:05.207Z"
             }
           ]
         }
@@ -8594,6 +8602,14 @@
         "time": null,
         "scheduledAt": "2026-06-04T00:35:30.543Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mpyrp88n4tf02yhoxpx",
+        "time": null,
+        "scheduledAt": "2026-06-04T00:39:05.207Z",
+        "completedOnDay": false
       }
     ],
     "2026-06-18": [
@@ -12136,7 +12152,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-06-04T00:38:05.482Z",
+  "lastUpdated": "2026-06-04T00:39:05.207Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
