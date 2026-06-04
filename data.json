@@ -478,7 +478,7 @@
           "title": "Nomic collaboration",
           "description": "Establish the feasibility of using nomic tools for screening 100s of cytokines in supernatant from cytokine screen. \n\nNeed to get pricing information, choose panel, figure out workflow, set up collab.\n\nAlso useful for Kelly Storek w/ Macrophage screen",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-22T18:20:06.566Z",
           "subtasks": [
             {
@@ -490,11 +490,14 @@
               "createdAt": "2026-01-22T18:16:39.334Z",
               "notes": "@ 11am\n",
               "links": "",
-              "completedAt": "2026-01-22T19:33:33.418Z",
+              "completedAt": "2026-06-04T00:36:39.225Z",
               "completionNotes": "Ziuwin is going to set me up with someone from his company to discuss pricing per sample per cytokine",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-06-04T00:36:39.225Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mkwyir3ev2wv4kak7fk",
@@ -12079,9 +12082,18 @@
       "completedAt": "2026-06-04T00:36:35.036Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mkprwk8ffdngatq3zsn",
+      "subtaskId": null,
+      "title": "Nomic collaboration",
+      "completedAt": "2026-06-04T00:36:39.225Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-06-04T00:36:35.037Z",
+  "lastUpdated": "2026-06-04T00:36:39.226Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
