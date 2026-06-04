@@ -4026,7 +4026,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-06-04T00:34:38.388Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mpyrk9g3eilb71torko",
+              "title": "Walk up automation onboard w ZT",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-04T00:35:13.491Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -8500,6 +8509,14 @@
         "time": null,
         "scheduledAt": "2026-06-03T03:01:46.028Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mpyrjid0lf6usyodvu",
+        "subtaskId": "mpyrk9g3eilb71torko",
+        "time": null,
+        "scheduledAt": "2026-06-04T00:35:13.491Z",
+        "completedOnDay": false
       }
     ],
     "2026-06-17": [
@@ -12035,7 +12052,7 @@
       "date": "2026-06-03"
     }
   ],
-  "lastUpdated": "2026-06-04T00:34:48.463Z",
+  "lastUpdated": "2026-06-04T00:35:13.491Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
