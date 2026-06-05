@@ -1215,8 +1215,11 @@
               "title": "24 hour RNA extraction",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-01T21:11:59.186Z"
+              "completed": true,
+              "createdAt": "2026-06-01T21:11:59.186Z",
+              "completedAt": "2026-06-05T20:24:22.369Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mpvpkfxh3tktllt2hg1",
@@ -8526,7 +8529,10 @@
         "subtaskId": "mpvpf6xe932p1vx66k",
         "time": null,
         "scheduledAt": "2026-06-01T21:11:59.186Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-05T20:24:22.369Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-06-04": [
@@ -12239,9 +12245,18 @@
       "completionNotes": "Completed D1 Processing. Validation and toubleshooting may be needed here, \n",
       "completionLinks": "",
       "date": "2026-06-04"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpvor2egyd9fn0kywu9",
+      "subtaskId": "mpvpf6xe932p1vx66k",
+      "completedAt": "2026-06-05T20:24:22.369Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-03"
     }
   ],
-  "lastUpdated": "2026-06-05T20:24:13.560Z",
+  "lastUpdated": "2026-06-05T20:24:22.369Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
