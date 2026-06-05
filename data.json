@@ -1223,8 +1223,11 @@
               "title": "D1 SMARTseq Processing",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-01T21:16:04.133Z"
+              "completed": true,
+              "createdAt": "2026-06-01T21:16:04.133Z",
+              "completedAt": "2026-06-05T20:22:25.721Z",
+              "completionNotes": "Completed D1 Processing. Validation and toubleshooting may be needed here, \n",
+              "completionLinks": ""
             },
             {
               "id": "mpvpkt62wbj0cxd65j",
@@ -8533,7 +8536,10 @@
         "subtaskId": "mpvpkfxh3tktllt2hg1",
         "time": null,
         "scheduledAt": "2026-06-01T21:16:04.133Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-05T20:22:25.721Z",
+        "completionNotes": "Completed D1 Processing. Validation and toubleshooting may be needed here, \n",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -12222,9 +12228,18 @@
       "completedAt": "2026-06-04T00:36:43.833Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpvor2egyd9fn0kywu9",
+      "subtaskId": "mpvpkfxh3tktllt2hg1",
+      "completedAt": "2026-06-05T20:22:25.721Z",
+      "completionNotes": "Completed D1 Processing. Validation and toubleshooting may be needed here, \n",
+      "completionLinks": "",
+      "date": "2026-06-04"
     }
   ],
-  "lastUpdated": "2026-06-05T20:22:03.392Z",
+  "lastUpdated": "2026-06-05T20:22:25.721Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
