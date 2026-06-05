@@ -2345,9 +2345,12 @@
           "title": "Meet with T cell Manufacturing Teams",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-06-05T20:21:05.419Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-06-05T20:25:24.711Z",
+          "completionNotes": "Cell manufacturing will send us list of potential donors.  Targeting pilots for early July. ",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -8571,7 +8574,10 @@
         "subtaskId": null,
         "time": "12:00",
         "scheduledAt": "2026-06-05T20:21:05.420Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-05T20:25:24.710Z",
+        "completionNotes": "Cell manufacturing will send us list of potential donors.  Targeting pilots for early July. ",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -12254,9 +12260,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-03"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mq1dd5ajff0yuk8z3da",
+      "completedAt": "2026-06-05T20:25:24.711Z",
+      "completionNotes": "Cell manufacturing will send us list of potential donors.  Targeting pilots for early July. ",
+      "completionLinks": "",
+      "date": "2026-06-05"
     }
   ],
-  "lastUpdated": "2026-06-05T20:24:22.369Z",
+  "lastUpdated": "2026-06-05T20:25:24.711Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
