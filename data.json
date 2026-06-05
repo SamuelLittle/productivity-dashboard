@@ -2989,9 +2989,12 @@
           "title": "meet with Pete",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-06-03T23:29:46.585Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-06-05T20:25:42.012Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -8566,7 +8569,10 @@
         "subtaskId": null,
         "time": "12:45",
         "scheduledAt": "2026-06-03T23:29:46.585Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-05T20:25:42.012Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -12268,9 +12274,17 @@
       "completionNotes": "Cell manufacturing will send us list of potential donors.  Targeting pilots for early July. ",
       "completionLinks": "",
       "date": "2026-06-05"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mpyp83fd16qwj50sb7y",
+      "completedAt": "2026-06-05T20:25:42.012Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-05"
     }
   ],
-  "lastUpdated": "2026-06-05T20:25:24.711Z",
+  "lastUpdated": "2026-06-05T20:25:42.012Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
