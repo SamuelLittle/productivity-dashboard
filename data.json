@@ -2333,6 +2333,15 @@
           "completedAt": "2026-05-18T21:12:04.956Z",
           "completionNotes": "Moving forward with single k/a plate with single set of controls on each plate\n",
           "completionLinks": ""
+        },
+        {
+          "id": "mq1dd5ajff0yuk8z3da",
+          "title": "Meet with T cell Manufacturing Teams",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-06-05T20:21:05.419Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -8564,6 +8573,14 @@
         "time": "12:45",
         "scheduledAt": "2026-06-03T23:29:46.585Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mq1dd5ajff0yuk8z3da",
+        "subtaskId": null,
+        "time": "12:00",
+        "scheduledAt": "2026-06-05T20:21:05.420Z",
+        "completedOnDay": false
       }
     ],
     "2026-06-08": [
@@ -12204,7 +12221,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-06-04T00:40:27.589Z",
+  "lastUpdated": "2026-06-05T20:21:05.420Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
