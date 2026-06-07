@@ -5474,9 +5474,12 @@
         "title": "NOMIC x single-dataset",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-05T20:21:27.555Z",
-        "time": "13:30"
+        "time": "13:30",
+        "completedAt": "2026-06-07T21:05:01.493Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -12282,9 +12285,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-05"
+    },
+    {
+      "id": "mq1ddmdfcuu8xsq4m3p",
+      "title": "NOMIC x single-dataset",
+      "completedAt": "2026-06-07T21:05:01.494Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-05"
     }
   ],
-  "lastUpdated": "2026-06-05T20:25:42.012Z",
+  "lastUpdated": "2026-06-07T21:05:01.494Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
