@@ -1237,8 +1237,11 @@
               "title": "D1 QC",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-01T21:16:21.290Z"
+              "completed": true,
+              "createdAt": "2026-06-01T21:16:21.290Z",
+              "completedAt": "2026-06-07T21:05:07.143Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mpvplbr81rreon4kadvi",
@@ -8602,7 +8605,10 @@
         "subtaskId": "mpvpkt62wbj0cxd65j",
         "time": null,
         "scheduledAt": "2026-06-05T20:21:58.387Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-07T21:05:07.143Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-06-08": [
@@ -12293,9 +12299,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-05"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpvor2egyd9fn0kywu9",
+      "subtaskId": "mpvpkt62wbj0cxd65j",
+      "completedAt": "2026-06-07T21:05:07.143Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-05"
     }
   ],
-  "lastUpdated": "2026-06-07T21:05:01.494Z",
+  "lastUpdated": "2026-06-07T21:05:07.143Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
