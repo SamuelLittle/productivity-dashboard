@@ -1292,6 +1292,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-07T23:23:53.163Z"
+            },
+            {
+              "id": "mq4f8jyl99i0s01skt7",
+              "title": "Neutrophil Smartseq D1",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-07T23:36:48.909Z"
             }
           ]
         },
@@ -8790,6 +8798,16 @@
         "scheduledAt": "2026-06-07T23:23:53.163Z",
         "completedOnDay": false
       }
+    ],
+    "2026-06-11": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhr7xbgjd9lgr32a",
+        "subtaskId": "mq4f8jyl99i0s01skt7",
+        "time": null,
+        "scheduledAt": "2026-06-07T23:36:48.909Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -12372,7 +12390,7 @@
       "date": "2026-06-05"
     }
   ],
-  "lastUpdated": "2026-06-07T23:30:07.475Z",
+  "lastUpdated": "2026-06-07T23:36:48.909Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
