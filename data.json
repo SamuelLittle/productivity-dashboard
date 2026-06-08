@@ -5521,22 +5521,16 @@
         "time": "13:30"
       },
       {
-        "id": "mq4er60qva6rnaff0c",
-        "title": "pTox Automation Meeting w/ Sean and Jessica",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-06-07T23:23:17.690Z",
-        "time": "12:15"
-      },
-      {
         "id": "mq4ezy7nsve1yyihwke",
         "title": "Prep for cytokine screen meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-07T23:30:07.475Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-08T18:25:29.710Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-06-09": [
@@ -5557,6 +5551,16 @@
         "completed": false,
         "createdAt": "2026-06-07T23:59:04.784Z",
         "time": "10:00"
+      },
+      {
+        "id": "mq4er60qva6rnaff0c",
+        "title": "pTox Automation Meeting w/ Sean and Jessica",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": "12:15",
+        "createdAt": "2026-06-07T23:23:17.690Z"
       }
     ]
   },
@@ -12408,9 +12412,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-05"
+    },
+    {
+      "id": "mq4ezy7nsve1yyihwke",
+      "title": "Prep for cytokine screen meeting",
+      "completedAt": "2026-06-08T18:25:29.710Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-08"
     }
   ],
-  "lastUpdated": "2026-06-08T15:23:28.800Z",
+  "lastUpdated": "2026-06-08T18:25:29.710Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
