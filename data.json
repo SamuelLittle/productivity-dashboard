@@ -5519,9 +5519,12 @@
         "title": "Hive Scrum",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-07T23:21:15.486Z",
-        "time": "13:30"
+        "time": "13:30",
+        "completedAt": "2026-06-10T04:25:45.867Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mq4ezy7nsve1yyihwke",
@@ -12467,9 +12470,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-09"
+    },
+    {
+      "id": "mq4eojq6j94ec898h2",
+      "title": "Hive Scrum",
+      "completedAt": "2026-06-10T04:25:45.868Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-08"
     }
   ],
-  "lastUpdated": "2026-06-10T01:12:14.557Z",
+  "lastUpdated": "2026-06-10T04:25:45.868Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
