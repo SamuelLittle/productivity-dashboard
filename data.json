@@ -5554,9 +5554,12 @@
         "title": "1-on-1 w/ ZT",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-07T23:59:04.784Z",
-        "time": "10:00"
+        "time": "10:00",
+        "completedAt": "2026-06-10T01:12:14.557Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mq4er60qva6rnaff0c",
@@ -8747,6 +8750,14 @@
         "time": null,
         "scheduledAt": "2026-06-10T01:12:09.020Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhr7xbgjd9lgr32a",
+        "subtaskId": "mq4erxe3zx8t8txhri",
+        "time": null,
+        "scheduledAt": "2026-06-10T01:12:09.487Z",
+        "completedOnDay": false
       }
     ],
     "2026-06-15": [
@@ -8824,14 +8835,6 @@
         "completedAt": "2026-06-10T01:04:46.919Z",
         "completionNotes": "Details in signals log\n",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhr7xbgjd9lgr32a",
-        "subtaskId": "mq4erxe3zx8t8txhri",
-        "time": null,
-        "scheduledAt": "2026-06-07T23:23:53.163Z",
-        "completedOnDay": false
       }
     ],
     "2026-06-11": [
@@ -12456,9 +12459,17 @@
       "completionNotes": "org dis. optimization next monday/Tuesday",
       "completionLinks": "",
       "date": "2026-06-09"
+    },
+    {
+      "id": "mq4g16q8i4mthqrvx7",
+      "title": "1-on-1 w/ ZT",
+      "completedAt": "2026-06-10T01:12:14.557Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-09"
     }
   ],
-  "lastUpdated": "2026-06-10T01:12:09.020Z",
+  "lastUpdated": "2026-06-10T01:12:14.557Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
