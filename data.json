@@ -3242,8 +3242,11 @@
               "title": "Thaw, nucleofect and plate iAstro Cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-03T03:01:46.027Z"
+              "completed": true,
+              "createdAt": "2026-06-03T03:01:46.027Z",
+              "completedAt": "2026-06-10T01:04:46.919Z",
+              "completionNotes": "Details in signals log\n",
+              "completionLinks": ""
             },
             {
               "id": "mpxhdg4uzj3e6y89pzq",
@@ -8807,7 +8810,10 @@
         "subtaskId": "mpxhcv566gaedba57qj",
         "time": null,
         "scheduledAt": "2026-06-03T03:01:46.028Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-10T01:04:46.919Z",
+        "completionNotes": "Details in signals log\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -12431,9 +12437,18 @@
       "completionNotes": "Good meeting\nNeed to contact David Choy for cost center for sequencing and budget availability for Mast cells.\n\nnext submission target June 29. ",
       "completionLinks": "",
       "date": "2026-06-09"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "movkm4r357gxwt3fz3f",
+      "subtaskId": "mpxhcv566gaedba57qj",
+      "completedAt": "2026-06-10T01:04:46.920Z",
+      "completionNotes": "Details in signals log\n",
+      "completionLinks": "",
+      "date": "2026-06-09"
     }
   ],
-  "lastUpdated": "2026-06-09T22:52:27.332Z",
+  "lastUpdated": "2026-06-10T01:04:46.920Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
