@@ -1277,8 +1277,11 @@
               "title": "Neutrophil Isolation + Plating + treatment",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-04T00:37:47.311Z"
+              "completed": true,
+              "createdAt": "2026-06-04T00:37:47.311Z",
+              "completedAt": "2026-06-10T21:45:03.567Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mpyrny5mnb8sb96hlra",
@@ -8738,7 +8741,10 @@
         "subtaskId": "mpyrnk4vhg58zzchgb9",
         "time": null,
         "scheduledAt": "2026-06-04T00:37:47.311Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-10T21:45:03.567Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -12514,9 +12520,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-10"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhr7xbgjd9lgr32a",
+      "subtaskId": "mpyrnk4vhg58zzchgb9",
+      "completedAt": "2026-06-10T21:45:03.567Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-10"
     }
   ],
-  "lastUpdated": "2026-06-10T21:44:56.073Z",
+  "lastUpdated": "2026-06-10T21:45:03.567Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
