@@ -4150,9 +4150,12 @@
           "title": "pTox core team meeting",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-06-07T23:22:41.971Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-06-10T04:25:50.946Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -8710,7 +8713,10 @@
         "subtaskId": null,
         "time": "14:00",
         "scheduledAt": "2026-06-07T23:22:41.971Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-10T04:25:50.946Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -12478,9 +12484,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-08"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mq4eqegi9juuwozbyhu",
+      "completedAt": "2026-06-10T04:25:50.946Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-08"
     }
   ],
-  "lastUpdated": "2026-06-10T04:25:45.868Z",
+  "lastUpdated": "2026-06-10T04:25:50.946Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
