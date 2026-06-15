@@ -5588,6 +5588,17 @@
         "completionNotes": "org dis. optimization next monday/Tuesday",
         "completionLinks": ""
       }
+    ],
+    "2026-06-15": [
+      {
+        "id": "mqfvhah96b6haowurhu",
+        "title": "1-on-1 w/ Jimmie",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-06-15T23:56:58.318Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -8791,16 +8802,6 @@
         "completedOnDay": false
       }
     ],
-    "2026-06-17": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhry7jezeridb1ny7",
-        "subtaskId": "mpyrqzt1v3cmkvltwt7",
-        "time": null,
-        "scheduledAt": "2026-06-04T00:40:27.589Z",
-        "completedOnDay": false
-      }
-    ],
     "2026-06-09": [
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -8863,6 +8864,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-06-15T23:51:55.467Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mpyrqzt1v3cmkvltwt7",
+        "time": null,
+        "scheduledAt": "2026-06-15T23:51:55.884Z",
         "completedOnDay": false
       }
     ]
@@ -12531,7 +12540,7 @@
       "date": "2026-06-10"
     }
   ],
-  "lastUpdated": "2026-06-15T23:51:55.467Z",
+  "lastUpdated": "2026-06-15T23:56:58.318Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
