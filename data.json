@@ -1299,8 +1299,11 @@
               "title": "Make BLADE-R reagents. ",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-07T23:23:53.163Z"
+              "completed": true,
+              "createdAt": "2026-06-07T23:23:53.163Z",
+              "completedAt": "2026-06-16T18:39:48.583Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mq4f8jyl99i0s01skt7",
@@ -8783,7 +8786,10 @@
         "subtaskId": "mq4erxe3zx8t8txhri",
         "time": null,
         "scheduledAt": "2026-06-10T01:12:09.487Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-16T18:39:48.583Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -12579,9 +12585,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-10"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhr7xbgjd9lgr32a",
+      "subtaskId": "mq4erxe3zx8t8txhri",
+      "completedAt": "2026-06-16T18:39:48.583Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-10"
     }
   ],
-  "lastUpdated": "2026-06-16T18:39:45.224Z",
+  "lastUpdated": "2026-06-16T18:39:48.583Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
