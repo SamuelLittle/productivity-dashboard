@@ -1288,8 +1288,11 @@
               "title": "3hr RNA extraction",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-04T00:38:05.482Z"
+              "completed": true,
+              "createdAt": "2026-06-04T00:38:05.482Z",
+              "completedAt": "2026-06-16T18:39:45.224Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mq4erxe3zx8t8txhri",
@@ -8769,7 +8772,10 @@
         "subtaskId": "mpyrny5mnb8sb96hlra",
         "time": null,
         "scheduledAt": "2026-06-04T00:38:05.482Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-16T18:39:45.224Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -8824,16 +8830,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-06-11": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhr7xbgjd9lgr32a",
-        "subtaskId": "mq4f8jyl99i0s01skt7",
-        "time": null,
-        "scheduledAt": "2026-06-07T23:36:48.909Z",
-        "completedOnDay": false
-      }
-    ],
     "2026-06-22": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -8883,6 +8879,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-06-16T18:39:37.589Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhr7xbgjd9lgr32a",
+        "subtaskId": "mq4f8jyl99i0s01skt7",
+        "time": null,
+        "scheduledAt": "2026-06-16T18:39:37.956Z",
         "completedOnDay": false
       }
     ]
@@ -12566,9 +12570,18 @@
       "completionNotes": "",
       "completionLinks": "https://docs.google.com/document/d/1M1PnZMGzqHr1BUelTMLCDFYfy_IRbF7AYJK_bHt708I/edit?usp=sharing",
       "date": "2026-06-15"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhr7xbgjd9lgr32a",
+      "subtaskId": "mpyrny5mnb8sb96hlra",
+      "completedAt": "2026-06-16T18:39:45.224Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-10"
     }
   ],
-  "lastUpdated": "2026-06-16T18:39:37.589Z",
+  "lastUpdated": "2026-06-16T18:39:45.224Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
