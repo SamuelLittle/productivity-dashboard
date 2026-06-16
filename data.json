@@ -3320,8 +3320,11 @@
               "title": "Astro Pilot registration in orchestra",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-01T21:22:49.213Z"
+              "completed": true,
+              "createdAt": "2026-06-01T21:22:49.213Z",
+              "completedAt": "2026-06-16T18:39:52.614Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -8797,7 +8800,10 @@
         "subtaskId": "mpvpt4hp39ene1hfnjl",
         "time": null,
         "scheduledAt": "2026-06-10T04:26:05.680Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-16T18:39:52.614Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-06-15": [
@@ -12594,9 +12600,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-10"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mpvpsn6lk6sxyycervo",
+      "subtaskId": "mpvpt4hp39ene1hfnjl",
+      "completedAt": "2026-06-16T18:39:52.614Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-10"
     }
   ],
-  "lastUpdated": "2026-06-16T18:39:48.583Z",
+  "lastUpdated": "2026-06-16T18:39:52.614Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
