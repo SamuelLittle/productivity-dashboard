@@ -5595,9 +5595,12 @@
         "title": "1-on-1 w/ Jimmie",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-15T23:56:58.318Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-16T18:39:03.180Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -12538,9 +12541,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-10"
+    },
+    {
+      "id": "mqfvhah96b6haowurhu",
+      "title": "1-on-1 w/ Jimmie",
+      "completedAt": "2026-06-16T18:39:03.180Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-15"
     }
   ],
-  "lastUpdated": "2026-06-15T23:56:58.318Z",
+  "lastUpdated": "2026-06-16T18:39:03.180Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
