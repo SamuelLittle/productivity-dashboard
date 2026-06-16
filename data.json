@@ -4149,8 +4149,11 @@
               "title": "Pilot 1 with Sean",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-04T00:35:30.543Z"
+              "completed": true,
+              "createdAt": "2026-06-04T00:35:30.543Z",
+              "completedAt": "2026-06-16T18:39:24.711Z",
+              "completionNotes": "",
+              "completionLinks": "https://docs.google.com/document/d/1M1PnZMGzqHr1BUelTMLCDFYfy_IRbF7AYJK_bHt708I/edit?usp=sharing"
             }
           ]
         },
@@ -8792,7 +8795,10 @@
         "subtaskId": "mpyrkmlrz606f5xwv8",
         "time": null,
         "scheduledAt": "2026-06-04T00:35:30.543Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-16T18:39:24.711Z",
+        "completionNotes": "",
+        "completionLinks": "https://docs.google.com/document/d/1M1PnZMGzqHr1BUelTMLCDFYfy_IRbF7AYJK_bHt708I/edit?usp=sharing"
       }
     ],
     "2026-06-18": [
@@ -12549,9 +12555,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-15"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mpyrjid0lf6usyodvu",
+      "subtaskId": "mpyrkmlrz606f5xwv8",
+      "completedAt": "2026-06-16T18:39:24.711Z",
+      "completionNotes": "",
+      "completionLinks": "https://docs.google.com/document/d/1M1PnZMGzqHr1BUelTMLCDFYfy_IRbF7AYJK_bHt708I/edit?usp=sharing",
+      "date": "2026-06-15"
     }
   ],
-  "lastUpdated": "2026-06-16T18:39:03.180Z",
+  "lastUpdated": "2026-06-16T18:39:24.711Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
