@@ -3292,8 +3292,11 @@
               "title": "Unstimulated BF imaging",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-16T18:42:18.383Z"
+              "completed": true,
+              "createdAt": "2026-06-16T18:42:18.383Z",
+              "completedAt": "2026-06-19T23:14:30.053Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -8975,7 +8978,10 @@
         "subtaskId": "mqgzohanmrkewyim4b",
         "time": null,
         "scheduledAt": "2026-06-16T18:42:18.384Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-19T23:14:30.053Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-06-16": [
@@ -12736,9 +12742,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-17"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "movkm4r357gxwt3fz3f",
+      "subtaskId": "mqgzohanmrkewyim4b",
+      "completedAt": "2026-06-19T23:14:30.053Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-17"
     }
   ],
-  "lastUpdated": "2026-06-19T23:14:23.626Z",
+  "lastUpdated": "2026-06-19T23:14:30.053Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
