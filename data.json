@@ -4185,8 +4185,11 @@
               "title": "Fixed Dis Pilot 1",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-16T18:40:31.257Z"
+              "completed": true,
+              "createdAt": "2026-06-16T18:40:31.257Z",
+              "completedAt": "2026-06-19T23:14:10.205Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mqgzmo1sjdoeiqibdeo",
@@ -8973,7 +8976,10 @@
         "subtaskId": "mqgzm6mxesysfgla2p8",
         "time": null,
         "scheduledAt": "2026-06-16T18:40:31.257Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-19T23:14:10.205Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mpyqnvm6p9zp4xlp64m",
@@ -12691,9 +12697,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-10"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mpyrjid0lf6usyodvu",
+      "subtaskId": "mqgzm6mxesysfgla2p8",
+      "completedAt": "2026-06-19T23:14:10.205Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-16"
     }
   ],
-  "lastUpdated": "2026-06-16T18:42:18.384Z",
+  "lastUpdated": "2026-06-19T23:14:10.205Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
