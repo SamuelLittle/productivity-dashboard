@@ -3284,8 +3284,11 @@
               "title": "Inflammation mixture stimulation",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-16T18:41:59.823Z"
+              "completed": true,
+              "createdAt": "2026-06-16T18:41:59.823Z",
+              "completedAt": "2026-06-19T23:14:35.123Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mqgzohanmrkewyim4b",
@@ -8970,7 +8973,10 @@
         "subtaskId": "mqgzo2z306t3ie4d0s5r",
         "time": null,
         "scheduledAt": "2026-06-16T18:41:59.824Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-19T23:14:35.123Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -12751,9 +12757,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-17"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "movkm4r357gxwt3fz3f",
+      "subtaskId": "mqgzo2z306t3ie4d0s5r",
+      "completedAt": "2026-06-19T23:14:35.123Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-17"
     }
   ],
-  "lastUpdated": "2026-06-19T23:14:30.053Z",
+  "lastUpdated": "2026-06-19T23:14:35.123Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
