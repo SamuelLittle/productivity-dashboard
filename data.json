@@ -4196,8 +4196,11 @@
               "title": "Analyze imaging results from Fresh dis op",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-16T18:40:53.824Z"
+              "completed": true,
+              "createdAt": "2026-06-16T18:40:53.824Z",
+              "completedAt": "2026-06-19T23:14:15.493Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mqgzn7uaprofpilig79",
@@ -8987,7 +8990,10 @@
         "subtaskId": "mqgzmo1sjdoeiqibdeo",
         "time": null,
         "scheduledAt": "2026-06-16T18:40:53.824Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-19T23:14:15.493Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -12706,9 +12712,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-16"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mpyrjid0lf6usyodvu",
+      "subtaskId": "mqgzmo1sjdoeiqibdeo",
+      "completedAt": "2026-06-19T23:14:15.493Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-16"
     }
   ],
-  "lastUpdated": "2026-06-19T23:14:10.205Z",
+  "lastUpdated": "2026-06-19T23:14:15.493Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
