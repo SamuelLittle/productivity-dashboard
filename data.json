@@ -3276,8 +3276,11 @@
               "title": "Pilot takedown + analysis",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-03T03:02:47.647Z"
+              "completed": true,
+              "createdAt": "2026-06-03T03:02:47.647Z",
+              "completedAt": "2026-06-19T23:15:04.297Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mqgzo2z306t3ie4d0s5r",
@@ -8884,7 +8887,10 @@
         "subtaskId": "mpxhe6ovtz24vw44ypl",
         "time": null,
         "scheduledAt": "2026-06-03T03:02:47.648Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-19T23:15:04.297Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-06-09": [
@@ -12781,9 +12787,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-17"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "movkm4r357gxwt3fz3f",
+      "subtaskId": "mpxhe6ovtz24vw44ypl",
+      "completedAt": "2026-06-19T23:15:04.297Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-18"
     }
   ],
-  "lastUpdated": "2026-06-19T23:14:41.529Z",
+  "lastUpdated": "2026-06-19T23:15:04.297Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
