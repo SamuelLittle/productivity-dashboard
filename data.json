@@ -3363,7 +3363,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-06-20T00:44:42.486Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mqlmzs0me3ga0gn0va8",
+              "title": "iMg BLADE-R RNA extraction in 96 and 384 wps",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-20T00:46:01.367Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -12811,7 +12820,7 @@
       "date": "2026-06-18"
     }
   ],
-  "lastUpdated": "2026-06-20T00:44:42.486Z",
+  "lastUpdated": "2026-06-20T00:46:01.367Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
