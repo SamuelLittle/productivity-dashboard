@@ -33,7 +33,9 @@ let state = {
         taskId: null
     },
     calendarViewMode: 'month', // 'month' or 'week'
-    weekStartDate: null
+    weekStartDate: null,
+    archiveCache: {},      // year (number) → archive data object
+    archiveFileShas: {}    // year (number) → GitHub file SHA
 };
 
 // DOM Elements
@@ -551,9 +553,17 @@ function migrateDataStructure() {
     if (!state.data.weeklySummaries) {
         state.data.weeklySummaries = {};
     }
+    if (!state.data.archivedYears) {
+        state.data.archivedYears = [];
+    }
 }
 
 async function saveData() {
+    // Archive old data before saving if the file is getting large
+    if (state.token && JSON.stringify(state.data).length > 800000) {
+        await archiveOldData();
+    }
+
     localStorage.setItem('dashboard_data', JSON.stringify(state.data));
 
     try {
@@ -594,13 +604,216 @@ async function saveData() {
     }
 }
 
+// ============================================
+// ARCHIVE SYSTEM
+// Data older than 6 months is rolled into per-year
+// logs/YYYY.json files to keep data.json small.
+// Archive files are loaded on demand when browsing history.
+// ============================================
+
+// Returns the data object containing log data for this date.
+// Recent dates (within 180 days) are always in state.data.
+// Older dates may have been archived to state.archiveCache[year].
+function getDataForDate(dateStr) {
+    if (!dateStr) return state.data;
+    const year = parseInt(dateStr.substring(0, 4));
+    // If an archive for this year is loaded and contains this date, use it.
+    // state.data is the fallback (covers the case where the archive hasn't been loaded yet).
+    const cached = state.archiveCache[year];
+    if (cached) {
+        // Check any key to see if the date lives in the archive
+        if (cached.dailySummaries?.[dateStr] !== undefined ||
+            cached.dailyNotes?.[dateStr] !== undefined ||
+            cached.scheduledItems?.[dateStr] !== undefined ||
+            cached.dailyLists?.[dateStr] !== undefined) {
+            return cached;
+        }
+    }
+    return state.data;
+}
+
+// Returns completedTasks from all loaded sources (main + any cached archives) for a date range.
+function getAllCompletedTasksInRange(startDate, endDate) {
+    const results = [];
+
+    (state.data.completedTasks || []).forEach(task => {
+        const d = new Date(task.completedAt);
+        if (d >= startDate && d <= endDate) results.push(task);
+    });
+
+    const startYear = startDate.getFullYear();
+    const endYear = endDate.getFullYear();
+    for (let y = startYear; y <= endYear; y++) {
+        const cached = state.archiveCache[y];
+        if (cached?.completedTasks) {
+            cached.completedTasks.forEach(task => {
+                const d = new Date(task.completedAt);
+                if (d >= startDate && d <= endDate) results.push(task);
+            });
+        }
+    }
+    return results;
+}
+
+// Loads the archive file for the given year if it exists and isn't already cached.
+async function ensureYearLoaded(year) {
+    if (!state.token) return;
+    if (!(state.data.archivedYears || []).includes(year)) return; // no archive for this year
+    if (state.archiveCache[year] !== undefined) return; // already loaded (or attempted)
+
+    try {
+        const response = await fetch(
+            `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/logs/${year}.json?ref=${CONFIG.branch}`,
+            { headers: { Authorization: `token ${state.token}` } }
+        );
+        if (!response.ok) {
+            state.archiveCache[year] = null; // mark as attempted so we don't retry
+            return;
+        }
+        const fileData = await response.json();
+        state.archiveFileShas[year] = fileData.sha;
+
+        let jsonString;
+        if (fileData.content) {
+            const binaryStr = atob(fileData.content.replace(/\s/g, ''));
+            const bytes = Uint8Array.from(binaryStr, c => c.charCodeAt(0));
+            jsonString = new TextDecoder('utf-8').decode(bytes);
+        } else if (fileData.download_url) {
+            const dlResponse = await fetch(fileData.download_url);
+            jsonString = await dlResponse.text();
+        }
+
+        if (jsonString) {
+            state.archiveCache[year] = JSON.parse(jsonString);
+        }
+    } catch (e) {
+        console.error('Failed to load archive for year', year, e);
+        state.archiveCache[year] = null;
+    }
+}
+
+// Moves log data older than 180 days out of state.data and into per-year archive files.
+// Only archives specific dates, never data for the current rolling 180-day window.
+async function archiveOldData() {
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - 180);
+    const cutoffStr = cutoff.toISOString().substring(0, 10);
+
+    // Identify which years have data that needs archiving
+    const yearBuckets = {}; // year -> Set of old dates
+
+    ['dailySummaries', 'dailyNotes', 'dailyLists', 'scheduledItems'].forEach(key => {
+        Object.keys(state.data[key] || {}).forEach(date => {
+            if (date < cutoffStr) {
+                const y = parseInt(date.substring(0, 4));
+                if (!yearBuckets[y]) yearBuckets[y] = new Set();
+                yearBuckets[y].add(date);
+            }
+        });
+    });
+    (state.data.completedTasks || []).forEach(task => {
+        const date = (task.completedAt || '').substring(0, 10);
+        if (date && date < cutoffStr) {
+            const y = parseInt(date.substring(0, 4));
+            if (!yearBuckets[y]) yearBuckets[y] = new Set();
+            yearBuckets[y].add(date);
+        }
+    });
+
+    if (Object.keys(yearBuckets).length === 0) return;
+
+    for (const [yearStr, oldDates] of Object.entries(yearBuckets)) {
+        const year = parseInt(yearStr);
+        const archive = state.archiveCache[year] || {
+            dailySummaries: {}, dailyNotes: {}, dailyLists: {},
+            scheduledItems: {}, weeklySummaries: {}, completedTasks: []
+        };
+
+        // Move date-keyed data
+        ['dailySummaries', 'dailyNotes', 'dailyLists', 'scheduledItems'].forEach(key => {
+            oldDates.forEach(date => {
+                if (state.data[key]?.[date] !== undefined) {
+                    archive[key][date] = state.data[key][date];
+                    delete state.data[key][date];
+                }
+            });
+        });
+
+        // Move weeklySummaries whose key (week-start date) is before the cutoff
+        Object.keys(state.data.weeklySummaries || {}).forEach(weekKey => {
+            if (weekKey < cutoffStr) {
+                archive.weeklySummaries[weekKey] = state.data.weeklySummaries[weekKey];
+                delete state.data.weeklySummaries[weekKey];
+            }
+        });
+
+        // Move completedTasks for this year that are before the cutoff
+        const kept = [];
+        (state.data.completedTasks || []).forEach(task => {
+            const taskDate = (task.completedAt || '').substring(0, 10);
+            if (taskDate < cutoffStr && taskDate.startsWith(yearStr)) {
+                archive.completedTasks.push(task);
+            } else {
+                kept.push(task);
+            }
+        });
+        state.data.completedTasks = kept;
+
+        state.archiveCache[year] = archive;
+        await saveArchiveYear(year, archive);
+
+        if (!state.data.archivedYears.includes(year)) {
+            state.data.archivedYears.push(year);
+        }
+    }
+}
+
+async function saveArchiveYear(year, archiveData) {
+    try {
+        const jsonString = JSON.stringify(archiveData, null, 2);
+        const content = btoa(encodeURIComponent(jsonString).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode(parseInt(p1, 16))));
+
+        const body = {
+            message: `Archive ${year} productivity logs`,
+            content,
+            branch: CONFIG.branch
+        };
+        if (state.archiveFileShas[year]) {
+            body.sha = state.archiveFileShas[year];
+        }
+
+        const response = await fetch(
+            `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/logs/${year}.json`,
+            {
+                method: 'PUT',
+                headers: {
+                    Authorization: `token ${state.token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(body)
+            }
+        );
+
+        if (response.ok) {
+            const result = await response.json();
+            state.archiveFileShas[year] = result.content.sha;
+            console.log(`Archived ${year} data to logs/${year}.json`);
+        } else {
+            console.error('Failed to save archive for year', year);
+        }
+    } catch (e) {
+        console.error('Archive save error for year', year, e);
+    }
+}
+
 function createInitialData() {
     return {
         projects: [],
         dailyLists: {},
         scheduledItems: {},
         completedTasks: [],
-        lastUpdated: new Date().toISOString()
+        lastUpdated: new Date().toISOString(),
+        archivedYears: []
     };
 }
 
@@ -645,7 +858,8 @@ function getTasksForDate(date, includeCompleted = true) {
     const tasks = [];
 
     // Get scheduled project tasks for this date
-    const scheduledRefs = (state.data.scheduledItems || {})[date] || [];
+    const src = getDataForDate(date);
+    const scheduledRefs = (src.scheduledItems || {})[date] || [];
     scheduledRefs.forEach(ref => {
         const task = getTaskFromProject(ref.projectId, ref.taskId, ref.subtaskId);
         if (task) {
@@ -663,7 +877,7 @@ function getTasksForDate(date, includeCompleted = true) {
     });
 
     // Get standalone tasks for this date
-    const standaloneTasks = (state.data.dailyLists || {})[date] || [];
+    const standaloneTasks = (src.dailyLists || {})[date] || [];
     standaloneTasks.forEach(task => {
         if (includeCompleted || !task.completed) {
             tasks.push({ ...task, isStandalone: true });
@@ -807,7 +1021,7 @@ function renderPreviousView() {
     });
 
     // Load daily notes for the selected previous date
-    const previousNotes = state.data.dailyNotes?.[date] || '';
+    const previousNotes = getDataForDate(date).dailyNotes?.[date] || '';
     if (elements.previousNotes) {
         elements.previousNotes.value = previousNotes;
     }
@@ -1070,7 +1284,7 @@ function renderDayContent(dateStr, dayNum, isOtherMonth) {
     if (isToday) classes += ' today';
     if (status) classes += ' has-tasks';
 
-    const hasSummary = !!state.data?.dailySummaries?.[dateStr]?.summary;
+    const hasSummary = !!getDataForDate(dateStr)?.dailySummaries?.[dateStr]?.summary;
     return `<div class="${classes}" data-date="${dateStr}">
         <span class="day-number">${dayNum}</span>
         ${tasks.length > 0 ? `<span class="day-indicator ${status}" title="${tasks.length} task${tasks.length > 1 ? 's' : ''}">${tasks.length}</span>` : ''}
@@ -1425,7 +1639,7 @@ function renderCalendarView() {
     }
 }
 
-function navigateCalendar(direction) {
+async function navigateCalendar(direction) {
     if (state.calendarViewMode === 'week') {
         // Navigate by week
         const newDate = new Date(state.weekStartDate);
@@ -1438,6 +1652,7 @@ function navigateCalendar(direction) {
         newDate.setMonth(newDate.getMonth() + direction);
         state.calendarDate = newDate;
     }
+    await ensureYearLoaded(state.calendarDate.getFullYear());
     renderCalendarView();
 }
 
@@ -1585,16 +1800,18 @@ function getFilteredDateStatus(date) {
 // DAY DETAIL MODAL
 // ============================================
 
-function openDayDetail(date) {
+async function openDayDetail(date) {
     state.selectedDate = date;
 
     if (!elements.dayDetailModal) return;
+
+    await ensureYearLoaded(parseInt(date.substring(0, 4)));
 
     elements.dayDetailDate.textContent = formatDate(date);
     renderDayDetailTasks(date);
 
     // Load daily notes
-    const notes = (state.data.dailyNotes || {})[date] || '';
+    const notes = (getDataForDate(date).dailyNotes || {})[date] || '';
     if (elements.dayDetailNotes) {
         elements.dayDetailNotes.value = notes;
     }
@@ -1604,7 +1821,7 @@ function openDayDetail(date) {
 }
 
 function renderDayDetailSummary(date) {
-    const summary = state.data.dailySummaries?.[date]?.summary;
+    const summary = getDataForDate(date).dailySummaries?.[date]?.summary;
     if (!elements.dayDetailSummarySection) return;
 
     if (summary) {
@@ -1631,16 +1848,19 @@ function renderDayDetailTasks(date) {
     });
 }
 
-function navigateDayDetail(direction) {
+async function navigateDayDetail(direction) {
     const currentDate = getDateFromString(state.selectedDate);
     currentDate.setDate(currentDate.getDate() + direction);
     const newDate = getLocalDateString(currentDate);
     state.selectedDate = newDate;
+
+    await ensureYearLoaded(parseInt(newDate.substring(0, 4)));
+
     elements.dayDetailDate.textContent = formatDate(newDate);
     renderDayDetailTasks(newDate);
 
     // Load notes for new date
-    const notes = (state.data.dailyNotes || {})[newDate] || '';
+    const notes = (getDataForDate(newDate).dailyNotes || {})[newDate] || '';
     if (elements.dayDetailNotes) {
         elements.dayDetailNotes.value = notes;
     }
@@ -4192,11 +4412,7 @@ async function handleDirectionsSave(e) {
 // Data gathering functions for monthly report
 
 function getCompletedItemsForMonth(startDate, endDate) {
-    if (!state.data.completedTasks) return [];
-    return state.data.completedTasks.filter(task => {
-        const taskDate = new Date(task.completedAt);
-        return taskDate >= startDate && taskDate <= endDate;
-    });
+    return getAllCompletedTasksInRange(startDate, endDate);
 }
 
 function getProgressUpdatesForMonth(startDate, endDate) {
@@ -4391,13 +4607,7 @@ function getProjectUpcomingTasks(projectId) {
 }
 
 function getProjectCompletedItemsForMonth(projectId, startDate, endDate) {
-    if (!state.data.completedTasks) return { tasks: [], subtasks: [] };
-
-    const items = state.data.completedTasks.filter(task => {
-        if (task.projectId !== projectId) return false;
-        const taskDate = new Date(task.completedAt);
-        return taskDate >= startDate && taskDate <= endDate;
-    });
+    const items = getAllCompletedTasksInRange(startDate, endDate).filter(task => task.projectId === projectId);
 
     return {
         tasks: items.filter(i => !i.subtaskId),
@@ -6486,8 +6696,9 @@ function exportDayAsPdf(date) {
     const tasks = getTasksForDate(date, true);
     const completedTasks = tasks.filter(t => t.completedOnDay || t.completed);
     const incompleteTasks = tasks.filter(t => !(t.completedOnDay || t.completed));
-    const dailyNotes = state.data.dailyNotes?.[date] || '';
-    const summaryObj = state.data.dailySummaries?.[date];
+    const dateSrc = getDataForDate(date);
+    const dailyNotes = dateSrc.dailyNotes?.[date] || '';
+    const summaryObj = dateSrc.dailySummaries?.[date];
     const dateLabel = formatDate(date);
 
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
@@ -6498,7 +6709,7 @@ function exportDayAsPdf(date) {
         let subtasksHtml = '';
         if (!t.isSubtask && !t.isStandalone && t.subtasks?.length) {
             const completedSubs = t.subtasks.filter(st => {
-                const schedRef = state.data.scheduledItems?.[date]?.find(
+                const schedRef = getDataForDate(date).scheduledItems?.[date]?.find(
                     r => r.projectId === t.projectId && r.taskId === t.id && r.subtaskId === st.id
                 );
                 return schedRef?.completedOnDay || st.completed;
@@ -6618,7 +6829,7 @@ function openWeeklySummaryModal() {
     const overviewRows = weekDates.map(d => {
         const tasks = getTasksForDate(d, true);
         const done = tasks.filter(t => t.completedOnDay || t.completed).length;
-        const hasSummary = !!state.data.dailySummaries?.[d]?.summary;
+        const hasSummary = !!getDataForDate(d).dailySummaries?.[d]?.summary;
         const dayName = new Date(d).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
         return `<div class="weekly-overview-row">
             <span class="weekly-overview-day">${dayName}</span>
@@ -6669,7 +6880,7 @@ function gatherWeekData(weekDates) {
             if (!t.isSubtask && !t.isStandalone && t.subtasks?.length) {
                 detail.completedSubtasks = t.subtasks
                     .filter(st => {
-                        const ref = state.data.scheduledItems?.[date]?.find(
+                        const ref = getDataForDate(date).scheduledItems?.[date]?.find(
                             r => r.projectId === t.projectId && r.taskId === t.id && r.subtaskId === st.id
                         );
                         return ref?.completedOnDay || st.completed;
@@ -6693,9 +6904,9 @@ function gatherWeekData(weekDates) {
             taskDetails,
             incompleteTasks: incompleteTasks.map(t => ({ title: t.title, project: t.projectName })),
             progressUpdates,
-            dailyNotes: state.data.dailyNotes?.[date] || '',
-            dailySummary: state.data.dailySummaries?.[date]?.summary || '',
-            reflections: state.data.dailySummaries?.[date]?.reflections || {}
+            dailyNotes: getDataForDate(date).dailyNotes?.[date] || '',
+            dailySummary: getDataForDate(date).dailySummaries?.[date]?.summary || '',
+            reflections: getDataForDate(date).dailySummaries?.[date]?.reflections || {}
         };
     });
 
@@ -6947,7 +7158,7 @@ function openEodSummaryModal(date) {
     elements.eodCarryForward.value = '';
 
     // Pre-fill from existing saved reflections if available
-    const existing = state.data.dailySummaries?.[date];
+    const existing = getDataForDate(date).dailySummaries?.[date];
     if (existing?.reflections) {
         elements.eodAccomplishments.value = existing.reflections.accomplishments || '';
         elements.eodEffort.value = existing.reflections.effort || '';
@@ -6995,7 +7206,7 @@ function gatherDayContext(date) {
             detail.completedSubtasks = t.subtasks
                 .filter(st => {
                     // Check if subtask was completed on this specific day
-                    const schedRef = state.data.scheduledItems?.[date]?.find(
+                    const schedRef = getDataForDate(date).scheduledItems?.[date]?.find(
                         r => r.projectId === t.projectId && r.taskId === t.id && r.subtaskId === st.id
                     );
                     return schedRef?.completedOnDay || st.completed;
@@ -7015,7 +7226,7 @@ function gatherDayContext(date) {
         });
     });
 
-    const dailyNotes = state.data.dailyNotes?.[date] || '';
+    const dailyNotes = getDataForDate(date).dailyNotes?.[date] || '';
     const incompleteTasks = tasks.filter(t => !(t.completedOnDay || t.completed));
 
     return { date, taskDetails, progressUpdates, dailyNotes, incompleteTasks };
@@ -7162,7 +7373,7 @@ function updateEodButtonLabel(date) {
     const today = getToday();
     if (date === today && elements.eodSummaryModal) {
         const btn = document.getElementById('today-eod-summary-btn');
-        if (btn && state.data.dailySummaries?.[date]) {
+        if (btn && getDataForDate(date).dailySummaries?.[date]) {
             btn.classList.add('btn-has-summary');
             btn.title = 'View / edit today\'s summary';
         }
@@ -7183,7 +7394,7 @@ function refreshEodButtons() {
 
     const prevBtn = document.getElementById('previous-eod-summary-btn');
     if (prevBtn && prevDate) {
-        const hasSummary = !!state.data.dailySummaries?.[prevDate]?.summary;
+        const hasSummary = !!getDataForDate(prevDate).dailySummaries?.[prevDate]?.summary;
         prevBtn.classList.toggle('btn-has-summary', hasSummary);
         prevBtn.title = hasSummary ? 'View / edit summary' : 'Create end of day summary';
     }
