@@ -1323,6 +1323,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-20T00:52:20.618Z"
+            },
+            {
+              "id": "mqpfrz5ss19c0rwmotl",
+              "title": "D1 QC",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-22T16:35:04.769Z"
             }
           ]
         },
@@ -12899,7 +12907,7 @@
       "date": "2026-06-18"
     }
   ],
-  "lastUpdated": "2026-06-20T14:00:44.767Z",
+  "lastUpdated": "2026-06-22T16:35:04.769Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
