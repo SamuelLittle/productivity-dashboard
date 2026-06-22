@@ -5726,15 +5726,28 @@
         "completionLinks": ""
       }
     ],
-    "2026-06-20": [
+    "2026-06-22": [
       {
         "id": "mqmfdsrjohecmxkfjs",
         "title": "Workflow diagrams for all projects",
         "description": "Needed workflow schematics for automation aspects of all projects\n",
         "priority": "medium",
         "completed": false,
-        "createdAt": "2026-06-20T14:00:44.767Z",
-        "time": null
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-06-20T14:00:44.767Z"
+      }
+    ],
+    "2026-06-23": [
+      {
+        "id": "mqmfdsrjohecmxkfjs",
+        "title": "Workflow diagrams for all projects",
+        "description": "Needed workflow schematics for automation aspects of all projects\n",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-06-20T14:00:44.767Z"
       }
     ]
   },
@@ -8986,14 +8999,6 @@
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpvor2egyd9fn0kywu9",
-        "subtaskId": "mpvplbr81rreon4kadvi",
-        "time": null,
-        "scheduledAt": "2026-06-20T00:53:44.060Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "mpxhr7xbgjd9lgr32a",
         "subtaskId": "mqln7wnectrii779qyg",
         "time": null,
@@ -9094,6 +9099,14 @@
         "subtaskId": "mqlmzs0me3ga0gn0va8",
         "time": null,
         "scheduledAt": "2026-06-20T00:48:02.657Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpvor2egyd9fn0kywu9",
+        "subtaskId": "mpvplbr81rreon4kadvi",
+        "time": null,
+        "scheduledAt": "2026-06-20T00:53:44.060Z",
         "completedOnDay": false
       }
     ],
@@ -12907,7 +12920,7 @@
       "date": "2026-06-18"
     }
   ],
-  "lastUpdated": "2026-06-22T17:57:53.973Z",
+  "lastUpdated": "2026-06-22T17:57:55.540Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
