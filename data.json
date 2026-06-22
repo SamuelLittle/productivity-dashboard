@@ -1358,8 +1358,11 @@
               "title": "Isolate CD4+ cells and plate",
               "description": "Complete T cells + 1% TransAct",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-04T00:39:05.207Z"
+              "completed": true,
+              "createdAt": "2026-06-04T00:39:05.207Z",
+              "completedAt": "2026-06-22T21:28:44.026Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mpyrpyqn8349e3a5ya6",
@@ -9001,7 +9004,10 @@
         "subtaskId": "mpyrp88n4tf02yhoxpx",
         "time": null,
         "scheduledAt": "2026-06-15T23:51:43.834Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-22T21:28:44.026Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -12933,9 +12939,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-22"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": "mpyrp88n4tf02yhoxpx",
+      "completedAt": "2026-06-22T21:28:44.026Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-22"
     }
   ],
-  "lastUpdated": "2026-06-22T21:28:34.436Z",
+  "lastUpdated": "2026-06-22T21:28:44.026Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
