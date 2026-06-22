@@ -1347,8 +1347,11 @@
               "title": "Blood Arriving",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-03T03:19:29.841Z"
+              "completed": true,
+              "createdAt": "2026-06-03T03:19:29.841Z",
+              "completedAt": "2026-06-22T21:28:34.435Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mpyrp88n4tf02yhoxpx",
@@ -8987,7 +8990,10 @@
         "subtaskId": "mpxhznzl6k53v3apowb",
         "time": null,
         "scheduledAt": "2026-06-15T23:51:36.473Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-22T21:28:34.435Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -12918,9 +12924,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-18"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": "mpxhznzl6k53v3apowb",
+      "completedAt": "2026-06-22T21:28:34.436Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-22"
     }
   ],
-  "lastUpdated": "2026-06-22T17:57:55.540Z",
+  "lastUpdated": "2026-06-22T21:28:34.436Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
