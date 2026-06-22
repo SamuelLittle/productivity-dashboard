@@ -8999,17 +8999,17 @@
         "time": null,
         "scheduledAt": "2026-06-20T00:53:55.557Z",
         "completedOnDay": false
-      }
-    ],
-    "2026-06-17": [
+      },
       {
         "projectId": "",
         "taskId": "",
         "subtaskId": null,
         "time": null,
-        "scheduledAt": "2026-06-16T18:39:37.589Z",
+        "scheduledAt": "2026-06-22T17:57:53.973Z",
         "completedOnDay": false
-      },
+      }
+    ],
+    "2026-06-17": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "mpxhr7xbgjd9lgr32a",
@@ -12907,7 +12907,7 @@
       "date": "2026-06-18"
     }
   ],
-  "lastUpdated": "2026-06-22T16:35:04.769Z",
+  "lastUpdated": "2026-06-22T17:57:53.973Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
