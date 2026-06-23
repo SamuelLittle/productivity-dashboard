@@ -1369,8 +1369,11 @@
               "title": "24hr Cytokine Treatment",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-04T00:39:39.551Z"
+              "completed": true,
+              "createdAt": "2026-06-04T00:39:39.551Z",
+              "completedAt": "2026-06-23T18:03:59.110Z",
+              "completionNotes": "24 hr treatment performed at 10:30am",
+              "completionLinks": ""
             },
             {
               "id": "mpyrqdnqxg3ptjlijxm",
@@ -9077,7 +9080,10 @@
         "subtaskId": "mpyrpyqn8349e3a5ya6",
         "time": null,
         "scheduledAt": "2026-06-15T23:51:26.635Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-23T18:03:59.110Z",
+        "completionNotes": "24 hr treatment performed at 10:30am",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -12939,9 +12945,18 @@
       "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
       "completionLinks": "",
       "date": "2026-06-22"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": "mpyrpyqn8349e3a5ya6",
+      "completedAt": "2026-06-23T18:03:59.110Z",
+      "completionNotes": "24 hr treatment performed at 10:30am",
+      "completionLinks": "",
+      "date": "2026-06-23"
     }
   ],
-  "lastUpdated": "2026-06-23T15:32:41.048Z",
+  "lastUpdated": "2026-06-23T18:03:59.110Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
