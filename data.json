@@ -5732,7 +5732,7 @@
         "completionLinks": ""
       }
     ],
-    "2026-06-22": [
+    "2026-06-23": [
       {
         "id": "mqmfdsrjohecmxkfjs",
         "title": "Workflow diagrams for all projects",
@@ -5742,9 +5742,7 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-06-20T14:00:44.767Z"
-      }
-    ],
-    "2026-06-23": [
+      },
       {
         "id": "mqmfdsrjohecmxkfjs",
         "title": "Workflow diagrams for all projects",
@@ -9008,14 +9006,6 @@
         "completedAt": "2026-06-22T21:28:44.026Z",
         "completionNotes": "",
         "completionLinks": ""
-      },
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-06-22T17:57:53.973Z",
-        "completedOnDay": false
       }
     ],
     "2026-06-17": [
@@ -9119,6 +9109,14 @@
         "subtaskId": "mqln7wnectrii779qyg",
         "time": null,
         "scheduledAt": "2026-06-20T00:53:55.557Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-06-23T15:31:45.898Z",
         "completedOnDay": false
       }
     ],
@@ -12950,7 +12948,7 @@
       "date": "2026-06-22"
     }
   ],
-  "lastUpdated": "2026-06-22T21:28:44.026Z",
+  "lastUpdated": "2026-06-23T15:31:46.218Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
