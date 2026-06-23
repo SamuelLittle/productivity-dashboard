@@ -1324,8 +1324,11 @@
               "title": "D2 Processing",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-20T00:52:20.618Z"
+              "completed": true,
+              "createdAt": "2026-06-20T00:52:20.618Z",
+              "completedAt": "2026-06-23T22:43:52.439Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mqpfrz5ss19c0rwmotl",
@@ -9105,7 +9108,10 @@
         "subtaskId": "mqln7wnectrii779qyg",
         "time": null,
         "scheduledAt": "2026-06-20T00:53:55.557Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-23T22:43:52.439Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -12969,9 +12975,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-23"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhr7xbgjd9lgr32a",
+      "subtaskId": "mqln7wnectrii779qyg",
+      "completedAt": "2026-06-23T22:43:52.439Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-23"
     }
   ],
-  "lastUpdated": "2026-06-23T22:43:47.717Z",
+  "lastUpdated": "2026-06-23T22:43:52.439Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
