@@ -3407,8 +3407,11 @@
               "title": "iMg BLADE-R RNA extraction in 96 and 384 wps",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-20T00:46:01.367Z"
+              "completed": true,
+              "createdAt": "2026-06-20T00:46:01.367Z",
+              "completedAt": "2026-06-23T15:32:23.831Z",
+              "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
+              "completionLinks": ""
             }
           ]
         }
@@ -9013,7 +9016,10 @@
         "subtaskId": "mqlmzs0me3ga0gn0va8",
         "time": null,
         "scheduledAt": "2026-06-20T00:48:02.657Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-23T15:32:23.831Z",
+        "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
+        "completionLinks": ""
       }
     ],
     "2026-06-17": [
@@ -12946,9 +12952,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-22"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mqlmy35i6ts5m6kremj",
+      "subtaskId": "mqlmzs0me3ga0gn0va8",
+      "completedAt": "2026-06-23T15:32:23.831Z",
+      "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
+      "completionLinks": "",
+      "date": "2026-06-22"
     }
   ],
-  "lastUpdated": "2026-06-23T15:31:46.218Z",
+  "lastUpdated": "2026-06-23T15:32:23.831Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
