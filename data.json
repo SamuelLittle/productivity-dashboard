@@ -1248,8 +1248,11 @@
               "title": "D2 processing",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-01T21:16:45.380Z"
+              "completed": true,
+              "createdAt": "2026-06-01T21:16:45.380Z",
+              "completedAt": "2026-06-23T22:43:47.717Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -9091,7 +9094,10 @@
         "subtaskId": "mpvplbr81rreon4kadvi",
         "time": null,
         "scheduledAt": "2026-06-20T00:53:44.060Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-23T22:43:47.717Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -12954,9 +12960,18 @@
       "completionNotes": "24 hr treatment performed at 10:30am",
       "completionLinks": "",
       "date": "2026-06-23"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpvor2egyd9fn0kywu9",
+      "subtaskId": "mpvplbr81rreon4kadvi",
+      "completedAt": "2026-06-23T22:43:47.717Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-23"
     }
   ],
-  "lastUpdated": "2026-06-23T18:03:59.110Z",
+  "lastUpdated": "2026-06-23T22:43:47.717Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
