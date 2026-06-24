@@ -1386,8 +1386,11 @@
               "title": "3 hr Cytokine treatment",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-04T00:39:58.886Z"
+              "completed": true,
+              "createdAt": "2026-06-04T00:39:58.886Z",
+              "completedAt": "2026-06-24T18:37:09.297Z",
+              "completionNotes": "treatment complete at 9am\n",
+              "completionLinks": ""
             },
             {
               "id": "mpyrqzt1v3cmkvltwt7",
@@ -9129,7 +9132,10 @@
         "subtaskId": "mpyrqdnqxg3ptjlijxm",
         "time": null,
         "scheduledAt": "2026-06-15T23:51:50.566Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-24T18:37:09.297Z",
+        "completionNotes": "treatment complete at 9am\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -12984,9 +12990,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-23"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": "mpyrqdnqxg3ptjlijxm",
+      "completedAt": "2026-06-24T18:37:09.298Z",
+      "completionNotes": "treatment complete at 9am\n",
+      "completionLinks": "",
+      "date": "2026-06-24"
     }
   ],
-  "lastUpdated": "2026-06-23T22:43:52.439Z",
+  "lastUpdated": "2026-06-24T18:37:09.298Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
