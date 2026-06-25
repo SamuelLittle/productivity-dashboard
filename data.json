@@ -5773,6 +5773,15 @@
         "completed": false,
         "createdAt": "2026-06-25T16:29:46.848Z",
         "time": null
+      },
+      {
+        "id": "mqtpx29rpz9ocar4ht",
+        "title": "QC on Neutrophil and monocyte D2s",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-06-25T16:30:02.943Z",
+        "time": null
       }
     ]
   },
@@ -13049,7 +13058,7 @@
       "date": "2026-06-24"
     }
   ],
-  "lastUpdated": "2026-06-25T16:29:46.848Z",
+  "lastUpdated": "2026-06-25T16:30:02.943Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
