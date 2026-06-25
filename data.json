@@ -5753,9 +5753,12 @@
         "title": "HITSLIMS project submission for gap fill + neutrophil and monocyte + CD4",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-24T18:38:11.991Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-25T15:51:10.534Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -13010,9 +13013,17 @@
       "completionNotes": "treatment complete at 9am\n",
       "completionLinks": "",
       "date": "2026-06-24"
+    },
+    {
+      "id": "mqsf20ifvno6yoki9kk",
+      "title": "HITSLIMS project submission for gap fill + neutrophil and monocyte + CD4",
+      "completedAt": "2026-06-25T15:51:10.534Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-24"
     }
   ],
-  "lastUpdated": "2026-06-24T18:38:11.991Z",
+  "lastUpdated": "2026-06-25T15:51:10.534Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
