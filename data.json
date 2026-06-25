@@ -1397,8 +1397,11 @@
               "title": "joint 3hr/24hr RNA extraction",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-04T00:40:27.589Z"
+              "completed": true,
+              "createdAt": "2026-06-04T00:40:27.589Z",
+              "completedAt": "2026-06-25T15:53:29.707Z",
+              "completionNotes": "Got derailed by i7 mechanical issues.  Samples are lysed on beads and in wash buffer 1.  Need to get timeline to i7 repair before deciding how to continue. ",
+              "completionLinks": ""
             },
             {
               "id": "mqlnai1efzoslq4ecu4",
@@ -9157,7 +9160,10 @@
         "subtaskId": "mpyrqzt1v3cmkvltwt7",
         "time": null,
         "scheduledAt": "2026-06-15T23:51:55.884Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-25T15:53:29.707Z",
+        "completionNotes": "Got derailed by i7 mechanical issues.  Samples are lysed on beads and in wash buffer 1.  Need to get timeline to i7 repair before deciding how to continue. ",
+        "completionLinks": ""
       }
     ],
     "2026-06-29": [
@@ -13021,9 +13027,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-24"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": "mpyrqzt1v3cmkvltwt7",
+      "completedAt": "2026-06-25T15:53:29.707Z",
+      "completionNotes": "Got derailed by i7 mechanical issues.  Samples are lysed on beads and in wash buffer 1.  Need to get timeline to i7 repair before deciding how to continue. ",
+      "completionLinks": "",
+      "date": "2026-06-24"
     }
   ],
-  "lastUpdated": "2026-06-25T15:51:10.534Z",
+  "lastUpdated": "2026-06-25T15:53:29.707Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
