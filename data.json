@@ -5782,6 +5782,15 @@
         "completed": false,
         "createdAt": "2026-06-25T16:30:02.943Z",
         "time": null
+      },
+      {
+        "id": "mqtpxqfy8k7yyen1xng",
+        "title": "Metadata for GapFill + Neutrophil Screening",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-06-25T16:30:34.270Z",
+        "time": null
       }
     ]
   },
@@ -13058,7 +13067,7 @@
       "date": "2026-06-24"
     }
   ],
-  "lastUpdated": "2026-06-25T16:30:02.943Z",
+  "lastUpdated": "2026-06-25T16:30:34.270Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
