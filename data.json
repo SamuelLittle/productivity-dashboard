@@ -3441,8 +3441,11 @@
               "title": "RNA analysis for iMG",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-25T16:31:45.629Z"
+              "completed": true,
+              "createdAt": "2026-06-25T16:31:45.629Z",
+              "completedAt": "2026-06-25T20:19:16.763Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -9239,7 +9242,10 @@
         "subtaskId": "mqtpz9i5y4k0iwvglxi",
         "time": null,
         "scheduledAt": "2026-06-25T16:31:45.629Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-25T20:19:16.762Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -13100,9 +13106,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-25"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mqlmy35i6ts5m6kremj",
+      "subtaskId": "mqtpz9i5y4k0iwvglxi",
+      "completedAt": "2026-06-25T20:19:16.763Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-25"
     }
   ],
-  "lastUpdated": "2026-06-25T20:19:11.826Z",
+  "lastUpdated": "2026-06-25T20:19:16.763Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
