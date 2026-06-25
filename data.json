@@ -3435,6 +3435,14 @@
               "completedAt": "2026-06-23T15:32:23.831Z",
               "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
               "completionLinks": ""
+            },
+            {
+              "id": "mqtpz9i5y4k0iwvglxi",
+              "title": "RNA analysis for iMG",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-25T16:31:45.629Z"
             }
           ]
         }
@@ -9229,6 +9237,14 @@
         "time": null,
         "scheduledAt": "2026-06-25T16:31:29.339Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mqlmy35i6ts5m6kremj",
+        "subtaskId": "mqtpz9i5y4k0iwvglxi",
+        "time": null,
+        "scheduledAt": "2026-06-25T16:31:45.629Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -13083,7 +13099,7 @@
       "date": "2026-06-24"
     }
   ],
-  "lastUpdated": "2026-06-25T16:31:29.339Z",
+  "lastUpdated": "2026-06-25T16:31:45.629Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
