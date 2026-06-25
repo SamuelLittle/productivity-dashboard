@@ -3356,6 +3356,14 @@
               "completedAt": "2026-06-19T23:14:30.053Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mqtpywxmkudk488eixg",
+              "title": "Image analysis and pilot report for iAstro",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-25T16:31:29.339Z"
             }
           ]
         },
@@ -9213,6 +9221,14 @@
         "time": null,
         "scheduledAt": "2026-06-20T00:59:47.461Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "movkm4r357gxwt3fz3f",
+        "subtaskId": "mqtpywxmkudk488eixg",
+        "time": null,
+        "scheduledAt": "2026-06-25T16:31:29.339Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -13067,7 +13083,7 @@
       "date": "2026-06-24"
     }
   ],
-  "lastUpdated": "2026-06-25T16:31:04.834Z",
+  "lastUpdated": "2026-06-25T16:31:29.339Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
