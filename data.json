@@ -5786,9 +5786,12 @@
         "title": "image analysis update for pTox Org dis",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-25T16:29:46.848Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-25T20:19:11.825Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mqtpx29rpz9ocar4ht",
@@ -13089,9 +13092,17 @@
       "completionNotes": "Got derailed by i7 mechanical issues.  Samples are lysed on beads and in wash buffer 1.  Need to get timeline to i7 repair before deciding how to continue. ",
       "completionLinks": "",
       "date": "2026-06-24"
+    },
+    {
+      "id": "mqtpwpuntyr8ifgjw7h",
+      "title": "image analysis update for pTox Org dis",
+      "completedAt": "2026-06-25T20:19:11.826Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-25"
     }
   ],
-  "lastUpdated": "2026-06-25T16:32:07.475Z",
+  "lastUpdated": "2026-06-25T20:19:11.826Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
