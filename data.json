@@ -5791,15 +5791,6 @@
         "completed": false,
         "createdAt": "2026-06-25T16:30:34.270Z",
         "time": null
-      },
-      {
-        "id": "mqtpy0wf1rd5pt13j2pi",
-        "title": "RNA measurements for iMG",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-06-25T16:30:47.823Z",
-        "time": null
       }
     ]
   },
@@ -13076,7 +13067,7 @@
       "date": "2026-06-24"
     }
   ],
-  "lastUpdated": "2026-06-25T16:30:47.823Z",
+  "lastUpdated": "2026-06-25T16:31:04.834Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
