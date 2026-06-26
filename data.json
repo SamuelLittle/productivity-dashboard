@@ -5827,9 +5827,12 @@
         "title": "Advanteon training",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-26T21:43:21.863Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-26T21:48:11.951Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mqvgk3hfia9qtwp76yb",
@@ -13169,9 +13172,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-26"
+    },
+    {
+      "id": "mqvgju9zm2wyvvfcy39",
+      "title": "Advanteon training",
+      "completedAt": "2026-06-26T21:48:11.951Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-26"
     }
   ],
-  "lastUpdated": "2026-06-26T21:48:07.789Z",
+  "lastUpdated": "2026-06-26T21:48:11.951Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
