@@ -5801,9 +5801,12 @@
         "title": "QC on Neutrophil and monocyte D2s",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-25T16:30:02.943Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-26T21:46:02.453Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-06-26": [
@@ -13147,9 +13150,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-25"
+    },
+    {
+      "id": "mqtpx29rpz9ocar4ht",
+      "title": "QC on Neutrophil and monocyte D2s",
+      "completedAt": "2026-06-26T21:46:02.453Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-25"
     }
   ],
-  "lastUpdated": "2026-06-26T21:45:53.002Z",
+  "lastUpdated": "2026-06-26T21:46:02.453Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
