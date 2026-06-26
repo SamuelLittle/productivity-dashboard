@@ -5839,9 +5839,12 @@
         "title": "Qiao 1-on-1",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-06-26T21:43:33.795Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-06-26T21:48:15.724Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mqtpxqfy8k7yyen1xng",
@@ -13180,9 +13183,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-26"
+    },
+    {
+      "id": "mqvgk3hfia9qtwp76yb",
+      "title": "Qiao 1-on-1",
+      "completedAt": "2026-06-26T21:48:15.724Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-26"
     }
   ],
-  "lastUpdated": "2026-06-26T21:48:11.951Z",
+  "lastUpdated": "2026-06-26T21:48:15.724Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
