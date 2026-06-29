@@ -3454,7 +3454,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-28T23:51:39.529Z",
-              "completedAt": "2026-06-29T23:36:18.455Z",
+              "completedAt": "2026-06-29T23:36:31.482Z",
               "completionNotes": "",
               "completionLinks": ""
             }
@@ -5864,12 +5864,10 @@
         "title": "Metadata for GapFill + Neutrophil Screening",
         "description": "",
         "priority": "medium",
-        "completed": true,
-        "completedAt": "2026-06-29T23:36:22.918Z",
+        "completed": false,
+        "completedAt": null,
         "time": null,
-        "createdAt": "2026-06-25T16:30:34.270Z",
-        "completionNotes": "",
-        "completionLinks": ""
+        "createdAt": "2026-06-25T16:30:34.270Z"
       },
       {
         "id": "mqzctya23sab4rx2o0k",
@@ -9305,7 +9303,7 @@
         "time": null,
         "scheduledAt": "2026-06-28T23:51:49.904Z",
         "completedOnDay": true,
-        "completedAt": "2026-06-29T23:36:18.455Z",
+        "completedAt": "2026-06-29T23:36:31.482Z",
         "completionNotes": "",
         "completionLinks": ""
       }
@@ -13255,21 +13253,13 @@
       "projectId": "mklu1lye4czo9brjznq",
       "taskId": "mqlmy35i6ts5m6kremj",
       "subtaskId": "mqyg0j60nh76hlhelih",
-      "completedAt": "2026-06-29T23:36:18.455Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-29"
-    },
-    {
-      "id": "mqtpxqfy8k7yyen1xng",
-      "title": "Metadata for GapFill + Neutrophil Screening",
-      "completedAt": "2026-06-29T23:36:22.918Z",
+      "completedAt": "2026-06-29T23:36:31.482Z",
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-29"
     }
   ],
-  "lastUpdated": "2026-06-29T23:36:22.918Z",
+  "lastUpdated": "2026-06-29T23:36:31.482Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
