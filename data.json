@@ -3452,8 +3452,11 @@
               "title": "cDNA generation from iMg RNA",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-28T23:51:39.529Z"
+              "completed": true,
+              "createdAt": "2026-06-28T23:51:39.529Z",
+              "completedAt": "2026-06-29T23:36:18.455Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -5887,15 +5890,6 @@
         "priority": "medium",
         "completed": false,
         "createdAt": "2026-06-29T15:10:58.779Z",
-        "time": null
-      },
-      {
-        "id": "mqzus6axjzqdm2ktlpo",
-        "title": "extract RNA from DLD1s",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-06-29T23:32:50.027Z",
         "time": null
       }
     ]
@@ -9308,7 +9302,10 @@
         "subtaskId": "mqyg0j60nh76hlhelih",
         "time": null,
         "scheduledAt": "2026-06-28T23:51:49.904Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-06-29T23:36:18.455Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-06-25": [
@@ -13251,9 +13248,18 @@
       "completionNotes": "placed in LN\n",
       "completionLinks": "",
       "date": "2026-06-29"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mqlmy35i6ts5m6kremj",
+      "subtaskId": "mqyg0j60nh76hlhelih",
+      "completedAt": "2026-06-29T23:36:18.455Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-29"
     }
   ],
-  "lastUpdated": "2026-06-29T23:32:50.027Z",
+  "lastUpdated": "2026-06-29T23:36:18.455Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
