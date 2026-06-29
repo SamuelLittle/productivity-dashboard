@@ -5865,6 +5865,15 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-06-25T16:30:34.270Z"
+      },
+      {
+        "id": "mqzctya23sab4rx2o0k",
+        "title": "Receive T cells from Hillsboro ",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-06-29T15:10:19.851Z",
+        "time": null
       }
     ]
   },
@@ -13213,7 +13222,7 @@
       "date": "2026-06-26"
     }
   ],
-  "lastUpdated": "2026-06-28T23:51:49.904Z",
+  "lastUpdated": "2026-06-29T15:10:19.851Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
