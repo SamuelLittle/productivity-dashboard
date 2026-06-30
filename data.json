@@ -1418,6 +1418,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-06-20T00:59:47.460Z"
+            },
+            {
+              "id": "mr195fhtffbqfb9yyci",
+              "title": "ViaFlo RNA extraction",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-06-30T23:02:49.267Z"
             }
           ]
         }
@@ -9351,6 +9359,14 @@
         "time": null,
         "scheduledAt": "2026-06-26T21:45:53.002Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mr195fhtffbqfb9yyci",
+        "time": null,
+        "scheduledAt": "2026-06-30T23:02:49.268Z",
+        "completedOnDay": false
       }
     ],
     "2026-07-02": [
@@ -13289,7 +13305,7 @@
       "date": "2026-06-29"
     }
   ],
-  "lastUpdated": "2026-06-29T23:39:56.467Z",
+  "lastUpdated": "2026-06-30T23:02:49.268Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
