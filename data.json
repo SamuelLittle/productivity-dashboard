@@ -3373,8 +3373,11 @@
               "title": "Image analysis and pilot report for iAstro",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-25T16:31:29.339Z"
+              "completed": true,
+              "createdAt": "2026-06-25T16:31:29.339Z",
+              "completedAt": "2026-07-01T21:40:55.004Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -5895,17 +5898,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-06-30": [
-      {
-        "id": "mqzcusbfzxda8ch9a7",
-        "title": "Plan pilot for NK-T positive controls. ",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-06-29T15:10:58.779Z",
-        "time": null
-      }
-    ],
     "2026-07-01": [
       {
         "id": "mqzv1bci1yw3cho0ztp",
@@ -5925,6 +5917,18 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-06-29T23:36:54.380Z"
+      }
+    ],
+    "2026-07-02": [
+      {
+        "id": "mqzcusbfzxda8ch9a7",
+        "title": "Plan pilot for NK-T positive controls. ",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-06-29T15:10:58.779Z"
       }
     ]
   },
@@ -9385,7 +9389,10 @@
         "subtaskId": "mqtpywxmkudk488eixg",
         "time": null,
         "scheduledAt": "2026-06-26T21:45:53.002Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-07-01T21:40:55.004Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -13321,9 +13328,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-30"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "movkm4r357gxwt3fz3f",
+      "subtaskId": "mqtpywxmkudk488eixg",
+      "completedAt": "2026-07-01T21:40:55.004Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-01"
     }
   ],
-  "lastUpdated": "2026-07-01T21:40:47.082Z",
+  "lastUpdated": "2026-07-01T21:40:55.004Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
