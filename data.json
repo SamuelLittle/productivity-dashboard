@@ -1424,8 +1424,11 @@
               "title": "ViaFlo RNA extraction",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-30T23:02:49.267Z"
+              "completed": true,
+              "createdAt": "2026-06-30T23:02:49.267Z",
+              "completedAt": "2026-07-01T21:40:24.338Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -9358,7 +9361,10 @@
         "subtaskId": "mr195fhtffbqfb9yyci",
         "time": null,
         "scheduledAt": "2026-06-30T23:02:49.268Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-07-01T21:40:24.336Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-07-02": [
@@ -13305,9 +13311,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-29"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": "mr195fhtffbqfb9yyci",
+      "completedAt": "2026-07-01T21:40:24.338Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-30"
     }
   ],
-  "lastUpdated": "2026-06-30T23:02:49.268Z",
+  "lastUpdated": "2026-07-01T21:40:24.338Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
