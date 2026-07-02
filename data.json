@@ -5900,15 +5900,6 @@
     ],
     "2026-07-01": [
       {
-        "id": "mqzv1bci1yw3cho0ztp",
-        "title": "Fixed DLD1 rna extraction pilot",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-06-29T23:39:56.467Z",
-        "time": null
-      },
-      {
         "id": "mqzuxeujefolk2930d5",
         "title": "extract RNA from DLD1s",
         "description": "",
@@ -5929,6 +5920,16 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-06-29T15:10:58.779Z"
+      },
+      {
+        "id": "mqzv1bci1yw3cho0ztp",
+        "title": "Fixed DLD1 rna extraction pilot",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-06-29T23:39:56.467Z"
       }
     ]
   },
@@ -9378,7 +9379,7 @@
         "taskId": "",
         "subtaskId": null,
         "time": null,
-        "scheduledAt": "2026-07-02T18:24:33.425Z",
+        "scheduledAt": "2026-07-02T18:24:38.773Z",
         "completedOnDay": false
       }
     ],
@@ -13339,7 +13340,7 @@
       "date": "2026-07-01"
     }
   ],
-  "lastUpdated": "2026-07-02T18:24:33.425Z",
+  "lastUpdated": "2026-07-02T18:24:38.773Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
