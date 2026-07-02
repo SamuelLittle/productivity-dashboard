@@ -5948,9 +5948,12 @@
         "title": "CD4 T cell SMARTseq D1",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-02T18:24:49.436Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-02T18:25:00.856Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -13359,9 +13362,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-01"
+    },
+    {
+      "id": "mr3u3ml7p646xh36lyb",
+      "title": "CD4 T cell SMARTseq D1",
+      "completedAt": "2026-07-02T18:25:00.856Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-01"
     }
   ],
-  "lastUpdated": "2026-07-02T18:24:49.436Z",
+  "lastUpdated": "2026-07-02T18:25:00.856Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
