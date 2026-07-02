@@ -5898,6 +5898,27 @@
         "completionLinks": ""
       }
     ],
+    "2026-07-01": [
+      {
+        "id": "mqzv1bci1yw3cho0ztp",
+        "title": "Fixed DLD1 rna extraction pilot",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-06-29T23:39:56.467Z",
+        "time": null
+      },
+      {
+        "id": "mqzuxeujefolk2930d5",
+        "title": "extract RNA from DLD1s",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-06-29T23:36:54.380Z"
+      }
+    ],
     "2026-07-02": [
       {
         "id": "mqzcusbfzxda8ch9a7",
@@ -5908,52 +5929,6 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-06-29T15:10:58.779Z"
-      },
-      {
-        "id": "mqzv1bci1yw3cho0ztp",
-        "title": "Fixed DLD1 rna extraction pilot",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-06-29T23:39:56.467Z"
-      },
-      {
-        "id": "mqzuxeujefolk2930d5",
-        "title": "extract RNA from DLD1s",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-06-29T23:36:54.380Z"
-      }
-    ],
-    "2026-07-03": [
-      {
-        "id": "mqzuxeujefolk2930d5",
-        "title": "extract RNA from DLD1s",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-06-29T23:36:54.380Z"
-      }
-    ],
-    "2026-07-01": [
-      {
-        "id": "mr3u3ml7p646xh36lyb",
-        "title": "CD4 T cell SMARTseq D1",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-02T18:24:49.436Z",
-        "time": null,
-        "completedAt": "2026-07-02T18:25:00.856Z",
-        "completionNotes": "",
-        "completionLinks": ""
       }
     ]
   },
@@ -9391,11 +9366,19 @@
     ],
     "2026-07-02": [
       {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mqlnai1efzoslq4ecu4",
+        "time": null,
+        "scheduledAt": "2026-06-20T00:54:21.651Z",
+        "completedOnDay": false
+      },
+      {
         "projectId": "",
         "taskId": "",
         "subtaskId": null,
         "time": null,
-        "scheduledAt": "2026-07-02T18:24:38.773Z",
+        "scheduledAt": "2026-07-02T18:25:23.542Z",
         "completedOnDay": false
       }
     ],
@@ -9410,16 +9393,6 @@
         "completedAt": "2026-07-01T21:40:55.004Z",
         "completionNotes": "",
         "completionLinks": ""
-      }
-    ],
-    "2026-07-06": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhry7jezeridb1ny7",
-        "subtaskId": "mqlnai1efzoslq4ecu4",
-        "time": null,
-        "scheduledAt": "2026-07-02T18:25:10.251Z",
-        "completedOnDay": false
       }
     ]
   },
@@ -13364,17 +13337,9 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-01"
-    },
-    {
-      "id": "mr3u3ml7p646xh36lyb",
-      "title": "CD4 T cell SMARTseq D1",
-      "completedAt": "2026-07-02T18:25:00.856Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-01"
     }
   ],
-  "lastUpdated": "2026-07-02T18:25:10.251Z",
+  "lastUpdated": "2026-07-02T18:25:23.542Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
