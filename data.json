@@ -5124,16 +5124,6 @@
     ],
     "2026-07-02": [
       {
-        "id": "mqzcusbfzxda8ch9a7",
-        "title": "Plan pilot for NK-T positive controls. ",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-06-29T15:10:58.779Z"
-      },
-      {
         "id": "mqzv1bci1yw3cho0ztp",
         "title": "Fixed DLD1 rna extraction pilot",
         "description": "",
@@ -5168,6 +5158,16 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-06-29T23:36:54.380Z"
+      },
+      {
+        "id": "mqzcusbfzxda8ch9a7",
+        "title": "Plan pilot for NK-T positive controls. ",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-06-29T15:10:58.779Z"
       }
     ]
   },
@@ -6446,6 +6446,14 @@
         "completedAt": "2026-07-01T21:40:55.004Z",
         "completionNotes": "",
         "completionLinks": ""
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mqlnhhfoiax3wi0rch",
+        "time": null,
+        "scheduledAt": "2026-07-03T14:37:11.402Z",
+        "completedOnDay": false
       }
     ],
     "2026-07-06": [
@@ -6465,14 +6473,6 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-07-03T04:48:45.761Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhry7jezeridb1ny7",
-        "subtaskId": "mqlnhhfoiax3wi0rch",
-        "time": null,
-        "scheduledAt": "2026-07-03T04:51:22.109Z",
         "completedOnDay": false
       }
     ]
@@ -8026,7 +8026,7 @@
       "date": "2026-07-02"
     }
   ],
-  "lastUpdated": "2026-07-03T04:51:22.109Z",
+  "lastUpdated": "2026-07-03T14:37:11.402Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
