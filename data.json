@@ -5119,18 +5119,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-07-01": [
-      {
-        "id": "mqzuxeujefolk2930d5",
-        "title": "extract RNA from DLD1s",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-06-29T23:36:54.380Z"
-      }
-    ],
     "2026-07-02": [
       {
         "id": "mqzcusbfzxda8ch9a7",
@@ -5151,6 +5139,18 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-06-29T23:39:56.467Z"
+      }
+    ],
+    "2026-07-03": [
+      {
+        "id": "mqzuxeujefolk2930d5",
+        "title": "extract RNA from DLD1s",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-06-29T23:36:54.380Z"
       }
     ]
   },
@@ -6429,6 +6429,14 @@
         "completedAt": "2026-07-01T21:40:55.004Z",
         "completionNotes": "",
         "completionLinks": ""
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mqlnhhfoiax3wi0rch",
+        "time": null,
+        "scheduledAt": "2026-07-03T04:50:31.209Z",
+        "completedOnDay": false
       }
     ],
     "2026-07-06": [
@@ -7976,7 +7984,7 @@
       "date": "2026-07-01"
     }
   ],
-  "lastUpdated": "2026-07-03T04:48:45.761Z",
+  "lastUpdated": "2026-07-03T04:50:31.209Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
