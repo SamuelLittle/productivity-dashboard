@@ -5138,10 +5138,12 @@
         "title": "Fixed DLD1 rna extraction pilot",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-07-03T04:50:52.424Z",
         "time": null,
-        "createdAt": "2026-06-29T23:39:56.467Z"
+        "createdAt": "2026-06-29T23:39:56.467Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-07-03": [
@@ -7997,9 +7999,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-01"
+    },
+    {
+      "id": "mqzv1bci1yw3cho0ztp",
+      "title": "Fixed DLD1 rna extraction pilot",
+      "completedAt": "2026-07-03T04:50:52.424Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-02"
     }
   ],
-  "lastUpdated": "2026-07-03T04:50:45.330Z",
+  "lastUpdated": "2026-07-03T04:50:52.424Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
