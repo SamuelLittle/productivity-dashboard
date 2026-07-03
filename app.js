@@ -499,7 +499,10 @@ async function loadData() {
                 jsonString = new TextDecoder('utf-8').decode(bytes);
             } else if (fileData.download_url) {
                 // File exceeds GitHub's 1MB Contents API limit — fetch raw
-                const dlResponse = await fetch(fileData.download_url);
+                const dlResponse = await fetch(fileData.download_url, {
+                    headers: { Authorization: `token ${state.token}` }
+                });
+                if (!dlResponse.ok) throw new Error(`Raw download failed: ${dlResponse.status}`);
                 jsonString = await dlResponse.text();
             } else {
                 throw new Error('No content available from GitHub');
@@ -559,8 +562,9 @@ function migrateDataStructure() {
 }
 
 async function saveData() {
-    // Archive old data before saving if the file is getting large
-    if (state.token && JSON.stringify(state.data).length > 800000) {
+    // Always try to archive old data so data.json never grows unboundedly.
+    // archiveOldData() exits immediately if nothing is old enough to move.
+    if (state.token) {
         await archiveOldData();
     }
 
@@ -612,7 +616,7 @@ async function saveData() {
 // ============================================
 
 // Returns the data object containing log data for this date.
-// Recent dates (within 180 days) are always in state.data.
+// Recent dates (within 90 days) are always in state.data.
 // Older dates may have been archived to state.archiveCache[year].
 function getDataForDate(dateStr) {
     if (!dateStr) return state.data;
@@ -692,11 +696,11 @@ async function ensureYearLoaded(year) {
     }
 }
 
-// Moves log data older than 180 days out of state.data and into per-year archive files.
-// Only archives specific dates, never data for the current rolling 180-day window.
+// Moves log data older than 90 days out of state.data and into per-year archive files.
+// Only archives specific dates, never data for the current rolling 90-day window.
 async function archiveOldData() {
     const cutoff = new Date();
-    cutoff.setDate(cutoff.getDate() - 180);
+    cutoff.setDate(cutoff.getDate() - 90);
     const cutoffStr = cutoff.toISOString().substring(0, 10);
 
     // Identify which years have data that needs archiving
