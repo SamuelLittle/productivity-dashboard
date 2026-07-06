@@ -6452,15 +6452,13 @@
         "time": null,
         "scheduledAt": "2026-07-02T18:26:02.748Z",
         "completedOnDay": false
-      }
-    ],
-    "2026-07-03": [
+      },
       {
         "projectId": "",
         "taskId": "",
         "subtaskId": null,
         "time": null,
-        "scheduledAt": "2026-07-03T04:48:45.761Z",
+        "scheduledAt": "2026-07-06T15:23:04.059Z",
         "completedOnDay": false
       }
     ]
@@ -8022,7 +8020,7 @@
       "date": "2026-07-03"
     }
   ],
-  "lastUpdated": "2026-07-06T15:22:56.132Z",
+  "lastUpdated": "2026-07-06T15:23:04.059Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
