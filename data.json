@@ -5164,9 +5164,12 @@
         "title": "Thaw PBMCs and isolate monocytes for fixed RNA extraction",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-06T15:24:55.669Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-06T23:56:29.506Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mr9dgl421aon9di0g4x",
@@ -8098,9 +8101,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-03"
+    },
+    {
+      "id": "mr9dfoqczs1zvklapv",
+      "title": "Thaw PBMCs and isolate monocytes for fixed RNA extraction",
+      "completedAt": "2026-07-06T23:56:29.506Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-06"
     }
   ],
-  "lastUpdated": "2026-07-06T15:35:26.007Z",
+  "lastUpdated": "2026-07-06T23:56:29.506Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
