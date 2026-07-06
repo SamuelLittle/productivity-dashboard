@@ -4366,20 +4366,6 @@
     }
   ],
   "dailyLists": {
-    "2026-04-06": [
-      {
-        "id": "mnf8lowyx83slvvrp7",
-        "title": "OOO",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-03-31T23:17:25.474Z",
-        "time": "09:00",
-        "completedAt": "2026-04-07T04:30:16.656Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-04-07": [
       {
         "id": "mnf8mklhg5kcjo2j6we",
@@ -5154,10 +5140,12 @@
         "title": "extract RNA from DLD1s",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-07-06T15:22:56.132Z",
         "time": null,
-        "createdAt": "2026-06-29T23:36:54.380Z"
+        "createdAt": "2026-06-29T23:36:54.380Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mqzcusbfzxda8ch9a7",
@@ -8024,9 +8012,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-02"
+    },
+    {
+      "id": "mqzuxeujefolk2930d5",
+      "title": "extract RNA from DLD1s",
+      "completedAt": "2026-07-06T15:22:56.132Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-03"
     }
   ],
-  "lastUpdated": "2026-07-03T14:37:11.402Z",
+  "lastUpdated": "2026-07-06T15:22:56.132Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8428,12 +8424,6 @@
     }
   },
   "weeklySummaries": {
-    "2026-04-05": {
-      "summary": "**Weekly Summary: April 4-10, 2026**\n\n**Week Overview**\n\nThis week marked significant technical progress across multiple screening and automation projects, with 16 tasks completed despite starting with an out-of-office day. The week built strong momentum around BLADE-R automation development, moving through three successive pilot iterations with measurable improvements in RNA extraction quality. Key meetings with Russell, Mayra/Dan, Hamid, and Celine provided strategic direction for ongoing projects, while substantial progress was made on cytokine screening preparations and data organization. The pace accelerated through the week, culminating in productive Friday deliverables and clear action items for scale-up discussions.\n\n**Completed Work**\n\nSMARTSeq Technology Development formed the largest work block this week. The BLADE-R Automation project advanced through three pilot iterations: pilot 2 completed with DLD1 cells achieving clear RNA despite degradation issues, followed by protocol adjustments for improved ethanol removal. The \"Isolate + plate Monocytes\" subtask was completed using an adjusted DLD1-based protocol to minimize isolation requirements, with plans to pivot to monocytes once DLD1 validation concludes. The \"analyze RNA\" subtask was finished, and pilot 3 achieved significantly improved results through enhanced mixing and better dead volume removal techniques.\n\nCytokine Screen work included creating 14 treatment plates containing 12ul of 20x cytokines for each plate type, properly labeled and stored at -80 degrees. A comprehensive cell thaw protocol and culture timeline was developed, and a COPD mix proposal was completed. Presentation materials were prepared with slides for the COPD cytokine screening update, and the subsequent meeting yielded concrete next steps including Genoskin contact for scale-up.\n\nPCR and Quality Control tasks included repeating Tim PCR using ORS samples as negative controls, followed by Tim PCR QC work later in the week. Macrophage Screen progress involved loading GPR35 KO images into Orchestra system for analysis. Communication and coordination work encompassed messaging Effi, Meng, and Celine about TPP analysis, emailing Yuxin, putting together data packages for Mast cell project, and contacting Russell about pair-end sequencing requirements.\n\nStrategic meetings provided project direction through discussions with Russell establishing the SMARTseq tech development path forward, meetings with Mayra and Dan identifying concerns over fresh versus frozen cell efficacy and the need for fresh NK cell comparisons, a 1-on-1 with Celine highlighting NK cell killing assay simplification needs, and collaboration with Hamid on cytokine screening dashboard requirements. Additional planning work included checkerboard analysis preparation, sourcing cell requirements, defining culture and media conditions, and finishing dashboard updates with cell culture information.\n\n**Recurring Themes & Patterns**\n\nTechnical iteration and refinement emerged as a consistent pattern, particularly visible in the BLADE-R automation progression from degraded RNA in pilot 2 to significantly improved results in pilot 3 through systematic protocol improvements. Meeting-driven strategic clarity was another strong theme, with each major meeting (Russell, Mayra/Dan, Hamid, Celine) producing specific actionable requirements rather than general discussion. Protocol standardization appeared repeatedly across projects, from PCR controls to cell culture timelines to automation procedures. Fresh versus frozen cell considerations surfaced multiple times, indicating this is becoming a critical experimental design factor. Data organization and transfer challenges appeared in work with Orchestra system and various screening datasets, suggesting systematic data handling may need attention.\n\n**Carry Forward**\n\nTechnical development continues with BLADE-R protocol refinement still needed - consultation with Corinne scheduled for improved mixing and dead volume elimination techniques. Protocol transfer work requires moving GPR35 KO images from Orchestra to Spring for final analysis, and BLADE-R materials restocking is needed. Strategic follow-up includes preparing detailed culture conditions and cytokine concentration methodology for Hamid by next week to enable dashboard development. Meeting action items require contacting Genoskin for scale-up discussions and continuing BLADE-R progress documentation. The SMARTseq tech development path forward needs protocol review for 10X and NEB kit integration, particularly fragmentation and RT to PCR1 transition steps. Fresh NK cell isolation planning requires discussion with Celine following blood order coordination for killing assay comparisons.",
-      "weekStart": "2026-04-05",
-      "generatedAt": "2026-04-10T23:35:12.589Z",
-      "editedAt": "2026-04-10T23:35:12.589Z"
-    },
     "2026-04-12": {
       "summary": "**Week of April 11-17, 2026 - Weekly Summary**\n\n**Week Overview**\n\nThis week was characterized by intensive protocol troubleshooting and optimization work, particularly focused on automating the BLADE-R RNA extraction procedure for the SMARTSeq TechDev project. The week maintained a steady experimental pace with 16 completed tasks across multiple concurrent projects, including significant preparation work for upcoming cytokine screens and natural killer cell CRISPR experiments. Technical challenges with RNA quality consistency drove iterative improvements to automation protocols, while parallel work advanced reagent preparation, cell culture setup, and data analysis activities. The week concluded with successful protocol adjustments and cell preparations positioned for the following week's experiments.\n\n**Completed Work**\n\nSMARTSeq TechDev Project: Executed three automation pilots (pilots 3, 4, and 5) using BLADE-R with monocytes, progressively identifying and addressing issues with RNA degradation. Completed reagent restocking with large quantities of GTC, LiCl, and PEG8000. Made fresh reagents including lysis buffer, wash 1, and wash 2 solutions. Isolated monocytes and plated them for BLADE-R testing. Met with Corinne to adjust the automation protocol, implementing improvements to mixing and aspiration procedures. Successfully divided the protocol into two discrete steps with tip swap capability and reduced lysis time to 5 minutes.\n\nNatural Killer Cell CRISPR Screen: Created and distributed the experimental protocol to Mayra and Dan. Thawed approximately 500M NK cells and isolated around 25M viable cells, seeding them at slightly over 2M cells/mL in u-bottom well plates using cNK MACS media for nucleofection preparation.\n\nCytokine Screen Project: Submitted luminex samples and received data analysis results the following day. Analyzed treatment plate luminex data showing that BSA improvements were less pronounced than anticipated, with overview sent to Celine. Prepared media for all required cell types by assembling Lonza bullet kits for EGM 2 endothelial (HUVEC), EGM 2 microvascular (HMVEC), smGM-2 (SMCs), and BEGM (BEAS-2B). Successfully thawed all target cells, though HMVECs had not adhered by end of day.\n\nMacrophage Screen: Submitted primer orders and ran PCR analysis of results, achieving clean GPR35 PCR bands with minimal template that could potentially benefit other laboratory work.\n\nLaboratory Support Activities: Completed full sorter setup for Christine including sheath fluid bleeding procedures. Started NHLFs and IMR90s cell cultures for upcoming experimental work.\n\n**Recurring Themes & Patterns**\n\nThe dominant theme throughout the week was methodical troubleshooting of the BLADE-R automation protocol, with each pilot iteration building on lessons from previous attempts. Initial poor RNA quality attributed to old buffers and dead volume carryover led to systematic improvements including fresh reagent preparation, protocol segmentation, and enhanced mixing procedures. A pattern of proactive preparation emerged, with multiple days dedicated to media preparation, reagent restocking, and cell culture setup to enable smooth experimental execution later in the week. Cross-project coordination was evident in protocol sharing and collaborative troubleshooting sessions. The week demonstrated how technical challenges, rather than derailing progress, drove deeper protocol understanding and refinement.\n\n**Carry Forward**\n\nTest the updated BLADE-R automation protocol on Monday using monocytes, incorporating the mixing and aspiration improvements developed with Corinne. Continue focusing on enhanced mixing methods and dead volume removal to further optimize RNA quality results. Re-thaw NK cells next week due to poor viability observed in the current batch. Monitor HMVEC adherence status and adjust cell culture protocols if needed. Allocate time to prepare SMARTSeq reagents specifically for the Fill-in-the-gaps screen scheduled for the week after next. Follow up with Mayra on her feedback regarding the Natural Killer Cell CRISPR Screen protocol to coordinate cell provision for the killing assay.",
       "weekStart": "2026-04-12",
