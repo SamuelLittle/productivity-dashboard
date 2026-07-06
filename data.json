@@ -5146,7 +5146,9 @@
         "createdAt": "2026-06-29T23:36:54.380Z",
         "completionNotes": "",
         "completionLinks": ""
-      },
+      }
+    ],
+    "2026-07-06": [
       {
         "id": "mqzcusbfzxda8ch9a7",
         "title": "Plan pilot for NK-T positive controls. ",
@@ -5156,6 +5158,15 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-06-29T15:10:58.779Z"
+      },
+      {
+        "id": "mr9dfoqczs1zvklapv",
+        "title": "Thaw PBMCs and isolate monocytes for fixed RNA extraction",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-07-06T15:24:55.669Z",
+        "time": null
       }
     ]
   },
@@ -8020,7 +8031,7 @@
       "date": "2026-07-03"
     }
   ],
-  "lastUpdated": "2026-07-06T15:23:04.059Z",
+  "lastUpdated": "2026-07-06T15:24:55.669Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
