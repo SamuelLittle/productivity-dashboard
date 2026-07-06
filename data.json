@@ -5217,6 +5217,17 @@
         "createdAt": "2026-07-06T15:31:20.392Z",
         "time": "16:00"
       }
+    ],
+    "2026-07-08": [
+      {
+        "id": "mr9dogmlx93quaytmc",
+        "title": "org disc. meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-07-06T15:31:45.069Z",
+        "time": "15:09"
+      }
     ]
   },
   "scheduledItems": {
@@ -8080,7 +8091,7 @@
       "date": "2026-07-03"
     }
   ],
-  "lastUpdated": "2026-07-06T15:31:20.392Z",
+  "lastUpdated": "2026-07-06T15:31:45.069Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
