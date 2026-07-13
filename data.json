@@ -2463,7 +2463,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-07-13T22:45:54.300Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mrjta6dfn6pjquj7ihq",
+              "title": "Thaw PBMCs and isolate NK cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-07-13T22:46:14.212Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -6513,6 +6522,16 @@
         "scheduledAt": "2026-07-09T14:48:15.558Z",
         "completedOnDay": false
       }
+    ],
+    "2026-07-16": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mrjta6dfn6pjquj7ihq",
+        "time": null,
+        "scheduledAt": "2026-07-13T22:46:14.212Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8053,7 +8072,7 @@
       "date": "2026-07-13"
     }
   ],
-  "lastUpdated": "2026-07-13T22:45:54.300Z",
+  "lastUpdated": "2026-07-13T22:46:14.212Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
