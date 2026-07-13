@@ -5233,9 +5233,12 @@
         "title": "FG Director Presentation",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-07T23:56:02.144Z",
-        "time": "09:00"
+        "time": "09:00",
+        "completedAt": "2026-07-13T16:10:18.604Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mrbb559dwtl430yuli",
@@ -7934,9 +7937,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-09"
+    },
+    {
+      "id": "mrbb4tsw0xbn71zy8j3r",
+      "title": "FG Director Presentation",
+      "completedAt": "2026-07-13T16:10:18.604Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-10"
     }
   ],
-  "lastUpdated": "2026-07-13T16:10:12.042Z",
+  "lastUpdated": "2026-07-13T16:10:18.604Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
