@@ -5181,10 +5181,12 @@
         "title": "Plan pilot for NK-T positive controls. ",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-07-13T16:10:12.042Z",
         "time": null,
-        "createdAt": "2026-06-29T15:10:58.779Z"
+        "createdAt": "2026-06-29T15:10:58.779Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mrdtz67feb5yyumsp57",
@@ -7924,9 +7926,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-09"
+    },
+    {
+      "id": "mqzcusbfzxda8ch9a7",
+      "title": "Plan pilot for NK-T positive controls. ",
+      "completedAt": "2026-07-13T16:10:12.042Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-09"
     }
   ],
-  "lastUpdated": "2026-07-13T16:10:05.367Z",
+  "lastUpdated": "2026-07-13T16:10:12.042Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
