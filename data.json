@@ -5245,9 +5245,12 @@
         "title": "FG Director Lunch",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-07T23:56:16.993Z",
-        "time": "12:00"
+        "time": "12:00",
+        "completedAt": "2026-07-13T16:10:21.869Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -7945,9 +7948,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-10"
+    },
+    {
+      "id": "mrbb559dwtl430yuli",
+      "title": "FG Director Lunch",
+      "completedAt": "2026-07-13T16:10:21.869Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-10"
     }
   ],
-  "lastUpdated": "2026-07-13T16:10:18.604Z",
+  "lastUpdated": "2026-07-13T16:10:21.869Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
