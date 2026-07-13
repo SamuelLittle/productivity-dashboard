@@ -2479,6 +2479,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-07-13T22:46:30.480Z"
+            },
+            {
+              "id": "mrjtaxm6r5s3ku8rlgr",
+              "title": "CTG measurements and cell normalizations.",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-07-13T22:46:49.518Z"
             }
           ]
         }
@@ -6550,6 +6558,16 @@
         "scheduledAt": "2026-07-13T22:46:30.481Z",
         "completedOnDay": false
       }
+    ],
+    "2026-07-20": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mrjtaxm6r5s3ku8rlgr",
+        "time": null,
+        "scheduledAt": "2026-07-13T22:46:49.518Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8090,7 +8108,7 @@
       "date": "2026-07-13"
     }
   ],
-  "lastUpdated": "2026-07-13T22:46:30.481Z",
+  "lastUpdated": "2026-07-13T22:46:49.518Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
