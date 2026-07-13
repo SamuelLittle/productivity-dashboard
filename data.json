@@ -5265,6 +5265,15 @@
         "completed": false,
         "createdAt": "2026-07-13T17:49:11.801Z",
         "time": null
+      },
+      {
+        "id": "mrjiohmzga1n4zvzg9u",
+        "title": "NK screen pilot full plan",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-07-13T17:49:26.219Z",
+        "time": null
       }
     ]
   },
@@ -7984,7 +7993,7 @@
       "date": "2026-07-10"
     }
   ],
-  "lastUpdated": "2026-07-13T17:49:11.801Z",
+  "lastUpdated": "2026-07-13T17:49:26.220Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
