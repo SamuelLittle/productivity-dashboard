@@ -4401,20 +4401,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-04-10": [
-      {
-        "id": "mnthy4is8ce083ou1u3",
-        "title": "COPD cytokine screen meeting",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-04-10T22:47:48.581Z",
-        "time": null,
-        "completedAt": "2026-04-10T22:55:16.842Z",
-        "completionNotes": "- Contact genoskin for scaleup\n- put together data for Mast\n- contact Russell about pair-end sequencing\n- finish dashboard updates with cell culture information\n",
-        "completionLinks": ""
-      }
-    ],
     "2026-04-16": [
       {
         "id": "mnxp3ia840x2v4nvvwu",
@@ -5180,10 +5166,12 @@
         "title": "Complete and submit monocytes + neutrophils + CD4s + GapFill to NGS",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-07-13T16:09:59.346Z",
         "time": null,
-        "createdAt": "2026-07-06T15:35:26.007Z"
+        "createdAt": "2026-07-06T15:35:26.007Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mqzcusbfzxda8ch9a7",
@@ -5370,65 +5358,6 @@
         "completedOnDay": true,
         "completedAt": "2026-04-30T18:52:31.617Z",
         "completionNotes": "Cells treated between 10 and 11 am. ",
-        "completionLinks": ""
-      }
-    ],
-    "2026-04-10": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mn96ur593n4wqfraywg",
-        "subtaskId": "mn96xgyf0c5om039im56",
-        "time": null,
-        "scheduledAt": "2026-04-09T23:47:45.010Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-10T22:57:15.925Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltywpq0yriuhvt8wmb",
-        "taskId": "mnt1n66oq2xa1vds7g9",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-10T15:11:23.664Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-10T18:40:53.053Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-04-13": [
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mntcf009zrhd24a2cu",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-10T20:12:58.186Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-13T22:20:21.290Z",
-        "completionNotes": "performed BLADE-R with monocytes and got poor performance with heavily degraded RNA across all samples.  Possible culprits include old wash + bead buffers and dead volume carryover, \n\nGoing to make fresh tomorrow and try again.",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mn3vj631ght8zzcdd8g",
-        "subtaskId": "mnql7b5eo9kxkbz49or",
-        "time": null,
-        "scheduledAt": "2026-04-10T22:55:27.593Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-13T18:12:58.630Z",
-        "completionNotes": "",
-        "completionLinks": "https://gene.benchling.com/s/etr-awZ3sgKdwULVehCzSgbZ?m=slm-6XmMq5Wkb3OYsDmyO2Le"
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mnt0xv1jbkcrr9f6yvp",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-10T23:24:40.937Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-13T23:05:09.038Z",
-        "completionNotes": "purchased \n- GTC\n- LiCl\n- PEG8000\n\nlarge quantities of each\n",
         "completionLinks": ""
       }
     ],
@@ -6506,56 +6435,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltywpq0yriuhvt8wmb",
-      "taskId": "mnt1n66oq2xa1vds7g9",
-      "completedAt": "2026-04-10T18:40:53.053Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-04-10"
-    },
-    {
-      "id": "mnthy4is8ce083ou1u3",
-      "title": "COPD cytokine screen meeting",
-      "completedAt": "2026-04-10T22:55:16.842Z",
-      "completionNotes": "- Contact genoskin for scaleup\n- put together data for Mast\n- contact Russell about pair-end sequencing\n- finish dashboard updates with cell culture information\n",
-      "completionLinks": "",
-      "date": "2026-04-10"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mn96ur593n4wqfraywg",
-      "subtaskId": "mn96xgyf0c5om039im56",
-      "completedAt": "2026-04-10T22:57:15.926Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-04-10"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mn3vj631ght8zzcdd8g",
-      "subtaskId": "mnql7b5eo9kxkbz49or",
-      "completedAt": "2026-04-13T18:12:58.630Z",
-      "completionNotes": "",
-      "completionLinks": "https://gene.benchling.com/s/etr-awZ3sgKdwULVehCzSgbZ?m=slm-6XmMq5Wkb3OYsDmyO2Le",
-      "date": "2026-04-13"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mntcf009zrhd24a2cu",
-      "completedAt": "2026-04-13T22:20:21.291Z",
-      "completionNotes": "performed BLADE-R with monocytes and got poor performance with heavily degraded RNA across all samples.  Possible culprits include old wash + bead buffers and dead volume carryover, \n\nGoing to make fresh tomorrow and try again.",
-      "completionLinks": "",
-      "date": "2026-04-13"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mnt0xv1jbkcrr9f6yvp",
-      "completedAt": "2026-04-13T23:05:09.038Z",
-      "completionNotes": "purchased \n- GTC\n- LiCl\n- PEG8000\n\nlarge quantities of each\n",
-      "completionLinks": "",
-      "date": "2026-04-13"
-    },
     {
       "id": "mnqqp0us5z8vzjnlori",
       "title": "Luminex submission",
@@ -8026,9 +7905,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-09"
+    },
+    {
+      "id": "mr9dt73rwuva0t74dq",
+      "title": "Complete and submit monocytes + neutrophils + CD4s + GapFill to NGS",
+      "completedAt": "2026-07-13T16:09:59.347Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-09"
     }
   ],
-  "lastUpdated": "2026-07-09T21:19:02.957Z",
+  "lastUpdated": "2026-07-13T16:09:59.347Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8186,28 +8073,6 @@
     ]
   },
   "dailySummaries": {
-    "2026-04-10": {
-      "summary": "**Daily Summary - Friday, April 10, 2026**\n\nMade solid progress across multiple screening projects today, with a particularly productive COPD cytokine screen meeting that clarified next steps. The day involved significant data handling work, though Orchestra proved more challenging to navigate than anticipated. Several follow-up actions were identified that will need attention moving forward.\n\n**Main Accomplishments:**\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Created cell thaw protocol and culture timeline for Cytokine Screen\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Successfully loaded GPR35 KO images into Orchestra for Macrophage Screen analysis\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Participated in COPD cytokine screen meeting and captured action items\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Compiled data package for Mast cell project\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Contacted Russell regarding pair-end sequencing requirements\nÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Completed dashboard updates incorporating cell culture information\n\n**Carry Forward:**\nNeed to transfer GPR35 KO images from Orchestra to Spring for final analysis. Must restock BLADE-R materials and follow up on meeting action items: contact Genoskin for scale-up discussions and continue BLADE-R progress work.",
-      "reflections": {
-        "accomplishments": "Loaded GPR35 KO images into Orchestra but still need to get images into Spring for final analysis",
-        "effort": "Orchestra.  Its very dense to use.",
-        "learned": "COPD cytokine screen meeting at the end of the day was very productive.  I need to assemble the mast cell data, contact genoskin about scale up, contact russell about pair-end SMARTseq, keep progress with BLADE-R and \"fill in the gaps\"",
-        "carryForward": "can't skip restocking BLADE-R materials."
-      },
-      "generatedAt": "2026-04-10T23:32:05.786Z",
-      "editedAt": "2026-04-10T23:32:05.786Z"
-    },
-    "2026-04-13": {
-      "summary": "**Monday, April 13, 2026 - Daily Summary**\n\nFocused on advancing the SMARTSeq TechDev project with automated RNA extraction, though encountered technical challenges that provided valuable troubleshooting insights. Also made progress on the Natural Killer Cell CRISPR Screen protocol development and restocked critical reagents.\n\n**Main Accomplishments:**\nÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Completed first automated BLADE-R RNA extraction with monocytes, identifying issues with degraded RNA likely due to old buffers and dead volume carryover\nÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Created and distributed protocol for Natural Killer Cell CRISPR Screen to Mayra and Dan\nÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ Restocked essential reagents: GTC, LiCl, and PEG8000 in large quantities\n\n**Carry Forward:**\nBLADE-R automation requires focused protocol refinement, particularly establishing fresh reagent preparation standards for each use. Mayra will provide cells for the killing assay based on her feedback.",
-      "reflections": {
-        "accomplishments": "Running the BLADE-R in monocytes with the full automation set up. The results were bad but probably needed to get once bad one out of the way.",
-        "effort": "Setting up the automation for BLADE-R is time consuming and requires some focus.  This needs to be improved before production.",
-        "learned": "Mayra had some useful feedback on the killing assay. She will provide cells. \n\nAutomated BLADE-R  may require a set protocol of remaking all reagents fresh for each use. This will make it a more demanding protocol but obviously getting good RNA is a top priority. Need to dial this in.",
-        "carryForward": "BLADE-R needs a focused rigorous protocol."
-      },
-      "generatedAt": "2026-04-13T23:32:34.620Z",
-      "editedAt": "2026-04-13T23:32:34.620Z"
-    },
     "2026-04-14": {
       "summary": "**Tuesday, April 14, 2026 Daily Summary**\n\nA slower preparation day focused on setting up for upcoming experiments later in the week. The main activities involved preparing cell culture media for Friday's cell thaw and making fresh reagents for tomorrow's BLADE-R work, plus submitting luminex samples for analysis.\n\n**Main Accomplishments:**\nÃ¢ÂÂ¢ Completed Luminex submission - samples delivered with data expected tomorrow\nÃ¢ÂÂ¢ Prepared media for Friday's cytokine screen cell thaw (assembled Lonza bullet kits for EGM 2 endothelial, EGM 2 microvascular, smGM-2, and BEGM)\nÃ¢ÂÂ¢ Made new SMARTSeq reagents (Lysis buffer, Wash 1, and Wash 2) for tomorrow's work\n\n**Carry Forward:**\nNeed to allocate time to prepare SMARTseq reagents for the Fill-in-the-gaps screen scheduled for the week after next.",
       "reflections": {
@@ -8408,12 +8273,6 @@
     }
   },
   "weeklySummaries": {
-    "2026-04-12": {
-      "summary": "**Week of April 11-17, 2026 - Weekly Summary**\n\n**Week Overview**\n\nThis week was characterized by intensive protocol troubleshooting and optimization work, particularly focused on automating the BLADE-R RNA extraction procedure for the SMARTSeq TechDev project. The week maintained a steady experimental pace with 16 completed tasks across multiple concurrent projects, including significant preparation work for upcoming cytokine screens and natural killer cell CRISPR experiments. Technical challenges with RNA quality consistency drove iterative improvements to automation protocols, while parallel work advanced reagent preparation, cell culture setup, and data analysis activities. The week concluded with successful protocol adjustments and cell preparations positioned for the following week's experiments.\n\n**Completed Work**\n\nSMARTSeq TechDev Project: Executed three automation pilots (pilots 3, 4, and 5) using BLADE-R with monocytes, progressively identifying and addressing issues with RNA degradation. Completed reagent restocking with large quantities of GTC, LiCl, and PEG8000. Made fresh reagents including lysis buffer, wash 1, and wash 2 solutions. Isolated monocytes and plated them for BLADE-R testing. Met with Corinne to adjust the automation protocol, implementing improvements to mixing and aspiration procedures. Successfully divided the protocol into two discrete steps with tip swap capability and reduced lysis time to 5 minutes.\n\nNatural Killer Cell CRISPR Screen: Created and distributed the experimental protocol to Mayra and Dan. Thawed approximately 500M NK cells and isolated around 25M viable cells, seeding them at slightly over 2M cells/mL in u-bottom well plates using cNK MACS media for nucleofection preparation.\n\nCytokine Screen Project: Submitted luminex samples and received data analysis results the following day. Analyzed treatment plate luminex data showing that BSA improvements were less pronounced than anticipated, with overview sent to Celine. Prepared media for all required cell types by assembling Lonza bullet kits for EGM 2 endothelial (HUVEC), EGM 2 microvascular (HMVEC), smGM-2 (SMCs), and BEGM (BEAS-2B). Successfully thawed all target cells, though HMVECs had not adhered by end of day.\n\nMacrophage Screen: Submitted primer orders and ran PCR analysis of results, achieving clean GPR35 PCR bands with minimal template that could potentially benefit other laboratory work.\n\nLaboratory Support Activities: Completed full sorter setup for Christine including sheath fluid bleeding procedures. Started NHLFs and IMR90s cell cultures for upcoming experimental work.\n\n**Recurring Themes & Patterns**\n\nThe dominant theme throughout the week was methodical troubleshooting of the BLADE-R automation protocol, with each pilot iteration building on lessons from previous attempts. Initial poor RNA quality attributed to old buffers and dead volume carryover led to systematic improvements including fresh reagent preparation, protocol segmentation, and enhanced mixing procedures. A pattern of proactive preparation emerged, with multiple days dedicated to media preparation, reagent restocking, and cell culture setup to enable smooth experimental execution later in the week. Cross-project coordination was evident in protocol sharing and collaborative troubleshooting sessions. The week demonstrated how technical challenges, rather than derailing progress, drove deeper protocol understanding and refinement.\n\n**Carry Forward**\n\nTest the updated BLADE-R automation protocol on Monday using monocytes, incorporating the mixing and aspiration improvements developed with Corinne. Continue focusing on enhanced mixing methods and dead volume removal to further optimize RNA quality results. Re-thaw NK cells next week due to poor viability observed in the current batch. Monitor HMVEC adherence status and adjust cell culture protocols if needed. Allocate time to prepare SMARTSeq reagents specifically for the Fill-in-the-gaps screen scheduled for the week after next. Follow up with Mayra on her feedback regarding the Natural Killer Cell CRISPR Screen protocol to coordinate cell provision for the killing assay.",
-      "weekStart": "2026-04-12",
-      "generatedAt": "2026-04-18T22:06:56.382Z",
-      "editedAt": "2026-04-18T22:06:56.382Z"
-    },
     "2026-04-19": {
       "summary": "**Week of April 18-24, 2026 Summary**\n\n**Week Overview**\n\nThis was an intensive and productive week with 16 completed tasks spanning multiple high-priority projects including SMARTSeq automation, Natural Killer Cell CRISPR screening, and cytokine screen preparations. The week built momentum from successful automation pilot runs early in the week to important leadership conversations and presentations by Friday. Despite some technical challenges with PCR work and protocol optimizations, significant progress was made across all active research streams, culminating in productive 1-on-1 meetings and a successful presentation to new VP Jimmie.\n\n**Completed Work**\n\nSMARTSeq TechDev Project:\n- Completed Monocyte automation Pilot 6 full run implementing new mixing and aspirating methodologies, including all associated subtasks: isolating monocytes, implementing changes into i7 protocol, running BLADE-R for monocytes, and analyzing RNA\n- Successfully achieved usable BLADE-R results for monocytes despite some data imperfections, marking significant progress in the automation development\n- Completed standalone RNA analysis tasks for monocyte samples\n\nNatural Killer Cell CRISPR Screen:\n- Completed repeat thaw for nucleofection, successfully obtaining approximately 10M NK cells\n- Performed nucleofection of NK cells with 2 CD96 nucleofections and 6 AAVS1 nucleofections, saving approximately 1M cells for control\n\nCell Culture and Sample Processing:\n- Processed incoming blood samples to isolate NK cells and froze approximately 700M PBMCs\n- Completed comprehensive cell passaging for gap-screen cytokine screen including NHLFs, HUVEC, and SMCs (with BEAS2Bs passaged the previous night and performing well)\n- Documented culture info for cytokine screen dashboard including cell catalog numbers, lot numbers, and media specifications\n\nPCR and Sequencing Work:\n- Completed repeat Tim PCR using low template input protocol\n- Finished final ReRun PCR for Tim with protocol optimization confirming less template needed than previously used\n- Attempted PCR cleanups and submission, though had to repeat PCRs due to lack of amplicons\n\nProcurement and Administrative:\n- Ordered new BCL2 primers (5 new primer pairs)\n- Prepared and delivered lab presentation\n- Completed work on lab presentation materials\n\nLeadership and Strategic Meetings:\n- Conducted productive 1-on-1 with Celine focusing on taking initiative, seeking publications, advocating for projects, and engaging stakeholders\n- Completed 1-on-1 with ZT discussing projects with purpose and direction, demanding answers from collaborators, and seeking impact\n- Presented at lab meeting to new VP Jimmie in what was described as a successful but nerve-wracking presentation\n\n**Recurring Themes & Patterns**\n\nTechnical optimization and protocol refinement emerged as a consistent thread throughout the week, from implementing new methodologies in monocyte automation to optimizing PCR template concentrations. The week showed strong momentum building in automation capabilities, with successful BLADE-R results representing a breakthrough despite ongoing challenges with tip changes and scaling requirements. Leadership development and strategic thinking became increasingly prominent as the week progressed, with explicit focus on taking initiative and seeking impactful research directions. Cell culture management required consistent attention across multiple projects, with careful timeline coordination for various cell lines and passage schedules. PCR work presented ongoing technical challenges requiring multiple iterations and protocol adjustments.\n\n**Carry Forward**\n\nTechnical development priorities include implementing tip changes after wash1 and wash2 in BLADE-R protocol requiring sophisticated automation development, and scaling up to full automation for 3 plates simultaneously while maintaining current protocol improvements. Cell culture tasks include planning passaging for BEAS2Bs and IMR90s by the following Friday, and completing thaw and isolation work scheduled for Monday. Laboratory logistics require finishing PCR cleanups and submitting samples to sequencing on Monday following the repeat PCR work. Strategic follow-up includes advocating responsibly for the cytokine screen given enthusiasm from leadership (Celine, Jimmie, and ZT), and assessing whether NK nucleofection needs repeating based on upcoming results. Learning priorities include gaining proficiency with 10x Flex v2 protocols for the pTox sequencing project.",
       "weekStart": "2026-04-19",
