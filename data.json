@@ -2455,6 +2455,15 @@
           "completedAt": "2026-06-05T20:25:24.711Z",
           "completionNotes": "Cell manufacturing will send us list of potential donors.  Targeting pilots for early July. ",
           "completionLinks": ""
+        },
+        {
+          "id": "mrjt9r0bj672rjm1058",
+          "title": "Pilot killing assay with GNE cell therapy product",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-07-13T22:45:54.300Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -8044,7 +8053,7 @@
       "date": "2026-07-13"
     }
   ],
-  "lastUpdated": "2026-07-13T22:45:11.099Z",
+  "lastUpdated": "2026-07-13T22:45:54.300Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
