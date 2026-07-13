@@ -5145,9 +5145,12 @@
         "title": "iMG screening discussion w/ Qiao + Jenny + Sylvia",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-06T15:31:20.392Z",
-        "time": "16:00"
+        "time": "16:00",
+        "completedAt": "2026-07-13T16:10:05.367Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mrbbb05dnsedmnhnh2",
@@ -7913,9 +7916,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-09"
+    },
+    {
+      "id": "mr9dnxl4aeuqn29poah",
+      "title": "iMG screening discussion w/ Qiao + Jenny + Sylvia",
+      "completedAt": "2026-07-13T16:10:05.367Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-09"
     }
   ],
-  "lastUpdated": "2026-07-13T16:09:59.347Z",
+  "lastUpdated": "2026-07-13T16:10:05.367Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
