@@ -5310,17 +5310,6 @@
         "createdAt": "2026-07-13T22:44:50.782Z",
         "time": null
       }
-    ],
-    "2026-07-16": [
-      {
-        "id": "mrjt8pdhugclzjzbof",
-        "title": "Thaw NK cells for nucleofection",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-07-13T22:45:05.525Z",
-        "time": null
-      }
     ]
   },
   "scheduledItems": {
@@ -8055,7 +8044,7 @@
       "date": "2026-07-13"
     }
   ],
-  "lastUpdated": "2026-07-13T22:45:05.526Z",
+  "lastUpdated": "2026-07-13T22:45:11.099Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
