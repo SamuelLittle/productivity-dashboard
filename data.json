@@ -4288,8 +4288,11 @@
               "title": "Fixed Macrophage Pilots",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-07T23:59:54.774Z"
+              "completed": true,
+              "createdAt": "2026-07-07T23:59:54.774Z",
+              "completedAt": "2026-07-13T16:10:24.605Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -6431,7 +6434,10 @@
         "subtaskId": "mrbb9tauat1fpbnfvyf",
         "time": null,
         "scheduledAt": "2026-07-07T23:59:54.774Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-07-13T16:10:24.605Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-07-09": [
@@ -7956,9 +7962,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-10"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mrbb95ettw8a7w8gkjp",
+      "subtaskId": "mrbb9tauat1fpbnfvyf",
+      "completedAt": "2026-07-13T16:10:24.605Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-10"
     }
   ],
-  "lastUpdated": "2026-07-13T16:10:21.869Z",
+  "lastUpdated": "2026-07-13T16:10:24.605Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
