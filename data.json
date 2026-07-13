@@ -2503,6 +2503,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-07-13T22:48:09.384Z"
+            },
+            {
+              "id": "mrjtcyy70w7bx8ldlqd",
+              "title": "Killing assay readout",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-07-13T22:48:24.559Z"
             }
           ]
         }
@@ -6602,6 +6610,16 @@
         "scheduledAt": "2026-07-13T22:48:09.384Z",
         "completedOnDay": false
       }
+    ],
+    "2026-07-22": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mrjtcyy70w7bx8ldlqd",
+        "time": null,
+        "scheduledAt": "2026-07-13T22:48:24.559Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8142,7 +8160,7 @@
       "date": "2026-07-13"
     }
   ],
-  "lastUpdated": "2026-07-13T22:48:09.384Z",
+  "lastUpdated": "2026-07-13T22:48:24.559Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
