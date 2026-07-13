@@ -5283,9 +5283,12 @@
         "title": "Fridge Clean out",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-13T22:44:24.018Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-13T22:44:29.427Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -8011,9 +8014,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-13"
+    },
+    {
+      "id": "mrjt7tcirl2ffdous2s",
+      "title": "Fridge Clean out",
+      "completedAt": "2026-07-13T22:44:29.427Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-13"
     }
   ],
-  "lastUpdated": "2026-07-13T22:44:24.018Z",
+  "lastUpdated": "2026-07-13T22:44:29.427Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
