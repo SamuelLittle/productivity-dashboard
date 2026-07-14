@@ -4448,20 +4448,6 @@
     }
   ],
   "dailyLists": {
-    "2026-04-14": [
-      {
-        "id": "mnqqp0us5z8vzjnlori",
-        "title": "Luminex submission",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "completedAt": "2026-04-14T16:46:44.820Z",
-        "time": "10:00",
-        "createdAt": "2026-04-09T00:29:21.941Z",
-        "completionNotes": "luminex samples delivered. Expecting data back tomorrow. ",
-        "completionLinks": ""
-      }
-    ],
     "2026-04-16": [
       {
         "id": "mnxp3ia840x2v4nvvwu",
@@ -5367,9 +5353,12 @@
         "title": "Qiao 1-on-1",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-13T22:44:50.782Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-14T18:33:57.256Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mrjiohmzga1n4zvzg9u",
@@ -5518,30 +5507,6 @@
         "completedOnDay": true,
         "completedAt": "2026-04-30T18:52:31.617Z",
         "completionNotes": "Cells treated between 10 and 11 am. ",
-        "completionLinks": ""
-      }
-    ],
-    "2026-04-14": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mn96ur593n4wqfraywg",
-        "subtaskId": "mnz0eyd5kss9eijy2d",
-        "time": null,
-        "scheduledAt": "2026-04-14T19:23:37.721Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-14T22:12:42.590Z",
-        "completionNotes": "Made media for all cells for Friday's thaw",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mnywuk88jf98pxpt8k",
-        "subtaskId": "mnz6hylkm7hjz0e7c3",
-        "time": null,
-        "scheduledAt": "2026-04-14T22:16:15.098Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-14T23:11:52.100Z",
-        "completionNotes": "Remade Lysis buffer, Wash 1, and Wash 2. Placed at 4c, ready for tomorrow. ",
         "completionLinks": ""
       }
     ],
@@ -6656,41 +6621,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "id": "mnqqp0us5z8vzjnlori",
-      "title": "Luminex submission",
-      "completedAt": "2026-04-14T16:46:44.821Z",
-      "completionNotes": "luminex samples delivered. Expecting data back tomorrow. ",
-      "completionLinks": "",
-      "date": "2026-04-14"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mn97b0v2zsegyrhtwhh",
-      "subtaskId": null,
-      "title": "Full plate BLADE-R prep by hand",
-      "completedAt": "2026-04-14T17:43:20.187Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mn96ur593n4wqfraywg",
-      "subtaskId": "mnz0eyd5kss9eijy2d",
-      "completedAt": "2026-04-14T22:12:42.590Z",
-      "completionNotes": "Made media for all cells for Friday's thaw",
-      "completionLinks": "",
-      "date": "2026-04-14"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mnywuk88jf98pxpt8k",
-      "subtaskId": "mnz6hylkm7hjz0e7c3",
-      "completedAt": "2026-04-14T23:11:52.101Z",
-      "completionNotes": "Remade Lysis buffer, Wash 1, and Wash 2. Placed at 4c, ready for tomorrow. ",
-      "completionLinks": "",
-      "date": "2026-04-14"
-    },
     {
       "projectId": "mkltywpq0yriuhvt8wmb",
       "taskId": "mlqy3dwoui2qz3anm7t",
@@ -8199,9 +8129,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-13"
+    },
+    {
+      "id": "mrjt8dzy986p1xydgwk",
+      "title": "Qiao 1-on-1",
+      "completedAt": "2026-07-14T18:33:57.257Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-14"
     }
   ],
-  "lastUpdated": "2026-07-13T22:54:39.709Z",
+  "lastUpdated": "2026-07-14T18:33:57.257Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8359,17 +8297,6 @@
     ]
   },
   "dailySummaries": {
-    "2026-04-14": {
-      "summary": "**Tuesday, April 14, 2026 Daily Summary**\n\nA slower preparation day focused on setting up for upcoming experiments later in the week. The main activities involved preparing cell culture media for Friday's cell thaw and making fresh reagents for tomorrow's BLADE-R work, plus submitting luminex samples for analysis.\n\n**Main Accomplishments:**\nÃ¢ÂÂ¢ Completed Luminex submission - samples delivered with data expected tomorrow\nÃ¢ÂÂ¢ Prepared media for Friday's cytokine screen cell thaw (assembled Lonza bullet kits for EGM 2 endothelial, EGM 2 microvascular, smGM-2, and BEGM)\nÃ¢ÂÂ¢ Made new SMARTSeq reagents (Lysis buffer, Wash 1, and Wash 2) for tomorrow's work\n\n**Carry Forward:**\nNeed to allocate time to prepare SMARTseq reagents for the Fill-in-the-gaps screen scheduled for the week after next.",
-      "reflections": {
-        "accomplishments": "Slow day.  Made medias for Friday's cell thaw. Made buffers for tomorrow's BLADE-R. Submitted the luminex for treatment plate analysis",
-        "effort": "Making medias took nearly an hour to assemble the lonza bullet kits.",
-        "learned": "Nothing major today.  Mostly setting the stage for more valuable experiments later in the week.",
-        "carryForward": "Need to set some time aside and put together SMARTseq reagents for Fill-in-the-gaps screen to come week after next."
-      },
-      "generatedAt": "2026-04-14T23:14:30.408Z",
-      "editedAt": "2026-04-14T23:14:30.408Z"
-    },
     "2026-04-15": {
       "summary": "**Wednesday, April 15, 2026**\n\nToday focused on data analysis for the cytokine screen and troubleshooting the BLADE-R automation protocol with monocytes. While the cytokine analysis showed BSA improvements weren't as strong as hoped, the editing efficiency results from amplicon PCR provided valuable insights for the macrophage screen. BLADE-R automation continues to present challenges with inconsistent RNA quality.\n\n**Main Accomplishments:**\nâ¢ Completed luminex data analysis for cytokine screen treatment plates and sent overview to Celine\nâ¢ Executed BLADE-R automation pilot 4 with monocytes using fresh reagents\nâ¢ Isolated and plated monocytes for BLADE-R testing\nâ¢ Submitted primer orders for macrophage screen\nâ¢ Achieved clean GPR35 PCR bands with minimal template, potentially useful for Tim's PCRs\n\n**Carry Forward:**\nBLADE-R protocol needs refinement - will attempt pilot 5 tomorrow with modified approach: separating lysis and bead cleanup into discrete steps and using fresh tips from wash 1 onward. Have backup plate available for additional testing.",
       "reflections": {
