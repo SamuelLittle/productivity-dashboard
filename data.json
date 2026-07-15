@@ -5378,9 +5378,12 @@
         "title": "org dis convo w/ Justin + Qiao",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-13T22:53:16.521Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-15T18:13:38.406Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-07-16": [
@@ -5511,50 +5514,6 @@
         "completedAt": "2026-04-30T18:52:31.617Z",
         "completionNotes": "Cells treated between 10 and 11 am. ",
         "completionLinks": ""
-      }
-    ],
-    "2026-04-15": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mn96ur593n4wqfraywg",
-        "subtaskId": "mnz6hbhemnzsgdmpwgl",
-        "time": null,
-        "scheduledAt": "2026-04-14T22:13:25.730Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-16T00:37:47.040Z",
-        "completionNotes": "analysis back and overview sent to Celine.  BSA seems to improve degradation but not to the degree we were hoping. ",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mnywuk88jf98pxpt8k",
-        "subtaskId": "mnz6itiz1ntvxycfiyr",
-        "time": null,
-        "scheduledAt": "2026-04-14T22:14:35.771Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-16T00:41:04.843Z",
-        "completionNotes": "Poor RNA again.  Need to dial this procedure in.  Curious why it didn't work for DLD1s, then did work.  Now back to not working again.  For pilot 5 tomorrow I can try break lysis and bead clean up into two discreet steps and swap to fresh tips for wash 1 onwards. ",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mnywuk88jf98pxpt8k",
-        "subtaskId": "mnz6iajaz2nz31ixf6p",
-        "time": null,
-        "scheduledAt": "2026-04-14T22:16:25.167Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-16T00:37:58.066Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltywpq0yriuhvt8wmb",
-        "taskId": "mlqy3dwoui2qz3anm7t",
-        "subtaskId": "mo09ays396kj85t3ayn",
-        "time": null,
-        "scheduledAt": "2026-04-15T16:20:14.355Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-15T16:50:15.413Z"
       }
     ],
     "2026-05-01": [
@@ -6624,13 +6583,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltywpq0yriuhvt8wmb",
-      "taskId": "mlqy3dwoui2qz3anm7t",
-      "subtaskId": "mo09ays396kj85t3ayn",
-      "title": "submit primers for order",
-      "completedAt": "2026-04-15T16:50:15.413Z"
-    },
     {
       "projectId": "mkltv6xwvh4ltoqkes",
       "taskId": "mn96ur593n4wqfraywg",
@@ -8148,9 +8100,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-14"
+    },
+    {
+      "id": "mrjtj8899kgmamx5v0s",
+      "title": "org dis convo w/ Justin + Qiao",
+      "completedAt": "2026-07-15T18:13:38.407Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-14"
     }
   ],
-  "lastUpdated": "2026-07-14T20:51:11.832Z",
+  "lastUpdated": "2026-07-15T18:13:38.407Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8308,17 +8268,6 @@
     ]
   },
   "dailySummaries": {
-    "2026-04-15": {
-      "summary": "**Wednesday, April 15, 2026**\n\nToday focused on data analysis for the cytokine screen and troubleshooting the BLADE-R automation protocol with monocytes. While the cytokine analysis showed BSA improvements weren't as strong as hoped, the editing efficiency results from amplicon PCR provided valuable insights for the macrophage screen. BLADE-R automation continues to present challenges with inconsistent RNA quality.\n\n**Main Accomplishments:**\nâ¢ Completed luminex data analysis for cytokine screen treatment plates and sent overview to Celine\nâ¢ Executed BLADE-R automation pilot 4 with monocytes using fresh reagents\nâ¢ Isolated and plated monocytes for BLADE-R testing\nâ¢ Submitted primer orders for macrophage screen\nâ¢ Achieved clean GPR35 PCR bands with minimal template, potentially useful for Tim's PCRs\n\n**Carry Forward:**\nBLADE-R protocol needs refinement - will attempt pilot 5 tomorrow with modified approach: separating lysis and bead cleanup into discrete steps and using fresh tips from wash 1 onward. Have backup plate available for additional testing.",
-      "reflections": {
-        "accomplishments": "Getting the editing efficiancy via amplicon PCR for the macrophage screen was valuable",
-        "effort": "Setting up the PCR and getting all the gDNA concentrations.  Isolating monocytes for the BLADE-R pilots",
-        "learned": "The bands for the GPR35 PCR were super clean and I was using very very little template.  Maybe this is the path for the PCRs for Tim.  Worth checking.",
-        "carryForward": "Continued frustration for BLADE-R with monocytes.  I have an extra plate to try again tomorrow implementing fresh tips after W1 and breaking lysis and BLADE-R into two different steps"
-      },
-      "generatedAt": "2026-04-16T00:47:39.714Z",
-      "editedAt": "2026-04-16T00:47:39.714Z"
-    },
     "2026-04-16": {
       "summary": "**Thursday, April 16, 2026 - Daily Summary**\n\nFocused day on advancing multiple ongoing projects with steady progress across cell preparation, automation development, and lab setup tasks. Made meaningful improvements to the BLADE-R automation protocol and successfully prepared cells for upcoming experiments.\n\n**Main Accomplishments:**\n• Completed Automation Pilot 5 for SMARTSeq TechDev - divided protocol into two parts with tip swap capability and reduced lysis time to 5 minutes, showing significant improvement for monocyte samples\n• Thawed and isolated NK cells for nucleofection - recovered ~25M viable cells from ~500M thawed, seeded in cNK MACS media for tomorrow's Natural Killer Cell CRISPR Screen\n• Set up sorter for Christine including full sheath fluid bleed\n• Ran PCR and analyzed results for Macrophage Screen\n• Started NHLFs and IMR90s cell culture preparation for upcoming work\n\n**Carry Forward:**\nContinue optimizing BLADE-R protocol focusing on improved mixing methods and dead volume removal to further enhance RNA quality results.",
       "reflections": {
