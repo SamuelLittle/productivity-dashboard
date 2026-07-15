@@ -1338,8 +1338,11 @@
               "title": "D1 QC",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-06-22T16:35:04.769Z"
+              "completed": true,
+              "createdAt": "2026-06-22T16:35:04.769Z",
+              "completedAt": "2026-07-15T18:15:27.796Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -8149,9 +8152,16 @@
       "subtaskId": "mn973r0fexd2jqy4iso",
       "title": "Submit to NGS",
       "completedAt": "2026-07-15T18:15:22.390Z"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhr7xbgjd9lgr32a",
+      "subtaskId": "mqpfrz5ss19c0rwmotl",
+      "title": "D1 QC",
+      "completedAt": "2026-07-15T18:15:27.796Z"
     }
   ],
-  "lastUpdated": "2026-07-15T18:15:22.390Z",
+  "lastUpdated": "2026-07-15T18:15:27.796Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
