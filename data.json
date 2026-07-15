@@ -1180,7 +1180,7 @@
           "title": "Monocytes Cytokine Screen",
           "description": "Repeat of monocyte cytokine screen implementing new high throughput RNA extraction methodology",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-06-01T20:53:13.576Z",
           "subtasks": [
             {
@@ -1190,7 +1190,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-01T20:54:03.331Z",
-              "completedAt": "2026-06-03T02:54:22.288Z",
+              "completedAt": "2026-07-15T18:15:58.226Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1201,7 +1201,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-01T20:54:23.305Z",
-              "completedAt": "2026-06-03T02:54:36.309Z",
+              "completedAt": "2026-07-15T18:15:58.226Z",
               "completionNotes": "Completed treatments at ~3pm",
               "completionLinks": ""
             },
@@ -1212,7 +1212,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-01T20:54:42.947Z",
-              "completedAt": "2026-06-03T02:55:00.145Z",
+              "completedAt": "2026-07-15T18:15:58.226Z",
               "completionNotes": "extracted RNA from plates 1-5 starting at 6pm",
               "completionLinks": ""
             },
@@ -1223,7 +1223,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-01T21:11:59.186Z",
-              "completedAt": "2026-06-05T20:24:22.369Z",
+              "completedAt": "2026-07-15T18:15:58.226Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1234,7 +1234,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-01T21:16:04.133Z",
-              "completedAt": "2026-06-05T20:22:25.721Z",
+              "completedAt": "2026-07-15T18:15:58.226Z",
               "completionNotes": "Completed D1 Processing. Validation and toubleshooting may be needed here, \n",
               "completionLinks": ""
             },
@@ -1245,7 +1245,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-01T21:16:21.290Z",
-              "completedAt": "2026-06-07T21:05:07.143Z",
+              "completedAt": "2026-07-15T18:15:58.226Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1256,11 +1256,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-01T21:16:45.380Z",
-              "completedAt": "2026-06-23T22:43:47.717Z",
+              "completedAt": "2026-07-15T18:15:58.226Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-07-15T18:15:58.226Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mpxhr7xbgjd9lgr32a",
@@ -8183,9 +8186,18 @@
       "completedAt": "2026-07-15T18:15:54.208Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpvor2egyd9fn0kywu9",
+      "subtaskId": null,
+      "title": "Monocytes Cytokine Screen",
+      "completedAt": "2026-07-15T18:15:58.226Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-07-15T18:15:54.208Z",
+  "lastUpdated": "2026-07-15T18:15:58.226Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
