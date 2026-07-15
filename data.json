@@ -1084,8 +1084,11 @@
               "title": "Submit to NGS",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-27T17:48:51.711Z"
+              "completed": true,
+              "createdAt": "2026-03-27T17:48:51.711Z",
+              "completedAt": "2026-07-15T18:15:22.390Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mnz0eyd5kss9eijy2d",
@@ -8139,9 +8142,16 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-14"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "mn973r0fexd2jqy4iso",
+      "title": "Submit to NGS",
+      "completedAt": "2026-07-15T18:15:22.390Z"
     }
   ],
-  "lastUpdated": "2026-07-15T18:15:10.363Z",
+  "lastUpdated": "2026-07-15T18:15:22.390Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
