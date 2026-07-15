@@ -1360,7 +1360,7 @@
           "title": "CD4 T cell Screen",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-06-03T03:13:29.840Z",
           "subtasks": [
             {
@@ -1370,7 +1370,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-03T03:19:29.841Z",
-              "completedAt": "2026-06-22T21:28:34.435Z",
+              "completedAt": "2026-07-15T18:16:02.517Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1381,7 +1381,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-04T00:39:05.207Z",
-              "completedAt": "2026-06-22T21:28:44.026Z",
+              "completedAt": "2026-07-15T18:16:02.517Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1392,7 +1392,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-04T00:39:39.551Z",
-              "completedAt": "2026-06-23T18:03:59.110Z",
+              "completedAt": "2026-07-15T18:16:02.517Z",
               "completionNotes": "24 hr treatment performed at 10:30am",
               "completionLinks": ""
             },
@@ -1403,7 +1403,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-04T00:39:58.886Z",
-              "completedAt": "2026-06-24T18:37:09.297Z",
+              "completedAt": "2026-07-15T18:16:02.517Z",
               "completionNotes": "treatment complete at 9am\n",
               "completionLinks": ""
             },
@@ -1414,7 +1414,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-04T00:40:27.589Z",
-              "completedAt": "2026-06-25T15:53:29.707Z",
+              "completedAt": "2026-07-15T18:16:02.517Z",
               "completionNotes": "Got derailed by i7 mechanical issues.  Samples are lysed on beads and in wash buffer 1.  Need to get timeline to i7 repair before deciding how to continue. ",
               "completionLinks": ""
             },
@@ -1425,7 +1425,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-20T00:54:21.650Z",
-              "completedAt": "2026-07-06T23:56:33.863Z",
+              "completedAt": "2026-07-15T18:16:02.517Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1436,7 +1436,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-20T00:59:47.460Z",
-              "completedAt": "2026-07-03T04:50:45.330Z",
+              "completedAt": "2026-07-15T18:16:02.517Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1447,11 +1447,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-30T23:02:49.267Z",
-              "completedAt": "2026-07-01T21:40:24.338Z",
+              "completedAt": "2026-07-15T18:16:02.517Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-07-15T18:16:02.517Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [
@@ -8195,9 +8198,18 @@
       "completedAt": "2026-07-15T18:15:58.226Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": null,
+      "title": "CD4 T cell Screen",
+      "completedAt": "2026-07-15T18:16:02.517Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-07-15T18:15:58.226Z",
+  "lastUpdated": "2026-07-15T18:16:02.517Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
