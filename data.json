@@ -977,7 +977,7 @@
           "title": "Fill-in-the-Gaps-Screen",
           "description": "Follow up screen looking at IFNg/IL18/TNFa in HUVEC, HMVEC, SMC, IMR90, NHLFs and BEAS-2B\n\nAlso looking at IL36abg + IFNa",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-27T17:41:51.981Z",
           "subtasks": [
             {
@@ -987,7 +987,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-27T17:42:24.245Z",
-              "completedAt": "2026-04-01T20:11:08.555Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -998,7 +998,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-27T17:42:54.238Z",
-              "completedAt": "2026-04-07T23:17:57.705Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "14 treatment plates containing 12ul of 20x cytokines made for each plate type and placed in labelled bags at -80\n",
               "completionLinks": ""
             },
@@ -1009,7 +1009,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-27T17:43:30.935Z",
-              "completedAt": "2026-04-03T00:36:57.215Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "submitted request",
               "completionLinks": ""
             },
@@ -1020,7 +1020,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-27T17:43:58.743Z",
-              "completedAt": "2026-04-10T22:57:15.926Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1031,7 +1031,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-27T17:45:33.464Z",
-              "completedAt": "2026-04-17T23:24:41.034Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "All cells thawed and in 37c.  Looked before I left for the day and HMVECs werent adhered yet.  Might still be premature. ",
               "completionLinks": ""
             },
@@ -1042,7 +1042,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-27T17:46:24.330Z",
-              "completedAt": "2026-04-30T18:49:16.267Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1053,7 +1053,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-27T17:46:56.038Z",
-              "completedAt": "2026-04-30T18:52:31.617Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "Cells treated between 10 and 11 am. ",
               "completionLinks": ""
             },
@@ -1064,7 +1064,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-27T17:47:29.833Z",
-              "completedAt": "2026-05-04T15:23:19.632Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "Completed 3 hr treatments and full SS D1 takedowns. QC monday. \n",
               "completionLinks": ""
             },
@@ -1075,7 +1075,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-27T17:48:22.748Z",
-              "completedAt": "2026-05-06T00:15:19.863Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "completed QC and finished tag + indexing.  D2 QC tomorrow mornign\n",
               "completionLinks": ""
             },
@@ -1086,7 +1086,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-27T17:48:51.711Z",
-              "completedAt": "2026-07-15T18:15:22.390Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1097,7 +1097,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-14T19:23:37.721Z",
-              "completedAt": "2026-04-14T22:12:42.590Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "Made media for all cells for Friday's thaw",
               "completionLinks": ""
             },
@@ -1108,7 +1108,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-14T22:13:25.730Z",
-              "completedAt": "2026-04-16T00:37:47.041Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "analysis back and overview sent to Celine.  BSA seems to improve degradation but not to the degree we were hoping. ",
               "completionLinks": ""
             },
@@ -1119,7 +1119,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-22T01:57:34.652Z",
-              "completedAt": "2026-04-22T22:51:22.171Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "Passaged NHLFs, HUVEC, and SMCs.  BEAS2Bs passaged last nigth and are fine. Will need to be passaged either tomorrow or friday.  HMVECs are coming along and will likely have the culture take hold in time for next tuesday.  New vial of IMR90s look good.  Will passage tomorrow or Friday",
               "completionLinks": ""
             },
@@ -1132,7 +1132,7 @@
               "createdAt": "2026-04-22T23:44:56.244Z",
               "notes": "Make treatment plates",
               "links": "",
-              "completedAt": "2026-05-04T15:23:24.865Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1143,7 +1143,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-04T21:55:59.632Z",
-              "completedAt": "2026-05-06T00:15:47.101Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "Started generating metadata but need to complete submission tomorrow. ",
               "completionLinks": ""
             },
@@ -1154,11 +1154,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-04T21:56:13.344Z",
-              "completedAt": "2026-05-05T16:55:17.217Z",
+              "completedAt": "2026-07-15T18:15:34.857Z",
               "completionNotes": "confirmed high quality cDNA from all 6 cell types - DLD1",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-07-15T18:15:34.857Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mnyv06u2qy3fd3cl2b",
@@ -8159,9 +8162,18 @@
       "subtaskId": "mqpfrz5ss19c0rwmotl",
       "title": "D1 QC",
       "completedAt": "2026-07-15T18:15:27.796Z"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": null,
+      "title": "Fill-in-the-Gaps-Screen",
+      "completedAt": "2026-07-15T18:15:34.857Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-07-15T18:15:27.796Z",
+  "lastUpdated": "2026-07-15T18:15:34.857Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
