@@ -1267,7 +1267,7 @@
           "title": "Neutrophil Screen",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-06-03T03:12:55.776Z",
           "subtasks": [
             {
@@ -1277,7 +1277,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-03T03:17:09.799Z",
-              "completedAt": "2026-06-10T21:44:56.073Z",
+              "completedAt": "2026-07-15T18:15:54.208Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1288,7 +1288,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-04T00:37:47.311Z",
-              "completedAt": "2026-06-10T21:45:03.567Z",
+              "completedAt": "2026-07-15T18:15:54.208Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1299,7 +1299,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-04T00:38:05.482Z",
-              "completedAt": "2026-06-16T18:39:45.224Z",
+              "completedAt": "2026-07-15T18:15:54.208Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1310,7 +1310,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-07T23:23:53.163Z",
-              "completedAt": "2026-06-16T18:39:48.583Z",
+              "completedAt": "2026-07-15T18:15:54.208Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1321,7 +1321,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-07T23:36:48.909Z",
-              "completedAt": "2026-06-19T23:14:23.626Z",
+              "completedAt": "2026-07-15T18:15:54.208Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1332,7 +1332,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-20T00:52:20.618Z",
-              "completedAt": "2026-06-23T22:43:52.439Z",
+              "completedAt": "2026-07-15T18:15:54.208Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1343,11 +1343,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-22T16:35:04.769Z",
-              "completedAt": "2026-07-15T18:15:27.796Z",
+              "completedAt": "2026-07-15T18:15:54.208Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-07-15T18:15:54.208Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mpxhry7jezeridb1ny7",
@@ -8171,9 +8174,18 @@
       "completedAt": "2026-07-15T18:15:34.857Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhr7xbgjd9lgr32a",
+      "subtaskId": null,
+      "title": "Neutrophil Screen",
+      "completedAt": "2026-07-15T18:15:54.208Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-07-15T18:15:34.857Z",
+  "lastUpdated": "2026-07-15T18:15:54.208Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
