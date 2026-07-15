@@ -5411,10 +5411,12 @@
         "title": "NK screen pilot full plan",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-07-15T22:52:46.128Z",
         "time": null,
-        "createdAt": "2026-07-13T17:49:26.219Z"
+        "createdAt": "2026-07-13T17:49:26.219Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mrmeg350s8t1uinna28",
@@ -8218,9 +8220,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-15"
+    },
+    {
+      "id": "mrjiohmzga1n4zvzg9u",
+      "title": "NK screen pilot full plan",
+      "completedAt": "2026-07-15T22:52:46.129Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-15"
     }
   ],
-  "lastUpdated": "2026-07-15T18:32:06.118Z",
+  "lastUpdated": "2026-07-15T22:52:46.129Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
