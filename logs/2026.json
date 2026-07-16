@@ -21,6 +21,17 @@
       },
       "generatedAt": "2026-04-13T23:32:34.620Z",
       "editedAt": "2026-04-13T23:32:34.620Z"
+    },
+    "2026-04-16": {
+      "summary": "**Thursday, April 16, 2026 - Daily Summary**\n\nFocused day on advancing multiple ongoing projects with steady progress across cell preparation, automation development, and lab setup tasks. Made meaningful improvements to the BLADE-R automation protocol and successfully prepared cells for upcoming experiments.\n\n**Main Accomplishments:**\n• Completed Automation Pilot 5 for SMARTSeq TechDev - divided protocol into two parts with tip swap capability and reduced lysis time to 5 minutes, showing significant improvement for monocyte samples\n• Thawed and isolated NK cells for nucleofection - recovered ~25M viable cells from ~500M thawed, seeded in cNK MACS media for tomorrow's Natural Killer Cell CRISPR Screen\n• Set up sorter for Christine including full sheath fluid bleed\n• Ran PCR and analyzed results for Macrophage Screen\n• Started NHLFs and IMR90s cell culture preparation for upcoming work\n\n**Carry Forward:**\nContinue optimizing BLADE-R protocol focusing on improved mixing methods and dead volume removal to further enhance RNA quality results.",
+      "reflections": {
+        "accomplishments": "Nothing major today but several small important things:\n1. Ran pilot 5 for BLADE-R, got some good insights on whats needed to get good qualit RNA.  Definitely a step forward. \n2. Thawed NK cells for tomorrows nucleofection. Got a lot of cells (~25M) should be enough for what is needed\n3. Got a jump start on tomorrow's cell thawing with NHLFs and IMR90s in culture.  A little nervous because they have been at -80 for nearly a year. \n4. Set up sorter for Christine",
+        "effort": "Sorter set up needed a full sheath fluid bleed which took some time.  Isolated NK cells as always takes time.",
+        "learned": "Swapping tips after lysis and shorter lysis time seemed to help for BLADE-R but still doesn't totally make sense because the hand scale experiments I did a 15 min lysis and things were fine.  I think more thorough mixing and better dv removal is needed.",
+        "carryForward": "BLADE-R fixes."
+      },
+      "generatedAt": "2026-04-16T23:10:39.271Z",
+      "editedAt": "2026-04-16T23:10:39.271Z"
     }
   },
   "dailyNotes": {
@@ -805,6 +816,20 @@
         "time": null,
         "completedAt": "2026-04-10T22:55:16.842Z",
         "completionNotes": "- Contact genoskin for scaleup\n- put together data for Mast\n- contact Russell about pair-end sequencing\n- finish dashboard updates with cell culture information\n",
+        "completionLinks": ""
+      }
+    ],
+    "2026-04-16": [
+      {
+        "id": "mnxp3ia840x2v4nvvwu",
+        "title": "Sorter setup for Christine",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "completedAt": "2026-04-16T19:48:24.494Z",
+        "time": "10:00",
+        "createdAt": "2026-04-13T21:19:01.713Z",
+        "completionNotes": "",
         "completionLinks": ""
       }
     ]
@@ -2986,6 +3011,38 @@
         "completedOnDay": true,
         "completedAt": "2026-04-13T23:05:09.038Z",
         "completionNotes": "purchased \n- GTC\n- LiCl\n- PEG8000\n\nlarge quantities of each\n",
+        "completionLinks": ""
+      }
+    ],
+    "2026-04-16": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mn3vj631ght8zzcdd8g",
+        "subtaskId": "mnql4eqw68afig7ys2",
+        "time": null,
+        "scheduledAt": "2026-04-08T22:00:29.795Z",
+        "completedOnDay": true,
+        "completedAt": "2026-04-16T23:05:40.452Z",
+        "completionNotes": "Thawed ~500M NK cells and isolated ~25M NK cells.  Seeded at a little over 2M cells/mL in u bottom well plate in cNK MACS media.",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltywpq0yriuhvt8wmb",
+        "taskId": "mlqy3dwoui2qz3anm7t",
+        "subtaskId": "mo0r9swf6ehbu54xoqt",
+        "time": null,
+        "scheduledAt": "2026-04-16T00:44:41.108Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mmfjn4b1w85dvswipdk",
+        "taskId": "mnywuk88jf98pxpt8k",
+        "subtaskId": "mo1mduz4qct1rdbkbih",
+        "time": null,
+        "scheduledAt": "2026-04-16T15:14:10.577Z",
+        "completedOnDay": true,
+        "completedAt": "2026-04-16T20:51:36.780Z",
+        "completionNotes": "Divided the protocol into two parts 1. lysis -> wash 1, and 2. Wash 1 -> completion. Allowed for tip swap after wash 1 also created additional space on i7 bed for protocol expansion.\n\nReduced lysis time to 5 minutes.  Protocol changes did seem to lead to a significant improvement for monocyte samples.  DLD1 samples still look very good meaning the overall procedure is still working. \n\nI think improvements can be made in the mixing protocol and in removal of dead volume. ",
         "completionLinks": ""
       }
     ]
@@ -5445,6 +5502,68 @@
       "completionNotes": "purchased \n- GTC\n- LiCl\n- PEG8000\n\nlarge quantities of each\n",
       "completionLinks": "",
       "date": "2026-04-13"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "mnz6hbhemnzsgdmpwgl",
+      "completedAt": "2026-04-16T00:37:47.041Z",
+      "completionNotes": "analysis back and overview sent to Celine.  BSA seems to improve degradation but not to the degree we were hoping. ",
+      "completionLinks": "",
+      "date": "2026-04-15"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mnywuk88jf98pxpt8k",
+      "subtaskId": "mnz6iajaz2nz31ixf6p",
+      "completedAt": "2026-04-16T00:37:58.066Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-15"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mnywuk88jf98pxpt8k",
+      "subtaskId": "mnz6itiz1ntvxycfiyr",
+      "completedAt": "2026-04-16T00:41:04.843Z",
+      "completionNotes": "Poor RNA again.  Need to dial this procedure in.  Curious why it didn't work for DLD1s, then did work.  Now back to not working again.  For pilot 5 tomorrow I can try break lysis and bead clean up into two discreet steps and swap to fresh tips for wash 1 onwards. ",
+      "completionLinks": "",
+      "date": "2026-04-15"
+    },
+    {
+      "projectId": "mkltywpq0yriuhvt8wmb",
+      "taskId": "mlqy3dwoui2qz3anm7t",
+      "subtaskId": "mo0r9swf6ehbu54xoqt",
+      "completedAt": "2026-04-16T00:43:48.806Z",
+      "completionNotes": "PCR run and clear editing visualized for GPR35 edited using dharmacon guides. ",
+      "completionLinks": "https://docs.google.com/presentation/d/1WMeJd1sRPVClQ2tgxTADm3skdbfHUdZp4urQ1Se2IeA/edit?slide=id.g3d685553849_0_19#slide=id.g3d685553849_0_19",
+      "date": "2026-04-15"
+    },
+    {
+      "id": "mnxp3ia840x2v4nvvwu",
+      "title": "Sorter setup for Christine",
+      "completedAt": "2026-04-16T19:48:24.495Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-16"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mnywuk88jf98pxpt8k",
+      "subtaskId": "mo1mduz4qct1rdbkbih",
+      "completedAt": "2026-04-16T20:51:36.780Z",
+      "completionNotes": "Divided the protocol into two parts 1. lysis -> wash 1, and 2. Wash 1 -> completion. Allowed for tip swap after wash 1 also created additional space on i7 bed for protocol expansion.\n\nReduced lysis time to 5 minutes.  Protocol changes did seem to lead to a significant improvement for monocyte samples.  DLD1 samples still look very good meaning the overall procedure is still working. \n\nI think improvements can be made in the mixing protocol and in removal of dead volume. ",
+      "completionLinks": "",
+      "date": "2026-04-16"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mnql4eqw68afig7ys2",
+      "completedAt": "2026-04-16T23:05:40.452Z",
+      "completionNotes": "Thawed ~500M NK cells and isolated ~25M NK cells.  Seeded at a little over 2M cells/mL in u bottom well plate in cNK MACS media.",
+      "completionLinks": "",
+      "date": "2026-04-16"
     }
   ]
 }
