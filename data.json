@@ -4467,7 +4467,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-07-16T17:10:40.061Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mrnrn6harl426g3dsyn",
+              "title": "6 Plate Dis OP",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-07-16T17:11:26.350Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -6600,6 +6609,16 @@
         "scheduledAt": "2026-07-16T17:07:45.467Z",
         "completedOnDay": false
       }
+    ],
+    "2026-07-22": [
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mrnrm6rednng6vjynhu",
+        "subtaskId": "mrnrn6harl426g3dsyn",
+        "time": null,
+        "scheduledAt": "2026-07-16T17:11:26.350Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8142,7 +8161,7 @@
       "date": "2026-07-15"
     }
   ],
-  "lastUpdated": "2026-07-16T17:10:40.061Z",
+  "lastUpdated": "2026-07-16T17:11:26.350Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
