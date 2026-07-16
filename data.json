@@ -5465,9 +5465,12 @@
         "title": "CTG onboard with Corinne",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-16T22:24:10.321Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-16T22:38:13.840Z",
+        "completionNotes": "Added notes to Corinne's slides for clarity\n",
+        "completionLinks": ""
       },
       {
         "id": "mro2tt2u1pzfgzcdzs5",
@@ -8198,9 +8201,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-15"
+    },
+    {
+      "id": "mro2tcuogpzkiigverb",
+      "title": "CTG onboard with Corinne",
+      "completedAt": "2026-07-16T22:38:13.841Z",
+      "completionNotes": "Added notes to Corinne's slides for clarity\n",
+      "completionLinks": "",
+      "date": "2026-07-16"
     }
   ],
-  "lastUpdated": "2026-07-16T22:25:23.021Z",
+  "lastUpdated": "2026-07-16T22:38:13.841Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
