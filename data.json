@@ -5475,15 +5475,6 @@
         "completed": false,
         "createdAt": "2026-07-17T18:00:15.044Z",
         "time": null
-      },
-      {
-        "id": "mrp8ub3750yirctr0xq",
-        "title": "Make bravo protocols for org diss. ",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-07-17T18:00:38.563Z",
-        "time": null
       }
     ],
     "2026-07-16": [
@@ -8222,7 +8213,7 @@
       "date": "2026-07-16"
     }
   ],
-  "lastUpdated": "2026-07-17T18:00:38.563Z",
+  "lastUpdated": "2026-07-17T18:00:45.293Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
