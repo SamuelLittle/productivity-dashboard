@@ -5473,6 +5473,16 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-07-13T22:54:39.709Z"
+      },
+      {
+        "id": "mrp8tsxwe5ajrh28l1c",
+        "title": "iAst 1-on-1 with Michelle",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": "14:30",
+        "createdAt": "2026-07-17T18:00:15.044Z"
       }
     ],
     "2026-07-16": [
@@ -5523,18 +5533,6 @@
         "completedAt": "2026-07-17T17:57:21.148Z",
         "completionNotes": "",
         "completionLinks": ""
-      }
-    ],
-    "2026-07-18": [
-      {
-        "id": "mrp8tsxwe5ajrh28l1c",
-        "title": "iAst 1-on-1 with Michelle",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": "14:30",
-        "createdAt": "2026-07-17T18:00:15.044Z"
       }
     ]
   },
@@ -6667,14 +6665,6 @@
     ],
     "2026-07-17": [
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-07-16T22:23:59.338Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mpyqnvm6p9zp4xlp64m",
         "taskId": "mrnrm6rednng6vjynhu",
         "subtaskId": "mrp8uyi52uxr9g8xwtd",
@@ -6688,6 +6678,14 @@
         "subtaskId": "mrp8vbmo6b833bkffh",
         "time": null,
         "scheduledAt": "2026-07-17T18:01:25.921Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-07-17T18:01:51.565Z",
         "completedOnDay": false
       }
     ]
@@ -8239,7 +8237,7 @@
       "date": "2026-07-16"
     }
   ],
-  "lastUpdated": "2026-07-17T18:01:42.188Z",
+  "lastUpdated": "2026-07-17T18:01:51.611Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
