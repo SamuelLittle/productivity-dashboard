@@ -4481,8 +4481,11 @@
               "title": "org disc. meeting",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-17T18:01:08.909Z"
+              "completed": true,
+              "createdAt": "2026-07-17T18:01:08.909Z",
+              "completedAt": "2026-07-17T22:46:29.392Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mrp8vbmo6b833bkffh",
@@ -6674,7 +6677,10 @@
         "subtaskId": "mrp8uyi52uxr9g8xwtd",
         "time": "15:00",
         "scheduledAt": "2026-07-17T18:01:08.909Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-07-17T22:46:29.390Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mpyqnvm6p9zp4xlp64m",
@@ -8247,9 +8253,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-17"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mrnrm6rednng6vjynhu",
+      "subtaskId": "mrp8uyi52uxr9g8xwtd",
+      "completedAt": "2026-07-17T22:46:29.392Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-17"
     }
   ],
-  "lastUpdated": "2026-07-17T22:46:25.871Z",
+  "lastUpdated": "2026-07-17T22:46:29.392Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
