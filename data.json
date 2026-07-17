@@ -5465,16 +5465,6 @@
     ],
     "2026-07-17": [
       {
-        "id": "mrjtl0f1wvmc3ogg0nl",
-        "title": "troubleshoot CTG assay for normalization.",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-07-13T22:54:39.709Z"
-      },
-      {
         "id": "mrp8tsxwe5ajrh28l1c",
         "title": "iAst 1-on-1 with Michelle",
         "description": "",
@@ -5533,6 +5523,18 @@
         "completedAt": "2026-07-17T17:57:21.148Z",
         "completionNotes": "",
         "completionLinks": ""
+      }
+    ],
+    "2026-07-20": [
+      {
+        "id": "mrjtl0f1wvmc3ogg0nl",
+        "title": "troubleshoot CTG assay for normalization.",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-07-13T22:54:39.709Z"
       }
     ]
   },
@@ -8237,7 +8239,7 @@
       "date": "2026-07-16"
     }
   ],
-  "lastUpdated": "2026-07-17T18:01:51.611Z",
+  "lastUpdated": "2026-07-17T18:02:18.032Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
