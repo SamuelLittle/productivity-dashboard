@@ -5489,9 +5489,12 @@
         "title": "iAstro + iMG pilot planning w/ Thomas and Jenny",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-16T22:25:04.276Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-17T17:57:18.163Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mro2uwy540nh3sf0y05",
@@ -8171,9 +8174,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-16"
+    },
+    {
+      "id": "mro2uihgg1zv13erwwg",
+      "title": "iAstro + iMG pilot planning w/ Thomas and Jenny",
+      "completedAt": "2026-07-17T17:57:18.163Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-16"
     }
   ],
-  "lastUpdated": "2026-07-17T17:57:14.203Z",
+  "lastUpdated": "2026-07-17T17:57:18.163Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
