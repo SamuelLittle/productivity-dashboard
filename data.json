@@ -4492,8 +4492,11 @@
               "title": "Bravo org dis protocol generation",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-17T18:01:25.920Z"
+              "completed": true,
+              "createdAt": "2026-07-17T18:01:25.920Z",
+              "completedAt": "2026-07-17T22:46:32.350Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -6688,7 +6691,10 @@
         "subtaskId": "mrp8vbmo6b833bkffh",
         "time": null,
         "scheduledAt": "2026-07-17T18:01:25.921Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-07-17T22:46:32.350Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -8262,9 +8268,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-17"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mrnrm6rednng6vjynhu",
+      "subtaskId": "mrp8vbmo6b833bkffh",
+      "completedAt": "2026-07-17T22:46:32.350Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-17"
     }
   ],
-  "lastUpdated": "2026-07-17T22:46:29.392Z",
+  "lastUpdated": "2026-07-17T22:46:32.350Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
