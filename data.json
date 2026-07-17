@@ -5477,9 +5477,12 @@
         "title": "Meeting for epithelial screening with Sharookh's team",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-16T22:24:31.350Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-17T17:57:14.203Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mro2uihgg1zv13erwwg",
@@ -5502,30 +5505,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-04-17": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mn96ur593n4wqfraywg",
-        "subtaskId": "mn96zi1km7mctizbo9d",
-        "time": null,
-        "scheduledAt": "2026-04-09T19:55:32.622Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-17T23:24:41.033Z",
-        "completionNotes": "All cells thawed and in 37c.  Looked before I left for the day and HMVECs werent adhered yet.  Might still be premature. ",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mnywuk88jf98pxpt8k",
-        "subtaskId": "mnywvben5tp5u4oxdec",
-        "time": "13:30",
-        "scheduledAt": "2026-04-14T17:44:22.656Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-17T23:26:10.466Z",
-        "completionNotes": "Adjusted protocol to improve mixing and aspiration.  Will test again on Monday with monocytes. ",
-        "completionLinks": ""
-      }
-    ],
     "2026-04-28": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6664,31 +6643,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mkn3n6kk2s3eujhd9om",
-      "subtaskId": "mlzv9hga7d59d5k3ctq",
-      "title": "Pilot RNA extraction",
-      "completedAt": "2026-04-17T16:55:47.707Z"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mn96ur593n4wqfraywg",
-      "subtaskId": "mn96zi1km7mctizbo9d",
-      "completedAt": "2026-04-17T23:24:41.034Z",
-      "completionNotes": "All cells thawed and in 37c.  Looked before I left for the day and HMVECs werent adhered yet.  Might still be premature. ",
-      "completionLinks": "",
-      "date": "2026-04-17"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mnywuk88jf98pxpt8k",
-      "subtaskId": "mnywvben5tp5u4oxdec",
-      "completedAt": "2026-04-17T23:26:10.466Z",
-      "completionNotes": "Adjusted protocol to improve mixing and aspiration.  Will test again on Monday with monocytes. ",
-      "completionLinks": "",
-      "date": "2026-04-17"
-    },
     {
       "id": "mo7bgek1xgxqtooxxv",
       "title": "repeat Tim PCR using low template input",
@@ -8209,9 +8163,17 @@
       "completionNotes": "Added notes to Corinne's slides for clarity\n",
       "completionLinks": "",
       "date": "2026-07-16"
+    },
+    {
+      "id": "mro2tt2u1pzfgzcdzs5",
+      "title": "Meeting for epithelial screening with Sharookh's team",
+      "completedAt": "2026-07-17T17:57:14.203Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-16"
     }
   ],
-  "lastUpdated": "2026-07-16T22:38:13.841Z",
+  "lastUpdated": "2026-07-17T17:57:14.203Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8369,17 +8331,6 @@
     ]
   },
   "dailySummaries": {
-    "2026-04-17": {
-      "summary": "**Friday, April 17, 2026 - Daily Summary**\n\nFocused day on protocol optimization and cell preparation. Made solid progress adjusting the BLADE-R automation protocol with Corinne, though troubleshooting the i7 instrument required more iterations than expected. Successfully thawed all cells for the cytokine screen, but HMVECs hadn't adhered by end of day and NK cells from yesterday showed poor viability.\n\n**Main Accomplishments:**\n• Adjusted BLADE-R automation protocol mixing and aspiration steps (SMARTSeq TechDev)\n• Thawed all target cells for Cytokine Screen experiment\n• Completed multiple troubleshooting iterations on i7 workflow\n• Identified and resolved mixing protocol issues\n\n**Carry Forward:**\nTest updated BLADE-R protocol on Monday with monocytes. Re-thaw NK cells next week due to poor viability. Monitor HMVEC adherence status.",
-      "reflections": {
-        "accomplishments": "Adjusting the BLADE-R automation protocol and getting all the cells thawed.",
-        "effort": "The i7 was being fidgety and trouble shooting the workflow was challenging. I needed to run through several iterations to test the things I wanted to test.",
-        "learned": "I think the mix protocol is fully fixed. the aspiration may need some more work.",
-        "carryForward": "I will test BLADE-R on monday and find out. \n\nI also looked at the NK cells thawed yesterday and viability was really poor.  Scrapped and going to try again next week."
-      },
-      "generatedAt": "2026-04-17T23:30:21.943Z",
-      "editedAt": "2026-04-17T23:30:21.943Z"
-    },
     "2026-04-20": {
       "summary": "**Monday, April 20, 2026 - End of Day Summary**\n\nCompleted a successful automation run for Monocyte Pilot 6, achieving usable BLADE-R results for monocytes despite some data imperfections. Also processed incoming blood samples to isolate NK cells and repeated Tim PCR work with low template input. The day focused heavily on refining automated protocols and RNA analysis workflows.\n\n**Main Accomplishments:**\n• Completed Monocyte automation Pilot 6 full run with new mixing and aspirating methodologies\n• Successfully ran BLADE-R for monocytes - achieved usable results marking significant progress\n• Completed RNA analysis for monocyte samples\n• Isolated NK cells from blood samples and froze ~700M PBMCs\n• Repeated Tim PCR using low template input protocol\n\n**Carry Forward:**\nImplement tip changes after wash1 and wash2 in BLADE-R protocol, requiring sophisticated automation development. Scale up to full automation for 3 plates simultaneously while maintaining current protocol improvements.",
       "reflections": {
