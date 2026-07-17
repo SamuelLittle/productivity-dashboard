@@ -4475,6 +4475,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-07-16T17:11:26.350Z"
+            },
+            {
+              "id": "mrp8uyi52uxr9g8xwtd",
+              "title": "org disc. meeting",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-07-17T18:01:08.909Z"
             }
           ]
         }
@@ -6654,6 +6662,14 @@
         "time": null,
         "scheduledAt": "2026-07-16T22:23:59.338Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mrnrm6rednng6vjynhu",
+        "subtaskId": "mrp8uyi52uxr9g8xwtd",
+        "time": "15:00",
+        "scheduledAt": "2026-07-17T18:01:08.909Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -8204,7 +8220,7 @@
       "date": "2026-07-16"
     }
   ],
-  "lastUpdated": "2026-07-17T18:00:47.345Z",
+  "lastUpdated": "2026-07-17T18:01:08.909Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
