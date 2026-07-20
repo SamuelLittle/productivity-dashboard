@@ -5540,18 +5540,6 @@
         "completionNotes": "",
         "completionLinks": ""
       }
-    ],
-    "2026-07-20": [
-      {
-        "id": "mrjtl0f1wvmc3ogg0nl",
-        "title": "troubleshoot CTG assay for normalization.",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-07-13T22:54:39.709Z"
-      }
     ]
   },
   "scheduledItems": {
@@ -8278,7 +8266,7 @@
       "date": "2026-07-17"
     }
   ],
-  "lastUpdated": "2026-07-20T15:15:31.203Z",
+  "lastUpdated": "2026-07-20T15:23:40.834Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
