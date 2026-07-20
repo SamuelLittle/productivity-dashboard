@@ -4540,32 +4540,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-04-20": [
-      {
-        "id": "mo38ou32ovpgb5i1af",
-        "title": "Blood Arriving - isolate NK cells",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-04-17T18:26:20.366Z",
-        "time": null,
-        "completedAt": "2026-04-21T14:41:34.521Z",
-        "completionNotes": "froze ~700M PBMCs",
-        "completionLinks": ""
-      },
-      {
-        "id": "mo7bgek1xgxqtooxxv",
-        "title": "repeat Tim PCR using low template input",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-04-20T14:54:50.546Z",
-        "time": null,
-        "completedAt": "2026-04-20T20:29:24.278Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-04-24": [
       {
         "id": "moapkov9xbr53ragy9",
@@ -5723,35 +5697,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-04-20": [
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mo4w58ixhq5o8hrao2u",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-18T22:10:42.922Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-21T14:41:42.968Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mo4w58ixhq5o8hrao2u",
-        "subtaskId": "mo4w75loqu8js7k7dm",
-        "time": null,
-        "scheduledAt": "2026-04-18T22:12:12.445Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mo4w58ixhq5o8hrao2u",
-        "subtaskId": "mo4wbcf633wi8ncce13",
-        "time": null,
-        "scheduledAt": "2026-04-18T22:15:27.906Z",
-        "completedOnDay": false
-      }
-    ],
     "2026-04-22": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -6712,17 +6657,19 @@
         "scheduledAt": "2026-07-17T18:01:51.565Z",
         "completedOnDay": false
       }
+    ],
+    "2026-07-20": [
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mrnrm6rednng6vjynhu",
+        "subtaskId": "mrpj2lz8zutxkq9ref",
+        "time": null,
+        "scheduledAt": "2026-07-20T15:08:16.453Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
-    {
-      "id": "mo7bgek1xgxqtooxxv",
-      "title": "repeat Tim PCR using low template input",
-      "completedAt": "2026-04-20T20:29:24.278Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-04-20"
-    },
     {
       "id": "mo38ou32ovpgb5i1af",
       "title": "Blood Arriving - isolate NK cells",
@@ -8287,7 +8234,7 @@
       "date": "2026-07-17"
     }
   ],
-  "lastUpdated": "2026-07-17T22:47:02.084Z",
+  "lastUpdated": "2026-07-20T15:08:16.453Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8445,17 +8392,6 @@
     ]
   },
   "dailySummaries": {
-    "2026-04-20": {
-      "summary": "**Monday, April 20, 2026 - End of Day Summary**\n\nCompleted a successful automation run for Monocyte Pilot 6, achieving usable BLADE-R results for monocytes despite some data imperfections. Also processed incoming blood samples to isolate NK cells and repeated Tim PCR work with low template input. The day focused heavily on refining automated protocols and RNA analysis workflows.\n\n**Main Accomplishments:**\n• Completed Monocyte automation Pilot 6 full run with new mixing and aspirating methodologies\n• Successfully ran BLADE-R for monocytes - achieved usable results marking significant progress\n• Completed RNA analysis for monocyte samples\n• Isolated NK cells from blood samples and froze ~700M PBMCs\n• Repeated Tim PCR using low template input protocol\n\n**Carry Forward:**\nImplement tip changes after wash1 and wash2 in BLADE-R protocol, requiring sophisticated automation development. Scale up to full automation for 3 plates simultaneously while maintaining current protocol improvements.",
-      "reflections": {
-        "accomplishments": "Succesfull run of BLADE-R for monocytes.  Data isn't perfect but a big step in the right direction.  I would say usable moving forward.",
-        "effort": "as always the work surrounding BLADE-R was time consuming.  I need to figure out how to streamline this.",
-        "learned": "Modified BLADE-R was worth the effort.  I need a tip change after wash1 and wash 2.  I will need some sophisticated automation to handle this.",
-        "carryForward": "Keep protocol changes. Implement full auto for 3 plates simultaneously."
-      },
-      "generatedAt": "2026-04-21T15:00:55.969Z",
-      "editedAt": "2026-04-21T15:00:55.969Z"
-    },
     "2026-04-21": {
       "summary": "**Tuesday, April 21, 2026**\n\nA challenging day with some key progress despite distractions from team transitions. Successfully completed the final ReRun PCR for Tim and gained valuable insights about PCR template optimization. The day required extra navigation around Celine's departure but still moved critical work forward.\n\n**Main Accomplishments:**\n• Completed final ReRun PCR for Tim\n• Optimized PCR protocol - confirmed less template needed than previously used\n\n**Carry Forward:**\nFinish PCR cleanups and submit samples to sequencing. Order new BCL2 primers and gather culture info for the cytokine screen dashboard.",
       "reflections": {
@@ -8601,12 +8537,6 @@
     }
   },
   "weeklySummaries": {
-    "2026-04-19": {
-      "summary": "**Week of April 18-24, 2026 Summary**\n\n**Week Overview**\n\nThis was an intensive and productive week with 16 completed tasks spanning multiple high-priority projects including SMARTSeq automation, Natural Killer Cell CRISPR screening, and cytokine screen preparations. The week built momentum from successful automation pilot runs early in the week to important leadership conversations and presentations by Friday. Despite some technical challenges with PCR work and protocol optimizations, significant progress was made across all active research streams, culminating in productive 1-on-1 meetings and a successful presentation to new VP Jimmie.\n\n**Completed Work**\n\nSMARTSeq TechDev Project:\n- Completed Monocyte automation Pilot 6 full run implementing new mixing and aspirating methodologies, including all associated subtasks: isolating monocytes, implementing changes into i7 protocol, running BLADE-R for monocytes, and analyzing RNA\n- Successfully achieved usable BLADE-R results for monocytes despite some data imperfections, marking significant progress in the automation development\n- Completed standalone RNA analysis tasks for monocyte samples\n\nNatural Killer Cell CRISPR Screen:\n- Completed repeat thaw for nucleofection, successfully obtaining approximately 10M NK cells\n- Performed nucleofection of NK cells with 2 CD96 nucleofections and 6 AAVS1 nucleofections, saving approximately 1M cells for control\n\nCell Culture and Sample Processing:\n- Processed incoming blood samples to isolate NK cells and froze approximately 700M PBMCs\n- Completed comprehensive cell passaging for gap-screen cytokine screen including NHLFs, HUVEC, and SMCs (with BEAS2Bs passaged the previous night and performing well)\n- Documented culture info for cytokine screen dashboard including cell catalog numbers, lot numbers, and media specifications\n\nPCR and Sequencing Work:\n- Completed repeat Tim PCR using low template input protocol\n- Finished final ReRun PCR for Tim with protocol optimization confirming less template needed than previously used\n- Attempted PCR cleanups and submission, though had to repeat PCRs due to lack of amplicons\n\nProcurement and Administrative:\n- Ordered new BCL2 primers (5 new primer pairs)\n- Prepared and delivered lab presentation\n- Completed work on lab presentation materials\n\nLeadership and Strategic Meetings:\n- Conducted productive 1-on-1 with Celine focusing on taking initiative, seeking publications, advocating for projects, and engaging stakeholders\n- Completed 1-on-1 with ZT discussing projects with purpose and direction, demanding answers from collaborators, and seeking impact\n- Presented at lab meeting to new VP Jimmie in what was described as a successful but nerve-wracking presentation\n\n**Recurring Themes & Patterns**\n\nTechnical optimization and protocol refinement emerged as a consistent thread throughout the week, from implementing new methodologies in monocyte automation to optimizing PCR template concentrations. The week showed strong momentum building in automation capabilities, with successful BLADE-R results representing a breakthrough despite ongoing challenges with tip changes and scaling requirements. Leadership development and strategic thinking became increasingly prominent as the week progressed, with explicit focus on taking initiative and seeking impactful research directions. Cell culture management required consistent attention across multiple projects, with careful timeline coordination for various cell lines and passage schedules. PCR work presented ongoing technical challenges requiring multiple iterations and protocol adjustments.\n\n**Carry Forward**\n\nTechnical development priorities include implementing tip changes after wash1 and wash2 in BLADE-R protocol requiring sophisticated automation development, and scaling up to full automation for 3 plates simultaneously while maintaining current protocol improvements. Cell culture tasks include planning passaging for BEAS2Bs and IMR90s by the following Friday, and completing thaw and isolation work scheduled for Monday. Laboratory logistics require finishing PCR cleanups and submitting samples to sequencing on Monday following the repeat PCR work. Strategic follow-up includes advocating responsibly for the cytokine screen given enthusiasm from leadership (Celine, Jimmie, and ZT), and assessing whether NK nucleofection needs repeating based on upcoming results. Learning priorities include gaining proficiency with 10x Flex v2 protocols for the pTox sequencing project.",
-      "weekStart": "2026-04-19",
-      "generatedAt": "2026-04-25T00:09:00.682Z",
-      "editedAt": "2026-04-25T00:09:00.682Z"
-    },
     "2026-05-10": {
       "summary": "**Week Overview**\n\nThis week demonstrated strong momentum across multiple CRISPR screening projects, with particularly intensive work on protocol optimization and automation troubleshooting. The pace was consistently high, with daily experimental work spanning Natural Killer Cell CRISPR Screen, SMARTSeq TechDev, and iAstro CRISPR Screen projects. Technical challenges emerged around automated protocols, particularly BLADE-R workflow optimization and nucleofection procedures, requiring iterative problem-solving throughout the week. The week culminated in successful nucleofection experiments and protocol validations that set up promising experimental trajectories for the following week.\n\n**Completed Work**\n\nNatural Killer Cell CRISPR Screen: Made substantial progress with cell preparation and assay development. Thawed T cells (RQR8s + GNEs) for killing assay work and set up killing assay against RQR8 cells using both 384 and 96 well formats with 8:1 to 0:1 ratios. Completed flow cytometry preparation and readout analysis. Executed a second pilot of the 384 well killing assay, including all major components: nucleofecting cells, setting up the killing assay, flow preparation, and readout. Concluded the week by nucleofecting approximately 10 million cells with AAVS1 RNP, with readout scheduled for the following week.\n\nSMARTSeq TechDev: Focused heavily on BLADE-R protocol automation and optimization. Isolated monocytes and ran complete end-to-end BLADE-R testing, encountering significant hiccups in the automated protocol that required RNA quality control follow-up. Completed both afternoon and morning BLADE-R plate runs, identifying critical timing improvements including earlier tip changes before wash 1 resuspension to improve wash performance. Successfully completed protocol first draft documentation. Discovered that within-run variability is more critical than post-wash timing for protocol optimization.\n\niAstro CRISPR Screen: Advanced nucleofection methodology by validating the cell + RNP to nucleoplate protocol. Identified specific technical improvements needed, including custom aspiration requirements for better plate positioning and custom dispense modifications to reduce bubble formation and ensure even dispersion across the cuvette footprint.\n\n**Recurring Themes & Patterns**\n\nProtocol optimization emerged as a dominant theme, with consistent troubleshooting across multiple automated workflows throughout the week. Technical challenges with liquid handling automation required daily problem-solving, particularly around tip management and wash procedures in the BLADE-R protocol. Nucleofection procedures appeared repeatedly across different projects, building expertise and identifying common improvement areas like dispense uniformity and aspiration positioning. Quality control and validation steps became routine practice, with RNA QC, flow cytometry readouts, and protocol validation occurring systematically. Cross-project learning was evident, with lessons from one screening project informing approaches in others, particularly around cell handling and assay setup procedures.\n\n**Carry Forward**\n\nSeveral technical refinements require immediate attention: implement custom aspiration and dispense improvements for the nucleoplate workflow to address positioning and bubble issues identified in iAstro work. RNA quality control results from BLADE-R experiments need review and protocol adjustments based on findings. Develop a formal, detailed screen plan for the NK cell screen with structured approach for next week presentation. Complete readout analysis for the AAVS1 RNP nucleofection experiment. Apply automated reagent plate preparation techniques for high-throughput BLADE-R workflow scaling. Review Orchestra training video and attempt small batch registration to build on the 2-hour training session completed during the week.",
       "weekStart": "2026-05-10",
