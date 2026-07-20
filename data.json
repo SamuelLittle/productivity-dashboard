@@ -1702,35 +1702,6 @@
           "completionLinks": ""
         },
         {
-          "id": "mkn0igezgk2t0n91d6u",
-          "title": "Automating NK cell screen with pCell",
-          "description": "Enabling automation of large scale NK cell screen",
-          "priority": "medium",
-          "completed": false,
-          "createdAt": "2026-01-20T19:53:59.963Z",
-          "subtasks": [
-            {
-              "id": "mknibgcthbjwg97e9q6",
-              "title": "Prep for meeting #2 with Justin",
-              "description": "",
-              "priority": "medium",
-              "completed": true,
-              "createdAt": "2026-01-21T04:12:26.381Z",
-              "completedAt": "2026-02-04T20:25:36.409Z",
-              "completionNotes": "Need to make more detailed protocol for screening workflow",
-              "completionLinks": ""
-            },
-            {
-              "id": "ml8n4wzk1gw2qsnsorf",
-              "title": "Make detailed automation task list",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-02-04T23:10:29.120Z"
-            }
-          ]
-        },
-        {
           "id": "mkyn5q9752ye45ab8zw",
           "title": "PIlot Killing Assay Repeat",
           "description": "",
@@ -8266,7 +8237,7 @@
       "date": "2026-07-17"
     }
   ],
-  "lastUpdated": "2026-07-20T15:23:40.834Z",
+  "lastUpdated": "2026-07-20T15:23:55.950Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
