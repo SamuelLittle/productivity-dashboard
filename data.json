@@ -4481,6 +4481,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-07-17T22:47:02.084Z"
+            },
+            {
+              "id": "mrtg4xh7y4lldwsurb8",
+              "title": "Make liberase masterstock",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-07-20T16:35:56.155Z"
             }
           ]
         },
@@ -6622,6 +6630,14 @@
         "time": null,
         "scheduledAt": "2026-07-16T17:11:26.350Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mrnrm6rednng6vjynhu",
+        "subtaskId": "mrtg4xh7y4lldwsurb8",
+        "time": "09:00",
+        "scheduledAt": "2026-07-20T16:35:56.155Z",
+        "completedOnDay": false
       }
     ],
     "2026-07-17": [
@@ -8268,7 +8284,7 @@
       "date": "2026-07-17"
     }
   ],
-  "lastUpdated": "2026-07-20T15:27:00.285Z",
+  "lastUpdated": "2026-07-20T16:35:56.155Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
