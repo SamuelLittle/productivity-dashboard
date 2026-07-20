@@ -2487,8 +2487,11 @@
               "title": "CTG Normalization Tech Dev w/ DLD1s",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-20T15:24:43.779Z"
+              "completed": true,
+              "createdAt": "2026-07-20T15:24:43.779Z",
+              "completedAt": "2026-07-20T21:20:21.106Z",
+              "completionNotes": "Need to make modified protocols for stamping to 384 well plates",
+              "completionLinks": ""
             },
             {
               "id": "mrtdlzl5u7repwzeuuh",
@@ -6698,7 +6701,10 @@
         "subtaskId": "mrtdlcw3anuwnrh97z5",
         "time": null,
         "scheduledAt": "2026-07-20T15:24:43.779Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-07-20T21:20:21.101Z",
+        "completionNotes": "Need to make modified protocols for stamping to 384 well plates",
+        "completionLinks": ""
       }
     ],
     "2026-07-29": [
@@ -8293,9 +8299,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-17"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrtdkuneqzzg0oh9wn8",
+      "subtaskId": "mrtdlcw3anuwnrh97z5",
+      "completedAt": "2026-07-20T21:20:21.106Z",
+      "completionNotes": "Need to make modified protocols for stamping to 384 well plates",
+      "completionLinks": "",
+      "date": "2026-07-20"
     }
   ],
-  "lastUpdated": "2026-07-20T16:36:12.651Z",
+  "lastUpdated": "2026-07-20T21:20:21.106Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
