@@ -4523,6 +4523,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-07-20T15:15:10.989Z"
+            },
+            {
+              "id": "mrtd9iirn957qn0frb",
+              "title": "Fresh DisOp for scRNAseq",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-07-20T15:15:31.203Z"
             }
           ]
         }
@@ -6584,6 +6592,14 @@
         "time": null,
         "scheduledAt": "2026-07-16T17:06:37.320Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mrtd472b6o7fvc71nwu",
+        "subtaskId": "mrtd9iirn957qn0frb",
+        "time": null,
+        "scheduledAt": "2026-07-20T15:15:31.203Z",
+        "completedOnDay": false
       }
     ],
     "2026-07-31": [
@@ -8262,7 +8278,7 @@
       "date": "2026-07-17"
     }
   ],
-  "lastUpdated": "2026-07-20T15:15:10.989Z",
+  "lastUpdated": "2026-07-20T15:15:31.203Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
