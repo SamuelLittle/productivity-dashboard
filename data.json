@@ -4515,7 +4515,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-07-20T15:11:23.075Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mrtd92x9j0iswhptixm",
+              "title": "Fixed Dis Op for scRNAseq",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-07-20T15:15:10.989Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -6676,6 +6685,16 @@
         "scheduledAt": "2026-07-20T15:08:18.590Z",
         "completedOnDay": false
       }
+    ],
+    "2026-07-29": [
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mrtd472b6o7fvc71nwu",
+        "subtaskId": "mrtd92x9j0iswhptixm",
+        "time": null,
+        "scheduledAt": "2026-07-20T15:15:10.989Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8243,7 +8262,7 @@
       "date": "2026-07-17"
     }
   ],
-  "lastUpdated": "2026-07-20T15:11:23.075Z",
+  "lastUpdated": "2026-07-20T15:15:10.989Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
