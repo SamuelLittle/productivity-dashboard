@@ -1804,35 +1804,6 @@
           "completionLinks": ""
         },
         {
-          "id": "ml7hsagjyud5rcxh2r",
-          "title": "Viral Transduction of NK cells - Research",
-          "description": "",
-          "priority": "medium",
-          "completed": false,
-          "createdAt": "2026-02-04T03:52:55.795Z",
-          "subtasks": [
-            {
-              "id": "mmfjhcxywbxwool13mp",
-              "title": "contact honglin about pilot viral particles for testing",
-              "description": "",
-              "priority": "medium",
-              "completed": true,
-              "createdAt": "2026-03-06T23:42:16.774Z",
-              "completedAt": "2026-03-10T23:13:34.471Z",
-              "completionNotes": "",
-              "completionLinks": ""
-            },
-            {
-              "id": "mmo47c2s3okunp6n3jh",
-              "title": "order stock of VPX viral particles",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-03-12T23:44:30.436Z"
-            }
-          ]
-        },
-        {
           "id": "mlhaql2p4q6z8l0f9n4",
           "title": "NK Culture Pilot 2",
           "description": "",
@@ -8237,7 +8208,7 @@
       "date": "2026-07-17"
     }
   ],
-  "lastUpdated": "2026-07-20T15:23:55.950Z",
+  "lastUpdated": "2026-07-20T15:24:01.007Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
