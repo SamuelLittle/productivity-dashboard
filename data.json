@@ -2481,7 +2481,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-07-20T15:24:20.138Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mrtdlcw3anuwnrh97z5",
+              "title": "CTG Normalization Tech Dev w/ DLD1s",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-07-20T15:24:43.779Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -6639,6 +6648,14 @@
         "time": null,
         "scheduledAt": "2026-07-20T15:08:18.590Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrtdkuneqzzg0oh9wn8",
+        "subtaskId": "mrtdlcw3anuwnrh97z5",
+        "time": null,
+        "scheduledAt": "2026-07-20T15:24:43.779Z",
+        "completedOnDay": false
       }
     ],
     "2026-07-29": [
@@ -8217,7 +8234,7 @@
       "date": "2026-07-17"
     }
   ],
-  "lastUpdated": "2026-07-20T15:24:20.138Z",
+  "lastUpdated": "2026-07-20T15:24:43.779Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
