@@ -4570,32 +4570,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-04-21": [
-      {
-        "id": "mo9aik9rplmendmowuj",
-        "title": "Final ReRun PCR for Tim",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-04-22T00:04:04.000Z",
-        "time": null,
-        "completedAt": "2026-04-22T00:12:38.897Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mo9aiq5tx4zw38mx2l",
-        "title": "New BCL2 primers",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-04-22T00:04:11.633Z",
-        "time": null,
-        "completedAt": "2026-04-22T15:07:58.002Z",
-        "completionNotes": "ordered 5 new primer pairs",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-01": [
       {
         "id": "mon24ezkueih9phr0r",
@@ -5560,6 +5534,15 @@
         "completed": false,
         "createdAt": "2026-07-20T23:29:25.649Z",
         "time": "15:00"
+      },
+      {
+        "id": "mrurermmp027unk3qu",
+        "title": "Pratisksha Seminar",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-07-21T14:39:17.086Z",
+        "time": "11:00"
       }
     ]
   },
@@ -6763,22 +6746,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "id": "mo38ou32ovpgb5i1af",
-      "title": "Blood Arriving - isolate NK cells",
-      "completedAt": "2026-04-21T14:41:34.522Z",
-      "completionNotes": "froze ~700M PBMCs",
-      "completionLinks": "",
-      "date": "2026-04-20"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mo4w58ixhq5o8hrao2u",
-      "completedAt": "2026-04-21T14:41:42.968Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-04-20"
-    },
     {
       "id": "mo9aik9rplmendmowuj",
       "title": "Final ReRun PCR for Tim",
@@ -8345,7 +8312,7 @@
       "date": "2026-07-20"
     }
   ],
-  "lastUpdated": "2026-07-20T23:29:25.649Z",
+  "lastUpdated": "2026-07-21T14:39:17.086Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8503,17 +8470,6 @@
     ]
   },
   "dailySummaries": {
-    "2026-04-21": {
-      "summary": "**Tuesday, April 21, 2026**\n\nA challenging day with some key progress despite distractions from team transitions. Successfully completed the final ReRun PCR for Tim and gained valuable insights about PCR template optimization. The day required extra navigation around Celine's departure but still moved critical work forward.\n\n**Main Accomplishments:**\n• Completed final ReRun PCR for Tim\n• Optimized PCR protocol - confirmed less template needed than previously used\n\n**Carry Forward:**\nFinish PCR cleanups and submit samples to sequencing. Order new BCL2 primers and gather culture info for the cytokine screen dashboard.",
-      "reflections": {
-        "accomplishments": "kind of a clusterfuck of a day.  Getting the new amplifications was good.",
-        "effort": "Navigating Celines departure.  Being distracted.",
-        "learned": "PCRs need way less template then you think.",
-        "carryForward": "Finish the PCR cleanups. submit to sequencing. Get the new primers. Keep rolling onwards."
-      },
-      "generatedAt": "2026-04-22T00:23:58.906Z",
-      "editedAt": "2026-04-22T00:23:58.906Z"
-    },
     "2026-04-22": {
       "summary": "Wednesday focused on cell culture maintenance for the gap-screen cytokine project and completing PCR work for Tim. Made good progress on culture documentation and pipeline preparations, while also getting involved in a new pTox sequencing project.\n\nMain accomplishments:\n• Completed cell passaging for gap-screen cytokine screen (NHLFs, HUVEC, SMCs; BEAS2Bs from previous night performing well)\n• Documented culture info for cytokine screen dashboard including cell catalog numbers, lot numbers, and media specifications\n• Finished PCR work for Tim (analysis and submission pending tomorrow)\n\nThe culture documentation took longer than expected but provided important baseline information for the project. HMVECs are progressing well for next Tuesday's timeline, and new IMR90 vials show good viability. Need to plan passaging for BEAS2Bs and IMR90s by Friday, and should prioritize learning 10x Flex v2 protocols for the pTox sequencing work.",
       "reflections": {
