@@ -5522,9 +5522,12 @@
         "title": "AT2 RNA extraction optimization",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-20T23:28:56.764Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-21T19:47:14.060Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mrtuwoltrc6mrjqm6fa",
@@ -8343,9 +8346,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-21"
+    },
+    {
+      "id": "mrtuw2bgotalamwgty",
+      "title": "AT2 RNA extraction optimization",
+      "completedAt": "2026-07-21T19:47:14.060Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-21"
     }
   ],
-  "lastUpdated": "2026-07-21T19:12:30.305Z",
+  "lastUpdated": "2026-07-21T19:47:14.060Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
