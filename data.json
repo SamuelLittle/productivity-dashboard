@@ -5540,9 +5540,12 @@
         "title": "Pratisksha Seminar",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-21T14:39:17.086Z",
-        "time": "11:00"
+        "time": "11:00",
+        "completedAt": "2026-07-21T19:12:30.304Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-07-24": [
@@ -8332,9 +8335,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-20"
+    },
+    {
+      "id": "mrurermmp027unk3qu",
+      "title": "Pratisksha Seminar",
+      "completedAt": "2026-07-21T19:12:30.305Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-21"
     }
   ],
-  "lastUpdated": "2026-07-21T14:40:10.958Z",
+  "lastUpdated": "2026-07-21T19:12:30.305Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
