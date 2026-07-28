@@ -5567,9 +5567,12 @@
         "title": "Nomic Project Planning ",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-28T15:13:32.500Z",
-        "time": "14:00"
+        "time": "14:00",
+        "completedAt": "2026-07-28T23:40:37.987Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-07-29": [
@@ -8200,9 +8203,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-28"
+    },
+    {
+      "id": "ms4sps9g220rcwnsvkj",
+      "title": "Nomic Project Planning ",
+      "completedAt": "2026-07-28T23:40:37.988Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-28"
     }
   ],
-  "lastUpdated": "2026-07-28T18:30:18.598Z",
+  "lastUpdated": "2026-07-28T23:40:37.988Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
