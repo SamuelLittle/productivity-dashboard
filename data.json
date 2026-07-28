@@ -4493,8 +4493,11 @@
               "title": "Make liberase masterstock",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-20T16:35:56.155Z"
+              "completed": true,
+              "createdAt": "2026-07-20T16:35:56.155Z",
+              "completedAt": "2026-07-28T14:52:09.014Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -4530,46 +4533,6 @@
     }
   ],
   "dailyLists": {
-    "2026-04-23": [
-      {
-        "id": "mo7nf5pobjk3pfe767m",
-        "title": "PCR cleanups and submission",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "completedAt": "2026-04-25T00:01:30.203Z",
-        "time": null,
-        "createdAt": "2026-04-20T20:29:47.820Z",
-        "completionNotes": "Had to repeat PCRs due to lack of amplicons. Final cleanup and submissions on monday",
-        "completionLinks": ""
-      },
-      {
-        "id": "moanl33ulcldooftr7",
-        "title": "work on lab presentation",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-04-22T22:57:42.906Z",
-        "time": null,
-        "completedAt": "2026-04-23T18:16:22.100Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-04-24": [
-      {
-        "id": "moapkov9xbr53ragy9",
-        "title": "Lab meeting at 11am",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-04-22T23:53:23.685Z",
-        "time": null,
-        "completedAt": "2026-04-24T19:38:13.834Z",
-        "completionNotes": "Jimmie came.  Super terrifying but I think we crushed it.",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-01": [
       {
         "id": "mon24ezkueih9phr0r",
@@ -4580,32 +4543,6 @@
         "createdAt": "2026-05-01T15:17:53.505Z",
         "time": null,
         "completedAt": "2026-05-04T15:23:31.011Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-04-27": [
-      {
-        "id": "mohetxya0x32amhbw74",
-        "title": "organoid scale-up meeting",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-04-27T16:27:02.818Z",
-        "time": "12:30",
-        "completedAt": "2026-04-27T22:43:20.836Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "moheujxdnpovftqzqzq",
-        "title": "Moffat Lab meeting",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-04-27T16:27:31.298Z",
-        "time": "14:00",
-        "completedAt": "2026-04-27T22:43:25.725Z",
         "completionNotes": "",
         "completionLinks": ""
       }
@@ -5575,19 +5512,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-04-28": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mn3vj631ght8zzcdd8g",
-        "subtaskId": "mnql6e95u4m4vx00nj",
-        "time": null,
-        "scheduledAt": "2026-04-17T17:10:34.127Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-29T00:31:45.998Z",
-        "completionNotes": "Set up 4 killing conditions using ratios from 4:1 down in 7 dilutions against 25k target cells mixed 1:1 with RQR8 and CD300a T cells",
-        "completionLinks": ""
-      }
-    ],
     "2026-04-29": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -5667,102 +5591,6 @@
         "scheduledAt": "2026-04-30T22:50:27.796Z",
         "completedOnDay": true,
         "completedAt": "2026-05-04T15:23:24.865Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-04-23": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mn3vj631ght8zzcdd8g",
-        "subtaskId": "mo35d11eizzvdqf2d6k",
-        "time": null,
-        "scheduledAt": "2026-04-17T17:09:20.178Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-24T22:55:16.476Z",
-        "completionNotes": "Thawed NK cells - got about 10M cells",
-        "completionLinks": ""
-      }
-    ],
-    "2026-04-24": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mn3vj631ght8zzcdd8g",
-        "subtaskId": "mnql4yzu7p6q3ijhep8",
-        "time": null,
-        "scheduledAt": "2026-04-17T17:09:33.785Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-25T00:02:40.105Z",
-        "completionNotes": "Performed 2 CD96 nucleofections and 6 AAVS1 nucleofections.  saved ~1M cells for control. \n\nThaw and isolation on Monday\n",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mlld42ihacxlvsot49w",
-        "taskId": "moapj9mmouvdcyjcjko",
-        "subtaskId": null,
-        "time": "10:00",
-        "scheduledAt": "2026-04-22T23:52:17.279Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-24T19:36:04.039Z",
-        "completionNotes": "Incredibly productive meeting with Celine.  Take the bull by the horns., Seek out publications, advocate for projects, take the lead on advancements, engage stakeholders. ",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mlld42ihacxlvsot49w",
-        "taskId": "moapk67qjk1ei052kai",
-        "subtaskId": null,
-        "time": "13:00",
-        "scheduledAt": "2026-04-22T23:52:59.510Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-24T19:36:42.564Z",
-        "completionNotes": "Good meetign with ZT.  Projects with purpose and direction.  Don't be afraid to demand answers form collaborators.  Seek out impact. ",
-        "completionLinks": ""
-      }
-    ],
-    "2026-04-27": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mn3vj631ght8zzcdd8g",
-        "subtaskId": "mnql59pwf2uctc4bz1h",
-        "time": null,
-        "scheduledAt": "2026-04-17T17:09:51.332Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-27T22:43:55.059Z",
-        "completionNotes": "Thawed ~5M cells into cNK-MACS at 2M c/ml\n",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mn3vj631ght8zzcdd8g",
-        "subtaskId": "mohe67vvh9ytjsmapya",
-        "time": null,
-        "scheduledAt": "2026-04-27T16:08:35.948Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-28T15:19:09.744Z",
-        "completionNotes": "isolated ~3M NK cells from fresh blood\n",
-        "completionLinks": ""
-      }
-    ],
-    "2026-04-22": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mn96ur593n4wqfraywg",
-        "subtaskId": "mo9ekjekh8f58tq3b2e",
-        "time": null,
-        "scheduledAt": "2026-04-22T01:57:34.652Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-22T22:51:22.171Z",
-        "completionNotes": "Passaged NHLFs, HUVEC, and SMCs.  BEAS2Bs passaged last nigth and are fine. Will need to be passaged either tomorrow or friday.  HMVECs are coming along and will likely have the culture take hold in time for next tuesday.  New vial of IMR90s look good.  Will passage tomorrow or Friday",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mnyv06u2qy3fd3cl2b",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-04-22T15:08:03.554Z",
-        "completedOnDay": true,
-        "completedAt": "2026-04-22T18:38:11.636Z",
         "completionNotes": "",
         "completionLinks": ""
       }
@@ -6685,7 +6513,10 @@
         "subtaskId": "mrtg4xh7y4lldwsurb8",
         "time": "09:00",
         "scheduledAt": "2026-07-20T16:35:56.155Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-07-28T14:52:09.014Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-07-17": [
@@ -6774,139 +6605,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "id": "mo9aik9rplmendmowuj",
-      "title": "Final ReRun PCR for Tim",
-      "completedAt": "2026-04-22T00:12:38.897Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-04-21"
-    },
-    {
-      "id": "mo9aiq5tx4zw38mx2l",
-      "title": "New BCL2 primers",
-      "completedAt": "2026-04-22T15:07:58.002Z",
-      "completionNotes": "ordered 5 new primer pairs",
-      "completionLinks": "",
-      "date": "2026-04-21"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mnyv06u2qy3fd3cl2b",
-      "completedAt": "2026-04-22T18:38:11.637Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-04-22"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mn96ur593n4wqfraywg",
-      "subtaskId": "mo9ekjekh8f58tq3b2e",
-      "completedAt": "2026-04-22T22:51:22.171Z",
-      "completionNotes": "Passaged NHLFs, HUVEC, and SMCs.  BEAS2Bs passaged last nigth and are fine. Will need to be passaged either tomorrow or friday.  HMVECs are coming along and will likely have the culture take hold in time for next tuesday.  New vial of IMR90s look good.  Will passage tomorrow or Friday",
-      "completionLinks": "",
-      "date": "2026-04-22"
-    },
-    {
-      "id": "moanl33ulcldooftr7",
-      "title": "work on lab presentation",
-      "completedAt": "2026-04-23T18:16:22.101Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-04-23"
-    },
-    {
-      "projectId": "mlld42ihacxlvsot49w",
-      "taskId": "moapj9mmouvdcyjcjko",
-      "completedAt": "2026-04-24T19:34:41.051Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-04-24"
-    },
-    {
-      "projectId": "mlld42ihacxlvsot49w",
-      "taskId": "moapj9mmouvdcyjcjko",
-      "completedAt": "2026-04-24T19:36:04.039Z",
-      "completionNotes": "Incredibly productive meeting with Celine.  Take the bull by the horns., Seek out publications, advocate for projects, take the lead on advancements, engage stakeholders. ",
-      "completionLinks": "",
-      "date": "2026-04-24"
-    },
-    {
-      "projectId": "mlld42ihacxlvsot49w",
-      "taskId": "moapk67qjk1ei052kai",
-      "completedAt": "2026-04-24T19:36:42.564Z",
-      "completionNotes": "Good meetign with ZT.  Projects with purpose and direction.  Don't be afraid to demand answers form collaborators.  Seek out impact. ",
-      "completionLinks": "",
-      "date": "2026-04-24"
-    },
-    {
-      "id": "moapkov9xbr53ragy9",
-      "title": "Lab meeting at 11am",
-      "completedAt": "2026-04-24T19:38:13.834Z",
-      "completionNotes": "Jimmie came.  Super terrifying but I think we crushed it.",
-      "completionLinks": "",
-      "date": "2026-04-24"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mn3vj631ght8zzcdd8g",
-      "subtaskId": "mo35d11eizzvdqf2d6k",
-      "completedAt": "2026-04-24T22:55:16.476Z",
-      "completionNotes": "Thawed NK cells - got about 10M cells",
-      "completionLinks": "",
-      "date": "2026-04-23"
-    },
-    {
-      "id": "mo7nf5pobjk3pfe767m",
-      "title": "PCR cleanups and submission",
-      "completedAt": "2026-04-25T00:01:30.203Z",
-      "completionNotes": "Had to repeat PCRs due to lack of amplicons. Final cleanup and submissions on monday",
-      "completionLinks": "",
-      "date": "2026-04-23"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mn3vj631ght8zzcdd8g",
-      "subtaskId": "mnql4yzu7p6q3ijhep8",
-      "completedAt": "2026-04-25T00:02:40.105Z",
-      "completionNotes": "Performed 2 CD96 nucleofections and 6 AAVS1 nucleofections.  saved ~1M cells for control. \n\nThaw and isolation on Monday\n",
-      "completionLinks": "",
-      "date": "2026-04-24"
-    },
-    {
-      "id": "mohetxya0x32amhbw74",
-      "title": "organoid scale-up meeting",
-      "completedAt": "2026-04-27T22:43:20.836Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-04-27"
-    },
-    {
-      "id": "moheujxdnpovftqzqzq",
-      "title": "Moffat Lab meeting",
-      "completedAt": "2026-04-27T22:43:25.725Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-04-27"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mn3vj631ght8zzcdd8g",
-      "subtaskId": "mnql59pwf2uctc4bz1h",
-      "completedAt": "2026-04-27T22:43:55.061Z",
-      "completionNotes": "Thawed ~5M cells into cNK-MACS at 2M c/ml\n",
-      "completionLinks": "",
-      "date": "2026-04-27"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mn3vj631ght8zzcdd8g",
-      "subtaskId": "mohe67vvh9ytjsmapya",
-      "completedAt": "2026-04-28T15:19:09.744Z",
-      "completionNotes": "isolated ~3M NK cells from fresh blood\n",
-      "completionLinks": "",
-      "date": "2026-04-27"
-    },
     {
       "projectId": "mkltwpanzsdw6b96wbe",
       "taskId": "mn3vj631ght8zzcdd8g",
@@ -8354,9 +8052,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-21"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mrnrm6rednng6vjynhu",
+      "subtaskId": "mrtg4xh7y4lldwsurb8",
+      "completedAt": "2026-07-28T14:52:09.014Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-22"
     }
   ],
-  "lastUpdated": "2026-07-21T22:01:28.841Z",
+  "lastUpdated": "2026-07-28T14:52:09.014Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8478,7 +8185,6 @@
     ]
   },
   "dailyNotes": {
-    "2026-04-28": "Also ran PCR purifications for all amplicons to be sequenced.",
     "2026-05-12": "2hr Orchestra training session.  Need to review video and try small batch reg.",
     "2026-05-14": "isolated NK cells for cloaking experiments\nmet with Russel and worked on protocol for post RT pooling\norganoid meeting\nreviewed protocol for Flex v2 fixations wokr",
     "2026-05-29": "Also finished final testing of BLADE-R need to put together results."
@@ -8514,50 +8220,6 @@
     ]
   },
   "dailySummaries": {
-    "2026-04-22": {
-      "summary": "Wednesday focused on cell culture maintenance for the gap-screen cytokine project and completing PCR work for Tim. Made good progress on culture documentation and pipeline preparations, while also getting involved in a new pTox sequencing project.\n\nMain accomplishments:\n• Completed cell passaging for gap-screen cytokine screen (NHLFs, HUVEC, SMCs; BEAS2Bs from previous night performing well)\n• Documented culture info for cytokine screen dashboard including cell catalog numbers, lot numbers, and media specifications\n• Finished PCR work for Tim (analysis and submission pending tomorrow)\n\nThe culture documentation took longer than expected but provided important baseline information for the project. HMVECs are progressing well for next Tuesday's timeline, and new IMR90 vials show good viability. Need to plan passaging for BEAS2Bs and IMR90s by Friday, and should prioritize learning 10x Flex v2 protocols for the pTox sequencing work.",
-      "reflections": {
-        "accomplishments": "Logged cytokine screen culture info for Hamid including cell catalog #s, lot #s, media info and some basic culture info.  Need to complete T cell info but for now adherent cell work is sufficient.  Finished PCR stuff for Tim. need to analyze tomorrow and submit.",
-        "effort": "Cell culture info took time but its important.  glad I got it done.  Same with the PCR stuff for Tim.",
-        "learned": "Nothing major. Got involved with pTox sequencing project.  I need to make an effort to get more familiar with 10x Flex v2",
-        "carryForward": "No. not from today."
-      },
-      "generatedAt": "2026-04-22T23:43:04.283Z",
-      "editedAt": "2026-04-22T23:43:04.283Z"
-    },
-    "2026-04-24": {
-      "summary": "**Friday, April 24, 2026 Summary**\n\nStrong day with key leadership meetings and lab progress. Had productive 1-on-1s with Celine and ZT focused on taking initiative and seeking impact, plus presented to new VP Jimmie during lab meeting. Successfully nucleofected NK cells for the CRISPR screen despite some protocol challenges.\n\n**Main Accomplishments:**\n• Completed 1-on-1 with Celine - discussed taking leadership on publications and stakeholder engagement\n• Completed 1-on-1 with ZT - aligned on project direction and demanding answers from collaborators  \n• Presented at lab meeting to new VP Jimmie in small group setting\n• Nucleofected NK cells (2 CD96, 6 AAVS1) for Natural Killer Cell CRISPR Screen with ~1M control cells saved\n\n**Carry Forward:**\nNeed to advocate responsibly for the cytokine screen given enthusiasm from Celine, Jimmie, and ZT. Thaw and isolation scheduled for Monday. Will assess whether NK nucleofection needs repeating based on upcoming results.",
-      "reflections": {
-        "accomplishments": "Group presentation with new VP Jimmie.  Really cool opportunity to present my work in such a small setting with a senior leader. \n\nNucleofected the NK cells.  Needed to adapt the protocol but it was mostly okay.",
-        "effort": "Things moved mostly as expected today. Wasn't able to make time to QC the PCR products but I sort of knew that would be the case",
-        "learned": "Decided to move ahead with NK nucleofection even though the cells didn't look perfect.  I think it was the right move but time will tell if I need to repeat.  No harm in trying here.",
-        "carryForward": "Lots of enthusiasm for the cytokine screen. From departing Celine and from incoming Jimmi + ZT.  I need to be an advocate for this screen in a responsible way.  Impactful work."
-      },
-      "generatedAt": "2026-04-25T00:07:11.957Z",
-      "editedAt": "2026-04-25T00:07:11.957Z"
-    },
-    "2026-04-27": {
-      "summary": "**Monday, April 27, 2026 Summary**\n\nToday focused on research collaboration and experimental preparation with productive meetings and lab work. The Moffat Lab meeting went well, and I successfully prepared NK cell samples from both frozen and fresh sources for upcoming killing assays. While meeting coordination took more effort than anticipated, the day was primarily about unblocking work and moving experiments forward.\n\n**Main Accomplishments:**\n• Participated in organoid scale-up meeting\n• Conducted productive Moffat Lab meeting presentation\n• Thawed ~5M NK cells into cNK-MACS medium at 2M cells/ml for Natural Killer Cell CRISPR Screen\n• Isolated ~3M fresh NK cells from blood for comparison killing assay\n\n**Carry Forward**\nNo significant items to carry forward.",
-      "reflections": {
-        "accomplishments": "Presentation with Moffat lab was good and productive.  Thawing and isolating NK cells from fresh and frozen samples was productive.",
-        "effort": "Navigating meetings.",
-        "learned": "Nothing major.  mostly and unlocking day.",
-        "carryForward": "No."
-      },
-      "generatedAt": "2026-04-28T15:21:32.580Z",
-      "editedAt": "2026-04-28T15:21:32.580Z"
-    },
-    "2026-04-28": {
-      "summary": "**Tuesday, April 28, 2026**\n\nFocused day on the Natural Killer Cell CRISPR Screen with the main effort going into setting up the killing assay, which proved more complex than anticipated. Also completed PCR purifications for sequencing prep. Tomorrow brings key readouts from the NK cell screen.\n\n**Main Accomplishments:**\n• Set up killing assay for Natural Killer Cell CRISPR Screen using 4 killing conditions with ratios from 4:1 down in 7 dilutions against 25k target cells mixed 1:1 with RQR8 and CD300a T cells\n• Ran PCR purifications for all amplicons to be sequenced\n\n**Carry Forward:**\nBig readouts expected tomorrow for NK cell screen.",
-      "reflections": {
-        "accomplishments": "Setting up the killing assay.",
-        "effort": "Setting up the killing assay",
-        "learned": "Nothing major.  Big readouts tomorrow for NK cell screen.",
-        "carryForward": "Nothin major."
-      },
-      "generatedAt": "2026-04-29T00:33:07.270Z",
-      "editedAt": "2026-04-29T00:33:07.270Z"
-    },
     "2026-04-29": {
       "summary": "**Wednesday, April 29, 2026**\n\nSignificant progress on the Natural Killer Cell CRISPR Screen with completion of the full killing assay FACS analysis, plus initiated the cytokine screening work. Early analysis of the NK vs T cell data looks promising but revealed some technical staining issues that need addressing.\n\n• Completed flow cytometry prep and post-nucleofection killing assay for Natural Killer Cell CRISPR Screen\n• Performed FACS on entire NK vs T cell killing assay with CD3, TASR, and live/dead staining\n• Seeded all plates for Cytokine Screen fill-in-the-gap experiments\n\n**Carry Forward:**\nDead cells showed sticky uptake of TASR stain, making it difficult to distinguish dead TASR- from dead TASR+ populations. Need to develop improved staining strategy, potentially using CTV, and conduct deeper analysis of exported FACS data.",
       "reflections": {
