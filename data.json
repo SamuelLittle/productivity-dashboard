@@ -5517,9 +5517,12 @@
         "title": "ooo",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-21T14:40:10.958Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-28T14:53:13.191Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -8107,9 +8110,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-24"
+    },
+    {
+      "id": "mrurfx720gahd29k7te5",
+      "title": "ooo",
+      "completedAt": "2026-07-28T14:53:13.191Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-27"
     }
   ],
-  "lastUpdated": "2026-07-28T14:53:07.056Z",
+  "lastUpdated": "2026-07-28T14:53:13.191Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
