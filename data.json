@@ -5555,9 +5555,12 @@
         "title": "Bravo protocol review w/ Qiao",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-28T15:13:07.188Z",
-        "time": "10:30"
+        "time": "10:30",
+        "completedAt": "2026-07-28T18:30:18.598Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "ms4sps9g220rcwnsvkj",
@@ -8189,9 +8192,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-28"
+    },
+    {
+      "id": "ms4sp8qbb7t2udv0tub",
+      "title": "Bravo protocol review w/ Qiao",
+      "completedAt": "2026-07-28T18:30:18.598Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-28"
     }
   ],
-  "lastUpdated": "2026-07-28T18:30:10.119Z",
+  "lastUpdated": "2026-07-28T18:30:18.598Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
