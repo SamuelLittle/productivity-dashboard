@@ -5543,9 +5543,12 @@
         "title": "1:1 with Christine",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-28T15:12:40.420Z",
-        "time": "09:30"
+        "time": "09:30",
+        "completedAt": "2026-07-28T18:30:10.119Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "ms4sp8qbb7t2udv0tub",
@@ -8178,9 +8181,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-21"
+    },
+    {
+      "id": "ms4soo2sgecvz78iei",
+      "title": "1:1 with Christine",
+      "completedAt": "2026-07-28T18:30:10.119Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-28"
     }
   ],
-  "lastUpdated": "2026-07-28T15:14:18.421Z",
+  "lastUpdated": "2026-07-28T18:30:10.119Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
