@@ -4452,8 +4452,11 @@
               "title": "6 Plate Dis OP",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-16T17:11:26.350Z"
+              "completed": true,
+              "createdAt": "2026-07-16T17:11:26.350Z",
+              "completedAt": "2026-07-28T14:52:13.994Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mrp8uyi52uxr9g8xwtd",
@@ -6505,7 +6508,10 @@
         "subtaskId": "mrnrn6harl426g3dsyn",
         "time": null,
         "scheduledAt": "2026-07-16T17:11:26.350Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-07-28T14:52:13.994Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mpyqnvm6p9zp4xlp64m",
@@ -8061,9 +8067,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-22"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mrnrm6rednng6vjynhu",
+      "subtaskId": "mrnrn6harl426g3dsyn",
+      "completedAt": "2026-07-28T14:52:13.994Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-22"
     }
   ],
-  "lastUpdated": "2026-07-28T14:52:09.014Z",
+  "lastUpdated": "2026-07-28T14:52:13.994Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
