@@ -5376,9 +5376,12 @@
         "title": "Director Seminar + Candidate lunch",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-15T18:14:50.606Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-28T14:53:02.045Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-07-17": [
@@ -8085,9 +8088,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-22"
+    },
+    {
+      "id": "mrmegv71a4u1lhfbsxf",
+      "title": "Director Seminar + Candidate lunch",
+      "completedAt": "2026-07-28T14:53:02.045Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-23"
     }
   ],
-  "lastUpdated": "2026-07-28T14:52:51.216Z",
+  "lastUpdated": "2026-07-28T14:53:02.045Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
