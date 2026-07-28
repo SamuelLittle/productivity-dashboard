@@ -5600,6 +5600,17 @@
         "createdAt": "2026-07-28T15:14:18.421Z",
         "time": "10:30"
       }
+    ],
+    "2026-07-30": [
+      {
+        "id": "ms5ay7jmkv5emv3v8v",
+        "title": "NK cell killing i7 Assay ops",
+        "description": "- RNP generation\n- Intermediary plate -> to culture plate\n- CTG normalization plate to killing assay plate",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-07-28T23:43:58.642Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -8236,7 +8247,7 @@
       "date": "2026-07-28"
     }
   ],
-  "lastUpdated": "2026-07-28T23:43:33.883Z",
+  "lastUpdated": "2026-07-28T23:43:58.642Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
