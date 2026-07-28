@@ -5565,6 +5565,17 @@
         "createdAt": "2026-07-28T15:13:32.500Z",
         "time": "14:00"
       }
+    ],
+    "2026-07-29": [
+      {
+        "id": "ms4sqrp1p01rb61y6zd",
+        "title": "Freimer/Thakore Lab Meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-07-28T15:14:18.421Z",
+        "time": "10:30"
+      }
     ]
   },
   "scheduledItems": {
@@ -8169,7 +8180,7 @@
       "date": "2026-07-21"
     }
   ],
-  "lastUpdated": "2026-07-28T15:13:32.500Z",
+  "lastUpdated": "2026-07-28T15:14:18.421Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
