@@ -5582,9 +5582,12 @@
         "title": "i7 Nucleofection Protocol",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-28T23:40:51.505Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-28T23:43:15.687Z",
+        "completionNotes": "Protocol for stamping RNP to nucleofection plate -> adding recovery buffer -> aspirating from nucleofection plate to intermediation plate. \n\nStill need \n- RNP generation\n- Intermediary plate -> to culture plate\n- CTG normalization plate to killing assay plate",
+        "completionLinks": ""
       }
     ],
     "2026-07-29": [
@@ -8231,9 +8234,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-28"
+    },
+    {
+      "id": "ms5au75dm57hy4nmrzk",
+      "title": "i7 Nucleofection Protocol",
+      "completedAt": "2026-07-28T23:43:15.687Z",
+      "completionNotes": "Protocol for stamping RNP to nucleofection plate -> adding recovery buffer -> aspirating from nucleofection plate to intermediation plate. \n\nStill need \n- RNP generation\n- Intermediary plate -> to culture plate\n- CTG normalization plate to killing assay plate",
+      "completionLinks": "",
+      "date": "2026-07-28"
     }
   ],
-  "lastUpdated": "2026-07-28T23:40:51.505Z",
+  "lastUpdated": "2026-07-28T23:43:15.687Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
