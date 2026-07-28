@@ -5480,9 +5480,12 @@
         "title": "Team Scrum + 1-on-1",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-20T23:29:25.649Z",
-        "time": "15:00"
+        "time": "15:00",
+        "completedAt": "2026-07-28T14:53:26.497Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mrurermmp027unk3qu",
@@ -8118,9 +8121,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-27"
+    },
+    {
+      "id": "mrtuwoltrc6mrjqm6fa",
+      "title": "Team Scrum + 1-on-1",
+      "completedAt": "2026-07-28T14:53:26.497Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-21"
     }
   ],
-  "lastUpdated": "2026-07-28T14:53:13.191Z",
+  "lastUpdated": "2026-07-28T14:53:26.497Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
