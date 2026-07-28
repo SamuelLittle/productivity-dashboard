@@ -5451,9 +5451,12 @@
         "title": "Lunch w/ Jimmie",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-20T16:36:12.651Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-28T14:52:17.176Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-07-21": [
@@ -8076,9 +8079,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-22"
+    },
+    {
+      "id": "mrtg5a7f6fjli7xuwer",
+      "title": "Lunch w/ Jimmie",
+      "completedAt": "2026-07-28T14:52:17.176Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-22"
     }
   ],
-  "lastUpdated": "2026-07-28T14:52:13.994Z",
+  "lastUpdated": "2026-07-28T14:52:17.176Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
