@@ -2429,8 +2429,11 @@
               "title": "Thaw PBMCs and isolate NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-13T22:46:14.212Z"
+              "completed": true,
+              "createdAt": "2026-07-13T22:46:14.212Z",
+              "completedAt": "2026-07-30T23:30:04.360Z",
+              "completionNotes": "Only isolated ~17.5M cells.  Modified Nucleofection protocol.",
+              "completionLinks": ""
             },
             {
               "id": "mrjtaixcj1zw5d373w",
@@ -6533,7 +6536,10 @@
         "subtaskId": "mrjta6dfn6pjquj7ihq",
         "time": null,
         "scheduledAt": "2026-07-16T17:06:37.320Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-07-30T23:30:04.360Z",
+        "completionNotes": "Only isolated ~17.5M cells.  Modified Nucleofection protocol.",
+        "completionLinks": ""
       }
     ],
     "2026-07-31": [
@@ -8236,9 +8242,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-30"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrjt9r0bj672rjm1058",
+      "subtaskId": "mrjta6dfn6pjquj7ihq",
+      "completedAt": "2026-07-30T23:30:04.360Z",
+      "completionNotes": "Only isolated ~17.5M cells.  Modified Nucleofection protocol.",
+      "completionLinks": "",
+      "date": "2026-07-30"
     }
   ],
-  "lastUpdated": "2026-07-30T23:29:26.186Z",
+  "lastUpdated": "2026-07-30T23:30:04.360Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
