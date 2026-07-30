@@ -87,6 +87,28 @@
       },
       "generatedAt": "2026-04-29T00:33:07.270Z",
       "editedAt": "2026-04-29T00:33:07.270Z"
+    },
+    "2026-04-29": {
+      "summary": "**Wednesday, April 29, 2026**\n\nSignificant progress on the Natural Killer Cell CRISPR Screen with completion of the full killing assay FACS analysis, plus initiated the cytokine screening work. Early analysis of the NK vs T cell data looks promising but revealed some technical staining issues that need addressing.\n\n• Completed flow cytometry prep and post-nucleofection killing assay for Natural Killer Cell CRISPR Screen\n• Performed FACS on entire NK vs T cell killing assay with CD3, TASR, and live/dead staining\n• Seeded all plates for Cytokine Screen fill-in-the-gap experiments\n\n**Carry Forward:**\nDead cells showed sticky uptake of TASR stain, making it difficult to distinguish dead TASR- from dead TASR+ populations. Need to develop improved staining strategy, potentially using CTV, and conduct deeper analysis of exported FACS data.",
+      "reflections": {
+        "accomplishments": "Big day today: performed FACS on entire NK v T cell killing assay.  Staining for CD3, TASR, and live dead.  Data exported.  Warly analysis appears to have worked but needs a deep dive analysis. \n\nAlso plated all plates for fill in the gap screen",
+        "effort": "Plate seeding.  But i expected this to take a while.",
+        "learned": "During FACS dead cells were super sticky and up took TASR stain making it hard to distinguish dead TASR- from dead TASR+ - need to work out something in post.",
+        "carryForward": "Need a better staining strategy long term - maybe CTV?"
+      },
+      "generatedAt": "2026-04-30T18:52:11.171Z",
+      "editedAt": "2026-04-30T18:52:11.171Z"
+    },
+    "2026-04-30": {
+      "summary": "**Daily Summary - Thursday, April 30, 2026**\n\nSuccessfully executed the critical Day 0 treatments for the cytokine screen despite requiring significant problem-solving to accommodate the 24-hour treatment timeline. The day involved troubleshooting a new protocol under time pressure and completing multiple Sanger sequencing submissions that proved more complex than anticipated.\n\n**Main Accomplishments:**\n• Completed Day 0 cytokine treatments for gap fill screen (cells treated 10-11 AM)\n• Tested and troubleshot new i7 protocol in time for treatments\n• Submitted Sanger sequencing requests for Tim and Pete/Kelly projects\n• Learned Sanger submission process workflow\n\n**Carry Forward:**\nMonitor cytokine-treated cells for next phase of screen timeline.",
+      "reflections": {
+        "accomplishments": "Had to do some problem solving to accommodate the 24 hr treatments for the gap fill screen.  Was able to make test and trouble shoot the new i7 protocol in time to perform the treatments before 11. \n\nGot sanger sequecing submitted for Tim and for Pete/Kelly",
+        "effort": "Everything.",
+        "learned": "Figured out how to do the Sanger submissions.",
+        "carryForward": ""
+      },
+      "generatedAt": "2026-04-30T22:52:18.593Z",
+      "editedAt": "2026-04-30T22:52:18.593Z"
     }
   },
   "dailyNotes": {
@@ -977,6 +999,20 @@
         "createdAt": "2026-04-22T22:57:42.906Z",
         "time": null,
         "completedAt": "2026-04-23T18:16:22.100Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-04-30": [
+      {
+        "id": "molwezv1jisy876rc1h",
+        "title": "Sanger Submission Process",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-04-30T19:50:23.245Z",
+        "time": null,
+        "completedAt": "2026-04-30T22:48:26.134Z",
         "completionNotes": "",
         "completionLinks": ""
       }
@@ -3329,6 +3365,54 @@
         "completedOnDay": true,
         "completedAt": "2026-04-24T22:55:16.476Z",
         "completionNotes": "Thawed NK cells - got about 10M cells",
+        "completionLinks": ""
+      }
+    ],
+    "2026-04-29": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mn3vj631ght8zzcdd8g",
+        "subtaskId": "mnql6l2jzi2gy84u0u",
+        "time": null,
+        "scheduledAt": "2026-04-17T17:10:56.258Z",
+        "completedOnDay": true,
+        "completedAt": "2026-04-30T18:49:04.900Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mn3vj631ght8zzcdd8g",
+        "subtaskId": "mnql6yhgj3drw33bmsd",
+        "time": null,
+        "scheduledAt": "2026-04-17T17:11:16.638Z",
+        "completedOnDay": true,
+        "completedAt": "2026-04-30T18:49:11.348Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn970laht5tbwixe38n",
+        "time": null,
+        "scheduledAt": "2026-04-09T19:56:00.669Z",
+        "completedOnDay": true,
+        "completedAt": "2026-04-30T18:49:16.267Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-04-30": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mn96ur593n4wqfraywg",
+        "subtaskId": "mn9719rad6mmtiqmdfw",
+        "time": null,
+        "scheduledAt": "2026-04-09T19:56:17.755Z",
+        "completedOnDay": true,
+        "completedAt": "2026-04-30T18:52:31.617Z",
+        "completionNotes": "Cells treated between 10 and 11 am. ",
         "completionLinks": ""
       }
     ]
@@ -5997,6 +6081,59 @@
       "completionNotes": "isolated ~3M NK cells from fresh blood\n",
       "completionLinks": "",
       "date": "2026-04-27"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mnql6e95u4m4vx00nj",
+      "completedAt": "2026-04-29T00:31:45.999Z",
+      "completionNotes": "Set up 4 killing conditions using ratios from 4:1 down in 7 dilutions against 25k target cells mixed 1:1 with RQR8 and CD300a T cells",
+      "completionLinks": "",
+      "date": "2026-04-28"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mnql6l2jzi2gy84u0u",
+      "completedAt": "2026-04-30T18:49:04.901Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-29"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": "mnql6yhgj3drw33bmsd",
+      "completedAt": "2026-04-30T18:49:11.348Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-29"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "mn970laht5tbwixe38n",
+      "completedAt": "2026-04-30T18:49:16.267Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-29"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mn96ur593n4wqfraywg",
+      "subtaskId": "mn9719rad6mmtiqmdfw",
+      "completedAt": "2026-04-30T18:52:31.617Z",
+      "completionNotes": "Cells treated between 10 and 11 am. ",
+      "completionLinks": "",
+      "date": "2026-04-30"
+    },
+    {
+      "id": "molwezv1jisy876rc1h",
+      "title": "Sanger Submission Process",
+      "completedAt": "2026-04-30T22:48:26.134Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-04-30"
     }
   ]
 }
