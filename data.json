@@ -4517,8 +4517,11 @@
               "title": "Fixed Dis Op for scRNAseq",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-20T15:15:10.989Z"
+              "completed": true,
+              "createdAt": "2026-07-20T15:15:10.989Z",
+              "completedAt": "2026-07-30T16:14:24.602Z",
+              "completionNotes": "Fresh dis -> 4 plates. all looked good. Need to fix EL406 wash protocol. ",
+              "completionLinks": ""
             },
             {
               "id": "mrtd9iirn957qn0frb",
@@ -6663,7 +6666,10 @@
         "subtaskId": "mrtd92x9j0iswhptixm",
         "time": null,
         "scheduledAt": "2026-07-20T15:15:10.989Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-07-30T16:14:24.602Z",
+        "completionNotes": "Fresh dis -> 4 plates. all looked good. Need to fix EL406 wash protocol. ",
+        "completionLinks": ""
       }
     ]
   },
@@ -8168,9 +8174,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-29"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mrtd472b6o7fvc71nwu",
+      "subtaskId": "mrtd92x9j0iswhptixm",
+      "completedAt": "2026-07-30T16:14:24.602Z",
+      "completionNotes": "Fresh dis -> 4 plates. all looked good. Need to fix EL406 wash protocol. ",
+      "completionLinks": "",
+      "date": "2026-07-29"
     }
   ],
-  "lastUpdated": "2026-07-30T16:02:32.950Z",
+  "lastUpdated": "2026-07-30T16:14:24.602Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
