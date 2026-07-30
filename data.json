@@ -5621,9 +5621,12 @@
         "title": "prep for Org diss",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-28T23:48:35.992Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-30T16:23:04.586Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-07-30": [
@@ -8205,9 +8208,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-29"
+    },
+    {
+      "id": "ms5b45jsqco67mbbpeb",
+      "title": "prep for Org diss",
+      "completedAt": "2026-07-30T16:23:04.586Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-29"
     }
   ],
-  "lastUpdated": "2026-07-30T16:23:01.150Z",
+  "lastUpdated": "2026-07-30T16:23:04.586Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
