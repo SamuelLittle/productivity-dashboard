@@ -5609,9 +5609,12 @@
         "title": "Meet w/ Zy",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-28T23:48:21.239Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-30T16:23:01.150Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "ms5b45jsqco67mbbpeb",
@@ -8194,9 +8197,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-29"
+    },
+    {
+      "id": "ms5b3u5z9tw7hu1m8fu",
+      "title": "Meet w/ Zy",
+      "completedAt": "2026-07-30T16:23:01.150Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-29"
     }
   ],
-  "lastUpdated": "2026-07-30T16:22:55.975Z",
+  "lastUpdated": "2026-07-30T16:23:01.150Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
