@@ -5597,9 +5597,12 @@
         "title": "Lunch w/ Zora",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-07-28T23:48:09.334Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-07-30T16:22:55.975Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "ms5b3u5z9tw7hu1m8fu",
@@ -8183,9 +8186,17 @@
       "completionNotes": "Fresh dis -> 4 plates. all looked good. Need to fix EL406 wash protocol. ",
       "completionLinks": "",
       "date": "2026-07-29"
+    },
+    {
+      "id": "ms5b3kzapb4d1m5ygcm",
+      "title": "Lunch w/ Zora",
+      "completedAt": "2026-07-30T16:22:55.975Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-29"
     }
   ],
-  "lastUpdated": "2026-07-30T16:14:24.602Z",
+  "lastUpdated": "2026-07-30T16:22:55.975Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
