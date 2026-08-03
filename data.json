@@ -5700,19 +5700,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-05-04": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mn96ur593n4wqfraywg",
-        "subtaskId": "morqo880okzzah696co",
-        "time": null,
-        "scheduledAt": "2026-05-04T21:56:13.344Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-05T16:55:17.217Z",
-        "completionNotes": "confirmed high quality cDNA from all 6 cell types - DLD1",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-07": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6530,14 +6517,6 @@
       {
         "projectId": "mkltwpanzsdw6b96wbe",
         "taskId": "mrjt9r0bj672rjm1058",
-        "subtaskId": "mrjtaxm6r5s3ku8rlgr",
-        "time": null,
-        "scheduledAt": "2026-07-16T17:07:10.795Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mrjt9r0bj672rjm1058",
         "subtaskId": "mrjtb6kp63w3055m9oi",
         "time": null,
         "scheduledAt": "2026-07-16T17:07:23.686Z",
@@ -6559,6 +6538,22 @@
         "subtaskId": "mrjtcn8ow16iki5g43k",
         "time": null,
         "scheduledAt": "2026-07-16T17:07:31.742Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-08-03T15:07:08.507Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mrjtaxm6r5s3ku8rlgr",
+        "time": null,
+        "scheduledAt": "2026-08-03T15:07:08.510Z",
         "completedOnDay": false
       }
     ],
@@ -6618,14 +6613,6 @@
         "completedAt": "2026-07-17T22:46:32.350Z",
         "completionNotes": "",
         "completionLinks": ""
-      },
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-07-17T18:01:51.565Z",
-        "completedOnDay": false
       }
     ],
     "2026-07-20": [
@@ -6667,41 +6654,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mn96ur593n4wqfraywg",
-      "subtaskId": "mn971zu1tovrvb8oe1c",
-      "completedAt": "2026-05-04T15:23:19.632Z",
-      "completionNotes": "Completed 3 hr treatments and full SS D1 takedowns. QC monday. \n",
-      "completionLinks": "",
-      "date": "2026-05-01"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mn96ur593n4wqfraywg",
-      "subtaskId": "moap9tbnw2uvyymrnhi",
-      "completedAt": "2026-05-04T15:23:24.865Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-01"
-    },
-    {
-      "id": "mon24ezkueih9phr0r",
-      "title": "Validate wash protocol",
-      "completedAt": "2026-05-04T15:23:31.011Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-01"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mn3vj631ght8zzcdd8g",
-      "subtaskId": "molwfkjef391k50mf0q",
-      "completedAt": "2026-05-04T15:23:42.627Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-01"
-    },
     {
       "projectId": "mkltv6xwvh4ltoqkes",
       "taskId": "mn96ur593n4wqfraywg",
@@ -8245,7 +8197,7 @@
       "date": "2026-07-31"
     }
   ],
-  "lastUpdated": "2026-07-31T23:14:27.595Z",
+  "lastUpdated": "2026-08-03T15:07:08.510Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
