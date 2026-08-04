@@ -2480,6 +2480,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-07-13T22:48:24.559Z"
+            },
+            {
+              "id": "mseuoa9s1rtc3g6ocje",
+              "title": "CTV staining for T cells. ",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-04T16:06:03.520Z"
             }
           ]
         },
@@ -6575,6 +6583,14 @@
         "time": null,
         "scheduledAt": "2026-08-03T15:07:14.140Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mseuoa9s1rtc3g6ocje",
+        "time": null,
+        "scheduledAt": "2026-08-04T16:06:03.520Z",
+        "completedOnDay": false
       }
     ],
     "2026-08-05": [
@@ -8241,7 +8257,7 @@
       "date": "2026-08-03"
     }
   ],
-  "lastUpdated": "2026-08-04T16:05:41.183Z",
+  "lastUpdated": "2026-08-04T16:06:03.520Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
