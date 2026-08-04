@@ -5698,6 +5698,17 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-08-04": [
+      {
+        "id": "mseup9t9xpy8te849ff",
+        "title": "Prep for midyear check in",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-08-04T16:06:49.582Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -8257,7 +8268,7 @@
       "date": "2026-08-03"
     }
   ],
-  "lastUpdated": "2026-08-04T16:06:03.520Z",
+  "lastUpdated": "2026-08-04T16:06:49.582Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
