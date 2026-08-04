@@ -5671,9 +5671,12 @@
         "title": "Gather reagents for tomorrows killing assay",
         "description": "- CTG\n- Plates\n- CTV\n- Sytox Greeen",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-08-03T15:16:46.318Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-08-04T16:05:36.592Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "msdklhshjels9kv5rp8",
@@ -8217,9 +8220,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-03"
+    },
+    {
+      "id": "msddh1t90h4ih8uk91ha",
+      "title": "Gather reagents for tomorrows killing assay",
+      "completedAt": "2026-08-04T16:05:36.592Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-03"
     }
   ],
-  "lastUpdated": "2026-08-04T16:05:31.957Z",
+  "lastUpdated": "2026-08-04T16:05:36.592Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
