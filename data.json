@@ -2459,8 +2459,11 @@
               "title": "Thaw T cells for killing assay",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-13T22:47:01.129Z"
+              "completed": true,
+              "createdAt": "2026-07-13T22:47:01.129Z",
+              "completedAt": "2026-08-04T16:05:31.957Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mrjtcn8ow16iki5g43k",
@@ -6528,7 +6531,10 @@
         "subtaskId": "mrjtb6kp63w3055m9oi",
         "time": null,
         "scheduledAt": "2026-07-16T17:07:23.686Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-04T16:05:31.957Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-08-04": [
@@ -8202,9 +8208,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-03"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrjt9r0bj672rjm1058",
+      "subtaskId": "mrjtb6kp63w3055m9oi",
+      "completedAt": "2026-08-04T16:05:31.957Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-03"
     }
   ],
-  "lastUpdated": "2026-08-04T16:05:26.062Z",
+  "lastUpdated": "2026-08-04T16:05:31.957Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
