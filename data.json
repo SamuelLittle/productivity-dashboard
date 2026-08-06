@@ -2492,8 +2492,11 @@
               "title": "CTV staining for T cells. ",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-04T16:06:03.520Z"
+              "completed": true,
+              "createdAt": "2026-08-04T16:06:03.520Z",
+              "completedAt": "2026-08-06T16:00:15.224Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -6554,7 +6557,10 @@
         "subtaskId": "mseuoa9s1rtc3g6ocje",
         "time": null,
         "scheduledAt": "2026-08-04T16:06:03.520Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-06T16:00:15.224Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-08-05": [
@@ -8172,9 +8178,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-04"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrjt9r0bj672rjm1058",
+      "subtaskId": "mseuoa9s1rtc3g6ocje",
+      "completedAt": "2026-08-06T16:00:15.224Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-04"
     }
   ],
-  "lastUpdated": "2026-08-06T16:00:08.076Z",
+  "lastUpdated": "2026-08-06T16:00:15.224Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
