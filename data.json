@@ -2470,8 +2470,11 @@
               "title": "set up killing assay",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-13T22:48:09.384Z"
+              "completed": true,
+              "createdAt": "2026-07-13T22:48:09.384Z",
+              "completedAt": "2026-08-06T15:59:56.903Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mrjtcyy70w7bx8ldlqd",
@@ -4559,34 +4562,6 @@
     }
   ],
   "dailyLists": {
-    "2026-05-06": [
-      {
-        "id": "motbcltioojrtsfa9r",
-        "title": "cytokine screen experimental overview",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-06T00:22:49.207Z",
-        "time": null,
-        "completedAt": "2026-05-07T01:03:35.111Z",
-        "completionNotes": "finished all urgent items.  Need to complete no urgent items (ie. T cell culture protocols).",
-        "completionLinks": ""
-      }
-    ],
-    "2026-05-07": [
-      {
-        "id": "motbbae8uohpqov0le",
-        "title": "Hive bi-weekly",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-06T00:21:47.744Z",
-        "time": null,
-        "completedAt": "2026-05-08T16:11:27.416Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-19": [
       {
         "id": "mp2z1ov6ojxw074oud9",
@@ -5712,43 +5687,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-05-06": [
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "motbaxa0lq43ysng63",
-        "subtaskId": null,
-        "time": "12:00",
-        "scheduledAt": "2026-05-06T00:21:30.745Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-06T20:23:40.331Z",
-        "completionNotes": "Met with Jenny + Thomas.  Thomas will decide on a small panel of genes for a nucleoection pilot.  Need to continue developing RNA extraction to enable microglia screening. ",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "motbc8vgyoek3ln8fga",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-05-06T00:22:32.428Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-06T20:24:15.506Z",
-        "completionNotes": "Submitted large portion of iAstro methodology.  Still need some notes on supernatant analysis. ",
-        "completionLinks": ""
-      }
-    ],
-    "2026-05-07": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "movqvib91fmi31nrat2",
-        "subtaskId": "movqw0gfmw5rehb9krm",
-        "time": null,
-        "scheduledAt": "2026-05-07T17:13:21.232Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-08T16:11:04.589Z",
-        "completionNotes": "Thawed and isolated roughly ~30M NK cells.  Well assess viability and cell count tomorrow to determine plan of action. ",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-08": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6569,7 +6507,10 @@
         "subtaskId": "mrjtcn8ow16iki5g43k",
         "time": null,
         "scheduledAt": "2026-07-16T17:07:31.742Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-06T15:59:56.902Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6701,80 +6642,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mn96ur593n4wqfraywg",
-      "subtaskId": "mn9734nwg8q7inrbwip",
-      "completedAt": "2026-05-06T00:15:19.863Z",
-      "completionNotes": "completed QC and finished tag + indexing.  D2 QC tomorrow mornign\n",
-      "completionLinks": "",
-      "date": "2026-05-05"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mn96ur593n4wqfraywg",
-      "subtaskId": "morqnxn4l8ab9ny6nu",
-      "completedAt": "2026-05-06T00:15:47.101Z",
-      "completionNotes": "Started generating metadata but need to complete submission tomorrow. ",
-      "completionLinks": "",
-      "date": "2026-05-05"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "motbaxa0lq43ysng63",
-      "completedAt": "2026-05-06T20:23:40.331Z",
-      "completionNotes": "Met with Jenny + Thomas.  Thomas will decide on a small panel of genes for a nucleoection pilot.  Need to continue developing RNA extraction to enable microglia screening. ",
-      "completionLinks": "",
-      "date": "2026-05-06"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "motbc8vgyoek3ln8fga",
-      "completedAt": "2026-05-06T20:24:15.506Z",
-      "completionNotes": "Submitted large portion of iAstro methodology.  Still need some notes on supernatant analysis. ",
-      "completionLinks": "",
-      "date": "2026-05-06"
-    },
-    {
-      "id": "motbcltioojrtsfa9r",
-      "title": "cytokine screen experimental overview",
-      "completedAt": "2026-05-07T01:03:35.111Z",
-      "completionNotes": "finished all urgent items.  Need to complete no urgent items (ie. T cell culture protocols).",
-      "completionLinks": "",
-      "date": "2026-05-06"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "mkmsy72n9wkp209y165",
-      "subtaskId": "mla55u9r0fbf2euf27os",
-      "title": "Analyze Supernatant",
-      "completedAt": "2026-05-07T14:16:31.297Z"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "mkx8wznv95wc8en1g2k",
-      "subtaskId": null,
-      "title": "Import Data in Orchestra",
-      "completedAt": "2026-05-07T14:16:47.426Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mn3vj631ght8zzcdd8g",
-      "subtaskId": "mnql5x4cdks9ucxw7e6",
-      "title": "Thaw NK cells for killing assay (D5 cells)",
-      "completedAt": "2026-05-07T17:12:04.643Z"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mn3vj631ght8zzcdd8g",
-      "subtaskId": null,
-      "title": "Killing assay pilot 2",
-      "completedAt": "2026-05-07T17:12:09.504Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
     {
       "projectId": "mkltwpanzsdw6b96wbe",
       "taskId": "movqvib91fmi31nrat2",
@@ -8266,9 +8133,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-03"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrjt9r0bj672rjm1058",
+      "subtaskId": "mrjtcn8ow16iki5g43k",
+      "completedAt": "2026-08-06T15:59:56.903Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-04"
     }
   ],
-  "lastUpdated": "2026-08-04T16:06:49.582Z",
+  "lastUpdated": "2026-08-06T15:59:56.903Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
