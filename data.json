@@ -2532,8 +2532,11 @@
               "title": "Post Normalization replating",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-20T15:27:00.285Z"
+              "completed": true,
+              "createdAt": "2026-07-20T15:27:00.285Z",
+              "completedAt": "2026-08-06T16:00:08.076Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -6540,7 +6543,10 @@
         "subtaskId": "mrtdoa7xlx90wtbw9yo",
         "time": null,
         "scheduledAt": "2026-08-03T15:07:14.140Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-06T16:00:08.076Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -8157,9 +8163,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-04"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrtdkuneqzzg0oh9wn8",
+      "subtaskId": "mrtdoa7xlx90wtbw9yo",
+      "completedAt": "2026-08-06T16:00:08.076Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-04"
     }
   ],
-  "lastUpdated": "2026-08-06T16:00:01.363Z",
+  "lastUpdated": "2026-08-06T16:00:08.076Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
