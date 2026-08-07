@@ -2062,7 +2062,7 @@
           "title": "Killing assay pilot 2",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-24T00:26:04.813Z",
           "subtasks": [
             {
@@ -2072,7 +2072,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-24T00:26:21.613Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2083,7 +2083,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-08T21:53:22.088Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "Thawed ~500M NK cells and isolated ~25M NK cells.  Seeded at a little over 2M cells/mL in u bottom well plate in cNK MACS media.",
               "completionLinks": ""
             },
@@ -2094,7 +2094,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-08T21:53:48.330Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "Performed 2 CD96 nucleofections and 6 AAVS1 nucleofections.  saved ~1M cells for control. \n\nThaw and isolation on Monday\n",
               "completionLinks": ""
             },
@@ -2105,7 +2105,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-08T21:54:02.228Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "Thawed ~5M cells into cNK-MACS at 2M c/ml\n",
               "completionLinks": ""
             },
@@ -2116,7 +2116,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-08T21:54:32.556Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2127,7 +2127,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-08T21:54:54.761Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "Set up 4 killing conditions using ratios from 4:1 down in 7 dilutions against 25k target cells mixed 1:1 with RQR8 and CD300a T cells",
               "completionLinks": ""
             },
@@ -2138,7 +2138,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-08T21:55:03.595Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2149,7 +2149,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-08T21:55:20.980Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2160,7 +2160,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-08T21:55:37.394Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "",
               "completionLinks": "https://gene.benchling.com/s/etr-awZ3sgKdwULVehCzSgbZ?m=slm-6XmMq5Wkb3OYsDmyO2Le",
               "notes": "Protocol sent to mayra and Dan detailing killing assay to be started at the end of this week and completed at the beginning of next week",
@@ -2173,7 +2173,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-17T16:53:10.659Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "Thawed NK cells - got about 10M cells",
               "completionLinks": ""
             },
@@ -2184,7 +2184,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-27T16:08:35.947Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "isolated ~3M NK cells from fresh blood\n",
               "completionLinks": ""
             },
@@ -2195,7 +2195,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-04-30T19:50:50.042Z",
-              "completedAt": "2026-05-07T17:12:09.503Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2206,7 +2206,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-25T23:48:59.128Z",
-              "completedAt": "2026-05-27T16:35:24.157Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "Completed image gating workflow and launched plate analysis. ",
               "completionLinks": ""
             },
@@ -2217,14 +2217,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-26T20:20:16.524Z",
-              "completedAt": "2026-06-01T16:46:11.859Z",
+              "completedAt": "2026-08-07T16:18:44.852Z",
               "completionNotes": "Successfull meeting. \n\nNext steps are determine assay window via Grnzy B + perforin 1 KO and test assay with actual target cells. See what additional stainings we can add. \n\nNeed to follow up with B + M for next steps. ",
               "completionLinks": ""
             }
           ],
-          "completedAt": null,
-          "completionNotes": null,
-          "completionLinks": null
+          "completedAt": "2026-08-07T16:18:44.851Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "movqvib91fmi31nrat2",
@@ -8316,9 +8316,18 @@
       "completedAt": "2026-08-07T16:18:25.173Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": null,
+      "title": "Killing assay pilot 2",
+      "completedAt": "2026-08-07T16:18:44.852Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-07T16:18:39.870Z",
+  "lastUpdated": "2026-08-07T16:18:44.852Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
