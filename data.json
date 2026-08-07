@@ -2310,7 +2310,7 @@
           "title": "384 well killing assay - pilot 2",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-05-15T00:38:23.229Z",
           "subtasks": [
             {
@@ -2320,7 +2320,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-15T00:38:41.004Z",
-              "completedAt": "2026-05-15T23:39:39.349Z",
+              "completedAt": "2026-08-07T16:18:17.252Z",
               "completionNotes": "nucleofected ~10M cells with AAVS1 RNP,  readout next week. ",
               "completionLinks": ""
             },
@@ -2331,7 +2331,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-15T00:40:29.044Z",
-              "completedAt": "2026-05-25T23:42:13.726Z",
+              "completedAt": "2026-08-07T16:18:17.252Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2342,7 +2342,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-15T00:40:52.486Z",
-              "completedAt": "2026-05-25T23:43:42.327Z",
+              "completedAt": "2026-08-07T16:18:17.252Z",
               "completionNotes": "Imaged at 10x and 4x - need to analyze images.  Ran samples on flow cytometer to give anchor point. ",
               "completionLinks": ""
             },
@@ -2353,7 +2353,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-15T00:41:08.035Z",
-              "completedAt": "2026-05-25T23:43:48.683Z",
+              "completedAt": "2026-08-07T16:18:17.252Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2364,7 +2364,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-16T18:57:13.178Z",
-              "completedAt": "2026-05-25T23:48:36.775Z",
+              "completedAt": "2026-08-07T16:18:17.252Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2375,7 +2375,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-18T16:38:21.468Z",
-              "completedAt": "2026-05-18T22:58:06.161Z",
+              "completedAt": "2026-08-07T16:18:17.252Z",
               "completionNotes": "Thawed roughly 7M T cells from two vials of RQR8 KO cell lines.",
               "completionLinks": ""
             },
@@ -2386,14 +2386,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-18T23:15:30.069Z",
-              "completedAt": "2026-05-25T23:42:47.921Z",
+              "completedAt": "2026-08-07T16:18:17.252Z",
               "completionNotes": "stained using published protocol. ",
               "completionLinks": "https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.24830"
             }
           ],
-          "completedAt": null,
-          "completionNotes": null,
-          "completionLinks": null
+          "completedAt": "2026-08-07T16:18:17.252Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mpbc4ikhimw5v6go98m",
@@ -8277,9 +8277,18 @@
       "completedAt": "2026-08-07T16:18:13.748Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": null,
+      "title": "384 well killing assay - pilot 2",
+      "completedAt": "2026-08-07T16:18:17.252Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-07T16:18:13.749Z",
+  "lastUpdated": "2026-08-07T16:18:17.252Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
