@@ -2231,7 +2231,7 @@
           "title": "384 well killing assay",
           "description": "Repeat of killing assay comparing Control vs edited NK cells performing coculture in 384 well plate. ",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-05-07T17:12:57.717Z",
           "subtasks": [
             {
@@ -2241,7 +2241,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-07T17:13:21.231Z",
-              "completedAt": "2026-05-08T16:11:04.589Z",
+              "completedAt": "2026-08-07T16:18:13.748Z",
               "completionNotes": "Thawed and isolated roughly ~30M NK cells.  Well assess viability and cell count tomorrow to determine plan of action. ",
               "completionLinks": ""
             },
@@ -2252,7 +2252,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-07T17:13:34.148Z",
-              "completedAt": "2026-05-08T21:08:15.900Z",
+              "completedAt": "2026-08-07T16:18:13.748Z",
               "completionNotes": "Nucleofected 3 rxns of CD96 (1.5M cells) and 15 rxns of AAVS1 (7.5M cells)",
               "completionLinks": ""
             },
@@ -2263,7 +2263,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-07T17:13:51.142Z",
-              "completedAt": "2026-05-12T00:11:36.001Z",
+              "completedAt": "2026-08-07T16:18:13.748Z",
               "completionNotes": "thawed RQR8s + GNEs\n",
               "completionLinks": ""
             },
@@ -2274,7 +2274,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-07T17:14:24.133Z",
-              "completedAt": "2026-05-13T03:06:43.128Z",
+              "completedAt": "2026-08-07T16:18:13.748Z",
               "completionNotes": "Set up killing assay against RQR8 cells only. \n\n384 + 96 well for 8:1 -> 0:1 ",
               "completionLinks": ""
             },
@@ -2285,7 +2285,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-07T17:14:46.145Z",
-              "completedAt": "2026-05-15T23:39:54.267Z",
+              "completedAt": "2026-08-07T16:18:13.748Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2296,11 +2296,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-07T17:15:05.840Z",
-              "completedAt": "2026-05-15T23:39:58.359Z",
+              "completedAt": "2026-08-07T16:18:13.748Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-08-07T16:18:13.748Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mp66vaik80f35xv2ryp",
@@ -8265,9 +8268,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-06"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "movqvib91fmi31nrat2",
+      "subtaskId": null,
+      "title": "384 well killing assay",
+      "completedAt": "2026-08-07T16:18:13.748Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-07T16:17:54.735Z",
+  "lastUpdated": "2026-08-07T16:18:13.749Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
