@@ -5706,9 +5706,12 @@
         "title": "Meeting with Ben",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-08-06T16:01:30.526Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-08-07T16:17:49.161Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mshpei3w2htn51fzce9",
@@ -8232,9 +8235,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-05"
+    },
+    {
+      "id": "mshpe4ylvx2jgo93e59",
+      "title": "Meeting with Ben",
+      "completedAt": "2026-08-07T16:17:49.161Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-06"
     }
   ],
-  "lastUpdated": "2026-08-07T16:11:37.882Z",
+  "lastUpdated": "2026-08-07T16:17:49.161Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
