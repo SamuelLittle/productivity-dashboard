@@ -1898,7 +1898,7 @@
           "title": "NK Knockout Pilot 4",
           "description": "Follow on NK KO screen aiming to improve cell recovery and minimize sample input",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-02T15:19:03.168Z",
           "subtasks": [
             {
@@ -1908,7 +1908,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-02T15:19:20.798Z",
-              "completedAt": "2026-03-02T23:05:12.282Z",
+              "completedAt": "2026-08-07T16:18:48.777Z",
               "completionNotes": "meeting tomorrow at 830 am\n",
               "completionLinks": ""
             },
@@ -1919,7 +1919,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-02T15:21:23.824Z",
-              "completedAt": "2026-03-06T23:16:50.209Z",
+              "completedAt": "2026-08-07T16:18:48.777Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1930,7 +1930,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-02T15:21:34.442Z",
-              "completedAt": "2026-03-12T18:05:46.297Z",
+              "completedAt": "2026-08-07T16:18:48.777Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1941,7 +1941,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-02T19:38:09.456Z",
-              "completedAt": "2026-03-11T22:49:45.969Z",
+              "completedAt": "2026-08-07T16:18:48.777Z",
               "completionNotes": "Isolated ~10M NK cells and seeded in NK MACS + IL2/15",
               "completionLinks": ""
             },
@@ -1952,7 +1952,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-02T19:39:11.245Z",
-              "completedAt": "2026-03-12T21:51:57.694Z",
+              "completedAt": "2026-08-07T16:18:48.777Z",
               "completionNotes": "Due to incomplete cell retrieval from culture plates this experiment is postponed to tomorrow where I will complete it using cell isolated fresh from blood today",
               "completionLinks": ""
             },
@@ -1963,7 +1963,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-03T00:29:06.765Z",
-              "completedAt": "2026-03-17T23:16:46.890Z",
+              "completedAt": "2026-08-07T16:18:48.777Z",
               "completionNotes": "Need to analyze data\n",
               "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_9r1m00qX2Y-nk_ko-pilot4/edit"
             },
@@ -1974,7 +1974,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-03T00:31:11.354Z",
-              "completedAt": "2026-03-17T23:15:45.755Z",
+              "completedAt": "2026-08-07T16:18:48.777Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1985,11 +1985,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-12T23:34:16.951Z",
-              "completedAt": "2026-03-13T17:13:32.523Z",
+              "completedAt": "2026-08-07T16:18:48.777Z",
               "completionNotes": "Completed - notes in benchling link",
               "completionLinks": "https://gene.benchling.com/discoveryoncology/f/lib_0Bhn0GE6Ef-pilot-screening/etr_9r1m00qX2Y-nk_ko-pilot4/edit"
             }
-          ]
+          ],
+          "completedAt": "2026-08-07T16:18:48.777Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mm9kp2thy6ktf63iz9",
@@ -8325,9 +8328,18 @@
       "completedAt": "2026-08-07T16:18:44.852Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9bqsqn24abbz1pnup",
+      "subtaskId": null,
+      "title": "NK Knockout Pilot 4",
+      "completedAt": "2026-08-07T16:18:48.777Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-07T16:18:44.852Z",
+  "lastUpdated": "2026-08-07T16:18:48.777Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
