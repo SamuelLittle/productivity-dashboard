@@ -5718,9 +5718,12 @@
         "title": "Meeting w/ Juliette + Bola + Jake",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-08-06T16:01:47.564Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-08-07T16:17:54.735Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mshpfww0x7j0uv7cog",
@@ -8254,9 +8257,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-06"
+    },
+    {
+      "id": "mshpei3w2htn51fzce9",
+      "title": "Meeting w/ Juliette + Bola + Jake",
+      "completedAt": "2026-08-07T16:17:54.735Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-06"
     }
   ],
-  "lastUpdated": "2026-08-07T16:17:52.477Z",
+  "lastUpdated": "2026-08-07T16:17:54.735Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
