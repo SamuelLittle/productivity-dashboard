@@ -2011,7 +2011,7 @@
           "title": "KO Pilot 5",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-23T15:00:52.730Z",
           "subtasks": [
             {
@@ -2021,7 +2021,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-23T15:00:24.440Z",
-              "completedAt": "2026-03-23T15:00:36.214Z",
+              "completedAt": "2026-08-07T16:18:51.985Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2032,7 +2032,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-23T15:01:02.236Z",
-              "completedAt": "2026-03-23T15:01:27.559Z",
+              "completedAt": "2026-08-07T16:18:51.985Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2043,7 +2043,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-23T15:01:15.457Z",
-              "completedAt": "2026-03-25T17:55:54.445Z",
+              "completedAt": "2026-08-07T16:18:51.985Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2054,11 +2054,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-23T15:01:37.538Z",
-              "completedAt": "2026-03-27T17:36:52.219Z",
+              "completedAt": "2026-08-07T16:18:51.985Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-08-07T16:18:51.985Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mn3vj631ght8zzcdd8g",
@@ -8337,9 +8340,18 @@
       "completedAt": "2026-08-07T16:18:48.777Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3bba4xdxq4je3r865",
+      "subtaskId": null,
+      "title": "KO Pilot 5",
+      "completedAt": "2026-08-07T16:18:51.985Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-07T16:18:48.777Z",
+  "lastUpdated": "2026-08-07T16:18:51.985Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
