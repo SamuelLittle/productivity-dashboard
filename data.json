@@ -5728,22 +5728,20 @@
         "createdAt": "2026-08-06T16:02:53.376Z",
         "time": null
       }
+    ],
+    "2026-08-07": [
+      {
+        "id": "msj56ih1cg58t95j6vt",
+        "title": "Meet with Sharmilla",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-08-07T16:11:14.821Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
-    "2026-05-08": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "movqvib91fmi31nrat2",
-        "subtaskId": "movqwaf731v3hkof11s",
-        "time": null,
-        "scheduledAt": "2026-05-07T17:13:34.148Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-08T21:08:15.900Z",
-        "completionNotes": "Nucleofected 3 rxns of CD96 (1.5M cells) and 15 rxns of AAVS1 (7.5M cells)",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-12": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6698,32 +6696,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "movqvib91fmi31nrat2",
-      "subtaskId": "movqw0gfmw5rehb9krm",
-      "completedAt": "2026-05-08T16:11:04.589Z",
-      "completionNotes": "Thawed and isolated roughly ~30M NK cells.  Well assess viability and cell count tomorrow to determine plan of action. ",
-      "completionLinks": "",
-      "date": "2026-05-07"
-    },
-    {
-      "id": "motbbae8uohpqov0le",
-      "title": "Hive bi-weekly",
-      "completedAt": "2026-05-08T16:11:27.416Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-07"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "movqvib91fmi31nrat2",
-      "subtaskId": "movqwaf731v3hkof11s",
-      "completedAt": "2026-05-08T21:08:15.900Z",
-      "completionNotes": "Nucleofected 3 rxns of CD96 (1.5M cells) and 15 rxns of AAVS1 (7.5M cells)",
-      "completionLinks": "",
-      "date": "2026-05-08"
-    },
     {
       "projectId": "mmfjn4b1w85dvswipdk",
       "taskId": "mp06zu8qc15ado9pfxm",
@@ -8244,7 +8216,7 @@
       "date": "2026-08-05"
     }
   ],
-  "lastUpdated": "2026-08-06T16:02:53.377Z",
+  "lastUpdated": "2026-08-07T16:11:14.822Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8403,17 +8375,6 @@
     ]
   },
   "dailySummaries": {
-    "2026-05-08": {
-      "summary": "**Friday, May 8, 2026 - Daily Summary**\n\nSuccessfully advanced the Natural Killer Cell CRISPR Screen project by nucleofecting NK cells for next week's 384-well killing assay. Additionally made significant progress on automating the BLADE-R RNA extraction protocol, developing a modular approach that can handle multiple plates simultaneously on the i7 deck.\n\n**Main Accomplishments:**\n• Nucleofected NK cells for Natural Killer Cell CRISPR Screen - 3 reactions of CD96 (1.5M cells) and 15 reactions of AAVS1 (7.5M cells)\n• Developed i7 protocol for automated BLADE-R RNA extraction across 3 plates simultaneously\n• Solved deck space constraints for automated BLADE-R setup with modular protocol design\n\n**Carry Forward:**\nTest the automated BLADE-R procedure next week to validate the new protocol setup.",
-      "reflections": {
-        "accomplishments": "Nucleofected NK cells for 384 well killing assay next week. Also made the i7 protocol for BLADE-R RNA extraction in 3 plates simulataneously.",
-        "effort": "Everything was as expectd",
-        "learned": "Figured out how to fit all the required materials on the i7 deck for automated BLADE-R. Modular protocol for multiple plates and different stopping points",
-        "carryForward": "Need to test automated procedure next week."
-      },
-      "generatedAt": "2026-05-10T19:54:03.051Z",
-      "editedAt": "2026-05-10T19:54:03.051Z"
-    },
     "2026-05-11": {
       "summary": "**Monday, May 11, 2026 Daily Summary**\n\nFocused primarily on BLADE-R automation testing for the SMARTSeq TechDev project, running multiple plates through the protocol and troubleshooting workflow issues. Also completed cell preparation work for the Natural Killer Cell CRISPR Screen. Made significant progress debugging the automated BLADE-R protocol, though RNA quality control is still pending.\n\n**Main Accomplishments:**\n• Thawed T cells (RQR8s + GNEs) for Natural Killer Cell CRISPR Screen killing assay\n• Isolated monocytes and ran end-to-end BLADE-R plate with automated protocol debugging\n• Completed afternoon BLADE-R plate run for SMARTSeq TechDev\n• Performed morning BLADE-R lysis and wash steps on two monocyte plates, identifying tip change timing improvement for better wash performance\n\n**Carry Forward:**\nRNA quality control needed tomorrow for BLADE-R plates. Implement automated reagent plate preparation for high-throughput BLADE-R workflow. Apply stamping technique learned in team meeting (intermediary plate for even nucleofected cell distribution) on Friday.",
       "reflections": {
