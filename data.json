@@ -2517,6 +2517,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-07T16:18:39.870Z"
+            },
+            {
+              "id": "msj5gxn5bqmd3yv5o6l",
+              "title": "Prepare experiment summary",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-07T16:19:21.041Z"
             }
           ]
         },
@@ -8351,7 +8359,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-07T16:18:51.985Z",
+  "lastUpdated": "2026-08-07T16:19:21.042Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
