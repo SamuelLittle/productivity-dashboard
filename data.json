@@ -2600,6 +2600,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-08T18:54:48.025Z"
+            },
+            {
+              "id": "mskqhu5cfmvtg3greeg",
+              "title": "Automated Nucleofection of NK cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-08T18:55:41.280Z"
             }
           ]
         }
@@ -6838,6 +6846,16 @@
         "scheduledAt": "2026-08-08T18:54:48.025Z",
         "completedOnDay": false
       }
+    ],
+    "2026-08-14": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mskqf78ku9h0f4d5ecb",
+        "subtaskId": "mskqhu5cfmvtg3greeg",
+        "time": null,
+        "scheduledAt": "2026-08-08T18:55:41.280Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8472,7 +8490,7 @@
       "date": "2026-08-07"
     }
   ],
-  "lastUpdated": "2026-08-08T18:54:48.025Z",
+  "lastUpdated": "2026-08-08T18:55:41.280Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
