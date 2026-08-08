@@ -2616,6 +2616,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-08T18:56:26.128Z"
+            },
+            {
+              "id": "mskqjxhunasqnjs0a6m",
+              "title": "CTG measurements and NK cell normalizations",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-08T18:57:18.931Z"
             }
           ]
         }
@@ -6874,6 +6882,16 @@
         "scheduledAt": "2026-08-08T18:56:26.128Z",
         "completedOnDay": false
       }
+    ],
+    "2026-08-18": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mskqf78ku9h0f4d5ecb",
+        "subtaskId": "mskqjxhunasqnjs0a6m",
+        "time": null,
+        "scheduledAt": "2026-08-08T18:57:18.931Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8508,7 +8526,7 @@
       "date": "2026-08-07"
     }
   ],
-  "lastUpdated": "2026-08-08T18:56:26.128Z",
+  "lastUpdated": "2026-08-08T18:57:18.931Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
