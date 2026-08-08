@@ -4077,9 +4077,12 @@
           "title": "Full run with sequencing",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-27T17:26:30.754Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-08-08T19:24:30.798Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mn97b0v2zsegyrhtwhh",
@@ -8558,9 +8561,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-07"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mn96b0bm52iua8c95fk",
+      "subtaskId": null,
+      "title": "Full run with sequencing",
+      "completedAt": "2026-08-08T19:24:30.798Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-08T18:58:24.520Z",
+  "lastUpdated": "2026-08-08T19:24:30.798Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
