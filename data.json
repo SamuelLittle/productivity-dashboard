@@ -2608,6 +2608,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-08T18:55:41.280Z"
+            },
+            {
+              "id": "mskqisr3wd7fo7poan",
+              "title": "Thaw T cells for killing assay",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-08T18:56:26.128Z"
             }
           ]
         }
@@ -6856,6 +6864,16 @@
         "scheduledAt": "2026-08-08T18:55:41.280Z",
         "completedOnDay": false
       }
+    ],
+    "2026-08-17": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mskqf78ku9h0f4d5ecb",
+        "subtaskId": "mskqisr3wd7fo7poan",
+        "time": null,
+        "scheduledAt": "2026-08-08T18:56:26.128Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8490,7 +8508,7 @@
       "date": "2026-08-07"
     }
   ],
-  "lastUpdated": "2026-08-08T18:55:41.280Z",
+  "lastUpdated": "2026-08-08T18:56:26.128Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
