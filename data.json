@@ -2632,6 +2632,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-08T18:57:58.904Z"
+            },
+            {
+              "id": "mskqlc3r55ttju5ag9t",
+              "title": "Flow cytometry prep + readout",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-08T18:58:24.519Z"
             }
           ]
         }
@@ -6908,6 +6916,16 @@
         "scheduledAt": "2026-08-08T18:57:58.905Z",
         "completedOnDay": false
       }
+    ],
+    "2026-08-19": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mskqf78ku9h0f4d5ecb",
+        "subtaskId": "mskqlc3r55ttju5ag9t",
+        "time": null,
+        "scheduledAt": "2026-08-08T18:58:24.520Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8542,7 +8560,7 @@
       "date": "2026-08-07"
     }
   ],
-  "lastUpdated": "2026-08-08T18:57:58.905Z",
+  "lastUpdated": "2026-08-08T18:58:24.520Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
