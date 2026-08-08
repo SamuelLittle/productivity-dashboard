@@ -2584,7 +2584,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-08-08T18:53:38.277Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mskqfor4ub49qvf8s5h",
+              "title": "Plan Experiment details",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-08T18:54:00.977Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -6802,6 +6811,14 @@
         "time": null,
         "scheduledAt": "2026-08-08T18:52:07.621Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mskqf78ku9h0f4d5ecb",
+        "subtaskId": "mskqfor4ub49qvf8s5h",
+        "time": null,
+        "scheduledAt": "2026-08-08T18:54:00.977Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -8437,7 +8454,7 @@
       "date": "2026-08-07"
     }
   ],
-  "lastUpdated": "2026-08-08T18:53:38.277Z",
+  "lastUpdated": "2026-08-08T18:54:00.977Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
