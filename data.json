@@ -2515,8 +2515,11 @@
               "title": "Image analysis",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-07T16:18:39.870Z"
+              "completed": true,
+              "createdAt": "2026-08-07T16:18:39.870Z",
+              "completedAt": "2026-08-08T18:50:49.675Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "msj5gxn5bqmd3yv5o6l",
@@ -6765,7 +6768,10 @@
         "subtaskId": "msj5g1vhyv2ztn5vqqe",
         "time": null,
         "scheduledAt": "2026-08-07T16:18:39.870Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-08T18:50:49.675Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -8390,9 +8396,18 @@
       "completionNotes": "Sent cost estimates over to Juliette. Plan will emerge from senior staff meeting.",
       "completionLinks": "",
       "date": "2026-08-07"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrjt9r0bj672rjm1058",
+      "subtaskId": "msj5g1vhyv2ztn5vqqe",
+      "completedAt": "2026-08-08T18:50:49.675Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-07"
     }
   ],
-  "lastUpdated": "2026-08-08T18:31:40.825Z",
+  "lastUpdated": "2026-08-08T18:50:49.676Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
