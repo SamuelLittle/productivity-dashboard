@@ -5784,9 +5784,12 @@
         "title": "Meet with Meghan",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-08-07T16:11:23.788Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-08-08T18:31:13.267Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "msj5709m7d60hmubxju",
@@ -8368,9 +8371,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-07"
+    },
+    {
+      "id": "msj56pe49fi09y5r4he",
+      "title": "Meet with Meghan",
+      "completedAt": "2026-08-08T18:31:13.267Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-07"
     }
   ],
-  "lastUpdated": "2026-08-08T18:31:07.329Z",
+  "lastUpdated": "2026-08-08T18:31:13.267Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
