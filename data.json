@@ -5891,9 +5891,12 @@
         "title": "RM int.",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-08-08T18:51:21.852Z",
-        "time": "14:30"
+        "time": "14:30",
+        "completedAt": "2026-08-10T23:18:23.577Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-08-11": [
@@ -5963,63 +5966,6 @@
         "completedOnDay": true,
         "completedAt": "2026-05-15T23:40:04.947Z",
         "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-05-11": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "movqvib91fmi31nrat2",
-        "subtaskId": "movqwnja8watng79th9",
-        "time": null,
-        "scheduledAt": "2026-05-08T16:18:55.039Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-12T00:11:36.000Z",
-        "completionNotes": "thawed RQR8s + GNEs\n",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mp06zu8qc15ado9pfxm",
-        "subtaskId": "mp074613o0vyskgcoh",
-        "time": null,
-        "scheduledAt": "2026-05-10T19:58:40.264Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-11T17:43:15.194Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mp06zu8qc15ado9pfxm",
-        "subtaskId": "mp076nogs4d3sw4wg9r",
-        "time": null,
-        "scheduledAt": "2026-05-10T20:00:36.448Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-12T00:12:26.798Z",
-        "completionNotes": "Lots of hiccups throughout the automated protocol.  Need to QC RNA tomorrow.  If it doesnt work I will tighten the screws and try again. ",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mp06zu8qc15ado9pfxm",
-        "subtaskId": "mp0779sveyet0ql58wc",
-        "time": null,
-        "scheduledAt": "2026-05-10T20:01:05.119Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-12T00:11:46.459Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mp06zu8qc15ado9pfxm",
-        "subtaskId": "mp074ssmfyo58fk68oc",
-        "time": null,
-        "scheduledAt": "2026-05-10T20:01:56.909Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-11T19:41:39.890Z",
-        "completionNotes": "Performed Lysis + wash 1 of BLADE-R on two plates of monocytes. \n\nFor plate 1 there was poor washing resulting in beads not getting resuspended.  An earlier tip change before wash 1 resuspension improved wash performance.  Both plates were place at 4c. remainder of the protocol will be performed this aft. ",
         "completionLinks": ""
       }
     ],
@@ -6969,24 +6915,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mp06zu8qc15ado9pfxm",
-      "subtaskId": "mp074613o0vyskgcoh",
-      "completedAt": "2026-05-11T17:43:15.194Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-11"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mp06zu8qc15ado9pfxm",
-      "subtaskId": "mp074ssmfyo58fk68oc",
-      "completedAt": "2026-05-11T19:41:39.890Z",
-      "completionNotes": "Performed Lysis + wash 1 of BLADE-R on two plates of monocytes. \n\nFor plate 1 there was poor washing resulting in beads not getting resuspended.  An earlier tip change before wash 1 resuspension improved wash performance.  Both plates were place at 4c. remainder of the protocol will be performed this aft. ",
-      "completionLinks": "",
-      "date": "2026-05-11"
-    },
     {
       "projectId": "mkltwpanzsdw6b96wbe",
       "taskId": "movqvib91fmi31nrat2",
@@ -8607,9 +8535,17 @@
       "completedAt": "2026-08-08T19:24:30.798Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "id": "mskqc9yxnorf9f9ex2",
+      "title": "RM int.",
+      "completedAt": "2026-08-10T23:18:23.577Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-10"
     }
   ],
-  "lastUpdated": "2026-08-08T19:36:22.735Z",
+  "lastUpdated": "2026-08-10T23:18:23.577Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8768,17 +8704,6 @@
     ]
   },
   "dailySummaries": {
-    "2026-05-11": {
-      "summary": "**Monday, May 11, 2026 Daily Summary**\n\nFocused primarily on BLADE-R automation testing for the SMARTSeq TechDev project, running multiple plates through the protocol and troubleshooting workflow issues. Also completed cell preparation work for the Natural Killer Cell CRISPR Screen. Made significant progress debugging the automated BLADE-R protocol, though RNA quality control is still pending.\n\n**Main Accomplishments:**\n• Thawed T cells (RQR8s + GNEs) for Natural Killer Cell CRISPR Screen killing assay\n• Isolated monocytes and ran end-to-end BLADE-R plate with automated protocol debugging\n• Completed afternoon BLADE-R plate run for SMARTSeq TechDev\n• Performed morning BLADE-R lysis and wash steps on two monocyte plates, identifying tip change timing improvement for better wash performance\n\n**Carry Forward:**\nRNA quality control needed tomorrow for BLADE-R plates. Implement automated reagent plate preparation for high-throughput BLADE-R workflow. Apply stamping technique learned in team meeting (intermediary plate for even nucleofected cell distribution) on Friday.",
-      "reflections": {
-        "accomplishments": "Testing for BLADE-R automation - need to do all the readouts tomorrow but the automated workflow runs relatively bug free now.",
-        "effort": "everything as expected.",
-        "learned": "got all the kinks in the automation out.  During team meeting I learned that the best way to get even distribution of nucleofected cells out into culture plates is to first stamp into an intermediary plate. will implement on Friday",
-        "carryForward": "Need to implement an automated way to make all the reagent plates for ht BLADE-R"
-      },
-      "generatedAt": "2026-05-12T14:09:35.604Z",
-      "editedAt": "2026-05-12T14:09:35.604Z"
-    },
     "2026-05-12": {
       "summary": "**Daily Summary - Tuesday, May 12, 2026**\n\nFocused day on advancing the Natural Killer Cell CRISPR Screen with experimental setup and planning. Set up killing assay for tomorrow's readout and analyzed RNA data from yesterday's BLADE-R experiment. Met with ZT to discuss project direction and identified need for more structured approach to the NK cell screen.\n\n**Main Accomplishments:**\n• Set up killing assay against RQR8 cells (384 + 96 well format, 8:1 to 0:1 ratio) for Natural Killer Cell CRISPR Screen\n• Analyzed RNA data from previous day's BLADE-R experiment\n• Met with ZT regarding project coordination\n\n**Carry Forward:**\nNeed to develop formal, detailed screen plan for NK cell screen and prepare screen proposal for next week presentation. BLADE-R optimization shows within-run variability is more critical than post-wash timing.",
       "reflections": {
@@ -8813,14 +8738,7 @@
       "editedAt": "2026-05-19T14:47:17.844Z"
     }
   },
-  "weeklySummaries": {
-    "2026-05-10": {
-      "summary": "**Week Overview**\n\nThis week demonstrated strong momentum across multiple CRISPR screening projects, with particularly intensive work on protocol optimization and automation troubleshooting. The pace was consistently high, with daily experimental work spanning Natural Killer Cell CRISPR Screen, SMARTSeq TechDev, and iAstro CRISPR Screen projects. Technical challenges emerged around automated protocols, particularly BLADE-R workflow optimization and nucleofection procedures, requiring iterative problem-solving throughout the week. The week culminated in successful nucleofection experiments and protocol validations that set up promising experimental trajectories for the following week.\n\n**Completed Work**\n\nNatural Killer Cell CRISPR Screen: Made substantial progress with cell preparation and assay development. Thawed T cells (RQR8s + GNEs) for killing assay work and set up killing assay against RQR8 cells using both 384 and 96 well formats with 8:1 to 0:1 ratios. Completed flow cytometry preparation and readout analysis. Executed a second pilot of the 384 well killing assay, including all major components: nucleofecting cells, setting up the killing assay, flow preparation, and readout. Concluded the week by nucleofecting approximately 10 million cells with AAVS1 RNP, with readout scheduled for the following week.\n\nSMARTSeq TechDev: Focused heavily on BLADE-R protocol automation and optimization. Isolated monocytes and ran complete end-to-end BLADE-R testing, encountering significant hiccups in the automated protocol that required RNA quality control follow-up. Completed both afternoon and morning BLADE-R plate runs, identifying critical timing improvements including earlier tip changes before wash 1 resuspension to improve wash performance. Successfully completed protocol first draft documentation. Discovered that within-run variability is more critical than post-wash timing for protocol optimization.\n\niAstro CRISPR Screen: Advanced nucleofection methodology by validating the cell + RNP to nucleoplate protocol. Identified specific technical improvements needed, including custom aspiration requirements for better plate positioning and custom dispense modifications to reduce bubble formation and ensure even dispersion across the cuvette footprint.\n\n**Recurring Themes & Patterns**\n\nProtocol optimization emerged as a dominant theme, with consistent troubleshooting across multiple automated workflows throughout the week. Technical challenges with liquid handling automation required daily problem-solving, particularly around tip management and wash procedures in the BLADE-R protocol. Nucleofection procedures appeared repeatedly across different projects, building expertise and identifying common improvement areas like dispense uniformity and aspiration positioning. Quality control and validation steps became routine practice, with RNA QC, flow cytometry readouts, and protocol validation occurring systematically. Cross-project learning was evident, with lessons from one screening project informing approaches in others, particularly around cell handling and assay setup procedures.\n\n**Carry Forward**\n\nSeveral technical refinements require immediate attention: implement custom aspiration and dispense improvements for the nucleoplate workflow to address positioning and bubble issues identified in iAstro work. RNA quality control results from BLADE-R experiments need review and protocol adjustments based on findings. Develop a formal, detailed screen plan for the NK cell screen with structured approach for next week presentation. Complete readout analysis for the AAVS1 RNP nucleofection experiment. Apply automated reagent plate preparation techniques for high-throughput BLADE-R workflow scaling. Review Orchestra training video and attempt small batch registration to build on the 2-hour training session completed during the week.",
-      "weekStart": "2026-05-10",
-      "generatedAt": "2026-05-15T23:43:44.957Z",
-      "editedAt": "2026-05-15T23:43:44.957Z"
-    }
-  },
+  "weeklySummaries": {},
   "archivedYears": [
     2025,
     2026
