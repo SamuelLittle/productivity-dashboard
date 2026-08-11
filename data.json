@@ -1471,6 +1471,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-11T15:17:48.671Z"
+            },
+            {
+              "id": "msot1f0kbzxjrqob5g4",
+              "title": "Media Swap",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-11T15:17:58.724Z"
             }
           ]
         }
@@ -6902,6 +6910,14 @@
         "time": null,
         "scheduledAt": "2026-08-08T18:57:58.905Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "msot0q1x8axc96qhr7l",
+        "subtaskId": "msot1f0kbzxjrqob5g4",
+        "time": null,
+        "scheduledAt": "2026-08-11T15:17:58.724Z",
+        "completedOnDay": false
       }
     ],
     "2026-08-19": [
@@ -8562,7 +8578,7 @@
       "date": "2026-08-10"
     }
   ],
-  "lastUpdated": "2026-08-11T15:17:48.671Z",
+  "lastUpdated": "2026-08-11T15:17:58.724Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
