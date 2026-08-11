@@ -4494,9 +4494,12 @@
           "title": "Write SOP for HT Automated BLADE-R",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-08-08T19:25:07.704Z",
-          "subtasks": []
+          "subtasks": [],
+          "completedAt": "2026-08-11T15:16:46.380Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -6845,7 +6848,10 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-08-08T19:25:07.704Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-11T15:16:46.379Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-08-13": [
@@ -8518,9 +8524,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-10"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mskrjp4op9yg4r87bof",
+      "completedAt": "2026-08-11T15:16:46.380Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-10"
     }
   ],
-  "lastUpdated": "2026-08-11T15:16:34.915Z",
+  "lastUpdated": "2026-08-11T15:16:46.380Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
