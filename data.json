@@ -5955,9 +5955,12 @@
         "title": "Meet with Baptiste and Mayra",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-08-08T19:35:21.429Z",
-        "time": "10:00"
+        "time": "10:00",
+        "completedAt": "2026-08-11T18:23:58.044Z",
+        "completionNotes": "Need to send out summary email to Mayra + Baptiste",
+        "completionLinks": ""
       },
       {
         "id": "mskry5zjocg15xz8nxc",
@@ -8602,9 +8605,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-10"
+    },
+    {
+      "id": "mskrwuol7i1uditwnl",
+      "title": "Meet with Baptiste and Mayra",
+      "completedAt": "2026-08-11T18:23:58.044Z",
+      "completionNotes": "Need to send out summary email to Mayra + Baptiste",
+      "completionLinks": "",
+      "date": "2026-08-11"
     }
   ],
-  "lastUpdated": "2026-08-11T15:18:55.709Z",
+  "lastUpdated": "2026-08-11T18:23:58.044Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
