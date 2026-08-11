@@ -2526,8 +2526,11 @@
               "title": "Prepare experiment summary",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-07T16:19:21.041Z"
+              "completed": true,
+              "createdAt": "2026-08-07T16:19:21.041Z",
+              "completedAt": "2026-08-11T15:16:34.915Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -5921,19 +5924,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-05-12": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "movqvib91fmi31nrat2",
-        "subtaskId": "movqxczpeylxy903wy",
-        "time": null,
-        "scheduledAt": "2026-05-07T17:14:24.134Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-13T03:06:43.128Z",
-        "completionNotes": "Set up killing assay against RQR8 cells only. \n\n384 + 96 well for 8:1 -> 0:1 ",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-13": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6836,7 +6826,10 @@
         "subtaskId": "msj5gxn5bqmd3yv5o6l",
         "time": null,
         "scheduledAt": "2026-08-08T18:52:07.621Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-11T15:16:34.915Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6915,33 +6908,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "movqvib91fmi31nrat2",
-      "subtaskId": "movqwnja8watng79th9",
-      "completedAt": "2026-05-12T00:11:36.001Z",
-      "completionNotes": "thawed RQR8s + GNEs\n",
-      "completionLinks": "",
-      "date": "2026-05-11"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mp06zu8qc15ado9pfxm",
-      "subtaskId": "mp0779sveyet0ql58wc",
-      "completedAt": "2026-05-12T00:11:46.459Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-11"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mp06zu8qc15ado9pfxm",
-      "subtaskId": "mp076nogs4d3sw4wg9r",
-      "completedAt": "2026-05-12T00:12:26.798Z",
-      "completionNotes": "Lots of hiccups throughout the automated protocol.  Need to QC RNA tomorrow.  If it doesnt work I will tighten the screws and try again. ",
-      "completionLinks": "",
-      "date": "2026-05-11"
-    },
     {
       "projectId": "mkltwpanzsdw6b96wbe",
       "taskId": "movqvib91fmi31nrat2",
@@ -8543,9 +8509,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-10"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrjt9r0bj672rjm1058",
+      "subtaskId": "msj5gxn5bqmd3yv5o6l",
+      "completedAt": "2026-08-11T15:16:34.915Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-10"
     }
   ],
-  "lastUpdated": "2026-08-10T23:18:23.577Z",
+  "lastUpdated": "2026-08-11T15:16:34.915Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8667,7 +8642,6 @@
     ]
   },
   "dailyNotes": {
-    "2026-05-12": "2hr Orchestra training session.  Need to review video and try small batch reg.",
     "2026-05-14": "isolated NK cells for cloaking experiments\nmet with Russel and worked on protocol for post RT pooling\norganoid meeting\nreviewed protocol for Flex v2 fixations wokr",
     "2026-05-29": "Also finished final testing of BLADE-R need to put together results.",
     "2026-07-31": "Nucleofection went smoothly using i7\n\n+Director seminar + lunch\n+Fun with Ona and CytoSig",
@@ -8704,17 +8678,6 @@
     ]
   },
   "dailySummaries": {
-    "2026-05-12": {
-      "summary": "**Daily Summary - Tuesday, May 12, 2026**\n\nFocused day on advancing the Natural Killer Cell CRISPR Screen with experimental setup and planning. Set up killing assay for tomorrow's readout and analyzed RNA data from yesterday's BLADE-R experiment. Met with ZT to discuss project direction and identified need for more structured approach to the NK cell screen.\n\n**Main Accomplishments:**\n• Set up killing assay against RQR8 cells (384 + 96 well format, 8:1 to 0:1 ratio) for Natural Killer Cell CRISPR Screen\n• Analyzed RNA data from previous day's BLADE-R experiment\n• Met with ZT regarding project coordination\n\n**Carry Forward:**\nNeed to develop formal, detailed screen plan for NK cell screen and prepare screen proposal for next week presentation. BLADE-R optimization shows within-run variability is more critical than post-wash timing.",
-      "reflections": {
-        "accomplishments": "Set up killing assay for readout tomorrow. analyzed RNA from yesterdays BLADE-R. Met with ZT. need to button up NK cell screen more tightly. Need to prepare screen proposal for next week",
-        "effort": "n/a",
-        "learned": "BLADE-R: variability within runs is more impactful then time post wash 1. Perfect clean runs with current set up should lead to success.",
-        "carryForward": "Need to make a toght formal screen plan for NK cell screen."
-      },
-      "generatedAt": "2026-05-13T03:09:36.600Z",
-      "editedAt": "2026-05-13T03:09:36.600Z"
-    },
     "2026-05-15": {
       "summary": "**Friday, May 15, 2026 Daily Summary**\n\nFocused day on advancing two CRISPR screening projects with nucleofection work while setting up for next week's experiments. Made progress on protocol optimization and connected with team members on upcoming collaborative work.\n\n**Main Accomplishments:**\n• Validated cell + RNP to nucleoplate protocol for iAstro CRISPR Screen, identifying needs for custom aspiration and dispense improvements\n• Nucleofected ~10M cells with AAVS1 RNP for Natural Killer Cell CRISPR Screen, with readout scheduled for next week\n• Reviewed pTOX assay protocol to build understanding for upcoming work\n• Coordinated with Michelle on liberase pilot assistance for next week\n\n**Carry Forward:**\nProtocol refinements needed for nucleoplate workflow - implement custom aspiration for better plate positioning and custom dispense to reduce bubbles and improve distribution.",
       "reflections": {
