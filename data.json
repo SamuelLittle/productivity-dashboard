@@ -1463,7 +1463,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-08-11T15:17:26.373Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "msot179butle57vkxo",
+              "title": "Make media and Thaw HSPCs",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-11T15:17:48.671Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [
@@ -6921,6 +6930,14 @@
         "time": null,
         "scheduledAt": "2026-08-11T15:16:50.042Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "msot0q1x8axc96qhr7l",
+        "subtaskId": "msot179butle57vkxo",
+        "time": null,
+        "scheduledAt": "2026-08-11T15:17:48.671Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -8545,7 +8562,7 @@
       "date": "2026-08-10"
     }
   ],
-  "lastUpdated": "2026-08-11T15:17:26.373Z",
+  "lastUpdated": "2026-08-11T15:17:48.671Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
