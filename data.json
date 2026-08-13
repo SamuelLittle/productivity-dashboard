@@ -2630,8 +2630,11 @@
               "title": "Thaw PBMCs and isolate NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-08T18:54:48.025Z"
+              "completed": true,
+              "createdAt": "2026-08-08T18:54:48.025Z",
+              "completedAt": "2026-08-13T23:22:59.066Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mskqhu5cfmvtg3greeg",
@@ -6007,41 +6010,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-05-13": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "movqvib91fmi31nrat2",
-        "subtaskId": "movqxtz5s7gdg2z06bm",
-        "time": null,
-        "scheduledAt": "2026-05-07T17:14:46.145Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-15T23:39:54.266Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "movqvib91fmi31nrat2",
-        "subtaskId": "movqy9681pqxg4hywaui",
-        "time": null,
-        "scheduledAt": "2026-05-07T17:15:05.840Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-15T23:39:58.359Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mp088xufq5tucagq0si",
-        "subtaskId": "mp089zc0yje29w9730f",
-        "time": null,
-        "scheduledAt": "2026-05-13T03:06:57.871Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-15T23:40:04.947Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-15": [
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -6925,7 +6893,10 @@
         "subtaskId": "mskqgp20dtfxyhum51v",
         "time": null,
         "scheduledAt": "2026-08-08T18:54:48.025Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-13T23:22:59.065Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-08-14": [
@@ -7044,15 +7015,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "movqvib91fmi31nrat2",
-      "subtaskId": "movqxczpeylxy903wy",
-      "completedAt": "2026-05-13T03:06:43.128Z",
-      "completionNotes": "Set up killing assay against RQR8 cells only. \n\n384 + 96 well for 8:1 -> 0:1 ",
-      "completionLinks": "",
-      "date": "2026-05-12"
-    },
     {
       "projectId": "mklu1lye4czo9brjznq",
       "taskId": "mp07kxytswogf1924m",
@@ -8696,9 +8658,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-11"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mskqf78ku9h0f4d5ecb",
+      "subtaskId": "mskqgp20dtfxyhum51v",
+      "completedAt": "2026-08-13T23:22:59.066Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-13"
     }
   ],
-  "lastUpdated": "2026-08-11T23:17:53.140Z",
+  "lastUpdated": "2026-08-13T23:22:59.066Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8820,7 +8791,6 @@
     ]
   },
   "dailyNotes": {
-    "2026-05-14": "isolated NK cells for cloaking experiments\nmet with Russel and worked on protocol for post RT pooling\norganoid meeting\nreviewed protocol for Flex v2 fixations wokr",
     "2026-05-29": "Also finished final testing of BLADE-R need to put together results.",
     "2026-07-31": "Nucleofection went smoothly using i7\n\n+Director seminar + lunch\n+Fun with Ona and CytoSig",
     "2026-08-05": "- Also had mid year check in with Zora, went well"
