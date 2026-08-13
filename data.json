@@ -4747,8 +4747,11 @@
               "title": "Protocol Refinement + wet run",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-11T23:16:40.301Z"
+              "completed": true,
+              "createdAt": "2026-08-11T23:16:40.301Z",
+              "completedAt": "2026-08-13T23:23:30.551Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mspa6gjrmnafhix7by8",
@@ -6991,18 +6994,13 @@
       {
         "projectId": "mpyqnvm6p9zp4xlp64m",
         "taskId": "msot20jrbopourlxc6r",
-        "subtaskId": "mspa6gjrmnafhix7by8",
-        "time": null,
-        "scheduledAt": "2026-08-11T23:17:47.464Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "msot20jrbopourlxc6r",
         "subtaskId": "mspa50q4f9t1fqxjy1v",
         "time": null,
         "scheduledAt": "2026-08-11T23:17:53.140Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-13T23:23:30.551Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-08-20": [
@@ -7012,6 +7010,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-08-13T23:23:22.606Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "msot20jrbopourlxc6r",
+        "subtaskId": "mspa6gjrmnafhix7by8",
+        "time": null,
+        "scheduledAt": "2026-08-13T23:23:22.650Z",
         "completedOnDay": false
       }
     ]
@@ -8669,9 +8675,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-13"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "msot20jrbopourlxc6r",
+      "subtaskId": "mspa50q4f9t1fqxjy1v",
+      "completedAt": "2026-08-13T23:23:30.551Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-12"
     }
   ],
-  "lastUpdated": "2026-08-13T23:23:22.606Z",
+  "lastUpdated": "2026-08-13T23:23:30.551Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
