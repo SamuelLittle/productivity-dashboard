@@ -2678,6 +2678,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-08T18:58:24.519Z"
+            },
+            {
+              "id": "mstel5xzbx7o54iggwn",
+              "title": "FACS Prep Pilot ",
+              "description": "https://docs.google.com/document/d/1eArTd9wr48Oq77PL187NNnuDvYpZ6P24YMaOtEKoaz0/edit?tab=t.0",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-14T20:32:16.727Z"
             }
           ]
         }
@@ -6921,6 +6929,14 @@
         "time": null,
         "scheduledAt": "2026-08-13T23:23:11.836Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mskqf78ku9h0f4d5ecb",
+        "subtaskId": "mstel5xzbx7o54iggwn",
+        "time": null,
+        "scheduledAt": "2026-08-14T20:32:16.727Z",
+        "completedOnDay": false
       }
     ],
     "2026-08-18": [
@@ -8637,7 +8653,7 @@
       "date": "2026-08-14"
     }
   ],
-  "lastUpdated": "2026-08-14T20:30:40.588Z",
+  "lastUpdated": "2026-08-14T20:32:16.727Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
