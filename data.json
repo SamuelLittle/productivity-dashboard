@@ -2641,8 +2641,11 @@
               "title": "Automated Nucleofection of NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-08T18:55:41.280Z"
+              "completed": true,
+              "createdAt": "2026-08-08T18:55:41.280Z",
+              "completedAt": "2026-08-14T20:28:51.748Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mskqisr3wd7fo7poan",
@@ -6013,30 +6016,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-05-15": [
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "mp07kxytswogf1924m",
-        "subtaskId": "mp07md6tdnuojwgmhpp",
-        "time": null,
-        "scheduledAt": "2026-05-10T20:13:23.087Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-15T23:32:23.059Z",
-        "completionNotes": "Validated version of this.  Need to dig more in with a custom aspiration to get lower in the plate and a custom dispense to avoid bubbles and ensure even dispresion across cuvette footprint",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mp66vaik80f35xv2ryp",
-        "subtaskId": "mp66vo8bct6wc2int05",
-        "time": null,
-        "scheduledAt": "2026-05-15T00:38:41.004Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-15T23:33:57.486Z",
-        "completionNotes": "nucleofected ~10M cells with AAVS1 RNP,  readout next week. ",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-19": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6909,7 +6888,10 @@
         "subtaskId": "mskqhu5cfmvtg3greeg",
         "time": null,
         "scheduledAt": "2026-08-08T18:55:41.280Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-14T20:28:51.748Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-08-17": [
@@ -7023,59 +7005,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "mp07kxytswogf1924m",
-      "subtaskId": "mp07md6tdnuojwgmhpp",
-      "completedAt": "2026-05-15T23:32:23.060Z",
-      "completionNotes": "Validated version of this.  Need to dig more in with a custom aspiration to get lower in the plate and a custom dispense to avoid bubbles and ensure even dispresion across cuvette footprint",
-      "completionLinks": "",
-      "date": "2026-05-15"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mp66vaik80f35xv2ryp",
-      "subtaskId": "mp66vo8bct6wc2int05",
-      "completedAt": "2026-05-15T23:33:57.486Z",
-      "completionNotes": "nucleofected ~10M cells with AAVS1 RNP,  readout next week. ",
-      "completionLinks": "",
-      "date": "2026-05-15"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mp66vaik80f35xv2ryp",
-      "completedAt": "2026-05-15T23:39:39.349Z",
-      "completionNotes": "Thawed cells and began set up for this assay.",
-      "completionLinks": "",
-      "date": "2026-05-14"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "movqvib91fmi31nrat2",
-      "subtaskId": "movqxtz5s7gdg2z06bm",
-      "completedAt": "2026-05-15T23:39:54.267Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-13"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "movqvib91fmi31nrat2",
-      "subtaskId": "movqy9681pqxg4hywaui",
-      "completedAt": "2026-05-15T23:39:58.359Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-13"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mp088xufq5tucagq0si",
-      "subtaskId": "mp089zc0yje29w9730f",
-      "completedAt": "2026-05-15T23:40:04.947Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-13"
-    },
     {
       "projectId": "mmfjn4b1w85dvswipdk",
       "taskId": "mp06zu8qc15ado9pfxm",
@@ -8684,9 +8613,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-12"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mskqf78ku9h0f4d5ecb",
+      "subtaskId": "mskqhu5cfmvtg3greeg",
+      "completedAt": "2026-08-14T20:28:51.748Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-14"
     }
   ],
-  "lastUpdated": "2026-08-13T23:23:30.551Z",
+  "lastUpdated": "2026-08-14T20:28:51.748Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8843,17 +8781,6 @@
     ]
   },
   "dailySummaries": {
-    "2026-05-15": {
-      "summary": "**Friday, May 15, 2026 Daily Summary**\n\nFocused day on advancing two CRISPR screening projects with nucleofection work while setting up for next week's experiments. Made progress on protocol optimization and connected with team members on upcoming collaborative work.\n\n**Main Accomplishments:**\n• Validated cell + RNP to nucleoplate protocol for iAstro CRISPR Screen, identifying needs for custom aspiration and dispense improvements\n• Nucleofected ~10M cells with AAVS1 RNP for Natural Killer Cell CRISPR Screen, with readout scheduled for next week\n• Reviewed pTOX assay protocol to build understanding for upcoming work\n• Coordinated with Michelle on liberase pilot assistance for next week\n\n**Carry Forward:**\nProtocol refinements needed for nucleoplate workflow - implement custom aspiration for better plate positioning and custom dispense to reduce bubbles and improve distribution.",
-      "reflections": {
-        "accomplishments": "Performed nucleofection for next weeks killing assays. Read through and began to understand pTOX assay protocol.  Volunteered to assist Michelle next week with liberase pilots.",
-        "effort": "signals training.",
-        "learned": "Qiao encouraged me to stick with FACS as the readout for the killing assay.  I still think imaging has potential but I understand his hesitancy.",
-        "carryForward": "Nothing major today. Mostly setting up next week and problem solving on existing projects."
-      },
-      "generatedAt": "2026-05-15T23:38:20.575Z",
-      "editedAt": "2026-05-15T23:38:20.575Z"
-    },
     "2026-05-19": {
       "summary": "**Tuesday, May 19, 2026 - Daily Summary**\n\nToday focused on strategic planning and coordination rather than hands-on experimental work. The key achievement was a productive meeting with ZT and Qiao that established clear direction for the imaging components of the Natural Killer Cell CRISPR Screen project. This planning session resulted in concrete milestones and a refined approach to the experimental workflow.\n\n**Main Accomplishments:**\n• Met with ZT and Qiao to formalize imaging work approach and deliverables\n• Established milestones for BLADE-R protocol delivery \n• Developed plan for image-based NK cell killing readout\n• Set timeline for return to cytokine screening work\n\n**Carry Forward:**\nMultiple experimental tasks for the Natural Killer Cell CRISPR Screen remain pending: setting up the killing assay, completing CTV staining, and processing incoming blood samples (4X delivery expected).",
       "reflections": {
