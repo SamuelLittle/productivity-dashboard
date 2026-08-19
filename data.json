@@ -2687,8 +2687,11 @@
               "title": "FACS Prep Pilot ",
               "description": "https://docs.google.com/document/d/1eArTd9wr48Oq77PL187NNnuDvYpZ6P24YMaOtEKoaz0/edit?tab=t.0",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-14T20:32:16.727Z"
+              "completed": true,
+              "createdAt": "2026-08-14T20:32:16.727Z",
+              "completedAt": "2026-08-19T15:18:47.877Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -6830,7 +6833,10 @@
         "subtaskId": "mstel5xzbx7o54iggwn",
         "time": null,
         "scheduledAt": "2026-08-14T20:32:16.727Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-19T15:18:47.877Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-08-18": [
@@ -8503,9 +8509,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-17"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mskqf78ku9h0f4d5ecb",
+      "subtaskId": "mstel5xzbx7o54iggwn",
+      "completedAt": "2026-08-19T15:18:47.877Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-17"
     }
   ],
-  "lastUpdated": "2026-08-19T15:18:43.798Z",
+  "lastUpdated": "2026-08-19T15:18:47.877Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
