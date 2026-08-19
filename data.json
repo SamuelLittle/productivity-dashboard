@@ -2685,8 +2685,11 @@
               "title": "Flow cytometry prep + readout",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-08T18:58:24.519Z"
+              "completed": true,
+              "createdAt": "2026-08-08T18:58:24.519Z",
+              "completedAt": "2026-08-19T23:05:47.526Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mstel5xzbx7o54iggwn",
@@ -6868,7 +6871,10 @@
         "subtaskId": "mskqlc3r55ttju5ag9t",
         "time": null,
         "scheduledAt": "2026-08-08T18:58:24.520Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-19T23:05:47.525Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -8548,9 +8554,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-18"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mskqf78ku9h0f4d5ecb",
+      "subtaskId": "mskqlc3r55ttju5ag9t",
+      "completedAt": "2026-08-19T23:05:47.526Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-19"
     }
   ],
-  "lastUpdated": "2026-08-19T16:15:31.955Z",
+  "lastUpdated": "2026-08-19T23:05:47.526Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
