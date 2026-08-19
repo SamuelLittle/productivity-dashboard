@@ -5987,17 +5987,6 @@
         "completionNotes": "",
         "completionLinks": ""
       }
-    ],
-    "2026-08-17": [
-      {
-        "id": "mstehjkeba9w2v9xvb",
-        "title": "Neuro-Immunology team bi-weekly",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-08-14T20:29:27.758Z",
-        "time": null
-      }
     ]
   },
   "scheduledItems": {
@@ -8520,7 +8509,7 @@
       "date": "2026-08-17"
     }
   ],
-  "lastUpdated": "2026-08-19T15:18:47.877Z",
+  "lastUpdated": "2026-08-19T15:18:52.782Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
