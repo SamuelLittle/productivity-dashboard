@@ -2674,8 +2674,11 @@
               "title": "Automated replating and Killing assay set up",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-08T18:57:58.904Z"
+              "completed": true,
+              "createdAt": "2026-08-08T18:57:58.904Z",
+              "completedAt": "2026-08-19T15:19:18.771Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mskqlc3r55ttju5ag9t",
@@ -6841,7 +6844,10 @@
         "subtaskId": "mskqksc8gomor82afw",
         "time": null,
         "scheduledAt": "2026-08-08T18:57:58.905Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-19T15:19:18.771Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-08-19": [
@@ -8522,9 +8528,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-18"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mskqf78ku9h0f4d5ecb",
+      "subtaskId": "mskqksc8gomor82afw",
+      "completedAt": "2026-08-19T15:19:18.771Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-18"
     }
   ],
-  "lastUpdated": "2026-08-19T15:19:15.546Z",
+  "lastUpdated": "2026-08-19T15:19:18.771Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
