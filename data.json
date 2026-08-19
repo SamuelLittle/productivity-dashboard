@@ -2652,8 +2652,11 @@
               "title": "Thaw T cells for killing assay",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-08T18:56:26.128Z"
+              "completed": true,
+              "createdAt": "2026-08-08T18:56:26.128Z",
+              "completedAt": "2026-08-19T15:18:43.798Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mskqjxhunasqnjs0a6m",
@@ -4780,20 +4783,6 @@
     }
   ],
   "dailyLists": {
-    "2026-05-19": [
-      {
-        "id": "mp2z1ov6ojxw074oud9",
-        "title": "4X blood arriving.",
-        "description": "Isolated PBMCs and bank from all 4 donors. ",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-12T18:36:06.306Z",
-        "time": null,
-        "completedAt": "2026-05-25T23:43:00.235Z",
-        "completionNotes": "isolated PBMCs and stored in -80",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-22": [
       {
         "id": "mp7kdlm9n49nzhzxtb",
@@ -4819,32 +4808,6 @@
         "time": null,
         "completedAt": "2026-05-25T23:44:34.087Z",
         "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-05-18": [
-      {
-        "id": "mpbc31i8jc2651zco1p",
-        "title": "gpr35 Meeting",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-18T15:03:13.761Z",
-        "time": "10:30",
-        "completedAt": "2026-05-18T18:44:23.412Z",
-        "completionNotes": "Productive meeting with Pete + Kelly + Javi + ZT\n\ngoing to move forward with Bulk RNA seq of GPR35 expressing donor under small collection of experimental conditions.  Will expand out to more targets as neccessary. ",
-        "completionLinks": ""
-      },
-      {
-        "id": "mpbjuqwexuitzlf84o",
-        "title": "Assemble required reagents for NK-T cells screen",
-        "description": "- round bottom 384 well plate\n- flat bottom glass 384 well plate\n- CTV\n- sytox green\n- write out methodology",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-18T18:40:43.694Z",
-        "time": null,
-        "completedAt": "2026-05-18T23:14:45.222Z",
-        "completionNotes": "Got ULA u bottom 384 well plates.  Sytox green has arrived but not delivered to me yet.  Need to get 384 imaging plates and CTV - can do that tomorrow morning. ",
         "completionLinks": ""
       }
     ],
@@ -6035,78 +5998,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-05-19": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mp66vaik80f35xv2ryp",
-        "subtaskId": "mp66xzlgnw6gfx1iay",
-        "time": null,
-        "scheduledAt": "2026-05-15T00:40:29.044Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-25T23:42:13.726Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mp66vaik80f35xv2ryp",
-        "subtaskId": "mpbto3v8lr9d3j9sxyr",
-        "time": null,
-        "scheduledAt": "2026-05-18T23:15:30.069Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-25T23:42:47.921Z",
-        "completionNotes": "stained using published protocol. ",
-        "completionLinks": "https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.24830"
-      }
-    ],
-    "2026-05-20": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mp66vaik80f35xv2ryp",
-        "subtaskId": "mp66yhomauanayu2mif",
-        "time": null,
-        "scheduledAt": "2026-05-15T00:40:52.487Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-25T23:43:42.326Z",
-        "completionNotes": "Imaged at 10x and 4x - need to analyze images.  Ran samples on flow cytometer to give anchor point. ",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mp66vaik80f35xv2ryp",
-        "subtaskId": "mp66ytojzvyat8n77ec",
-        "time": null,
-        "scheduledAt": "2026-05-15T23:45:33.778Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-25T23:43:48.683Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-05-18": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mpbc4ikhimw5v6go98m",
-        "subtaskId": null,
-        "time": "13:30",
-        "scheduledAt": "2026-05-18T15:04:22.530Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-18T21:12:04.956Z",
-        "completionNotes": "Moving forward with single k/a plate with single set of controls on each plate\n",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mp66vaik80f35xv2ryp",
-        "subtaskId": "mpbfhdlnex793h6bcmo",
-        "time": null,
-        "scheduledAt": "2026-05-18T16:38:21.469Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-18T22:58:06.160Z",
-        "completionNotes": "Thawed roughly 7M T cells from two vials of RQR8 KO cell lines.",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-26": [
       {
         "projectId": "mlld42ihacxlvsot49w",
@@ -6920,7 +6811,10 @@
         "subtaskId": "mskqisr3wd7fo7poan",
         "time": null,
         "scheduledAt": "2026-08-08T18:56:26.128Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-19T15:18:43.797Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7034,57 +6928,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mp06zu8qc15ado9pfxm",
-      "subtaskId": null,
-      "title": "Multi-Plate BLADE-R automation",
-      "completedAt": "2026-05-18T16:34:15.923Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mnywuk88jf98pxpt8k",
-      "subtaskId": null,
-      "title": "Monocyte Full Automation Run",
-      "completedAt": "2026-05-18T16:34:23.327Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
-    {
-      "id": "mpbc31i8jc2651zco1p",
-      "title": "gpr35 Meeting",
-      "completedAt": "2026-05-18T18:44:23.412Z",
-      "completionNotes": "Productive meeting with Pete + Kelly + Javi + ZT\n\ngoing to move forward with Bulk RNA seq of GPR35 expressing donor under small collection of experimental conditions.  Will expand out to more targets as neccessary. ",
-      "completionLinks": "",
-      "date": "2026-05-18"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mpbc4ikhimw5v6go98m",
-      "completedAt": "2026-05-18T21:12:04.956Z",
-      "completionNotes": "Moving forward with single k/a plate with single set of controls on each plate\n",
-      "completionLinks": "",
-      "date": "2026-05-18"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mp66vaik80f35xv2ryp",
-      "subtaskId": "mpbfhdlnex793h6bcmo",
-      "completedAt": "2026-05-18T22:58:06.161Z",
-      "completionNotes": "Thawed roughly 7M T cells from two vials of RQR8 KO cell lines.",
-      "completionLinks": "",
-      "date": "2026-05-18"
-    },
-    {
-      "id": "mpbjuqwexuitzlf84o",
-      "title": "Assemble required reagents for NK-T cells screen",
-      "completedAt": "2026-05-18T23:14:45.222Z",
-      "completionNotes": "Got ULA u bottom 384 well plates.  Sytox green has arrived but not delivered to me yet.  Need to get 384 imaging plates and CTV - can do that tomorrow morning. ",
-      "completionLinks": "",
-      "date": "2026-05-18"
-    },
     {
       "id": "mpg3ihcxq9786iekuk",
       "title": "isolate + plate monocytes for 384 BLADE-R next week",
@@ -8651,9 +8494,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-14"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mskqf78ku9h0f4d5ecb",
+      "subtaskId": "mskqisr3wd7fo7poan",
+      "completedAt": "2026-08-19T15:18:43.798Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-17"
     }
   ],
-  "lastUpdated": "2026-08-14T20:32:16.727Z",
+  "lastUpdated": "2026-08-19T15:18:43.798Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8809,19 +8661,7 @@
       "mo9ekjekh8f58tq3b2e"
     ]
   },
-  "dailySummaries": {
-    "2026-05-19": {
-      "summary": "**Tuesday, May 19, 2026 - Daily Summary**\n\nToday focused on strategic planning and coordination rather than hands-on experimental work. The key achievement was a productive meeting with ZT and Qiao that established clear direction for the imaging components of the Natural Killer Cell CRISPR Screen project. This planning session resulted in concrete milestones and a refined approach to the experimental workflow.\n\n**Main Accomplishments:**\n• Met with ZT and Qiao to formalize imaging work approach and deliverables\n• Established milestones for BLADE-R protocol delivery \n• Developed plan for image-based NK cell killing readout\n• Set timeline for return to cytokine screening work\n\n**Carry Forward:**\nMultiple experimental tasks for the Natural Killer Cell CRISPR Screen remain pending: setting up the killing assay, completing CTV staining, and processing incoming blood samples (4X delivery expected).",
-      "reflections": {
-        "accomplishments": "Meeting with ZT and Qiao to formalize imaging work",
-        "effort": "n/a",
-        "learned": "Set milestones for delivery of BLADE-R protocol and return to cytokine screening. Made plan for image based NK cell killing readout",
-        "carryForward": ""
-      },
-      "generatedAt": "2026-05-19T14:47:17.844Z",
-      "editedAt": "2026-05-19T14:47:17.844Z"
-    }
-  },
+  "dailySummaries": {},
   "weeklySummaries": {},
   "archivedYears": [
     2025,
