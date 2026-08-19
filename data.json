@@ -2663,8 +2663,11 @@
               "title": "CTG measurements and NK cell normalizations",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-08T18:57:18.931Z"
+              "completed": true,
+              "createdAt": "2026-08-08T18:57:18.931Z",
+              "completedAt": "2026-08-19T15:19:15.546Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mskqksc8gomor82afw",
@@ -6827,7 +6830,10 @@
         "subtaskId": "mskqjxhunasqnjs0a6m",
         "time": null,
         "scheduledAt": "2026-08-08T18:57:18.931Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-19T15:19:15.546Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -8507,9 +8513,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-17"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mskqf78ku9h0f4d5ecb",
+      "subtaskId": "mskqjxhunasqnjs0a6m",
+      "completedAt": "2026-08-19T15:19:15.546Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-18"
     }
   ],
-  "lastUpdated": "2026-08-19T15:18:58.676Z",
+  "lastUpdated": "2026-08-19T15:19:15.546Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
