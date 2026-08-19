@@ -6003,9 +6003,12 @@
         "title": "Monocyte RNA + cDNA QC -> meta data validation",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-08-19T16:15:31.955Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-08-19T23:05:52.429Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -8563,9 +8566,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-19"
+    },
+    {
+      "id": "mt0am8vmlkomagrhd8q",
+      "title": "Monocyte RNA + cDNA QC -> meta data validation",
+      "completedAt": "2026-08-19T23:05:52.430Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-19"
     }
   ],
-  "lastUpdated": "2026-08-19T23:05:47.526Z",
+  "lastUpdated": "2026-08-19T23:05:52.430Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
