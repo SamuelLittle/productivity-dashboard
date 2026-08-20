@@ -1016,6 +1016,32 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-05-21": [
+      {
+        "id": "mpbfrkmcja3gaxvqmi",
+        "title": "Liberase incubation pilot w/ Michelle Chen",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-05-18T16:46:17.124Z",
+        "time": null,
+        "completedAt": "2026-05-21T23:08:11.962Z",
+        "completionNotes": "Tested RT vs 37c liberase organoid dissociation with mixing every 10 min for 30 min with minimal singlet generation. \n\nLet incubate for an additional 30 min.  ",
+        "completionLinks": ""
+      },
+      {
+        "id": "mpg3ihcxq9786iekuk",
+        "title": "isolate + plate monocytes for 384 BLADE-R next week",
+        "description": "isolated monocytes and plated in MCSF in 394 well plate with 20, 10, 5, 2.5, and 1.25k cells per well. ",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-05-21T23:02:08.482Z",
+        "time": null,
+        "completedAt": "2026-05-21T23:04:19.835Z",
+        "completionNotes": "Also plated a 96 well plate with 40, 20, 10k cells per well",
+        "completionLinks": ""
+      }
     ]
   },
   "scheduledItems": {
@@ -6134,6 +6160,22 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-04-30"
+    },
+    {
+      "id": "mpg3ihcxq9786iekuk",
+      "title": "isolate + plate monocytes for 384 BLADE-R next week",
+      "completedAt": "2026-05-21T23:04:19.835Z",
+      "completionNotes": "Also plated a 96 well plate with 40, 20, 10k cells per well",
+      "completionLinks": "",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "mpbfrkmcja3gaxvqmi",
+      "title": "Liberase incubation pilot w/ Michelle Chen",
+      "completedAt": "2026-05-21T23:08:11.962Z",
+      "completionNotes": "Tested RT vs 37c liberase organoid dissociation with mixing every 10 min for 30 min with minimal singlet generation. \n\nLet incubate for an additional 30 min.  ",
+      "completionLinks": "",
+      "date": "2026-05-21"
     }
   ]
 }
