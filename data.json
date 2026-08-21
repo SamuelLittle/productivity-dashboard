@@ -4803,20 +4803,6 @@
     }
   ],
   "dailyLists": {
-    "2026-05-22": [
-      {
-        "id": "mp7kdlm9n49nzhzxtb",
-        "title": "ooo",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-15T23:44:18.609Z",
-        "time": null,
-        "completedAt": "2026-05-25T23:44:16.143Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-25": [
       {
         "id": "mp7kds7751o28vn90qe",
@@ -6901,27 +6887,11 @@
     ],
     "2026-08-20": [
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-08-20T18:38:30.628Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "msot0q1x8axc96qhr7l",
         "subtaskId": "msot179butle57vkxo",
         "time": null,
         "scheduledAt": "2026-08-20T18:38:30.653Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "msot20jrbopourlxc6r",
-        "subtaskId": "mt1vm6e8m9v6429ci28",
-        "time": null,
-        "scheduledAt": "2026-08-20T18:51:06.849Z",
         "completedOnDay": false
       }
     ],
@@ -6942,6 +6912,24 @@
         "subtaskId": "mspa6gjrmnafhix7by8",
         "time": null,
         "scheduledAt": "2026-08-20T18:52:52.207Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-08-21": [
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-08-21T00:29:10.847Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "msot20jrbopourlxc6r",
+        "subtaskId": "mt1vm6e8m9v6429ci28",
+        "time": null,
+        "scheduledAt": "2026-08-21T00:29:10.849Z",
         "completedOnDay": false
       }
     ]
@@ -8552,7 +8540,7 @@
       "date": "2026-08-19"
     }
   ],
-  "lastUpdated": "2026-08-20T18:52:52.207Z",
+  "lastUpdated": "2026-08-21T00:29:10.849Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
