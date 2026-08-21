@@ -4800,8 +4800,11 @@
               "title": "Adjust Bravo protocols to 3 plate versions",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-21T00:29:41.559Z"
+              "completed": true,
+              "createdAt": "2026-08-21T00:29:41.559Z",
+              "completedAt": "2026-08-21T00:29:50.810Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -6946,7 +6949,10 @@
         "subtaskId": "mt27plbqh5dxcij7kye",
         "time": null,
         "scheduledAt": "2026-08-21T00:29:41.560Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-21T00:29:50.810Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -8554,9 +8560,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-19"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "msot20jrbopourlxc6r",
+      "subtaskId": "mt27plbqh5dxcij7kye",
+      "completedAt": "2026-08-21T00:29:50.810Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-20"
     }
   ],
-  "lastUpdated": "2026-08-21T00:29:41.560Z",
+  "lastUpdated": "2026-08-21T00:29:50.810Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
