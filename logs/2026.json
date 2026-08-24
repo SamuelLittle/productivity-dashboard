@@ -1042,6 +1042,20 @@
         "completionNotes": "Also plated a 96 well plate with 40, 20, 10k cells per well",
         "completionLinks": ""
       }
+    ],
+    "2026-05-25": [
+      {
+        "id": "mp7kds7751o28vn90qe",
+        "title": "ooo",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-05-15T23:44:27.139Z",
+        "time": null,
+        "completedAt": "2026-05-25T23:44:34.087Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
     ]
   },
   "scheduledItems": {
@@ -6176,6 +6190,73 @@
       "completionNotes": "Tested RT vs 37c liberase organoid dissociation with mixing every 10 min for 30 min with minimal singlet generation. \n\nLet incubate for an additional 30 min.  ",
       "completionLinks": "",
       "date": "2026-05-21"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": "mp66xzlgnw6gfx1iay",
+      "completedAt": "2026-05-25T23:42:13.726Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-19"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": "mpbto3v8lr9d3j9sxyr",
+      "completedAt": "2026-05-25T23:42:47.921Z",
+      "completionNotes": "stained using published protocol. ",
+      "completionLinks": "https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.24830",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "mp2z1ov6ojxw074oud9",
+      "title": "4X blood arriving.",
+      "completedAt": "2026-05-25T23:43:00.235Z",
+      "completionNotes": "isolated PBMCs and stored in -80",
+      "completionLinks": "",
+      "date": "2026-05-19"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": "mp66yhomauanayu2mif",
+      "completedAt": "2026-05-25T23:43:42.327Z",
+      "completionNotes": "Imaged at 10x and 4x - need to analyze images.  Ran samples on flow cytometer to give anchor point. ",
+      "completionLinks": "",
+      "date": "2026-05-20"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": "mp66ytojzvyat8n77ec",
+      "completedAt": "2026-05-25T23:43:48.683Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-20"
+    },
+    {
+      "id": "mp7kdlm9n49nzhzxtb",
+      "title": "ooo",
+      "completedAt": "2026-05-25T23:44:16.143Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-22"
+    },
+    {
+      "id": "mp7kds7751o28vn90qe",
+      "title": "ooo",
+      "completedAt": "2026-05-25T23:44:34.087Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-05-25"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": "mp8pk91z1t99lgnx0ph",
+      "title": "make plan for imaging readout",
+      "completedAt": "2026-05-25T23:48:36.775Z"
     }
   ]
 }
