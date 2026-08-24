@@ -4806,6 +4806,14 @@
               "completedAt": "2026-08-21T00:29:50.810Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mt7jfxbltkt5jk79t4r",
+              "title": "Final Bravo wet run walk through",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-24T17:56:56.817Z"
             }
           ]
         }
@@ -6751,7 +6759,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-07-29": [],
     "2026-08-07": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6990,6 +6997,16 @@
         "completedAt": "2026-08-21T00:29:50.810Z",
         "completionNotes": "",
         "completionLinks": ""
+      }
+    ],
+    "2026-08-26": [
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "msot20jrbopourlxc6r",
+        "subtaskId": "mt7jfxbltkt5jk79t4r",
+        "time": null,
+        "scheduledAt": "2026-08-24T17:56:56.817Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -8575,7 +8592,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-24T17:56:38.211Z",
+  "lastUpdated": "2026-08-24T17:56:56.817Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
