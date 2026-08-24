@@ -2710,8 +2710,11 @@
               "title": "Finish analysis and send to Mayra + Baptiste",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-24T17:50:50.613Z"
+              "completed": true,
+              "createdAt": "2026-08-24T17:50:50.613Z",
+              "completedAt": "2026-08-24T17:51:05.958Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -6927,7 +6930,8 @@
         "subtaskId": "mt7j82r9skz9glh94o",
         "time": null,
         "scheduledAt": "2026-08-24T17:50:50.613Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-24T17:51:05.958Z"
       }
     ],
     "2026-08-25": [
@@ -8531,9 +8535,16 @@
       "completedAt": "2026-08-24T17:50:58.038Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mskqf78ku9h0f4d5ecb",
+      "subtaskId": "mt7j82r9skz9glh94o",
+      "title": "Finish analysis and send to Mayra + Baptiste",
+      "completedAt": "2026-08-24T17:51:05.958Z"
     }
   ],
-  "lastUpdated": "2026-08-24T17:50:58.038Z",
+  "lastUpdated": "2026-08-24T17:51:05.958Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
