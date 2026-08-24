@@ -4792,8 +4792,11 @@
               "title": "Water simulation run",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-20T18:51:06.848Z"
+              "completed": true,
+              "createdAt": "2026-08-20T18:51:06.848Z",
+              "completedAt": "2026-08-24T17:50:22.095Z",
+              "completionNotes": "Completed and documented. Sent notes to stakeholders. \n",
+              "completionLinks": ""
             },
             {
               "id": "mt27plbqh5dxcij7kye",
@@ -4814,20 +4817,6 @@
     }
   ],
   "dailyLists": {
-    "2026-05-25": [
-      {
-        "id": "mp7kds7751o28vn90qe",
-        "title": "ooo",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-15T23:44:27.139Z",
-        "time": null,
-        "completedAt": "2026-05-25T23:44:34.087Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-05-26": [
       {
         "id": "mplv58ibseopxhdcmb",
@@ -6923,7 +6912,10 @@
         "subtaskId": "mt1vm6e8m9v6429ci28",
         "time": null,
         "scheduledAt": "2026-08-21T00:29:10.849Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-24T17:50:22.095Z",
+        "completionNotes": "Completed and documented. Sent notes to stakeholders. \n",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -6957,73 +6949,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mp66vaik80f35xv2ryp",
-      "subtaskId": "mp66xzlgnw6gfx1iay",
-      "completedAt": "2026-05-25T23:42:13.726Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-19"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mp66vaik80f35xv2ryp",
-      "subtaskId": "mpbto3v8lr9d3j9sxyr",
-      "completedAt": "2026-05-25T23:42:47.921Z",
-      "completionNotes": "stained using published protocol. ",
-      "completionLinks": "https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.24830",
-      "date": "2026-05-19"
-    },
-    {
-      "id": "mp2z1ov6ojxw074oud9",
-      "title": "4X blood arriving.",
-      "completedAt": "2026-05-25T23:43:00.235Z",
-      "completionNotes": "isolated PBMCs and stored in -80",
-      "completionLinks": "",
-      "date": "2026-05-19"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mp66vaik80f35xv2ryp",
-      "subtaskId": "mp66yhomauanayu2mif",
-      "completedAt": "2026-05-25T23:43:42.327Z",
-      "completionNotes": "Imaged at 10x and 4x - need to analyze images.  Ran samples on flow cytometer to give anchor point. ",
-      "completionLinks": "",
-      "date": "2026-05-20"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mp66vaik80f35xv2ryp",
-      "subtaskId": "mp66ytojzvyat8n77ec",
-      "completedAt": "2026-05-25T23:43:48.683Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-20"
-    },
-    {
-      "id": "mp7kdlm9n49nzhzxtb",
-      "title": "ooo",
-      "completedAt": "2026-05-25T23:44:16.143Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-22"
-    },
-    {
-      "id": "mp7kds7751o28vn90qe",
-      "title": "ooo",
-      "completedAt": "2026-05-25T23:44:34.087Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-25"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mp66vaik80f35xv2ryp",
-      "subtaskId": "mp8pk91z1t99lgnx0ph",
-      "title": "make plan for imaging readout",
-      "completedAt": "2026-05-25T23:48:36.775Z"
-    },
     {
       "projectId": "mlld42ihacxlvsot49w",
       "taskId": "mplux1l218k8fqcevxni",
@@ -8569,9 +8494,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-20"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "msot20jrbopourlxc6r",
+      "subtaskId": "mt1vm6e8m9v6429ci28",
+      "completedAt": "2026-08-24T17:50:22.095Z",
+      "completionNotes": "Completed and documented. Sent notes to stakeholders. \n",
+      "completionLinks": "",
+      "date": "2026-08-21"
     }
   ],
-  "lastUpdated": "2026-08-21T00:29:50.810Z",
+  "lastUpdated": "2026-08-24T17:50:22.095Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
