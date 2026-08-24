@@ -6023,6 +6023,15 @@
         "completed": false,
         "createdAt": "2026-08-24T17:52:59.114Z",
         "time": null
+      },
+      {
+        "id": "mt7jcdyjk6jxsugxwmg",
+        "title": "Order sgRNAs w Sylvia",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-08-24T17:54:11.755Z",
+        "time": null
       }
     ]
   },
@@ -8593,7 +8602,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-24T17:52:59.114Z",
+  "lastUpdated": "2026-08-24T17:54:11.755Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
