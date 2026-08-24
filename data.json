@@ -2734,8 +2734,11 @@
               "title": "restock reagents ",
               "description": "Order NK MACS, IL2, IL7, IL15",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-24T17:52:16.885Z"
+              "completed": true,
+              "createdAt": "2026-08-24T17:52:16.885Z",
+              "completedAt": "2026-08-24T21:48:47.413Z",
+              "completionNotes": "purchase NK MACS + IL15",
+              "completionLinks": ""
             }
           ]
         }
@@ -6922,14 +6925,6 @@
     ],
     "2026-08-24": [
       {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "msot0q1x8axc96qhr7l",
-        "subtaskId": "msot1f0kbzxjrqob5g4",
-        "time": null,
-        "scheduledAt": "2026-08-14T20:30:40.588Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltwpanzsdw6b96wbe",
         "taskId": "mskqf78ku9h0f4d5ecb",
         "subtaskId": "mt7j82r9skz9glh94o",
@@ -6944,7 +6939,10 @@
         "subtaskId": "mt7j9xbp0r7jhzgl7vcr",
         "time": null,
         "scheduledAt": "2026-08-24T17:52:16.886Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-24T21:48:47.413Z",
+        "completionNotes": "purchase NK MACS + IL15",
+        "completionLinks": ""
       }
     ],
     "2026-08-25": [
@@ -7008,6 +7006,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-08-24T21:48:36.492Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "msot0q1x8axc96qhr7l",
+        "subtaskId": "msot1f0kbzxjrqob5g4",
+        "time": null,
+        "scheduledAt": "2026-08-24T21:48:36.532Z",
         "completedOnDay": false
       }
     ]
@@ -8592,9 +8598,18 @@
       "completedAt": "2026-08-24T17:51:10.946Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mt7j9dtu70pe9swum8w",
+      "subtaskId": "mt7j9xbp0r7jhzgl7vcr",
+      "completedAt": "2026-08-24T21:48:47.413Z",
+      "completionNotes": "purchase NK MACS + IL15",
+      "completionLinks": "",
+      "date": "2026-08-24"
     }
   ],
-  "lastUpdated": "2026-08-24T21:48:36.492Z",
+  "lastUpdated": "2026-08-24T21:48:47.413Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
