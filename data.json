@@ -2720,6 +2720,15 @@
           "completedAt": "2026-08-24T17:51:10.946Z",
           "completionNotes": "",
           "completionLinks": ""
+        },
+        {
+          "id": "mt7j9dtu70pe9swum8w",
+          "title": "Final Assay Dev Pilot",
+          "description": "Final assay dev to dial in post nucleofection normalization and validate KO efficacy of grzmb and perf within killing assay. ",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-08-24T17:51:51.618Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -8556,7 +8565,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-24T17:51:10.946Z",
+  "lastUpdated": "2026-08-24T17:51:51.619Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
