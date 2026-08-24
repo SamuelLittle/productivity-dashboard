@@ -2456,7 +2456,7 @@
           "title": "Pilot killing assay with GNE cell therapy product",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-08-08T18:52:28.181Z",
           "subtasks": [
             {
@@ -2466,7 +2466,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-13T22:46:14.212Z",
-              "completedAt": "2026-07-30T23:30:04.360Z",
+              "completedAt": "2026-08-24T17:50:58.038Z",
               "completionNotes": "Only isolated ~17.5M cells.  Modified Nucleofection protocol.",
               "completionLinks": ""
             },
@@ -2477,7 +2477,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-13T22:46:30.480Z",
-              "completedAt": "2026-07-31T23:13:44.615Z",
+              "completedAt": "2026-08-24T17:50:58.038Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2488,7 +2488,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-13T22:46:49.518Z",
-              "completedAt": "2026-08-06T16:00:01.363Z",
+              "completedAt": "2026-08-24T17:50:58.038Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2499,7 +2499,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-13T22:47:01.129Z",
-              "completedAt": "2026-08-04T16:05:31.957Z",
+              "completedAt": "2026-08-24T17:50:58.038Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2510,7 +2510,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-13T22:48:09.384Z",
-              "completedAt": "2026-08-06T15:59:56.903Z",
+              "completedAt": "2026-08-24T17:50:58.038Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2521,7 +2521,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-13T22:48:24.559Z",
-              "completedAt": "2026-08-06T16:00:23.601Z",
+              "completedAt": "2026-08-24T17:50:58.038Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2532,7 +2532,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-04T16:06:03.520Z",
-              "completedAt": "2026-08-06T16:00:15.224Z",
+              "completedAt": "2026-08-24T17:50:58.038Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2543,7 +2543,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-07T16:18:39.870Z",
-              "completedAt": "2026-08-08T18:50:49.675Z",
+              "completedAt": "2026-08-24T17:50:58.038Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -2554,11 +2554,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-07T16:19:21.041Z",
-              "completedAt": "2026-08-11T15:16:34.915Z",
+              "completedAt": "2026-08-24T17:50:58.038Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-08-24T17:50:58.038Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mrtdkuneqzzg0oh9wn8",
@@ -8519,9 +8522,18 @@
       "completionNotes": "Completed and documented. Sent notes to stakeholders. \n",
       "completionLinks": "",
       "date": "2026-08-21"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrjt9r0bj672rjm1058",
+      "subtaskId": null,
+      "title": "Pilot killing assay with GNE cell therapy product",
+      "completedAt": "2026-08-24T17:50:58.038Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-24T17:50:50.613Z",
+  "lastUpdated": "2026-08-24T17:50:58.038Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
