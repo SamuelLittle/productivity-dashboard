@@ -6893,6 +6893,14 @@
         "time": null,
         "scheduledAt": "2026-08-14T20:30:40.588Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-08-24T17:50:27.877Z",
+        "completedOnDay": false
       }
     ],
     "2026-08-25": [
@@ -6916,14 +6924,6 @@
         "completedAt": "2026-08-24T17:50:22.095Z",
         "completionNotes": "Completed and documented. Sent notes to stakeholders. \n",
         "completionLinks": ""
-      },
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-08-21T00:29:15.590Z",
-        "completedOnDay": false
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -8505,7 +8505,7 @@
       "date": "2026-08-21"
     }
   ],
-  "lastUpdated": "2026-08-24T17:50:22.095Z",
+  "lastUpdated": "2026-08-24T17:50:27.877Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
