@@ -2701,6 +2701,14 @@
               "completedAt": "2026-08-19T15:18:47.877Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mt7j82r9skz9glh94o",
+              "title": "Finish analysis and send to Mayra + Baptiste",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-24T17:50:50.613Z"
             }
           ]
         }
@@ -6901,6 +6909,22 @@
         "time": null,
         "scheduledAt": "2026-08-24T17:50:27.877Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "msot0q1x8axc96qhr7l",
+        "subtaskId": "msot179butle57vkxo",
+        "time": null,
+        "scheduledAt": "2026-08-24T17:50:27.923Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mskqf78ku9h0f4d5ecb",
+        "subtaskId": "mt7j82r9skz9glh94o",
+        "time": null,
+        "scheduledAt": "2026-08-24T17:50:50.613Z",
+        "completedOnDay": false
       }
     ],
     "2026-08-25": [
@@ -6924,14 +6948,6 @@
         "completedAt": "2026-08-24T17:50:22.095Z",
         "completionNotes": "Completed and documented. Sent notes to stakeholders. \n",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "msot0q1x8axc96qhr7l",
-        "subtaskId": "msot179butle57vkxo",
-        "time": null,
-        "scheduledAt": "2026-08-21T00:29:15.670Z",
-        "completedOnDay": false
       }
     ],
     "2026-08-20": [
@@ -8505,7 +8521,7 @@
       "date": "2026-08-21"
     }
   ],
-  "lastUpdated": "2026-08-24T17:50:27.877Z",
+  "lastUpdated": "2026-08-24T17:50:50.613Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
