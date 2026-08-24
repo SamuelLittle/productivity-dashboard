@@ -4748,43 +4748,6 @@
           ]
         },
         {
-          "id": "mrtd472b6o7fvc71nwu",
-          "title": "Diss Op for scRNAseq",
-          "description": "",
-          "priority": "medium",
-          "completed": false,
-          "createdAt": "2026-07-20T15:11:23.075Z",
-          "subtasks": [
-            {
-              "id": "mrtd92x9j0iswhptixm",
-              "title": "Fixed Dis Op for scRNAseq",
-              "description": "",
-              "priority": "medium",
-              "completed": true,
-              "createdAt": "2026-07-20T15:15:10.989Z",
-              "completedAt": "2026-07-30T16:14:24.602Z",
-              "completionNotes": "Fresh dis -> 4 plates. all looked good. Need to fix EL406 wash protocol. ",
-              "completionLinks": ""
-            },
-            {
-              "id": "mrtd9iirn957qn0frb",
-              "title": "Fresh DisOp for scRNAseq",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-07-20T15:15:31.203Z"
-            },
-            {
-              "id": "mspa58u1kx62wqhoofs",
-              "title": "i7 based normalization",
-              "description": "",
-              "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-11T23:16:50.810Z"
-            }
-          ]
-        },
-        {
           "id": "msot20jrbopourlxc6r",
           "title": "Walk up Flex Automation Dev",
           "description": "",
@@ -6788,19 +6751,7 @@
         "completionLinks": ""
       }
     ],
-    "2026-07-29": [
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mrtd472b6o7fvc71nwu",
-        "subtaskId": "mrtd92x9j0iswhptixm",
-        "time": null,
-        "scheduledAt": "2026-07-20T15:15:10.989Z",
-        "completedOnDay": true,
-        "completedAt": "2026-07-30T16:14:24.602Z",
-        "completionNotes": "Fresh dis -> 4 plates. all looked good. Need to fix EL406 wash protocol. ",
-        "completionLinks": ""
-      }
-    ],
+    "2026-07-29": [],
     "2026-08-07": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -8624,7 +8575,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-24T17:56:11.194Z",
+  "lastUpdated": "2026-08-24T17:56:38.211Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
