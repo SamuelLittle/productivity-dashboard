@@ -2728,7 +2728,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-08-24T17:51:51.618Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mt7j9xbp0r7jhzgl7vcr",
+              "title": "restock reagents ",
+              "description": "Order NK MACS, IL2, IL7, IL15",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-24T17:52:16.885Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -6944,6 +6953,14 @@
         "scheduledAt": "2026-08-24T17:50:50.613Z",
         "completedOnDay": true,
         "completedAt": "2026-08-24T17:51:05.958Z"
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mt7j9dtu70pe9swum8w",
+        "subtaskId": "mt7j9xbp0r7jhzgl7vcr",
+        "time": null,
+        "scheduledAt": "2026-08-24T17:52:16.886Z",
+        "completedOnDay": false
       }
     ],
     "2026-08-25": [
@@ -8565,7 +8582,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-08-24T17:51:51.619Z",
+  "lastUpdated": "2026-08-24T17:52:16.886Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
