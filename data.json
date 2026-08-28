@@ -4822,6 +4822,15 @@
               "completionLinks": ""
             }
           ]
+        },
+        {
+          "id": "mtc75bunstimcgu07bk",
+          "title": "pTox Org Dissociation Full Run ",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-08-28T00:11:37.919Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -8437,7 +8446,7 @@
       "date": "2026-08-26"
     }
   ],
-  "lastUpdated": "2026-08-28T00:10:59.279Z",
+  "lastUpdated": "2026-08-28T00:11:37.919Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
