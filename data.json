@@ -4830,7 +4830,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-08-28T00:11:37.919Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mtc75r8vdg2b03zbflo",
+              "title": "Gather reagents + labware",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-28T00:11:57.872Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -6904,6 +6913,14 @@
         "time": null,
         "scheduledAt": "2026-08-28T00:10:29.823Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mtc75bunstimcgu07bk",
+        "subtaskId": "mtc75r8vdg2b03zbflo",
+        "time": null,
+        "scheduledAt": "2026-08-28T00:11:57.872Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -8446,7 +8463,7 @@
       "date": "2026-08-26"
     }
   ],
-  "lastUpdated": "2026-08-28T00:11:37.919Z",
+  "lastUpdated": "2026-08-28T00:11:57.872Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
