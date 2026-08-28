@@ -5971,9 +5971,12 @@
         "title": "Freimer/Thakore Lab Meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-08-24T17:56:11.193Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-08-28T00:10:40.985Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -8413,9 +8416,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-26"
+    },
+    {
+      "id": "mt7jey49it5jjnvjkoh",
+      "title": "Freimer/Thakore Lab Meeting",
+      "completedAt": "2026-08-28T00:10:40.985Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-26"
     }
   ],
-  "lastUpdated": "2026-08-28T00:10:37.648Z",
+  "lastUpdated": "2026-08-28T00:10:40.985Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
