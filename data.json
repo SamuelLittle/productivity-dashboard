@@ -4815,8 +4815,11 @@
               "title": "Final Bravo wet run walk through",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-24T17:56:56.817Z"
+              "completed": true,
+              "createdAt": "2026-08-24T17:56:56.817Z",
+              "completedAt": "2026-08-28T00:10:37.648Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -6805,16 +6808,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-08-25": [
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "msot20jrbopourlxc6r",
-        "subtaskId": "mspa6gjrmnafhix7by8",
-        "time": null,
-        "scheduledAt": "2026-08-20T18:52:52.207Z",
-        "completedOnDay": false
-      }
-    ],
     "2026-08-21": [
       {
         "projectId": "mpyqnvm6p9zp4xlp64m",
@@ -6848,7 +6841,10 @@
         "subtaskId": "mt7jfxbltkt5jk79t4r",
         "time": null,
         "scheduledAt": "2026-08-24T17:56:56.817Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-28T00:10:37.648Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-08-31": [
@@ -6876,6 +6872,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-08-28T00:10:28.939Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "msot20jrbopourlxc6r",
+        "subtaskId": "mspa6gjrmnafhix7by8",
+        "time": null,
+        "scheduledAt": "2026-08-28T00:10:29.823Z",
         "completedOnDay": false
       }
     ]
@@ -8400,9 +8404,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-25"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "msot20jrbopourlxc6r",
+      "subtaskId": "mt7jfxbltkt5jk79t4r",
+      "completedAt": "2026-08-28T00:10:37.648Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-26"
     }
   ],
-  "lastUpdated": "2026-08-28T00:10:28.939Z",
+  "lastUpdated": "2026-08-28T00:10:37.648Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
