@@ -4838,6 +4838,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-28T00:11:57.872Z"
+            },
+            {
+              "id": "mtc75ykmolp4fhb55w",
+              "title": "Final planning meeting",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-28T00:12:07.366Z"
             }
           ]
         }
@@ -6921,6 +6929,14 @@
         "time": null,
         "scheduledAt": "2026-08-28T00:11:57.872Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mtc75bunstimcgu07bk",
+        "subtaskId": "mtc75ykmolp4fhb55w",
+        "time": null,
+        "scheduledAt": "2026-08-28T00:12:07.366Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -8463,7 +8479,7 @@
       "date": "2026-08-26"
     }
   ],
-  "lastUpdated": "2026-08-28T00:11:57.872Z",
+  "lastUpdated": "2026-08-28T00:12:07.366Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
