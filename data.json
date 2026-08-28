@@ -4826,32 +4826,6 @@
     }
   ],
   "dailyLists": {
-    "2026-05-26": [
-      {
-        "id": "mplv58ibseopxhdcmb",
-        "title": "Team Scrum ",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-25T23:54:30.611Z",
-        "time": "14:00",
-        "completedAt": "2026-05-26T23:03:32.059Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mplva77wdpfx4dw92wm",
-        "title": "Mac diff update",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-25T23:58:22.220Z",
-        "time": "13:30",
-        "completedAt": "2026-05-26T23:03:27.522Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-02": [
       {
         "id": "mpmzmb41xct6pwnrg99",
@@ -4863,46 +4837,6 @@
         "time": null,
         "completedAt": "2026-06-03T02:54:16.042Z",
         "completionNotes": "Isolated ~60M monocytes and seeded 10x well plates",
-        "completionLinks": ""
-      }
-    ],
-    "2026-05-27": [
-      {
-        "id": "mpn2w9sy9y6lryz129",
-        "title": "iAstro Alignment w/ Thomas",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-26T20:19:15.491Z",
-        "time": "13:00",
-        "completedAt": "2026-05-29T03:56:36.745Z",
-        "completionNotes": "",
-        "completionLinks": "https://docs.google.com/document/d/1lxYnYg7k8IfdWt7esI3oDDerRCDY12AAJnUAZeOfibw/edit?usp=sharing"
-      }
-    ],
-    "2026-05-28": [
-      {
-        "id": "mpqe9f37hrhb84cc1sk",
-        "title": "Tapestation readouts for BLADE-R",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-29T04:00:43.171Z",
-        "time": null,
-        "completedAt": "2026-05-29T04:00:47.539Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mpqe9qt00x7r7631i9g",
-        "title": "Meeting prep for NK screen",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-29T04:00:58.356Z",
-        "time": null,
-        "completedAt": "2026-05-29T04:01:02.435Z",
-        "completionNotes": "",
         "completionLinks": ""
       }
     ],
@@ -6006,9 +5940,12 @@
         "title": "Order sgRNAs w Sylvia",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-08-24T17:54:11.755Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-08-28T00:10:06.867Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-08-25": [
@@ -6035,89 +5972,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-05-26": [
-      {
-        "projectId": "mlld42ihacxlvsot49w",
-        "taskId": "mplux1l218k8fqcevxni",
-        "subtaskId": null,
-        "time": "10:00",
-        "scheduledAt": "2026-05-25T23:48:08.391Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-26T18:36:03.396Z",
-        "completionNotes": "- Debriefed on liberase work with Michelle\n- Aligned on meeting w/ Baptiste and co\n- next steps for iAstro plan\n\n\nNeed to:\n- finalize imaging readout from NK cell screen\n- Make auto plan for NK screening\n- Make auto plan for iAstro\n",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mn3vj631ght8zzcdd8g",
-        "subtaskId": "mpluy4qgzebfxogxq9b",
-        "time": null,
-        "scheduledAt": "2026-05-25T23:48:59.128Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-27T16:35:24.147Z",
-        "completionNotes": "Completed image gating workflow and launched plate analysis. ",
-        "completionLinks": ""
-      }
-    ],
-    "2026-05-27": [
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mplvdt710oeiytcvajhq",
-        "subtaskId": "mplvg0wyaoiwqmypuav",
-        "time": null,
-        "scheduledAt": "2026-05-26T00:02:53.987Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-29T03:56:42.096Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mplvdt710oeiytcvajhq",
-        "subtaskId": "mplvgcslahchdr237dt",
-        "time": null,
-        "scheduledAt": "2026-05-26T00:03:09.382Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-29T03:56:47.507Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mplvdt710oeiytcvajhq",
-        "subtaskId": "mplvgybwp7mlvba8ybk",
-        "time": null,
-        "scheduledAt": "2026-05-26T00:03:48.131Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-29T03:56:52.716Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mplvdt710oeiytcvajhq",
-        "subtaskId": "mplvhjqkk3nccdsqny",
-        "time": null,
-        "scheduledAt": "2026-05-26T00:04:05.036Z",
-        "completedOnDay": true,
-        "completedAt": "2026-05-29T03:56:57.429Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-05-29": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mn3vj631ght8zzcdd8g",
-        "subtaskId": "mpn2xkwcf4zbq8d9bwk",
-        "time": null,
-        "scheduledAt": "2026-05-26T20:20:16.525Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-01T16:46:11.858Z",
-        "completionNotes": "Successfull meeting. \n\nNext steps are determine assay window via Grnzy B + perforin 1 KO and test assay with actual target cells. See what additional stainings we can add. \n\nNeed to follow up with B + M for next steps. ",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-02": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7022,99 +6876,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mlld42ihacxlvsot49w",
-      "taskId": "mplux1l218k8fqcevxni",
-      "completedAt": "2026-05-26T18:36:03.397Z",
-      "completionNotes": "- Debriefed on liberase work with Michelle\n- Aligned on meeting w/ Baptiste and co\n- next steps for iAstro plan\n\n\nNeed to:\n- finalize imaging readout from NK cell screen\n- Make auto plan for NK screening\n- Make auto plan for iAstro\n",
-      "completionLinks": "",
-      "date": "2026-05-26"
-    },
-    {
-      "id": "mplva77wdpfx4dw92wm",
-      "title": "Mac diff update",
-      "completedAt": "2026-05-26T23:03:27.523Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-26"
-    },
-    {
-      "id": "mplv58ibseopxhdcmb",
-      "title": "Team Scrum ",
-      "completedAt": "2026-05-26T23:03:32.059Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-26"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mn3vj631ght8zzcdd8g",
-      "subtaskId": "mpluy4qgzebfxogxq9b",
-      "completedAt": "2026-05-27T16:35:24.157Z",
-      "completionNotes": "Completed image gating workflow and launched plate analysis. ",
-      "completionLinks": "",
-      "date": "2026-05-26"
-    },
-    {
-      "id": "mpn2w9sy9y6lryz129",
-      "title": "iAstro Alignment w/ Thomas",
-      "completedAt": "2026-05-29T03:56:36.746Z",
-      "completionNotes": "",
-      "completionLinks": "https://docs.google.com/document/d/1lxYnYg7k8IfdWt7esI3oDDerRCDY12AAJnUAZeOfibw/edit?usp=sharing",
-      "date": "2026-05-27"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mplvdt710oeiytcvajhq",
-      "subtaskId": "mplvg0wyaoiwqmypuav",
-      "completedAt": "2026-05-29T03:56:42.096Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-27"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mplvdt710oeiytcvajhq",
-      "subtaskId": "mplvgcslahchdr237dt",
-      "completedAt": "2026-05-29T03:56:47.507Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-27"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mplvdt710oeiytcvajhq",
-      "subtaskId": "mplvgybwp7mlvba8ybk",
-      "completedAt": "2026-05-29T03:56:52.716Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-27"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mplvdt710oeiytcvajhq",
-      "subtaskId": "mplvhjqkk3nccdsqny",
-      "completedAt": "2026-05-29T03:56:57.429Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-27"
-    },
-    {
-      "id": "mpqe9f37hrhb84cc1sk",
-      "title": "Tapestation readouts for BLADE-R",
-      "completedAt": "2026-05-29T04:00:47.539Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-28"
-    },
-    {
-      "id": "mpqe9qt00x7r7631i9g",
-      "title": "Meeting prep for NK screen",
-      "completedAt": "2026-05-29T04:01:02.435Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-05-28"
-    },
     {
       "projectId": "mkltwpanzsdw6b96wbe",
       "taskId": "mn3vj631ght8zzcdd8g",
@@ -8618,9 +8379,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-24"
+    },
+    {
+      "id": "mt7jcdyjk6jxsugxwmg",
+      "title": "Order sgRNAs w Sylvia",
+      "completedAt": "2026-08-28T00:10:06.868Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-24"
     }
   ],
-  "lastUpdated": "2026-08-24T21:48:52.080Z",
+  "lastUpdated": "2026-08-28T00:10:06.868Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -8742,7 +8511,6 @@
     ]
   },
   "dailyNotes": {
-    "2026-05-29": "Also finished final testing of BLADE-R need to put together results.",
     "2026-07-31": "Nucleofection went smoothly using i7\n\n+Director seminar + lunch\n+Fun with Ona and CytoSig",
     "2026-08-05": "- Also had mid year check in with Zora, went well"
   },
