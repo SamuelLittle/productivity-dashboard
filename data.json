@@ -4844,8 +4844,11 @@
               "title": "Final planning meeting",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-28T00:12:07.366Z"
+              "completed": true,
+              "createdAt": "2026-08-28T00:12:07.366Z",
+              "completedAt": "2026-08-28T22:51:45.534Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -6948,7 +6951,10 @@
         "subtaskId": "mtc75ykmolp4fhb55w",
         "time": null,
         "scheduledAt": "2026-08-28T00:12:07.366Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-28T22:51:45.534Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -8489,9 +8495,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-26"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mtc75bunstimcgu07bk",
+      "subtaskId": "mtc75ykmolp4fhb55w",
+      "completedAt": "2026-08-28T22:51:45.534Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-28"
     }
   ],
-  "lastUpdated": "2026-08-28T22:51:40.625Z",
+  "lastUpdated": "2026-08-28T22:51:45.534Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
