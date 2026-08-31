@@ -5967,9 +5967,12 @@
         "title": "Work on post pooling wash i7 wash protocol",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-08-28T00:10:59.279Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-08-31T15:04:20.611Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-09-02": [
@@ -8430,9 +8433,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-28"
+    },
+    {
+      "id": "mtc74i1bpm8bp23iky",
+      "title": "Work on post pooling wash i7 wash protocol",
+      "completedAt": "2026-08-31T15:04:20.611Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-27"
     }
   ],
-  "lastUpdated": "2026-08-31T15:04:02.181Z",
+  "lastUpdated": "2026-08-31T15:04:20.611Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
