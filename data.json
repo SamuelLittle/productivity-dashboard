@@ -2739,6 +2739,14 @@
               "completedAt": "2026-08-24T21:48:47.413Z",
               "completionNotes": "purchase NK MACS + IL15",
               "completionLinks": ""
+            },
+            {
+              "id": "mthfrnkadrye20yb36v",
+              "title": "Thaw NKs",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-31T16:11:47.338Z"
             }
           ]
         }
@@ -7007,6 +7015,16 @@
         "scheduledAt": "2026-08-31T15:06:05.359Z",
         "completedOnDay": false
       }
+    ],
+    "2026-09-04": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mt7j9dtu70pe9swum8w",
+        "subtaskId": "mthfrnkadrye20yb36v",
+        "time": null,
+        "scheduledAt": "2026-08-31T16:11:47.338Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8548,7 +8566,7 @@
       "completedAt": "2026-08-31T15:04:37.388Z"
     }
   ],
-  "lastUpdated": "2026-08-31T15:06:39.700Z",
+  "lastUpdated": "2026-08-31T16:11:47.338Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
