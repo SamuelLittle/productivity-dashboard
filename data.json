@@ -4875,56 +4875,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-06-01": [
-      {
-        "id": "mpmzms0urpp9f6oyi89",
-        "title": "SMARTseq Reagent Wrangling",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "completedAt": "2026-06-01T23:13:23.408Z",
-        "time": null,
-        "createdAt": "2026-05-26T18:47:53.694Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mpvojyfd13fh0187h3cb",
-        "title": "measure d2 cDNA from fill in the gaps screen",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-01T20:47:41.833Z",
-        "time": null,
-        "completedAt": "2026-06-01T21:23:33.748Z",
-        "completionNotes": "complete\n",
-        "completionLinks": ""
-      },
-      {
-        "id": "mpvptu6c7uqgsn0zr4u",
-        "title": "Make BLADE-R reagents. ",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-01T21:23:22.500Z",
-        "time": null,
-        "completedAt": "2026-06-01T23:13:29.554Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mpvpue99ifpz3qe7ho9",
-        "title": "NK Screen follow ups",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-01T21:23:48.525Z",
-        "time": null,
-        "completedAt": "2026-06-02T14:51:15.224Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-03": [
       {
         "id": "mpvplw68hebdriks1fk",
@@ -6913,14 +6863,6 @@
         "time": null,
         "scheduledAt": "2026-08-24T21:48:30.673Z",
         "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "msot0q1x8axc96qhr7l",
-        "subtaskId": "msot1f0kbzxjrqob5g4",
-        "time": null,
-        "scheduledAt": "2026-08-24T21:48:36.532Z",
-        "completedOnDay": false
       }
     ],
     "2026-08-28": [
@@ -6967,39 +6909,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mn3vj631ght8zzcdd8g",
-      "subtaskId": "mpn2xkwcf4zbq8d9bwk",
-      "completedAt": "2026-06-01T16:46:11.859Z",
-      "completionNotes": "Successfull meeting. \n\nNext steps are determine assay window via Grnzy B + perforin 1 KO and test assay with actual target cells. See what additional stainings we can add. \n\nNeed to follow up with B + M for next steps. ",
-      "completionLinks": "",
-      "date": "2026-05-29"
-    },
-    {
-      "id": "mpvojyfd13fh0187h3cb",
-      "title": "measure d2 cDNA from fill in the gaps screen",
-      "completedAt": "2026-06-01T21:23:33.748Z",
-      "completionNotes": "complete\n",
-      "completionLinks": "",
-      "date": "2026-06-01"
-    },
-    {
-      "id": "mpmzms0urpp9f6oyi89",
-      "title": "SMARTseq Reagent Wrangling",
-      "completedAt": "2026-06-01T23:13:23.408Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-01"
-    },
-    {
-      "id": "mpvptu6c7uqgsn0zr4u",
-      "title": "Make BLADE-R reagents. ",
-      "completedAt": "2026-06-01T23:13:29.554Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-01"
-    },
     {
       "id": "mpvpue99ifpz3qe7ho9",
       "title": "NK Screen follow ups",
@@ -8523,7 +8432,7 @@
       "date": "2026-08-28"
     }
   ],
-  "lastUpdated": "2026-08-28T22:51:58.366Z",
+  "lastUpdated": "2026-08-31T15:04:02.181Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
