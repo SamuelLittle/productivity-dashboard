@@ -3816,7 +3816,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-08-31T16:14:46.134Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mthfvvmmumzkbsy4uzj",
+              "title": "meet with Sylvia",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-31T16:15:04.414Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -7038,6 +7047,14 @@
         "scheduledAt": "2026-08-28T22:51:58.366Z",
         "completedOnDay": false,
         "completedAt": null
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mthfvvmmumzkbsy4uzj",
+        "time": null,
+        "scheduledAt": "2026-08-31T16:15:04.414Z",
+        "completedOnDay": false
       }
     ],
     "2026-09-01": [
@@ -8655,7 +8672,7 @@
       "completedAt": "2026-08-31T16:14:08.916Z"
     }
   ],
-  "lastUpdated": "2026-08-31T16:14:46.134Z",
+  "lastUpdated": "2026-08-31T16:15:04.414Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
