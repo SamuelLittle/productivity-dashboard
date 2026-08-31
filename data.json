@@ -3737,8 +3737,11 @@
               "title": "nucleoplate -> phenoplate",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-05-10T20:13:06.910Z"
+              "completed": true,
+              "createdAt": "2026-05-10T20:13:06.910Z",
+              "completedAt": "2026-08-31T16:14:08.916Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -8634,9 +8637,16 @@
       "subtaskId": "mspa6gjrmnafhix7by8",
       "title": "i7 based normalization dev ops",
       "completedAt": "2026-08-31T15:04:37.388Z"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mp07kxytswogf1924m",
+      "subtaskId": "mp07mqqlw1bk2vepds",
+      "title": "nucleoplate -> phenoplate",
+      "completedAt": "2026-08-31T16:14:08.916Z"
     }
   ],
-  "lastUpdated": "2026-08-31T16:13:47.599Z",
+  "lastUpdated": "2026-08-31T16:14:08.916Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
