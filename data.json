@@ -2747,6 +2747,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-31T16:11:47.338Z"
+            },
+            {
+              "id": "mthfs7k7vpr9xiltqc",
+              "title": "i7 Based nucleofection",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-31T16:12:13.255Z"
             }
           ]
         }
@@ -7024,6 +7032,14 @@
         "time": null,
         "scheduledAt": "2026-08-31T16:11:47.338Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mt7j9dtu70pe9swum8w",
+        "subtaskId": "mthfs7k7vpr9xiltqc",
+        "time": null,
+        "scheduledAt": "2026-08-31T16:12:13.255Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -8566,7 +8582,7 @@
       "completedAt": "2026-08-31T15:04:37.388Z"
     }
   ],
-  "lastUpdated": "2026-08-31T16:11:47.338Z",
+  "lastUpdated": "2026-08-31T16:12:13.255Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
