@@ -4785,8 +4785,11 @@
               "title": "i7 based normalization dev ops",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-11T23:17:47.463Z"
+              "completed": true,
+              "createdAt": "2026-08-11T23:17:47.463Z",
+              "completedAt": "2026-08-31T15:04:37.388Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mt1vm6e8m9v6429ci28",
@@ -6907,7 +6910,8 @@
         "subtaskId": "mspa6gjrmnafhix7by8",
         "time": null,
         "scheduledAt": "2026-08-28T22:51:58.366Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-08-31T15:04:37.388Z"
       }
     ]
   },
@@ -8441,9 +8445,16 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-27"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "msot20jrbopourlxc6r",
+      "subtaskId": "mspa6gjrmnafhix7by8",
+      "title": "i7 based normalization dev ops",
+      "completedAt": "2026-08-31T15:04:37.388Z"
     }
   ],
-  "lastUpdated": "2026-08-31T15:04:20.611Z",
+  "lastUpdated": "2026-08-31T15:04:37.388Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
