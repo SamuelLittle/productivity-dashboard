@@ -4865,7 +4865,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-08-31T15:05:08.609Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mthdemi8rkszzu5n8p",
+              "title": "Diss-Hash-Pool-Wash Day 1",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-31T15:05:40.208Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -6878,6 +6887,14 @@
         "time": null,
         "scheduledAt": "2026-08-24T21:48:30.673Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mthddy4hafsbnvceva",
+        "subtaskId": "mthdemi8rkszzu5n8p",
+        "time": null,
+        "scheduledAt": "2026-08-31T15:05:40.208Z",
+        "completedOnDay": false
       }
     ],
     "2026-08-28": [
@@ -8463,7 +8480,7 @@
       "completedAt": "2026-08-31T15:04:37.388Z"
     }
   ],
-  "lastUpdated": "2026-08-31T15:05:08.610Z",
+  "lastUpdated": "2026-08-31T15:05:40.208Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
