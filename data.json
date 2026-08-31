@@ -2771,6 +2771,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-31T16:13:25.346Z"
+            },
+            {
+              "id": "mthfu8cvge3cod3y1u8",
+              "title": "FACS prep and readout",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-31T16:13:47.599Z"
             }
           ]
         }
@@ -7077,6 +7085,16 @@
         "scheduledAt": "2026-08-31T16:13:25.346Z",
         "completedOnDay": false
       }
+    ],
+    "2026-09-09": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mt7j9dtu70pe9swum8w",
+        "subtaskId": "mthfu8cvge3cod3y1u8",
+        "time": null,
+        "scheduledAt": "2026-08-31T16:13:47.599Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8618,7 +8636,7 @@
       "completedAt": "2026-08-31T15:04:37.388Z"
     }
   ],
-  "lastUpdated": "2026-08-31T16:13:25.346Z",
+  "lastUpdated": "2026-08-31T16:13:47.599Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
