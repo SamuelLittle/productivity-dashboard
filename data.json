@@ -4897,6 +4897,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-31T15:06:23.298Z"
+            },
+            {
+              "id": "mthdftqdzc4oeydxkqj",
+              "title": "quick wash run through",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-31T15:06:36.229Z"
             }
           ]
         }
@@ -6919,6 +6927,14 @@
         "time": null,
         "scheduledAt": "2026-08-31T15:05:40.208Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mthddy4hafsbnvceva",
+        "subtaskId": "mthdftqdzc4oeydxkqj",
+        "time": null,
+        "scheduledAt": "2026-08-31T15:06:36.229Z",
+        "completedOnDay": false
       }
     ],
     "2026-08-28": [
@@ -8524,7 +8540,7 @@
       "completedAt": "2026-08-31T15:04:37.388Z"
     }
   ],
-  "lastUpdated": "2026-08-31T15:06:23.298Z",
+  "lastUpdated": "2026-08-31T15:06:36.229Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
