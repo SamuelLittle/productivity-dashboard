@@ -2763,6 +2763,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-31T16:12:49.720Z"
+            },
+            {
+              "id": "mthftr6q5yrzdsputbg",
+              "title": "i7 based normalization + set up killing assay",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-31T16:13:25.346Z"
             }
           ]
         }
@@ -7059,6 +7067,16 @@
         "scheduledAt": "2026-08-31T16:12:49.720Z",
         "completedOnDay": false
       }
+    ],
+    "2026-09-08": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mt7j9dtu70pe9swum8w",
+        "subtaskId": "mthftr6q5yrzdsputbg",
+        "time": null,
+        "scheduledAt": "2026-08-31T16:13:25.346Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8600,7 +8618,7 @@
       "completedAt": "2026-08-31T15:04:37.388Z"
     }
   ],
-  "lastUpdated": "2026-08-31T16:12:49.720Z",
+  "lastUpdated": "2026-08-31T16:13:25.346Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
