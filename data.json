@@ -3824,6 +3824,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-31T16:15:04.414Z"
+            },
+            {
+              "id": "mthfwk5rz8le6r2xdfk",
+              "title": "automated nucleofection workflow",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-08-31T16:15:36.208Z"
             }
           ]
         }
@@ -7123,6 +7131,14 @@
         "time": null,
         "scheduledAt": "2026-08-31T16:13:47.599Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mthfwk5rz8le6r2xdfk",
+        "time": null,
+        "scheduledAt": "2026-08-31T16:15:36.208Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -8672,7 +8688,7 @@
       "completedAt": "2026-08-31T16:14:08.916Z"
     }
   ],
-  "lastUpdated": "2026-08-31T16:15:04.414Z",
+  "lastUpdated": "2026-08-31T16:15:36.208Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
