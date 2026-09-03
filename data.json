@@ -1469,8 +1469,11 @@
               "title": "Make media and Thaw HSPCs",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-11T15:17:48.671Z"
+              "completed": true,
+              "createdAt": "2026-08-11T15:17:48.671Z",
+              "completedAt": "2026-09-03T15:34:00.772Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "msot1f0kbzxjrqob5g4",
@@ -4983,46 +4986,6 @@
     }
   ],
   "dailyLists": {
-    "2026-06-02": [
-      {
-        "id": "mpmzmb41xct6pwnrg99",
-        "title": "Blood Arriving",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-05-26T18:47:31.777Z",
-        "time": null,
-        "completedAt": "2026-06-03T02:54:16.042Z",
-        "completionNotes": "Isolated ~60M monocytes and seeded 10x well plates",
-        "completionLinks": ""
-      }
-    ],
-    "2026-06-03": [
-      {
-        "id": "mpvplw68hebdriks1fk",
-        "title": "pTox Flex meeting",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-01T21:17:11.840Z",
-        "time": null,
-        "completedAt": "2026-06-03T23:22:35.315Z",
-        "completionNotes": "aligned on next steps for pTox - ZT will onboard me for \"walk up protocols - Sean and I will perform walk up week of 15th",
-        "completionLinks": ""
-      },
-      {
-        "id": "mpydbkfhg47wtrzov3u",
-        "title": "yesterday RNA extraction QC",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-03T17:56:33.198Z",
-        "time": null,
-        "completedAt": "2026-06-03T19:41:01.493Z",
-        "completionNotes": "RNA looks okay.  p4 and p5 have usable RNA - may need extra cDNA amplification rounds.  tbd\n",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-05": [
       {
         "id": "mq1ddmdfcuu8xsq4m3p",
@@ -6111,67 +6074,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-06-02": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpvor2egyd9fn0kywu9",
-        "subtaskId": "mpvos4sjooc9q9q1zv",
-        "time": null,
-        "scheduledAt": "2026-06-01T20:54:03.331Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-03T02:54:22.287Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpvor2egyd9fn0kywu9",
-        "subtaskId": "mpvosk7djr2nidgnsyd",
-        "time": null,
-        "scheduledAt": "2026-06-01T20:54:23.306Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-03T02:54:36.309Z",
-        "completionNotes": "Completed treatments at ~3pm",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpvor2egyd9fn0kywu9",
-        "subtaskId": "mpvoszczo1qaiaa3xl",
-        "time": null,
-        "scheduledAt": "2026-06-01T20:54:42.948Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-03T02:55:00.145Z",
-        "completionNotes": "extracted RNA from plates 1-5 starting at 6pm",
-        "completionLinks": ""
-      }
-    ],
-    "2026-06-03": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpvor2egyd9fn0kywu9",
-        "subtaskId": "mpvpf6xe932p1vx66k",
-        "time": null,
-        "scheduledAt": "2026-06-01T21:11:59.186Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-05T20:24:22.369Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-06-04": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpvor2egyd9fn0kywu9",
-        "subtaskId": "mpvpkfxh3tktllt2hg1",
-        "time": null,
-        "scheduledAt": "2026-06-01T21:16:04.133Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-05T20:22:25.721Z",
-        "completionNotes": "Completed D1 Processing. Validation and toubleshooting may be needed here, \n",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-05": [
       {
         "projectId": "mkltywpq0yriuhvt8wmb",
@@ -6987,7 +6889,10 @@
         "subtaskId": "msot179butle57vkxo",
         "time": null,
         "scheduledAt": "2026-08-24T21:48:30.673Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-03T15:34:00.772Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mpyqnvm6p9zp4xlp64m",
@@ -7143,99 +7048,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "id": "mpvpue99ifpz3qe7ho9",
-      "title": "NK Screen follow ups",
-      "completedAt": "2026-06-02T14:51:15.225Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-01"
-    },
-    {
-      "id": "mpmzmb41xct6pwnrg99",
-      "title": "Blood Arriving",
-      "completedAt": "2026-06-03T02:54:16.043Z",
-      "completionNotes": "Isolated ~60M monocytes and seeded 10x well plates",
-      "completionLinks": "",
-      "date": "2026-06-02"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpvor2egyd9fn0kywu9",
-      "subtaskId": "mpvos4sjooc9q9q1zv",
-      "completedAt": "2026-06-03T02:54:22.288Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-02"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpvor2egyd9fn0kywu9",
-      "subtaskId": "mpvosk7djr2nidgnsyd",
-      "completedAt": "2026-06-03T02:54:36.309Z",
-      "completionNotes": "Completed treatments at ~3pm",
-      "completionLinks": "",
-      "date": "2026-06-02"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpvor2egyd9fn0kywu9",
-      "subtaskId": "mpvoszczo1qaiaa3xl",
-      "completedAt": "2026-06-03T02:55:00.145Z",
-      "completionNotes": "extracted RNA from plates 1-5 starting at 6pm",
-      "completionLinks": "",
-      "date": "2026-06-02"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "movkm4r357gxwt3fz3f",
-      "subtaskId": "movknnqkuqthn4ibzng",
-      "title": "Order gRNAs for pilot screening",
-      "completedAt": "2026-06-03T03:01:00.346Z"
-    },
-    {
-      "id": "mpydbkfhg47wtrzov3u",
-      "title": "yesterday RNA extraction QC",
-      "completedAt": "2026-06-03T19:41:01.493Z",
-      "completionNotes": "RNA looks okay.  p4 and p5 have usable RNA - may need extra cDNA amplification rounds.  tbd\n",
-      "completionLinks": "",
-      "date": "2026-06-03"
-    },
-    {
-      "id": "mpvplw68hebdriks1fk",
-      "title": "pTox Flex meeting",
-      "completedAt": "2026-06-03T23:22:35.315Z",
-      "completionNotes": "aligned on next steps for pTox - ZT will onboard me for \"walk up protocols - Sean and I will perform walk up week of 15th",
-      "completionLinks": "",
-      "date": "2026-06-03"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mkn3n6kk2s3eujhd9om",
-      "subtaskId": null,
-      "title": "Mast cell pilots",
-      "completedAt": "2026-06-04T00:36:35.036Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mkprwk8ffdngatq3zsn",
-      "subtaskId": null,
-      "title": "Nomic collaboration",
-      "completedAt": "2026-06-04T00:36:39.225Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mmfj1blb1h1c2o3gs28",
-      "subtaskId": null,
-      "title": "DLD1 sanity check",
-      "completedAt": "2026-06-04T00:36:43.833Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
     {
       "projectId": "mkltv6xwvh4ltoqkes",
       "taskId": "mpvor2egyd9fn0kywu9",
@@ -8686,9 +8498,18 @@
       "subtaskId": "mp07mqqlw1bk2vepds",
       "title": "nucleoplate -> phenoplate",
       "completedAt": "2026-08-31T16:14:08.916Z"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "msot0q1x8axc96qhr7l",
+      "subtaskId": "msot179butle57vkxo",
+      "completedAt": "2026-09-03T15:34:00.772Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-31"
     }
   ],
-  "lastUpdated": "2026-08-31T16:15:36.208Z",
+  "lastUpdated": "2026-09-03T15:34:00.772Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
