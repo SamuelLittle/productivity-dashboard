@@ -3853,8 +3853,11 @@
               "title": "i7 protocol preparation",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-08T15:23:42.619Z"
+              "completed": true,
+              "createdAt": "2026-09-08T15:23:42.619Z",
+              "completedAt": "2026-09-08T17:46:24.191Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -6949,7 +6952,10 @@
         "subtaskId": "mtstkn16o598k09hm2b",
         "time": null,
         "scheduledAt": "2026-09-08T15:23:46.535Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-08T17:46:24.191Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-09-09": [
@@ -8462,9 +8468,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-07"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mthfvhiuze0mw8hl3h",
+      "subtaskId": "mtstkn16o598k09hm2b",
+      "completedAt": "2026-09-08T17:46:24.191Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-08"
     }
   ],
-  "lastUpdated": "2026-09-08T15:23:46.535Z",
+  "lastUpdated": "2026-09-08T17:46:24.191Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
