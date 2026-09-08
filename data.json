@@ -4971,8 +4971,11 @@
               "title": "Diss-Hash-Pool-Wash Day 3",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-31T15:06:05.358Z"
+              "completed": true,
+              "createdAt": "2026-08-31T15:06:05.358Z",
+              "completedAt": "2026-09-08T15:21:50.280Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mthdfjr6f14y18u0wb7",
@@ -6874,7 +6877,10 @@
         "subtaskId": "mthdf5wu7dozfcykol6",
         "time": null,
         "scheduledAt": "2026-08-31T15:06:05.359Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-08T15:21:50.280Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -8401,9 +8407,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-04"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mthddy4hafsbnvceva",
+      "subtaskId": "mthdf5wu7dozfcykol6",
+      "completedAt": "2026-09-08T15:21:50.280Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-03"
     }
   ],
-  "lastUpdated": "2026-09-08T15:21:44.693Z",
+  "lastUpdated": "2026-09-08T15:21:50.280Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
