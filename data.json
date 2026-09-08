@@ -2756,8 +2756,11 @@
               "title": "i7 Based nucleofection",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-31T16:12:13.255Z"
+              "completed": true,
+              "createdAt": "2026-08-31T16:12:13.255Z",
+              "completedAt": "2026-09-08T15:21:44.693Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mthfszp4yqczjc4efo",
@@ -5001,84 +5004,6 @@
     }
   ],
   "dailyLists": {
-    "2026-06-05": [
-      {
-        "id": "mq1ddmdfcuu8xsq4m3p",
-        "title": "NOMIC x single-dataset",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-05T20:21:27.555Z",
-        "time": "13:30",
-        "completedAt": "2026-06-07T21:05:01.493Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-06-08": [
-      {
-        "id": "mq4eojq6j94ec898h2",
-        "title": "Hive Scrum",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-07T23:21:15.486Z",
-        "time": "13:30",
-        "completedAt": "2026-06-10T04:25:45.867Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mq4ezy7nsve1yyihwke",
-        "title": "Prep for cytokine screen meeting",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-07T23:30:07.475Z",
-        "time": null,
-        "completedAt": "2026-06-08T18:25:29.710Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-06-09": [
-      {
-        "id": "mq4fcpeb51k4ybahvl",
-        "title": "Cytokine Screen team meeting",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-07T23:40:02.579Z",
-        "time": null,
-        "completedAt": "2026-06-09T22:52:27.332Z",
-        "completionNotes": "Good meeting\nNeed to contact David Choy for cost center for sequencing and budget availability for Mast cells.\n\nnext submission target June 29. ",
-        "completionLinks": ""
-      },
-      {
-        "id": "mq4g16q8i4mthqrvx7",
-        "title": "1-on-1 w/ ZT",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-07T23:59:04.784Z",
-        "time": "10:00",
-        "completedAt": "2026-06-10T01:12:14.557Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mq4er60qva6rnaff0c",
-        "title": "pTox Automation Meeting w/ Sean and Jessica",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "completedAt": "2026-06-10T01:05:29.739Z",
-        "time": "12:15",
-        "createdAt": "2026-06-07T23:23:17.690Z",
-        "completionNotes": "org dis. optimization next monday/Tuesday",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-15": [
       {
         "id": "mqfvhah96b6haowurhu",
@@ -6091,65 +6016,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-06-05": [
-      {
-        "projectId": "mkltywpq0yriuhvt8wmb",
-        "taskId": "mpyp83fd16qwj50sb7y",
-        "subtaskId": null,
-        "time": "12:45",
-        "scheduledAt": "2026-06-03T23:29:46.585Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-05T20:25:42.012Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mq1dd5ajff0yuk8z3da",
-        "subtaskId": null,
-        "time": "12:00",
-        "scheduledAt": "2026-06-05T20:21:05.420Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-05T20:25:24.710Z",
-        "completionNotes": "Cell manufacturing will send us list of potential donors.  Targeting pilots for early July. ",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpvor2egyd9fn0kywu9",
-        "subtaskId": "mpvpkt62wbj0cxd65j",
-        "time": null,
-        "scheduledAt": "2026-06-05T20:21:58.387Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-07T21:05:07.143Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-06-08": [
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mpyrjid0lf6usyodvu",
-        "subtaskId": "mpyrk9g3eilb71torko",
-        "time": null,
-        "scheduledAt": "2026-06-04T00:35:13.491Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-10T04:25:58.473Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mq4eqegi9juuwozbyhu",
-        "subtaskId": null,
-        "time": "14:00",
-        "scheduledAt": "2026-06-07T23:22:41.971Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-10T04:25:50.946Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-10": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -6230,19 +6096,6 @@
         "completedOnDay": true,
         "completedAt": "2026-06-19T23:15:04.297Z",
         "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-06-09": [
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "movkm4r357gxwt3fz3f",
-        "subtaskId": "mpxhcv566gaedba57qj",
-        "time": null,
-        "scheduledAt": "2026-06-03T03:01:46.028Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-10T01:04:46.919Z",
-        "completionNotes": "Details in signals log\n",
         "completionLinks": ""
       }
     ],
@@ -7039,7 +6892,10 @@
         "subtaskId": "mthfs7k7vpr9xiltqc",
         "time": null,
         "scheduledAt": "2026-08-31T16:12:13.255Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-08T15:21:44.692Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-09-07": [
@@ -7082,73 +6938,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpvor2egyd9fn0kywu9",
-      "subtaskId": "mpvpkfxh3tktllt2hg1",
-      "completedAt": "2026-06-05T20:22:25.721Z",
-      "completionNotes": "Completed D1 Processing. Validation and toubleshooting may be needed here, \n",
-      "completionLinks": "",
-      "date": "2026-06-04"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpvor2egyd9fn0kywu9",
-      "subtaskId": "mpvpf6xe932p1vx66k",
-      "completedAt": "2026-06-05T20:24:22.369Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-03"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mq1dd5ajff0yuk8z3da",
-      "completedAt": "2026-06-05T20:25:24.711Z",
-      "completionNotes": "Cell manufacturing will send us list of potential donors.  Targeting pilots for early July. ",
-      "completionLinks": "",
-      "date": "2026-06-05"
-    },
-    {
-      "projectId": "mkltywpq0yriuhvt8wmb",
-      "taskId": "mpyp83fd16qwj50sb7y",
-      "completedAt": "2026-06-05T20:25:42.012Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-05"
-    },
-    {
-      "id": "mq1ddmdfcuu8xsq4m3p",
-      "title": "NOMIC x single-dataset",
-      "completedAt": "2026-06-07T21:05:01.494Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-05"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpvor2egyd9fn0kywu9",
-      "subtaskId": "mpvpkt62wbj0cxd65j",
-      "completedAt": "2026-06-07T21:05:07.143Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-05"
-    },
-    {
-      "id": "mq4ezy7nsve1yyihwke",
-      "title": "Prep for cytokine screen meeting",
-      "completedAt": "2026-06-08T18:25:29.710Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-08"
-    },
-    {
-      "id": "mq4fcpeb51k4ybahvl",
-      "title": "Cytokine Screen team meeting",
-      "completedAt": "2026-06-09T22:52:27.332Z",
-      "completionNotes": "Good meeting\nNeed to contact David Choy for cost center for sequencing and budget availability for Mast cells.\n\nnext submission target June 29. ",
-      "completionLinks": "",
-      "date": "2026-06-09"
-    },
     {
       "projectId": "mklu1lye4czo9brjznq",
       "taskId": "movkm4r357gxwt3fz3f",
@@ -8603,9 +8392,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-02"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mt7j9dtu70pe9swum8w",
+      "subtaskId": "mthfs7k7vpr9xiltqc",
+      "completedAt": "2026-09-08T15:21:44.693Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-04"
     }
   ],
-  "lastUpdated": "2026-09-03T15:34:55.006Z",
+  "lastUpdated": "2026-09-08T15:21:44.693Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
