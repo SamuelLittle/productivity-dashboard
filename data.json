@@ -2792,8 +2792,11 @@
               "title": "FACS prep and readout",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-31T16:13:47.599Z"
+              "completed": true,
+              "createdAt": "2026-08-31T16:13:47.599Z",
+              "completedAt": "2026-09-10T16:03:47.491Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -6914,7 +6917,10 @@
         "subtaskId": "mthfu8cvge3cod3y1u8",
         "time": null,
         "scheduledAt": "2026-08-31T16:13:47.599Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-10T16:03:47.491Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -8367,9 +8373,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-08"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mt7j9dtu70pe9swum8w",
+      "subtaskId": "mthfu8cvge3cod3y1u8",
+      "completedAt": "2026-09-10T16:03:47.491Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-09"
     }
   ],
-  "lastUpdated": "2026-09-10T16:03:42.370Z",
+  "lastUpdated": "2026-09-10T16:03:47.491Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
