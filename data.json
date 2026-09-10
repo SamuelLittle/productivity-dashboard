@@ -2781,8 +2781,11 @@
               "title": "i7 based normalization + set up killing assay",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-31T16:13:25.346Z"
+              "completed": true,
+              "createdAt": "2026-08-31T16:13:25.346Z",
+              "completedAt": "2026-09-10T16:03:42.370Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mthfu8cvge3cod3y1u8",
@@ -6036,63 +6039,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-06-10": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhr7xbgjd9lgr32a",
-        "subtaskId": "mpxhwnxj1644dico7zo",
-        "time": null,
-        "scheduledAt": "2026-06-03T03:17:09.800Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-10T21:44:56.073Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhr7xbgjd9lgr32a",
-        "subtaskId": "mpyrnk4vhg58zzchgb9",
-        "time": null,
-        "scheduledAt": "2026-06-04T00:37:47.311Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-10T21:45:03.567Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhr7xbgjd9lgr32a",
-        "subtaskId": "mpyrny5mnb8sb96hlra",
-        "time": null,
-        "scheduledAt": "2026-06-04T00:38:05.482Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-16T18:39:45.224Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhr7xbgjd9lgr32a",
-        "subtaskId": "mq4erxe3zx8t8txhri",
-        "time": null,
-        "scheduledAt": "2026-06-10T01:12:09.487Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-16T18:39:48.583Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "mpvpsn6lk6sxyycervo",
-        "subtaskId": "mpvpt4hp39ene1hfnjl",
-        "time": null,
-        "scheduledAt": "2026-06-10T04:26:05.680Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-16T18:39:52.614Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-15": [
       {
         "projectId": "mpyqnvm6p9zp4xlp64m",
@@ -6944,7 +6890,10 @@
         "subtaskId": "mthftr6q5yrzdsputbg",
         "time": null,
         "scheduledAt": "2026-08-31T16:13:25.346Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-10T16:03:42.369Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -6978,74 +6927,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "movkm4r357gxwt3fz3f",
-      "subtaskId": "mpxhcv566gaedba57qj",
-      "completedAt": "2026-06-10T01:04:46.920Z",
-      "completionNotes": "Details in signals log\n",
-      "completionLinks": "",
-      "date": "2026-06-09"
-    },
-    {
-      "id": "mq4er60qva6rnaff0c",
-      "title": "pTox Automation Meeting w/ Sean and Jessica",
-      "completedAt": "2026-06-10T01:05:29.739Z",
-      "completionNotes": "org dis. optimization next monday/Tuesday",
-      "completionLinks": "",
-      "date": "2026-06-09"
-    },
-    {
-      "id": "mq4g16q8i4mthqrvx7",
-      "title": "1-on-1 w/ ZT",
-      "completedAt": "2026-06-10T01:12:14.557Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-09"
-    },
-    {
-      "id": "mq4eojq6j94ec898h2",
-      "title": "Hive Scrum",
-      "completedAt": "2026-06-10T04:25:45.868Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-08"
-    },
-    {
-      "projectId": "mpyqnvm6p9zp4xlp64m",
-      "taskId": "mq4eqegi9juuwozbyhu",
-      "completedAt": "2026-06-10T04:25:50.946Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-08"
-    },
-    {
-      "projectId": "mpyqnvm6p9zp4xlp64m",
-      "taskId": "mpyrjid0lf6usyodvu",
-      "subtaskId": "mpyrk9g3eilb71torko",
-      "completedAt": "2026-06-10T04:25:58.474Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-08"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhr7xbgjd9lgr32a",
-      "subtaskId": "mpxhwnxj1644dico7zo",
-      "completedAt": "2026-06-10T21:44:56.073Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-10"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhr7xbgjd9lgr32a",
-      "subtaskId": "mpyrnk4vhg58zzchgb9",
-      "completedAt": "2026-06-10T21:45:03.567Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-10"
-    },
     {
       "id": "mqfvhah96b6haowurhu",
       "title": "1-on-1 w/ Jimmie",
@@ -8477,9 +8358,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-08"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mt7j9dtu70pe9swum8w",
+      "subtaskId": "mthftr6q5yrzdsputbg",
+      "completedAt": "2026-09-10T16:03:42.370Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-08"
     }
   ],
-  "lastUpdated": "2026-09-08T17:46:24.191Z",
+  "lastUpdated": "2026-09-10T16:03:42.370Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
