@@ -3851,8 +3851,11 @@
               "title": "automated nucleofection workflow",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-31T16:15:36.208Z"
+              "completed": true,
+              "createdAt": "2026-08-31T16:15:36.208Z",
+              "completedAt": "2026-09-10T16:03:50.662Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mtstkn16o598k09hm2b",
@@ -6928,7 +6931,10 @@
         "subtaskId": "mthfwk5rz8le6r2xdfk",
         "time": null,
         "scheduledAt": "2026-08-31T16:15:36.208Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-10T16:03:50.662Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -8382,9 +8388,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-09"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mthfvhiuze0mw8hl3h",
+      "subtaskId": "mthfwk5rz8le6r2xdfk",
+      "completedAt": "2026-09-10T16:03:50.662Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-09"
     }
   ],
-  "lastUpdated": "2026-09-10T16:03:47.491Z",
+  "lastUpdated": "2026-09-10T16:03:50.662Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
