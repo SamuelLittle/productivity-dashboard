@@ -5003,7 +5003,7 @@
           "title": "pTox Org Dissociation Full Run ",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-08-28T00:11:37.919Z",
           "subtasks": [
             {
@@ -5013,7 +5013,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-28T00:11:57.872Z",
-              "completedAt": "2026-08-28T22:51:48.957Z",
+              "completedAt": "2026-09-15T22:44:51.269Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -5024,11 +5024,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-28T00:12:07.366Z",
-              "completedAt": "2026-08-28T22:51:45.534Z",
+              "completedAt": "2026-09-15T22:44:51.269Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T22:44:51.269Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mthddy4hafsbnvceva",
@@ -8570,9 +8573,18 @@
       "completedAt": "2026-09-15T22:44:47.195Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mtc75bunstimcgu07bk",
+      "subtaskId": null,
+      "title": "pTox Org Dissociation Full Run ",
+      "completedAt": "2026-09-15T22:44:51.269Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T22:44:47.195Z",
+  "lastUpdated": "2026-09-15T22:44:51.269Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
