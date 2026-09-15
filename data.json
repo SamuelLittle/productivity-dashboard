@@ -5111,7 +5111,17 @@
       "description": "On-going efforts to automate FLEX sample prep.",
       "color": "#f59e0b",
       "createdAt": "2026-09-15T22:45:36.210Z",
-      "tasks": [],
+      "tasks": [
+        {
+          "id": "mu39h64xcq13625mqt8",
+          "title": "Automated Fixed Cell Normalization",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-09-15T22:46:36.369Z",
+          "subtasks": []
+        }
+      ],
       "progressUpdates": [],
       "archived": false
     }
@@ -8606,7 +8616,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T22:45:36.210Z",
+  "lastUpdated": "2026-09-15T22:46:36.369Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
