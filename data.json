@@ -3816,7 +3816,7 @@
           "title": "Automated nucleofection workflow",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-05-10T20:11:42.965Z",
           "subtasks": [
             {
@@ -3826,7 +3826,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-10T20:12:49.349Z",
-              "completedAt": "2026-05-15T23:32:23.060Z",
+              "completedAt": "2026-09-15T23:17:53.425Z",
               "completionNotes": "Validated version of this.  Need to dig more in with a custom aspiration to get lower in the plate and a custom dispense to avoid bubbles and ensure even dispresion across cuvette footprint",
               "completionLinks": ""
             },
@@ -3837,11 +3837,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-10T20:13:06.910Z",
-              "completedAt": "2026-08-31T16:14:08.916Z",
+              "completedAt": "2026-09-15T23:17:53.425Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T23:17:53.425Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mpvpsn6lk6sxyycervo",
@@ -8726,9 +8729,18 @@
       "completedAt": "2026-09-15T23:17:46.914Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mp07kxytswogf1924m",
+      "subtaskId": null,
+      "title": "Automated nucleofection workflow",
+      "completedAt": "2026-09-15T23:17:53.425Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T23:17:46.914Z",
+  "lastUpdated": "2026-09-15T23:17:53.425Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
