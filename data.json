@@ -4014,7 +4014,7 @@
           "title": "General To-Do for Week of March 13",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-13T20:43:47.882Z",
           "subtasks": [
             {
@@ -4024,7 +4024,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-13T20:44:01.114Z",
-              "completedAt": "2026-03-14T22:56:45.622Z",
+              "completedAt": "2026-09-15T22:44:12.116Z",
               "completionNotes": "",
               "completionLinks": "https://docs.google.com/document/d/1JkjzaQo-Zz9nrmJ-QRcyyVwKgKD2tbLgBF3h7k7f0U8/edit?usp=sharing"
             },
@@ -4035,7 +4035,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-13T20:44:25.608Z",
-              "completedAt": "2026-03-26T16:37:30.837Z",
+              "completedAt": "2026-09-15T22:44:12.116Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4046,11 +4046,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-13T20:44:54.288Z",
-              "completedAt": "2026-03-26T16:37:33.301Z",
+              "completedAt": "2026-09-15T22:44:12.116Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T22:44:12.115Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mn7p4vecy7ugamczt2",
@@ -8522,9 +8525,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-15"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "mmpd6skq431pk2ulpea",
+      "subtaskId": null,
+      "title": "General To-Do for Week of March 13",
+      "completedAt": "2026-09-15T22:44:12.116Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T22:43:49.855Z",
+  "lastUpdated": "2026-09-15T22:44:12.116Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
