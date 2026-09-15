@@ -3873,8 +3873,11 @@
               "title": "media change",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-15T04:36:29.252Z"
+              "completed": true,
+              "createdAt": "2026-09-15T04:36:29.252Z",
+              "completedAt": "2026-09-15T04:36:36.812Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -6915,7 +6918,10 @@
         "subtaskId": "mu26j9oj27abbmqbz7k",
         "time": null,
         "scheduledAt": "2026-09-15T04:36:29.253Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-15T04:36:36.812Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -8342,9 +8348,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-14"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mthfvhiuze0mw8hl3h",
+      "subtaskId": "mu26j9oj27abbmqbz7k",
+      "completedAt": "2026-09-15T04:36:36.812Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-11"
     }
   ],
-  "lastUpdated": "2026-09-15T04:36:29.253Z",
+  "lastUpdated": "2026-09-15T04:36:36.812Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
