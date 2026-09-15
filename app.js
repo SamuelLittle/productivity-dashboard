@@ -35,8 +35,18 @@ let state = {
     calendarViewMode: 'month', // 'month' or 'week'
     weekStartDate: null,
     archiveCache: {},      // year (number) → archive data object
-    archiveFileShas: {}    // year (number) → GitHub file SHA
+    archiveFileShas: {},   // year (number) → GitHub file SHA
+    sync: {
+        status: 'idle',    // 'idle' | 'syncing' | 'synced' | 'error'
+        lastSyncedAt: null,
+        retryTimer: null,
+        retryDelay: 5000,  // current backoff delay in ms, doubles on each consecutive failure
+        retryCount: 0
+    }
 };
+
+const SYNC_RETRY_BASE_DELAY = 5000;
+const SYNC_RETRY_MAX_DELAY = 120000;
 
 // DOM Elements
 const elements = {};
@@ -98,6 +108,8 @@ function initElements() {
         logoutBtn: document.getElementById('logout-btn'),
         userAvatar: document.getElementById('user-avatar'),
         currentDate: document.getElementById('current-date'),
+        syncStatus: document.getElementById('sync-status'),
+        syncStatusText: document.getElementById('sync-status-text'),
         exportBtn: document.getElementById('export-btn'),
         loading: document.getElementById('loading'),
         toastContainer: document.getElementById('toast-container'),
@@ -390,6 +402,71 @@ function hideLoading() {
     elements.loading?.classList.add('hidden');
 }
 
+// ============================================
+// SYNC STATUS
+// ============================================
+
+function formatRelativeTime(date) {
+    if (!date) return '';
+    const seconds = Math.floor((Date.now() - date.getTime()) / 1000);
+    if (seconds < 10) return 'just now';
+    if (seconds < 60) return `${seconds}s ago`;
+    const minutes = Math.floor(seconds / 60);
+    if (minutes < 60) return `${minutes}m ago`;
+    const hours = Math.floor(minutes / 60);
+    if (hours < 24) return `${hours}h ago`;
+    const days = Math.floor(hours / 24);
+    return `${days}d ago`;
+}
+
+function setSyncStatus(status) {
+    state.sync.status = status;
+    renderSyncStatus();
+}
+
+function renderSyncStatus() {
+    if (!elements.syncStatus || !elements.syncStatusText) return;
+    const { status, lastSyncedAt } = state.sync;
+    elements.syncStatus.dataset.status = status;
+
+    let text = 'Connecting…';
+    let title = '';
+    if (status === 'syncing') {
+        text = 'Syncing…';
+    } else if (status === 'synced') {
+        text = lastSyncedAt ? `Synced ${formatRelativeTime(lastSyncedAt)}` : 'Synced';
+        title = lastSyncedAt ? `Last synced ${lastSyncedAt.toLocaleString()}` : '';
+    } else if (status === 'error') {
+        text = state.sync.retryTimer ? 'Sync failed — retrying' : 'Sync issue — click to retry';
+        title = (lastSyncedAt ? `Last synced ${lastSyncedAt.toLocaleString()}. ` : '') + 'Click to retry now.';
+    }
+
+    elements.syncStatusText.textContent = text;
+    elements.syncStatus.title = title;
+}
+
+// Cancels any pending backoff retry — called whenever a fresh save is about
+// to happen anyway, so we don't end up with a stray retry firing on top of it.
+function cancelPendingSyncRetry() {
+    if (state.sync.retryTimer) {
+        clearTimeout(state.sync.retryTimer);
+        state.sync.retryTimer = null;
+    }
+}
+
+// Schedules another saveData() attempt with exponential backoff. Delay resets
+// to the base whenever a save succeeds (see saveData()).
+function scheduleSyncRetry() {
+    cancelPendingSyncRetry();
+    const delay = state.sync.retryDelay;
+    state.sync.retryCount++;
+    state.sync.retryDelay = Math.min(state.sync.retryDelay * 2, SYNC_RETRY_MAX_DELAY);
+    state.sync.retryTimer = setTimeout(() => {
+        state.sync.retryTimer = null;
+        saveData();
+    }, delay);
+}
+
 function showToast(message, type = 'info') {
     const toast = document.createElement('div');
     toast.className = `toast ${type}`;
@@ -453,6 +530,11 @@ async function validateToken(token) {
 }
 
 function handleLogout() {
+    cancelPendingSyncRetry();
+    state.sync.status = 'idle';
+    state.sync.lastSyncedAt = null;
+    state.sync.retryDelay = SYNC_RETRY_BASE_DELAY;
+    state.sync.retryCount = 0;
     state.token = null;
     state.user = null;
     state.data = null;
@@ -509,6 +591,8 @@ async function loadData() {
             }
             state.data = JSON.parse(jsonString);
             migrateDataStructure();
+            state.sync.lastSyncedAt = new Date();
+            setSyncStatus('synced');
         } else if (response.status === 404) {
             state.data = createInitialData();
             await saveData();
@@ -520,6 +604,11 @@ async function loadData() {
     } catch (error) {
         console.error('Load data error:', error);
         showToast('Failed to load data from GitHub', 'error');
+        // Note: we deliberately don't auto-retry a load failure by pushing local
+        // fallback data to GitHub — it could be stale relative to another device's
+        // writes. The user can force a re-sync via the status indicator, and any
+        // real edit they make will trigger a normal save (with its own retry).
+        setSyncStatus('error');
 
         const localData = localStorage.getItem('dashboard_data');
         if (localData) {
@@ -575,6 +664,10 @@ async function saveData() {
 
     localStorage.setItem('dashboard_data', JSON.stringify(state.data));
 
+    // A fresh save attempt supersedes any pending backoff retry.
+    cancelPendingSyncRetry();
+    setSyncStatus('syncing');
+
     try {
         const jsonString = JSON.stringify(state.data, null, 2);
         const content = btoa(encodeURIComponent(jsonString).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode(parseInt(p1, 16))));
@@ -604,13 +697,22 @@ async function saveData() {
         if (response.ok) {
             const result = await response.json();
             state.fileSha = result.content.sha;
+            state.sync.lastSyncedAt = new Date();
+            state.sync.retryDelay = SYNC_RETRY_BASE_DELAY;
+            state.sync.retryCount = 0;
+            setSyncStatus('synced');
             return true;
         } else {
             throw new Error('Failed to save data');
         }
     } catch (error) {
         console.error('Save data error:', error);
-        showToast('Changes saved locally. Will sync when online.', 'error');
+        const isFirstFailure = state.sync.retryCount === 0;
+        scheduleSyncRetry();
+        setSyncStatus('error');
+        if (isFirstFailure) {
+            showToast('Changes saved locally. Will retry syncing automatically.', 'error');
+        }
         return false;
     }
 }
@@ -7460,6 +7562,9 @@ function initEventListeners() {
     document.getElementById('archive-project-btn')?.addEventListener('click', archiveProject);
     document.getElementById('back-to-projects')?.addEventListener('click', () => switchView('projects'));
     elements.exportBtn?.addEventListener('click', openExportModal);
+    elements.syncStatus?.addEventListener('click', () => {
+        if (state.sync.status === 'error') saveData();
+    });
 
     // Forms
     elements.taskForm?.addEventListener('submit', saveTask);
@@ -7677,6 +7782,8 @@ function init() {
     initEventListeners();
     initAuth();
     initAiSummary();
+    // Keep the "Synced Xm ago" text fresh even when nothing else changes.
+    setInterval(renderSyncStatus, 30000);
 }
 
 document.addEventListener('DOMContentLoaded', init);

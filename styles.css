@@ -246,6 +246,54 @@ body {
     font-size: 14px;
 }
 
+.sync-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-text-secondary);
+    font-size: 12px;
+    font-family: inherit;
+    cursor: default;
+}
+
+.sync-status[data-status="error"] {
+    cursor: pointer;
+}
+
+.sync-status[data-status="error"]:hover {
+    background: var(--color-surface-hover);
+}
+
+.sync-status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-text-muted);
+    flex-shrink: 0;
+}
+
+.sync-status[data-status="synced"] .sync-status-dot {
+    background: var(--color-success);
+}
+
+.sync-status[data-status="syncing"] .sync-status-dot {
+    background: var(--color-primary);
+    animation: sync-pulse 1s ease-in-out infinite;
+}
+
+.sync-status[data-status="error"] .sync-status-dot {
+    background: var(--color-danger);
+}
+
+@keyframes sync-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+}
+
 .header-right {
     display: flex;
     align-items: center;
