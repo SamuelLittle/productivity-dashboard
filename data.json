@@ -5038,7 +5038,7 @@
           "title": "pTox 40cmpd screen",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-08-31T15:05:08.609Z",
           "subtasks": [
             {
@@ -5048,7 +5048,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-31T15:05:40.208Z",
-              "completedAt": "2026-09-03T15:34:04.707Z",
+              "completedAt": "2026-09-15T22:44:55.221Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -5059,7 +5059,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-31T15:05:49.311Z",
-              "completedAt": "2026-09-03T15:34:17.879Z",
+              "completedAt": "2026-09-15T22:44:55.221Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -5070,7 +5070,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-31T15:06:05.358Z",
-              "completedAt": "2026-09-08T15:21:50.280Z",
+              "completedAt": "2026-09-15T22:44:55.221Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -5081,7 +5081,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-31T15:06:23.298Z",
-              "completedAt": "2026-09-03T15:34:11.008Z",
+              "completedAt": "2026-09-15T22:44:55.221Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -5092,11 +5092,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-31T15:06:36.229Z",
-              "completedAt": "2026-09-03T15:34:13.700Z",
+              "completedAt": "2026-09-15T22:44:55.221Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T22:44:55.221Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [],
@@ -8582,9 +8585,18 @@
       "completedAt": "2026-09-15T22:44:51.269Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mthddy4hafsbnvceva",
+      "subtaskId": null,
+      "title": "pTox 40cmpd screen",
+      "completedAt": "2026-09-15T22:44:55.221Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T22:44:51.269Z",
+  "lastUpdated": "2026-09-15T22:44:55.221Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
