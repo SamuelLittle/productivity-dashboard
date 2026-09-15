@@ -3872,7 +3872,7 @@
           "title": "iMicroglia Pilots",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-06-20T00:44:42.486Z",
           "subtasks": [
             {
@@ -3882,7 +3882,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-20T00:46:01.367Z",
-              "completedAt": "2026-06-23T15:32:23.831Z",
+              "completedAt": "2026-09-15T23:17:57.970Z",
               "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
               "completionLinks": ""
             },
@@ -3893,7 +3893,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-25T16:31:45.629Z",
-              "completedAt": "2026-06-25T20:19:16.763Z",
+              "completedAt": "2026-09-15T23:17:57.970Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3904,11 +3904,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-28T23:51:39.529Z",
-              "completedAt": "2026-06-29T23:36:31.482Z",
+              "completedAt": "2026-09-15T23:17:57.970Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T23:17:57.970Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mthfvhiuze0mw8hl3h",
@@ -8738,9 +8741,18 @@
       "completedAt": "2026-09-15T23:17:53.425Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mqlmy35i6ts5m6kremj",
+      "subtaskId": null,
+      "title": "iMicroglia Pilots",
+      "completedAt": "2026-09-15T23:17:57.970Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T23:17:53.425Z",
+  "lastUpdated": "2026-09-15T23:17:57.970Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
