@@ -6129,9 +6129,12 @@
         "title": "SMARTseq primer info to Zach Mason",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-09-15T18:34:44.272Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-09-15T22:43:26.699Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -8511,9 +8514,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-15"
+    },
+    {
+      "id": "mu30h9kgwpy0aju97mk",
+      "title": "SMARTseq primer info to Zach Mason",
+      "completedAt": "2026-09-15T22:43:26.699Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-15"
     }
   ],
-  "lastUpdated": "2026-09-15T22:43:22.710Z",
+  "lastUpdated": "2026-09-15T22:43:26.699Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
