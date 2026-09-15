@@ -5033,20 +5033,6 @@
     }
   ],
   "dailyLists": {
-    "2026-06-15": [
-      {
-        "id": "mqfvhah96b6haowurhu",
-        "title": "1-on-1 w/ Jimmie",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-15T23:56:58.318Z",
-        "time": null,
-        "completedAt": "2026-06-16T18:39:03.180Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-24": [
       {
         "id": "mqsf20ifvno6yoki9kk",
@@ -6042,22 +6028,20 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-09-14": [
+      {
+        "id": "mu26b155s5j02ccd2tc",
+        "title": "Run wet test of new PCR plates for automated BLADE-R",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-09-15T04:30:04.939Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
-    "2026-06-15": [
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mpyrjid0lf6usyodvu",
-        "subtaskId": "mpyrkmlrz606f5xwv8",
-        "time": null,
-        "scheduledAt": "2026-06-04T00:35:30.543Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-16T18:39:24.711Z",
-        "completionNotes": "",
-        "completionLinks": "https://docs.google.com/document/d/1M1PnZMGzqHr1BUelTMLCDFYfy_IRbF7AYJK_bHt708I/edit?usp=sharing"
-      }
-    ],
     "2026-06-18": [
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -6148,30 +6132,6 @@
         "scheduledAt": "2026-06-16T18:42:18.384Z",
         "completedOnDay": true,
         "completedAt": "2026-06-19T23:14:30.053Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-06-16": [
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mpyrjid0lf6usyodvu",
-        "subtaskId": "mqgzm6mxesysfgla2p8",
-        "time": null,
-        "scheduledAt": "2026-06-16T18:40:31.257Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-19T23:14:10.205Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mpyrjid0lf6usyodvu",
-        "subtaskId": "mqgzmo1sjdoeiqibdeo",
-        "time": null,
-        "scheduledAt": "2026-06-16T18:40:53.824Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-19T23:14:15.493Z",
         "completionNotes": "",
         "completionLinks": ""
       }
@@ -6939,50 +6899,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "id": "mqfvhah96b6haowurhu",
-      "title": "1-on-1 w/ Jimmie",
-      "completedAt": "2026-06-16T18:39:03.180Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-15"
-    },
-    {
-      "projectId": "mpyqnvm6p9zp4xlp64m",
-      "taskId": "mpyrjid0lf6usyodvu",
-      "subtaskId": "mpyrkmlrz606f5xwv8",
-      "completedAt": "2026-06-16T18:39:24.711Z",
-      "completionNotes": "",
-      "completionLinks": "https://docs.google.com/document/d/1M1PnZMGzqHr1BUelTMLCDFYfy_IRbF7AYJK_bHt708I/edit?usp=sharing",
-      "date": "2026-06-15"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhr7xbgjd9lgr32a",
-      "subtaskId": "mpyrny5mnb8sb96hlra",
-      "completedAt": "2026-06-16T18:39:45.224Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-10"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhr7xbgjd9lgr32a",
-      "subtaskId": "mq4erxe3zx8t8txhri",
-      "completedAt": "2026-06-16T18:39:48.583Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-10"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "mpvpsn6lk6sxyycervo",
-      "subtaskId": "mpvpt4hp39ene1hfnjl",
-      "completedAt": "2026-06-16T18:39:52.614Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-10"
-    },
     {
       "projectId": "mpyqnvm6p9zp4xlp64m",
       "taskId": "mpyrjid0lf6usyodvu",
@@ -8399,7 +8315,7 @@
       "date": "2026-09-09"
     }
   ],
-  "lastUpdated": "2026-09-10T16:03:50.662Z",
+  "lastUpdated": "2026-09-15T04:30:04.940Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
