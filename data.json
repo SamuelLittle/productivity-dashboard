@@ -6105,9 +6105,12 @@
         "title": "Sci 2 interview for gCell",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-09-15T15:37:49.285Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-09-15T18:05:26.369Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mu2u69tbm8dzwce4ex9",
@@ -8480,9 +8483,17 @@
       "completionNotes": "performed treatment in iRPEs + bonus plate addition. Completed around 10:50.  Tomorrow's 3hr treatment needs to target around 8am",
       "completionLinks": "",
       "date": "2026-09-15"
+    },
+    {
+      "id": "mu2u5qzouxvhc1yr6r",
+      "title": "Sci 2 interview for gCell",
+      "completedAt": "2026-09-15T18:05:26.369Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-15"
     }
   ],
-  "lastUpdated": "2026-09-15T18:05:20.364Z",
+  "lastUpdated": "2026-09-15T18:05:26.369Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
