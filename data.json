@@ -1516,6 +1516,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-09-15T15:39:26.158Z"
+            },
+            {
+              "id": "mu2u8a2hpve2c4y1ohr",
+              "title": "SMARTSeq D1",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-15T15:39:47.321Z"
             }
           ]
         }
@@ -7022,6 +7030,16 @@
         "scheduledAt": "2026-09-15T15:38:56.313Z",
         "completedOnDay": false
       }
+    ],
+    "2026-09-17": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mu2u6xxj0bj46ry6m4u7",
+        "subtaskId": "mu2u8a2hpve2c4y1ohr",
+        "time": null,
+        "scheduledAt": "2026-09-15T15:39:47.322Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8458,7 +8476,7 @@
       "date": "2026-09-11"
     }
   ],
-  "lastUpdated": "2026-09-15T15:39:26.158Z",
+  "lastUpdated": "2026-09-15T15:39:47.322Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
