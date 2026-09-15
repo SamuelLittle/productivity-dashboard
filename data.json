@@ -3964,6 +3964,14 @@
               "completedAt": "2026-09-15T04:36:36.812Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mu3altyg6vaphaqu6zg",
+              "title": "Nucleofection repeat",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-15T23:18:13.480Z"
             }
           ]
         }
@@ -7201,6 +7209,14 @@
         "time": null,
         "scheduledAt": "2026-09-15T22:50:17.124Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mu3altyg6vaphaqu6zg",
+        "time": null,
+        "scheduledAt": "2026-09-15T23:18:13.480Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -8752,7 +8768,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T23:17:57.970Z",
+  "lastUpdated": "2026-09-15T23:18:13.480Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
