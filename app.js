@@ -564,8 +564,13 @@ function migrateDataStructure() {
 async function saveData() {
     // Always try to archive old data so data.json never grows unboundedly.
     // archiveOldData() exits immediately if nothing is old enough to move.
+    // Wrapped so an archiving failure can never block the main data.json save below.
     if (state.token) {
-        await archiveOldData();
+        try {
+            await archiveOldData();
+        } catch (error) {
+            console.error('Archive step failed, continuing with main save:', error);
+        }
     }
 
     localStorage.setItem('dashboard_data', JSON.stringify(state.data));
@@ -599,12 +604,14 @@ async function saveData() {
         if (response.ok) {
             const result = await response.json();
             state.fileSha = result.content.sha;
+            return true;
         } else {
             throw new Error('Failed to save data');
         }
     } catch (error) {
         console.error('Save data error:', error);
         showToast('Changes saved locally. Will sync when online.', 'error');
+        return false;
     }
 }
 
@@ -683,7 +690,10 @@ async function ensureYearLoaded(year) {
             const bytes = Uint8Array.from(binaryStr, c => c.charCodeAt(0));
             jsonString = new TextDecoder('utf-8').decode(bytes);
         } else if (fileData.download_url) {
-            const dlResponse = await fetch(fileData.download_url);
+            const dlResponse = await fetch(fileData.download_url, {
+                headers: { Authorization: `token ${state.token}` }
+            });
+            if (!dlResponse.ok) throw new Error(`Raw download failed: ${dlResponse.status}`);
             jsonString = await dlResponse.text();
         }
 
@@ -728,43 +738,67 @@ async function archiveOldData() {
 
     for (const [yearStr, oldDates] of Object.entries(yearBuckets)) {
         const year = parseInt(yearStr);
-        const archive = state.archiveCache[year] || {
+        const baseArchive = state.archiveCache[year] || {
             dailySummaries: {}, dailyNotes: {}, dailyLists: {},
             scheduledItems: {}, weeklySummaries: {}, completedTasks: []
         };
+        // Build the archive addition on a copy first — nothing is removed from
+        // state.data until the write to GitHub is confirmed successful, so a
+        // failed save can't silently delete data that was never actually archived.
+        const archive = {
+            dailySummaries: { ...baseArchive.dailySummaries },
+            dailyNotes: { ...baseArchive.dailyNotes },
+            dailyLists: { ...baseArchive.dailyLists },
+            scheduledItems: { ...baseArchive.scheduledItems },
+            weeklySummaries: { ...baseArchive.weeklySummaries },
+            completedTasks: [...baseArchive.completedTasks]
+        };
 
-        // Move date-keyed data
         ['dailySummaries', 'dailyNotes', 'dailyLists', 'scheduledItems'].forEach(key => {
             oldDates.forEach(date => {
                 if (state.data[key]?.[date] !== undefined) {
                     archive[key][date] = state.data[key][date];
-                    delete state.data[key][date];
                 }
             });
         });
 
-        // Move weeklySummaries whose key (week-start date) is before the cutoff
         Object.keys(state.data.weeklySummaries || {}).forEach(weekKey => {
             if (weekKey < cutoffStr) {
                 archive.weeklySummaries[weekKey] = state.data.weeklySummaries[weekKey];
-                delete state.data.weeklySummaries[weekKey];
             }
         });
 
-        // Move completedTasks for this year that are before the cutoff
-        const kept = [];
         (state.data.completedTasks || []).forEach(task => {
             const taskDate = (task.completedAt || '').substring(0, 10);
             if (taskDate < cutoffStr && taskDate.startsWith(yearStr)) {
                 archive.completedTasks.push(task);
-            } else {
-                kept.push(task);
             }
         });
-        state.data.completedTasks = kept;
 
+        const saved = await saveArchiveYear(year, archive);
+        if (!saved) {
+            console.error(`Skipping removal of ${year} data from data.json — archive write failed, will retry next save.`);
+            continue;
+        }
+
+        // Only now that the archive file is confirmed written do we remove
+        // the data from state.data and mark the year as archived.
         state.archiveCache[year] = archive;
-        await saveArchiveYear(year, archive);
+
+        ['dailySummaries', 'dailyNotes', 'dailyLists', 'scheduledItems'].forEach(key => {
+            oldDates.forEach(date => {
+                delete state.data[key]?.[date];
+            });
+        });
+        Object.keys(state.data.weeklySummaries || {}).forEach(weekKey => {
+            if (weekKey < cutoffStr) {
+                delete state.data.weeklySummaries[weekKey];
+            }
+        });
+        state.data.completedTasks = (state.data.completedTasks || []).filter(task => {
+            const taskDate = (task.completedAt || '').substring(0, 10);
+            return !(taskDate < cutoffStr && taskDate.startsWith(yearStr));
+        });
 
         if (!state.data.archivedYears.includes(year)) {
             state.data.archivedYears.push(year);
@@ -802,11 +836,14 @@ async function saveArchiveYear(year, archiveData) {
             const result = await response.json();
             state.archiveFileShas[year] = result.content.sha;
             console.log(`Archived ${year} data to logs/${year}.json`);
+            return true;
         } else {
-            console.error('Failed to save archive for year', year);
+            console.error('Failed to save archive for year', year, response.status);
+            return false;
         }
     } catch (e) {
         console.error('Archive save error for year', year, e);
+        return false;
     }
 }
 
@@ -1889,8 +1926,8 @@ async function saveDailyNotes() {
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
-    showToast('Notes saved', 'success');
+    const saveOk = await saveData();
+    if (saveOk) showToast('Notes saved', 'success');
 }
 
 async function saveTodayNotes() {
@@ -1913,8 +1950,8 @@ async function saveTodayNotes() {
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
-    showToast('Notes saved', 'success');
+    const saveOk = await saveData();
+    if (saveOk) showToast('Notes saved', 'success');
 }
 
 async function savePreviousNotes() {
@@ -1937,8 +1974,8 @@ async function savePreviousNotes() {
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
-    showToast('Notes saved', 'success');
+    const saveOk = await saveData();
+    if (saveOk) showToast('Notes saved', 'success');
 }
 
 // ============================================
@@ -2008,7 +2045,6 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
     `;
 
     const taskTime = getTaskTime(task);
-    if (taskTime) console.log('[TaskRender] Task:', task.title, 'Time:', taskTime, 'scheduledRef:', task.scheduledRef, 'task.time:', task.time);
     const formattedTime = taskTime ? formatTime(taskTime) : '';
     const timeBadge = formattedTime ? `
         <span class="task-time-badge">
@@ -2784,7 +2820,7 @@ async function scheduleTaskForDate(date) {
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
+    const saveOk = await saveData();
     closeAllModals();
     renderAllViews();
 
@@ -2793,7 +2829,7 @@ async function scheduleTaskForDate(date) {
         renderProjectDetail(state.currentProject);
     }
 
-    showToast(`Task scheduled for ${formatShortDate(date)}`, 'success');
+    if (saveOk) showToast(`Task scheduled for ${formatShortDate(date)}`, 'success');
 }
 
 // ============================================
@@ -2879,7 +2915,7 @@ async function rescheduleTaskToDate(newDate) {
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
+    const saveOk = await saveData();
     closeAllModals();
     renderAllViews();
 
@@ -2888,7 +2924,7 @@ async function rescheduleTaskToDate(newDate) {
         renderDayDetailTasks(state.selectedDate);
     }
 
-    showToast(`Task rescheduled to ${formatShortDate(newDate)}`, 'success');
+    if (saveOk) showToast(`Task rescheduled to ${formatShortDate(newDate)}`, 'success');
 
     rescheduleTask = null;
     rescheduleFromDate = null;
@@ -3099,7 +3135,7 @@ async function saveTaskNotes() {
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
+    const saveOk = await saveData();
     closeAllModals();
     renderAllViews();
 
@@ -3111,7 +3147,7 @@ async function saveTaskNotes() {
         renderDayDetailTasks(state.selectedDate);
     }
 
-    showToast('Notes saved', 'success');
+    if (saveOk) showToast('Notes saved', 'success');
 
     taskDetailTask = null;
     taskDetailDate = null;
@@ -3151,14 +3187,14 @@ async function removeTaskFromDay(task, date, silent = false) {
 
     if (!silent) {
         state.data.lastUpdated = new Date().toISOString();
-        await saveData();
+        const saveOk = await saveData();
         renderAllViews();
 
         if (state.selectedDate) {
             renderDayDetailTasks(state.selectedDate);
         }
 
-        showToast('Task removed from day', 'success');
+        if (saveOk) showToast('Task removed from day', 'success');
     }
 }
 
@@ -3324,7 +3360,6 @@ async function saveTaskInternal() {
     }
 
     const taskTime = (elements.taskTimeToggle?.checked && elements.taskTime?.value) || null;
-    console.log('[TaskSave] Time toggle checked:', elements.taskTimeToggle?.checked, 'Time value:', elements.taskTime?.value, 'Final taskTime:', taskTime);
 
     const taskData = {
         id: taskId,
@@ -3530,14 +3565,14 @@ async function toggleDailyTaskComplete(task, date, completed, notes = '', links 
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
+    const saveOk = await saveData();
     renderAllViews();
 
     if (state.selectedDate) {
         renderDayDetailTasks(state.selectedDate);
     }
 
-    showToast(completed ? 'Task completed!' : 'Task reopened', 'success');
+    if (saveOk) showToast(completed ? 'Task completed!' : 'Task reopened', 'success');
 }
 
 async function toggleStandaloneTaskComplete(taskId, date, completed, notes = '', links = '') {
@@ -3567,19 +3602,17 @@ async function toggleStandaloneTaskComplete(taskId, date, completed, notes = '',
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
+    const saveOk = await saveData();
     renderAllViews();
 
     if (state.selectedDate) {
         renderDayDetailTasks(state.selectedDate);
     }
 
-    showToast(completed ? 'Task completed!' : 'Task reopened', 'success');
+    if (saveOk) showToast(completed ? 'Task completed!' : 'Task reopened', 'success');
 }
 
 async function toggleProjectTaskComplete(projectId, taskId, completed, notes = '', links = '') {
-    console.log('toggleProjectTaskComplete called:', { projectId, taskId, completed }); // Debug log
-
     await markTaskCompleteInProject(projectId, taskId, completed, notes, links);
 
     if (completed) {
@@ -3616,14 +3649,14 @@ async function toggleProjectTaskComplete(projectId, taskId, completed, notes = '
     });
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
+    const saveOk = await saveData();
     renderAllViews();
 
     if (state.currentProject === projectId) {
         renderProjectDetail(projectId);
     }
 
-    showToast(completed ? 'Task completed!' : 'Task reopened', 'success');
+    if (saveOk) showToast(completed ? 'Task completed!' : 'Task reopened', 'success');
 }
 
 async function markTaskCompleteInProject(projectId, taskId, completed, notes = '', links = '') {
@@ -3714,14 +3747,14 @@ async function toggleSubtaskComplete(projectId, taskId, subtaskId) {
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
+    const saveOk = await saveData();
     renderAllViews();
 
     if (state.currentProject === projectId) {
         renderProjectDetail(projectId);
     }
 
-    showToast(newCompleted ? 'Subtask completed!' : 'Subtask reopened', 'success');
+    if (saveOk) showToast(newCompleted ? 'Subtask completed!' : 'Subtask reopened', 'success');
 }
 
 async function deleteProjectTask(projectId, taskId) {
@@ -3737,14 +3770,14 @@ async function deleteProjectTask(projectId, taskId) {
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
+    const saveOk = await saveData();
     renderAllViews();
 
     if (state.currentProject === projectId) {
         renderProjectDetail(projectId);
     }
 
-    showToast('Task deleted', 'success');
+    if (saveOk) showToast('Task deleted', 'success');
 }
 
 // ============================================
@@ -3797,10 +3830,10 @@ async function saveProject(e) {
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
+    const saveOk = await saveData();
     closeAllModals();
     renderAllViews();
-    showToast('Project saved', 'success');
+    if (saveOk) showToast('Project saved', 'success');
 }
 
 async function archiveProject() {
@@ -3810,10 +3843,10 @@ async function archiveProject() {
     if (project) {
         project.archived = !project.archived;
         state.data.lastUpdated = new Date().toISOString();
-        await saveData();
+        const saveOk = await saveData();
         renderAllViews();
         switchView('projects');
-        showToast(project.archived ? 'Project archived' : 'Project restored', 'success');
+        if (saveOk) showToast(project.archived ? 'Project archived' : 'Project restored', 'success');
     }
 }
 
@@ -3840,10 +3873,10 @@ async function saveProgress(e) {
         });
 
         state.data.lastUpdated = new Date().toISOString();
-        await saveData();
+        const saveOk = await saveData();
         closeAllModals();
         renderProjectDetail(projectId);
-        showToast('Progress update added', 'success');
+        if (saveOk) showToast('Progress update added', 'success');
     }
 }
 
@@ -3859,8 +3892,7 @@ async function saveProjectDirections(projectId, year, month, directions) {
     project.monthlyDirections[monthKey] = directions;
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
-    return true;
+    return await saveData();
 }
 
 function getProjectDirections(projectId, year, month) {
@@ -7039,9 +7071,9 @@ async function saveWeeklySummary() {
         editedAt: new Date().toISOString()
     };
 
-    await saveData();
+    const saveOk = await saveData();
     closeAllModals();
-    showToast('Weekly summary saved', 'success');
+    if (saveOk) showToast('Weekly summary saved', 'success');
 }
 
 function exportWeeklySummaryAsPdf() {
@@ -7360,9 +7392,9 @@ async function saveEodSummary() {
         editedAt: new Date().toISOString()
     };
 
-    await saveData();
+    const saveOk = await saveData();
     closeAllModals();
-    showToast('Summary saved', 'success');
+    if (saveOk) showToast('Summary saved', 'success');
 
     // Update button label if visible
     updateEodButtonLabel(eodCurrentDate);
