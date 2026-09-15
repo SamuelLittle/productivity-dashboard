@@ -1492,7 +1492,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-09-15T15:38:44.935Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mu2u76plovw9sjbquy",
+              "title": "24hr treatment",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-15T15:38:56.313Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [
@@ -6971,6 +6980,16 @@
         "scheduledAt": "2026-09-15T15:38:29.560Z",
         "completedOnDay": false
       }
+    ],
+    "2026-09-15": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mu2u6xxj0bj46ry6m4u7",
+        "subtaskId": "mu2u76plovw9sjbquy",
+        "time": null,
+        "scheduledAt": "2026-09-15T15:38:56.313Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8407,7 +8426,7 @@
       "date": "2026-09-11"
     }
   ],
-  "lastUpdated": "2026-09-15T15:38:44.935Z",
+  "lastUpdated": "2026-09-15T15:38:56.313Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
