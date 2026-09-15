@@ -5104,6 +5104,16 @@
       ],
       "progressUpdates": [],
       "archived": false
+    },
+    {
+      "id": "mu39fvpuyhq2d4m1yxe",
+      "name": "FLEX Automation",
+      "description": "On-going efforts to automate FLEX sample prep.",
+      "color": "#f59e0b",
+      "createdAt": "2026-09-15T22:45:36.210Z",
+      "tasks": [],
+      "progressUpdates": [],
+      "archived": false
     }
   ],
   "dailyLists": {
@@ -8596,7 +8606,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T22:44:55.221Z",
+  "lastUpdated": "2026-09-15T22:45:36.210Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
