@@ -6053,6 +6053,17 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-09-15": [
+      {
+        "id": "mu2u5cv6qce3l4jtc9",
+        "title": "Endothelial working group meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-09-15T15:37:30.978Z",
+        "time": "11:00"
+      }
     ]
   },
   "scheduledItems": {
@@ -8359,7 +8370,7 @@
       "date": "2026-09-11"
     }
   ],
-  "lastUpdated": "2026-09-15T04:36:36.812Z",
+  "lastUpdated": "2026-09-15T15:37:30.979Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
