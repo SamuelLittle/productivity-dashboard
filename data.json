@@ -3565,7 +3565,7 @@
           "title": "iAstro Supernatant Luminex Screen",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T16:22:17.423Z",
           "subtasks": [
             {
@@ -3575,7 +3575,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T16:25:45.085Z",
-              "completedAt": "2026-02-03T21:08:53.079Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3586,7 +3586,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T16:26:23.295Z",
-              "completedAt": "2026-01-20T23:54:14.667Z"
+              "completedAt": "2026-09-15T23:17:46.914Z"
             },
             {
               "id": "mkn5202q853nkns38kg",
@@ -3595,7 +3595,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T22:01:10.370Z",
-              "completedAt": "2026-01-26T17:32:42.415Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "Got 10 plates - need 3 for Cytokine screen submissions. Will grab more when I submit those plates",
               "completionLinks": ""
             },
@@ -3606,7 +3606,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-29T22:28:37.007Z",
-              "completedAt": "2026-02-03T21:08:50.134Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3617,7 +3617,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-03T21:09:11.012Z",
-              "completedAt": "2026-02-03T22:15:01.553Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3628,7 +3628,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-03T21:09:44.297Z",
-              "completedAt": "2026-02-05T19:21:50.836Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3639,7 +3639,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-06T00:22:51.519Z",
-              "completedAt": "2026-05-07T14:16:31.297Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3650,11 +3650,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-10T00:32:23.571Z",
-              "completedAt": "2026-02-10T01:08:08.899Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": "https://docs.google.com/spreadsheets/d/1xSw15USZE9q0o5W7J7f_eq9uaAuXxlty/edit?gid=558385779#gid=558385779"
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T23:17:46.914Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mkx8wznv95wc8en1g2k",
@@ -8714,9 +8717,18 @@
       "completedAt": "2026-09-15T22:44:55.221Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkmsy72n9wkp209y165",
+      "subtaskId": null,
+      "title": "iAstro Supernatant Luminex Screen",
+      "completedAt": "2026-09-15T23:17:46.914Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T23:10:04.305Z",
+  "lastUpdated": "2026-09-15T23:17:46.914Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
