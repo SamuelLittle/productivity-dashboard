@@ -4776,7 +4776,7 @@
           "title": "Pre Screen Pilots",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-06-04T00:34:38.388Z",
           "subtasks": [
             {
@@ -4786,7 +4786,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-04T00:35:13.491Z",
-              "completedAt": "2026-06-10T04:25:58.474Z",
+              "completedAt": "2026-09-15T22:44:37.821Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4797,7 +4797,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-04T00:35:30.543Z",
-              "completedAt": "2026-06-16T18:39:24.711Z",
+              "completedAt": "2026-09-15T22:44:37.821Z",
               "completionNotes": "",
               "completionLinks": "https://docs.google.com/document/d/1M1PnZMGzqHr1BUelTMLCDFYfy_IRbF7AYJK_bHt708I/edit?usp=sharing"
             },
@@ -4808,7 +4808,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-16T18:40:31.257Z",
-              "completedAt": "2026-06-19T23:14:10.205Z",
+              "completedAt": "2026-09-15T22:44:37.821Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4819,7 +4819,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-16T18:40:53.824Z",
-              "completedAt": "2026-06-19T23:14:15.493Z",
+              "completedAt": "2026-09-15T22:44:37.821Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4830,11 +4830,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-16T18:41:19.474Z",
-              "completedAt": "2026-06-19T23:14:41.529Z",
+              "completedAt": "2026-09-15T22:44:37.821Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T22:44:37.821Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mq4eqegi9juuwozbyhu",
@@ -8534,9 +8537,18 @@
       "completedAt": "2026-09-15T22:44:12.116Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mpyrjid0lf6usyodvu",
+      "subtaskId": null,
+      "title": "Pre Screen Pilots",
+      "completedAt": "2026-09-15T22:44:37.821Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T22:44:15.916Z",
+  "lastUpdated": "2026-09-15T22:44:37.821Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
