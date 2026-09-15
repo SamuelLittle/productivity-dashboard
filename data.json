@@ -1500,6 +1500,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-09-15T15:38:56.313Z"
+            },
+            {
+              "id": "mu2u7l1aeoxcn0cgnnw",
+              "title": "3hr treatment",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-15T15:39:14.878Z"
             }
           ]
         }
@@ -6979,6 +6987,14 @@
         "time": null,
         "scheduledAt": "2026-09-15T15:38:29.560Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mu2u6xxj0bj46ry6m4u7",
+        "subtaskId": "mu2u7l1aeoxcn0cgnnw",
+        "time": null,
+        "scheduledAt": "2026-09-15T15:39:14.878Z",
+        "completedOnDay": false
       }
     ],
     "2026-09-15": [
@@ -8426,7 +8442,7 @@
       "date": "2026-09-11"
     }
   ],
-  "lastUpdated": "2026-09-15T15:38:56.313Z",
+  "lastUpdated": "2026-09-15T15:39:14.878Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
