@@ -6098,15 +6098,6 @@
     ],
     "2026-09-15": [
       {
-        "id": "mu2u5cv6qce3l4jtc9",
-        "title": "Endothelial working group meeting",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-09-15T15:37:30.978Z",
-        "time": "11:00"
-      },
-      {
         "id": "mu2u5qzouxvhc1yr6r",
         "title": "Sci 2 interview for gCell",
         "description": "",
@@ -8476,7 +8467,7 @@
       "date": "2026-09-11"
     }
   ],
-  "lastUpdated": "2026-09-15T15:39:47.322Z",
+  "lastUpdated": "2026-09-15T18:04:40.911Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
