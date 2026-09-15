@@ -1498,8 +1498,11 @@
               "title": "24hr treatment",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-15T15:38:56.313Z"
+              "completed": true,
+              "createdAt": "2026-09-15T15:38:56.313Z",
+              "completedAt": "2026-09-15T18:05:20.363Z",
+              "completionNotes": "performed treatment in iRPEs + bonus plate addition. Completed around 10:50.  Tomorrow's 3hr treatment needs to target around 8am",
+              "completionLinks": ""
             },
             {
               "id": "mu2u7l1aeoxcn0cgnnw",
@@ -7019,7 +7022,10 @@
         "subtaskId": "mu2u76plovw9sjbquy",
         "time": null,
         "scheduledAt": "2026-09-15T15:38:56.313Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-15T18:05:20.363Z",
+        "completionNotes": "performed treatment in iRPEs + bonus plate addition. Completed around 10:50.  Tomorrow's 3hr treatment needs to target around 8am",
+        "completionLinks": ""
       }
     ],
     "2026-09-17": [
@@ -8465,9 +8471,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-11"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mu2u6xxj0bj46ry6m4u7",
+      "subtaskId": "mu2u76plovw9sjbquy",
+      "completedAt": "2026-09-15T18:05:20.364Z",
+      "completionNotes": "performed treatment in iRPEs + bonus plate addition. Completed around 10:50.  Tomorrow's 3hr treatment needs to target around 8am",
+      "completionLinks": "",
+      "date": "2026-09-15"
     }
   ],
-  "lastUpdated": "2026-09-15T18:04:40.911Z",
+  "lastUpdated": "2026-09-15T18:05:20.364Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
