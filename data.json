@@ -4856,7 +4856,7 @@
           "title": "Diss Op",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-07-16T17:10:40.061Z",
           "subtasks": [
             {
@@ -4866,7 +4866,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-16T17:11:26.350Z",
-              "completedAt": "2026-07-28T14:52:13.994Z",
+              "completedAt": "2026-09-15T22:44:42.493Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4877,7 +4877,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-17T18:01:08.909Z",
-              "completedAt": "2026-07-17T22:46:29.392Z",
+              "completedAt": "2026-09-15T22:44:42.493Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4888,7 +4888,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-17T18:01:25.920Z",
-              "completedAt": "2026-07-17T22:46:32.350Z",
+              "completedAt": "2026-09-15T22:44:42.493Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4899,7 +4899,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-17T22:47:02.084Z",
-              "completedAt": "2026-07-20T23:23:26.767Z",
+              "completedAt": "2026-09-15T22:44:42.493Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4910,11 +4910,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-20T16:35:56.155Z",
-              "completedAt": "2026-07-28T14:52:09.014Z",
+              "completedAt": "2026-09-15T22:44:42.493Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T22:44:42.493Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "msot20jrbopourlxc6r",
@@ -8546,9 +8549,18 @@
       "completedAt": "2026-09-15T22:44:37.821Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mrnrm6rednng6vjynhu",
+      "subtaskId": null,
+      "title": "Diss Op",
+      "completedAt": "2026-09-15T22:44:42.493Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T22:44:37.821Z",
+  "lastUpdated": "2026-09-15T22:44:42.493Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
