@@ -5119,7 +5119,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-09-15T22:46:36.369Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mu39hyqtveridoixwo",
+              "title": "Fixed T cell serial dilution imaging",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-15T22:47:13.445Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -7093,6 +7102,16 @@
         "scheduledAt": "2026-09-15T15:39:47.322Z",
         "completedOnDay": false
       }
+    ],
+    "2026-09-18": [
+      {
+        "projectId": "mu39fvpuyhq2d4m1yxe",
+        "taskId": "mu39h64xcq13625mqt8",
+        "subtaskId": "mu39hyqtveridoixwo",
+        "time": null,
+        "scheduledAt": "2026-09-15T22:47:13.445Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8616,7 +8635,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-15T22:46:36.369Z",
+  "lastUpdated": "2026-09-15T22:47:13.445Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
