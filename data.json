@@ -6254,6 +6254,15 @@
         "completed": false,
         "createdAt": "2026-09-17T16:24:01.779Z",
         "time": null
+      },
+      {
+        "id": "mu5qpggyto4dzetnrkg",
+        "title": "barcode + metaData to Hamid/Zach",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-09-17T16:24:28.834Z",
+        "time": null
       }
     ]
   },
@@ -8792,7 +8801,7 @@
       "date": "2026-09-16"
     }
   ],
-  "lastUpdated": "2026-09-17T16:24:01.780Z",
+  "lastUpdated": "2026-09-17T16:24:28.834Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
