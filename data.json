@@ -5188,6 +5188,16 @@
       ],
       "progressUpdates": [],
       "archived": false
+    },
+    {
+      "id": "mu72dgvjcoi9jfphbqp",
+      "name": "Endothelial COPD CRISPR Screen",
+      "description": "",
+      "color": "#8b5cf6",
+      "createdAt": "2026-09-18T14:38:51.055Z",
+      "tasks": [],
+      "progressUpdates": [],
+      "archived": false
     }
   ],
   "dailyLists": {
@@ -8841,7 +8851,7 @@
       "date": "2026-09-17"
     }
   ],
-  "lastUpdated": "2026-09-18T14:38:29.008Z",
+  "lastUpdated": "2026-09-18T14:38:51.055Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
