@@ -3455,6 +3455,65 @@
         "completionNotes": "Cells treated between 10 and 11 am. ",
         "completionLinks": ""
       }
+    ],
+    "2026-06-18": [
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "movkm4r357gxwt3fz3f",
+        "subtaskId": "mpxhe6ovtz24vw44ypl",
+        "time": null,
+        "scheduledAt": "2026-06-03T03:02:47.648Z",
+        "completedOnDay": true,
+        "completedAt": "2026-06-19T23:15:04.297Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-06-17": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhr7xbgjd9lgr32a",
+        "subtaskId": "mq4f8jyl99i0s01skt7",
+        "time": null,
+        "scheduledAt": "2026-06-16T18:39:37.956Z",
+        "completedOnDay": true,
+        "completedAt": "2026-06-19T23:14:23.626Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "mpyrjid0lf6usyodvu",
+        "subtaskId": "mqgzn7uaprofpilig79",
+        "time": null,
+        "scheduledAt": "2026-06-16T18:41:19.474Z",
+        "completedOnDay": true,
+        "completedAt": "2026-06-19T23:14:41.529Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "movkm4r357gxwt3fz3f",
+        "subtaskId": "mqgzo2z306t3ie4d0s5r",
+        "time": null,
+        "scheduledAt": "2026-06-16T18:41:59.824Z",
+        "completedOnDay": true,
+        "completedAt": "2026-06-19T23:14:35.123Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "movkm4r357gxwt3fz3f",
+        "subtaskId": "mqgzohanmrkewyim4b",
+        "time": null,
+        "scheduledAt": "2026-06-16T18:42:18.384Z",
+        "completedOnDay": true,
+        "completedAt": "2026-06-19T23:14:30.053Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
     ]
   },
   "weeklySummaries": {
@@ -6257,6 +6316,69 @@
       "subtaskId": "mp8pk91z1t99lgnx0ph",
       "title": "make plan for imaging readout",
       "completedAt": "2026-05-25T23:48:36.775Z"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mpyrjid0lf6usyodvu",
+      "subtaskId": "mqgzm6mxesysfgla2p8",
+      "completedAt": "2026-06-19T23:14:10.205Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-16"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mpyrjid0lf6usyodvu",
+      "subtaskId": "mqgzmo1sjdoeiqibdeo",
+      "completedAt": "2026-06-19T23:14:15.493Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-16"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhr7xbgjd9lgr32a",
+      "subtaskId": "mq4f8jyl99i0s01skt7",
+      "completedAt": "2026-06-19T23:14:23.626Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-17"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "movkm4r357gxwt3fz3f",
+      "subtaskId": "mqgzohanmrkewyim4b",
+      "completedAt": "2026-06-19T23:14:30.053Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-17"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "movkm4r357gxwt3fz3f",
+      "subtaskId": "mqgzo2z306t3ie4d0s5r",
+      "completedAt": "2026-06-19T23:14:35.123Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-17"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mpyrjid0lf6usyodvu",
+      "subtaskId": "mqgzn7uaprofpilig79",
+      "completedAt": "2026-06-19T23:14:41.529Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-17"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "movkm4r357gxwt3fz3f",
+      "subtaskId": "mpxhe6ovtz24vw44ypl",
+      "completedAt": "2026-06-19T23:15:04.297Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-18"
     }
   ]
 }
