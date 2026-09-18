@@ -3981,6 +3981,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-09-15T23:18:13.480Z"
+            },
+            {
+              "id": "mu72g5sy9gohnemtyqk",
+              "title": "iAst / iMg media swap",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-18T14:40:56.674Z"
             }
           ]
         }
@@ -7202,6 +7210,14 @@
         "time": null,
         "scheduledAt": "2026-09-18T14:40:09.699Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mu72g5sy9gohnemtyqk",
+        "time": null,
+        "scheduledAt": "2026-09-18T14:40:56.674Z",
+        "completedOnDay": false
       }
     ],
     "2026-09-22": [
@@ -8771,7 +8787,7 @@
       "date": "2026-09-16"
     }
   ],
-  "lastUpdated": "2026-09-18T14:40:37.556Z",
+  "lastUpdated": "2026-09-18T14:40:56.674Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
