@@ -3979,8 +3979,11 @@
               "title": "Nucleofection repeat",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-15T23:18:13.480Z"
+              "completed": true,
+              "createdAt": "2026-09-15T23:18:13.480Z",
+              "completedAt": "2026-09-18T14:41:06.559Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mu72g5sy9gohnemtyqk",
@@ -7175,7 +7178,10 @@
         "subtaskId": "mu3altyg6vaphaqu6zg",
         "time": null,
         "scheduledAt": "2026-09-18T14:40:37.556Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-18T14:41:06.559Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-09-18": [
@@ -8785,9 +8791,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-16"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mthfvhiuze0mw8hl3h",
+      "subtaskId": "mu3altyg6vaphaqu6zg",
+      "completedAt": "2026-09-18T14:41:06.559Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-17"
     }
   ],
-  "lastUpdated": "2026-09-18T14:40:56.674Z",
+  "lastUpdated": "2026-09-18T14:41:06.559Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
