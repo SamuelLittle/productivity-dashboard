@@ -6257,9 +6257,12 @@
         "title": "RNA extraction QC",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-09-17T16:24:01.779Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-09-18T14:38:24.009Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mu5qpggyto4dzetnrkg",
@@ -8825,9 +8828,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-17"
+    },
+    {
+      "id": "mu5qovlfyk400j21cg",
+      "title": "RNA extraction QC",
+      "completedAt": "2026-09-18T14:38:24.009Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-17"
     }
   ],
-  "lastUpdated": "2026-09-18T14:38:20.090Z",
+  "lastUpdated": "2026-09-18T14:38:24.009Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
