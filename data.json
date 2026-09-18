@@ -6263,15 +6263,18 @@
         "completedAt": "2026-09-18T14:38:24.009Z",
         "completionNotes": "",
         "completionLinks": ""
-      },
+      }
+    ],
+    "2026-09-18": [
       {
         "id": "mu5qpggyto4dzetnrkg",
         "title": "barcode + metaData to Hamid/Zach",
         "description": "",
         "priority": "medium",
         "completed": false,
-        "createdAt": "2026-09-17T16:24:28.834Z",
-        "time": null
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-09-17T16:24:28.834Z"
       }
     ]
   },
@@ -6966,14 +6969,6 @@
     ],
     "2026-08-28": [
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-08-28T00:10:28.939Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mpyqnvm6p9zp4xlp64m",
         "taskId": "mtc75bunstimcgu07bk",
         "subtaskId": "mtc75r8vdg2b03zbflo",
@@ -7206,6 +7201,14 @@
         "subtaskId": "mu39hyqtveridoixwo",
         "time": null,
         "scheduledAt": "2026-09-15T22:47:13.445Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-09-18T14:38:29.004Z",
         "completedOnDay": false
       }
     ],
@@ -8838,7 +8841,7 @@
       "date": "2026-09-17"
     }
   ],
-  "lastUpdated": "2026-09-18T14:38:24.009Z",
+  "lastUpdated": "2026-09-18T14:38:29.008Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
