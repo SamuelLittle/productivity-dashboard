@@ -5195,7 +5195,17 @@
       "description": "",
       "color": "#8b5cf6",
       "createdAt": "2026-09-18T14:38:51.055Z",
-      "tasks": [],
+      "tasks": [
+        {
+          "id": "mu72e4k7u4fl68ve7l",
+          "title": "Assay Dev",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-09-18T14:39:21.751Z",
+          "subtasks": []
+        }
+      ],
       "progressUpdates": [],
       "archived": false
     }
@@ -8851,7 +8861,7 @@
       "date": "2026-09-17"
     }
   ],
-  "lastUpdated": "2026-09-18T14:38:51.055Z",
+  "lastUpdated": "2026-09-18T14:39:21.751Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
