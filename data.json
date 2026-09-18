@@ -6242,9 +6242,12 @@
         "title": "Endo COPD screen meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-09-15T23:10:04.305Z",
-        "time": "13:00"
+        "time": "13:00",
+        "completedAt": "2026-09-18T14:38:15.457Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mu5qovlfyk400j21cg",
@@ -8799,9 +8802,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-16"
+    },
+    {
+      "id": "mu3abci93e0qbpf8uy7",
+      "title": "Endo COPD screen meeting",
+      "completedAt": "2026-09-18T14:38:15.457Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-17"
     }
   ],
-  "lastUpdated": "2026-09-17T16:24:28.834Z",
+  "lastUpdated": "2026-09-18T14:38:15.457Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
