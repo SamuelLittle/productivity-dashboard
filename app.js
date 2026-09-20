@@ -18,7 +18,7 @@ let state = {
     user: null,
     token: null,
     data: null,
-    currentView: 'today',
+    currentView: 'overview',
     currentProject: null,
     fileSha: null,
     calendarDate: new Date(),
@@ -184,6 +184,20 @@ function initElements() {
         scheduleCustomBtn: document.getElementById('schedule-custom-btn'),
         scheduleSubtasksOption: document.getElementById('schedule-subtasks-option'),
         scheduleIncludeSubtasks: document.getElementById('schedule-include-subtasks'),
+        // Pencil In modal
+        pencilInModal: document.getElementById('pencil-in-modal'),
+        pencilInForm: document.getElementById('pencil-in-form'),
+        pencilInProjectId: document.getElementById('pencil-in-project-id'),
+        pencilInTaskId: document.getElementById('pencil-in-task-id'),
+        pencilInTaskTitle: document.getElementById('pencil-in-task-title'),
+        pencilInStart: document.getElementById('pencil-in-start'),
+        pencilInEnd: document.getElementById('pencil-in-end'),
+        pencilInClearBtn: document.getElementById('pencil-in-clear-btn'),
+        // Overview
+        overviewProjectsList: document.getElementById('overview-projects-list'),
+        overviewProjectsEmpty: document.getElementById('overview-projects-empty'),
+        overviewUpcoming: document.getElementById('overview-upcoming'),
+        overviewTentative: document.getElementById('overview-tentative'),
         // View containers
         todayTasks: document.getElementById('today-tasks'),
         todayEmpty: document.getElementById('today-empty'),
@@ -1105,6 +1119,7 @@ function getDateStatus(date) {
 // ============================================
 
 function renderAllViews() {
+    renderOverviewView();
     renderTodayView();
     renderPreviousView();
     renderScheduledView();
@@ -1274,6 +1289,216 @@ function renderArchiveView() {
     });
 }
 
+// ============================================
+// OVERVIEW VIEW (birds-eye landing page)
+// ============================================
+
+// Next N upcoming project tasks/subtasks that are firmly scheduled (not tentative)
+function getUpcomingOverviewItems(maxItems = 6) {
+    const today = getToday();
+    const items = [];
+
+    Object.entries(state.data.scheduledItems || {})
+        .filter(([date]) => date > today)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .forEach(([date, refs]) => {
+            refs.forEach(ref => {
+                if (ref.completedOnDay) return;
+                const task = getTaskFromProject(ref.projectId, ref.taskId, ref.subtaskId);
+                if (task) items.push({ date, task });
+            });
+        });
+
+    return items.slice(0, maxItems);
+}
+
+// All active (incomplete) tasks that currently have a pencil-in window
+function getTentativeOverviewItems() {
+    const items = [];
+
+    (state.data.projects || []).forEach(project => {
+        if (project.archived) return;
+        (project.tasks || []).forEach(task => {
+            if (task.tentativeWindow && !task.completed) {
+                items.push({ project, task });
+            }
+        });
+    });
+
+    items.sort((a, b) => a.task.tentativeWindow.start.localeCompare(b.task.tentativeWindow.start));
+    return items;
+}
+
+// Format a tentative window as e.g. "Oct 4 – 8" or "Oct 28 – Nov 2"
+function formatTentativeRange(window) {
+    const start = getDateFromString(window.start);
+    const end = getDateFromString(window.end);
+    const startStr = start.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+    if (window.start === window.end) return startStr;
+
+    const sameMonth = start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear();
+    const endStr = sameMonth
+        ? end.toLocaleDateString('en-US', { day: 'numeric' })
+        : end.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+    return `${startStr} – ${endStr}`;
+}
+
+function createOverviewListItem({ colorHex, title, meta, projectId }) {
+    const div = document.createElement('div');
+    div.className = 'overview-list-item';
+    div.innerHTML = `
+        <span class="overview-item-color" style="background: ${colorHex}"></span>
+        <div class="overview-item-body">
+            <span class="overview-item-title">${escapeHtml(title)}</span>
+            <span class="overview-item-meta">${escapeHtml(meta)}</span>
+        </div>
+    `;
+    if (projectId) {
+        div.addEventListener('click', () => renderProjectDetail(projectId));
+    }
+    return div;
+}
+
+function renderOverviewView() {
+    if (!elements.overviewProjectsList) return;
+
+    const activeProjects = state.data.projects.filter(p => !p.archived);
+    elements.overviewProjectsList.innerHTML = '';
+    elements.overviewProjectsEmpty.classList.toggle('hidden', activeProjects.length > 0);
+    activeProjects.forEach(project => {
+        elements.overviewProjectsList.appendChild(createProjectCard(project));
+    });
+
+    // Upcoming
+    const upcoming = getUpcomingOverviewItems(6);
+    elements.overviewUpcoming.innerHTML = '';
+    if (upcoming.length === 0) {
+        elements.overviewUpcoming.innerHTML = '<p class="empty-state-small">Nothing scheduled yet</p>';
+    } else {
+        upcoming.forEach(({ date, task }) => {
+            elements.overviewUpcoming.appendChild(createOverviewListItem({
+                colorHex: task.projectColor || 'var(--color-primary)',
+                title: task.title,
+                meta: `${task.projectName} · ${formatShortDate(date)}`,
+                projectId: task.projectId
+            }));
+        });
+    }
+
+    // Tentative
+    const tentative = getTentativeOverviewItems();
+    elements.overviewTentative.innerHTML = '';
+    if (tentative.length === 0) {
+        elements.overviewTentative.innerHTML = '<p class="empty-state-small">No tentative windows</p>';
+    } else {
+        tentative.forEach(({ project, task }) => {
+            elements.overviewTentative.appendChild(createOverviewListItem({
+                colorHex: project.color,
+                title: task.title,
+                meta: `${project.name} · ${formatTentativeRange(task.tentativeWindow)}`,
+                projectId: project.id
+            }));
+        });
+    }
+}
+
+// ============================================
+// PENCIL IN (tentative task windows)
+// ============================================
+
+// A task is "fully scheduled" once every subtask (or the task itself, if it has none)
+// has a firm scheduled date -- at that point its pencil-in window is no longer needed.
+function isTaskFullyScheduled(project, task) {
+    if (task.subtasks && task.subtasks.length > 0) {
+        return task.subtasks.every(st =>
+            st.completed || getScheduledDatesForTask(project.id, task.id, st.id).length > 0
+        );
+    }
+    return getScheduledDatesForTask(project.id, task.id).length > 0;
+}
+
+// Clears a task's tentative window once it's been completed or fully scheduled.
+// Called after any action that schedules or completes work on a task.
+function maybeResolveTentativeWindow(projectId, taskId) {
+    const project = state.data.projects.find(p => p.id === projectId);
+    const task = project?.tasks.find(t => t.id === taskId);
+    if (!task || !task.tentativeWindow) return;
+
+    if (task.completed || isTaskFullyScheduled(project, task)) {
+        task.tentativeWindow = null;
+    }
+}
+
+function openPencilInModal(projectId, taskId, taskTitle, existingWindow) {
+    if (!elements.pencilInModal) return;
+
+    elements.pencilInProjectId.value = projectId;
+    elements.pencilInTaskId.value = taskId;
+    elements.pencilInTaskTitle.textContent = taskTitle;
+    elements.pencilInStart.value = existingWindow?.start || '';
+    elements.pencilInEnd.value = existingWindow?.end || getTomorrow();
+    elements.pencilInClearBtn.classList.toggle('hidden', !existingWindow);
+
+    elements.pencilInModal.classList.remove('hidden');
+}
+
+async function savePencilInWindow(e) {
+    e.preventDefault();
+
+    const projectId = elements.pencilInProjectId.value;
+    const taskId = elements.pencilInTaskId.value;
+    const start = elements.pencilInStart.value;
+    const end = elements.pencilInEnd.value;
+
+    if (!start || !end) {
+        showToast('Please pick both dates', 'error');
+        return;
+    }
+    if (end < start) {
+        showToast('End date must be on or after the start date', 'error');
+        return;
+    }
+
+    const project = state.data.projects.find(p => p.id === projectId);
+    const task = project?.tasks.find(t => t.id === taskId);
+    if (!task) return;
+
+    task.tentativeWindow = { start, end };
+
+    state.data.lastUpdated = new Date().toISOString();
+    const saveOk = await saveData();
+    closeAllModals();
+    renderAllViews();
+
+    if (state.currentProject === projectId) {
+        renderProjectDetail(projectId);
+    }
+
+    if (saveOk) showToast('Tentative window set', 'success');
+}
+
+async function clearPencilInWindow() {
+    const projectId = elements.pencilInProjectId.value;
+    const taskId = elements.pencilInTaskId.value;
+
+    const project = state.data.projects.find(p => p.id === projectId);
+    const task = project?.tasks.find(t => t.id === taskId);
+    if (task) task.tentativeWindow = null;
+
+    state.data.lastUpdated = new Date().toISOString();
+    const saveOk = await saveData();
+    closeAllModals();
+    renderAllViews();
+
+    if (state.currentProject === projectId) {
+        renderProjectDetail(projectId);
+    }
+
+    if (saveOk) showToast('Tentative window cleared', 'success');
+}
+
 function renderProjectDetail(projectId) {
     const project = state.data.projects.find(p => p.id === projectId);
     if (!project) return;
@@ -1416,22 +1641,43 @@ function renderProjectDetail(projectId) {
 // ============================================
 
 // Helper: Render day cell content (simple view)
+// Active (non-archived) tasks with a pencil-in window covering this date,
+// respecting the current calendar project/task filter.
+function getTentativeItemsForDate(dateStr) {
+    const items = [];
+    (state.data.projects || []).forEach(project => {
+        if (project.archived) return;
+        if (state.calendarFilter.projectId && project.id !== state.calendarFilter.projectId) return;
+        (project.tasks || []).forEach(task => {
+            const w = task.tentativeWindow;
+            if (!w || task.completed || dateStr < w.start || dateStr > w.end) return;
+            if (state.calendarFilter.taskId && task.id !== state.calendarFilter.taskId) return;
+            items.push({ project, task });
+        });
+    });
+    return items;
+}
+
 function renderDayContent(dateStr, dayNum, isOtherMonth) {
     const tasks = getFilteredTasksForDate(dateStr, true);
     const status = getFilteredDateStatus(dateStr);
     const today = getToday();
     const isToday = dateStr === today;
+    const tentativeItems = getTentativeItemsForDate(dateStr);
 
     let classes = 'calendar-day';
     if (isOtherMonth) classes += ' other-month';
     if (isToday) classes += ' today';
     if (status) classes += ' has-tasks';
+    if (tentativeItems.length > 0) classes += ' has-tentative';
 
     const hasSummary = !!getDataForDate(dateStr)?.dailySummaries?.[dateStr]?.summary;
+    const tentativeTitle = tentativeItems.map(i => escapeHtml(i.task.title)).join(', ');
     return `<div class="${classes}" data-date="${dateStr}">
         <span class="day-number">${dayNum}</span>
         ${tasks.length > 0 ? `<span class="day-indicator ${status}" title="${tasks.length} task${tasks.length > 1 ? 's' : ''}">${tasks.length}</span>` : ''}
         ${hasSummary ? '<span class="day-summary-dot" title="Has daily summary"></span>' : ''}
+        ${tentativeItems.length > 0 ? `<span class="day-tentative-marker" style="--tentative-color: ${tentativeItems[0].project.color}" title="Pencilled in: ${tentativeTitle}"></span>` : ''}
     </div>`;
 }
 
@@ -1561,12 +1807,19 @@ function renderWeekView() {
         const isToday = dateStr === today;
         const dayNum = d.getDate();
         const tasks = getFilteredTasksForDate(dateStr, true);
+        const tentativeItems = getTentativeItemsForDate(dateStr);
+        const tentativeBar = tentativeItems.length > 0 ? `
+            <div class="week-tentative-bar" title="Pencilled in: ${tentativeItems.map(i => escapeHtml(i.task.title)).join(', ')}">
+                ${tentativeItems.map(i => `<span class="week-tentative-chip" style="--tentative-color: ${i.project.color}">${escapeHtml(i.task.title)}</span>`).join('')}
+            </div>
+        ` : '';
 
         html += `<div class="week-day-wrapper${isToday ? ' today' : ''}" data-date="${dateStr}">
             <div class="week-day-header" data-date="${dateStr}">
                 <span class="week-day-name">${dayNames[i]}</span>
                 <span class="week-day-number">${dayNum}</span>
             </div>
+            ${tentativeBar}
             <div class="week-day-tasks" data-date="${dateStr}">`;
 
         tasks.forEach(task => {
@@ -2323,6 +2576,12 @@ function createProjectTaskElement(task, project) {
         </div>
     ` : '';
 
+    const tentativeBadge = task.tentativeWindow ? `
+        <div class="task-tentative-badge" title="Pencilled in: ${formatTentativeRange(task.tentativeWindow)}">
+            Pencilled in: ${formatTentativeRange(task.tentativeWindow)}
+        </div>
+    ` : '';
+
     const hasSubtasks = task.subtasks && task.subtasks.length > 0;
     const completedSubtasks = hasSubtasks ? task.subtasks.filter(st => st.completed).length : 0;
 
@@ -2352,6 +2611,7 @@ function createProjectTaskElement(task, project) {
                 ${hasSubtasks ? `<span>${completedSubtasks}/${task.subtasks.length} subtasks</span>` : ''}
             </div>
             ${scheduledBadge}
+            ${tentativeBadge}
             ${hasSubtasks ? `
                 <div class="subtasks">
                     ${sortedSubtasks.map(st => createSubtaskHTML(st, task, project)).join('')}
@@ -2373,6 +2633,12 @@ function createProjectTaskElement(task, project) {
                     <line x1="3" y1="10" x2="21" y2="10"/>
                     <line x1="12" y1="14" x2="12" y2="18"/>
                     <line x1="10" y1="16" x2="14" y2="16"/>
+                </svg>
+            </button>
+            <button class="task-action-btn" data-action="pencil-in" title="Pencil In a Window">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
                 </svg>
             </button>
             <button class="task-action-btn" data-action="add-subtask" title="Add Subtask">
@@ -2921,6 +3187,8 @@ async function scheduleTaskForDate(date) {
         }
     }
 
+    maybeResolveTentativeWindow(projectId, taskId);
+
     state.data.lastUpdated = new Date().toISOString();
     const saveOk = await saveData();
     closeAllModals();
@@ -3316,6 +3584,9 @@ function handleProjectTaskAction(action, task, project) {
             break;
         case 'schedule':
             openScheduleModal(project.id, task.id, null, task.title);
+            break;
+        case 'pencil-in':
+            openPencilInModal(project.id, task.id, task.title, task.tentativeWindow);
             break;
         case 'edit':
             openTaskModal(task, project.id);
@@ -3750,6 +4021,8 @@ async function toggleProjectTaskComplete(projectId, taskId, completed, notes = '
         });
     });
 
+    maybeResolveTentativeWindow(projectId, taskId);
+
     state.data.lastUpdated = new Date().toISOString();
     const saveOk = await saveData();
     renderAllViews();
@@ -3847,6 +4120,8 @@ async function toggleSubtaskComplete(projectId, taskId, subtaskId) {
             completedAt: new Date().toISOString()
         });
     }
+
+    maybeResolveTentativeWindow(projectId, taskId);
 
     state.data.lastUpdated = new Date().toISOString();
     const saveOk = await saveData();
@@ -7572,6 +7847,8 @@ function initEventListeners() {
     elements.projectForm?.addEventListener('submit', saveProject);
     elements.progressForm?.addEventListener('submit', saveProgress);
     elements.exportForm?.addEventListener('submit', exportReport);
+    elements.pencilInForm?.addEventListener('submit', savePencilInWindow);
+    elements.pencilInClearBtn?.addEventListener('click', clearPencilInWindow);
 
     // AI Summary
     elements.aiSettingsToggle?.addEventListener('click', toggleAiSettings);
