@@ -1482,6 +1482,92 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-08-11T15:17:58.724Z"
+            },
+            {
+              "id": "mu39izyj9o671x0omt4",
+              "title": "24hr treatment",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-15T22:48:01.675Z"
+            },
+            {
+              "id": "mu39jfj4xrqkj5sg4a9",
+              "title": "3 hr treatment",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-15T22:48:21.856Z"
+            },
+            {
+              "id": "mu39jvbkxxcawkd90v",
+              "title": "RNA extraction",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-15T22:48:42.320Z"
+            },
+            {
+              "id": "mu39lwgzpk63mjxhg5",
+              "title": "SMARTSeq D1",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-15T22:50:17.123Z"
+            }
+          ]
+        },
+        {
+          "id": "mu2u6xxj0bj46ry6m4u7",
+          "title": "iRPE screening",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-09-15T15:38:44.935Z",
+          "subtasks": [
+            {
+              "id": "mu2u76plovw9sjbquy",
+              "title": "24hr treatment",
+              "description": "",
+              "priority": "medium",
+              "completed": true,
+              "createdAt": "2026-09-15T15:38:56.313Z",
+              "completedAt": "2026-09-15T18:05:20.363Z",
+              "completionNotes": "performed treatment in iRPEs + bonus plate addition. Completed around 10:50.  Tomorrow's 3hr treatment needs to target around 8am",
+              "completionLinks": ""
+            },
+            {
+              "id": "mu2u7l1aeoxcn0cgnnw",
+              "title": "3hr treatment",
+              "description": "",
+              "priority": "medium",
+              "completed": true,
+              "createdAt": "2026-09-15T15:39:14.878Z",
+              "completedAt": "2026-09-16T16:37:14.883Z",
+              "completionNotes": "",
+              "completionLinks": ""
+            },
+            {
+              "id": "mu2u7tqmjfq60m4rk5p",
+              "title": "RNA extraction",
+              "description": "",
+              "priority": "medium",
+              "completed": true,
+              "createdAt": "2026-09-15T15:39:26.158Z",
+              "completedAt": "2026-09-18T14:40:03.422Z",
+              "completionNotes": "",
+              "completionLinks": ""
+            },
+            {
+              "id": "mu2u8a2hpve2c4y1ohr",
+              "title": "SMARTSeq D1",
+              "description": "",
+              "priority": "medium",
+              "completed": true,
+              "createdAt": "2026-09-15T15:39:47.321Z",
+              "completedAt": "2026-09-18T14:38:20.090Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -3446,7 +3532,7 @@
         }
       ],
       "progressUpdates": [],
-      "archived": false
+      "archived": true
     },
     {
       "id": "mklu1lye4czo9brjznq",
@@ -3488,7 +3574,7 @@
           "title": "iAstro Supernatant Luminex Screen",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-01-20T16:22:17.423Z",
           "subtasks": [
             {
@@ -3498,7 +3584,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T16:25:45.085Z",
-              "completedAt": "2026-02-03T21:08:53.079Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3509,7 +3595,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T16:26:23.295Z",
-              "completedAt": "2026-01-20T23:54:14.667Z"
+              "completedAt": "2026-09-15T23:17:46.914Z"
             },
             {
               "id": "mkn5202q853nkns38kg",
@@ -3518,7 +3604,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-20T22:01:10.370Z",
-              "completedAt": "2026-01-26T17:32:42.415Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "Got 10 plates - need 3 for Cytokine screen submissions. Will grab more when I submit those plates",
               "completionLinks": ""
             },
@@ -3529,7 +3615,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-01-29T22:28:37.007Z",
-              "completedAt": "2026-02-03T21:08:50.134Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3540,7 +3626,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-03T21:09:11.012Z",
-              "completedAt": "2026-02-03T22:15:01.553Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3551,7 +3637,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-03T21:09:44.297Z",
-              "completedAt": "2026-02-05T19:21:50.836Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3562,7 +3648,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-06T00:22:51.519Z",
-              "completedAt": "2026-05-07T14:16:31.297Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3573,11 +3659,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-02-10T00:32:23.571Z",
-              "completedAt": "2026-02-10T01:08:08.899Z",
+              "completedAt": "2026-09-15T23:17:46.914Z",
               "completionNotes": "",
               "completionLinks": "https://docs.google.com/spreadsheets/d/1xSw15USZE9q0o5W7J7f_eq9uaAuXxlty/edit?gid=558385779#gid=558385779"
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T23:17:46.914Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mkx8wznv95wc8en1g2k",
@@ -3736,7 +3825,7 @@
           "title": "Automated nucleofection workflow",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-05-10T20:11:42.965Z",
           "subtasks": [
             {
@@ -3746,7 +3835,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-10T20:12:49.349Z",
-              "completedAt": "2026-05-15T23:32:23.060Z",
+              "completedAt": "2026-09-15T23:17:53.425Z",
               "completionNotes": "Validated version of this.  Need to dig more in with a custom aspiration to get lower in the plate and a custom dispense to avoid bubbles and ensure even dispresion across cuvette footprint",
               "completionLinks": ""
             },
@@ -3757,11 +3846,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-10T20:13:06.910Z",
-              "completedAt": "2026-08-31T16:14:08.916Z",
+              "completedAt": "2026-09-15T23:17:53.425Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T23:17:53.425Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mpvpsn6lk6sxyycervo",
@@ -3789,7 +3881,7 @@
           "title": "iMicroglia Pilots",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-06-20T00:44:42.486Z",
           "subtasks": [
             {
@@ -3799,7 +3891,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-20T00:46:01.367Z",
-              "completedAt": "2026-06-23T15:32:23.831Z",
+              "completedAt": "2026-09-15T23:17:57.970Z",
               "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
               "completionLinks": ""
             },
@@ -3810,7 +3902,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-25T16:31:45.629Z",
-              "completedAt": "2026-06-25T20:19:16.763Z",
+              "completedAt": "2026-09-15T23:17:57.970Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -3821,11 +3913,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-28T23:51:39.529Z",
-              "completedAt": "2026-06-29T23:36:31.482Z",
+              "completedAt": "2026-09-15T23:17:57.970Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T23:17:57.970Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mthfvhiuze0mw8hl3h",
@@ -3878,6 +3973,25 @@
               "completedAt": "2026-09-15T04:36:36.812Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mu3altyg6vaphaqu6zg",
+              "title": "Nucleofection repeat",
+              "description": "",
+              "priority": "medium",
+              "completed": true,
+              "createdAt": "2026-09-15T23:18:13.480Z",
+              "completedAt": "2026-09-18T14:41:06.559Z",
+              "completionNotes": "",
+              "completionLinks": ""
+            },
+            {
+              "id": "mu72g5sy9gohnemtyqk",
+              "title": "iAst / iMg media swap",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-18T14:40:56.674Z"
             }
           ]
         }
@@ -3969,7 +4083,7 @@
           "title": "General To-Do for Week of March 13",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-03-13T20:43:47.882Z",
           "subtasks": [
             {
@@ -3979,7 +4093,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-13T20:44:01.114Z",
-              "completedAt": "2026-03-14T22:56:45.622Z",
+              "completedAt": "2026-09-15T22:44:12.116Z",
               "completionNotes": "",
               "completionLinks": "https://docs.google.com/document/d/1JkjzaQo-Zz9nrmJ-QRcyyVwKgKD2tbLgBF3h7k7f0U8/edit?usp=sharing"
             },
@@ -3990,7 +4104,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-13T20:44:25.608Z",
-              "completedAt": "2026-03-26T16:37:30.837Z",
+              "completedAt": "2026-09-15T22:44:12.116Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4001,11 +4115,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-03-13T20:44:54.288Z",
-              "completedAt": "2026-03-26T16:37:33.301Z",
+              "completedAt": "2026-09-15T22:44:12.116Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T22:44:12.115Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mn7p4vecy7ugamczt2",
@@ -4081,7 +4198,7 @@
         }
       ],
       "progressUpdates": [],
-      "archived": false
+      "archived": true
     },
     {
       "id": "mmfjn4b1w85dvswipdk",
@@ -4728,7 +4845,7 @@
           "title": "Pre Screen Pilots",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-06-04T00:34:38.388Z",
           "subtasks": [
             {
@@ -4738,7 +4855,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-04T00:35:13.491Z",
-              "completedAt": "2026-06-10T04:25:58.474Z",
+              "completedAt": "2026-09-15T22:44:37.821Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4749,7 +4866,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-04T00:35:30.543Z",
-              "completedAt": "2026-06-16T18:39:24.711Z",
+              "completedAt": "2026-09-15T22:44:37.821Z",
               "completionNotes": "",
               "completionLinks": "https://docs.google.com/document/d/1M1PnZMGzqHr1BUelTMLCDFYfy_IRbF7AYJK_bHt708I/edit?usp=sharing"
             },
@@ -4760,7 +4877,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-16T18:40:31.257Z",
-              "completedAt": "2026-06-19T23:14:10.205Z",
+              "completedAt": "2026-09-15T22:44:37.821Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4771,7 +4888,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-16T18:40:53.824Z",
-              "completedAt": "2026-06-19T23:14:15.493Z",
+              "completedAt": "2026-09-15T22:44:37.821Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4782,11 +4899,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-06-16T18:41:19.474Z",
-              "completedAt": "2026-06-19T23:14:41.529Z",
+              "completedAt": "2026-09-15T22:44:37.821Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T22:44:37.821Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mq4eqegi9juuwozbyhu",
@@ -4805,7 +4925,7 @@
           "title": "Diss Op",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-07-16T17:10:40.061Z",
           "subtasks": [
             {
@@ -4815,7 +4935,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-16T17:11:26.350Z",
-              "completedAt": "2026-07-28T14:52:13.994Z",
+              "completedAt": "2026-09-15T22:44:42.493Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4826,7 +4946,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-17T18:01:08.909Z",
-              "completedAt": "2026-07-17T22:46:29.392Z",
+              "completedAt": "2026-09-15T22:44:42.493Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4837,7 +4957,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-17T18:01:25.920Z",
-              "completedAt": "2026-07-17T22:46:32.350Z",
+              "completedAt": "2026-09-15T22:44:42.493Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4848,7 +4968,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-17T22:47:02.084Z",
-              "completedAt": "2026-07-20T23:23:26.767Z",
+              "completedAt": "2026-09-15T22:44:42.493Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4859,18 +4979,21 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-20T16:35:56.155Z",
-              "completedAt": "2026-07-28T14:52:09.014Z",
+              "completedAt": "2026-09-15T22:44:42.493Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T22:44:42.493Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "msot20jrbopourlxc6r",
           "title": "Walk up Flex Automation Dev",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-08-11T15:18:26.631Z",
           "subtasks": [
             {
@@ -4880,7 +5003,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-11T15:18:55.709Z",
-              "completedAt": "2026-08-11T23:15:45.354Z",
+              "completedAt": "2026-09-15T22:44:47.195Z",
               "completionNotes": "Significant progress made - need to be continued tomorrow AM",
               "completionLinks": ""
             },
@@ -4891,7 +5014,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-11T23:16:40.301Z",
-              "completedAt": "2026-08-13T23:23:30.551Z",
+              "completedAt": "2026-09-15T22:44:47.195Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4902,7 +5025,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-11T23:17:47.463Z",
-              "completedAt": "2026-09-03T15:34:45.406Z",
+              "completedAt": "2026-09-15T22:44:47.195Z",
               "completionNotes": "New run through appears to work well. One more wet run before Tuesday real workflow would be ideal. \n",
               "completionLinks": ""
             },
@@ -4913,7 +5036,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-20T18:51:06.848Z",
-              "completedAt": "2026-08-24T17:50:22.095Z",
+              "completedAt": "2026-09-15T22:44:47.195Z",
               "completionNotes": "Completed and documented. Sent notes to stakeholders. \n",
               "completionLinks": ""
             },
@@ -4924,7 +5047,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-21T00:29:41.559Z",
-              "completedAt": "2026-08-21T00:29:50.810Z",
+              "completedAt": "2026-09-15T22:44:47.195Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4935,18 +5058,21 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-24T17:56:56.817Z",
-              "completedAt": "2026-08-28T00:10:37.648Z",
+              "completedAt": "2026-09-15T22:44:47.195Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T22:44:47.195Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mtc75bunstimcgu07bk",
           "title": "pTox Org Dissociation Full Run ",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-08-28T00:11:37.919Z",
           "subtasks": [
             {
@@ -4956,7 +5082,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-28T00:11:57.872Z",
-              "completedAt": "2026-08-28T22:51:48.957Z",
+              "completedAt": "2026-09-15T22:44:51.269Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4967,18 +5093,21 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-28T00:12:07.366Z",
-              "completedAt": "2026-08-28T22:51:45.534Z",
+              "completedAt": "2026-09-15T22:44:51.269Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-15T22:44:51.269Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mthddy4hafsbnvceva",
           "title": "pTox 40cmpd screen",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-08-31T15:05:08.609Z",
           "subtasks": [
             {
@@ -4988,7 +5117,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-31T15:05:40.208Z",
-              "completedAt": "2026-09-03T15:34:04.707Z",
+              "completedAt": "2026-09-15T22:44:55.221Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4999,7 +5128,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-31T15:05:49.311Z",
-              "completedAt": "2026-09-03T15:34:17.879Z",
+              "completedAt": "2026-09-15T22:44:55.221Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -5010,7 +5139,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-31T15:06:05.358Z",
-              "completedAt": "2026-09-08T15:21:50.280Z",
+              "completedAt": "2026-09-15T22:44:55.221Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -5021,7 +5150,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-31T15:06:23.298Z",
-              "completedAt": "2026-09-03T15:34:11.008Z",
+              "completedAt": "2026-09-15T22:44:55.221Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -5032,9 +5161,70 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-08-31T15:06:36.229Z",
-              "completedAt": "2026-09-03T15:34:13.700Z",
+              "completedAt": "2026-09-15T22:44:55.221Z",
               "completionNotes": "",
               "completionLinks": ""
+            }
+          ],
+          "completedAt": "2026-09-15T22:44:55.221Z",
+          "completionNotes": "",
+          "completionLinks": ""
+        }
+      ],
+      "progressUpdates": [],
+      "archived": false
+    },
+    {
+      "id": "mu39fvpuyhq2d4m1yxe",
+      "name": "FLEX Automation",
+      "description": "On-going efforts to automate FLEX sample prep.",
+      "color": "#f59e0b",
+      "createdAt": "2026-09-15T22:45:36.210Z",
+      "tasks": [
+        {
+          "id": "mu39h64xcq13625mqt8",
+          "title": "Automated Fixed Cell Normalization",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-09-15T22:46:36.369Z",
+          "subtasks": [
+            {
+              "id": "mu39hyqtveridoixwo",
+              "title": "Fixed T cell serial dilution imaging",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-15T22:47:13.445Z"
+            }
+          ]
+        }
+      ],
+      "progressUpdates": [],
+      "archived": false
+    },
+    {
+      "id": "mu72dgvjcoi9jfphbqp",
+      "name": "Endothelial COPD CRISPR Screen",
+      "description": "",
+      "color": "#8b5cf6",
+      "createdAt": "2026-09-18T14:38:51.055Z",
+      "tasks": [
+        {
+          "id": "mu72e4k7u4fl68ve7l",
+          "title": "Assay Dev",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-09-18T14:39:21.751Z",
+          "subtasks": [
+            {
+              "id": "mu72enf5qffnhp0l92",
+              "title": "Make screen workflow overview",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-18T14:39:46.193Z"
             }
           ]
         }
@@ -6053,22 +6243,85 @@
         "completionNotes": "",
         "completionLinks": ""
       }
-    ]
-  },
-  "scheduledItems": {
-    "2026-06-18": [
+    ],
+    "2026-09-15": [
       {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "movkm4r357gxwt3fz3f",
-        "subtaskId": "mpxhe6ovtz24vw44ypl",
+        "id": "mu2u5qzouxvhc1yr6r",
+        "title": "Sci 2 interview for gCell",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-09-15T15:37:49.285Z",
         "time": null,
-        "scheduledAt": "2026-06-03T03:02:47.648Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-19T23:15:04.297Z",
+        "completedAt": "2026-09-15T18:05:26.369Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "mu2u69tbm8dzwce4ex9",
+        "title": "FG Automation Meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-09-15T15:38:13.679Z",
+        "time": null,
+        "completedAt": "2026-09-15T22:43:22.710Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "mu30h9kgwpy0aju97mk",
+        "title": "SMARTseq primer info to Zach Mason",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-09-15T18:34:44.272Z",
+        "time": null,
+        "completedAt": "2026-09-15T22:43:26.699Z",
         "completionNotes": "",
         "completionLinks": ""
       }
     ],
+    "2026-09-17": [
+      {
+        "id": "mu3abci93e0qbpf8uy7",
+        "title": "Endo COPD screen meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-09-15T23:10:04.305Z",
+        "time": "13:00",
+        "completedAt": "2026-09-18T14:38:15.457Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "mu5qovlfyk400j21cg",
+        "title": "RNA extraction QC",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-09-17T16:24:01.779Z",
+        "time": null,
+        "completedAt": "2026-09-18T14:38:24.009Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-09-18": [
+      {
+        "id": "mu5qpggyto4dzetnrkg",
+        "title": "barcode + metaData to Hamid/Zach",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-09-17T16:24:28.834Z"
+      }
+    ]
+  },
+  "scheduledItems": {
     "2026-06-22": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -6101,52 +6354,6 @@
         "completedOnDay": true,
         "completedAt": "2026-06-23T15:32:23.831Z",
         "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
-        "completionLinks": ""
-      }
-    ],
-    "2026-06-17": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhr7xbgjd9lgr32a",
-        "subtaskId": "mq4f8jyl99i0s01skt7",
-        "time": null,
-        "scheduledAt": "2026-06-16T18:39:37.956Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-19T23:14:23.626Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mpyrjid0lf6usyodvu",
-        "subtaskId": "mqgzn7uaprofpilig79",
-        "time": null,
-        "scheduledAt": "2026-06-16T18:41:19.474Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-19T23:14:41.529Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "movkm4r357gxwt3fz3f",
-        "subtaskId": "mqgzo2z306t3ie4d0s5r",
-        "time": null,
-        "scheduledAt": "2026-06-16T18:41:59.824Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-19T23:14:35.123Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "movkm4r357gxwt3fz3f",
-        "subtaskId": "mqgzohanmrkewyim4b",
-        "time": null,
-        "scheduledAt": "2026-06-16T18:42:18.384Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-19T23:14:30.053Z",
-        "completionNotes": "",
         "completionLinks": ""
       }
     ],
@@ -6746,14 +6953,6 @@
     ],
     "2026-08-28": [
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-08-28T00:10:28.939Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mpyqnvm6p9zp4xlp64m",
         "taskId": "mtc75bunstimcgu07bk",
         "subtaskId": "mtc75r8vdg2b03zbflo",
@@ -6923,72 +7122,150 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-09-16": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mu2u6xxj0bj46ry6m4u7",
+        "subtaskId": "mu2u7l1aeoxcn0cgnnw",
+        "time": null,
+        "scheduledAt": "2026-09-15T15:39:14.878Z",
+        "completedOnDay": true,
+        "completedAt": "2026-09-16T16:37:14.882Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mu2u6xxj0bj46ry6m4u7",
+        "subtaskId": "mu2u7tqmjfq60m4rk5p",
+        "time": null,
+        "scheduledAt": "2026-09-15T15:39:26.158Z",
+        "completedOnDay": true,
+        "completedAt": "2026-09-18T14:40:03.422Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-09-15": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mu2u6xxj0bj46ry6m4u7",
+        "subtaskId": "mu2u76plovw9sjbquy",
+        "time": null,
+        "scheduledAt": "2026-09-15T15:38:56.313Z",
+        "completedOnDay": true,
+        "completedAt": "2026-09-15T18:05:20.363Z",
+        "completionNotes": "performed treatment in iRPEs + bonus plate addition. Completed around 10:50.  Tomorrow's 3hr treatment needs to target around 8am",
+        "completionLinks": ""
+      }
+    ],
+    "2026-09-17": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mu2u6xxj0bj46ry6m4u7",
+        "subtaskId": "mu2u8a2hpve2c4y1ohr",
+        "time": null,
+        "scheduledAt": "2026-09-15T15:39:47.322Z",
+        "completedOnDay": true,
+        "completedAt": "2026-09-18T14:38:20.090Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mu3altyg6vaphaqu6zg",
+        "time": null,
+        "scheduledAt": "2026-09-18T14:40:37.556Z",
+        "completedOnDay": true,
+        "completedAt": "2026-09-18T14:41:06.559Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-09-18": [
+      {
+        "projectId": "mu39fvpuyhq2d4m1yxe",
+        "taskId": "mu39h64xcq13625mqt8",
+        "subtaskId": "mu39hyqtveridoixwo",
+        "time": null,
+        "scheduledAt": "2026-09-15T22:47:13.445Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mu72dgvjcoi9jfphbqp",
+        "taskId": "mu72e4k7u4fl68ve7l",
+        "subtaskId": "mu72enf5qffnhp0l92",
+        "time": null,
+        "scheduledAt": "2026-09-18T14:39:46.193Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-09-18T14:40:09.661Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "msot0q1x8axc96qhr7l",
+        "subtaskId": "msot1f0kbzxjrqob5g4",
+        "time": null,
+        "scheduledAt": "2026-09-18T14:40:09.699Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mu72g5sy9gohnemtyqk",
+        "time": null,
+        "scheduledAt": "2026-09-18T14:40:56.674Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-09-22": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "msot0q1x8axc96qhr7l",
+        "subtaskId": "mu39izyj9o671x0omt4",
+        "time": null,
+        "scheduledAt": "2026-09-15T22:48:01.676Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-09-23": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "msot0q1x8axc96qhr7l",
+        "subtaskId": "mu39jfj4xrqkj5sg4a9",
+        "time": null,
+        "scheduledAt": "2026-09-15T22:48:21.856Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "msot0q1x8axc96qhr7l",
+        "subtaskId": "mu39jvbkxxcawkd90v",
+        "time": null,
+        "scheduledAt": "2026-09-15T22:48:42.321Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-09-24": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "msot0q1x8axc96qhr7l",
+        "subtaskId": "mu39lwgzpk63mjxhg5",
+        "time": null,
+        "scheduledAt": "2026-09-15T22:50:17.124Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mpyqnvm6p9zp4xlp64m",
-      "taskId": "mpyrjid0lf6usyodvu",
-      "subtaskId": "mqgzm6mxesysfgla2p8",
-      "completedAt": "2026-06-19T23:14:10.205Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-16"
-    },
-    {
-      "projectId": "mpyqnvm6p9zp4xlp64m",
-      "taskId": "mpyrjid0lf6usyodvu",
-      "subtaskId": "mqgzmo1sjdoeiqibdeo",
-      "completedAt": "2026-06-19T23:14:15.493Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-16"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhr7xbgjd9lgr32a",
-      "subtaskId": "mq4f8jyl99i0s01skt7",
-      "completedAt": "2026-06-19T23:14:23.626Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-17"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "movkm4r357gxwt3fz3f",
-      "subtaskId": "mqgzohanmrkewyim4b",
-      "completedAt": "2026-06-19T23:14:30.053Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-17"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "movkm4r357gxwt3fz3f",
-      "subtaskId": "mqgzo2z306t3ie4d0s5r",
-      "completedAt": "2026-06-19T23:14:35.123Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-17"
-    },
-    {
-      "projectId": "mpyqnvm6p9zp4xlp64m",
-      "taskId": "mpyrjid0lf6usyodvu",
-      "subtaskId": "mqgzn7uaprofpilig79",
-      "completedAt": "2026-06-19T23:14:41.529Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-17"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "movkm4r357gxwt3fz3f",
-      "subtaskId": "mpxhe6ovtz24vw44ypl",
-      "completedAt": "2026-06-19T23:15:04.297Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-18"
-    },
     {
       "projectId": "mkltv6xwvh4ltoqkes",
       "taskId": "mpxhry7jezeridb1ny7",
@@ -8357,9 +8634,175 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-11"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mu2u6xxj0bj46ry6m4u7",
+      "subtaskId": "mu2u76plovw9sjbquy",
+      "completedAt": "2026-09-15T18:05:20.364Z",
+      "completionNotes": "performed treatment in iRPEs + bonus plate addition. Completed around 10:50.  Tomorrow's 3hr treatment needs to target around 8am",
+      "completionLinks": "",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "mu2u5qzouxvhc1yr6r",
+      "title": "Sci 2 interview for gCell",
+      "completedAt": "2026-09-15T18:05:26.369Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "mu2u69tbm8dzwce4ex9",
+      "title": "FG Automation Meeting",
+      "completedAt": "2026-09-15T22:43:22.710Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "mu30h9kgwpy0aju97mk",
+      "title": "SMARTseq primer info to Zach Mason",
+      "completedAt": "2026-09-15T22:43:26.699Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-15"
+    },
+    {
+      "projectId": "mlld42ihacxlvsot49w",
+      "taskId": "mmpd6skq431pk2ulpea",
+      "subtaskId": null,
+      "title": "General To-Do for Week of March 13",
+      "completedAt": "2026-09-15T22:44:12.116Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mpyrjid0lf6usyodvu",
+      "subtaskId": null,
+      "title": "Pre Screen Pilots",
+      "completedAt": "2026-09-15T22:44:37.821Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mrnrm6rednng6vjynhu",
+      "subtaskId": null,
+      "title": "Diss Op",
+      "completedAt": "2026-09-15T22:44:42.493Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "msot20jrbopourlxc6r",
+      "subtaskId": null,
+      "title": "Walk up Flex Automation Dev",
+      "completedAt": "2026-09-15T22:44:47.195Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mtc75bunstimcgu07bk",
+      "subtaskId": null,
+      "title": "pTox Org Dissociation Full Run ",
+      "completedAt": "2026-09-15T22:44:51.269Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mthddy4hafsbnvceva",
+      "subtaskId": null,
+      "title": "pTox 40cmpd screen",
+      "completedAt": "2026-09-15T22:44:55.221Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mkmsy72n9wkp209y165",
+      "subtaskId": null,
+      "title": "iAstro Supernatant Luminex Screen",
+      "completedAt": "2026-09-15T23:17:46.914Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mp07kxytswogf1924m",
+      "subtaskId": null,
+      "title": "Automated nucleofection workflow",
+      "completedAt": "2026-09-15T23:17:53.425Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mqlmy35i6ts5m6kremj",
+      "subtaskId": null,
+      "title": "iMicroglia Pilots",
+      "completedAt": "2026-09-15T23:17:57.970Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mu2u6xxj0bj46ry6m4u7",
+      "subtaskId": "mu2u7l1aeoxcn0cgnnw",
+      "completedAt": "2026-09-16T16:37:14.883Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-16"
+    },
+    {
+      "id": "mu3abci93e0qbpf8uy7",
+      "title": "Endo COPD screen meeting",
+      "completedAt": "2026-09-18T14:38:15.457Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-17"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mu2u6xxj0bj46ry6m4u7",
+      "subtaskId": "mu2u8a2hpve2c4y1ohr",
+      "completedAt": "2026-09-18T14:38:20.090Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-17"
+    },
+    {
+      "id": "mu5qovlfyk400j21cg",
+      "title": "RNA extraction QC",
+      "completedAt": "2026-09-18T14:38:24.009Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-17"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mu2u6xxj0bj46ry6m4u7",
+      "subtaskId": "mu2u7tqmjfq60m4rk5p",
+      "completedAt": "2026-09-18T14:40:03.422Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-16"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mthfvhiuze0mw8hl3h",
+      "subtaskId": "mu3altyg6vaphaqu6zg",
+      "completedAt": "2026-09-18T14:41:06.559Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-17"
     }
   ],
-  "lastUpdated": "2026-09-15T04:36:36.812Z",
+  "lastUpdated": "2026-09-18T14:41:06.559Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
