@@ -4804,7 +4804,7 @@
           "title": "RNA Extraction from Fixed Cells",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-07-07T23:59:23.813Z",
           "subtasks": [
             {
@@ -4814,11 +4814,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-07T23:59:54.774Z",
-              "completedAt": "2026-07-13T16:10:24.605Z",
+              "completedAt": "2026-09-21T18:44:34.089Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-21T18:44:34.089Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mskrjp4op9yg4r87bof",
@@ -8830,9 +8833,18 @@
       "completedAt": "2026-09-21T18:44:29.333Z",
       "completionNotes": "",
       "completionLinks": ""
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mrbb95ettw8a7w8gkjp",
+      "subtaskId": null,
+      "title": "RNA Extraction from Fixed Cells",
+      "completedAt": "2026-09-21T18:44:34.089Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-21T18:44:29.333Z",
+  "lastUpdated": "2026-09-21T18:44:34.089Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
