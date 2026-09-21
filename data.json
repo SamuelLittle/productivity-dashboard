@@ -4030,6 +4030,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-09-21T18:55:02.261Z"
+            },
+            {
+              "id": "mublv274p0n5sh1fil",
+              "title": "iAstro Treatment",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-21T18:55:29.248Z"
             }
           ]
         }
@@ -7340,6 +7348,16 @@
         "scheduledAt": "2026-09-21T18:55:02.261Z",
         "completedOnDay": false
       }
+    ],
+    "2026-09-30": [
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mublv274p0n5sh1fil",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:55:29.248Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8906,7 +8924,7 @@
       "date": "2026-09-18"
     }
   ],
-  "lastUpdated": "2026-09-21T18:55:02.261Z",
+  "lastUpdated": "2026-09-21T18:55:29.248Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
