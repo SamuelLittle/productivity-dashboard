@@ -5172,7 +5172,7 @@
         }
       ],
       "progressUpdates": [],
-      "archived": false
+      "archived": true
     },
     {
       "id": "mu39fvpuyhq2d4m1yxe",
@@ -8802,7 +8802,7 @@
       "date": "2026-09-17"
     }
   ],
-  "lastUpdated": "2026-09-18T14:41:06.559Z",
+  "lastUpdated": "2026-09-21T18:43:12.633Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
