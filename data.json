@@ -6347,7 +6347,7 @@
         "completionLinks": ""
       }
     ],
-    "2026-09-18": [
+    "2026-09-21": [
       {
         "id": "mu5qpggyto4dzetnrkg",
         "title": "barcode + metaData to Hamid/Zach",
@@ -7244,14 +7244,6 @@
         "completionLinks": ""
       },
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-09-18T14:40:09.661Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "msot0q1x8axc96qhr7l",
         "subtaskId": "msot1f0kbzxjrqob5g4",
@@ -7335,6 +7327,14 @@
         "subtaskId": "mublj1re5m4pgco20yv",
         "time": null,
         "scheduledAt": "2026-09-21T18:46:08.811Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-09-21T18:49:16.875Z",
         "completedOnDay": false
       }
     ]
@@ -8921,7 +8921,7 @@
       "date": "2026-09-18"
     }
   ],
-  "lastUpdated": "2026-09-21T18:49:13.263Z",
+  "lastUpdated": "2026-09-21T18:49:16.877Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
