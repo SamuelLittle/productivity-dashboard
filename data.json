@@ -6361,41 +6361,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-06-22": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhry7jezeridb1ny7",
-        "subtaskId": "mpxhznzl6k53v3apowb",
-        "time": null,
-        "scheduledAt": "2026-06-15T23:51:36.473Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-22T21:28:34.435Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhry7jezeridb1ny7",
-        "subtaskId": "mpyrp88n4tf02yhoxpx",
-        "time": null,
-        "scheduledAt": "2026-06-15T23:51:43.834Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-22T21:28:44.026Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "mqlmy35i6ts5m6kremj",
-        "subtaskId": "mqlmzs0me3ga0gn0va8",
-        "time": null,
-        "scheduledAt": "2026-06-20T00:48:02.657Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-23T15:32:23.831Z",
-        "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-23": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7330,36 +7295,20 @@
         "time": null,
         "scheduledAt": "2026-09-21T18:49:43.172Z",
         "completedOnDay": false
-      },
+      }
+    ],
+    "2026-09-25": [
       {
         "projectId": "mu39fvpuyhq2d4m1yxe",
         "taskId": "mu39h64xcq13625mqt8",
         "subtaskId": "mu39hyqtveridoixwo",
         "time": null,
-        "scheduledAt": "2026-09-21T18:49:43.172Z",
+        "scheduledAt": "2026-09-21T18:49:58.936Z",
         "completedOnDay": false
       }
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhry7jezeridb1ny7",
-      "subtaskId": "mpxhznzl6k53v3apowb",
-      "completedAt": "2026-06-22T21:28:34.436Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-22"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhry7jezeridb1ny7",
-      "subtaskId": "mpyrp88n4tf02yhoxpx",
-      "completedAt": "2026-06-22T21:28:44.026Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-22"
-    },
     {
       "projectId": "mklu1lye4czo9brjznq",
       "taskId": "mqlmy35i6ts5m6kremj",
@@ -8923,7 +8872,7 @@
       "date": "2026-09-18"
     }
   ],
-  "lastUpdated": "2026-09-21T18:49:43.172Z",
+  "lastUpdated": "2026-09-21T18:49:58.936Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
