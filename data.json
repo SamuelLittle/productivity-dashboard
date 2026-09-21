@@ -1525,7 +1525,7 @@
           "title": "iRPE screening",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-09-15T15:38:44.935Z",
           "subtasks": [
             {
@@ -1535,7 +1535,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-15T15:38:56.313Z",
-              "completedAt": "2026-09-15T18:05:20.363Z",
+              "completedAt": "2026-09-21T18:58:08.354Z",
               "completionNotes": "performed treatment in iRPEs + bonus plate addition. Completed around 10:50.  Tomorrow's 3hr treatment needs to target around 8am",
               "completionLinks": ""
             },
@@ -1546,7 +1546,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-15T15:39:14.878Z",
-              "completedAt": "2026-09-16T16:37:14.883Z",
+              "completedAt": "2026-09-21T18:58:08.354Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1557,7 +1557,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-15T15:39:26.158Z",
-              "completedAt": "2026-09-18T14:40:03.422Z",
+              "completedAt": "2026-09-21T18:58:08.354Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1568,11 +1568,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-15T15:39:47.321Z",
-              "completedAt": "2026-09-18T14:38:20.090Z",
+              "completedAt": "2026-09-21T18:58:08.354Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-21T18:58:08.354Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [
@@ -8949,9 +8952,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-18"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mu2u6xxj0bj46ry6m4u7",
+      "subtaskId": null,
+      "title": "iRPE screening",
+      "completedAt": "2026-09-21T18:58:08.354Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-21T18:56:31.545Z",
+  "lastUpdated": "2026-09-21T18:58:08.354Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
