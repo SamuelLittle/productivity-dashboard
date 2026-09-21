@@ -6432,6 +6432,17 @@
         "createdAt": "2026-09-21T19:07:03.556Z",
         "time": null
       }
+    ],
+    "2026-10-20": [
+      {
+        "id": "mubma5ppxyy41cs9gh9",
+        "title": "Conf. D2",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-09-21T19:07:13.645Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -9001,7 +9012,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-21T19:07:03.556Z",
+  "lastUpdated": "2026-09-21T19:07:13.645Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
