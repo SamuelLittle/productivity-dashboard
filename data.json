@@ -1517,6 +1517,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-09-15T22:50:17.123Z"
+            },
+            {
+              "id": "mublz6cwmgxwwf0dzsi",
+              "title": "Dendritic Cell Replating",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-21T18:58:41.265Z"
             }
           ]
         },
@@ -7283,6 +7291,14 @@
         "time": null,
         "scheduledAt": "2026-09-21T18:46:32.848Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "msot0q1x8axc96qhr7l",
+        "subtaskId": "mublz6cwmgxwwf0dzsi",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:58:41.265Z",
+        "completedOnDay": false
       }
     ],
     "2026-09-23": [
@@ -8963,7 +8979,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-21T18:58:08.354Z",
+  "lastUpdated": "2026-09-21T18:58:41.265Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
