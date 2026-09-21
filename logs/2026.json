@@ -3514,6 +3514,41 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-06-22": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mpxhznzl6k53v3apowb",
+        "time": null,
+        "scheduledAt": "2026-06-15T23:51:36.473Z",
+        "completedOnDay": true,
+        "completedAt": "2026-06-22T21:28:34.435Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mpyrp88n4tf02yhoxpx",
+        "time": null,
+        "scheduledAt": "2026-06-15T23:51:43.834Z",
+        "completedOnDay": true,
+        "completedAt": "2026-06-22T21:28:44.026Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mqlmy35i6ts5m6kremj",
+        "subtaskId": "mqlmzs0me3ga0gn0va8",
+        "time": null,
+        "scheduledAt": "2026-06-20T00:48:02.657Z",
+        "completedOnDay": true,
+        "completedAt": "2026-06-23T15:32:23.831Z",
+        "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
+        "completionLinks": ""
+      }
     ]
   },
   "weeklySummaries": {
@@ -6379,6 +6414,24 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-18"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": "mpxhznzl6k53v3apowb",
+      "completedAt": "2026-06-22T21:28:34.436Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-22"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": "mpyrp88n4tf02yhoxpx",
+      "completedAt": "2026-06-22T21:28:44.026Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-22"
     }
   ]
 }
