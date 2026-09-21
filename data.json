@@ -6409,9 +6409,12 @@
         "title": "Restock BLADE-R reagents",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-09-21T18:56:31.544Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-09-21T20:07:47.116Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-10-02": [
@@ -9036,9 +9039,17 @@
       "completionNotes": "",
       "completionLinks": "https://docs.google.com/presentation/d/1Meowla-URtvYa5RHoUMQXdkpJhmPgNymVevBmhif8SY/edit?slide=id.g3fba75b0f8d_0_24#slide=id.g3fba75b0f8d_0_24",
       "date": "2026-09-21"
+    },
+    {
+      "id": "mublwe9ke3ni3bvju3l",
+      "title": "Restock BLADE-R reagents",
+      "completedAt": "2026-09-21T20:07:47.117Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-21"
     }
   ],
-  "lastUpdated": "2026-09-21T19:46:12.306Z",
+  "lastUpdated": "2026-09-21T20:07:47.117Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
