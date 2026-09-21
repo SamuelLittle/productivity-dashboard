@@ -6399,10 +6399,12 @@
         "title": "barcode + metaData to Hamid/Zach",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-09-21T20:35:44.368Z",
         "time": null,
-        "createdAt": "2026-09-17T16:24:28.834Z"
+        "createdAt": "2026-09-17T16:24:28.834Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mublwe9ke3ni3bvju3l",
@@ -9047,9 +9049,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-21"
+    },
+    {
+      "id": "mu5qpggyto4dzetnrkg",
+      "title": "barcode + metaData to Hamid/Zach",
+      "completedAt": "2026-09-21T20:35:44.368Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-21"
     }
   ],
-  "lastUpdated": "2026-09-21T20:07:47.117Z",
+  "lastUpdated": "2026-09-21T20:35:44.368Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
