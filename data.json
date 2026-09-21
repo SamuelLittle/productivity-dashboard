@@ -4745,7 +4745,7 @@
           "title": "Final BLADE-R Pilot",
           "description": "Final BLADE-R validation pre deployment: https://docs.google.com/document/d/1uwf9Uubq7TNcKj-bP0SOC3Iod5YD-zbXyoNFFkiR6lo/edit?usp=sharing\n",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-05-26T00:09:04.559Z",
           "subtasks": [
             {
@@ -4755,7 +4755,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-26T00:02:53.987Z",
-              "completedAt": "2026-05-29T03:56:42.096Z",
+              "completedAt": "2026-09-21T18:44:29.333Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4766,7 +4766,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-26T00:03:09.381Z",
-              "completedAt": "2026-05-29T03:56:47.507Z",
+              "completedAt": "2026-09-21T18:44:29.333Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4777,7 +4777,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-26T00:03:37.292Z",
-              "completedAt": "2026-05-29T03:56:52.716Z",
+              "completedAt": "2026-09-21T18:44:29.333Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4790,11 +4790,14 @@
               "createdAt": "2026-05-26T00:04:05.036Z",
               "notes": "- Tapestation RNA readouts from 1st and last plate\n- RNA from Top, Middle, and bottom row\n- take a select handful of samples for cDNA validation\n\n-Time estimates, RNA quality estimates vs time. ",
               "links": "",
-              "completedAt": "2026-05-29T03:56:57.429Z",
+              "completedAt": "2026-09-21T18:44:29.333Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-21T18:44:29.333Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mrbb95ettw8a7w8gkjp",
@@ -8818,9 +8821,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-17"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mplvdt710oeiytcvajhq",
+      "subtaskId": null,
+      "title": "Final BLADE-R Pilot",
+      "completedAt": "2026-09-21T18:44:29.333Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-21T18:43:40.229Z",
+  "lastUpdated": "2026-09-21T18:44:29.333Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
