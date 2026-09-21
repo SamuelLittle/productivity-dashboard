@@ -2883,6 +2883,14 @@
               "completedAt": "2026-09-10T16:03:47.491Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mublj1re5m4pgco20yv",
+              "title": "Make Pilot Overview Presentation",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-21T18:46:08.811Z"
             }
           ]
         }
@@ -7286,6 +7294,14 @@
         "time": null,
         "scheduledAt": "2026-09-21T18:43:40.229Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mt7j9dtu70pe9swum8w",
+        "subtaskId": "mublj1re5m4pgco20yv",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:46:08.811Z",
+        "completedOnDay": false
       }
     ]
   },
@@ -8844,7 +8860,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-09-21T18:44:34.089Z",
+  "lastUpdated": "2026-09-21T18:46:08.811Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
