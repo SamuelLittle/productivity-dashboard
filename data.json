@@ -1480,8 +1480,11 @@
               "title": "Media Swap",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-08-11T15:17:58.724Z"
+              "completed": true,
+              "createdAt": "2026-08-11T15:17:58.724Z",
+              "completedAt": "2026-09-21T18:49:09.338Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mu39izyj9o671x0omt4",
@@ -1514,6 +1517,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-09-15T22:50:17.123Z"
+            },
+            {
+              "id": "mublz6cwmgxwwf0dzsi",
+              "title": "Dendritic Cell Replating",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-21T18:58:41.265Z"
             }
           ]
         },
@@ -1522,7 +1533,7 @@
           "title": "iRPE screening",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-09-15T15:38:44.935Z",
           "subtasks": [
             {
@@ -1532,7 +1543,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-15T15:38:56.313Z",
-              "completedAt": "2026-09-15T18:05:20.363Z",
+              "completedAt": "2026-09-21T18:58:08.354Z",
               "completionNotes": "performed treatment in iRPEs + bonus plate addition. Completed around 10:50.  Tomorrow's 3hr treatment needs to target around 8am",
               "completionLinks": ""
             },
@@ -1543,7 +1554,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-15T15:39:14.878Z",
-              "completedAt": "2026-09-16T16:37:14.883Z",
+              "completedAt": "2026-09-21T18:58:08.354Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1554,7 +1565,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-15T15:39:26.158Z",
-              "completedAt": "2026-09-18T14:40:03.422Z",
+              "completedAt": "2026-09-21T18:58:08.354Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1565,11 +1576,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-15T15:39:47.321Z",
-              "completedAt": "2026-09-18T14:38:20.090Z",
+              "completedAt": "2026-09-21T18:58:08.354Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-21T18:58:08.354Z",
+          "completionNotes": "",
+          "completionLinks": ""
         }
       ],
       "progressUpdates": [
@@ -2883,6 +2897,25 @@
               "completedAt": "2026-09-10T16:03:47.491Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mublj1re5m4pgco20yv",
+              "title": "Make Pilot Overview Presentation",
+              "description": "",
+              "priority": "medium",
+              "completed": true,
+              "createdAt": "2026-09-21T18:46:08.811Z",
+              "completedAt": "2026-09-21T19:46:12.306Z",
+              "completionNotes": "",
+              "completionLinks": "https://docs.google.com/presentation/d/1Meowla-URtvYa5RHoUMQXdkpJhmPgNymVevBmhif8SY/edit?slide=id.g3fba75b0f8d_0_24#slide=id.g3fba75b0f8d_0_24"
+            },
+            {
+              "id": "mubljdv9i8k8nxg0ne",
+              "title": "Meet w/ Baptiste and Mayra",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-21T18:46:24.501Z"
             }
           ]
         }
@@ -3990,8 +4023,43 @@
               "title": "iAst / iMg media swap",
               "description": "",
               "priority": "medium",
+              "completed": true,
+              "createdAt": "2026-09-18T14:40:56.674Z",
+              "completedAt": "2026-09-21T18:49:13.263Z",
+              "completionNotes": "",
+              "completionLinks": ""
+            },
+            {
+              "id": "mubltowudg4qw5xvi74",
+              "title": "iMG treatmtent",
+              "description": "",
+              "priority": "medium",
               "completed": false,
-              "createdAt": "2026-09-18T14:40:56.674Z"
+              "createdAt": "2026-09-21T18:54:25.374Z"
+            },
+            {
+              "id": "mubluhdhy3lovirk65",
+              "title": "iMg RNA extraction",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-21T18:55:02.261Z"
+            },
+            {
+              "id": "mublv274p0n5sh1fil",
+              "title": "iAstro Treatment",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-21T18:55:29.248Z"
+            },
+            {
+              "id": "mublvonphj141vcem7e",
+              "title": "iAstro RNA extraction",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-21T18:55:58.357Z"
             }
           ]
         }
@@ -4745,7 +4813,7 @@
           "title": "Final BLADE-R Pilot",
           "description": "Final BLADE-R validation pre deployment: https://docs.google.com/document/d/1uwf9Uubq7TNcKj-bP0SOC3Iod5YD-zbXyoNFFkiR6lo/edit?usp=sharing\n",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-05-26T00:09:04.559Z",
           "subtasks": [
             {
@@ -4755,7 +4823,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-26T00:02:53.987Z",
-              "completedAt": "2026-05-29T03:56:42.096Z",
+              "completedAt": "2026-09-21T18:44:29.333Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4766,7 +4834,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-26T00:03:09.381Z",
-              "completedAt": "2026-05-29T03:56:47.507Z",
+              "completedAt": "2026-09-21T18:44:29.333Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4777,7 +4845,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-05-26T00:03:37.292Z",
-              "completedAt": "2026-05-29T03:56:52.716Z",
+              "completedAt": "2026-09-21T18:44:29.333Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -4790,18 +4858,21 @@
               "createdAt": "2026-05-26T00:04:05.036Z",
               "notes": "- Tapestation RNA readouts from 1st and last plate\n- RNA from Top, Middle, and bottom row\n- take a select handful of samples for cDNA validation\n\n-Time estimates, RNA quality estimates vs time. ",
               "links": "",
-              "completedAt": "2026-05-29T03:56:57.429Z",
+              "completedAt": "2026-09-21T18:44:29.333Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-21T18:44:29.333Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mrbb95ettw8a7w8gkjp",
           "title": "RNA Extraction from Fixed Cells",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-07-07T23:59:23.813Z",
           "subtasks": [
             {
@@ -4811,11 +4882,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-07-07T23:59:54.774Z",
-              "completedAt": "2026-07-13T16:10:24.605Z",
+              "completedAt": "2026-09-21T18:44:34.089Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-09-21T18:44:34.089Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mskrjp4op9yg4r87bof",
@@ -5172,7 +5246,7 @@
         }
       ],
       "progressUpdates": [],
-      "archived": false
+      "archived": true
     },
     {
       "id": "mu39fvpuyhq2d4m1yxe",
@@ -5223,8 +5297,19 @@
               "title": "Make screen workflow overview",
               "description": "",
               "priority": "medium",
+              "completed": true,
+              "createdAt": "2026-09-18T14:39:46.193Z",
+              "completedAt": "2026-09-21T18:49:04.675Z",
+              "completionNotes": "",
+              "completionLinks": ""
+            },
+            {
+              "id": "mublfs4ghekbyp38h0m",
+              "title": "Make Screen to-do list",
+              "description": "",
+              "priority": "medium",
               "completed": false,
-              "createdAt": "2026-09-18T14:39:46.193Z"
+              "createdAt": "2026-09-21T18:43:36.352Z"
             }
           ]
         }
@@ -6308,55 +6393,78 @@
         "completionLinks": ""
       }
     ],
-    "2026-09-18": [
+    "2026-09-21": [
       {
         "id": "mu5qpggyto4dzetnrkg",
         "title": "barcode + metaData to Hamid/Zach",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-09-21T20:35:44.368Z",
         "time": null,
-        "createdAt": "2026-09-17T16:24:28.834Z"
+        "createdAt": "2026-09-17T16:24:28.834Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "mublwe9ke3ni3bvju3l",
+        "title": "Restock BLADE-R reagents",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-09-21T18:56:31.544Z",
+        "time": null,
+        "completedAt": "2026-09-21T20:07:47.116Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-10-02": [
+      {
+        "id": "mubm5vye9rh6r0fwq3",
+        "title": "Poster Due",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-09-21T19:03:54.375Z",
+        "time": null
+      }
+    ],
+    "2026-10-19": [
+      {
+        "id": "mubm9xxgdqh4ot9yb5d",
+        "title": "Conf D1",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-09-21T19:07:03.556Z",
+        "time": null
+      }
+    ],
+    "2026-10-20": [
+      {
+        "id": "mubma5ppxyy41cs9gh9",
+        "title": "Conf. D2",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-09-21T19:07:13.645Z",
+        "time": null
+      }
+    ],
+    "2026-10-21": [
+      {
+        "id": "mubmalfo2p2i24dzbuz",
+        "title": "conf. D3",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-09-21T19:07:34.020Z",
+        "time": null
       }
     ]
   },
   "scheduledItems": {
-    "2026-06-22": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhry7jezeridb1ny7",
-        "subtaskId": "mpxhznzl6k53v3apowb",
-        "time": null,
-        "scheduledAt": "2026-06-15T23:51:36.473Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-22T21:28:34.435Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhry7jezeridb1ny7",
-        "subtaskId": "mpyrp88n4tf02yhoxpx",
-        "time": null,
-        "scheduledAt": "2026-06-15T23:51:43.834Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-22T21:28:44.026Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "mqlmy35i6ts5m6kremj",
-        "subtaskId": "mqlmzs0me3ga0gn0va8",
-        "time": null,
-        "scheduledAt": "2026-06-20T00:48:02.657Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-23T15:32:23.831Z",
-        "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-23": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7186,28 +7294,15 @@
     ],
     "2026-09-18": [
       {
-        "projectId": "mu39fvpuyhq2d4m1yxe",
-        "taskId": "mu39h64xcq13625mqt8",
-        "subtaskId": "mu39hyqtveridoixwo",
-        "time": null,
-        "scheduledAt": "2026-09-15T22:47:13.445Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mu72dgvjcoi9jfphbqp",
         "taskId": "mu72e4k7u4fl68ve7l",
         "subtaskId": "mu72enf5qffnhp0l92",
         "time": null,
         "scheduledAt": "2026-09-18T14:39:46.193Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-09-18T14:40:09.661Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-21T18:49:04.674Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7215,7 +7310,10 @@
         "subtaskId": "msot1f0kbzxjrqob5g4",
         "time": null,
         "scheduledAt": "2026-09-18T14:40:09.699Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-21T18:49:09.338Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -7223,7 +7321,10 @@
         "subtaskId": "mu72g5sy9gohnemtyqk",
         "time": null,
         "scheduledAt": "2026-09-18T14:40:56.674Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-21T18:49:13.263Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-09-22": [
@@ -7233,6 +7334,22 @@
         "subtaskId": "mu39izyj9o671x0omt4",
         "time": null,
         "scheduledAt": "2026-09-15T22:48:01.676Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mt7j9dtu70pe9swum8w",
+        "subtaskId": "mubljdv9i8k8nxg0ne",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:46:32.848Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "msot0q1x8axc96qhr7l",
+        "subtaskId": "mublz6cwmgxwwf0dzsi",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:58:41.265Z",
         "completedOnDay": false
       }
     ],
@@ -7263,27 +7380,88 @@
         "scheduledAt": "2026-09-15T22:50:17.124Z",
         "completedOnDay": false
       }
+    ],
+    "2026-09-21": [
+      {
+        "projectId": "mu72dgvjcoi9jfphbqp",
+        "taskId": "mu72e4k7u4fl68ve7l",
+        "subtaskId": "mublfs4ghekbyp38h0m",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:43:40.229Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mt7j9dtu70pe9swum8w",
+        "subtaskId": "mublj1re5m4pgco20yv",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:46:08.811Z",
+        "completedOnDay": true,
+        "completedAt": "2026-09-21T19:46:12.306Z",
+        "completionNotes": "",
+        "completionLinks": "https://docs.google.com/presentation/d/1Meowla-URtvYa5RHoUMQXdkpJhmPgNymVevBmhif8SY/edit?slide=id.g3fba75b0f8d_0_24#slide=id.g3fba75b0f8d_0_24"
+      }
+    ],
+    "2026-09-28": [
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-09-21T18:49:43.172Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mubltowudg4qw5xvi74",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:54:25.374Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-09-25": [
+      {
+        "projectId": "mu39fvpuyhq2d4m1yxe",
+        "taskId": "mu39h64xcq13625mqt8",
+        "subtaskId": "mu39hyqtveridoixwo",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:49:58.936Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-09-29": [
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mubluhdhy3lovirk65",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:55:02.261Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-09-30": [
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mublv274p0n5sh1fil",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:55:29.248Z",
+        "completedOnDay": false
+      }
+    ],
+    "2026-10-01": [
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mublvonphj141vcem7e",
+        "time": null,
+        "scheduledAt": "2026-09-21T18:55:58.357Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhry7jezeridb1ny7",
-      "subtaskId": "mpxhznzl6k53v3apowb",
-      "completedAt": "2026-06-22T21:28:34.436Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-22"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhry7jezeridb1ny7",
-      "subtaskId": "mpyrp88n4tf02yhoxpx",
-      "completedAt": "2026-06-22T21:28:44.026Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-22"
-    },
     {
       "projectId": "mklu1lye4czo9brjznq",
       "taskId": "mqlmy35i6ts5m6kremj",
@@ -8800,9 +8978,88 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-17"
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mplvdt710oeiytcvajhq",
+      "subtaskId": null,
+      "title": "Final BLADE-R Pilot",
+      "completedAt": "2026-09-21T18:44:29.333Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mmfjn4b1w85dvswipdk",
+      "taskId": "mrbb95ettw8a7w8gkjp",
+      "subtaskId": null,
+      "title": "RNA Extraction from Fixed Cells",
+      "completedAt": "2026-09-21T18:44:34.089Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mu72dgvjcoi9jfphbqp",
+      "taskId": "mu72e4k7u4fl68ve7l",
+      "subtaskId": "mu72enf5qffnhp0l92",
+      "completedAt": "2026-09-21T18:49:04.675Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-18"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "msot0q1x8axc96qhr7l",
+      "subtaskId": "msot1f0kbzxjrqob5g4",
+      "completedAt": "2026-09-21T18:49:09.338Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-18"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mthfvhiuze0mw8hl3h",
+      "subtaskId": "mu72g5sy9gohnemtyqk",
+      "completedAt": "2026-09-21T18:49:13.263Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-18"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mu2u6xxj0bj46ry6m4u7",
+      "subtaskId": null,
+      "title": "iRPE screening",
+      "completedAt": "2026-09-21T18:58:08.354Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mt7j9dtu70pe9swum8w",
+      "subtaskId": "mublj1re5m4pgco20yv",
+      "completedAt": "2026-09-21T19:46:12.306Z",
+      "completionNotes": "",
+      "completionLinks": "https://docs.google.com/presentation/d/1Meowla-URtvYa5RHoUMQXdkpJhmPgNymVevBmhif8SY/edit?slide=id.g3fba75b0f8d_0_24#slide=id.g3fba75b0f8d_0_24",
+      "date": "2026-09-21"
+    },
+    {
+      "id": "mublwe9ke3ni3bvju3l",
+      "title": "Restock BLADE-R reagents",
+      "completedAt": "2026-09-21T20:07:47.117Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-21"
+    },
+    {
+      "id": "mu5qpggyto4dzetnrkg",
+      "title": "barcode + metaData to Hamid/Zach",
+      "completedAt": "2026-09-21T20:35:44.368Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-21"
     }
   ],
-  "lastUpdated": "2026-09-18T14:41:06.559Z",
+  "lastUpdated": "2026-09-21T20:35:44.368Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
