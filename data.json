@@ -5322,6 +5322,14 @@
               "completedAt": "2026-09-22T20:59:54.388Z",
               "completionNotes": "Still need to email Sharookh + co",
               "completionLinks": ""
+            },
+            {
+              "id": "mudb5p9sj4zqkchb1c8",
+              "title": "Summary email to Sharookh",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-22T23:31:22.288Z"
             }
           ]
         }
@@ -9048,7 +9056,7 @@
       "date": "2026-09-22"
     }
   ],
-  "lastUpdated": "2026-09-22T23:30:49.845Z",
+  "lastUpdated": "2026-09-22T23:31:22.288Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
