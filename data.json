@@ -5314,8 +5314,11 @@
               "title": "Make Screen to-do list",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-21T18:43:36.352Z"
+              "completed": true,
+              "createdAt": "2026-09-21T18:43:36.352Z",
+              "completedAt": "2026-09-22T20:59:54.388Z",
+              "completionNotes": "Still need to email Sharookh + co",
+              "completionLinks": ""
             }
           ]
         }
@@ -7343,7 +7346,10 @@
         "subtaskId": "mublfs4ghekbyp38h0m",
         "time": null,
         "scheduledAt": "2026-09-22T20:59:37.864Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-22T20:59:54.388Z",
+        "completionNotes": "Still need to email Sharookh + co",
+        "completionLinks": ""
       }
     ],
     "2026-09-23": [
@@ -9016,9 +9022,18 @@
       "completionNotes": "Treated at ~12:15\n",
       "completionLinks": "",
       "date": "2026-09-22"
+    },
+    {
+      "projectId": "mu72dgvjcoi9jfphbqp",
+      "taskId": "mu72e4k7u4fl68ve7l",
+      "subtaskId": "mublfs4ghekbyp38h0m",
+      "completedAt": "2026-09-22T20:59:54.388Z",
+      "completionNotes": "Still need to email Sharookh + co",
+      "completionLinks": "",
+      "date": "2026-09-22"
     }
   ],
-  "lastUpdated": "2026-09-22T20:59:37.864Z",
+  "lastUpdated": "2026-09-22T20:59:54.388Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
