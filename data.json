@@ -1491,8 +1491,11 @@
               "title": "24hr treatment",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-15T22:48:01.675Z"
+              "completed": true,
+              "createdAt": "2026-09-15T22:48:01.675Z",
+              "completedAt": "2026-09-22T20:59:23.493Z",
+              "completionNotes": "Treated at ~12:15\n",
+              "completionLinks": ""
             },
             {
               "id": "mu39jfj4xrqkj5sg4a9",
@@ -7337,7 +7340,10 @@
         "subtaskId": "mu39izyj9o671x0omt4",
         "time": null,
         "scheduledAt": "2026-09-15T22:48:01.676Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-22T20:59:23.493Z",
+        "completionNotes": "Treated at ~12:15\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -9072,9 +9078,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-22"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "msot0q1x8axc96qhr7l",
+      "subtaskId": "mu39izyj9o671x0omt4",
+      "completedAt": "2026-09-22T20:59:23.493Z",
+      "completionNotes": "Treated at ~12:15\n",
+      "completionLinks": "",
+      "date": "2026-09-22"
     }
   ],
-  "lastUpdated": "2026-09-22T16:13:53.335Z",
+  "lastUpdated": "2026-09-22T20:59:23.493Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
