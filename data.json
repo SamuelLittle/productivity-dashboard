@@ -2920,8 +2920,11 @@
               "title": "Meet w/ Baptiste and Mayra",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-21T18:46:24.501Z"
+              "completed": true,
+              "createdAt": "2026-09-21T18:46:24.501Z",
+              "completedAt": "2026-09-22T23:30:49.845Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -7319,7 +7322,10 @@
         "subtaskId": "mubljdv9i8k8nxg0ne",
         "time": null,
         "scheduledAt": "2026-09-21T18:46:32.848Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-22T23:30:49.844Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9031,9 +9037,18 @@
       "completionNotes": "Still need to email Sharookh + co",
       "completionLinks": "",
       "date": "2026-09-22"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mt7j9dtu70pe9swum8w",
+      "subtaskId": "mubljdv9i8k8nxg0ne",
+      "completedAt": "2026-09-22T23:30:49.845Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-22"
     }
   ],
-  "lastUpdated": "2026-09-22T20:59:54.388Z",
+  "lastUpdated": "2026-09-22T23:30:49.845Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
