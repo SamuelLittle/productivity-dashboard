@@ -3549,6 +3549,41 @@
         "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
         "completionLinks": ""
       }
+    ],
+    "2026-06-23": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mpyrpyqn8349e3a5ya6",
+        "time": null,
+        "scheduledAt": "2026-06-15T23:51:26.635Z",
+        "completedOnDay": true,
+        "completedAt": "2026-06-23T18:03:59.110Z",
+        "completionNotes": "24 hr treatment performed at 10:30am",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpvor2egyd9fn0kywu9",
+        "subtaskId": "mpvplbr81rreon4kadvi",
+        "time": null,
+        "scheduledAt": "2026-06-20T00:53:44.060Z",
+        "completedOnDay": true,
+        "completedAt": "2026-06-23T22:43:47.717Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhr7xbgjd9lgr32a",
+        "subtaskId": "mqln7wnectrii779qyg",
+        "time": null,
+        "scheduledAt": "2026-06-20T00:53:55.557Z",
+        "completedOnDay": true,
+        "completedAt": "2026-06-23T22:43:52.439Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
     ]
   },
   "weeklySummaries": {
@@ -6432,6 +6467,42 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-06-22"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mqlmy35i6ts5m6kremj",
+      "subtaskId": "mqlmzs0me3ga0gn0va8",
+      "completedAt": "2026-06-23T15:32:23.831Z",
+      "completionNotes": "imaged and extracted RNA from iMGs in 96 and 384 wp",
+      "completionLinks": "",
+      "date": "2026-06-22"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": "mpyrpyqn8349e3a5ya6",
+      "completedAt": "2026-06-23T18:03:59.110Z",
+      "completionNotes": "24 hr treatment performed at 10:30am",
+      "completionLinks": "",
+      "date": "2026-06-23"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpvor2egyd9fn0kywu9",
+      "subtaskId": "mpvplbr81rreon4kadvi",
+      "completedAt": "2026-06-23T22:43:47.717Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-23"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhr7xbgjd9lgr32a",
+      "subtaskId": "mqln7wnectrii779qyg",
+      "completedAt": "2026-06-23T22:43:52.439Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-06-23"
     }
   ]
 }
