@@ -2576,11 +2576,15 @@ function createProjectTaskElement(task, project) {
         </div>
     ` : '';
 
-    const tentativeBadge = task.tentativeWindow ? `
-        <div class="task-tentative-badge" title="Pencilled in: ${formatTentativeRange(task.tentativeWindow)}">
+    const tentativeBadge = task.completed ? '' : (task.tentativeWindow ? `
+        <div class="task-tentative-badge" data-action="pencil-in" title="Click to change or clear this window">
             Pencilled in: ${formatTentativeRange(task.tentativeWindow)}
         </div>
-    ` : '';
+    ` : `
+        <div class="task-tentative-badge task-tentative-badge-empty" data-action="pencil-in" title="Loosely hold a date range for this task">
+            + Pencil in a window
+        </div>
+    `);
 
     const hasSubtasks = task.subtasks && task.subtasks.length > 0;
     const completedSubtasks = hasSubtasks ? task.subtasks.filter(st => st.completed).length : 0;
@@ -2633,12 +2637,6 @@ function createProjectTaskElement(task, project) {
                     <line x1="3" y1="10" x2="21" y2="10"/>
                     <line x1="12" y1="14" x2="12" y2="18"/>
                     <line x1="10" y1="16" x2="14" y2="16"/>
-                </svg>
-            </button>
-            <button class="task-action-btn" data-action="pencil-in" title="Pencil In a Window">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 2">
-                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                    <line x1="3" y1="10" x2="21" y2="10"/>
                 </svg>
             </button>
             <button class="task-action-btn" data-action="add-subtask" title="Add Subtask">
@@ -2795,6 +2793,12 @@ function createProjectTaskElement(task, project) {
             const action = btn.dataset.action;
             handleProjectTaskAction(action, task, project);
         });
+    });
+
+    // Pencil-in chip (always visible, not gated behind hover)
+    div.querySelector('.task-tentative-badge')?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        handleProjectTaskAction('pencil-in', task, project);
     });
 
     // Drag and drop handlers for task reordering
