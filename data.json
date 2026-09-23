@@ -1601,7 +1601,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-09-23T17:50:56.431Z",
-          "subtasks": [],
+          "subtasks": [
+            {
+              "id": "mueepctc934jpl72ane",
+              "title": "Order Reagents",
+              "description": "Need\n- cytokines\n- iso kits\n- blood from 3x donors",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-23T17:58:24.289Z"
+            }
+          ],
           "tentativeWindow": {
             "start": "2026-10-05",
             "end": "2026-10-09"
@@ -9073,7 +9082,7 @@
       "completedAt": "2026-09-23T17:50:05.540Z"
     }
   ],
-  "lastUpdated": "2026-09-23T17:53:18.605Z",
+  "lastUpdated": "2026-09-23T17:58:24.289Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
