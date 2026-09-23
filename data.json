@@ -2943,6 +2943,15 @@
               "completionLinks": ""
             }
           ]
+        },
+        {
+          "id": "mueeibc5gzv6690qi8q",
+          "title": "Leukopak Validation",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-09-23T17:52:55.782Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [],
@@ -5355,20 +5364,6 @@
     }
   ],
   "dailyLists": {
-    "2026-06-24": [
-      {
-        "id": "mqsf20ifvno6yoki9kk",
-        "title": "HITSLIMS project submission for gap fill + neutrophil and monocyte + CD4",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-24T18:38:11.991Z",
-        "time": null,
-        "completedAt": "2026-06-25T15:51:10.534Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-25": [
       {
         "id": "mqtpwpuntyr8ifgjw7h",
@@ -6512,30 +6507,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-06-24": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhry7jezeridb1ny7",
-        "subtaskId": "mpyrqdnqxg3ptjlijxm",
-        "time": null,
-        "scheduledAt": "2026-06-15T23:51:50.566Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-24T18:37:09.297Z",
-        "completionNotes": "treatment complete at 9am\n",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhry7jezeridb1ny7",
-        "subtaskId": "mpyrqzt1v3cmkvltwt7",
-        "time": null,
-        "scheduledAt": "2026-06-15T23:51:55.884Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-25T15:53:29.707Z",
-        "completionNotes": "Got derailed by i7 mechanical issues.  Samples are lysed on beads and in wash buffer 1.  Need to get timeline to i7 repair before deciding how to continue. ",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-29": [
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -7503,15 +7474,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhry7jezeridb1ny7",
-      "subtaskId": "mpyrqdnqxg3ptjlijxm",
-      "completedAt": "2026-06-24T18:37:09.298Z",
-      "completionNotes": "treatment complete at 9am\n",
-      "completionLinks": "",
-      "date": "2026-06-24"
-    },
     {
       "id": "mqsf20ifvno6yoki9kk",
       "title": "HITSLIMS project submission for gap fill + neutrophil and monocyte + CD4",
@@ -9107,7 +9069,7 @@
       "completedAt": "2026-09-23T17:50:05.540Z"
     }
   ],
-  "lastUpdated": "2026-09-23T17:51:34.951Z",
+  "lastUpdated": "2026-09-23T17:52:55.782Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
