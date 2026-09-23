@@ -2951,7 +2951,11 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-09-23T17:52:55.782Z",
-          "subtasks": []
+          "subtasks": [],
+          "tentativeWindow": {
+            "start": "2026-10-12",
+            "end": "2026-10-16"
+          }
         }
       ],
       "progressUpdates": [],
@@ -9069,7 +9073,7 @@
       "completedAt": "2026-09-23T17:50:05.540Z"
     }
   ],
-  "lastUpdated": "2026-09-23T17:52:55.782Z",
+  "lastUpdated": "2026-09-23T17:53:18.605Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
