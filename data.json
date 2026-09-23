@@ -4078,8 +4078,11 @@
               "title": "iMG treatmtent",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-21T18:54:25.374Z"
+              "completed": true,
+              "createdAt": "2026-09-21T18:54:25.374Z",
+              "completedAt": "2026-09-23T23:06:30.075Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mubluhdhy3lovirk65",
@@ -7412,7 +7415,10 @@
         "subtaskId": "mubltowudg4qw5xvi74",
         "time": null,
         "scheduledAt": "2026-09-23T23:05:28.857Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-23T23:06:30.075Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-09-24": [
@@ -9088,9 +9094,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-23"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mthfvhiuze0mw8hl3h",
+      "subtaskId": "mubltowudg4qw5xvi74",
+      "completedAt": "2026-09-23T23:06:30.075Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-23"
     }
   ],
-  "lastUpdated": "2026-09-23T23:05:35.145Z",
+  "lastUpdated": "2026-09-23T23:06:30.075Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
