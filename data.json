@@ -5363,8 +5363,11 @@
               "title": "Summary email to Sharookh",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-22T23:31:22.288Z"
+              "completed": true,
+              "createdAt": "2026-09-22T23:31:22.288Z",
+              "completedAt": "2026-09-23T23:05:03.755Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -7398,7 +7401,10 @@
         "subtaskId": "mudb5p9sj4zqkchb1c8",
         "time": null,
         "scheduledAt": "2026-09-22T23:31:27.029Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-23T23:05:03.754Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-09-24": [
@@ -9077,9 +9083,18 @@
       "subtaskId": "mu39jfj4xrqkj5sg4a9",
       "title": "3 hr treatment",
       "completedAt": "2026-09-23T17:50:05.540Z"
+    },
+    {
+      "projectId": "mu72dgvjcoi9jfphbqp",
+      "taskId": "mu72e4k7u4fl68ve7l",
+      "subtaskId": "mudb5p9sj4zqkchb1c8",
+      "completedAt": "2026-09-23T23:05:03.755Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-23"
     }
   ],
-  "lastUpdated": "2026-09-23T18:25:53.121Z",
+  "lastUpdated": "2026-09-23T23:05:03.755Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
