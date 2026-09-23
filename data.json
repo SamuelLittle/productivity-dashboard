@@ -1502,8 +1502,11 @@
               "title": "3 hr treatment",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-15T22:48:21.856Z"
+              "completed": true,
+              "createdAt": "2026-09-15T22:48:21.856Z",
+              "completedAt": "2026-09-23T17:50:05.540Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mu39jvbkxxcawkd90v",
@@ -7384,7 +7387,8 @@
         "subtaskId": "mu39jfj4xrqkj5sg4a9",
         "time": null,
         "scheduledAt": "2026-09-15T22:48:21.856Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-23T17:50:05.540Z"
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9073,9 +9077,16 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-22"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "msot0q1x8axc96qhr7l",
+      "subtaskId": "mu39jfj4xrqkj5sg4a9",
+      "title": "3 hr treatment",
+      "completedAt": "2026-09-23T17:50:05.540Z"
     }
   ],
-  "lastUpdated": "2026-09-22T23:32:24.887Z",
+  "lastUpdated": "2026-09-23T17:50:05.540Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
