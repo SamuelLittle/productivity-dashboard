@@ -7405,6 +7405,22 @@
         "completedAt": "2026-09-23T23:05:03.754Z",
         "completionNotes": "",
         "completionLinks": ""
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mueefi2pp63isc2vuzs",
+        "subtaskId": "mueepctc934jpl72ane",
+        "time": null,
+        "scheduledAt": "2026-09-23T23:05:28.826Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mubltowudg4qw5xvi74",
+        "time": null,
+        "scheduledAt": "2026-09-23T23:05:28.857Z",
+        "completedOnDay": false
       }
     ],
     "2026-09-24": [
@@ -7414,14 +7430,6 @@
         "subtaskId": "mu39lwgzpk63mjxhg5",
         "time": null,
         "scheduledAt": "2026-09-15T22:50:17.124Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mueefi2pp63isc2vuzs",
-        "subtaskId": "mueepctc934jpl72ane",
-        "time": null,
-        "scheduledAt": "2026-09-23T17:58:33.605Z",
         "completedOnDay": false
       }
     ],
@@ -7436,16 +7444,6 @@
         "completedAt": "2026-09-21T19:46:12.306Z",
         "completionNotes": "",
         "completionLinks": "https://docs.google.com/presentation/d/1Meowla-URtvYa5RHoUMQXdkpJhmPgNymVevBmhif8SY/edit?slide=id.g3fba75b0f8d_0_24#slide=id.g3fba75b0f8d_0_24"
-      }
-    ],
-    "2026-09-28": [
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "mthfvhiuze0mw8hl3h",
-        "subtaskId": "mubltowudg4qw5xvi74",
-        "time": null,
-        "scheduledAt": "2026-09-21T18:54:25.374Z",
-        "completedOnDay": false
       }
     ],
     "2026-09-25": [
@@ -9094,7 +9092,7 @@
       "date": "2026-09-23"
     }
   ],
-  "lastUpdated": "2026-09-23T23:05:03.755Z",
+  "lastUpdated": "2026-09-23T23:05:28.857Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
