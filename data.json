@@ -5397,70 +5397,6 @@
     }
   ],
   "dailyLists": {
-    "2026-06-25": [
-      {
-        "id": "mqtpwpuntyr8ifgjw7h",
-        "title": "image analysis update for pTox Org dis",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-25T16:29:46.848Z",
-        "time": null,
-        "completedAt": "2026-06-25T20:19:11.825Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mqtpx29rpz9ocar4ht",
-        "title": "QC on Neutrophil and monocyte D2s",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-25T16:30:02.943Z",
-        "time": null,
-        "completedAt": "2026-06-26T21:46:02.453Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-06-26": [
-      {
-        "id": "mqvgjkpv2agkkzid4j6",
-        "title": "meet w Juliette",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-26T21:43:09.491Z",
-        "time": null,
-        "completedAt": "2026-06-26T21:48:07.789Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mqvgju9zm2wyvvfcy39",
-        "title": "Advanteon training",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-26T21:43:21.863Z",
-        "time": null,
-        "completedAt": "2026-06-26T21:48:11.951Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mqvgk3hfia9qtwp76yb",
-        "title": "Qiao 1-on-1",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-26T21:43:33.795Z",
-        "time": null,
-        "completedAt": "2026-06-26T21:48:15.724Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-29": [
       {
         "id": "mqtpxqfy8k7yyen1xng",
@@ -6556,19 +6492,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-06-25": [
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "mqlmy35i6ts5m6kremj",
-        "subtaskId": "mqtpz9i5y4k0iwvglxi",
-        "time": null,
-        "scheduledAt": "2026-06-25T16:31:45.629Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-25T20:19:16.762Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-30": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7489,6 +7412,22 @@
         "time": null,
         "scheduledAt": "2026-09-23T23:13:24.452Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-09-25T17:17:06.002Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mueefi2pp63isc2vuzs",
+        "subtaskId": "mueepctc934jpl72ane",
+        "time": null,
+        "scheduledAt": "2026-09-25T17:17:06.028Z",
+        "completedOnDay": false
       }
     ],
     "2026-09-30": [
@@ -7510,93 +7449,9 @@
         "scheduledAt": "2026-09-21T18:55:58.357Z",
         "completedOnDay": false
       }
-    ],
-    "2026-09-26": [
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-09-25T17:16:59.065Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mueefi2pp63isc2vuzs",
-        "subtaskId": "mueepctc934jpl72ane",
-        "time": null,
-        "scheduledAt": "2026-09-25T17:16:59.067Z",
-        "completedOnDay": false
-      }
     ]
   },
   "completedTasks": [
-    {
-      "id": "mqsf20ifvno6yoki9kk",
-      "title": "HITSLIMS project submission for gap fill + neutrophil and monocyte + CD4",
-      "completedAt": "2026-06-25T15:51:10.534Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-24"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhry7jezeridb1ny7",
-      "subtaskId": "mpyrqzt1v3cmkvltwt7",
-      "completedAt": "2026-06-25T15:53:29.707Z",
-      "completionNotes": "Got derailed by i7 mechanical issues.  Samples are lysed on beads and in wash buffer 1.  Need to get timeline to i7 repair before deciding how to continue. ",
-      "completionLinks": "",
-      "date": "2026-06-24"
-    },
-    {
-      "id": "mqtpwpuntyr8ifgjw7h",
-      "title": "image analysis update for pTox Org dis",
-      "completedAt": "2026-06-25T20:19:11.826Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-25"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "mqlmy35i6ts5m6kremj",
-      "subtaskId": "mqtpz9i5y4k0iwvglxi",
-      "completedAt": "2026-06-25T20:19:16.763Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-25"
-    },
-    {
-      "id": "mqtpx29rpz9ocar4ht",
-      "title": "QC on Neutrophil and monocyte D2s",
-      "completedAt": "2026-06-26T21:46:02.453Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-25"
-    },
-    {
-      "id": "mqvgjkpv2agkkzid4j6",
-      "title": "meet w Juliette",
-      "completedAt": "2026-06-26T21:48:07.789Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-26"
-    },
-    {
-      "id": "mqvgju9zm2wyvvfcy39",
-      "title": "Advanteon training",
-      "completedAt": "2026-06-26T21:48:11.951Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-26"
-    },
-    {
-      "id": "mqvgk3hfia9qtwp76yb",
-      "title": "Qiao 1-on-1",
-      "completedAt": "2026-06-26T21:48:15.724Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-26"
-    },
     {
       "id": "mqzctya23sab4rx2o0k",
       "title": "Receive T cells from Hillsboro ",
@@ -9179,7 +9034,7 @@
       "date": "2026-09-24"
     }
   ],
-  "lastUpdated": "2026-09-25T17:16:59.067Z",
+  "lastUpdated": "2026-09-25T17:17:06.028Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
