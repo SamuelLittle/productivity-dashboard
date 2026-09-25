@@ -7398,14 +7398,6 @@
     ],
     "2026-09-25": [
       {
-        "projectId": "mu39fvpuyhq2d4m1yxe",
-        "taskId": "mu39h64xcq13625mqt8",
-        "subtaskId": "mu39hyqtveridoixwo",
-        "time": null,
-        "scheduledAt": "2026-09-21T18:49:58.936Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "msot0q1x8axc96qhr7l",
         "subtaskId": "mu39lwgzpk63mjxhg5",
@@ -7447,6 +7439,14 @@
         "subtaskId": "mublvonphj141vcem7e",
         "time": null,
         "scheduledAt": "2026-09-21T18:55:58.357Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mu39fvpuyhq2d4m1yxe",
+        "taskId": "mu39h64xcq13625mqt8",
+        "subtaskId": "mu39hyqtveridoixwo",
+        "time": null,
+        "scheduledAt": "2026-09-25T20:01:18.951Z",
         "completedOnDay": false
       }
     ]
@@ -9034,7 +9034,7 @@
       "date": "2026-09-24"
     }
   ],
-  "lastUpdated": "2026-09-25T17:17:06.028Z",
+  "lastUpdated": "2026-09-25T20:01:18.951Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
