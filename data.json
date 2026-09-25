@@ -4100,8 +4100,11 @@
               "title": "iMg RNA extraction",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-21T18:55:02.261Z"
+              "completed": true,
+              "createdAt": "2026-09-21T18:55:02.261Z",
+              "completedAt": "2026-09-25T17:16:47.066Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mublv274p0n5sh1fil",
@@ -7450,7 +7453,10 @@
         "subtaskId": "mubluhdhy3lovirk65",
         "time": null,
         "scheduledAt": "2026-09-23T23:05:35.145Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-25T17:16:47.065Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9134,9 +9140,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-23"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mthfvhiuze0mw8hl3h",
+      "subtaskId": "mubluhdhy3lovirk65",
+      "completedAt": "2026-09-25T17:16:47.066Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-09-24"
     }
   ],
-  "lastUpdated": "2026-09-23T23:14:01.932Z",
+  "lastUpdated": "2026-09-25T17:16:47.066Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
