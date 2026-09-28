@@ -5419,32 +5419,6 @@
     }
   ],
   "dailyLists": {
-    "2026-06-29": [
-      {
-        "id": "mqtpxqfy8k7yyen1xng",
-        "title": "Metadata for GapFill + Neutrophil Screening",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "completedAt": "2026-06-29T23:36:34.864Z",
-        "time": null,
-        "createdAt": "2026-06-25T16:30:34.270Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mqzctya23sab4rx2o0k",
-        "title": "Receive T cells from Hillsboro ",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-06-29T15:10:19.851Z",
-        "time": null,
-        "completedAt": "2026-06-29T18:42:55.456Z",
-        "completionNotes": "placed in LN\n",
-        "completionLinks": ""
-      }
-    ],
     "2026-07-02": [
       {
         "id": "mqzv1bci1yw3cho0ztp",
@@ -6535,22 +6509,20 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-09-29": [
+      {
+        "id": "mulu94boamhigsc0hr9",
+        "title": "Email Pratiksha",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-09-28T22:48:03.877Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
-    "2026-06-29": [
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "mqlmy35i6ts5m6kremj",
-        "subtaskId": "mqyg0j60nh76hlhelih",
-        "time": null,
-        "scheduledAt": "2026-06-28T23:51:49.904Z",
-        "completedOnDay": true,
-        "completedAt": "2026-06-29T23:36:31.482Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-06-30": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7537,31 +7509,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "id": "mqzctya23sab4rx2o0k",
-      "title": "Receive T cells from Hillsboro ",
-      "completedAt": "2026-06-29T18:42:55.457Z",
-      "completionNotes": "placed in LN\n",
-      "completionLinks": "",
-      "date": "2026-06-29"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "mqlmy35i6ts5m6kremj",
-      "subtaskId": "mqyg0j60nh76hlhelih",
-      "completedAt": "2026-06-29T23:36:31.482Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-29"
-    },
-    {
-      "id": "mqtpxqfy8k7yyen1xng",
-      "title": "Metadata for GapFill + Neutrophil Screening",
-      "completedAt": "2026-06-29T23:36:34.864Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-29"
-    },
     {
       "projectId": "mkltv6xwvh4ltoqkes",
       "taskId": "mpxhry7jezeridb1ny7",
@@ -9153,7 +9100,7 @@
       "date": "2026-09-28"
     }
   ],
-  "lastUpdated": "2026-09-28T22:47:44.697Z",
+  "lastUpdated": "2026-09-28T22:48:03.877Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
