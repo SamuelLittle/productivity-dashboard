@@ -7433,16 +7433,6 @@
         "completionLinks": "https://docs.google.com/presentation/d/1Meowla-URtvYa5RHoUMQXdkpJhmPgNymVevBmhif8SY/edit?slide=id.g3fba75b0f8d_0_24#slide=id.g3fba75b0f8d_0_24"
       }
     ],
-    "2026-09-25": [
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-09-25T17:17:06.002Z",
-        "completedOnDay": false
-      }
-    ],
     "2026-10-01": [
       {
         "projectId": "mu39fvpuyhq2d4m1yxe",
@@ -7488,14 +7478,6 @@
     "2026-09-29": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mueefi2pp63isc2vuzs",
-        "subtaskId": "mueepctc934jpl72ane",
-        "time": null,
-        "scheduledAt": "2026-09-25T20:01:37.069Z",
-        "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "msot0q1x8axc96qhr7l",
         "subtaskId": "mumtz5zg2m86ej1bsua",
         "time": null,
@@ -7518,6 +7500,22 @@
         "subtaskId": "muhj8kscli23ltb4el",
         "time": null,
         "scheduledAt": "2026-09-28T22:48:32.929Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-09-29T22:38:55.377Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mueefi2pp63isc2vuzs",
+        "subtaskId": "mueepctc934jpl72ane",
+        "time": null,
+        "scheduledAt": "2026-09-29T22:38:55.410Z",
         "completedOnDay": false
       }
     ]
@@ -9122,7 +9120,7 @@
       "date": "2026-09-29"
     }
   ],
-  "lastUpdated": "2026-09-29T22:38:47.144Z",
+  "lastUpdated": "2026-09-29T22:38:55.410Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
