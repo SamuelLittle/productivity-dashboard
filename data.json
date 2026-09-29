@@ -1567,7 +1567,7 @@
           "title": "iRPE screening",
           "description": "",
           "priority": "medium",
-          "completed": true,
+          "completed": false,
           "createdAt": "2026-09-15T15:38:44.935Z",
           "subtasks": [
             {
@@ -1623,9 +1623,9 @@
               "createdAt": "2026-09-29T15:28:28.168Z"
             }
           ],
-          "completedAt": "2026-09-21T18:58:08.354Z",
-          "completionNotes": "",
-          "completionLinks": ""
+          "completedAt": null,
+          "completionNotes": null,
+          "completionLinks": null
         },
         {
           "id": "mueefi2pp63isc2vuzs",
@@ -9111,7 +9111,7 @@
       "date": "2026-09-28"
     }
   ],
-  "lastUpdated": "2026-09-29T15:28:34.706Z",
+  "lastUpdated": "2026-09-29T15:28:41.246Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
