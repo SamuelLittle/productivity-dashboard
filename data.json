@@ -6556,27 +6556,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-07-01": [
-      {
-        "projectId": "mklu1lye4czo9brjznq",
-        "taskId": "movkm4r357gxwt3fz3f",
-        "subtaskId": "mqtpywxmkudk488eixg",
-        "time": null,
-        "scheduledAt": "2026-06-26T21:45:53.002Z",
-        "completedOnDay": true,
-        "completedAt": "2026-07-01T21:40:55.004Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mpxhry7jezeridb1ny7",
-        "subtaskId": "mqlnhhfoiax3wi0rch",
-        "time": null,
-        "scheduledAt": "2026-07-03T14:37:11.402Z",
-        "completedOnDay": false
-      }
-    ],
     "2026-07-06": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7449,14 +7428,6 @@
     ],
     "2026-10-01": [
       {
-        "projectId": "mu39fvpuyhq2d4m1yxe",
-        "taskId": "mu39h64xcq13625mqt8",
-        "subtaskId": "mu39hyqtveridoixwo",
-        "time": null,
-        "scheduledAt": "2026-09-25T20:01:18.951Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "",
         "taskId": "",
         "subtaskId": null,
@@ -7528,27 +7499,19 @@
         "completionNotes": "Ordered Blood from 3 donors for Oct 13\n",
         "completionLinks": ""
       }
+    ],
+    "2026-10-02": [
+      {
+        "projectId": "mu39fvpuyhq2d4m1yxe",
+        "taskId": "mu39h64xcq13625mqt8",
+        "subtaskId": "mu39hyqtveridoixwo",
+        "time": null,
+        "scheduledAt": "2026-09-30T22:53:53.573Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhry7jezeridb1ny7",
-      "subtaskId": "mr195fhtffbqfb9yyci",
-      "completedAt": "2026-07-01T21:40:24.338Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-06-30"
-    },
-    {
-      "projectId": "mklu1lye4czo9brjznq",
-      "taskId": "movkm4r357gxwt3fz3f",
-      "subtaskId": "mqtpywxmkudk488eixg",
-      "completedAt": "2026-07-01T21:40:55.004Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-01"
-    },
     {
       "projectId": "mkltv6xwvh4ltoqkes",
       "taskId": "mpxhry7jezeridb1ny7",
@@ -9148,7 +9111,7 @@
       "date": "2026-09-30"
     }
   ],
-  "lastUpdated": "2026-09-30T22:53:35.715Z",
+  "lastUpdated": "2026-09-30T22:53:53.573Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
