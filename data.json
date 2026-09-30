@@ -1648,6 +1648,15 @@
             }
           ],
           "tentativeWindow": null
+        },
+        {
+          "id": "muopcxjnwie5zwx7zkq",
+          "title": "Treatment Plate Reorg",
+          "description": "",
+          "priority": "medium",
+          "completed": false,
+          "createdAt": "2026-09-30T22:54:22.163Z",
+          "subtasks": []
         }
       ],
       "progressUpdates": [
@@ -9111,7 +9120,7 @@
       "date": "2026-09-30"
     }
   ],
-  "lastUpdated": "2026-09-30T22:53:53.573Z",
+  "lastUpdated": "2026-09-30T22:54:22.164Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
