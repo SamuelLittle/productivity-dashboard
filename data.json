@@ -5424,8 +5424,11 @@
               "title": "Benchcell takedown and Wash 1 protocol optimization",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-25T22:28:38.076Z"
+              "completed": true,
+              "createdAt": "2026-09-25T22:28:38.076Z",
+              "completedAt": "2026-09-30T22:53:12.425Z",
+              "completionNotes": "Made good progress on this with respect to using the magnetic rack on the benchcell. More is needed. ",
+              "completionLinks": ""
             },
             {
               "id": "muopadhraocxtslyol4",
@@ -7506,7 +7509,10 @@
         "subtaskId": "muhj8kscli23ltb4el",
         "time": null,
         "scheduledAt": "2026-09-28T22:48:32.929Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-09-30T22:53:12.425Z",
+        "completionNotes": "Made good progress on this with respect to using the magnetic rack on the benchcell. More is needed. ",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9116,9 +9122,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-09-29"
+    },
+    {
+      "projectId": "mu72dgvjcoi9jfphbqp",
+      "taskId": "mu72e4k7u4fl68ve7l",
+      "subtaskId": "muhj8kscli23ltb4el",
+      "completedAt": "2026-09-30T22:53:12.425Z",
+      "completionNotes": "Made good progress on this with respect to using the magnetic rack on the benchcell. More is needed. ",
+      "completionLinks": "",
+      "date": "2026-09-30"
     }
   ],
-  "lastUpdated": "2026-09-30T22:52:22.863Z",
+  "lastUpdated": "2026-09-30T22:53:12.425Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
