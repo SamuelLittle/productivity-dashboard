@@ -5426,6 +5426,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-09-25T22:28:38.076Z"
+            },
+            {
+              "id": "muopadhraocxtslyol4",
+              "title": "Benchcell takedown and Wash 1 protocol optimization cont. ",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-30T22:52:22.863Z"
             }
           ]
         }
@@ -7457,6 +7465,14 @@
         "time": null,
         "scheduledAt": "2026-09-30T21:58:14.189Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mu72dgvjcoi9jfphbqp",
+        "taskId": "mu72e4k7u4fl68ve7l",
+        "subtaskId": "muopadhraocxtslyol4",
+        "time": null,
+        "scheduledAt": "2026-09-30T22:52:22.863Z",
+        "completedOnDay": false
       }
     ],
     "2026-09-28": [
@@ -9102,7 +9118,7 @@
       "date": "2026-09-29"
     }
   ],
-  "lastUpdated": "2026-09-30T21:58:18.702Z",
+  "lastUpdated": "2026-09-30T22:52:22.863Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
