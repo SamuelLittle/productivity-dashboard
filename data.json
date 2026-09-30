@@ -1680,6 +1680,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-09-30T22:55:34.328Z"
+            },
+            {
+              "id": "muopesnoqwevv1ekti",
+              "title": "Treatment plate remake planning",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-30T22:55:49.140Z"
             }
           ]
         }
@@ -7484,6 +7492,14 @@
         "time": null,
         "scheduledAt": "2026-09-30T22:52:22.863Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "muopcxjnwie5zwx7zkq",
+        "subtaskId": "muopesnoqwevv1ekti",
+        "time": null,
+        "scheduledAt": "2026-09-30T22:55:49.140Z",
+        "completedOnDay": false
       }
     ],
     "2026-09-28": [
@@ -9145,7 +9161,7 @@
       "date": "2026-09-30"
     }
   ],
-  "lastUpdated": "2026-09-30T22:55:34.328Z",
+  "lastUpdated": "2026-09-30T22:55:49.140Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
