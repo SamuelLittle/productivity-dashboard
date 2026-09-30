@@ -1656,7 +1656,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-09-30T22:54:22.163Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "muopdc0llg69f44wot9",
+              "title": "Custom Treatment Plate for Mast cells needed",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-09-30T22:54:40.917Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [
@@ -9120,7 +9129,7 @@
       "date": "2026-09-30"
     }
   ],
-  "lastUpdated": "2026-09-30T22:54:22.164Z",
+  "lastUpdated": "2026-09-30T22:54:40.917Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
