@@ -5491,32 +5491,6 @@
     }
   ],
   "dailyLists": {
-    "2026-07-02": [
-      {
-        "id": "mqzv1bci1yw3cho0ztp",
-        "title": "Fixed DLD1 rna extraction pilot",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "completedAt": "2026-07-03T04:50:52.424Z",
-        "time": null,
-        "createdAt": "2026-06-29T23:39:56.467Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mr4gh1nn66avv0u1p7e",
-        "title": "CD4 D1 QC",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-03T04:51:07.044Z",
-        "time": null,
-        "completedAt": "2026-07-03T04:51:18.427Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-07-03": [
       {
         "id": "mqzuxeujefolk2930d5",
@@ -6504,6 +6478,15 @@
         "priority": "medium",
         "completed": false,
         "createdAt": "2026-09-25T22:29:00.764Z",
+        "time": null
+      },
+      {
+        "id": "mupvmp5nr6h58c1klzl",
+        "title": "Send out Cytokine Screen monthly meeting agenda",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-10-01T18:37:41.723Z",
         "time": null
       }
     ],
@@ -9161,7 +9144,7 @@
       "date": "2026-09-30"
     }
   ],
-  "lastUpdated": "2026-09-30T22:55:49.140Z",
+  "lastUpdated": "2026-10-01T18:37:41.723Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
