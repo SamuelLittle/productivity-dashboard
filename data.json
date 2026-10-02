@@ -7533,13 +7533,13 @@
         "completionLinks": ""
       }
     ],
-    "2026-10-02": [
+    "2026-10-05": [
       {
         "projectId": "mu39fvpuyhq2d4m1yxe",
         "taskId": "mu39h64xcq13625mqt8",
         "subtaskId": "mu39hyqtveridoixwo",
         "time": null,
-        "scheduledAt": "2026-09-30T22:53:53.573Z",
+        "scheduledAt": "2026-10-02T20:26:19.527Z",
         "completedOnDay": false
       }
     ]
@@ -9144,7 +9144,7 @@
       "date": "2026-09-30"
     }
   ],
-  "lastUpdated": "2026-10-01T18:37:41.723Z",
+  "lastUpdated": "2026-10-02T20:26:19.527Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
