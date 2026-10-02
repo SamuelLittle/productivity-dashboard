@@ -6467,9 +6467,12 @@
         "title": "Poster Due",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-09-21T19:03:54.375Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-10-02T20:26:30.186Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "muhj92akio1k6elqvx",
@@ -9153,9 +9156,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-02"
+    },
+    {
+      "id": "mubm5vye9rh6r0fwq3",
+      "title": "Poster Due",
+      "completedAt": "2026-10-02T20:26:30.186Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-02"
     }
   ],
-  "lastUpdated": "2026-10-02T20:26:26.240Z",
+  "lastUpdated": "2026-10-02T20:26:30.186Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
