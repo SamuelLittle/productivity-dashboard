@@ -5497,8 +5497,11 @@
               "title": "Wash 1 to completion Bravo protocol",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-10-05T15:16:53.733Z"
+              "completed": true,
+              "createdAt": "2026-10-05T15:16:53.733Z",
+              "completedAt": "2026-10-05T22:17:15.508Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -7511,7 +7514,10 @@
         "subtaskId": "muve7vj9wawwfa8mha",
         "time": null,
         "scheduledAt": "2026-10-05T15:17:14.612Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-10-05T22:17:15.507Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-10-06": [
@@ -9132,9 +9138,18 @@
       "subtaskId": "muopeh88izavu79iwa",
       "title": "Standard Treatment plate for AT2s needed. ",
       "completedAt": "2026-10-05T15:15:58.193Z"
+    },
+    {
+      "projectId": "mu72dgvjcoi9jfphbqp",
+      "taskId": "mu72e4k7u4fl68ve7l",
+      "subtaskId": "muve7vj9wawwfa8mha",
+      "completedAt": "2026-10-05T22:17:15.508Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-05"
     }
   ],
-  "lastUpdated": "2026-10-05T15:17:14.612Z",
+  "lastUpdated": "2026-10-05T22:17:15.508Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
