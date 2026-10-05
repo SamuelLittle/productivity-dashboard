@@ -6451,15 +6451,6 @@
         "completedAt": "2026-10-02T20:26:26.240Z",
         "completionNotes": "",
         "completionLinks": ""
-      },
-      {
-        "id": "mupvmp5nr6h58c1klzl",
-        "title": "Send out Cytokine Screen monthly meeting agenda",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "createdAt": "2026-10-01T18:37:41.723Z",
-        "time": null
       }
     ],
     "2026-10-19": [
@@ -6549,6 +6540,18 @@
         "completedAt": "2026-09-29T22:38:47.144Z",
         "completionNotes": "",
         "completionLinks": ""
+      }
+    ],
+    "2026-10-05": [
+      {
+        "id": "mupvmp5nr6h58c1klzl",
+        "title": "Send out Cytokine Screen monthly meeting agenda",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-10-01T18:37:41.723Z"
       }
     ]
   },
@@ -9095,7 +9098,7 @@
       "date": "2026-10-01"
     }
   ],
-  "lastUpdated": "2026-10-05T15:14:05.289Z",
+  "lastUpdated": "2026-10-05T15:14:05.311Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
