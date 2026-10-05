@@ -1186,6 +1186,46 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-07-03": [
+      {
+        "id": "mqzuxeujefolk2930d5",
+        "title": "extract RNA from DLD1s",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "completedAt": "2026-07-06T15:22:56.132Z",
+        "time": null,
+        "createdAt": "2026-06-29T23:36:54.380Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-07-06": [
+      {
+        "id": "mr9dfoqczs1zvklapv",
+        "title": "Thaw PBMCs and isolate monocytes for fixed RNA extraction",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-06T15:24:55.669Z",
+        "time": null,
+        "completedAt": "2026-07-06T23:56:29.506Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "mr9dgl421aon9di0g4x",
+        "title": "Prep for cytokine screen meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-06T15:25:37.634Z",
+        "time": null,
+        "completedAt": "2026-07-07T23:55:04.970Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
     ]
   },
   "scheduledItems": {
@@ -3797,6 +3837,19 @@
         "time": null,
         "scheduledAt": "2026-07-03T14:37:11.402Z",
         "completedOnDay": false
+      }
+    ],
+    "2026-07-06": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mpxhry7jezeridb1ny7",
+        "subtaskId": "mqlnai1efzoslq4ecu4",
+        "time": null,
+        "scheduledAt": "2026-07-02T18:26:02.748Z",
+        "completedOnDay": true,
+        "completedAt": "2026-07-06T23:56:33.862Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -6835,6 +6888,56 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-01"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": "mqlnhhfoiax3wi0rch",
+      "completedAt": "2026-07-03T04:50:45.330Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-01"
+    },
+    {
+      "id": "mqzv1bci1yw3cho0ztp",
+      "title": "Fixed DLD1 rna extraction pilot",
+      "completedAt": "2026-07-03T04:50:52.424Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-02"
+    },
+    {
+      "id": "mr4gh1nn66avv0u1p7e",
+      "title": "CD4 D1 QC",
+      "completedAt": "2026-07-03T04:51:18.427Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-02"
+    },
+    {
+      "id": "mqzuxeujefolk2930d5",
+      "title": "extract RNA from DLD1s",
+      "completedAt": "2026-07-06T15:22:56.132Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-03"
+    },
+    {
+      "id": "mr9dfoqczs1zvklapv",
+      "title": "Thaw PBMCs and isolate monocytes for fixed RNA extraction",
+      "completedAt": "2026-07-06T23:56:29.506Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-06"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mpxhry7jezeridb1ny7",
+      "subtaskId": "mqlnai1efzoslq4ecu4",
+      "completedAt": "2026-07-06T23:56:33.863Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-06"
     }
   ]
 }
