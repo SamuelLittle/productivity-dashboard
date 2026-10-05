@@ -6574,9 +6574,12 @@
         "title": "PARS order",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-10-05T22:17:27.777Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-10-05T22:55:20.946Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -9166,9 +9169,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-05"
+    },
+    {
+      "id": "muvt8q8x574qinlw5k4",
+      "title": "PARS order",
+      "completedAt": "2026-10-05T22:55:20.946Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-05"
     }
   ],
-  "lastUpdated": "2026-10-05T22:17:27.777Z",
+  "lastUpdated": "2026-10-05T22:55:20.946Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
