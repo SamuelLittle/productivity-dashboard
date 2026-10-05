@@ -5491,6 +5491,14 @@
               "completedAt": "2026-10-05T15:13:46.398Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "muve7vj9wawwfa8mha",
+              "title": "Wash 1 to completion Bravo protocol",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-10-05T15:16:53.733Z"
             }
           ]
         }
@@ -9116,7 +9124,7 @@
       "completedAt": "2026-10-05T15:15:58.193Z"
     }
   ],
-  "lastUpdated": "2026-10-05T15:15:58.193Z",
+  "lastUpdated": "2026-10-05T15:16:53.733Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
