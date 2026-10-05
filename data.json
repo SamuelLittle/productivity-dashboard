@@ -1678,8 +1678,11 @@
               "title": "Standard Treatment plate for AT2s needed. ",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-30T22:55:34.328Z"
+              "completed": true,
+              "createdAt": "2026-09-30T22:55:34.328Z",
+              "completedAt": "2026-10-05T15:15:58.193Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "muopesnoqwevv1ekti",
@@ -9104,9 +9107,16 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-01"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "muopcxjnwie5zwx7zkq",
+      "subtaskId": "muopeh88izavu79iwa",
+      "title": "Standard Treatment plate for AT2s needed. ",
+      "completedAt": "2026-10-05T15:15:58.193Z"
     }
   ],
-  "lastUpdated": "2026-10-05T15:14:26.449Z",
+  "lastUpdated": "2026-10-05T15:15:58.193Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
