@@ -5502,6 +5502,14 @@
               "completedAt": "2026-10-05T22:17:15.508Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "muvv42aq061zyna1q6wj",
+              "title": "384 RNA extraction test run",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-10-05T23:09:49.346Z"
             }
           ]
         }
@@ -7553,6 +7561,14 @@
         "time": null,
         "scheduledAt": "2026-10-05T15:13:59.316Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mu72dgvjcoi9jfphbqp",
+        "taskId": "mu72e4k7u4fl68ve7l",
+        "subtaskId": "muvv42aq061zyna1q6wj",
+        "time": null,
+        "scheduledAt": "2026-10-05T23:09:49.347Z",
+        "completedOnDay": false
       }
     ],
     "2026-10-07": [
@@ -9192,7 +9208,7 @@
       "date": "2026-10-05"
     }
   ],
-  "lastUpdated": "2026-10-05T22:55:53.874Z",
+  "lastUpdated": "2026-10-05T23:09:49.347Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
