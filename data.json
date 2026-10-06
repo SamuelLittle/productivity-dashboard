@@ -6572,9 +6572,12 @@
         "title": "Thaw PBMCs for RNA extraction and fixed cell imaging",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-10-06T01:06:58.800Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-10-06T21:29:55.910Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -9162,9 +9165,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-06"
+    },
+    {
+      "id": "muvzaq9c0ppno62jw3u9",
+      "title": "Thaw PBMCs for RNA extraction and fixed cell imaging",
+      "completedAt": "2026-10-06T21:29:55.910Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-06"
     }
   ],
-  "lastUpdated": "2026-10-06T21:29:50.516Z",
+  "lastUpdated": "2026-10-06T21:29:55.910Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
