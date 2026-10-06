@@ -5508,8 +5508,11 @@
               "title": "384 RNA extraction test run",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-10-05T23:09:49.346Z"
+              "completed": true,
+              "createdAt": "2026-10-05T23:09:49.346Z",
+              "completedAt": "2026-10-06T21:29:50.516Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -7541,7 +7544,10 @@
         "subtaskId": "muvv42aq061zyna1q6wj",
         "time": null,
         "scheduledAt": "2026-10-05T23:09:49.347Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-10-06T21:29:50.515Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-10-07": [
@@ -9147,9 +9153,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-05"
+    },
+    {
+      "projectId": "mu72dgvjcoi9jfphbqp",
+      "taskId": "mu72e4k7u4fl68ve7l",
+      "subtaskId": "muvv42aq061zyna1q6wj",
+      "completedAt": "2026-10-06T21:29:50.516Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-06"
     }
   ],
-  "lastUpdated": "2026-10-06T01:06:58.800Z",
+  "lastUpdated": "2026-10-06T21:29:50.516Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
