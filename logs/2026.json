@@ -1226,6 +1226,44 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-07-07": [
+      {
+        "id": "mr9dgdrggzo2lzbzuwq",
+        "title": "COPD cytokine screen meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-06T15:25:28.109Z",
+        "time": null,
+        "completedAt": "2026-07-07T17:12:07.616Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "mr9dlf283qeve85gkhj",
+        "title": "Qiao 1-on-1",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-06T15:29:23.072Z",
+        "time": null,
+        "completedAt": "2026-07-07T19:29:00.576Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "mr9dluvezcife1w4s",
+        "title": "Scrum",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-06T15:29:43.562Z",
+        "time": "15:00",
+        "completedAt": "2026-07-07T23:54:44.842Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
     ]
   },
   "scheduledItems": {
@@ -6935,6 +6973,38 @@
       "taskId": "mpxhry7jezeridb1ny7",
       "subtaskId": "mqlnai1efzoslq4ecu4",
       "completedAt": "2026-07-06T23:56:33.863Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-06"
+    },
+    {
+      "id": "mr9dgdrggzo2lzbzuwq",
+      "title": "COPD cytokine screen meeting",
+      "completedAt": "2026-07-07T17:12:07.617Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-07"
+    },
+    {
+      "id": "mr9dlf283qeve85gkhj",
+      "title": "Qiao 1-on-1",
+      "completedAt": "2026-07-07T19:29:00.576Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-07"
+    },
+    {
+      "id": "mr9dluvezcife1w4s",
+      "title": "Scrum",
+      "completedAt": "2026-07-07T23:54:44.842Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-07"
+    },
+    {
+      "id": "mr9dgl421aon9di0g4x",
+      "title": "Prep for cytokine screen meeting",
+      "completedAt": "2026-07-07T23:55:04.970Z",
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-06"
