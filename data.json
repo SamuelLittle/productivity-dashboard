@@ -1557,8 +1557,11 @@
               "title": "cDNA QC",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-29T15:28:05.644Z"
+              "completed": true,
+              "createdAt": "2026-09-29T15:28:05.644Z",
+              "completedAt": "2026-10-07T20:19:55.308Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -7602,7 +7605,10 @@
         "subtaskId": "mumtz5zg2m86ej1bsua",
         "time": null,
         "scheduledAt": "2026-10-07T15:24:59.955Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-10-07T20:19:55.308Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-10-08": [
@@ -9232,9 +9238,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-07"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "msot0q1x8axc96qhr7l",
+      "subtaskId": "mumtz5zg2m86ej1bsua",
+      "completedAt": "2026-10-07T20:19:55.308Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-07"
     }
   ],
-  "lastUpdated": "2026-10-07T20:18:05.588Z",
+  "lastUpdated": "2026-10-07T20:19:55.308Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
