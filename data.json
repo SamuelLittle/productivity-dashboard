@@ -1656,6 +1656,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-10-08T22:37:54.217Z"
+            },
+            {
+              "id": "mv04bwd9i3g8915hcx",
+              "title": "24 hr cytokine treatment",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-10-08T22:38:56.157Z"
             }
           ],
           "tentativeWindow": null
@@ -7596,6 +7604,16 @@
         "scheduledAt": "2026-10-08T22:38:10.393Z",
         "completedOnDay": false
       }
+    ],
+    "2026-10-14": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mueefi2pp63isc2vuzs",
+        "subtaskId": "mv04bwd9i3g8915hcx",
+        "time": null,
+        "scheduledAt": "2026-10-08T22:38:56.157Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -9211,7 +9229,7 @@
       "date": "2026-10-08"
     }
   ],
-  "lastUpdated": "2026-10-08T22:38:10.394Z",
+  "lastUpdated": "2026-10-08T22:38:56.157Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
