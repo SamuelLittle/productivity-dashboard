@@ -1673,8 +1673,11 @@
               "title": "Custom treatment plate for T cells needed. ",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-30T22:54:59.146Z"
+              "completed": true,
+              "createdAt": "2026-09-30T22:54:59.146Z",
+              "completedAt": "2026-10-08T21:45:35.866Z",
+              "completionNotes": "made and stored at -80\n",
+              "completionLinks": ""
             },
             {
               "id": "muopeh88izavu79iwa",
@@ -7544,7 +7547,10 @@
         "subtaskId": "muopdq2yp1dg5n7vfhc",
         "time": null,
         "scheduledAt": "2026-10-05T15:14:26.449Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-10-08T21:45:35.866Z",
+        "completionNotes": "made and stored at -80\n",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9166,9 +9172,18 @@
       "completionNotes": "cells fixed - still need to image. ",
       "completionLinks": "",
       "date": "2026-10-07"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "muopcxjnwie5zwx7zkq",
+      "subtaskId": "muopdq2yp1dg5n7vfhc",
+      "completedAt": "2026-10-08T21:45:35.866Z",
+      "completionNotes": "made and stored at -80\n",
+      "completionLinks": "",
+      "date": "2026-10-08"
     }
   ],
-  "lastUpdated": "2026-10-08T16:11:57.140Z",
+  "lastUpdated": "2026-10-08T21:45:35.866Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
