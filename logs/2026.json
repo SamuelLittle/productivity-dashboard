@@ -1290,6 +1290,68 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-07-09": [
+      {
+        "id": "mr9dnxl4aeuqn29poah",
+        "title": "iMG screening discussion w/ Qiao + Jenny + Sylvia",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-06T15:31:20.392Z",
+        "time": "16:00",
+        "completedAt": "2026-07-13T16:10:05.367Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "mrbbb05dnsedmnhnh2",
+        "title": "Spyros Seminar",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-08T00:00:50.305Z",
+        "time": null,
+        "completedAt": "2026-07-09T18:18:47.041Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "mr9dt73rwuva0t74dq",
+        "title": "Complete and submit monocytes + neutrophils + CD4s + GapFill to NGS",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "completedAt": "2026-07-13T16:09:59.346Z",
+        "time": null,
+        "createdAt": "2026-07-06T15:35:26.007Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "mqzcusbfzxda8ch9a7",
+        "title": "Plan pilot for NK-T positive controls. ",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "completedAt": "2026-07-13T16:10:12.042Z",
+        "time": null,
+        "createdAt": "2026-06-29T15:10:58.779Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "mrdtz67feb5yyumsp57",
+        "title": "iRPE RNA extraction pilot",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-09T18:19:03.339Z",
+        "time": null,
+        "completedAt": "2026-07-09T21:19:02.957Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
     ]
   },
   "scheduledItems": {
@@ -7034,6 +7096,38 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-06"
+    },
+    {
+      "id": "mr9dogmlx93quaytmc",
+      "title": "org disc. meeting",
+      "completedAt": "2026-07-09T14:47:55.482Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-08"
+    },
+    {
+      "id": "mrbb41o323alardf9fc",
+      "title": "QC CD4 D2",
+      "completedAt": "2026-07-09T14:48:01.685Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-08"
+    },
+    {
+      "id": "mrbbb05dnsedmnhnh2",
+      "title": "Spyros Seminar",
+      "completedAt": "2026-07-09T18:18:47.042Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-09"
+    },
+    {
+      "id": "mrdtz67feb5yyumsp57",
+      "title": "iRPE RNA extraction pilot",
+      "completedAt": "2026-07-09T21:19:02.957Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-09"
     }
   ]
 }
