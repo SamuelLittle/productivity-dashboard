@@ -3089,8 +3089,8 @@
           "createdAt": "2026-09-23T17:52:55.782Z",
           "subtasks": [],
           "tentativeWindow": {
-            "start": "2026-10-12",
-            "end": "2026-10-16"
+            "start": "2026-11-02",
+            "end": "2026-11-06"
           }
         }
       ],
@@ -9265,7 +9265,7 @@
       "date": "2026-10-08"
     }
   ],
-  "lastUpdated": "2026-10-08T22:39:48.317Z",
+  "lastUpdated": "2026-10-08T22:56:10.046Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
