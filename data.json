@@ -1738,8 +1738,11 @@
               "title": "Make master source plate",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-10-08T16:11:50.621Z"
+              "completed": true,
+              "createdAt": "2026-10-08T16:11:50.621Z",
+              "completedAt": "2026-10-13T16:43:39.126Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -5603,108 +5606,6 @@
     }
   ],
   "dailyLists": {
-    "2026-07-10": [
-      {
-        "id": "mrbb4tsw0xbn71zy8j3r",
-        "title": "FG Director Presentation",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-07T23:56:02.144Z",
-        "time": "09:00",
-        "completedAt": "2026-07-13T16:10:18.604Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mrbb559dwtl430yuli",
-        "title": "FG Director Lunch",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-07T23:56:16.993Z",
-        "time": "12:00",
-        "completedAt": "2026-07-13T16:10:21.869Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-07-13": [
-      {
-        "id": "mrjio6igh7rdry12fn5",
-        "title": "Modify BLADE-R for full 384 well plate",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-13T17:49:11.801Z",
-        "time": null,
-        "completedAt": "2026-07-13T22:44:14.967Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mrjt7tcirl2ffdous2s",
-        "title": "Fridge Clean out",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-13T22:44:24.018Z",
-        "time": null,
-        "completedAt": "2026-07-13T22:44:29.427Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mrjtexpjje7q9guo7n",
-        "title": "ordered cytokine replacements for screen",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-13T22:49:56.263Z",
-        "time": null,
-        "completedAt": "2026-07-13T22:51:27.045Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-07-14": [
-      {
-        "id": "mrjt88dgtg4lc537vjn",
-        "title": "Team Scrum ",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-13T22:44:43.492Z",
-        "time": null,
-        "completedAt": "2026-07-14T20:51:11.832Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mrjt8dzy986p1xydgwk",
-        "title": "Qiao 1-on-1",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-13T22:44:50.782Z",
-        "time": null,
-        "completedAt": "2026-07-14T18:33:57.256Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mrjtj8899kgmamx5v0s",
-        "title": "org dis convo w/ Justin + Qiao",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-13T22:53:16.521Z",
-        "time": null,
-        "completedAt": "2026-07-15T18:13:38.406Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-07-15": [
       {
         "id": "mrjiohmzga1n4zvzg9u",
@@ -6587,19 +6488,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-07-10": [
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mrbb95ettw8a7w8gkjp",
-        "subtaskId": "mrbb9tauat1fpbnfvyf",
-        "time": null,
-        "scheduledAt": "2026-07-07T23:59:54.774Z",
-        "completedOnDay": true,
-        "completedAt": "2026-07-13T16:10:24.605Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-07-30": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -7603,7 +7491,10 @@
         "subtaskId": "muzqi3fhrfghur6kdtc",
         "time": null,
         "scheduledAt": "2026-10-08T16:11:50.621Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-10-13T16:43:39.126Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7666,95 +7557,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "id": "mr9dt73rwuva0t74dq",
-      "title": "Complete and submit monocytes + neutrophils + CD4s + GapFill to NGS",
-      "completedAt": "2026-07-13T16:09:59.347Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-09"
-    },
-    {
-      "id": "mr9dnxl4aeuqn29poah",
-      "title": "iMG screening discussion w/ Qiao + Jenny + Sylvia",
-      "completedAt": "2026-07-13T16:10:05.367Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-09"
-    },
-    {
-      "id": "mqzcusbfzxda8ch9a7",
-      "title": "Plan pilot for NK-T positive controls. ",
-      "completedAt": "2026-07-13T16:10:12.042Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-09"
-    },
-    {
-      "id": "mrbb4tsw0xbn71zy8j3r",
-      "title": "FG Director Presentation",
-      "completedAt": "2026-07-13T16:10:18.604Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-10"
-    },
-    {
-      "id": "mrbb559dwtl430yuli",
-      "title": "FG Director Lunch",
-      "completedAt": "2026-07-13T16:10:21.869Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-10"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mrbb95ettw8a7w8gkjp",
-      "subtaskId": "mrbb9tauat1fpbnfvyf",
-      "completedAt": "2026-07-13T16:10:24.605Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-10"
-    },
-    {
-      "id": "mrjio6igh7rdry12fn5",
-      "title": "Modify BLADE-R for full 384 well plate",
-      "completedAt": "2026-07-13T22:44:14.967Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-13"
-    },
-    {
-      "id": "mrjt7tcirl2ffdous2s",
-      "title": "Fridge Clean out",
-      "completedAt": "2026-07-13T22:44:29.427Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-13"
-    },
-    {
-      "id": "mrjtexpjje7q9guo7n",
-      "title": "ordered cytokine replacements for screen",
-      "completedAt": "2026-07-13T22:51:27.045Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-13"
-    },
-    {
-      "id": "mrjt8dzy986p1xydgwk",
-      "title": "Qiao 1-on-1",
-      "completedAt": "2026-07-14T18:33:57.257Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-14"
-    },
-    {
-      "id": "mrjt88dgtg4lc537vjn",
-      "title": "Team Scrum ",
-      "completedAt": "2026-07-14T20:51:11.832Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-14"
-    },
     {
       "id": "mrjtj8899kgmamx5v0s",
       "title": "org dis convo w/ Justin + Qiao",
@@ -9276,9 +9078,18 @@
       "completionNotes": "made and stored at -80\n",
       "completionLinks": "",
       "date": "2026-10-08"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "muopcxjnwie5zwx7zkq",
+      "subtaskId": "muzqi3fhrfghur6kdtc",
+      "completedAt": "2026-10-13T16:43:39.126Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-08"
     }
   ],
-  "lastUpdated": "2026-10-08T22:56:52.484Z",
+  "lastUpdated": "2026-10-13T16:43:39.126Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
