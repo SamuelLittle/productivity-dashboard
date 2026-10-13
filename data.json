@@ -6455,9 +6455,12 @@
         "title": "Bravo diss. w/ Ana + Brina",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-10-05T22:55:53.874Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-10-13T16:43:54.178Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-10-06": [
@@ -7487,14 +7490,6 @@
         "completedAt": "2026-10-13T16:43:39.126Z",
         "completionNotes": "",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "muopcxjnwie5zwx7zkq",
-        "subtaskId": "muopdc0llg69f44wot9",
-        "time": null,
-        "scheduledAt": "2026-10-08T16:11:57.140Z",
-        "completedOnDay": false
       }
     ],
     "2026-10-13": [
@@ -7512,6 +7507,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-10-13T16:43:48.342Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "muopcxjnwie5zwx7zkq",
+        "subtaskId": "muopdc0llg69f44wot9",
+        "time": null,
+        "scheduledAt": "2026-10-13T16:43:48.366Z",
         "completedOnDay": false
       }
     ],
@@ -9087,9 +9090,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-08"
+    },
+    {
+      "id": "muvum5n6xr2obg0uaob",
+      "title": "Bravo diss. w/ Ana + Brina",
+      "completedAt": "2026-10-13T16:43:54.178Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-09"
     }
   ],
-  "lastUpdated": "2026-10-13T16:43:48.342Z",
+  "lastUpdated": "2026-10-13T16:43:54.178Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
