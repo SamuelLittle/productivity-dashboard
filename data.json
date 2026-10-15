@@ -1665,8 +1665,11 @@
               "title": "24 hr cytokine treatment",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-10-08T22:38:56.157Z"
+              "completed": true,
+              "createdAt": "2026-10-08T22:38:56.157Z",
+              "completedAt": "2026-10-15T16:20:11.413Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mv04chl9rqhb1nmbjzq",
@@ -7525,7 +7528,10 @@
         "subtaskId": "mv04bwd9i3g8915hcx",
         "time": null,
         "scheduledAt": "2026-10-08T22:38:56.157Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-10-15T16:20:11.413Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-10-15": [
@@ -9113,9 +9119,18 @@
       "completionNotes": "Isolated ~10M TCMs from 3 different donors. \n",
       "completionLinks": "",
       "date": "2026-10-13"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mueefi2pp63isc2vuzs",
+      "subtaskId": "mv04bwd9i3g8915hcx",
+      "completedAt": "2026-10-15T16:20:11.413Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-14"
     }
   ],
-  "lastUpdated": "2026-10-15T16:20:04.748Z",
+  "lastUpdated": "2026-10-15T16:20:11.413Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
