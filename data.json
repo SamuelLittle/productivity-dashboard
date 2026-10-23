@@ -6439,6 +6439,15 @@
         "completed": false,
         "createdAt": "2026-10-23T18:26:16.203Z",
         "time": null
+      },
+      {
+        "id": "mvlax6nru2pzjll9d9",
+        "title": "Meet w Michael Coffey wrt NK cloaking",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-10-23T18:26:36.663Z",
+        "time": null
       }
     ]
   },
@@ -8918,7 +8927,7 @@
       "date": "2026-10-21"
     }
   ],
-  "lastUpdated": "2026-10-23T18:26:16.203Z",
+  "lastUpdated": "2026-10-23T18:26:36.663Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
