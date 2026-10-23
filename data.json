@@ -1797,7 +1797,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-10-23T18:28:14.427Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mvlazqfkkuyny5qxqwk",
+              "title": "Receive Cells",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-10-23T18:28:35.600Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [
@@ -7515,6 +7524,14 @@
         "time": null,
         "scheduledAt": "2026-10-23T17:35:09.737Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mvlaza3fpz3iixsw3k",
+        "subtaskId": "mvlazqfkkuyny5qxqwk",
+        "time": null,
+        "scheduledAt": "2026-10-23T18:28:35.600Z",
+        "completedOnDay": false
       }
     ],
     "2026-10-30": [
@@ -8955,7 +8972,7 @@
       "date": "2026-10-21"
     }
   ],
-  "lastUpdated": "2026-10-23T18:28:14.428Z",
+  "lastUpdated": "2026-10-23T18:28:35.600Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
