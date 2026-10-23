@@ -4279,6 +4279,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-09-25T22:33:01.885Z"
+            },
+            {
+              "id": "mvk83di6wb3sh0hk2w",
+              "title": "align w. Sylvia",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-10-23T00:19:40.446Z"
             }
           ]
         }
@@ -7330,6 +7338,14 @@
         "time": null,
         "scheduledAt": "2026-10-23T00:18:30.538Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mklu1lye4czo9brjznq",
+        "taskId": "mthfvhiuze0mw8hl3h",
+        "subtaskId": "mvk83di6wb3sh0hk2w",
+        "time": null,
+        "scheduledAt": "2026-10-23T00:19:40.446Z",
+        "completedOnDay": false
       }
     ],
     "2026-10-29": [
@@ -8778,7 +8794,7 @@
       "date": "2026-10-21"
     }
   ],
-  "lastUpdated": "2026-10-23T00:19:19.903Z",
+  "lastUpdated": "2026-10-23T00:19:40.446Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
