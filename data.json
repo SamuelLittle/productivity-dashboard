@@ -1692,6 +1692,14 @@
               "completedAt": "2026-10-23T00:18:26.171Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mvl930rt0274x1x5reox",
+              "title": "Smartseq D2",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-10-23T17:35:09.737Z"
             }
           ],
           "tentativeWindow": null
@@ -7401,6 +7409,16 @@
         "scheduledAt": "2026-10-23T17:32:24.476Z",
         "completedOnDay": false
       }
+    ],
+    "2026-10-27": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mueefi2pp63isc2vuzs",
+        "subtaskId": "mvl930rt0274x1x5reox",
+        "time": null,
+        "scheduledAt": "2026-10-23T17:35:09.737Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8830,7 +8848,7 @@
       "date": "2026-10-21"
     }
   ],
-  "lastUpdated": "2026-10-23T17:32:24.476Z",
+  "lastUpdated": "2026-10-23T17:35:09.737Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
