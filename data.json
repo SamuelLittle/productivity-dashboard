@@ -1805,6 +1805,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-10-23T18:28:35.600Z"
+            },
+            {
+              "id": "mvlb0d7up0jga2ll0g",
+              "title": "Media Change + 24hr Cytokine Treatment",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-10-23T18:29:05.130Z"
             }
           ]
         }
@@ -7543,6 +7551,16 @@
         "scheduledAt": "2026-10-23T18:25:55.406Z",
         "completedOnDay": false
       }
+    ],
+    "2026-11-02": [
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mvlaza3fpz3iixsw3k",
+        "subtaskId": "mvlb0d7up0jga2ll0g",
+        "time": null,
+        "scheduledAt": "2026-10-23T18:29:05.130Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8972,7 +8990,7 @@
       "date": "2026-10-21"
     }
   ],
-  "lastUpdated": "2026-10-23T18:28:35.600Z",
+  "lastUpdated": "2026-10-23T18:29:05.130Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
