@@ -5518,7 +5518,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-10-23T00:20:25.380Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mvk84r54kux8m3e3lgd",
+              "title": "Make plan of action",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-10-23T00:20:44.776Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -7363,6 +7372,14 @@
         "time": null,
         "scheduledAt": "2026-10-23T00:19:40.446Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mu39fvpuyhq2d4m1yxe",
+        "taskId": "mvk84c6cbrv9xznmk2c",
+        "subtaskId": "mvk84r54kux8m3e3lgd",
+        "time": null,
+        "scheduledAt": "2026-10-23T00:20:44.776Z",
+        "completedOnDay": false
       }
     ],
     "2026-10-29": [
@@ -8811,7 +8828,7 @@
       "date": "2026-10-21"
     }
   ],
-  "lastUpdated": "2026-10-23T00:20:25.380Z",
+  "lastUpdated": "2026-10-23T00:20:44.776Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
