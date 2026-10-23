@@ -6449,6 +6449,17 @@
         "createdAt": "2026-10-23T18:26:36.663Z",
         "time": null
       }
+    ],
+    "2026-11-09": [
+      {
+        "id": "mvlaxory2tnbc3g0d7w",
+        "title": "Present at Immunocloaking meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-10-23T18:27:00.142Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -8927,7 +8938,7 @@
       "date": "2026-10-21"
     }
   ],
-  "lastUpdated": "2026-10-23T18:26:36.663Z",
+  "lastUpdated": "2026-10-23T18:27:00.142Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
