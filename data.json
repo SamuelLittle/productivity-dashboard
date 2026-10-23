@@ -1708,6 +1708,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-10-23T17:35:28.770Z"
+            },
+            {
+              "id": "mvl93n74qj4xoe11wli",
+              "title": "metadata for T cell Pilot",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-10-23T17:35:38.800Z"
             }
           ],
           "tentativeWindow": null
@@ -8864,7 +8872,7 @@
       "date": "2026-10-21"
     }
   ],
-  "lastUpdated": "2026-10-23T17:35:28.771Z",
+  "lastUpdated": "2026-10-23T17:35:38.800Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
