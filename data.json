@@ -6429,6 +6429,17 @@
         "createdAt": "2026-10-23T18:15:31.913Z",
         "time": null
       }
+    ],
+    "2026-10-29": [
+      {
+        "id": "mvlawqve26w3rtm4zspj",
+        "title": "PBMC isolate w Qiao",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-10-23T18:26:16.203Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -8907,7 +8918,7 @@
       "date": "2026-10-21"
     }
   ],
-  "lastUpdated": "2026-10-23T18:25:55.406Z",
+  "lastUpdated": "2026-10-23T18:26:16.203Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
