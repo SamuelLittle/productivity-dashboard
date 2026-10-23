@@ -6170,9 +6170,12 @@
         "title": "Conf D1",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-09-21T19:07:03.556Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-10-23T00:18:36.259Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-10-20": [
@@ -7310,14 +7313,6 @@
         "completedAt": "2026-10-23T00:18:26.171Z",
         "completionNotes": "",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "muopcxjnwie5zwx7zkq",
-        "subtaskId": "muopdc0llg69f44wot9",
-        "time": null,
-        "scheduledAt": "2026-10-15T16:20:04.748Z",
-        "completedOnDay": false
       }
     ],
     "2026-10-23": [
@@ -7327,6 +7322,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-10-23T00:18:30.490Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "muopcxjnwie5zwx7zkq",
+        "subtaskId": "muopdc0llg69f44wot9",
+        "time": null,
+        "scheduledAt": "2026-10-23T00:18:30.538Z",
         "completedOnDay": false
       }
     ]
@@ -8732,9 +8735,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-16"
+    },
+    {
+      "id": "mubm9xxgdqh4ot9yb5d",
+      "title": "Conf D1",
+      "completedAt": "2026-10-23T00:18:36.259Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-19"
     }
   ],
-  "lastUpdated": "2026-10-23T00:18:30.491Z",
+  "lastUpdated": "2026-10-23T00:18:36.259Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
