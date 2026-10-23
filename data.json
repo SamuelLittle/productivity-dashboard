@@ -1700,6 +1700,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-10-23T17:35:09.737Z"
+            },
+            {
+              "id": "mvl93fgi8whl2cmmmdx",
+              "title": "NGS project submission",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-10-23T17:35:28.770Z"
             }
           ],
           "tentativeWindow": null
@@ -7380,6 +7388,14 @@
         "time": null,
         "scheduledAt": "2026-10-23T00:20:44.776Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mueefi2pp63isc2vuzs",
+        "subtaskId": "mvl93fgi8whl2cmmmdx",
+        "time": null,
+        "scheduledAt": "2026-10-23T17:35:28.771Z",
+        "completedOnDay": false
       }
     ],
     "2026-10-29": [
@@ -8848,7 +8864,7 @@
       "date": "2026-10-21"
     }
   ],
-  "lastUpdated": "2026-10-23T17:35:09.737Z",
+  "lastUpdated": "2026-10-23T17:35:28.771Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
