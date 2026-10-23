@@ -1676,8 +1676,11 @@
               "title": "RNA extraction",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-10-08T22:39:23.661Z"
+              "completed": true,
+              "createdAt": "2026-10-08T22:39:23.661Z",
+              "completedAt": "2026-10-23T00:18:17.577Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mv04d0m568u8ephglx4",
@@ -5612,188 +5615,6 @@
     }
   ],
   "dailyLists": {
-    "2026-07-15": [
-      {
-        "id": "mrjiohmzga1n4zvzg9u",
-        "title": "NK screen pilot full plan",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "completedAt": "2026-07-15T22:52:46.128Z",
-        "time": null,
-        "createdAt": "2026-07-13T17:49:26.219Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mrmeg350s8t1uinna28",
-        "title": "Send over revised meta data to J + H",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-15T18:14:14.245Z",
-        "time": null,
-        "completedAt": "2026-07-15T18:32:06.118Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mrmehafvanvewnezdle",
-        "title": "Check for reagents for NK screen",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-15T18:15:10.363Z",
-        "time": null,
-        "completedAt": "2026-07-16T00:25:21.372Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-07-23": [
-      {
-        "id": "mrmegv71a4u1lhfbsxf",
-        "title": "Director Seminar + Candidate lunch",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-15T18:14:50.606Z",
-        "time": null,
-        "completedAt": "2026-07-28T14:53:02.045Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-07-17": [
-      {
-        "id": "mrp8tsxwe5ajrh28l1c",
-        "title": "iAst 1-on-1 with Michelle",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "completedAt": "2026-07-17T22:46:25.871Z",
-        "time": "14:30",
-        "createdAt": "2026-07-17T18:00:15.044Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-07-16": [
-      {
-        "id": "mro2tcuogpzkiigverb",
-        "title": "CTG onboard with Corinne",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-16T22:24:10.321Z",
-        "time": null,
-        "completedAt": "2026-07-16T22:38:13.840Z",
-        "completionNotes": "Added notes to Corinne's slides for clarity\n",
-        "completionLinks": ""
-      },
-      {
-        "id": "mro2tt2u1pzfgzcdzs5",
-        "title": "Meeting for epithelial screening with Sharookh's team",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-16T22:24:31.350Z",
-        "time": null,
-        "completedAt": "2026-07-17T17:57:14.203Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mro2uihgg1zv13erwwg",
-        "title": "iAstro + iMG pilot planning w/ Thomas and Jenny",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-16T22:25:04.276Z",
-        "time": null,
-        "completedAt": "2026-07-17T17:57:18.163Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mro2uwy540nh3sf0y05",
-        "title": "CytED analysis of cytokine data",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-16T22:25:23.021Z",
-        "time": null,
-        "completedAt": "2026-07-17T17:57:21.148Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-07-22": [
-      {
-        "id": "mrtg5a7f6fjli7xuwer",
-        "title": "Lunch w/ Jimmie",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-20T16:36:12.651Z",
-        "time": null,
-        "completedAt": "2026-07-28T14:52:17.176Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-07-21": [
-      {
-        "id": "mrtuw2bgotalamwgty",
-        "title": "AT2 RNA extraction optimization",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-20T23:28:56.764Z",
-        "time": null,
-        "completedAt": "2026-07-21T19:47:14.060Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mrtuwoltrc6mrjqm6fa",
-        "title": "Team Scrum + 1-on-1",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-20T23:29:25.649Z",
-        "time": "15:00",
-        "completedAt": "2026-07-28T14:53:26.497Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "id": "mrurermmp027unk3qu",
-        "title": "Pratisksha Seminar",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-21T14:39:17.086Z",
-        "time": "11:00",
-        "completedAt": "2026-07-21T19:12:30.304Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-07-24": [
-      {
-        "id": "mrurfroao7q5txa9q1b",
-        "title": "ooo",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-07-21T14:40:03.803Z",
-        "time": null,
-        "completedAt": "2026-07-28T14:53:07.056Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-07-27": [
       {
         "id": "mrurfx720gahd29k7te5",
@@ -6603,78 +6424,6 @@
         "completedOnDay": true,
         "completedAt": "2026-08-06T16:00:23.601Z",
         "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-07-22": [
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mrnrm6rednng6vjynhu",
-        "subtaskId": "mrnrn6harl426g3dsyn",
-        "time": null,
-        "scheduledAt": "2026-07-16T17:11:26.350Z",
-        "completedOnDay": true,
-        "completedAt": "2026-07-28T14:52:13.994Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mrnrm6rednng6vjynhu",
-        "subtaskId": "mrtg4xh7y4lldwsurb8",
-        "time": "09:00",
-        "scheduledAt": "2026-07-20T16:35:56.155Z",
-        "completedOnDay": true,
-        "completedAt": "2026-07-28T14:52:09.014Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-07-17": [
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mrnrm6rednng6vjynhu",
-        "subtaskId": "mrp8uyi52uxr9g8xwtd",
-        "time": "15:00",
-        "scheduledAt": "2026-07-17T18:01:08.909Z",
-        "completedOnDay": true,
-        "completedAt": "2026-07-17T22:46:29.390Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mrnrm6rednng6vjynhu",
-        "subtaskId": "mrp8vbmo6b833bkffh",
-        "time": null,
-        "scheduledAt": "2026-07-17T18:01:25.921Z",
-        "completedOnDay": true,
-        "completedAt": "2026-07-17T22:46:32.350Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-07-20": [
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "mrnrm6rednng6vjynhu",
-        "subtaskId": "mrpj2lz8zutxkq9ref",
-        "time": null,
-        "scheduledAt": "2026-07-20T15:08:18.590Z",
-        "completedOnDay": true,
-        "completedAt": "2026-07-20T23:23:26.767Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mrtdkuneqzzg0oh9wn8",
-        "subtaskId": "mrtdlcw3anuwnrh97z5",
-        "time": null,
-        "scheduledAt": "2026-07-20T15:24:43.779Z",
-        "completedOnDay": true,
-        "completedAt": "2026-07-20T21:20:21.101Z",
-        "completionNotes": "Need to make modified protocols for stamping to 384 well plates",
         "completionLinks": ""
       }
     ],
@@ -7541,7 +7290,10 @@
         "subtaskId": "mv04chl9rqhb1nmbjzq",
         "time": null,
         "scheduledAt": "2026-10-08T22:39:23.661Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-10-23T00:18:17.576Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-10-16": [
@@ -7572,180 +7324,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "id": "mrjtj8899kgmamx5v0s",
-      "title": "org dis convo w/ Justin + Qiao",
-      "completedAt": "2026-07-15T18:13:38.407Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-14"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mn96ur593n4wqfraywg",
-      "subtaskId": "mn973r0fexd2jqy4iso",
-      "title": "Submit to NGS",
-      "completedAt": "2026-07-15T18:15:22.390Z"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhr7xbgjd9lgr32a",
-      "subtaskId": "mqpfrz5ss19c0rwmotl",
-      "title": "D1 QC",
-      "completedAt": "2026-07-15T18:15:27.796Z"
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mn96ur593n4wqfraywg",
-      "subtaskId": null,
-      "title": "Fill-in-the-Gaps-Screen",
-      "completedAt": "2026-07-15T18:15:34.857Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhr7xbgjd9lgr32a",
-      "subtaskId": null,
-      "title": "Neutrophil Screen",
-      "completedAt": "2026-07-15T18:15:54.208Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpvor2egyd9fn0kywu9",
-      "subtaskId": null,
-      "title": "Monocytes Cytokine Screen",
-      "completedAt": "2026-07-15T18:15:58.226Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
-    {
-      "projectId": "mkltv6xwvh4ltoqkes",
-      "taskId": "mpxhry7jezeridb1ny7",
-      "subtaskId": null,
-      "title": "CD4 T cell Screen",
-      "completedAt": "2026-07-15T18:16:02.517Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
-    {
-      "id": "mrmeg350s8t1uinna28",
-      "title": "Send over revised meta data to J + H",
-      "completedAt": "2026-07-15T18:32:06.118Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-15"
-    },
-    {
-      "id": "mrjiohmzga1n4zvzg9u",
-      "title": "NK screen pilot full plan",
-      "completedAt": "2026-07-15T22:52:46.129Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-15"
-    },
-    {
-      "id": "mrmehafvanvewnezdle",
-      "title": "Check for reagents for NK screen",
-      "completedAt": "2026-07-16T00:25:21.372Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-15"
-    },
-    {
-      "id": "mro2tcuogpzkiigverb",
-      "title": "CTG onboard with Corinne",
-      "completedAt": "2026-07-16T22:38:13.841Z",
-      "completionNotes": "Added notes to Corinne's slides for clarity\n",
-      "completionLinks": "",
-      "date": "2026-07-16"
-    },
-    {
-      "id": "mro2tt2u1pzfgzcdzs5",
-      "title": "Meeting for epithelial screening with Sharookh's team",
-      "completedAt": "2026-07-17T17:57:14.203Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-16"
-    },
-    {
-      "id": "mro2uihgg1zv13erwwg",
-      "title": "iAstro + iMG pilot planning w/ Thomas and Jenny",
-      "completedAt": "2026-07-17T17:57:18.163Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-16"
-    },
-    {
-      "id": "mro2uwy540nh3sf0y05",
-      "title": "CytED analysis of cytokine data",
-      "completedAt": "2026-07-17T17:57:21.148Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-16"
-    },
-    {
-      "id": "mrp8tsxwe5ajrh28l1c",
-      "title": "iAst 1-on-1 with Michelle",
-      "completedAt": "2026-07-17T22:46:25.871Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-17"
-    },
-    {
-      "projectId": "mpyqnvm6p9zp4xlp64m",
-      "taskId": "mrnrm6rednng6vjynhu",
-      "subtaskId": "mrp8uyi52uxr9g8xwtd",
-      "completedAt": "2026-07-17T22:46:29.392Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-17"
-    },
-    {
-      "projectId": "mpyqnvm6p9zp4xlp64m",
-      "taskId": "mrnrm6rednng6vjynhu",
-      "subtaskId": "mrp8vbmo6b833bkffh",
-      "completedAt": "2026-07-17T22:46:32.350Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-17"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mrtdkuneqzzg0oh9wn8",
-      "subtaskId": "mrtdlcw3anuwnrh97z5",
-      "completedAt": "2026-07-20T21:20:21.106Z",
-      "completionNotes": "Need to make modified protocols for stamping to 384 well plates",
-      "completionLinks": "",
-      "date": "2026-07-20"
-    },
-    {
-      "projectId": "mpyqnvm6p9zp4xlp64m",
-      "taskId": "mrnrm6rednng6vjynhu",
-      "subtaskId": "mrpj2lz8zutxkq9ref",
-      "completedAt": "2026-07-20T23:23:26.767Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-20"
-    },
-    {
-      "id": "mrurermmp027unk3qu",
-      "title": "Pratisksha Seminar",
-      "completedAt": "2026-07-21T19:12:30.305Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-21"
-    },
-    {
-      "id": "mrtuw2bgotalamwgty",
-      "title": "AT2 RNA extraction optimization",
-      "completedAt": "2026-07-21T19:47:14.060Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-07-21"
-    },
     {
       "projectId": "mpyqnvm6p9zp4xlp64m",
       "taskId": "mrnrm6rednng6vjynhu",
@@ -9128,9 +8706,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-14"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mueefi2pp63isc2vuzs",
+      "subtaskId": "mv04chl9rqhb1nmbjzq",
+      "completedAt": "2026-10-23T00:18:17.577Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-15"
     }
   ],
-  "lastUpdated": "2026-10-15T16:20:11.413Z",
+  "lastUpdated": "2026-10-23T00:18:17.577Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
