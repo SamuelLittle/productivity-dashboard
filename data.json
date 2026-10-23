@@ -1789,15 +1789,6 @@
               "completionLinks": ""
             }
           ]
-        },
-        {
-          "id": "mvlayrn8fdd8j2tshae",
-          "title": "Mast Cell Screening",
-          "description": "",
-          "priority": "medium",
-          "completed": false,
-          "createdAt": "2026-10-23T18:27:50.516Z",
-          "subtasks": []
         }
       ],
       "progressUpdates": [
@@ -7485,14 +7476,6 @@
         "time": null,
         "scheduledAt": "2026-10-23T17:35:28.771Z",
         "completedOnDay": false
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mvlayrn8fdd8j2tshae",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-10-23T18:27:50.516Z",
-        "completedOnDay": false
       }
     ],
     "2026-10-29": [
@@ -8963,7 +8946,7 @@
       "date": "2026-10-21"
     }
   ],
-  "lastUpdated": "2026-10-23T18:27:50.516Z",
+  "lastUpdated": "2026-10-23T18:28:02.994Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
