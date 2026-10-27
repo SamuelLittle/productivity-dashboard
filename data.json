@@ -1806,8 +1806,11 @@
               "title": "Receive Cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-10-23T18:28:35.600Z"
+              "completed": true,
+              "createdAt": "2026-10-23T18:28:35.600Z",
+              "completedAt": "2026-10-27T17:09:53.048Z",
+              "completionNotes": "In Culture\n",
+              "completionLinks": ""
             },
             {
               "id": "mvlb0d7up0jga2ll0g",
@@ -7595,7 +7598,10 @@
         "subtaskId": "mvlazqfkkuyny5qxqwk",
         "time": null,
         "scheduledAt": "2026-10-23T18:28:35.600Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-10-27T17:09:53.048Z",
+        "completionNotes": "In Culture\n",
+        "completionLinks": ""
       },
       {
         "projectId": "",
@@ -9173,9 +9179,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-26"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mvlaza3fpz3iixsw3k",
+      "subtaskId": "mvlazqfkkuyny5qxqwk",
+      "completedAt": "2026-10-27T17:09:53.048Z",
+      "completionNotes": "In Culture\n",
+      "completionLinks": "",
+      "date": "2026-10-27"
     }
   ],
-  "lastUpdated": "2026-10-27T17:08:51.671Z",
+  "lastUpdated": "2026-10-27T17:09:53.048Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
