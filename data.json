@@ -5658,8 +5658,11 @@
               "title": "Make plan of action",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-10-23T00:20:44.776Z"
+              "completed": true,
+              "createdAt": "2026-10-23T00:20:44.776Z",
+              "completedAt": "2026-10-27T21:18:22.035Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -7620,7 +7623,10 @@
         "subtaskId": "mvk84r54kux8m3e3lgd",
         "time": null,
         "scheduledAt": "2026-10-27T17:08:51.671Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-10-27T21:18:22.035Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-10-30": [
@@ -9199,9 +9205,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-27"
+    },
+    {
+      "projectId": "mu39fvpuyhq2d4m1yxe",
+      "taskId": "mvk84c6cbrv9xznmk2c",
+      "subtaskId": "mvk84r54kux8m3e3lgd",
+      "completedAt": "2026-10-27T21:18:22.035Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-27"
     }
   ],
-  "lastUpdated": "2026-10-27T20:49:48.392Z",
+  "lastUpdated": "2026-10-27T21:18:22.035Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
