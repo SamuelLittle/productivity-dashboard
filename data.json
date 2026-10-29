@@ -6573,9 +6573,12 @@
         "title": "Meet w Michael Coffey wrt NK cloaking",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-10-23T18:26:36.663Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-10-29T19:48:03.997Z",
+        "completionNotes": "Need to follow up up with Slide deck and gene list",
+        "completionLinks": ""
       }
     ],
     "2026-11-09": [
@@ -9240,9 +9243,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-10-28"
+    },
+    {
+      "id": "mvlax6nru2pzjll9d9",
+      "title": "Meet w Michael Coffey wrt NK cloaking",
+      "completedAt": "2026-10-29T19:48:03.997Z",
+      "completionNotes": "Need to follow up up with Slide deck and gene list",
+      "completionLinks": "",
+      "date": "2026-10-29"
     }
   ],
-  "lastUpdated": "2026-10-28T23:39:13.018Z",
+  "lastUpdated": "2026-10-29T19:48:03.997Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
