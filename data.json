@@ -6564,9 +6564,12 @@
         "title": "PBMC isolate w Qiao",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-10-23T18:26:16.203Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-10-29T23:49:20.869Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mvlax6nru2pzjll9d9",
@@ -9251,9 +9254,17 @@
       "completionNotes": "Need to follow up up with Slide deck and gene list",
       "completionLinks": "",
       "date": "2026-10-29"
+    },
+    {
+      "id": "mvlawqve26w3rtm4zspj",
+      "title": "PBMC isolate w Qiao",
+      "completedAt": "2026-10-29T23:49:20.869Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-10-29"
     }
   ],
-  "lastUpdated": "2026-10-29T19:48:03.997Z",
+  "lastUpdated": "2026-10-29T23:49:20.869Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
