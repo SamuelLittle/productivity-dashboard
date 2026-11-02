@@ -1844,6 +1844,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-10-23T18:29:57.102Z"
+            },
+            {
+              "id": "mvzj3qd959t0f2pl3nw",
+              "title": "complete RNA extraction",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-02T17:24:25.533Z"
             }
           ]
         },
@@ -7434,6 +7442,14 @@
         "scheduledAt": "2026-10-23T18:29:32.092Z",
         "completedOnDay": true,
         "completedAt": "2026-11-02T17:24:05.104Z"
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mvlaza3fpz3iixsw3k",
+        "subtaskId": "mvzj3qd959t0f2pl3nw",
+        "time": null,
+        "scheduledAt": "2026-11-02T17:24:25.533Z",
+        "completedOnDay": false
       }
     ],
     "2026-11-04": [
@@ -8870,7 +8886,7 @@
       "completedAt": "2026-11-02T17:24:05.104Z"
     }
   ],
-  "lastUpdated": "2026-11-02T17:24:05.104Z",
+  "lastUpdated": "2026-11-02T17:24:25.533Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
