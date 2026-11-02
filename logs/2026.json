@@ -116,7 +116,8 @@
     "2026-03-16": "-> Come in an extract RNA from DLD1s and microglia first thing in the morning\n-> order oligos for SMARTseq + RNA tape station tapes\n-> make what can be made for BLADE-R buffers\n-> if I get the buffers in time run the BLADE-R pilot with DLD1s",
     "2026-03-19": "Spent big chunk of day organizing results from BLADE-R protocol.  Also went to seminar on Cellanome system and had 1-on-1 with Celine",
     "2026-03-25": "Also presented at the respiratory program update.",
-    "2026-04-28": "Also ran PCR purifications for all amplicons to be sequenced."
+    "2026-04-28": "Also ran PCR purifications for all amplicons to be sequenced.",
+    "2026-07-31": "Nucleofection went smoothly using i7\n\n+Director seminar + lunch\n+Fun with Ona and CytoSig"
   },
   "dailyLists": {
     "2026-01-21": [
@@ -1633,6 +1634,196 @@
         "createdAt": "2026-07-21T14:40:03.803Z",
         "time": null,
         "completedAt": "2026-07-28T14:53:07.056Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-07-27": [
+      {
+        "id": "mrurfx720gahd29k7te5",
+        "title": "ooo",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-21T14:40:10.958Z",
+        "time": null,
+        "completedAt": "2026-07-28T14:53:13.191Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-07-28": [
+      {
+        "id": "ms4snkrsh3j5vf9tgkj",
+        "title": "Inventory for Nomic project",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-28T15:11:49.480Z",
+        "time": null,
+        "completedAt": "2026-07-28T23:40:42.142Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "ms4soo2sgecvz78iei",
+        "title": "1:1 with Christine",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-28T15:12:40.420Z",
+        "time": "09:30",
+        "completedAt": "2026-07-28T18:30:10.119Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "ms4sp8qbb7t2udv0tub",
+        "title": "Bravo protocol review w/ Qiao",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-28T15:13:07.188Z",
+        "time": "10:30",
+        "completedAt": "2026-07-28T18:30:18.598Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "ms4sps9g220rcwnsvkj",
+        "title": "Nomic Project Planning ",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-28T15:13:32.500Z",
+        "time": "14:00",
+        "completedAt": "2026-07-28T23:40:37.987Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "ms5au75dm57hy4nmrzk",
+        "title": "i7 Nucleofection Protocol",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-28T23:40:51.505Z",
+        "time": null,
+        "completedAt": "2026-07-28T23:43:15.687Z",
+        "completionNotes": "Protocol for stamping RNP to nucleofection plate -> adding recovery buffer -> aspirating from nucleofection plate to intermediation plate. \n\nStill need \n- RNP generation\n- Intermediary plate -> to culture plate\n- CTG normalization plate to killing assay plate",
+        "completionLinks": ""
+      }
+    ],
+    "2026-07-29": [
+      {
+        "id": "ms4sqrp1p01rb61y6zd",
+        "title": "Freimer/Thakore Lab Meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-28T15:14:18.421Z",
+        "time": "10:30",
+        "completedAt": "2026-07-30T16:02:32.949Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "ms5b3kzapb4d1m5ygcm",
+        "title": "Lunch w/ Zora",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-28T23:48:09.334Z",
+        "time": null,
+        "completedAt": "2026-07-30T16:22:55.975Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "ms5b3u5z9tw7hu1m8fu",
+        "title": "Meet w/ Zy",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-28T23:48:21.239Z",
+        "time": null,
+        "completedAt": "2026-07-30T16:23:01.150Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "ms5b45jsqco67mbbpeb",
+        "title": "prep for Org diss",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-28T23:48:35.992Z",
+        "time": null,
+        "completedAt": "2026-07-30T16:23:04.586Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-07-30": [
+      {
+        "id": "ms5ay7jmkv5emv3v8v",
+        "title": "NK cell killing i7 Assay ops",
+        "description": "- RNP generation\n- Intermediary plate -> to culture plate\n- CTG normalization plate to killing assay plate",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-28T23:43:58.642Z",
+        "time": null,
+        "completedAt": "2026-07-30T23:30:15.265Z",
+        "completionNotes": "Replating Ops Complete",
+        "completionLinks": ""
+      },
+      {
+        "id": "ms7q571bdl2ykrtwgqq",
+        "title": "meet with Jimmie",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-07-30T16:24:51.168Z",
+        "time": "14:30",
+        "completedAt": "2026-07-30T23:29:26.186Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-08-03": [
+      {
+        "id": "msdde3m3jn0gg6ffnwj",
+        "title": "RM int. ",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-08-03T15:14:28.683Z",
+        "time": "13:00",
+        "completedAt": "2026-08-04T16:05:26.062Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "msddh1t90h4ih8uk91ha",
+        "title": "Gather reagents for tomorrows killing assay",
+        "description": "- CTG\n- Plates\n- CTV\n- Sytox Greeen",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-08-03T15:16:46.318Z",
+        "time": null,
+        "completedAt": "2026-08-04T16:05:36.592Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "msdklhshjels9kv5rp8",
+        "title": "make and send out agenda for tomorrow's cytokine screening meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-08-03T18:36:10.962Z",
+        "time": null,
+        "completedAt": "2026-08-04T16:05:41.183Z",
         "completionNotes": "",
         "completionLinks": ""
       }
@@ -4344,6 +4535,56 @@
         "completedOnDay": true,
         "completedAt": "2026-07-20T21:20:21.101Z",
         "completionNotes": "Need to make modified protocols for stamping to 384 well plates",
+        "completionLinks": ""
+      }
+    ],
+    "2026-07-31": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mrjtaixcj1zw5d373w",
+        "time": null,
+        "scheduledAt": "2026-07-16T17:06:51.480Z",
+        "completedOnDay": true,
+        "completedAt": "2026-07-31T23:13:44.615Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrtdkuneqzzg0oh9wn8",
+        "subtaskId": "mrtdlzl5u7repwzeuuh",
+        "time": null,
+        "scheduledAt": "2026-07-28T14:53:37.358Z",
+        "completedOnDay": true,
+        "completedAt": "2026-07-31T23:13:48.596Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-07-30": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mrjta6dfn6pjquj7ihq",
+        "time": null,
+        "scheduledAt": "2026-07-16T17:06:37.320Z",
+        "completedOnDay": true,
+        "completedAt": "2026-07-30T23:30:04.360Z",
+        "completionNotes": "Only isolated ~17.5M cells.  Modified Nucleofection protocol.",
+        "completionLinks": ""
+      }
+    ],
+    "2026-08-03": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mrjtb6kp63w3055m9oi",
+        "time": null,
+        "scheduledAt": "2026-07-16T17:07:23.686Z",
+        "completedOnDay": true,
+        "completedAt": "2026-08-04T16:05:31.957Z",
+        "completionNotes": "",
         "completionLinks": ""
       }
     ]
@@ -7760,6 +8001,188 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-21"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mrnrm6rednng6vjynhu",
+      "subtaskId": "mrtg4xh7y4lldwsurb8",
+      "completedAt": "2026-07-28T14:52:09.014Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-22"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mrnrm6rednng6vjynhu",
+      "subtaskId": "mrnrn6harl426g3dsyn",
+      "completedAt": "2026-07-28T14:52:13.994Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-22"
+    },
+    {
+      "id": "mrtg5a7f6fjli7xuwer",
+      "title": "Lunch w/ Jimmie",
+      "completedAt": "2026-07-28T14:52:17.176Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-22"
+    },
+    {
+      "id": "mrmegv71a4u1lhfbsxf",
+      "title": "Director Seminar + Candidate lunch",
+      "completedAt": "2026-07-28T14:53:02.045Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "mrurfroao7q5txa9q1b",
+      "title": "ooo",
+      "completedAt": "2026-07-28T14:53:07.056Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-24"
+    },
+    {
+      "id": "mrurfx720gahd29k7te5",
+      "title": "ooo",
+      "completedAt": "2026-07-28T14:53:13.191Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-27"
+    },
+    {
+      "id": "mrtuwoltrc6mrjqm6fa",
+      "title": "Team Scrum + 1-on-1",
+      "completedAt": "2026-07-28T14:53:26.497Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-21"
+    },
+    {
+      "id": "ms4soo2sgecvz78iei",
+      "title": "1:1 with Christine",
+      "completedAt": "2026-07-28T18:30:10.119Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-28"
+    },
+    {
+      "id": "ms4sp8qbb7t2udv0tub",
+      "title": "Bravo protocol review w/ Qiao",
+      "completedAt": "2026-07-28T18:30:18.598Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-28"
+    },
+    {
+      "id": "ms4sps9g220rcwnsvkj",
+      "title": "Nomic Project Planning ",
+      "completedAt": "2026-07-28T23:40:37.988Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-28"
+    },
+    {
+      "id": "ms4snkrsh3j5vf9tgkj",
+      "title": "Inventory for Nomic project",
+      "completedAt": "2026-07-28T23:40:42.142Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-28"
+    },
+    {
+      "id": "ms5au75dm57hy4nmrzk",
+      "title": "i7 Nucleofection Protocol",
+      "completedAt": "2026-07-28T23:43:15.687Z",
+      "completionNotes": "Protocol for stamping RNP to nucleofection plate -> adding recovery buffer -> aspirating from nucleofection plate to intermediation plate. \n\nStill need \n- RNP generation\n- Intermediary plate -> to culture plate\n- CTG normalization plate to killing assay plate",
+      "completionLinks": "",
+      "date": "2026-07-28"
+    },
+    {
+      "id": "ms4sqrp1p01rb61y6zd",
+      "title": "Freimer/Thakore Lab Meeting",
+      "completedAt": "2026-07-30T16:02:32.950Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-29"
+    },
+    {
+      "projectId": "mpyqnvm6p9zp4xlp64m",
+      "taskId": "mrtd472b6o7fvc71nwu",
+      "subtaskId": "mrtd92x9j0iswhptixm",
+      "completedAt": "2026-07-30T16:14:24.602Z",
+      "completionNotes": "Fresh dis -> 4 plates. all looked good. Need to fix EL406 wash protocol. ",
+      "completionLinks": "",
+      "date": "2026-07-29"
+    },
+    {
+      "id": "ms5b3kzapb4d1m5ygcm",
+      "title": "Lunch w/ Zora",
+      "completedAt": "2026-07-30T16:22:55.975Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-29"
+    },
+    {
+      "id": "ms5b3u5z9tw7hu1m8fu",
+      "title": "Meet w/ Zy",
+      "completedAt": "2026-07-30T16:23:01.150Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-29"
+    },
+    {
+      "id": "ms5b45jsqco67mbbpeb",
+      "title": "prep for Org diss",
+      "completedAt": "2026-07-30T16:23:04.586Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-29"
+    },
+    {
+      "id": "ms7q571bdl2ykrtwgqq",
+      "title": "meet with Jimmie",
+      "completedAt": "2026-07-30T23:29:26.186Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-30"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrjt9r0bj672rjm1058",
+      "subtaskId": "mrjta6dfn6pjquj7ihq",
+      "completedAt": "2026-07-30T23:30:04.360Z",
+      "completionNotes": "Only isolated ~17.5M cells.  Modified Nucleofection protocol.",
+      "completionLinks": "",
+      "date": "2026-07-30"
+    },
+    {
+      "id": "ms5ay7jmkv5emv3v8v",
+      "title": "NK cell killing i7 Assay ops",
+      "completedAt": "2026-07-30T23:30:15.265Z",
+      "completionNotes": "Replating Ops Complete",
+      "completionLinks": "",
+      "date": "2026-07-30"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrjt9r0bj672rjm1058",
+      "subtaskId": "mrjtaixcj1zw5d373w",
+      "completedAt": "2026-07-31T23:13:44.615Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-31"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrtdkuneqzzg0oh9wn8",
+      "subtaskId": "mrtdlzl5u7repwzeuuh",
+      "completedAt": "2026-07-31T23:13:48.596Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-07-31"
     }
   ]
 }
