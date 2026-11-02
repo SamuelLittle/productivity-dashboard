@@ -1831,8 +1831,11 @@
               "title": "3 hr cytokine treatment",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-10-23T18:29:32.092Z"
+              "completed": true,
+              "createdAt": "2026-10-23T18:29:32.092Z",
+              "completedAt": "2026-11-02T17:24:05.103Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mvlb1hbi2hrysig7lj1",
@@ -7429,7 +7432,8 @@
         "subtaskId": "mvlb0y0su9id401jrhl",
         "time": null,
         "scheduledAt": "2026-10-23T18:29:32.092Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-02T17:24:05.104Z"
       }
     ],
     "2026-11-04": [
@@ -8857,9 +8861,16 @@
       "completionNotes": "Completed on Friday\n",
       "completionLinks": "",
       "date": "2026-11-02"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mvlaza3fpz3iixsw3k",
+      "subtaskId": "mvlb0y0su9id401jrhl",
+      "title": "3 hr cytokine treatment",
+      "completedAt": "2026-11-02T17:24:05.104Z"
     }
   ],
-  "lastUpdated": "2026-11-02T17:03:48.163Z",
+  "lastUpdated": "2026-11-02T17:24:05.104Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
