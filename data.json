@@ -6473,10 +6473,12 @@
         "title": "Send out agenda for Cytokine Screen Review Meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-11-04T23:04:47.980Z",
         "time": null,
-        "createdAt": "2026-11-03T15:18:30.065Z"
+        "createdAt": "2026-11-03T15:18:30.065Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mvzjonfxer2wzdwo16h",
@@ -8940,9 +8942,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-04"
+    },
+    {
+      "id": "mw0u1n74yogxqw2g93d",
+      "title": "Send out agenda for Cytokine Screen Review Meeting",
+      "completedAt": "2026-11-04T23:04:47.980Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-04"
     }
   ],
-  "lastUpdated": "2026-11-04T22:53:26.451Z",
+  "lastUpdated": "2026-11-04T23:04:47.980Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
