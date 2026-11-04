@@ -6485,10 +6485,12 @@
         "title": "Circulate Agenda for Cytokine Screening Meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-11-04T23:04:51.994Z",
         "time": null,
-        "createdAt": "2026-11-02T17:40:41.517Z"
+        "createdAt": "2026-11-02T17:40:41.517Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mw297glbmrwjui06cu",
@@ -8950,9 +8952,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-04"
+    },
+    {
+      "id": "mvzjonfxer2wzdwo16h",
+      "title": "Circulate Agenda for Cytokine Screening Meeting",
+      "completedAt": "2026-11-04T23:04:51.994Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-04"
     }
   ],
-  "lastUpdated": "2026-11-04T23:04:47.980Z",
+  "lastUpdated": "2026-11-04T23:04:51.994Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
