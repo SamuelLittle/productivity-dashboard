@@ -117,7 +117,8 @@
     "2026-03-19": "Spent big chunk of day organizing results from BLADE-R protocol.  Also went to seminar on Cellanome system and had 1-on-1 with Celine",
     "2026-03-25": "Also presented at the respiratory program update.",
     "2026-04-28": "Also ran PCR purifications for all amplicons to be sequenced.",
-    "2026-07-31": "Nucleofection went smoothly using i7\n\n+Director seminar + lunch\n+Fun with Ona and CytoSig"
+    "2026-07-31": "Nucleofection went smoothly using i7\n\n+Director seminar + lunch\n+Fun with Ona and CytoSig",
+    "2026-08-05": "- Also had mid year check in with Zora, went well"
   },
   "dailyLists": {
     "2026-01-21": [
@@ -1824,6 +1825,20 @@
         "createdAt": "2026-08-03T18:36:10.962Z",
         "time": null,
         "completedAt": "2026-08-04T16:05:41.183Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-08-04": [
+      {
+        "id": "mseup9t9xpy8te849ff",
+        "title": "Prep for midyear check in",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-08-04T16:06:49.582Z",
+        "time": null,
+        "completedAt": "2026-08-06T16:00:18.742Z",
         "completionNotes": "",
         "completionLinks": ""
       }
@@ -4584,6 +4599,65 @@
         "scheduledAt": "2026-07-16T17:07:23.686Z",
         "completedOnDay": true,
         "completedAt": "2026-08-04T16:05:31.957Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-08-05": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mrjtcyy70w7bx8ldlqd",
+        "time": null,
+        "scheduledAt": "2026-07-16T17:07:45.467Z",
+        "completedOnDay": true,
+        "completedAt": "2026-08-06T16:00:23.601Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-08-04": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mrjtcn8ow16iki5g43k",
+        "time": null,
+        "scheduledAt": "2026-07-16T17:07:31.742Z",
+        "completedOnDay": true,
+        "completedAt": "2026-08-06T15:59:56.902Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mrjtaxm6r5s3ku8rlgr",
+        "time": null,
+        "scheduledAt": "2026-08-03T15:07:08.510Z",
+        "completedOnDay": true,
+        "completedAt": "2026-08-06T16:00:01.363Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrtdkuneqzzg0oh9wn8",
+        "subtaskId": "mrtdoa7xlx90wtbw9yo",
+        "time": null,
+        "scheduledAt": "2026-08-03T15:07:14.140Z",
+        "completedOnDay": true,
+        "completedAt": "2026-08-06T16:00:08.076Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "mseuoa9s1rtc3g6ocje",
+        "time": null,
+        "scheduledAt": "2026-08-04T16:06:03.520Z",
+        "completedOnDay": true,
+        "completedAt": "2026-08-06T16:00:15.224Z",
         "completionNotes": "",
         "completionLinks": ""
       }
@@ -8183,6 +8257,39 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-07-31"
+    },
+    {
+      "id": "msdde3m3jn0gg6ffnwj",
+      "title": "RM int. ",
+      "completedAt": "2026-08-04T16:05:26.062Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-03"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrjt9r0bj672rjm1058",
+      "subtaskId": "mrjtb6kp63w3055m9oi",
+      "completedAt": "2026-08-04T16:05:31.957Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "msddh1t90h4ih8uk91ha",
+      "title": "Gather reagents for tomorrows killing assay",
+      "completedAt": "2026-08-04T16:05:36.592Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-03"
+    },
+    {
+      "id": "msdklhshjels9kv5rp8",
+      "title": "make and send out agenda for tomorrow's cytokine screening meeting",
+      "completedAt": "2026-08-04T16:05:41.183Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-03"
     }
   ]
 }
