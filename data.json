@@ -6475,9 +6475,12 @@
         "title": "1-on-1 with Steve",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-11-02T17:49:18.661Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-11-04T21:42:31.707Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mw0u1n74yogxqw2g93d",
@@ -9006,9 +9009,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-02"
+    },
+    {
+      "id": "mvzjzqh1trua22ap0ri",
+      "title": "1-on-1 with Steve",
+      "completedAt": "2026-11-04T21:42:31.708Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-04"
     }
   ],
-  "lastUpdated": "2026-11-04T15:10:41.855Z",
+  "lastUpdated": "2026-11-04T21:42:31.708Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
