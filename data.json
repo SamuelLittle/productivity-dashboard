@@ -5696,7 +5696,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-11-04T23:08:14.039Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mw2q9u6w14cvgnd3kyer",
+              "title": "conditions planning",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-04T23:08:26.264Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -7509,6 +7518,14 @@
         "time": null,
         "scheduledAt": "2026-11-04T15:10:14.239Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mu39fvpuyhq2d4m1yxe",
+        "taskId": "mw2q9krbbsiru2fvfib",
+        "subtaskId": "mw2q9u6w14cvgnd3kyer",
+        "time": null,
+        "scheduledAt": "2026-11-04T23:08:26.265Z",
+        "completedOnDay": false
       }
     ],
     "2026-11-09": [
@@ -8962,7 +8979,7 @@
       "date": "2026-11-04"
     }
   ],
-  "lastUpdated": "2026-11-04T23:08:14.040Z",
+  "lastUpdated": "2026-11-04T23:08:26.265Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
