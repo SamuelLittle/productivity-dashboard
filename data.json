@@ -5812,20 +5812,6 @@
     }
   ],
   "dailyLists": {
-    "2026-08-04": [
-      {
-        "id": "mseup9t9xpy8te849ff",
-        "title": "Prep for midyear check in",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-08-04T16:06:49.582Z",
-        "time": null,
-        "completedAt": "2026-08-06T16:00:18.742Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-08-06": [
       {
         "id": "mshpe4ylvx2jgo93e59",
@@ -6507,9 +6493,12 @@
         "title": "TAPIR order",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-11-04T15:10:41.855Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-11-04T22:53:26.451Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mw2n7uz86o6ulia07b4",
@@ -6532,65 +6521,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-08-04": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mrjt9r0bj672rjm1058",
-        "subtaskId": "mrjtcn8ow16iki5g43k",
-        "time": null,
-        "scheduledAt": "2026-07-16T17:07:31.742Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-06T15:59:56.902Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mrjt9r0bj672rjm1058",
-        "subtaskId": "mrjtaxm6r5s3ku8rlgr",
-        "time": null,
-        "scheduledAt": "2026-08-03T15:07:08.510Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-06T16:00:01.363Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mrtdkuneqzzg0oh9wn8",
-        "subtaskId": "mrtdoa7xlx90wtbw9yo",
-        "time": null,
-        "scheduledAt": "2026-08-03T15:07:14.140Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-06T16:00:08.076Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mrjt9r0bj672rjm1058",
-        "subtaskId": "mseuoa9s1rtc3g6ocje",
-        "time": null,
-        "scheduledAt": "2026-08-04T16:06:03.520Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-06T16:00:15.224Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-08-05": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mrjt9r0bj672rjm1058",
-        "subtaskId": "mrjtcyy70w7bx8ldlqd",
-        "time": null,
-        "scheduledAt": "2026-07-16T17:07:45.467Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-06T16:00:23.601Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-08-07": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -7650,39 +7580,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "id": "msdde3m3jn0gg6ffnwj",
-      "title": "RM int. ",
-      "completedAt": "2026-08-04T16:05:26.062Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-03"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mrjt9r0bj672rjm1058",
-      "subtaskId": "mrjtb6kp63w3055m9oi",
-      "completedAt": "2026-08-04T16:05:31.957Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-03"
-    },
-    {
-      "id": "msddh1t90h4ih8uk91ha",
-      "title": "Gather reagents for tomorrows killing assay",
-      "completedAt": "2026-08-04T16:05:36.592Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-03"
-    },
-    {
-      "id": "msdklhshjels9kv5rp8",
-      "title": "make and send out agenda for tomorrow's cytokine screening meeting",
-      "completedAt": "2026-08-04T16:05:41.183Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-03"
-    },
     {
       "projectId": "mkltwpanzsdw6b96wbe",
       "taskId": "mrjt9r0bj672rjm1058",
@@ -9035,9 +8932,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-04"
+    },
+    {
+      "id": "mw297glbmrwjui06cu",
+      "title": "TAPIR order",
+      "completedAt": "2026-11-04T22:53:26.451Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-04"
     }
   ],
-  "lastUpdated": "2026-11-04T21:43:35.507Z",
+  "lastUpdated": "2026-11-04T22:53:26.451Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
@@ -9159,7 +9064,6 @@
     ]
   },
   "dailyNotes": {
-    "2026-08-05": "- Also had mid year check in with Zora, went well",
     "2026-09-25": "- lots of odds and ends today"
   },
   "projectTaskOrder": {},
