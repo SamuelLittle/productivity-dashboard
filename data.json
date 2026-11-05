@@ -3293,6 +3293,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-11-05T20:07:48.975Z"
+            },
+            {
+              "id": "mw3z9v0yemi3okg1svu",
+              "title": "order PRF1 gRNA from Horizon",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-05T20:08:10.066Z"
             }
           ]
         }
@@ -8957,7 +8965,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-11-05T20:07:48.976Z",
+  "lastUpdated": "2026-11-05T20:08:10.066Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
