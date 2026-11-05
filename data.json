@@ -3301,6 +3301,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-11-05T20:08:10.066Z"
+            },
+            {
+              "id": "mw3zmx8rhitatzk9sni",
+              "title": "Request cells from Cell Therapy Group",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-05T20:18:19.467Z"
             }
           ]
         }
@@ -7600,6 +7608,14 @@
         "time": null,
         "scheduledAt": "2026-11-05T20:07:48.976Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mw3z93h99xi32jwc8q",
+        "subtaskId": "mw3zmx8rhitatzk9sni",
+        "time": null,
+        "scheduledAt": "2026-11-05T20:18:19.467Z",
+        "completedOnDay": false
       }
     ],
     "2026-11-06": [
@@ -8965,7 +8981,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-11-05T20:08:10.066Z",
+  "lastUpdated": "2026-11-05T20:18:19.467Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
