@@ -3285,7 +3285,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-11-05T20:07:34.365Z",
-          "subtasks": []
+          "subtasks": [
+            {
+              "id": "mw3z9er36wyqi2n5wb7",
+              "title": "Order sgRNA from Tapir",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-05T20:07:48.975Z"
+            }
+          ]
         }
       ],
       "progressUpdates": [],
@@ -7575,6 +7584,14 @@
         "time": null,
         "scheduledAt": "2026-11-05T15:35:57.360Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mw3z93h99xi32jwc8q",
+        "subtaskId": "mw3z9er36wyqi2n5wb7",
+        "time": null,
+        "scheduledAt": "2026-11-05T20:07:48.976Z",
+        "completedOnDay": false
       }
     ],
     "2026-11-06": [
@@ -8940,7 +8957,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-11-05T20:07:34.366Z",
+  "lastUpdated": "2026-11-05T20:07:48.976Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
