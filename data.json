@@ -6430,16 +6430,6 @@
         "completedAt": null,
         "time": null,
         "createdAt": "2026-11-02T17:49:02.867Z"
-      },
-      {
-        "id": "mw2n8q4zpgkhgkdasv",
-        "title": "ImmunoCloaking meeting Presentation Prep",
-        "description": "",
-        "priority": "medium",
-        "completed": false,
-        "completedAt": null,
-        "time": null,
-        "createdAt": "2026-11-04T21:43:35.507Z"
       }
     ],
     "2026-11-02": [
@@ -6504,6 +6494,18 @@
         "completedAt": "2026-11-04T22:53:26.451Z",
         "completionNotes": "",
         "completionLinks": ""
+      }
+    ],
+    "2026-11-05": [
+      {
+        "id": "mw2n8q4zpgkhgkdasv",
+        "title": "ImmunoCloaking meeting Presentation Prep",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "completedAt": null,
+        "time": null,
+        "createdAt": "2026-11-04T21:43:35.507Z"
       }
     ]
   },
@@ -7550,19 +7552,19 @@
         "completedOnDay": false
       },
       {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-11-05T15:35:46.994Z",
-        "completedOnDay": false
-      },
-      {
         "projectId": "mu39fvpuyhq2d4m1yxe",
         "taskId": "mw2q9krbbsiru2fvfib",
         "subtaskId": "mw2q9u6w14cvgnd3kyer",
         "time": null,
         "scheduledAt": "2026-11-05T15:35:47.015Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-11-05T15:35:57.360Z",
         "completedOnDay": false
       }
     ],
@@ -8920,7 +8922,7 @@
       "date": "2026-11-04"
     }
   ],
-  "lastUpdated": "2026-11-05T15:35:47.015Z",
+  "lastUpdated": "2026-11-05T15:35:57.397Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
