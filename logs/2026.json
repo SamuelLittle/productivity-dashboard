@@ -1880,6 +1880,44 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-08-07": [
+      {
+        "id": "msj56ih1cg58t95j6vt",
+        "title": "Meet with Sharmilla",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-08-07T16:11:14.821Z",
+        "time": null,
+        "completedAt": "2026-08-08T18:31:07.328Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "msj56pe49fi09y5r4he",
+        "title": "Meet with Meghan",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-08-07T16:11:23.788Z",
+        "time": null,
+        "completedAt": "2026-08-08T18:31:13.267Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "id": "msj5709m7d60hmubxju",
+        "title": "Make Flex workflow + Automation Plan",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-08-07T16:11:37.882Z",
+        "time": null,
+        "completedAt": "2026-08-08T18:31:40.824Z",
+        "completionNotes": "Sent cost estimates over to Juliette. Plan will emerge from senior staff meeting.",
+        "completionLinks": ""
+      }
     ]
   },
   "scheduledItems": {
@@ -4696,6 +4734,19 @@
         "scheduledAt": "2026-08-04T16:06:03.520Z",
         "completedOnDay": true,
         "completedAt": "2026-08-06T16:00:15.224Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ],
+    "2026-08-07": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mrjt9r0bj672rjm1058",
+        "subtaskId": "msj5g1vhyv2ztn5vqqe",
+        "time": null,
+        "scheduledAt": "2026-08-07T16:18:39.870Z",
+        "completedOnDay": true,
+        "completedAt": "2026-08-08T18:50:49.675Z",
         "completionNotes": "",
         "completionLinks": ""
       }
@@ -8381,6 +8432,84 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-05"
+    },
+    {
+      "id": "mshpe4ylvx2jgo93e59",
+      "title": "Meeting with Ben",
+      "completedAt": "2026-08-07T16:17:49.161Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-06"
+    },
+    {
+      "id": "mshpfww0x7j0uv7cog",
+      "title": "Surfaceome meeting follow up with Mayra + Kiristen",
+      "completedAt": "2026-08-07T16:17:52.477Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-06"
+    },
+    {
+      "id": "mshpei3w2htn51fzce9",
+      "title": "Meeting w/ Juliette + Bola + Jake",
+      "completedAt": "2026-08-07T16:17:54.735Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-06"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "movqvib91fmi31nrat2",
+      "subtaskId": null,
+      "title": "384 well killing assay",
+      "completedAt": "2026-08-07T16:18:13.748Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mp66vaik80f35xv2ryp",
+      "subtaskId": null,
+      "title": "384 well killing assay - pilot 2",
+      "completedAt": "2026-08-07T16:18:17.252Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mrtdkuneqzzg0oh9wn8",
+      "subtaskId": null,
+      "title": "NK screen Automation DevOps",
+      "completedAt": "2026-08-07T16:18:25.173Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3vj631ght8zzcdd8g",
+      "subtaskId": null,
+      "title": "Killing assay pilot 2",
+      "completedAt": "2026-08-07T16:18:44.852Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mm9bqsqn24abbz1pnup",
+      "subtaskId": null,
+      "title": "NK Knockout Pilot 4",
+      "completedAt": "2026-08-07T16:18:48.777Z",
+      "completionNotes": "",
+      "completionLinks": ""
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mn3bba4xdxq4je3r865",
+      "subtaskId": null,
+      "title": "KO Pilot 5",
+      "completedAt": "2026-08-07T16:18:51.985Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ]
 }
