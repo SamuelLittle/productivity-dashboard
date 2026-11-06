@@ -6459,10 +6459,12 @@
         "title": "Monthly cytokine meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-11-06T21:11:43.978Z",
         "time": null,
-        "createdAt": "2026-11-02T17:49:02.867Z"
+        "createdAt": "2026-11-02T17:49:02.867Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-11-02": [
@@ -8962,9 +8964,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-06"
+    },
+    {
+      "id": "mvzjzeabjmjax8mfmx",
+      "title": "Monthly cytokine meeting",
+      "completedAt": "2026-11-06T21:11:43.978Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-06"
     }
   ],
-  "lastUpdated": "2026-11-06T21:11:40.297Z",
+  "lastUpdated": "2026-11-06T21:11:43.978Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
