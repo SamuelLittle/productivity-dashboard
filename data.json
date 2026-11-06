@@ -6512,10 +6512,12 @@
         "title": "ImmunoCloaking meeting Presentation Prep",
         "description": "",
         "priority": "medium",
-        "completed": false,
-        "completedAt": null,
+        "completed": true,
+        "completedAt": "2026-11-06T16:18:31.445Z",
         "time": null,
-        "createdAt": "2026-11-04T21:43:35.507Z"
+        "createdAt": "2026-11-04T21:43:35.507Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -8879,9 +8881,17 @@
       "subtaskId": "mw3z9er36wyqi2n5wb7",
       "title": "Order sgRNA from Tapir",
       "completedAt": "2026-11-06T16:18:14.337Z"
+    },
+    {
+      "id": "mw2n8q4zpgkhgkdasv",
+      "title": "ImmunoCloaking meeting Presentation Prep",
+      "completedAt": "2026-11-06T16:18:31.446Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-05"
     }
   ],
-  "lastUpdated": "2026-11-06T16:18:14.337Z",
+  "lastUpdated": "2026-11-06T16:18:31.446Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
