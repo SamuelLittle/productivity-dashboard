@@ -3290,7 +3290,7 @@
           "title": "Lekopak Isolation",
           "description": "",
           "priority": "medium",
-          "completed": true,
+          "completed": false,
           "createdAt": "2026-10-08T22:56:35.752Z",
           "subtasks": [
             {
@@ -3303,9 +3303,9 @@
             }
           ],
           "tentativeWindow": null,
-          "completedAt": "2026-11-05T20:07:14.954Z",
-          "completionNotes": "",
-          "completionLinks": ""
+          "completedAt": null,
+          "completionNotes": null,
+          "completionLinks": null
         },
         {
           "id": "mw3z93h99xi32jwc8q",
@@ -8994,7 +8994,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-11-06T21:33:02.166Z",
+  "lastUpdated": "2026-11-06T21:33:05.556Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
