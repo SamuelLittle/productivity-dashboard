@@ -5785,8 +5785,11 @@
               "title": "conditions planning",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-04T23:08:26.264Z"
+              "completed": true,
+              "createdAt": "2026-11-04T23:08:26.264Z",
+              "completedAt": "2026-11-06T23:21:22.972Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mw2qa9il7apg0z4bn0d",
@@ -7620,7 +7623,10 @@
         "subtaskId": "mw2q9u6w14cvgnd3kyer",
         "time": null,
         "scheduledAt": "2026-11-06T16:18:40.988Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-06T23:21:22.972Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9015,9 +9021,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-06"
+    },
+    {
+      "projectId": "mu39fvpuyhq2d4m1yxe",
+      "taskId": "mw2q9krbbsiru2fvfib",
+      "subtaskId": "mw2q9u6w14cvgnd3kyer",
+      "completedAt": "2026-11-06T23:21:22.972Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-06"
     }
   ],
-  "lastUpdated": "2026-11-06T21:49:30.559Z",
+  "lastUpdated": "2026-11-06T23:21:22.972Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
