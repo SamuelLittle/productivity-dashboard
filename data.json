@@ -3292,7 +3292,16 @@
           "priority": "medium",
           "completed": true,
           "createdAt": "2026-10-08T22:56:35.752Z",
-          "subtasks": [],
+          "subtasks": [
+            {
+              "id": "mw5hqus6jm4f0n31a1",
+              "title": "transfer to biostore LN tank",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-06T21:33:02.166Z"
+            }
+          ],
           "tentativeWindow": null,
           "completedAt": "2026-11-05T20:07:14.954Z",
           "completionNotes": "",
@@ -8985,7 +8994,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-11-06T21:32:42.738Z",
+  "lastUpdated": "2026-11-06T21:33:02.166Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
