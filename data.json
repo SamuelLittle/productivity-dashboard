@@ -3259,7 +3259,16 @@
           "priority": "medium",
           "completed": false,
           "createdAt": "2026-09-23T17:52:55.782Z",
-          "subtasks": [],
+          "subtasks": [
+            {
+              "id": "mw5e07jyb9blol94arc",
+              "title": "Thaw + isolate NKs",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-06T19:48:20.158Z"
+            }
+          ],
           "tentativeWindow": {
             "start": "2026-11-16",
             "end": "2026-11-23"
@@ -7611,6 +7620,16 @@
         "scheduledAt": "2026-11-06T19:47:09.379Z",
         "completedOnDay": false
       }
+    ],
+    "2026-11-14": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mueeibc5gzv6690qi8q",
+        "subtaskId": "mw5e07jyb9blol94arc",
+        "time": null,
+        "scheduledAt": "2026-11-06T19:48:20.158Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8901,7 +8920,7 @@
       "date": "2026-11-05"
     }
   ],
-  "lastUpdated": "2026-11-06T19:47:20.832Z",
+  "lastUpdated": "2026-11-06T19:48:20.158Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
