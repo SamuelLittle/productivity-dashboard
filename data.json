@@ -3298,8 +3298,11 @@
               "title": "transfer to biostore LN tank",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-06T21:33:02.166Z"
+              "completed": true,
+              "createdAt": "2026-11-06T21:33:02.166Z",
+              "completedAt": "2026-11-09T18:16:40.818Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ],
           "tentativeWindow": null,
@@ -7642,7 +7645,10 @@
         "subtaskId": "mw5hqus6jm4f0n31a1",
         "time": null,
         "scheduledAt": "2026-11-06T21:33:10.798Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-09T18:16:40.818Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-11-13": [
@@ -9030,9 +9036,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-06"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mv04ylygu42tyrk3nb",
+      "subtaskId": "mw5hqus6jm4f0n31a1",
+      "completedAt": "2026-11-09T18:16:40.818Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-06"
     }
   ],
-  "lastUpdated": "2026-11-06T23:21:22.972Z",
+  "lastUpdated": "2026-11-09T18:16:40.818Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
