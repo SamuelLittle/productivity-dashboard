@@ -6451,9 +6451,12 @@
         "title": "Present at Immunocloaking meeting",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-10-23T18:27:00.142Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-11-10T22:37:43.278Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-11-06": [
@@ -9060,9 +9063,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-09"
+    },
+    {
+      "id": "mvlaxory2tnbc3g0d7w",
+      "title": "Present at Immunocloaking meeting",
+      "completedAt": "2026-11-10T22:37:43.278Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-09"
     }
   ],
-  "lastUpdated": "2026-11-10T22:37:38.736Z",
+  "lastUpdated": "2026-11-10T22:37:43.279Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
