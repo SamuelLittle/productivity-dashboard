@@ -3281,6 +3281,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-11-06T19:48:45.389Z"
+            },
+            {
+              "id": "mwb9yj6it7z4iggp9v",
+              "title": "optional media add",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-10T22:41:40.506Z"
             }
           ],
           "tentativeWindow": {
@@ -7607,6 +7615,16 @@
         "scheduledAt": "2026-11-10T22:40:55.376Z",
         "completedOnDay": false
       }
+    ],
+    "2026-11-17": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mueeibc5gzv6690qi8q",
+        "subtaskId": "mwb9yj6it7z4iggp9v",
+        "time": null,
+        "scheduledAt": "2026-11-10T22:41:40.507Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8882,7 +8900,7 @@
       "date": "2026-11-09"
     }
   ],
-  "lastUpdated": "2026-11-10T22:41:03.392Z",
+  "lastUpdated": "2026-11-10T22:41:40.507Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
