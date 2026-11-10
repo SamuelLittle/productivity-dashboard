@@ -5933,46 +5933,6 @@
     }
   ],
   "dailyLists": {
-    "2026-08-10": [
-      {
-        "id": "mskqc9yxnorf9f9ex2",
-        "title": "RM int.",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-08-08T18:51:21.852Z",
-        "time": "14:30",
-        "completedAt": "2026-08-10T23:18:23.577Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-08-11": [
-      {
-        "id": "mskrwuol7i1uditwnl",
-        "title": "Meet with Baptiste and Mayra",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-08-08T19:35:21.429Z",
-        "time": "10:00",
-        "completedAt": "2026-08-11T18:23:58.044Z",
-        "completionNotes": "Need to send out summary email to Mayra + Baptiste",
-        "completionLinks": ""
-      },
-      {
-        "id": "mskry5zjocg15xz8nxc",
-        "title": "Group Scrum",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-08-08T19:36:22.735Z",
-        "time": null,
-        "completedAt": "2026-08-11T23:15:48.773Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-08-19": [
       {
         "id": "mt0am8vmlkomagrhd8q",
@@ -6565,30 +6525,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-08-10": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mrjt9r0bj672rjm1058",
-        "subtaskId": "msj5gxn5bqmd3yv5o6l",
-        "time": null,
-        "scheduledAt": "2026-08-08T18:52:07.621Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-11T15:16:34.915Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mmfjn4b1w85dvswipdk",
-        "taskId": "mskrjp4op9yg4r87bof",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-08-08T19:25:07.704Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-11T15:16:46.379Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-08-13": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -6673,30 +6609,6 @@
         "completedOnDay": true,
         "completedAt": "2026-08-19T23:05:47.525Z",
         "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-08-11": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mskqf78ku9h0f4d5ecb",
-        "subtaskId": "mskqfor4ub49qvf8s5h",
-        "time": null,
-        "scheduledAt": "2026-08-11T15:16:50.042Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-11T23:15:12.087Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      },
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "msot20jrbopourlxc6r",
-        "subtaskId": "msot2mzh2jzo4b98lkl",
-        "time": null,
-        "scheduledAt": "2026-08-11T15:18:55.709Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-11T23:15:45.354Z",
-        "completionNotes": "Significant progress made - need to be continued tomorrow AM",
         "completionLinks": ""
       }
     ],
@@ -7700,107 +7612,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "id": "msj56ih1cg58t95j6vt",
-      "title": "Meet with Sharmilla",
-      "completedAt": "2026-08-08T18:31:07.329Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-07"
-    },
-    {
-      "id": "msj56pe49fi09y5r4he",
-      "title": "Meet with Meghan",
-      "completedAt": "2026-08-08T18:31:13.267Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-07"
-    },
-    {
-      "id": "msj5709m7d60hmubxju",
-      "title": "Make Flex workflow + Automation Plan",
-      "completedAt": "2026-08-08T18:31:40.825Z",
-      "completionNotes": "Sent cost estimates over to Juliette. Plan will emerge from senior staff meeting.",
-      "completionLinks": "",
-      "date": "2026-08-07"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mrjt9r0bj672rjm1058",
-      "subtaskId": "msj5g1vhyv2ztn5vqqe",
-      "completedAt": "2026-08-08T18:50:49.675Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-07"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mn96b0bm52iua8c95fk",
-      "subtaskId": null,
-      "title": "Full run with sequencing",
-      "completedAt": "2026-08-08T19:24:30.798Z",
-      "completionNotes": "",
-      "completionLinks": ""
-    },
-    {
-      "id": "mskqc9yxnorf9f9ex2",
-      "title": "RM int.",
-      "completedAt": "2026-08-10T23:18:23.577Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-10"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mrjt9r0bj672rjm1058",
-      "subtaskId": "msj5gxn5bqmd3yv5o6l",
-      "completedAt": "2026-08-11T15:16:34.915Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-10"
-    },
-    {
-      "projectId": "mmfjn4b1w85dvswipdk",
-      "taskId": "mskrjp4op9yg4r87bof",
-      "completedAt": "2026-08-11T15:16:46.380Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-10"
-    },
-    {
-      "id": "mskrwuol7i1uditwnl",
-      "title": "Meet with Baptiste and Mayra",
-      "completedAt": "2026-08-11T18:23:58.044Z",
-      "completionNotes": "Need to send out summary email to Mayra + Baptiste",
-      "completionLinks": "",
-      "date": "2026-08-11"
-    },
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mskqf78ku9h0f4d5ecb",
-      "subtaskId": "mskqfor4ub49qvf8s5h",
-      "completedAt": "2026-08-11T23:15:12.087Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-11"
-    },
-    {
-      "projectId": "mpyqnvm6p9zp4xlp64m",
-      "taskId": "msot20jrbopourlxc6r",
-      "subtaskId": "msot2mzh2jzo4b98lkl",
-      "completedAt": "2026-08-11T23:15:45.354Z",
-      "completionNotes": "Significant progress made - need to be continued tomorrow AM",
-      "completionLinks": "",
-      "date": "2026-08-11"
-    },
-    {
-      "id": "mskry5zjocg15xz8nxc",
-      "title": "Group Scrum",
-      "completedAt": "2026-08-11T23:15:48.773Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-11"
-    },
     {
       "projectId": "mkltwpanzsdw6b96wbe",
       "taskId": "mskqf78ku9h0f4d5ecb",
