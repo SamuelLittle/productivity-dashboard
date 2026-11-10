@@ -3289,6 +3289,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-11-10T22:41:40.506Z"
+            },
+            {
+              "id": "mwb9zk0kev29inthuau",
+              "title": "Normalize + coculture",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-10T22:42:28.244Z"
             }
           ],
           "tentativeWindow": {
@@ -7625,6 +7633,16 @@
         "scheduledAt": "2026-11-10T22:41:40.507Z",
         "completedOnDay": false
       }
+    ],
+    "2026-11-19": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mueeibc5gzv6690qi8q",
+        "subtaskId": "mwb9zk0kev29inthuau",
+        "time": null,
+        "scheduledAt": "2026-11-10T22:42:28.244Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -8900,7 +8918,7 @@
       "date": "2026-11-09"
     }
   ],
-  "lastUpdated": "2026-11-10T22:41:40.507Z",
+  "lastUpdated": "2026-11-10T22:42:28.244Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
