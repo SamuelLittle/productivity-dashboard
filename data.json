@@ -6544,6 +6544,17 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-11-11": [
+      {
+        "id": "mwcfq4pqs2p37pka2h",
+        "title": "CALM-EM workshop",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-11-11T18:10:52.382Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -6630,19 +6641,6 @@
         "scheduledAt": "2026-08-08T18:58:24.520Z",
         "completedOnDay": true,
         "completedAt": "2026-08-19T23:05:47.525Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
-    "2026-08-12": [
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "msot20jrbopourlxc6r",
-        "subtaskId": "mspa50q4f9t1fqxjy1v",
-        "time": null,
-        "scheduledAt": "2026-08-11T23:17:53.140Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-13T23:23:30.551Z",
         "completionNotes": "",
         "completionLinks": ""
       }
@@ -8948,7 +8946,7 @@
       "date": "2026-11-10"
     }
   ],
-  "lastUpdated": "2026-11-11T16:19:10.513Z",
+  "lastUpdated": "2026-11-11T18:10:52.382Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
