@@ -3317,8 +3317,11 @@
               "title": "Premake cNKMACs",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-11T19:24:27.027Z"
+              "completed": true,
+              "createdAt": "2026-11-11T19:24:27.027Z",
+              "completedAt": "2026-11-12T21:23:52.858Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ],
           "tentativeWindow": null
@@ -7685,7 +7688,10 @@
         "subtaskId": "mwcicr2r0vpam538432b",
         "time": null,
         "scheduledAt": "2026-11-11T19:24:33.016Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-12T21:23:52.858Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-11-17": [
@@ -8998,9 +9004,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-10"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mueeibc5gzv6690qi8q",
+      "subtaskId": "mwcicr2r0vpam538432b",
+      "completedAt": "2026-11-12T21:23:52.858Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-12"
     }
   ],
-  "lastUpdated": "2026-11-11T19:24:33.016Z",
+  "lastUpdated": "2026-11-12T21:23:52.858Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
