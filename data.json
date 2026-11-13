@@ -1728,11 +1728,11 @@
               "title": "metadata for T cell Pilot",
               "description": "",
               "priority": "medium",
-              "completed": true,
+              "completed": false,
               "createdAt": "2026-10-23T17:35:38.800Z",
-              "completedAt": "2026-11-13T00:21:01.995Z",
-              "completionNotes": "",
-              "completionLinks": ""
+              "completedAt": null,
+              "completionNotes": null,
+              "completionLinks": null
             }
           ],
           "tentativeWindow": null
@@ -7554,10 +7554,10 @@
         "subtaskId": "mvl93n74qj4xoe11wli",
         "time": null,
         "scheduledAt": "2026-11-10T22:37:47.279Z",
-        "completedOnDay": true,
-        "completedAt": "2026-11-13T00:21:01.995Z",
-        "completionNotes": "",
-        "completionLinks": ""
+        "completedOnDay": false,
+        "completedAt": null,
+        "completionNotes": null,
+        "completionLinks": null
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9045,7 +9045,7 @@
       "date": "2026-11-11"
     }
   ],
-  "lastUpdated": "2026-11-13T00:21:01.995Z",
+  "lastUpdated": "2026-11-13T00:21:10.395Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
