@@ -4577,8 +4577,11 @@
               "title": "bravo automation workflow w/ Sylvia",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-11T18:57:49.091Z"
+              "completed": true,
+              "createdAt": "2026-11-11T18:57:49.091Z",
+              "completedAt": "2026-11-13T00:09:07.085Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -7680,7 +7683,10 @@
         "subtaskId": "mwchei3nr45um5mjl9j",
         "time": null,
         "scheduledAt": "2026-11-11T18:57:49.092Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-13T00:09:07.085Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -9013,9 +9019,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-12"
+    },
+    {
+      "projectId": "mklu1lye4czo9brjznq",
+      "taskId": "mthfvhiuze0mw8hl3h",
+      "subtaskId": "mwchei3nr45um5mjl9j",
+      "completedAt": "2026-11-13T00:09:07.085Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-12"
     }
   ],
-  "lastUpdated": "2026-11-12T21:23:52.858Z",
+  "lastUpdated": "2026-11-13T00:09:07.085Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
