@@ -1633,8 +1633,11 @@
               "title": "SMARTseq D2",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-09-29T15:28:28.168Z"
+              "completed": true,
+              "createdAt": "2026-09-29T15:28:28.168Z",
+              "completedAt": "2026-11-13T00:21:23.970Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ],
           "completedAt": null,
@@ -7579,7 +7582,10 @@
         "subtaskId": "mumtznd4f2zhn4ee89",
         "time": null,
         "scheduledAt": "2026-11-06T19:47:09.379Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-13T00:21:23.970Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-10-26": [
@@ -9058,9 +9064,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-11"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mu2u6xxj0bj46ry6m4u7",
+      "subtaskId": "mumtznd4f2zhn4ee89",
+      "completedAt": "2026-11-13T00:21:23.970Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-11"
     }
   ],
-  "lastUpdated": "2026-11-13T00:21:19.614Z",
+  "lastUpdated": "2026-11-13T00:21:23.970Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
