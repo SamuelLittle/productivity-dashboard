@@ -3420,8 +3420,11 @@
               "title": "Order missing guides",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-13T00:20:25.534Z"
+              "completed": true,
+              "createdAt": "2026-11-13T00:20:25.534Z",
+              "completedAt": "2026-11-13T23:56:00.616Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         }
@@ -7687,7 +7690,10 @@
         "subtaskId": "mwe8d8alzqrrms3cfr",
         "time": null,
         "scheduledAt": "2026-11-13T00:21:46.718Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-13T23:56:00.616Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9122,9 +9128,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-13"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mw3z93h99xi32jwc8q",
+      "subtaskId": "mwe8d8alzqrrms3cfr",
+      "completedAt": "2026-11-13T23:56:00.616Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-13"
     }
   ],
-  "lastUpdated": "2026-11-13T22:13:12.366Z",
+  "lastUpdated": "2026-11-13T23:56:00.616Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
