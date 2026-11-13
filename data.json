@@ -6607,9 +6607,12 @@
         "title": "lunch with Steve",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-11-11T18:11:04.241Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-11-13T00:21:28.545Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -9073,9 +9076,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-11"
+    },
+    {
+      "id": "mwcfqdv5uournjiiyhj",
+      "title": "lunch with Steve",
+      "completedAt": "2026-11-13T00:21:28.545Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-11"
     }
   ],
-  "lastUpdated": "2026-11-13T00:21:23.970Z",
+  "lastUpdated": "2026-11-13T00:21:28.545Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
