@@ -3402,6 +3402,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-11-05T20:18:40.401Z"
+            },
+            {
+              "id": "mwe8d8alzqrrms3cfr",
+              "title": "Order missing guides",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-13T00:20:25.534Z"
             }
           ]
         }
@@ -9045,7 +9053,7 @@
       "date": "2026-11-12"
     }
   ],
-  "lastUpdated": "2026-11-13T00:09:11.210Z",
+  "lastUpdated": "2026-11-13T00:20:25.534Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
