@@ -1728,8 +1728,11 @@
               "title": "metadata for T cell Pilot",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-10-23T17:35:38.800Z"
+              "completed": true,
+              "createdAt": "2026-10-23T17:35:38.800Z",
+              "completedAt": "2026-11-13T00:21:01.995Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ],
           "tentativeWindow": null
@@ -6605,19 +6608,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-08-13": [
-      {
-        "projectId": "mkltwpanzsdw6b96wbe",
-        "taskId": "mskqf78ku9h0f4d5ecb",
-        "subtaskId": "mskqgp20dtfxyhum51v",
-        "time": null,
-        "scheduledAt": "2026-08-08T18:54:48.025Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-13T23:22:59.065Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-08-14": [
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -7564,7 +7554,10 @@
         "subtaskId": "mvl93n74qj4xoe11wli",
         "time": null,
         "scheduledAt": "2026-11-10T22:37:47.279Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-13T00:21:01.995Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -7744,24 +7737,6 @@
     ]
   },
   "completedTasks": [
-    {
-      "projectId": "mkltwpanzsdw6b96wbe",
-      "taskId": "mskqf78ku9h0f4d5ecb",
-      "subtaskId": "mskqgp20dtfxyhum51v",
-      "completedAt": "2026-08-13T23:22:59.066Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-13"
-    },
-    {
-      "projectId": "mpyqnvm6p9zp4xlp64m",
-      "taskId": "msot20jrbopourlxc6r",
-      "subtaskId": "mspa50q4f9t1fqxjy1v",
-      "completedAt": "2026-08-13T23:23:30.551Z",
-      "completionNotes": "",
-      "completionLinks": "",
-      "date": "2026-08-12"
-    },
     {
       "projectId": "mkltwpanzsdw6b96wbe",
       "taskId": "mskqf78ku9h0f4d5ecb",
@@ -9059,9 +9034,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-12"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mueefi2pp63isc2vuzs",
+      "subtaskId": "mvl93n74qj4xoe11wli",
+      "completedAt": "2026-11-13T00:21:01.995Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-11"
     }
   ],
-  "lastUpdated": "2026-11-13T00:20:44.121Z",
+  "lastUpdated": "2026-11-13T00:21:01.995Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
