@@ -3305,8 +3305,11 @@
               "title": "Nucleofect NK cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-06T19:48:45.389Z"
+              "completed": true,
+              "createdAt": "2026-11-06T19:48:45.389Z",
+              "completedAt": "2026-11-13T22:13:12.366Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mwb9yj6it7z4iggp9v",
@@ -7657,7 +7660,10 @@
         "subtaskId": "mw5e0r0tgx2tk93c1nf",
         "time": null,
         "scheduledAt": "2026-11-10T22:41:03.392Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-13T22:13:12.366Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9107,9 +9113,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-11"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mueeibc5gzv6690qi8q",
+      "subtaskId": "mw5e0r0tgx2tk93c1nf",
+      "completedAt": "2026-11-13T22:13:12.366Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-13"
     }
   ],
-  "lastUpdated": "2026-11-13T00:22:09.990Z",
+  "lastUpdated": "2026-11-13T22:13:12.366Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
