@@ -3285,8 +3285,11 @@
               "title": "Thaw + isolate NKs",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-06T19:48:20.158Z"
+              "completed": true,
+              "createdAt": "2026-11-06T19:48:20.158Z",
+              "completedAt": "2026-11-13T00:09:11.210Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mw5e0r0tgx2tk93c1nf",
@@ -7675,7 +7678,10 @@
         "subtaskId": "mw5e07jyb9blol94arc",
         "time": null,
         "scheduledAt": "2026-11-10T22:40:55.376Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-13T00:09:11.210Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mklu1lye4czo9brjznq",
@@ -9028,9 +9034,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-12"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mueeibc5gzv6690qi8q",
+      "subtaskId": "mw5e07jyb9blol94arc",
+      "completedAt": "2026-11-13T00:09:11.210Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-12"
     }
   ],
-  "lastUpdated": "2026-11-13T00:09:07.085Z",
+  "lastUpdated": "2026-11-13T00:09:11.210Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
