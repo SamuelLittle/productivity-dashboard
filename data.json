@@ -1927,8 +1927,11 @@
               "title": "RNA extraction continued",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-11T18:12:33.450Z"
+              "completed": true,
+              "createdAt": "2026-11-11T18:12:33.450Z",
+              "completedAt": "2026-11-14T00:00:18.241Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -7666,7 +7669,10 @@
         "subtaskId": "mwcfsap6bkzw0n0w6r",
         "time": null,
         "scheduledAt": "2026-11-11T18:12:33.451Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-14T00:00:18.241Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -9139,9 +9145,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-13"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mvlb1t9iifvcdaubvhj",
+      "subtaskId": "mwcfsap6bkzw0n0w6r",
+      "completedAt": "2026-11-14T00:00:18.241Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-13"
     }
   ],
-  "lastUpdated": "2026-11-13T23:59:51.191Z",
+  "lastUpdated": "2026-11-14T00:00:18.241Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
