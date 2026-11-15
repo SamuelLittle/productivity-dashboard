@@ -6634,6 +6634,17 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-11-15": [
+      {
+        "id": "mwi700decc0vwb3dkov",
+        "title": "Linear MCP integration",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "createdAt": "2026-11-15T18:53:13.827Z",
+        "time": null
+      }
     ]
   },
   "scheduledItems": {
@@ -9134,7 +9145,7 @@
       "date": "2026-11-13"
     }
   ],
-  "lastUpdated": "2026-11-15T18:53:03.581Z",
+  "lastUpdated": "2026-11-15T18:53:13.827Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
