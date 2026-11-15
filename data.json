@@ -1734,11 +1734,11 @@
               "title": "metadata for T cell Pilot",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-10-23T17:35:38.800Z",
-              "completedAt": null,
-              "completionNotes": null,
-              "completionLinks": null
+              "completedAt": "2026-11-15T20:16:45.247Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ],
           "tentativeWindow": null
@@ -7789,7 +7789,10 @@
         "subtaskId": "mvl93n74qj4xoe11wli",
         "time": null,
         "scheduledAt": "2026-11-15T18:52:47.977Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-15T20:16:45.246Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -9152,9 +9155,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-13"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mueefi2pp63isc2vuzs",
+      "subtaskId": "mvl93n74qj4xoe11wli",
+      "completedAt": "2026-11-15T20:16:45.247Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-15"
     }
   ],
-  "lastUpdated": "2026-11-15T18:53:33.510Z",
+  "lastUpdated": "2026-11-15T20:16:45.247Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
