@@ -3471,6 +3471,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-11-15T20:30:50.847Z"
+            },
+            {
+              "id": "mwiahx0fjh1bwghgs3",
+              "title": "NK nucleofection",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-15T20:31:08.127Z"
             }
           ]
         }
@@ -7857,6 +7865,16 @@
         "scheduledAt": "2026-11-15T20:30:50.847Z",
         "completedOnDay": false
       }
+    ],
+    "2026-12-03": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mw3z93h99xi32jwc8q",
+        "subtaskId": "mwiahx0fjh1bwghgs3",
+        "time": null,
+        "scheduledAt": "2026-11-15T20:31:08.127Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -9238,7 +9256,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-11-15T20:30:50.847Z",
+  "lastUpdated": "2026-11-15T20:31:08.127Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
