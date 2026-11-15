@@ -3463,6 +3463,14 @@
               "completedAt": "2026-11-13T23:56:00.616Z",
               "completionNotes": "",
               "completionLinks": ""
+            },
+            {
+              "id": "mwiahjofktd3jvhvdac",
+              "title": "NK Thaw + Isolation",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-15T20:30:50.847Z"
             }
           ]
         }
@@ -7839,6 +7847,16 @@
         "scheduledAt": "2026-11-15T20:24:06.539Z",
         "completedOnDay": false
       }
+    ],
+    "2026-12-02": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mw3z93h99xi32jwc8q",
+        "subtaskId": "mwiahjofktd3jvhvdac",
+        "time": null,
+        "scheduledAt": "2026-11-15T20:30:50.847Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -9220,7 +9238,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-11-15T20:24:06.539Z",
+  "lastUpdated": "2026-11-15T20:30:50.847Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
