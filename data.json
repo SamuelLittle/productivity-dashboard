@@ -1748,7 +1748,7 @@
           "title": "Treatment Plate Reorg",
           "description": "",
           "priority": "medium",
-          "completed": false,
+          "completed": true,
           "createdAt": "2026-09-30T22:54:22.163Z",
           "subtasks": [
             {
@@ -1758,7 +1758,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-30T22:54:40.917Z",
-              "completedAt": "2026-10-28T23:38:57.948Z",
+              "completedAt": "2026-11-15T20:17:11.643Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1769,7 +1769,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-30T22:54:59.146Z",
-              "completedAt": "2026-10-08T21:45:35.866Z",
+              "completedAt": "2026-11-15T20:17:11.643Z",
               "completionNotes": "made and stored at -80\n",
               "completionLinks": ""
             },
@@ -1780,7 +1780,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-30T22:55:34.328Z",
-              "completedAt": "2026-10-05T15:15:58.193Z",
+              "completedAt": "2026-11-15T20:17:11.643Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1791,7 +1791,7 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-09-30T22:55:49.140Z",
-              "completedAt": "2026-10-05T15:13:52.825Z",
+              "completedAt": "2026-11-15T20:17:11.643Z",
               "completionNotes": "",
               "completionLinks": ""
             },
@@ -1802,11 +1802,14 @@
               "priority": "medium",
               "completed": true,
               "createdAt": "2026-10-08T16:11:50.621Z",
-              "completedAt": "2026-10-13T16:43:39.126Z",
+              "completedAt": "2026-11-15T20:17:11.643Z",
               "completionNotes": "",
               "completionLinks": ""
             }
-          ]
+          ],
+          "completedAt": "2026-11-15T20:17:11.643Z",
+          "completionNotes": "",
+          "completionLinks": ""
         },
         {
           "id": "mvlaza3fpz3iixsw3k",
@@ -9164,9 +9167,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-15"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "muopcxjnwie5zwx7zkq",
+      "subtaskId": null,
+      "title": "Treatment Plate Reorg",
+      "completedAt": "2026-11-15T20:17:11.643Z",
+      "completionNotes": "",
+      "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-11-15T20:16:45.247Z",
+  "lastUpdated": "2026-11-15T20:17:11.643Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
