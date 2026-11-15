@@ -3479,6 +3479,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-11-15T20:31:08.127Z"
+            },
+            {
+              "id": "mwiaiqqtw1izfrtfh8b",
+              "title": "T cell thaw",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-15T20:31:46.661Z"
             }
           ]
         }
@@ -7875,6 +7883,16 @@
         "scheduledAt": "2026-11-15T20:31:08.127Z",
         "completedOnDay": false
       }
+    ],
+    "2026-12-08": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mw3z93h99xi32jwc8q",
+        "subtaskId": "mwiaiqqtw1izfrtfh8b",
+        "time": null,
+        "scheduledAt": "2026-11-15T20:31:46.661Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -9256,7 +9274,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-11-15T20:31:08.127Z",
+  "lastUpdated": "2026-11-15T20:31:46.661Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
