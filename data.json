@@ -3375,6 +3375,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-11-15T20:24:06.539Z"
+            },
+            {
+              "id": "mwiam1gzazykeubah9b",
+              "title": "Flow Prep + anlaysis",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-15T20:34:20.531Z"
             }
           ],
           "tentativeWindow": null
@@ -7929,6 +7937,16 @@
         "scheduledAt": "2026-11-15T20:33:31.341Z",
         "completedOnDay": false
       }
+    ],
+    "2026-11-20": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mueeibc5gzv6690qi8q",
+        "subtaskId": "mwiam1gzazykeubah9b",
+        "time": null,
+        "scheduledAt": "2026-11-15T20:34:20.531Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -9310,7 +9328,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-11-15T20:33:31.341Z",
+  "lastUpdated": "2026-11-15T20:34:20.531Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
