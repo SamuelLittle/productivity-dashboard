@@ -4864,6 +4864,19 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-08-14": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mskqf78ku9h0f4d5ecb",
+        "subtaskId": "mskqhu5cfmvtg3greeg",
+        "time": null,
+        "scheduledAt": "2026-08-08T18:55:41.280Z",
+        "completedOnDay": true,
+        "completedAt": "2026-08-14T20:28:51.748Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
     ]
   },
   "weeklySummaries": {
@@ -8743,6 +8756,15 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-08-12"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mskqf78ku9h0f4d5ecb",
+      "subtaskId": "mskqhu5cfmvtg3greeg",
+      "completedAt": "2026-08-14T20:28:51.748Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-08-14"
     }
   ]
 }
