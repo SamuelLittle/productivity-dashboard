@@ -3487,6 +3487,14 @@
               "priority": "medium",
               "completed": false,
               "createdAt": "2026-11-15T20:31:46.661Z"
+            },
+            {
+              "id": "mwiajav86ro1qkuy6co",
+              "title": "NK Normalization + set up killing assay",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-15T20:32:12.740Z"
             }
           ]
         }
@@ -7893,6 +7901,16 @@
         "scheduledAt": "2026-11-15T20:31:46.661Z",
         "completedOnDay": false
       }
+    ],
+    "2026-12-09": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mw3z93h99xi32jwc8q",
+        "subtaskId": "mwiajav86ro1qkuy6co",
+        "time": null,
+        "scheduledAt": "2026-11-15T20:32:12.740Z",
+        "completedOnDay": false
+      }
     ]
   },
   "completedTasks": [
@@ -9274,7 +9292,7 @@
       "completionLinks": ""
     }
   ],
-  "lastUpdated": "2026-11-15T20:31:46.661Z",
+  "lastUpdated": "2026-11-15T20:32:12.740Z",
   "taskOrder": {
     "2026-01-20": [
       "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
