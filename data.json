@@ -6724,9 +6724,12 @@
         "title": "Linear MCP integration",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-11-15T18:53:13.827Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-11-16T16:54:11.191Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "id": "mwi70fk6f2296df7uyq",
@@ -9313,9 +9316,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-15"
+    },
+    {
+      "id": "mwi700decc0vwb3dkov",
+      "title": "Linear MCP integration",
+      "completedAt": "2026-11-16T16:54:11.191Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-15"
     }
   ],
-  "lastUpdated": "2026-11-16T16:54:05.165Z",
+  "lastUpdated": "2026-11-16T16:54:11.191Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
