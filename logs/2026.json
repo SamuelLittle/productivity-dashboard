@@ -4877,6 +4877,150 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-08-17": [
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mskqf78ku9h0f4d5ecb",
+        "subtaskId": "mskqisr3wd7fo7poan",
+        "time": null,
+        "scheduledAt": "2026-08-08T18:56:26.128Z",
+        "completedOnDay": true,
+        "completedAt": "2026-08-19T15:18:43.797Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      },
+      {
+        "projectId": "mkltwpanzsdw6b96wbe",
+        "taskId": "mskqf78ku9h0f4d5ecb",
+        "subtaskId": "mstel5xzbx7o54iggwn",
+        "time": null,
+        "scheduledAt": "2026-08-14T20:32:16.727Z",
+        "completedOnDay": true,
+        "completedAt": "2026-08-19T15:18:47.877Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
+    ]
+  },
+  "taskOrder": {
+    "2026-01-20": [
+      "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp",
+      "project:mkltwpanzsdw6b96wbe:mklu382vfgedlfuwiwp:mklu4eak1mc3kdz2kaz",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mklu9lou6cliuwjrbul",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mklu9x8uztbnqh3ddbl",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mklua7fi5tb0qt34jlc",
+      "project:mkltv6xwvh4ltoqkes:mklusog2097tkm380gri:mklut3v9xiajfvhkbm8"
+    ],
+    "2026-01-21": [
+      "standalone:mko86jqhiwdi2j2yr8d",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mkoagtuviunu3m9qnfp",
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mklvt4wgf7f7a1nlide",
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mkn7wppk340n0a2nk6p",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mklubc9spa9l1sf43r9",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mklubxziy4olc2hyz6",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mklucpk49ymw18a04v6",
+      "project:mkltv6xwvh4ltoqkes:mklvrchlpys3nvusoaj",
+      "project:mklu1lye4czo9brjznq:mkmsv0dd65q3mlfg2gh",
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mklvtuce9y23orzikye"
+    ],
+    "2026-01-22": [
+      "standalone:mkp1gog8npeh1a0qsh8",
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mkpn6pa0lw16pls5udr",
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mklvv366nurez8d2w5p",
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mkps4kkk75pfti3zcyu",
+      "project:mkltv6xwvh4ltoqkes:mklusog2097tkm380gri:mklut3v9xiajfvhkbm8",
+      "project:mkltv6xwvh4ltoqkes:mkn5xu0po7lfqnsjdqm:mkn67r0mxdgt41tv9x9",
+      "project:mkltv6xwvh4ltoqkes:mkprwk8ffdngatq3zsn:mkprwz3arfnaax1igag"
+    ],
+    "2026-01-23": [
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mklvvdvy4p6j9bb03od",
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mkmt9zjzsdaha14yg",
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mklvxbuaoylqrcl5sra",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mklw1qdgnu2ei75f2jc",
+      "project:mkltv6xwvh4ltoqkes:mklusog2097tkm380gri:mklut3v9xiajfvhkbm8",
+      "standalone:mkr4bjxlg5v28wpwsf7",
+      "standalone:mkr4cqoy29h8aljftyw"
+    ],
+    "2026-01-26": [
+      "project:mklu1lye4czo9brjznq:mkmsy72n9wkp209y165:mkn5202q853nkns38kg",
+      "project:mkltv6xwvh4ltoqkes:mkn3iy4jrdxtygzkgtn:mkvdry9247tgw72t37h",
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mkps7yuj9uqc2bzxpoc",
+      "project:mkltv6xwvh4ltoqkes:mkn3iy4jrdxtygzkgtn:mkn3lfq9wjzz5uacap",
+      "project:mkltv6xwvh4ltoqkes:mkn3iy4jrdxtygzkgtn:mkn3ly6lleab7y1plyn",
+      "project:mkltv6xwvh4ltoqkes:mkn3iy4jrdxtygzkgtn:mkn3lni355t2ayoslmt",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mklyikciusnr4zg0ch",
+      "project:mkltv6xwvh4ltoqkes:mklusog2097tkm380gri:mklut3v9xiajfvhkbm8",
+      "standalone:mkrwig354nhvm1x7nxh"
+    ],
+    "2026-01-27": [
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mkps8pzsy035l5qqd3a",
+      "project:mkltwpanzsdw6b96wbe:mklvsgrboq443ll7wi:mktcgaa6nxht55nod0s",
+      "project:mklu1lye4czo9brjznq:mkmsy72n9wkp209y165:mkmt2nb1kfc39bh8tcj",
+      "project:mklu1lye4czo9brjznq:mkmsv0dd65q3mlfg2gh:mktbycdlej9nq6ehf4"
+    ],
+    "2026-01-28": [
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mkmsg26ittknmc9rlw8",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mkmsgm03dcwl3qr200o",
+      "project:mkltywpq0yriuhvt8wmb:mkx0kcz2o187jm7pao",
+      "standalone:mktcyv3tuw1t805lrig",
+      "project:mkltv6xwvh4ltoqkes:mklusog2097tkm380gri:mkxg44dox8c1vm3pla",
+      "standalone:mkx0j2kmmc07vgniueb",
+      "project:mkltv6xwvh4ltoqkes:mkxg58flzv21oiwevu",
+      "project:mkltv6xwvh4ltoqkes:mkxg58flzv21oiwevu:mkxg87euok1aaqy0f5",
+      "project:mkltv6xwvh4ltoqkes:mkxg58flzv21oiwevu:mkxg8lavo0uf669brrh"
+    ],
+    "2026-01-29": [
+      "project:mkltv6xwvh4ltoqkes:mkxg58flzv21oiwevu:mkxgitnyfdxczckr0op",
+      "project:mkltv6xwvh4ltoqkes:mklusog2097tkm380gri:mkxg38g8ik46ipm0vvh",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mkyexfraypeeua9wm1",
+      "project:mkltwpanzsdw6b96wbe:mkz0skpg4z23p4uz9j7",
+      "project:mkltwpanzsdw6b96wbe:mkyn5q9752ye45ab8zw:mkyn6y24pralyojo7ps"
+    ],
+    "2026-01-30": [
+      "standalone:mkvn1iwg7adsu5kpmx7",
+      "standalone:mkx6uziro64sedfr2ij",
+      "project:mkltv6xwvh4ltoqkes:mkxg58flzv21oiwevu:mkxgitnyfdxczckr0op",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mkyexfraypeeua9wm1",
+      "project:mkltv6xwvh4ltoqkes:mklusog2097tkm380gri:mkxg38g8ik46ipm0vvh"
+    ],
+    "2026-02-02": [
+      "project:mklu1lye4czo9brjznq:mkmsy72n9wkp209y165:mkmt2nb1kfc39bh8tcj",
+      "project:mklu1lye4czo9brjznq:mkmsy72n9wkp209y165:ml00zymnlen3hmf5p1h",
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mkyexfraypeeua9wm1",
+      "project:mkltv6xwvh4ltoqkes:mklusog2097tkm380gri:ml2kr5xoslsjkrhh9a",
+      "project:mkltv6xwvh4ltoqkes:mkxg58flzv21oiwevu:ml2kt6s6czig6og9t2k",
+      "project:mkltv6xwvh4ltoqkes:ml2kttyffq66yk0c0tn:ml2kuim9q9603jfi3xa"
+    ],
+    "2026-02-05": [
+      "project:mklu1lye4czo9brjznq:mkmsy72n9wkp209y165:ml73ds6hu2udalgj9d",
+      "project:mkltv6xwvh4ltoqkes:ml2l62osbaz3iif86w6:ml4phzz2fm9u3qqf3tg",
+      "project:mkltv6xwvh4ltoqkes:mkn3n6kk2s3eujhd9om:ml8n2dop9wmkax0goo7",
+      "project:mkltv6xwvh4ltoqkes:ml8iyb0u5om7sbdijba",
+      "project:mkltwpanzsdw6b96wbe:mkyn5q9752ye45ab8zw:ml8mnye1hpbmfltutd",
+      "project:mkltv6xwvh4ltoqkes:mkpmhuejxdahbqqygu:ml8n30vvhp5ihiy5xtf",
+      "project:mkltwpanzsdw6b96wbe:mkn0igezgk2t0n91d6u:ml8n4wzk1gw2qsnsorf",
+      "project:mkltywpq0yriuhvt8wmb:ml73fflhsubbxo2vp8c:ml7czwougk8dd36h17i"
+    ],
+    "2026-02-17": [
+      "project:mkltywpq0yriuhvt8wmb:mklu8roio6ns8a57jp:mkyextdeoqytqapjmas",
+      "project:mlld42ihacxlvsot49w:mlpfqt5qdf96vcpy9mn",
+      "project:mkltwpanzsdw6b96wbe:mlhaql2p4q6z8l0f9n4:mlhaub0gyg9htkvevrj",
+      "standalone:mli7fypjlnrgjwy9g6",
+      "project:mkltv6xwvh4ltoqkes:mlpffj0uea41kpsju7:mlpftdfodsz9tu8lh2j",
+      "project:mkltv6xwvh4ltoqkes:mlpffj0uea41kpsju7:mlpftkwdb7n85gtjnx",
+      "project:mkltv6xwvh4ltoqkes:mlpffj0uea41kpsju7:mlpfttkwmhfs1fbvz0k"
+    ],
+    "2026-03-11": [
+      "project:mkltwpanzsdw6b96wbe:mm9bqsqn24abbz1pnup:mm9l00c049cxgyv1f2a",
+      "standalone:mmfjc7l7fd3gf94hcvw",
+      "project:mmfjn4b1w85dvswipdk:mmfjyltb0cm08ih0bjhd:mmfk00mh24pqxgqo1k8"
+    ],
+    "2026-06-02": [
+      "standalone:mpmzmb41xct6pwnrg99",
+      "project:mkltv6xwvh4ltoqkes:mpvor2egyd9fn0kywu9:mpvos4sjooc9q9q1zv",
+      "project:mkltv6xwvh4ltoqkes:mpvor2egyd9fn0kywu9:mpvosk7djr2nidgnsyd",
+      "project:mkltv6xwvh4ltoqkes:mpvor2egyd9fn0kywu9:mpvoszczo1qaiaa3xl"
     ]
   },
   "weeklySummaries": {
