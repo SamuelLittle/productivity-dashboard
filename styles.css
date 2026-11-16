@@ -932,6 +932,30 @@ body {
     gap: 16px;
 }
 
+.modal-description {
+    margin: 0 0 16px;
+    font-size: 13px;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
+
+.folder-picker-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.folder-picker-label {
+    font-size: 13px;
+    color: var(--color-text-muted);
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 /* Color Picker */
 .color-picker {
     display: flex;

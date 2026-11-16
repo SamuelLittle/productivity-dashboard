@@ -156,6 +156,15 @@ function initElements() {
         exportIncludeDailyAppendix: document.getElementById('export-include-daily-appendix'),
         exportIncludeIncomplete: document.getElementById('export-include-incomplete'),
         exportIncludePlanned: document.getElementById('export-include-planned'),
+        // Linear export modal
+        linearExportBtn: document.getElementById('linear-export-btn'),
+        linearExportModal: document.getElementById('linear-export-modal'),
+        linearExportForm: document.getElementById('linear-export-form'),
+        linearExportStart: document.getElementById('linear-export-start'),
+        linearExportEnd: document.getElementById('linear-export-end'),
+        linearExportFolderLabel: document.getElementById('linear-export-folder-label'),
+        linearExportChooseFolderBtn: document.getElementById('linear-export-choose-folder-btn'),
+        linearExportClearFolderBtn: document.getElementById('linear-export-clear-folder-btn'),
         // AI Summary
         aiSettingsToggle: document.getElementById('ai-settings-toggle'),
         aiSettingsPanel: document.getElementById('ai-settings-panel'),
@@ -7001,6 +7010,327 @@ function generateTabbedHtmlReport(reportData, options = {}) {
     return html;
 }
 
+// ============================================
+// LINEAR EXPORT
+// ============================================
+// One-way snapshot export (dashboard -> Linear) for feeding into a work
+// Claude session with the Linear MCP. The dashboard never reads anything
+// back from Linear; matching existing issues/projects vs. creating new
+// ones is left to that session's judgment, not decided here.
+
+const LINEAR_EXPORT_INSTRUCTIONS = [
+    'This is a snapshot from my personal productivity dashboard for the date range below.',
+    'Use the Linear MCP to reconcile it with Linear:',
+    '- For each project in activeProjects, find a matching Linear project/team, or ask me before creating a new one.',
+    '- For each task/subtask, search Linear for an existing issue first (match on title, and check the issue description for a "dash:<id>" marker from a previous export) before creating a new one.',
+    '- completedInRange items should be marked Done on their Linear issue, with a comment carrying over completedAt/completionNotes/completionLinks.',
+    '- scheduledInRange items are upcoming/open work with a target date - set or update the Linear due date accordingly.',
+    '- openTasks under activeProjects give current backlog/in-progress context even if not scheduled or completed in this range.',
+    '- When creating or updating a Linear issue for a dashboard task or subtask, add its id (the "id" field here) to the Linear issue description as "dash:<id>" so future exports can match it instead of duplicating it.',
+    '- unresolvedCompleted are completed-task records whose source task could not be found in the dashboard anymore (likely deleted) - flag these to me rather than guessing.',
+    'Use your judgment on milestones/labels/priority mapping; this export intentionally leaves that bespoke rather than pre-deciding it.'
+].join('\n');
+
+function toLocalDateKey(d) {
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+// --- Saved export-folder handle (File System Access API), stored in IndexedDB ---
+// localStorage can't hold a FileSystemDirectoryHandle; IndexedDB can.
+
+const EXPORT_DIR_DB_NAME = 'dashboard-fs-handles';
+const EXPORT_DIR_STORE_NAME = 'handles';
+const EXPORT_DIR_KEY = 'linearExportDir';
+
+function openExportDirDB() {
+    return new Promise((resolve, reject) => {
+        const req = indexedDB.open(EXPORT_DIR_DB_NAME, 1);
+        req.onupgradeneeded = () => {
+            req.result.createObjectStore(EXPORT_DIR_STORE_NAME);
+        };
+        req.onsuccess = () => resolve(req.result);
+        req.onerror = () => reject(req.error);
+    });
+}
+
+async function getSavedExportDirHandle() {
+    if (!window.indexedDB) return null;
+    try {
+        const db = await openExportDirDB();
+        return await new Promise((resolve, reject) => {
+            const tx = db.transaction(EXPORT_DIR_STORE_NAME, 'readonly');
+            const req = tx.objectStore(EXPORT_DIR_STORE_NAME).get(EXPORT_DIR_KEY);
+            req.onsuccess = () => resolve(req.result || null);
+            req.onerror = () => reject(req.error);
+        });
+    } catch (err) {
+        console.error('Could not read saved export folder:', err);
+        return null;
+    }
+}
+
+async function setSavedExportDirHandle(handle) {
+    const db = await openExportDirDB();
+    return new Promise((resolve, reject) => {
+        const tx = db.transaction(EXPORT_DIR_STORE_NAME, 'readwrite');
+        tx.objectStore(EXPORT_DIR_STORE_NAME).put(handle, EXPORT_DIR_KEY);
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => reject(tx.error);
+    });
+}
+
+async function clearSavedExportDirHandle() {
+    const db = await openExportDirDB();
+    return new Promise((resolve, reject) => {
+        const tx = db.transaction(EXPORT_DIR_STORE_NAME, 'readwrite');
+        tx.objectStore(EXPORT_DIR_STORE_NAME).delete(EXPORT_DIR_KEY);
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => reject(tx.error);
+    });
+}
+
+async function refreshLinearExportFolderLabel() {
+    const handle = await getSavedExportDirHandle();
+    if (handle) {
+        elements.linearExportFolderLabel.textContent = handle.name;
+        elements.linearExportClearFolderBtn?.classList.remove('hidden');
+    } else {
+        elements.linearExportFolderLabel.textContent = 'Downloads (default)';
+        elements.linearExportClearFolderBtn?.classList.add('hidden');
+    }
+}
+
+async function chooseLinearExportFolder() {
+    if (!window.showDirectoryPicker) {
+        showToast("This browser can't remember a folder - exports will go to Downloads", 'info');
+        return;
+    }
+    try {
+        const handle = await window.showDirectoryPicker();
+        await setSavedExportDirHandle(handle);
+        await refreshLinearExportFolderLabel();
+        showToast('Export folder set', 'success');
+    } catch (err) {
+        if (err.name !== 'AbortError') {
+            console.error('Folder selection failed:', err);
+            showToast('Could not set export folder', 'error');
+        }
+    }
+}
+
+async function clearLinearExportFolder() {
+    await clearSavedExportDirHandle();
+    await refreshLinearExportFolderLabel();
+    showToast('Export folder cleared - exports will go to Downloads', 'info');
+}
+
+function openLinearExportModal() {
+    closeAllModals();
+    elements.linearExportModal.classList.remove('hidden');
+
+    const today = new Date();
+    const start = new Date(today);
+    start.setDate(start.getDate() - 7);
+    const end = new Date(today);
+    end.setDate(end.getDate() + 14);
+
+    elements.linearExportStart.value = toLocalDateKey(start);
+    elements.linearExportEnd.value = toLocalDateKey(end);
+
+    refreshLinearExportFolderLabel();
+}
+
+// Resolves a completedTasks record to a title/project name. Records saved
+// directly from a project task already carry a title; records saved as
+// bare {projectId, taskId, subtaskId} references need a lookup against
+// the live project data (see [[fix-github-sync]] note on completedTasks
+// shape variance).
+function resolveCompletedItemInfo(item) {
+    const project = item.projectId ? state.data.projects?.find(p => p.id === item.projectId) : null;
+    const task = project ? project.tasks?.find(t => t.id === item.taskId) : null;
+    const subtask = (task && item.subtaskId) ? task.subtasks?.find(s => s.id === item.subtaskId) : null;
+
+    const title = item.title || subtask?.title || task?.title || null;
+    return {
+        title,
+        projectName: project?.name || null,
+        parentTaskTitle: (item.subtaskId && task) ? task.title : null,
+        resolved: !!title
+    };
+}
+
+function getScheduledItemsInRange(startDate, endDate) {
+    const results = [];
+    if (!state.data.scheduledItems) return results;
+
+    Object.entries(state.data.scheduledItems).forEach(([dateStr, items]) => {
+        const d = getDateFromString(dateStr);
+        if (d < startDate || d > endDate) return;
+
+        items.forEach(item => {
+            const project = state.data.projects?.find(p => p.id === item.projectId);
+            const task = project?.tasks?.find(t => t.id === item.taskId);
+            const subtask = (task && item.subtaskId) ? task.subtasks?.find(s => s.id === item.subtaskId) : null;
+            const completed = subtask ? subtask.completed : task?.completed;
+            if (completed) return; // shows up in completedInRange instead
+
+            results.push({
+                scheduledDate: dateStr,
+                time: item.time || null,
+                projectId: item.projectId || null,
+                projectName: project?.name || null,
+                taskId: item.taskId || null,
+                taskTitle: task?.title || null,
+                subtaskId: item.subtaskId || null,
+                subtaskTitle: subtask?.title || null,
+                priority: subtask?.priority || task?.priority || null
+            });
+        });
+    });
+
+    results.sort((a, b) => a.scheduledDate.localeCompare(b.scheduledDate));
+    return results;
+}
+
+function getActiveProjectsSnapshot() {
+    return (state.data.projects || [])
+        .filter(p => !p.archived)
+        .map(p => ({
+            id: p.id,
+            name: p.name,
+            description: p.description || '',
+            color: p.color || null,
+            openTasks: (p.tasks || [])
+                .filter(t => !t.completed)
+                .map(t => ({
+                    id: t.id,
+                    title: t.title,
+                    description: t.description || '',
+                    priority: t.priority || null,
+                    createdAt: t.createdAt || null,
+                    openSubtasks: (t.subtasks || [])
+                        .filter(s => !s.completed)
+                        .map(s => ({ id: s.id, title: s.title, priority: s.priority || null }))
+                }))
+        }));
+}
+
+function gatherLinearExportData(startDate, endDate) {
+    const completedRaw = getAllCompletedTasksInRange(startDate, endDate);
+    const completedInRange = [];
+    const unresolvedCompleted = [];
+
+    completedRaw.forEach(item => {
+        const info = resolveCompletedItemInfo(item);
+        const entry = {
+            id: item.subtaskId || item.taskId || item.id || null,
+            projectId: item.projectId || null,
+            projectName: info.projectName,
+            taskId: item.taskId || null,
+            subtaskId: item.subtaskId || null,
+            title: info.title,
+            parentTaskTitle: info.parentTaskTitle,
+            completedAt: item.completedAt,
+            completionNotes: item.completionNotes || '',
+            completionLinks: item.completionLinks || ''
+        };
+        if (info.resolved) {
+            completedInRange.push(entry);
+        } else {
+            unresolvedCompleted.push(entry);
+        }
+    });
+
+    completedInRange.sort((a, b) => a.completedAt.localeCompare(b.completedAt));
+
+    return {
+        generatedAt: new Date().toISOString(),
+        range: {
+            start: toLocalDateKey(startDate),
+            end: toLocalDateKey(endDate)
+        },
+        instructions: LINEAR_EXPORT_INSTRUCTIONS,
+        activeProjects: getActiveProjectsSnapshot(),
+        completedInRange,
+        unresolvedCompleted,
+        scheduledInRange: getScheduledItemsInRange(startDate, endDate),
+        progressUpdatesInRange: getProgressUpdatesForMonth(startDate, endDate)
+    };
+}
+
+// Writes straight into the saved folder when the browser supports the File
+// System Access API and permission is (or can be) granted; otherwise falls
+// back to a normal browser download. Returns 'folder', 'download', or null.
+async function writeLinearExportFile(filename, content) {
+    const dirHandle = await getSavedExportDirHandle();
+    if (dirHandle) {
+        try {
+            let permission = await dirHandle.queryPermission({ mode: 'readwrite' });
+            if (permission !== 'granted') {
+                permission = await dirHandle.requestPermission({ mode: 'readwrite' });
+            }
+            if (permission === 'granted') {
+                const fileHandle = await dirHandle.getFileHandle(filename, { create: true });
+                const writable = await fileHandle.createWritable();
+                await writable.write(content);
+                await writable.close();
+                return 'folder';
+            }
+        } catch (err) {
+            console.error('Writing to saved export folder failed, falling back to download:', err);
+        }
+    }
+
+    try {
+        const blob = new Blob([content], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(url);
+        return 'download';
+    } catch (err) {
+        console.error('Download fallback failed:', err);
+        return null;
+    }
+}
+
+async function exportLinearData(e) {
+    e.preventDefault();
+
+    const startStr = elements.linearExportStart.value;
+    const endStr = elements.linearExportEnd.value;
+    if (!startStr || !endStr) {
+        showToast('Please select a start and end date', 'error');
+        return;
+    }
+
+    const startDate = getDateFromString(startStr);
+    const endDate = getDateFromString(endStr);
+    endDate.setHours(23, 59, 59, 999);
+
+    if (startDate > endDate) {
+        showToast('Start date must be before end date', 'error');
+        return;
+    }
+
+    const data = gatherLinearExportData(startDate, endDate);
+    const content = JSON.stringify(data, null, 2);
+    const filename = `linear-export-${toLocalDateKey(startDate)}_to_${toLocalDateKey(endDate)}.json`;
+
+    const result = await writeLinearExportFile(filename, content);
+
+    closeAllModals();
+    if (result === 'folder') {
+        showToast(`Exported to ${filename}`, 'success');
+    } else if (result === 'download') {
+        showToast('Exported to Downloads', 'success');
+    } else {
+        showToast('Export failed', 'error');
+    }
+}
+
 function exportReport(e) {
     e.preventDefault();
 
@@ -7841,6 +8171,9 @@ function initEventListeners() {
     document.getElementById('archive-project-btn')?.addEventListener('click', archiveProject);
     document.getElementById('back-to-projects')?.addEventListener('click', () => switchView('projects'));
     elements.exportBtn?.addEventListener('click', openExportModal);
+    elements.linearExportBtn?.addEventListener('click', openLinearExportModal);
+    elements.linearExportChooseFolderBtn?.addEventListener('click', chooseLinearExportFolder);
+    elements.linearExportClearFolderBtn?.addEventListener('click', clearLinearExportFolder);
     elements.syncStatus?.addEventListener('click', () => {
         if (state.sync.status === 'error') saveData();
     });
@@ -7851,6 +8184,7 @@ function initEventListeners() {
     elements.projectForm?.addEventListener('submit', saveProject);
     elements.progressForm?.addEventListener('submit', saveProgress);
     elements.exportForm?.addEventListener('submit', exportReport);
+    elements.linearExportForm?.addEventListener('submit', exportLinearData);
     elements.pencilInForm?.addEventListener('submit', savePencilInWindow);
     elements.pencilInClearBtn?.addEventListener('click', clearPencilInWindow);
 
