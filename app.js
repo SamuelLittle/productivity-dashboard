@@ -507,8 +507,15 @@ function initAuth() {
     const storedUser = localStorage.getItem('github_user');
 
     if (storedToken && storedUser) {
+        try {
+            state.user = JSON.parse(storedUser);
+        } catch (error) {
+            console.error('Stored user data was corrupted, clearing it:', error);
+            localStorage.removeItem('github_token');
+            localStorage.removeItem('github_user');
+            return;
+        }
         state.token = storedToken;
-        state.user = JSON.parse(storedUser);
         showDashboard();
         loadData();
     }
@@ -634,8 +641,17 @@ async function loadData() {
         setSyncStatus('error');
 
         const localData = localStorage.getItem('dashboard_data');
+        let parsedLocalData = null;
         if (localData) {
-            state.data = JSON.parse(localData);
+            try {
+                parsedLocalData = JSON.parse(localData);
+            } catch (parseError) {
+                console.error('Local data cache was corrupted, starting fresh:', parseError);
+            }
+        }
+
+        if (parsedLocalData) {
+            state.data = parsedLocalData;
             migrateDataStructure();
             renderAllViews();
         } else {
@@ -673,7 +689,57 @@ function migrateDataStructure() {
     }
 }
 
+// saveData() can be called from several places in quick succession (e.g. two
+// drag-reorders back to back). Two overlapping PUTs would both read the same
+// state.fileSha - GitHub accepts the first and rejects the second as a stale-
+// sha conflict, which (without the fix below) then retries forever with the
+// now-wrong sha. Coalescing concurrent calls into one in-flight request, plus
+// a guaranteed follow-up save if something changed while it was running,
+// avoids ever firing two overlapping writes.
+let saveInFlightPromise = null;
+let saveQueuedWhileInFlight = false;
+
 async function saveData() {
+    if (saveInFlightPromise) {
+        saveQueuedWhileInFlight = true;
+        return saveInFlightPromise;
+    }
+    saveInFlightPromise = performSave();
+    try {
+        return await saveInFlightPromise;
+    } finally {
+        saveInFlightPromise = null;
+        if (saveQueuedWhileInFlight) {
+            saveQueuedWhileInFlight = false;
+            saveData();
+        }
+    }
+}
+
+// Re-fetches the file's current sha from GitHub without downloading its full
+// content (the Contents API always returns sha, even for files over the 1MB
+// content-inlining limit - see loadData's download_url fallback). Called on
+// every failed save so a stale sha - from another tab/device, or from the
+// conflict this same bug used to cause - doesn't make every subsequent retry
+// fail forever with that same wrong sha.
+async function refreshFileSha() {
+    try {
+        const response = await fetch(
+            `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${CONFIG.dataFile}?ref=${CONFIG.branch}`,
+            { headers: { Authorization: `token ${state.token}` } }
+        );
+        if (response.ok) {
+            const fileData = await response.json();
+            state.fileSha = fileData.sha;
+            return true;
+        }
+    } catch (error) {
+        console.error('Could not refresh file sha:', error);
+    }
+    return false;
+}
+
+async function performSave() {
     // Always try to archive old data so data.json never grows unboundedly.
     // archiveOldData() exits immediately if nothing is old enough to move.
     // Wrapped so an archiving failure can never block the main data.json save below.
@@ -768,6 +834,20 @@ function getDataForDate(dateStr) {
     return state.data;
 }
 
+// Weekly summaries are archived the same way daily data is - once a week's
+// start date is old enough (archiveOldData's weeklySummaries sweep), the
+// entry may only exist in state.archiveCache, not state.data. Callers should
+// await ensureYearLoaded (or ensureYearsLoadedForRange) for the week's year
+// before relying on this, the same way getDataForDate's callers do.
+function getWeeklySummaryEntry(weekKey) {
+    const year = parseInt(weekKey.substring(0, 4));
+    const cached = state.archiveCache[year];
+    if (cached?.weeklySummaries?.[weekKey] !== undefined) {
+        return cached.weeklySummaries[weekKey];
+    }
+    return state.data.weeklySummaries?.[weekKey];
+}
+
 // Returns completedTasks from all loaded sources (main + any cached archives) for a date range.
 function getAllCompletedTasksInRange(startDate, endDate) {
     const results = [];
@@ -831,6 +911,18 @@ async function ensureYearLoaded(year) {
     }
 }
 
+// Ensures every year in [startYear, endYear] has its archive loaded (if one
+// exists) before anything reads state.archiveCache for that range. Without
+// this, a fresh session that hasn't browsed the calendar to an old year yet
+// would silently see an empty/incomplete archive for that year in any report,
+// export, or other date-range lookup — ensureYearLoaded is a no-op for years
+// with no archive or already cached, so calling it defensively is cheap.
+async function ensureYearsLoadedForRange(startYear, endYear) {
+    const years = [];
+    for (let y = startYear; y <= endYear; y++) years.push(y);
+    await Promise.all(years.map(y => ensureYearLoaded(y)));
+}
+
 // Moves log data older than 90 days out of state.data and into per-year archive files.
 // Only archives specific dates, never data for the current rolling 90-day window.
 async function archiveOldData() {
@@ -841,7 +933,7 @@ async function archiveOldData() {
     // Identify which years have data that needs archiving
     const yearBuckets = {}; // year -> Set of old dates
 
-    ['dailySummaries', 'dailyNotes', 'dailyLists', 'scheduledItems'].forEach(key => {
+    ['dailySummaries', 'dailyNotes', 'dailyLists', 'scheduledItems', 'taskOrder'].forEach(key => {
         Object.keys(state.data[key] || {}).forEach(date => {
             if (date < cutoffStr) {
                 const y = parseInt(date.substring(0, 4));
@@ -865,7 +957,7 @@ async function archiveOldData() {
         const year = parseInt(yearStr);
         const baseArchive = state.archiveCache[year] || {
             dailySummaries: {}, dailyNotes: {}, dailyLists: {},
-            scheduledItems: {}, weeklySummaries: {}, completedTasks: []
+            scheduledItems: {}, taskOrder: {}, weeklySummaries: {}, completedTasks: []
         };
         // Build the archive addition on a copy first — nothing is removed from
         // state.data until the write to GitHub is confirmed successful, so a
@@ -875,11 +967,12 @@ async function archiveOldData() {
             dailyNotes: { ...baseArchive.dailyNotes },
             dailyLists: { ...baseArchive.dailyLists },
             scheduledItems: { ...baseArchive.scheduledItems },
+            taskOrder: { ...baseArchive.taskOrder },
             weeklySummaries: { ...baseArchive.weeklySummaries },
             completedTasks: [...baseArchive.completedTasks]
         };
 
-        ['dailySummaries', 'dailyNotes', 'dailyLists', 'scheduledItems'].forEach(key => {
+        ['dailySummaries', 'dailyNotes', 'dailyLists', 'scheduledItems', 'taskOrder'].forEach(key => {
             oldDates.forEach(date => {
                 if (state.data[key]?.[date] !== undefined) {
                     archive[key][date] = state.data[key][date];
@@ -910,7 +1003,7 @@ async function archiveOldData() {
         // the data from state.data and mark the year as archived.
         state.archiveCache[year] = archive;
 
-        ['dailySummaries', 'dailyNotes', 'dailyLists', 'scheduledItems'].forEach(key => {
+        ['dailySummaries', 'dailyNotes', 'dailyLists', 'scheduledItems', 'taskOrder'].forEach(key => {
             oldDates.forEach(date => {
                 delete state.data[key]?.[date];
             });
@@ -1081,7 +1174,10 @@ function getTasksForDate(date, includeCompleted = true) {
         const aCompleted = a.completedOnDay || a.completed;
         const bCompleted = b.completedOnDay || b.completed;
         if (aCompleted !== bCompleted) return aCompleted ? 1 : -1;
-        return (priorityOrder[a.priority] || 1) - (priorityOrder[b.priority] || 1);
+        // priorityOrder.high is 0, which `|| 1` treats as missing and
+        // collapses to the same weight as medium - use ?? so high actually
+        // sorts above medium/low instead of tying with medium.
+        return (priorityOrder[a.priority] ?? 1) - (priorityOrder[b.priority] ?? 1);
     });
 
     return tasks;
@@ -1163,13 +1259,14 @@ function renderTodayView() {
     refreshEodButtons();
 }
 
-function renderPreviousView() {
+async function renderPreviousView() {
     // Default to yesterday if no date selected
     if (!state.selectedPreviousDate) {
         state.selectedPreviousDate = getYesterday();
     }
 
     const date = state.selectedPreviousDate;
+    await ensureYearLoaded(parseInt(date.substring(0, 4)));
     const tasks = getTasksForDate(date, true);
 
     // Update title and date picker
@@ -1958,7 +2055,7 @@ function findTaskByKey(taskKey, date) {
 }
 
 // Reschedule a task from one date to another
-function rescheduleTaskByKey(taskKey, fromDate, toDate) {
+async function rescheduleTaskByKey(taskKey, fromDate, toDate) {
     // Parse the task key
     const parts = taskKey.split(':');
     const taskType = parts[0];
@@ -2005,9 +2102,9 @@ function rescheduleTaskByKey(taskKey, fromDate, toDate) {
     }
 
     // Save and re-render
-    saveData();
+    const saveOk = await saveData();
     renderCalendarView();
-    showToast('Task rescheduled', 'success');
+    if (saveOk) showToast('Task rescheduled', 'success');
 }
 
 // View switching functions
@@ -2391,13 +2488,13 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
 
     const projectTag = task.projectName ? `
         <span class="task-project-tag" style="background: ${task.projectColor}20; color: ${task.projectColor}">
-            ${task.projectName}
+            ${escapeHtml(task.projectName)}
         </span>
     ` : '';
 
     const subtaskIndicator = task.isSubtask ? `
         <span class="task-project-tag" style="background: #64748b20; color: #64748b">
-            Subtask of: ${task.parentTask?.title || 'Unknown'}
+            Subtask of: ${escapeHtml(task.parentTask?.title || 'Unknown')}
         </span>
     ` : '';
 
@@ -2423,15 +2520,15 @@ function createDailyTaskElement(task, date, allowReschedule = true) {
 
     const completionInfo = isCompleted && (task.completionNotes || task.completionLinks) ? `
         <div class="task-completion-info">
-            ${task.completionNotes ? `<span class="completion-note">${task.completionNotes}</span>` : ''}
-            ${task.completionLinks ? `<a href="${task.completionLinks}" target="_blank" class="completion-link">${task.completionLinks}</a>` : ''}
+            ${task.completionNotes ? `<span class="completion-note">${escapeHtml(task.completionNotes)}</span>` : ''}
+            ${task.completionLinks ? `<a href="${escapeHtml(task.completionLinks)}" target="_blank" class="completion-link">${escapeHtml(task.completionLinks)}</a>` : ''}
         </div>
     ` : '';
 
     div.innerHTML = `
         <div class="task-checkbox ${isCompleted ? 'checked' : ''}" data-date="${date}"></div>
         <div class="task-content" data-action="view-details">
-            <div class="task-title">${timePrefix}${task.title}</div>
+            <div class="task-title">${timePrefix}${escapeHtml(task.title)}</div>
             <div class="task-meta">
                 ${timeBadge}
                 ${projectTag}
@@ -2615,7 +2712,7 @@ function createProjectTaskElement(task, project) {
     div.innerHTML = `
         <div class="task-checkbox ${task.completed ? 'checked' : ''}" data-task-id="${task.id}"></div>
         <div class="task-content">
-            <div class="task-title">${task.title}</div>
+            <div class="task-title">${escapeHtml(task.title)}</div>
             <div class="task-meta">
                 <span class="task-priority">
                     <span class="priority-dot"></span>
@@ -2866,7 +2963,7 @@ function createSubtaskHTML(subtask, parentTask, project) {
     return `
         <div class="subtask-item" draggable="true" data-subtask-id="${subtask.id}" data-task-id="${parentTask.id}" data-project-id="${project.id}">
             <div class="task-checkbox ${subtask.completed ? 'checked' : ''}" data-subtask-id="${subtask.id}"></div>
-            <span class="subtask-title" style="${subtask.completed ? 'text-decoration: line-through; opacity: 0.6' : ''}">${subtask.title}</span>
+            <span class="subtask-title" style="${subtask.completed ? 'text-decoration: line-through; opacity: 0.6' : ''}">${escapeHtml(subtask.title)}</span>
             ${scheduledBadges}
             <div class="subtask-actions">
                 <button class="subtask-view-btn" data-subtask-id="${subtask.id}" title="View Details">
@@ -3831,7 +3928,7 @@ async function saveTaskInternal() {
     }
 
     state.data.lastUpdated = new Date().toISOString();
-    await saveData();
+    const saveOk = await saveData();
 
     // Close task modal but keep day detail modal open if it was showing
     const dayDetailWasOpen = state.selectedDate && !elements.dayDetailModal?.classList.contains('hidden');
@@ -3848,7 +3945,7 @@ async function saveTaskInternal() {
         openDayDetail(state.selectedDate);
     }
 
-    showToast('Task saved', 'success');
+    if (saveOk) showToast('Task saved', 'success');
 }
 
 async function completeTask(e) {
@@ -3950,6 +4047,8 @@ async function toggleDailyTaskComplete(task, date, completed, notes = '', links 
         }
     }
 
+    maybeResolveTentativeWindow(projectId, taskId);
+
     state.data.lastUpdated = new Date().toISOString();
     const saveOk = await saveData();
     renderAllViews();
@@ -3999,6 +4098,15 @@ async function toggleStandaloneTaskComplete(taskId, date, completed, notes = '',
 }
 
 async function toggleProjectTaskComplete(projectId, taskId, completed, notes = '', links = '') {
+    // Capture which subtasks are incomplete *before* markTaskCompleteInProject
+    // runs, since completing the parent auto-completes all of them in place -
+    // afterward there's no way to tell which ones actually just transitioned.
+    const projectBefore = state.data.projects.find(p => p.id === projectId);
+    const taskBefore = projectBefore?.tasks.find(t => t.id === taskId);
+    const newlyCompletedSubtaskIds = completed
+        ? (taskBefore?.subtasks || []).filter(st => !st.completed).map(st => st.id)
+        : [];
+
     await markTaskCompleteInProject(projectId, taskId, completed, notes, links);
 
     if (completed) {
@@ -4013,6 +4121,25 @@ async function toggleProjectTaskComplete(projectId, taskId, completed, notes = '
             completedAt: new Date().toISOString(),
             completionNotes: notes,
             completionLinks: links
+        });
+
+        // markTaskCompleteInProject auto-completes every subtask when its
+        // parent completes, but only in memory. Mirror what
+        // toggleSubtaskComplete does for each subtask that actually just
+        // transitioned - otherwise its scheduledItems ref keeps showing
+        // "open" forever and it never appears in completedTasks, so it's
+        // silently excluded from monthly/weekly reports and exports despite
+        // being marked done.
+        newlyCompletedSubtaskIds.forEach(subtaskId => {
+            const subtask = task?.subtasks?.find(st => st.id === subtaskId);
+            if (!subtask) return;
+            state.data.completedTasks.push({
+                projectId,
+                taskId,
+                subtaskId,
+                title: subtask.title,
+                completedAt: subtask.completedAt || new Date().toISOString()
+            });
         });
     }
 
@@ -4030,6 +4157,12 @@ async function toggleProjectTaskComplete(projectId, taskId, completed, notes = '
                     ref.completionNotes = null;
                     ref.completionLinks = null;
                 }
+            } else if (completed && ref.projectId === projectId && ref.taskId === taskId &&
+                       newlyCompletedSubtaskIds.includes(ref.subtaskId)) {
+                // Scheduled reference for one of the subtasks that just got
+                // cascaded to completed above.
+                ref.completedOnDay = true;
+                ref.completedAt = new Date().toISOString();
             }
         });
     });
@@ -4353,6 +4486,7 @@ async function generateAiSummary() {
         includePlanned: true
     };
 
+    await ensureYearsLoadedForRange(year, year);
     const reportData = gatherMonthlyReportData(year, month, options);
 
     if (reportData.totalCount === 0 && (!reportData.dailyBreakdown || reportData.dailyBreakdown.length === 0)) {
@@ -4610,6 +4744,7 @@ async function generateAllProjectAiSummaries() {
     const [year, month] = monthStr.split('-').map(Number);
     const options = { includeSubtasks: true };
 
+    await ensureYearsLoadedForRange(year, year);
     const reportData = gatherMonthlyReportData(year, month, options);
     if (!reportData.projectReports || reportData.projectReports.length === 0) {
         showToast('No projects with activity this month', 'error');
@@ -4700,12 +4835,13 @@ function openExportModal() {
     populateProjectReportTabs();
 }
 
-function populateProjectReportTabs() {
+async function populateProjectReportTabs() {
     const monthStr = elements.exportMonth.value;
     if (!monthStr) return;
 
     const [year, month] = monthStr.split('-').map(Number);
     const options = { includeSubtasks: true };
+    await ensureYearsLoadedForRange(year, year);
     const reportData = gatherMonthlyReportData(year, month, options);
 
     const projectReports = reportData.projectReports || [];
@@ -7192,9 +7328,17 @@ function resolveCompletedItemInfo(item) {
 
 function getScheduledItemsInRange(startDate, endDate) {
     const results = [];
-    if (!state.data.scheduledItems) return results;
 
-    Object.entries(state.data.scheduledItems).forEach(([dateStr, items]) => {
+    // Merge live scheduledItems with any loaded archive years in range -
+    // scheduledItems is one of the keys archiveOldData() sweeps out of
+    // state.data once a date is >90 days old, so an old date only being
+    // readable from state.archiveCache is the normal case, not an edge case.
+    const entries = Object.entries(state.data.scheduledItems || {});
+    for (let y = startDate.getFullYear(); y <= endDate.getFullYear(); y++) {
+        entries.push(...Object.entries(state.archiveCache[y]?.scheduledItems || {}));
+    }
+
+    entries.forEach(([dateStr, items]) => {
         const d = getDateFromString(dateStr);
         if (d < startDate || d > endDate) return;
 
@@ -7346,6 +7490,7 @@ async function exportLinearData(e) {
         return;
     }
 
+    await ensureYearsLoadedForRange(startDate.getFullYear(), endDate.getFullYear());
     const isFirstExport = !localStorage.getItem(LINEAR_EXPORT_HAS_RUN_KEY);
     const data = gatherLinearExportData(startDate, endDate, isFirstExport);
     const content = JSON.stringify(data, null, 2);
@@ -7368,7 +7513,7 @@ async function exportLinearData(e) {
     }
 }
 
-function exportReport(e) {
+async function exportReport(e) {
     e.preventDefault();
 
     const monthStr = elements.exportMonth.value;
@@ -7398,6 +7543,7 @@ function exportReport(e) {
         options.projectAiSummaries = { ...projectAiSummaries };
     }
 
+    await ensureYearsLoadedForRange(year, year);
     const reportData = gatherMonthlyReportData(year, month, options);
 
     // Handle PDF export separately
@@ -7594,9 +7740,10 @@ function getWeekKeyForCurrentView() {
     return getLocalDateString(getWeekStart(state.calendarDate));
 }
 
-function openWeeklySummaryModal() {
+async function openWeeklySummaryModal() {
     const apiKey = localStorage.getItem('anthropic_api_key');
     weeklyCurrentKey = getWeekKeyForCurrentView();
+    await ensureYearLoaded(parseInt(weeklyCurrentKey.substring(0, 4)));
     const weekDates = getWeekDates(new Date(weeklyCurrentKey));
 
     const startLabel = formatDate(weekDates[0]);
@@ -7622,7 +7769,7 @@ function openWeeklySummaryModal() {
         </div>`;
     });
 
-    const existingSummary = state.data.weeklySummaries?.[weeklyCurrentKey]?.summary;
+    const existingSummary = getWeeklySummaryEntry(weeklyCurrentKey)?.summary;
     elements.weeklyConfirmOverview.innerHTML = `
         <p class="eod-step-intro">The weekly summary will use all task data, daily summaries, and reflection notes for this week.</p>
         <div class="weekly-overview-list">${overviewRows.join('')}</div>
@@ -7811,7 +7958,8 @@ async function saveWeeklySummary() {
     }
 
     if (!state.data.weeklySummaries) state.data.weeklySummaries = {};
-    const existing = state.data.weeklySummaries[weeklyCurrentKey] || {};
+    await ensureYearLoaded(parseInt(weeklyCurrentKey.substring(0, 4)));
+    const existing = getWeeklySummaryEntry(weeklyCurrentKey) || {};
     state.data.weeklySummaries[weeklyCurrentKey] = {
         summary,
         weekStart: weeklyCurrentKey,
