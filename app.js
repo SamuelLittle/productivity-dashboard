@@ -7018,6 +7018,8 @@ function generateTabbedHtmlReport(reportData, options = {}) {
 // back from Linear; matching existing issues/projects vs. creating new
 // ones is left to that session's judgment, not decided here.
 
+const LINEAR_EXPORT_HAS_RUN_KEY = 'linear_export_has_run';
+
 const LINEAR_EXPORT_INSTRUCTIONS = [
     'This is a snapshot from my personal productivity dashboard for the date range below.',
     'Use the Linear MCP to reconcile it with Linear:',
@@ -7030,6 +7032,35 @@ const LINEAR_EXPORT_INSTRUCTIONS = [
     '- unresolvedCompleted are completed-task records whose source task could not be found in the dashboard anymore (likely deleted) - flag these to me rather than guessing.',
     'Use your judgment on milestones/labels/priority mapping; this export intentionally leaves that bespoke rather than pre-deciding it.'
 ].join('\n');
+
+// Context that's true of this data every time, not just on the first export -
+// the kind of thing a work Claude session wouldn't know just from the JSON shape.
+const LINEAR_EXPORT_CONTEXT = [
+    'Context about this data:',
+    "- This is a solo research-lab workflow (wet lab / computational biology), not a software team - project names are experimental workstreams (e.g. CRISPR screens, protocol dev), and tasks are often granular bench-work to-dos rather than user stories. Don't force an epic/story template onto them if it doesn't fit.",
+    "- I'm the sole assignee on everything in this export - there's no team to route work to.",
+    "- priority is a casual high/medium/low I set for my own planning, not a calibrated triage signal - map it to Linear's priority field but don't over-weight it.",
+    '- Tasks and completed/scheduled items with no projectId are standalone personal to-dos with no formal project home. Ask me once which Linear project/team those should land in, then remember that for future runs instead of asking every time.',
+    '- completedAt is when I marked it done in the dashboard, which can lag the actual work by a day or more - treat it as approximate.',
+    "- scheduledInRange dates are my planning intent for that day, not a hard commitment - if one looks stale or unrealistic by the time you're reconciling, flag it to me rather than setting it as a firm due date."
+].join('\n');
+
+// Shown only on the very first export (detected via a local flag, not repo
+// state) - the Linear side has nothing stamped with dash:<id> yet, so the
+// framing for this run is different: pure creation, not reconciliation.
+const LINEAR_EXPORT_FIRST_RUN_NOTE = [
+    "This is the first export I've sent you from this dashboard.",
+    "Nothing in Linear is stamped with a dash:<id> marker yet, so don't spend time searching for matches that can't exist - this run is pure creation.",
+    'Before creating anything, ask me up front which Linear project/team each activeProjects entry should map to, and where standalone (no-projectId) items should land. Once I answer, remember those mappings for future exports rather than re-asking.'
+].join('\n');
+
+function buildLinearExportInstructions(isFirstExport) {
+    const parts = [LINEAR_EXPORT_INSTRUCTIONS, LINEAR_EXPORT_CONTEXT];
+    if (isFirstExport) {
+        parts.push(LINEAR_EXPORT_FIRST_RUN_NOTE);
+    }
+    return parts.join('\n\n');
+}
 
 function toLocalDateKey(d) {
     return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
@@ -7215,7 +7246,7 @@ function getActiveProjectsSnapshot() {
         }));
 }
 
-function gatherLinearExportData(startDate, endDate) {
+function gatherLinearExportData(startDate, endDate, isFirstExport) {
     const completedRaw = getAllCompletedTasksInRange(startDate, endDate);
     const completedInRange = [];
     const unresolvedCompleted = [];
@@ -7249,7 +7280,7 @@ function gatherLinearExportData(startDate, endDate) {
             start: toLocalDateKey(startDate),
             end: toLocalDateKey(endDate)
         },
-        instructions: LINEAR_EXPORT_INSTRUCTIONS,
+        instructions: buildLinearExportInstructions(isFirstExport),
         activeProjects: getActiveProjectsSnapshot(),
         completedInRange,
         unresolvedCompleted,
@@ -7315,13 +7346,19 @@ async function exportLinearData(e) {
         return;
     }
 
-    const data = gatherLinearExportData(startDate, endDate);
+    const isFirstExport = !localStorage.getItem(LINEAR_EXPORT_HAS_RUN_KEY);
+    const data = gatherLinearExportData(startDate, endDate, isFirstExport);
     const content = JSON.stringify(data, null, 2);
     const filename = `linear-export-${toLocalDateKey(startDate)}_to_${toLocalDateKey(endDate)}.json`;
 
     const result = await writeLinearExportFile(filename, content);
 
     closeAllModals();
+    if (result === 'folder' || result === 'download') {
+        // Only mark first-export done once a write actually succeeded, so a
+        // failed attempt doesn't silently lose the first-run instructions.
+        localStorage.setItem(LINEAR_EXPORT_HAS_RUN_KEY, 'true');
+    }
     if (result === 'folder') {
         showToast(`Exported to ${filename}`, 'success');
     } else if (result === 'download') {
