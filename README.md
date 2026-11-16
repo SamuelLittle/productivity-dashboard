@@ -73,6 +73,8 @@ productivity-dashboard/
 ├── styles.css      # All styling (responsive)
 ├── app.js          # Application logic and GitHub API
 ├── data.json       # Your productivity data (synced with GitHub)
+├── logs/           # Archived data.json log entries, by year (YYYY.json)
+├── BUG_HUNTS.md    # Log of past code-audit/bug-hunt sessions - read before starting a new one
 └── README.md       # This file
 ```
 
@@ -189,6 +191,16 @@ Add more color options in the project modal in `index.html`:
 1. Generate a new Personal Access Token
 2. Make sure to copy the full token
 3. Clear localStorage and re-enter the token
+
+## Maintenance
+
+This app has had a real history of data-sync and data-retention bugs (the
+GitHub Contents API's 1MB limit, stale-sha retry loops, archive-migration
+gaps, etc.). Before doing a code audit, cleanup pass, or bug hunt, read
+**[`BUG_HUNTS.md`](BUG_HUNTS.md)** first — it tracks what's already been
+found/fixed/deferred across past sessions, plus a repeatable process for
+running the next one, so a new hunt doesn't start from zero or rediscover
+the same bug twice.
 
 ## Contributing
 
