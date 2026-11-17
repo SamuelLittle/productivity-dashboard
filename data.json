@@ -6750,9 +6750,12 @@
         "title": "T cell to NGS",
         "description": "",
         "priority": "medium",
-        "completed": false,
+        "completed": true,
         "createdAt": "2026-11-16T16:59:56.322Z",
-        "time": null
+        "time": null,
+        "completedAt": "2026-11-17T00:11:24.959Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -9335,9 +9338,17 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-15"
+    },
+    {
+      "id": "mwjie61u4o3aijh4aqp",
+      "title": "T cell to NGS",
+      "completedAt": "2026-11-17T00:11:24.959Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-16"
     }
   ],
-  "lastUpdated": "2026-11-17T00:11:19.622Z",
+  "lastUpdated": "2026-11-17T00:11:24.959Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
