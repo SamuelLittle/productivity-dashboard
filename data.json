@@ -7863,6 +7863,14 @@
         "time": null,
         "scheduledAt": "2026-11-17T00:11:58.823Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "mu39fvpuyhq2d4m1yxe",
+        "taskId": "mvk84c6cbrv9xznmk2c",
+        "subtaskId": "mwjxtxdwnd92p7zwngi",
+        "time": null,
+        "scheduledAt": "2026-11-17T00:25:03.097Z",
+        "completedOnDay": false
       }
     ],
     "2026-11-19": [
@@ -9390,7 +9398,7 @@
       "date": "2026-11-16"
     }
   ],
-  "lastUpdated": "2026-11-17T00:12:05.828Z",
+  "lastUpdated": "2026-11-17T00:25:03.097Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
