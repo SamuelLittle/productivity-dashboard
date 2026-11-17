@@ -7812,6 +7812,14 @@
         "time": null,
         "scheduledAt": "2026-11-10T22:41:40.507Z",
         "completedOnDay": false
+      },
+      {
+        "projectId": "",
+        "taskId": "",
+        "subtaskId": null,
+        "time": null,
+        "scheduledAt": "2026-11-17T00:11:19.573Z",
+        "completedOnDay": false
       }
     ],
     "2026-11-19": [
@@ -7926,14 +7934,6 @@
       }
     ],
     "2026-11-23": [
-      {
-        "projectId": "",
-        "taskId": "",
-        "subtaskId": null,
-        "time": null,
-        "scheduledAt": "2026-11-16T17:56:35.205Z",
-        "completedOnDay": false
-      },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
         "taskId": "msot0q1x8axc96qhr7l",
@@ -9339,7 +9339,7 @@
       "date": "2026-11-15"
     }
   ],
-  "lastUpdated": "2026-11-16T17:56:35.238Z",
+  "lastUpdated": "2026-11-17T00:11:19.573Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
