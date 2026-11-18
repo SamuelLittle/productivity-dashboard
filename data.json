@@ -5953,8 +5953,11 @@
               "title": "get cells from Ana",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-17T00:11:40.885Z"
+              "completed": true,
+              "createdAt": "2026-11-17T00:11:40.885Z",
+              "completedAt": "2026-11-18T15:46:47.756Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mwjxtrzbk1uo6uc2nfs",
@@ -7996,7 +7999,10 @@
         "subtaskId": "mwjxte51r9dskmqn4z",
         "time": null,
         "scheduledAt": "2026-11-17T00:11:44.606Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-18T15:46:47.756Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ]
   },
@@ -9384,9 +9390,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-17"
+    },
+    {
+      "projectId": "mu39fvpuyhq2d4m1yxe",
+      "taskId": "mvk84c6cbrv9xznmk2c",
+      "subtaskId": "mwjxte51r9dskmqn4z",
+      "completedAt": "2026-11-18T15:46:47.757Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-16"
     }
   ],
-  "lastUpdated": "2026-11-18T15:46:42.038Z",
+  "lastUpdated": "2026-11-18T15:46:47.757Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
