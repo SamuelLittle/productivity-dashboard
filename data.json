@@ -5942,8 +5942,11 @@
               "title": "Final Automation Run Through",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-13T00:22:09.990Z"
+              "completed": true,
+              "createdAt": "2026-11-13T00:22:09.990Z",
+              "completedAt": "2026-11-18T15:45:39.470Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mwjxte51r9dskmqn4z",
@@ -7787,7 +7790,10 @@
         "subtaskId": "mwe8fgw6h249ctdl5m5",
         "time": null,
         "scheduledAt": "2026-11-17T00:11:19.622Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-18T15:45:39.470Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mu39fvpuyhq2d4m1yxe",
@@ -9292,9 +9298,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-16"
+    },
+    {
+      "projectId": "mu39fvpuyhq2d4m1yxe",
+      "taskId": "mvk84c6cbrv9xznmk2c",
+      "subtaskId": "mwe8fgw6h249ctdl5m5",
+      "completedAt": "2026-11-18T15:45:39.470Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-17"
     }
   ],
-  "lastUpdated": "2026-11-18T15:45:32.754Z",
+  "lastUpdated": "2026-11-18T15:45:39.471Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
