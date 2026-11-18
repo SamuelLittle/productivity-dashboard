@@ -5983,8 +5983,11 @@
               "title": "Flex Pilot D1",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-18T15:46:11.188Z"
+              "completed": true,
+              "createdAt": "2026-11-18T15:46:11.188Z",
+              "completedAt": "2026-11-18T15:46:42.038Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mwmanh2k39zwzcyb8rj",
@@ -7845,7 +7848,10 @@
         "subtaskId": "mwman0xg7k8rd9quh2o",
         "time": null,
         "scheduledAt": "2026-11-18T15:46:24.575Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-18T15:46:42.037Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-11-19": [
@@ -9369,9 +9375,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-17"
+    },
+    {
+      "projectId": "mu39fvpuyhq2d4m1yxe",
+      "taskId": "mvk84c6cbrv9xznmk2c",
+      "subtaskId": "mwman0xg7k8rd9quh2o",
+      "completedAt": "2026-11-18T15:46:42.038Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-17"
     }
   ],
-  "lastUpdated": "2026-11-18T15:46:36.936Z",
+  "lastUpdated": "2026-11-18T15:46:42.038Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
