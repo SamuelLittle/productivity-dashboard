@@ -5972,8 +5972,11 @@
               "title": "Get reagents from Meghan",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-17T00:12:05.828Z"
+              "completed": true,
+              "createdAt": "2026-11-17T00:12:05.828Z",
+              "completedAt": "2026-11-18T15:45:47.785Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ]
         },
@@ -7815,7 +7818,10 @@
         "subtaskId": "mwjxtxdwnd92p7zwngi",
         "time": null,
         "scheduledAt": "2026-11-17T00:25:03.781Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-18T15:45:47.785Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-11-19": [
@@ -9322,9 +9328,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-17"
+    },
+    {
+      "projectId": "mu39fvpuyhq2d4m1yxe",
+      "taskId": "mvk84c6cbrv9xznmk2c",
+      "subtaskId": "mwjxtxdwnd92p7zwngi",
+      "completedAt": "2026-11-18T15:45:47.785Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-17"
     }
   ],
-  "lastUpdated": "2026-11-18T15:45:44.102Z",
+  "lastUpdated": "2026-11-18T15:45:47.785Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
