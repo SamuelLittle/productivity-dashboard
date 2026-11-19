@@ -3373,8 +3373,11 @@
               "title": "Thaw T cells",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-15T20:24:06.539Z"
+              "completed": true,
+              "createdAt": "2026-11-15T20:24:06.539Z",
+              "completedAt": "2026-11-19T17:39:32.891Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mwiam1gzazykeubah9b",
@@ -6836,19 +6839,6 @@
         "completionLinks": ""
       }
     ],
-    "2026-08-20": [
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "msot20jrbopourlxc6r",
-        "subtaskId": "mt27plbqh5dxcij7kye",
-        "time": null,
-        "scheduledAt": "2026-08-21T00:29:41.560Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-21T00:29:50.810Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-08-26": [
       {
         "projectId": "mpyqnvm6p9zp4xlp64m",
@@ -7895,7 +7885,10 @@
         "subtaskId": "mwia8vpn3cibzfqhfuo",
         "time": null,
         "scheduledAt": "2026-11-15T20:24:06.539Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-19T17:39:32.891Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9399,9 +9392,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-16"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mueeibc5gzv6690qi8q",
+      "subtaskId": "mwia8vpn3cibzfqhfuo",
+      "completedAt": "2026-11-19T17:39:32.891Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-18"
     }
   ],
-  "lastUpdated": "2026-11-18T15:46:47.757Z",
+  "lastUpdated": "2026-11-19T17:39:32.891Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
