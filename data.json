@@ -1573,6 +1573,14 @@
               "completedAt": null,
               "completionNotes": null,
               "completionLinks": null
+            },
+            {
+              "id": "mwvbutpq8zjzjp93b87",
+              "title": "metadata",
+              "description": "",
+              "priority": "medium",
+              "completed": false,
+              "createdAt": "2026-11-24T23:30:10.286Z"
             }
           ]
         },
@@ -9379,7 +9387,7 @@
       "date": "2026-11-23"
     }
   ],
-  "lastUpdated": "2026-11-24T23:30:03.697Z",
+  "lastUpdated": "2026-11-24T23:30:10.286Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
