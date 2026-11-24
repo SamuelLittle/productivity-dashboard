@@ -6166,20 +6166,6 @@
     }
   ],
   "dailyLists": {
-    "2026-08-25": [
-      {
-        "id": "mt7jelbx5ljg3kx9i8",
-        "title": "Prep for Freimer Thakore Lab meeting",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-08-24T17:55:54.621Z",
-        "time": null,
-        "completedAt": "2026-08-28T00:10:17.274Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-08-26": [
       {
         "id": "mt7jey49it5jjnvjkoh",
@@ -7948,16 +7934,6 @@
         "completedOnDay": false
       }
     ],
-    "2026-11-23": [
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "msot0q1x8axc96qhr7l",
-        "subtaskId": "mvlayckups6ky3fqeko",
-        "time": null,
-        "scheduledAt": "2026-11-16T17:56:35.238Z",
-        "completedOnDay": false
-      }
-    ],
     "2026-11-16": [
       {
         "projectId": "mu39fvpuyhq2d4m1yxe",
@@ -9334,7 +9310,7 @@
       "date": "2026-11-19"
     }
   ],
-  "lastUpdated": "2026-11-23T22:06:57.855Z",
+  "lastUpdated": "2026-11-24T04:37:33.710Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
