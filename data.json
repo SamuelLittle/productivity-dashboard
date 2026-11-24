@@ -7932,14 +7932,6 @@
         "completedAt": "2026-11-24T04:38:08.724Z",
         "completionNotes": "",
         "completionLinks": ""
-      },
-      {
-        "projectId": "mkltv6xwvh4ltoqkes",
-        "taskId": "mvlb1t9iifvcdaubvhj",
-        "subtaskId": "mvlb4xjeeww7oivah24",
-        "time": null,
-        "scheduledAt": "2026-11-19T17:39:43.749Z",
-        "completedOnDay": false
       }
     ],
     "2026-11-16": [
@@ -7962,6 +7954,14 @@
         "subtaskId": null,
         "time": null,
         "scheduledAt": "2026-11-24T04:38:12.721Z",
+        "completedOnDay": false
+      },
+      {
+        "projectId": "mkltv6xwvh4ltoqkes",
+        "taskId": "mvlb1t9iifvcdaubvhj",
+        "subtaskId": "mvlb4xjeeww7oivah24",
+        "time": null,
+        "scheduledAt": "2026-11-24T04:38:12.749Z",
         "completedOnDay": false
       }
     ]
@@ -9354,7 +9354,7 @@
       "date": "2026-11-20"
     }
   ],
-  "lastUpdated": "2026-11-24T04:38:12.721Z",
+  "lastUpdated": "2026-11-24T04:38:12.749Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
