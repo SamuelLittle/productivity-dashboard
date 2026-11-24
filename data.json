@@ -1761,8 +1761,11 @@
               "title": "NGS Submission",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-15T20:17:40.363Z"
+              "completed": true,
+              "createdAt": "2026-11-15T20:17:40.363Z",
+              "completedAt": "2026-11-24T23:30:17.767Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ],
           "tentativeWindow": null
@@ -9385,9 +9388,16 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-23"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mueefi2pp63isc2vuzs",
+      "subtaskId": "mwia0lqj72kmlk4k817",
+      "title": "NGS Submission",
+      "completedAt": "2026-11-24T23:30:17.767Z"
     }
   ],
-  "lastUpdated": "2026-11-24T23:30:10.286Z",
+  "lastUpdated": "2026-11-24T23:30:17.767Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
