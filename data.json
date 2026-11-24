@@ -3357,8 +3357,11 @@
               "title": "Normalize + coculture",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-10T22:42:28.244Z"
+              "completed": true,
+              "createdAt": "2026-11-10T22:42:28.244Z",
+              "completedAt": "2026-11-24T04:37:57.823Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mwcicr2r0vpam538432b",
@@ -7810,7 +7813,10 @@
         "subtaskId": "mwb9zk0kev29inthuau",
         "time": null,
         "scheduledAt": "2026-11-10T22:42:28.244Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-24T04:37:57.822Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mu39fvpuyhq2d4m1yxe",
@@ -9319,9 +9325,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-23"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mueeibc5gzv6690qi8q",
+      "subtaskId": "mwb9zk0kev29inthuau",
+      "completedAt": "2026-11-24T04:37:57.823Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-19"
     }
   ],
-  "lastUpdated": "2026-11-24T04:37:39.460Z",
+  "lastUpdated": "2026-11-24T04:37:57.823Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
