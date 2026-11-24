@@ -1998,6 +1998,20 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-08-25": [
+      {
+        "id": "mt7jelbx5ljg3kx9i8",
+        "title": "Prep for Freimer Thakore Lab meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-08-24T17:55:54.621Z",
+        "time": null,
+        "completedAt": "2026-08-28T00:10:17.274Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
     ]
   },
   "scheduledItems": {
