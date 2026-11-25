@@ -1568,11 +1568,11 @@
               "title": "Smartseq D2",
               "description": "",
               "priority": "medium",
-              "completed": false,
+              "completed": true,
               "createdAt": "2026-10-23T18:27:30.990Z",
-              "completedAt": null,
-              "completionNotes": null,
-              "completionLinks": null
+              "completedAt": "2026-11-25T18:48:19.520Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mwvbutpq8zjzjp93b87",
@@ -6230,20 +6230,6 @@
     }
   ],
   "dailyLists": {
-    "2026-08-26": [
-      {
-        "id": "mt7jey49it5jjnvjkoh",
-        "title": "Freimer/Thakore Lab Meeting",
-        "description": "",
-        "priority": "medium",
-        "completed": true,
-        "createdAt": "2026-08-24T17:56:11.193Z",
-        "time": null,
-        "completedAt": "2026-08-28T00:10:40.985Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-08-27": [
       {
         "id": "mtc74i1bpm8bp23iky",
@@ -6860,19 +6846,6 @@
     ]
   },
   "scheduledItems": {
-    "2026-08-26": [
-      {
-        "projectId": "mpyqnvm6p9zp4xlp64m",
-        "taskId": "msot20jrbopourlxc6r",
-        "subtaskId": "mt7jfxbltkt5jk79t4r",
-        "time": null,
-        "scheduledAt": "2026-08-24T17:56:56.817Z",
-        "completedOnDay": true,
-        "completedAt": "2026-08-28T00:10:37.648Z",
-        "completionNotes": "",
-        "completionLinks": ""
-      }
-    ],
     "2026-08-31": [
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -8033,7 +8006,10 @@
         "subtaskId": "mvlayckups6ky3fqeko",
         "time": null,
         "scheduledAt": "2026-11-24T23:30:03.697Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-25T18:48:19.519Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltv6xwvh4ltoqkes",
@@ -9473,9 +9449,18 @@
       "subtaskId": "mwia0lqj72kmlk4k817",
       "title": "NGS Submission",
       "completedAt": "2026-11-24T23:30:17.767Z"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "msot0q1x8axc96qhr7l",
+      "subtaskId": "mvlayckups6ky3fqeko",
+      "completedAt": "2026-11-25T18:48:19.520Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-24"
     }
   ],
-  "lastUpdated": "2026-11-24T23:32:05.348Z",
+  "lastUpdated": "2026-11-25T18:48:19.521Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
