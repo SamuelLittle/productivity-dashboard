@@ -2012,6 +2012,20 @@
         "completionNotes": "",
         "completionLinks": ""
       }
+    ],
+    "2026-08-26": [
+      {
+        "id": "mt7jey49it5jjnvjkoh",
+        "title": "Freimer/Thakore Lab Meeting",
+        "description": "",
+        "priority": "medium",
+        "completed": true,
+        "createdAt": "2026-08-24T17:56:11.193Z",
+        "time": null,
+        "completedAt": "2026-08-28T00:10:40.985Z",
+        "completionNotes": "",
+        "completionLinks": ""
+      }
     ]
   },
   "scheduledItems": {
@@ -5038,6 +5052,19 @@
         "completedOnDay": true,
         "completedAt": "2026-08-24T17:50:22.095Z",
         "completionNotes": "Completed and documented. Sent notes to stakeholders. \n",
+        "completionLinks": ""
+      }
+    ],
+    "2026-08-26": [
+      {
+        "projectId": "mpyqnvm6p9zp4xlp64m",
+        "taskId": "msot20jrbopourlxc6r",
+        "subtaskId": "mt7jfxbltkt5jk79t4r",
+        "time": null,
+        "scheduledAt": "2026-08-24T17:56:56.817Z",
+        "completedOnDay": true,
+        "completedAt": "2026-08-28T00:10:37.648Z",
+        "completionNotes": "",
         "completionLinks": ""
       }
     ]
