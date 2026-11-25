@@ -1906,8 +1906,11 @@
               "title": "D2 processing",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-15T20:17:30.370Z"
+              "completed": true,
+              "createdAt": "2026-11-15T20:17:30.370Z",
+              "completedAt": "2026-11-25T18:48:32.018Z",
+              "completionNotes": "",
+              "completionLinks": ""
             },
             {
               "id": "mwvbv96cioon6flvwyc",
@@ -8017,7 +8020,10 @@
         "subtaskId": "mwia0e0y93ihzj9bz3",
         "time": null,
         "scheduledAt": "2026-11-24T23:30:25.004Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-25T18:48:32.018Z",
+        "completionNotes": "",
+        "completionLinks": ""
       },
       {
         "projectId": "mkltwpanzsdw6b96wbe",
@@ -9458,9 +9464,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-24"
+    },
+    {
+      "projectId": "mkltv6xwvh4ltoqkes",
+      "taskId": "mvlaza3fpz3iixsw3k",
+      "subtaskId": "mwia0e0y93ihzj9bz3",
+      "completedAt": "2026-11-25T18:48:32.018Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-24"
     }
   ],
-  "lastUpdated": "2026-11-25T18:48:19.521Z",
+  "lastUpdated": "2026-11-25T18:48:32.018Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
