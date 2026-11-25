@@ -3434,8 +3434,11 @@
               "title": "Data analysis",
               "description": "",
               "priority": "medium",
-              "completed": false,
-              "createdAt": "2026-11-24T23:32:05.348Z"
+              "completed": true,
+              "createdAt": "2026-11-24T23:32:05.348Z",
+              "completedAt": "2026-11-25T18:48:36.721Z",
+              "completionNotes": "",
+              "completionLinks": ""
             }
           ],
           "tentativeWindow": null
@@ -8031,7 +8034,10 @@
         "subtaskId": "mwvbxahw434syq7w5ak",
         "time": null,
         "scheduledAt": "2026-11-24T23:32:05.348Z",
-        "completedOnDay": false
+        "completedOnDay": true,
+        "completedAt": "2026-11-25T18:48:36.721Z",
+        "completionNotes": "",
+        "completionLinks": ""
       }
     ],
     "2026-11-25": [
@@ -9473,9 +9479,18 @@
       "completionNotes": "",
       "completionLinks": "",
       "date": "2026-11-24"
+    },
+    {
+      "projectId": "mkltwpanzsdw6b96wbe",
+      "taskId": "mueeibc5gzv6690qi8q",
+      "subtaskId": "mwvbxahw434syq7w5ak",
+      "completedAt": "2026-11-25T18:48:36.721Z",
+      "completionNotes": "",
+      "completionLinks": "",
+      "date": "2026-11-24"
     }
   ],
-  "lastUpdated": "2026-11-25T18:48:32.018Z",
+  "lastUpdated": "2026-11-25T18:48:36.721Z",
   "taskOrder": {},
   "dailyNotes": {
     "2026-09-25": "- lots of odds and ends today"
